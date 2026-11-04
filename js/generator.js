@@ -116,12 +116,13 @@ window.MC = window.MC || {};
     return Object.assign({ id: MC.uid(), w, h, cells, words, nums }, meta);
   }
 
-  /* opts: { level, seed } -> puzzle */
+  /* opts: { level, seed, exclude?: Set de mots } -> puzzle */
   MC.generate = function (opts) {
     const L = MC.LEVELS[opts.level] || MC.LEVELS.moyen;
     const seed = opts.seed >>> 0;
     const rng = MC.rng(seed);
-    const fits = w => w.word.length >= 3 && w.word.length <= L.size;
+    const ex = opts.exclude || new Set(); // mots signalés par l'utilisateur
+    const fits = w => w.word.length >= 3 && w.word.length <= L.size && !ex.has(w.word);
     const lists = {
       share: L.curated == null ? 1 : L.curated,
       curated: MC.DICO.filter(w => w.r === 0 && fits(w)),

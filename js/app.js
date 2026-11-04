@@ -122,7 +122,7 @@
   function newGame(level, opts) {
     opts = opts || {};
     const seed = opts.seed != null ? opts.seed : (Math.random() * 4294967296) >>> 0;
-    const puzzle = MC.generate({ level, seed });
+    const puzzle = MC.generate({ level, seed, exclude: MC.store.bannedSet() });
     const g = {
       id: MC.uid(), puzzle, entries: {}, elapsed: 0, status: 'playing',
       created: Date.now(), updated: Date.now(), stats: { checks: 0, reveals: 0, errors: 0 }, daily: opts.daily || null
@@ -249,8 +249,11 @@
       $('#b-num').textContent = `${wd.n} ${wd.dir === 'H' ? '→' : '↓'}`;
       $('#b-clue').textContent = `${wd.clue} (${wd.len})`;
     }
+    const banned = MC.store.bannedSet();
+    $('#b-flag').classList.toggle('on', !!wd && banned.has(wd.answer));
     P.words.forEach(w => {
       const li = clueEl[w.i];
+      li.classList.toggle('reported', banned.has(w.answer));
       li.classList.toggle('active', w === wd);
       li.classList.toggle('cross', w === cross);
       li.classList.toggle('filled', wordFilled(w));
@@ -512,6 +515,48 @@
     if (!changes.length) return toast('Rien à révéler');
     S.game.stats.reveals += changes.length;
     commit(changes);
+  }
+
+  /* =================== Signaler une définition ratée =================== */
+  async function reportClue() {
+    const wd = curWord();
+    if (!wd) return;
+    const list = MC.store.banned();
+    if (list.some(b => b.w === wd.answer)) {
+      const undoIt = await ask('Définition déjà signalée', `« ${wd.clue} » — ce mot n'apparaîtra plus dans vos prochaines grilles.`,
+        [{ label: 'Fermer' }, { label: 'Annuler le signalement', value: true }]);
+      if (undoIt) { MC.store.saveBanned(list.filter(b => b.w !== wd.answer)); render(); toast('Signalement annulé'); }
+      return;
+    }
+    const buttons = [{ label: 'Annuler' }, { label: 'Retirer', value: 'ban' }];
+    if (canEdit() && !wordFilled(wd)) buttons.push({ label: 'Retirer et révéler', cls: 'primary', value: 'reveal' });
+    const choice = await ask('Définition ratée ?', `« ${wd.clue} » — ce mot sera retiré de vos prochaines grilles.`, buttons);
+    if (!choice) return;
+    list.push({ w: wd.answer, c: wd.clue, t: Date.now() });
+    MC.store.saveBanned(list);
+    if (choice === 'reveal') { selectWord(wd); reveal('word'); }
+    render();
+    toast('Merci ! Ce mot ne reviendra plus.');
+  }
+  function openBanned() {
+    const list = MC.store.banned().sort((a, b) => b.t - a.t);
+    showModal(`<h2>Définitions signalées</h2>
+      <p>${list.length ? 'Ces mots sont exclus de vos grilles. Copiez la liste pour me l’envoyer : je corrigerai les définitions pour tout le monde.' : 'Aucune définition signalée. Touchez le drapeau ⚑ à côté d’une définition ratée pendant une partie.'}</p>
+      <div class="banned-list">${list.map(b => `<div><span><b>${MC.esc(b.w)}</b>${MC.esc(b.c)}</span><button class="btn" data-w="${MC.esc(b.w)}">Rétablir</button></div>`).join('')}</div>
+      <div class="modal-actions">${list.length ? '<button class="btn" data-a="copy">Copier la liste</button>' : ''}<button class="btn primary" data-a="close">Fermer</button></div>`);
+    $('#modal-box').onclick = async e => {
+      const w = e.target.closest('[data-w]'), a = e.target.closest('[data-a]');
+      if (w) {
+        MC.store.saveBanned(MC.store.banned().filter(b => b.w !== w.dataset.w));
+        w.parentElement.remove();
+        toast(`« ${w.dataset.w} » pourra revenir dans les grilles`);
+      }
+      if (a && a.dataset.a === 'copy') {
+        const txt = MC.store.banned().map(b => `${b.w}|${b.c}`).join(String.fromCharCode(10));
+        try { await navigator.clipboard.writeText(txt); toast('Liste copiée'); } catch (_) { toast('Copie impossible sur cet appareil'); }
+      }
+      if (a && a.dataset.a === 'close') { closeModal(); renderSettings(); }
+    };
   }
 
   function openHelp() {
@@ -1204,13 +1249,18 @@
     { group: 'Données' },
     { action: 'export', label: 'Exporter mes parties (fichier de sauvegarde)' },
     { action: 'import', label: 'Importer une sauvegarde' },
+    { action: 'banned', label: 'Définitions signalées' },
     { action: 'wipe', label: 'Effacer tout l\'historique', danger: true }
   ];
   function renderSettings() {
     let html = '';
     for (const it of SETTINGS_UI) {
       if (it.group) { html += `<div class="set-group">${it.group}</div>`; continue; }
-      if (it.action) { html += `<div class="set-row action${it.danger ? ' danger' : ''}" data-action="${it.action}">${it.label}</div>`; continue; }
+      if (it.action) {
+        const n = it.action === 'banned' ? ` (${MC.store.banned().length})` : '';
+        html += `<div class="set-row action${it.danger ? ' danger' : ''}" data-action="${it.action}">${it.label}${n}</div>`;
+        continue;
+      }
       const v = settings[it.key];
       let ctl = '';
       if (it.type === 'toggle') ctl = `<span class="switch"><input type="checkbox" data-key="${it.key}"${v ? ' checked' : ''}><span></span></span>`;
@@ -1243,6 +1293,7 @@
       recog.resetUser(); MC.store.saveInk([]); renderSettings(); toast('Écriture oubliée');
     }
     if (a === 'export') exportData();
+    if (a === 'banned') openBanned();
     if (a === 'import') $('#import-file').click();
     if (a === 'wipe' && await ask('Effacer tout l\'historique ?', 'Toutes les parties seront supprimées. Pensez à exporter avant.', [{ label: 'Annuler' }, { label: 'Tout effacer', cls: 'danger', value: true }])) {
       MC.store.clearGames(); S.game = null; toast('Historique effacé');
@@ -1312,6 +1363,7 @@
     $('#b-prev').addEventListener('click', () => nextWord(-1, false));
     $('#b-next').addEventListener('click', () => nextWord(1, false));
     $('#b-text').addEventListener('click', toggleDir);
+    $('#b-flag').addEventListener('click', reportClue);
     $('#z-in').addEventListener('click', () => zoomAt({ x: vp.clientWidth / 2, y: vp.clientHeight / 2 }, 1.3, true));
     $('#z-out').addEventListener('click', () => zoomAt({ x: vp.clientWidth / 2, y: vp.clientHeight / 2 }, 1 / 1.3, true));
     $('#z-fit').addEventListener('click', () => { smoothOnce(); fitView(); });

@@ -147,6 +147,15 @@ body.bigclues #b-clue { font-size: 20px; }
 }
 #b-num { font-weight: 700; white-space: nowrap; color: var(--accent); }
 #b-clue { flex: 1; }
+#banner .flag { width: 40px; color: var(--muted); }
+#banner .flag .ic { width: 20px; height: 20px; }
+#banner .flag.on { background: transparent; color: var(--wrong); }
+.clue-list li.reported span:not(.len) { color: var(--muted); font-style: italic; }
+.banned-list { max-height: 50vh; overflow-y: auto; margin: 8px 0; }
+.banned-list div { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.banned-list div span { flex: 1; font-size: 15px; }
+.banned-list div b { display: block; }
+.banned-list .btn { height: 40px; padding: 0 12px; }
 
 /* ---------- Grille ---------- */
 #viewport { flex: 1; position: relative; overflow: hidden; touch-action: none; min-height: 0; }
