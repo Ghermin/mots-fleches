@@ -123,12 +123,16 @@ def definition(word, wikitext):
             if SKIP_TAGS.search(line):
                 continue
             d = clean(line[2:])
-            if len(d) < 6 or SKIP_START.search(d) or re.search(r'sens précédent|ci-dessus|\(genre ', d):
+            if len(d) < 6 or SKIP_START.search(d) or re.search(r'sens précédent|ci-dessus|\(genre |cette action|cet acte|ce dernier|celui-ci|'
+                                                                  r'violence|décédé|\bsang\b|mensuel|enceinte|cadavre', d, re.I):
                 continue
             nd, nw = re.sub(r'[^a-z]', '', norm(d)), norm(word)
             stem = nw[:max(4, -(-len(nw) * 6 // 10))]  # racine : 60 % du mot
             if nw in nd or (len(nw) >= 5 and stem in nd):
                 continue  # la définition donnerait la réponse
+            # … ou un mot de la même famille (« Action d'augmenter » pour AUGMENTATION)
+            if any(len(t) >= 5 and t[:5] in nw for t in re.findall(r'[a-z]+', norm(d))):
+                continue
             return d
         return None  # on ne garde que le premier sens utilisable de la première section
     return None
