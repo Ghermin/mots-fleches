@@ -4,7 +4,7 @@ window.MC = window.MC || {};
   'use strict';
   const POOL = 900;
 
-  function build(dict, size, target, rng) {
+  function build(lists, size, target, rng) {
     const N = size * size;
     const grid = new Array(N).fill('');
     const used = [new Uint8Array(N), new Uint8Array(N)]; // 0 = horizontal, 1 = vertical
@@ -46,8 +46,11 @@ window.MC = window.MC || {};
       usedWords.add(w.word);
     }
 
-    // Échantillon aléatoire du dictionnaire : variété d'une grille à l'autre, et génération rapide.
-    const pool = MC.shuffle(dict.slice(), rng).slice(0, POOL);
+    // Échantillon aléatoire : une part de mots « faits main », le reste du Wiktionnaire.
+    const nCur = Math.min(lists.curated.length, Math.round(POOL * lists.share));
+    const pool = MC.shuffle(
+      MC.shuffle(lists.curated.slice(), rng).slice(0, nCur)
+        .concat(MC.shuffle(lists.wiki.slice(), rng).slice(0, POOL - nCur)), rng);
     const minFirst = Math.min(size, Math.max(5, Math.round(size * 0.6)));
     const first = pool.find(w => w.word.length >= minFirst) || pool[0];
     const d0 = rng() < 0.5 ? 0 : 1;
@@ -69,7 +72,7 @@ window.MC = window.MC || {};
               if (used[d][idx]) continue;
               const x = fit(word, r - d * i, c - (1 - d) * i, d);
               if (x > 0) {
-                const score = x * 4 + word.length * 0.6 + rng() * 3 + (w.r === 0 ? 1.5 : 0);
+                const score = x * 4 + word.length * 0.6 + rng() * 3 + (w.r === 0 ? 0.5 : 0);
                 if (!best || score > best.score) best = { w, r: r - d * i, c: c - (1 - d) * i, d, x, score };
               }
             }
@@ -118,11 +121,15 @@ window.MC = window.MC || {};
     const L = MC.LEVELS[opts.level] || MC.LEVELS.moyen;
     const seed = opts.seed >>> 0;
     const rng = MC.rng(seed);
-    const maxRank = L.maxRank || Infinity;
-    const dict = MC.DICO.filter(w => w.word.length >= 3 && w.word.length <= L.size && w.r <= maxRank);
+    const fits = w => w.word.length >= 3 && w.word.length <= L.size;
+    const lists = {
+      share: L.curated == null ? 1 : L.curated,
+      curated: MC.DICO.filter(w => w.r === 0 && fits(w)),
+      wiki: MC.DICO.filter(w => w.r > 0 && w.r <= (L.maxRank == null ? Infinity : L.maxRank) && fits(w))
+    };
     let best = null;
     for (let a = 0; a < L.attempts; a++) {
-      const res = build(dict, L.size, L.target, rng);
+      const res = build(lists, L.size, L.target, rng);
       if (!best || res.score > best.score) best = res;
     }
     return finalize(best, { level: opts.level, seed, created: Date.now() });
