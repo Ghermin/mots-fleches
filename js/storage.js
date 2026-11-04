@@ -36,17 +36,19 @@ window.MC = window.MC || {};
   }
   function stripPuzzle(p) {
     return {
-      id: p.id, level: p.level, seed: p.seed, created: p.created, w: p.w, h: p.h, cells: p.cells, nums: p.nums,
-      words: p.words.map(w => ({ n: w.n, dir: w.dir, r: w.r, c: w.c, len: w.len, answer: w.answer, clue: w.clue }))
+      id: p.id, type: p.type, level: p.level, seed: p.seed, created: p.created, w: p.w, h: p.h, cells: p.cells,
+      words: p.words.map(w => ({ n: w.n, dir: w.dir, r: w.r, c: w.c, len: w.len, answer: w.answer, clue: w.clue, at: w.at, arrow: w.arrow }))
     };
   }
+  // Les anciennes parties de mots croisés (avant le passage aux mots fléchés) sont ignorées.
+  const isFleche = g => g && g.puzzle && g.puzzle.type === 'fleche';
 
   MC.store = {
     DEFAULTS,
     loadSettings() { return Object.assign({}, DEFAULTS, read(K.settings, {})); },
     saveSettings(s) { write(K.settings, s); },
 
-    games() { return read(K.games, []); },
+    games() { return read(K.games, []).filter(isFleche); },
     getGame(id) { return this.games().find(g => g.id === id) || null; },
     saveGame(g) {
       g.updated = Date.now();
@@ -70,13 +72,14 @@ window.MC = window.MC || {};
     saveInk(list) { write(K.ink, list); },
 
     exportAll() {
-      return { app: 'mots-croises', version: 1, exported: Date.now(), games: this.games(), settings: this.loadSettings(), ink: this.ink(), banned: this.banned() };
+      return { app: 'mots-fleches', version: 2, exported: Date.now(), games: this.games(), settings: this.loadSettings(), ink: this.ink(), banned: this.banned() };
     },
     importAll(data) {
-      if (!data || data.app !== 'mots-croises' || !Array.isArray(data.games)) throw new Error('Fichier non reconnu');
+      if (!data || !/^mots-(croises|fleches)$/.test(data.app) || !Array.isArray(data.games)) throw new Error('Fichier non reconnu');
       const mine = this.games();
       const ids = new Set(mine.map(g => g.id));
-      const merged = mine.concat(data.games.filter(g => g && g.id && !ids.has(g.id)));
+      const games = data.games.filter(isFleche);
+      const merged = mine.concat(games.filter(g => g.id && !ids.has(g.id)));
       merged.sort((a, b) => b.updated - a.updated);
       write(K.games, merged.slice(0, MAX_GAMES));
       if (Array.isArray(data.ink) && data.ink.length) write(K.ink, this.ink().concat(data.ink));
@@ -84,7 +87,7 @@ window.MC = window.MC || {};
         const have = this.bannedSet();
         write(K.banned, this.banned().concat(data.banned.filter(b => b && b.w && !have.has(b.w))));
       }
-      return data.games.length;
+      return games.length;
     }
   };
 })(window.MC);

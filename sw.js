@@ -1,5 +1,5 @@
 /* Hors-ligne : réseau d'abord (mises à jour immédiates), cache si pas de connexion. */
-const CACHE = 'mots-croises-v2';
+const CACHE = 'mots-fleches-v1';
 const ASSETS = [
   './', 'index.html', 'css/style.css', 'manifest.webmanifest',
   'js/util.js', 'js/dico-wiki.js', 'js/dico.js', 'js/generator.js', 'js/recognizer.js', 'js/storage.js', 'js/app.js',

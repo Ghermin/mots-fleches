@@ -1,4 +1,4 @@
-/* Mots croisés — interface (tablette d'abord). */
+/* Mots fléchés — interface (tablette d'abord). */
 (function (MC) {
   'use strict';
   const $ = (s, el) => (el || document).querySelector(s);
@@ -15,7 +15,7 @@
     sel: { idx: -1, dir: 'H' }, undo: [], redo: [],
     pencil: false, paused: false, lastTick: 0, ticks: 0, warnedFull: false, lastWord: null, penSeen: false
   };
-  let cellEl = [], ltrEl = [], clueEl = [];
+  let cellEl = [], ltrEl = [], defEl = [];
   const dirIdx = d => (d === 'H' ? 0 : 1);
   const other = d => (d === 'H' ? 'V' : 'H');
 
@@ -71,7 +71,7 @@
   let colors = {};
   function readColors() {
     const css = getComputedStyle(document.documentElement);
-    ['--accent', '--border', '--ink', '--cell-bg', '--line', '--muted', '--bg'].forEach(k => { colors[k] = css.getPropertyValue(k).trim(); });
+    ['--accent', '--border', '--ink', '--cell-bg', '--line', '--muted', '--bg', '--def-bg'].forEach(k => { colors[k] = css.getPropertyValue(k).trim(); });
   }
 
   /* =================== Écrans =================== */
@@ -98,7 +98,7 @@
   /* =================== Accueil =================== */
   function buildLevels() {
     $('#levels').innerHTML = Object.entries(MC.LEVELS).map(([k, L]) =>
-      `<button data-level="${k}"><b>${L.label}</b><small>~${L.target} mots · ${L.size}×${L.size} max</small></button>`).join('');
+      `<button data-level="${k}"><b>${L.label}</b><small>${L.w} × ${L.h} cases</small></button>`).join('');
   }
   function renderHome() {
     const games = MC.store.games();
@@ -119,21 +119,32 @@
       : ' · niveau moyen, la même pour tout le monde');
   }
 
+  let busy = false;
   function newGame(level, opts) {
+    if (busy) return;
     opts = opts || {};
     const seed = opts.seed != null ? opts.seed : (Math.random() * 4294967296) >>> 0;
-    const puzzle = MC.generate({ level, seed, exclude: MC.store.bannedSet() });
-    const g = {
-      id: MC.uid(), puzzle, entries: {}, elapsed: 0, status: 'playing',
-      created: Date.now(), updated: Date.now(), stats: { checks: 0, reveals: 0, errors: 0 }, daily: opts.daily || null
-    };
-    MC.store.saveGame(g);
-    openGame(g);
+    busy = true;
+    $('#busy').classList.remove('hidden');
+    // On laisse le navigateur afficher « Création de la grille… » avant le calcul.
+    setTimeout(() => {
+      let puzzle = null;
+      try { puzzle = MC.generate({ level, seed, exclude: MC.store.bannedSet() }); } catch (err) { console.error(err); }
+      busy = false;
+      $('#busy').classList.add('hidden');
+      if (!puzzle) return toast('La grille n’a pas pu être créée, réessayez', 3000);
+      const g = {
+        id: MC.uid(), puzzle, entries: {}, elapsed: 0, status: 'playing',
+        created: Date.now(), updated: Date.now(), stats: { checks: 0, reveals: 0, errors: 0 }, daily: opts.daily || null
+      };
+      MC.store.saveGame(g);
+      openGame(g);
+    }, 60);
   }
   function openDaily() {
     const key = MC.todayKey();
     const ex = MC.store.games().find(g => g.daily === key);
-    if (ex) openGame(ex); else newGame('moyen', { seed: MC.hash('daily:' + key), daily: key });
+    if (ex) openGame(ex); else newGame('moyen', { seed: MC.hash('fleches:' + key), daily: key });
   }
   function restartGame(id) {
     const old = MC.store.getGame(id);
@@ -157,72 +168,99 @@
     });
     S.cellWords = Array.from({ length: P.w * P.h }, () => [-1, -1]);
     P.words.forEach(wd => wd.cells.forEach(ix => { S.cellWords[ix][dirIdx(wd.dir)] = wd.i; }));
+    S.defs = {}; // case-définition -> mots qu'elle définit (haut, puis bas)
+    P.words.forEach(wd => { (S.defs[wd.at] = S.defs[wd.at] || []).push(wd); });
     S.undo = []; S.redo = []; S.pencil = false; S.warnedFull = false; S.lastWord = null;
     inkReset();
     $('#alts').classList.add('hidden');
     $('#pen-alts').innerHTML = '<span class="muted">Écrivez une lettre dans le cadre</span>';
     $('#g-level').textContent = `${levelLabel(g)} · ${P.words.length} mots`;
     buildBoard();
-    buildClues();
     const wd = P.words.find(w => !wordFilled(w)) || P.words[0];
     S.sel.dir = wd.dir;
     S.sel.idx = firstEmpty(wd);
     show('game');
     setPaused(false);
     render();
-    requestAnimationFrame(() => { fitView(); render(); });
+    requestAnimationFrame(() => { fitView(); fitDefs(); render(); });
     startTimer();
+  }
+
+  /* Flèches dessinées dans la première case de chaque mot (côté de sa définition). */
+  const ARROWS = {
+    r: '<path d="M1 1.5L8.5 5 1 8.5z"/>',
+    d: '<path d="M1.5 1L5 8.5 8.5 1z"/>',
+    rd: '<path class="st" d="M0 2.5H5.5V6"/><path d="M2.4 5.4L5.5 9.6 8.6 5.4z"/>',
+    dr: '<path class="st" d="M2.5 0V5.5H6"/><path d="M5.4 2.4L9.6 5.5 5.4 8.6z"/>'
+  };
+  /* Version courte d'une définition pour la case ; la définition complète est dans le bandeau. */
+  function shortClue(s, max) {
+    s = s.replace(/\s*\.$/, '');
+    if (s.length <= max) return s;
+    for (const sep of [' ; ', ', ', ' (', ' : ', ' – ']) {
+      const k = s.indexOf(sep);
+      if (k >= 8 && k <= max) return s.slice(0, k);
+    }
+    const cut = s.lastIndexOf(' ', max - 1);
+    return s.slice(0, cut > 10 ? cut : max - 1) + '…';
   }
 
   function buildBoard() {
     const P = S.P, board = $('#board');
     board.innerHTML = '';
     board.style.gridTemplateColumns = `repeat(${P.w}, var(--cell))`;
-    cellEl = []; ltrEl = [];
-    const on = (r, c) => r >= 0 && c >= 0 && r < P.h && c < P.w && !!P.cells[r * P.w + c];
+    cellEl = []; ltrEl = []; defEl = [];
     const frag = document.createDocumentFragment();
     for (let i = 0; i < P.cells.length; i++) {
-      const r = (i / P.w) | 0, c = i % P.w, d = document.createElement('div');
+      const d = document.createElement('div');
       if (P.cells[i]) {
-        let cls = 'cell on';
-        if (!on(r, c - 1)) cls += ' bl';
-        if (!on(r - 1, c)) cls += ' bt';
-        if (!on(r, c + 1)) cls += ' br';
-        if (!on(r + 1, c)) cls += ' bb';
-        d.className = cls;
-        d.dataset.base = cls;
-        if (P.nums[i]) {
-          const n = document.createElement('span');
-          n.className = 'num';
-          n.textContent = P.nums[i];
-          d.appendChild(n);
-        }
+        d.className = d.dataset.base = 'cell on';
         const l = document.createElement('span');
         l.className = 'ltr';
         d.appendChild(l);
         ltrEl[i] = l;
       } else {
-        d.className = 'cell';
+        const list = S.defs[i] || [];
+        d.className = d.dataset.base = 'cell def' + (list.length > 1 ? ' two' : '');
+        for (const wd of list) {
+          const q = document.createElement('div'), t = document.createElement('span');
+          q.className = 'q';
+          t.textContent = shortClue(wd.clue, list.length > 1 ? 30 : 46);
+          q.appendChild(t);
+          d.appendChild(q);
+          defEl[wd.i] = q;
+        }
       }
       cellEl[i] = d;
       frag.appendChild(d);
     }
+    P.words.forEach(wd => {
+      const a = document.createElement('span');
+      a.className = 'arr arr-' + wd.arrow + ((S.defs[wd.at] || []).length > 1 ? ' half' : '');
+      a.innerHTML = `<svg viewBox="0 0 10 10">${ARROWS[wd.arrow]}</svg>`;
+      cellEl[wd.cells[0]].appendChild(a);
+    });
     board.appendChild(frag);
   }
 
-  function buildClues() {
-    clueEl = [];
-    for (const dir of ['H', 'V']) {
-      const ol = $('#clues-' + dir);
-      ol.innerHTML = '';
-      S.P.words.filter(w => w.dir === dir).forEach(wd => {
-        const li = document.createElement('li');
-        li.innerHTML = `<b>${wd.n}</b><span>${MC.esc(wd.clue)} <span class="len">(${wd.len})</span></span>`;
-        li.addEventListener('click', () => selectWord(wd));
-        ol.appendChild(li);
-        clueEl[wd.i] = li;
-      });
-    }
+  /* Taille du texte de chaque définition : la plus grande qui tient dans sa case.
+     Exprimée en fraction de --cell, elle suit ensuite le zoom. */
+  function fitDefs() {
+    if (!V.cell) return;
+    defEl.forEach(q => {
+      if (!q) return;
+      const t = q.firstChild;
+      const fits = () => t.offsetHeight <= q.clientHeight && t.scrollWidth <= t.clientWidth + 1;
+      let lo = 0.07, hi = 0.205;
+      q.classList.remove('brk');
+      for (let k = 0; k < 7; k++) {
+        const mid = (lo + hi) / 2;
+        q.style.fontSize = `calc(var(--cell) * ${mid.toFixed(4)})`;
+        if (fits()) lo = mid; else hi = mid;
+      }
+      q.style.fontSize = `calc(var(--cell) * ${lo.toFixed(4)})`;
+      if (!fits()) q.classList.add('brk'); // mot trop long même en petit : on le coupe
+    });
   }
 
   /* =================== Affichage =================== */
@@ -246,23 +284,22 @@
       if (ltrEl[i].textContent !== ch) ltrEl[i].textContent = ch;
     }
     if (wd) {
-      $('#b-num').textContent = `${wd.n} ${wd.dir === 'H' ? '→' : '↓'}`;
+      $('#b-num').textContent = wd.dir === 'H' ? '→' : '↓';
       $('#b-clue').textContent = `${wd.clue} (${wd.len})`;
     }
     const banned = MC.store.bannedSet();
     $('#b-flag').classList.toggle('on', !!wd && banned.has(wd.answer));
     P.words.forEach(w => {
-      const li = clueEl[w.i];
-      li.classList.toggle('reported', banned.has(w.answer));
-      li.classList.toggle('active', w === wd);
-      li.classList.toggle('cross', w === cross);
-      li.classList.toggle('filled', wordFilled(w));
+      const q = defEl[w.i];
+      if (!q) return;
+      q.classList.toggle('reported', banned.has(w.answer));
+      q.classList.toggle('active', w === wd);
+      q.classList.toggle('cross', w === cross);
+      q.classList.toggle('filled', wordFilled(w));
     });
-    if (wd && wd !== S.lastWord) {
-      S.lastWord = wd;
-      scrollClue(clueEl[wd.i]);
-      if (cross) scrollClue(clueEl[cross.i]);
-    }
+    defCard($('#d-cur'), wd);
+    defCard($('#d-cross'), cross);
+    S.lastWord = wd;
     $('#g-undo').disabled = !S.undo.length;
     $('#g-redo').disabled = !S.redo.length;
     $('#g-pencil').classList.toggle('on', S.pencil);
@@ -270,11 +307,12 @@
     $('#board').classList.toggle('done', g.status === 'done');
   }
 
-  function scrollClue(li) {
-    const list = li.closest('.clue-list');
-    const head = 40, top = li.offsetTop, bottom = top + li.offsetHeight;
-    if (top < list.scrollTop + head) list.scrollTo({ top: top - head, behavior: 'smooth' });
-    else if (bottom > list.scrollTop + list.clientHeight) list.scrollTo({ top: bottom - list.clientHeight + 8, behavior: 'smooth' });
+  /* Panneau latéral (paysage) : définition en cours et définition croisée, en entier. */
+  function defCard(el, w) {
+    el.classList.toggle('hidden', !w);
+    if (!w) return;
+    $('.d-head', el).textContent = `${w.dir === 'H' ? '→ Horizontal' : '↓ Vertical'} · ${w.len} lettres`;
+    $('p', el).textContent = w.clue;
   }
 
   /* =================== Sélection & navigation =================== */
@@ -303,9 +341,21 @@
     render();
     ensureVisible();
   }
-  function tapCell(i) {
-    if (!S.P.cells[i]) return;
-    if (i === S.sel.idx) toggleDir(); else setSel(i);
+  /* Toucher une lettre la sélectionne (deux fois : change de sens) ; toucher une case-définition
+     sélectionne son mot (moitié haute ou basse quand elle en contient deux). */
+  function tapCell(i, p) {
+    if (S.P.cells[i]) {
+      if (i === S.sel.idx) toggleDir(); else setSel(i);
+      return;
+    }
+    const list = S.defs[i];
+    if (!list || !list.length) return;
+    let wd = list[0];
+    if (list.length > 1 && p) {
+      const y = (p.y - V.ty) / V.cell;
+      wd = list[y - Math.floor(y) < 0.5 ? 0 : 1];
+    }
+    selectWord(wd);
   }
   function toggleDir() {
     const nd = other(S.sel.dir);
@@ -688,7 +738,7 @@
     if (!P) return;
     const vw = vp.clientWidth, vh = vp.clientHeight;
     if (!vw || !vh) return;
-    const c = MC.clamp(Math.floor(Math.min((vw - 28) / P.w, (vh - 80) / P.h)), 14, 84);
+    const c = MC.clamp(Math.floor(Math.min((vw - 28) / P.w, (vh - 80) / P.h)), 14, 110);
     V.fit = V.cell = c;
     V.tx = Math.round((vw - P.w * c) / 2);
     V.ty = Math.round(Math.max(12, (vh - 56 - P.h * c) / 2));
@@ -757,9 +807,9 @@
     const P = S.P;
     const c = Math.floor((p.x - V.tx) / V.cell), r = Math.floor((p.y - V.ty) / V.cell);
     if (r < 0 || c < 0 || r >= P.h || c >= P.w) return -1;
-    const i = r * P.w + c;
-    return P.cells[i] ? i : -1;
+    return r * P.w + c;
   }
+  const letterAt = p => { const i = cellAt(p); return i >= 0 && S.P.cells[i] ? i : -1; };
 
   function onDown(e) {
     if (!S.game || e.target.closest('.zoom, #alts')) return;
@@ -817,7 +867,7 @@
     ptrs.delete(e.pointerId);
     if (gest && gest.type === 'tap' && e.type === 'pointerup' && ptrs.size === 0) {
       const i = cellAt(p);
-      if (i >= 0) tapCell(i);
+      if (i >= 0) tapCell(i, p);
     }
     if (ptrs.size === 1) {
       const q = [...ptrs.values()][0];
@@ -886,7 +936,7 @@
   }
   function inkStart(e, p) {
     clearTimeout(ink.timer);
-    const ci = cellAt(p);
+    const ci = letterAt(p);
     if (ink.strokes.length && ci >= 0 && ci !== ink.cell) inkCommit(); // on passe à la case suivante
     if (!ink.strokes.length) { ink.cell = ci; ink.t0 = performance.now(); }
     ink.pid = e.pointerId;
@@ -908,7 +958,7 @@
       ink.strokes = [];
       drawInk();
       const i = cellAt(s[0]);
-      if (i >= 0) tapCell(i);
+      if (i >= 0) tapCell(i, s[0]);
       return;
     }
     ink.timer = setTimeout(inkCommit, settings.penDelay);
@@ -1202,9 +1252,8 @@
     const ox = (128 - s * P.w) / 2, oy = (128 - s * P.h) / 2;
     ctx.clearRect(0, 0, 128, 128);
     P.cells.forEach((c, i) => {
-      if (!c) return;
       const x = ox + (i % P.w) * s, y = oy + ((i / P.w) | 0) * s;
-      ctx.fillStyle = g.entries[i] ? (colors['--accent'] || '#24477a') : (colors['--cell-bg'] || '#fff');
+      ctx.fillStyle = !c ? (colors['--def-bg'] || '#e6e0d2') : g.entries[i] ? (colors['--accent'] || '#24477a') : (colors['--cell-bg'] || '#fff');
       ctx.fillRect(x, y, s, s);
       ctx.strokeStyle = colors['--line'] || '#333';
       ctx.lineWidth = 1;
@@ -1303,7 +1352,7 @@
     const blob = new Blob([JSON.stringify(MC.store.exportAll())], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `mots-croises-sauvegarde-${MC.todayKey()}.json`;
+    a.download = `mots-fleches-sauvegarde-${MC.todayKey()}.json`;
     document.body.appendChild(a);
     a.click();
     a.remove();

@@ -1,119 +1,185 @@
-/* Générateur de grilles « libres » : les mots se croisent sans former de mots parasites. */
+/* Générateur de grilles de mots fléchés.
+   Grille pleine : chaque case contient une lettre ou une définition. La première ligne et la
+   première colonne alternent définition / lettre ; ailleurs, les cases-définitions sont placées
+   pendant le remplissage. Chaque suite de 2 lettres ou plus forme un mot du dictionnaire, défini
+   dans la case qui la précède (ou par une flèche coudée sur les bords). */
 window.MC = window.MC || {};
 (function (MC) {
   'use strict';
-  const POOL = 900;
+  const DEF = '#';
 
-  function build(lists, size, target, rng) {
-    const N = size * size;
-    const grid = new Array(N).fill('');
-    const used = [new Uint8Array(N), new Uint8Array(N)]; // 0 = horizontal, 1 = vertical
-    const byLetter = {};                                  // lettre -> cases occupées
-    const placed = [];
-    const usedWords = new Set();
-    const inb = (r, c) => r >= 0 && c >= 0 && r < size && c < size;
-    const filled = (r, c) => inb(r, c) && grid[r * size + c] !== '';
-
-    function fit(word, r, c, d) {
-      const dr = d, dc = 1 - d, L = word.length;
-      const er = r + dr * (L - 1), ec = c + dc * (L - 1);
-      if (!inb(r, c) || !inb(er, ec)) return -1;
-      if (filled(r - dr, c - dc) || filled(er + dr, ec + dc)) return -1;
-      let cross = 0;
-      for (let i = 0; i < L; i++) {
-        const rr = r + dr * i, cc = c + dc * i, idx = rr * size + cc, g = grid[idx];
-        if (g) {
-          if (g !== word[i] || used[d][idx]) return -1;
-          cross++;
-        } else if (filled(rr - dc, cc - dr) || filled(rr + dc, cc + dr)) {
-          return -1; // une lettre voisine formerait un mot parasite
-        }
+  function buildIndex(words, maxLen) {
+    const pre = new Map(); // préfixe -> [masque des longueurs possibles, nombre de mots]
+    const dict = new Map();
+    for (const w of words) {
+      const s = w.word;
+      if (s.length > maxLen || dict.has(s)) continue;
+      dict.set(s, w);
+      const bit = 1 << s.length;
+      for (let i = 1; i <= s.length; i++) {
+        const p = s.slice(0, i), e = pre.get(p);
+        if (e) { e[0] |= bit; e[1]++; } else pre.set(p, [bit, 1]);
       }
-      return cross === L ? -1 : cross;
     }
-
-    function place(w, r, c, d) {
-      const dr = d, dc = 1 - d;
-      for (let i = 0; i < w.word.length; i++) {
-        const idx = (r + dr * i) * size + c + dc * i;
-        if (!grid[idx]) {
-          grid[idx] = w.word[i];
-          (byLetter[w.word[i]] = byLetter[w.word[i]] || []).push(idx);
-        }
-        used[d][idx] = 1;
-      }
-      placed.push({ w, r, c, d });
-      usedWords.add(w.word);
-    }
-
-    // Échantillon aléatoire : une part de mots « faits main », le reste du Wiktionnaire.
-    const nCur = Math.min(lists.curated.length, Math.round(POOL * lists.share));
-    const pool = MC.shuffle(
-      MC.shuffle(lists.curated.slice(), rng).slice(0, nCur)
-        .concat(MC.shuffle(lists.wiki.slice(), rng).slice(0, POOL - nCur)), rng);
-    const minFirst = Math.min(size, Math.max(5, Math.round(size * 0.6)));
-    const first = pool.find(w => w.word.length >= minFirst) || pool[0];
-    const d0 = rng() < 0.5 ? 0 : 1;
-    const mid = Math.floor(size / 2), off = Math.floor((size - first.word.length) / 2);
-    if (d0 === 0) place(first, mid, off, 0); else place(first, off, mid, 1);
-
-    let crossings = 0;
-    while (placed.length < target) {
-      let best = null;
-      for (const w of pool) {
-        if (usedWords.has(w.word)) continue;
-        const word = w.word;
-        for (let i = 0; i < word.length; i++) {
-          const cells = byLetter[word[i]];
-          if (!cells) continue;
-          for (const idx of cells) {
-            const r = (idx / size) | 0, c = idx % size;
-            for (let d = 0; d < 2; d++) {
-              if (used[d][idx]) continue;
-              const x = fit(word, r - d * i, c - (1 - d) * i, d);
-              if (x > 0) {
-                const score = x * 4 + word.length * 0.6 + rng() * 3 + (w.r === 0 ? 0.5 : 0);
-                if (!best || score > best.score) best = { w, r: r - d * i, c: c - (1 - d) * i, d, x, score };
-              }
-            }
-          }
-        }
-      }
-      if (!best) break;
-      place(best.w, best.r, best.c, best.d);
-      crossings += best.x;
-    }
-    return { size, grid, placed, crossings, score: placed.length * 10 + crossings * 3 };
+    return { pre, dict };
   }
 
-  function finalize(res, meta) {
-    const { size, grid, placed } = res;
-    let minR = size, minC = size, maxR = -1, maxC = -1;
-    grid.forEach((g, i) => {
-      if (!g) return;
-      const r = (i / size) | 0, c = i % size;
-      minR = Math.min(minR, r); maxR = Math.max(maxR, r);
-      minC = Math.min(minC, c); maxC = Math.max(maxC, c);
-    });
-    const h = maxR - minR + 1, w = maxC - minC + 1;
-    const cells = new Array(w * h).fill('');
-    grid.forEach((g, i) => {
-      if (g) cells[(((i / size) | 0) - minR) * w + (i % size) - minC] = g;
-    });
-    const words = placed.map(p => ({
-      dir: p.d ? 'V' : 'H', r: p.r - minR, c: p.c - minC,
-      len: p.w.word.length, answer: p.w.word, clue: p.w.clue
-    }));
-    words.sort((a, b) => a.r - b.r || a.c - b.c);
-    const nums = {};
-    let n = 0;
-    for (const wd of words) {
-      const k = wd.r * w + wd.c;
-      if (!nums[k]) nums[k] = ++n;
-      wd.n = nums[k];
+  /* Une tentative de remplissage ; renvoie la grille (tableau) ou null. */
+  function fill(W, H, idx, rng, opts) {
+    const { pre, dict } = idx;
+    const N = W * H, g = new Array(N).fill('');
+    const used = new Set();
+    const fixedDef = (r, c) => (r === 0 && c % 2 === 0) || (c === 0 && r % 2 === 0);
+    for (let r = 0; r < H; r++) for (let c = 0; c < W; c++) if (fixedDef(r, c)) g[r * W + c] = DEF;
+    const at = (r, c) => (r < 0 || c < 0 || r >= H || c >= W ? DEF : g[r * W + c]);
+    const isL = (r, c) => { const v = at(r, c); return v !== '' && v !== DEF; };
+    const isD = (r, c) => at(r, c) === DEF;           // définition ou hors grille
+    const interior = (r, c) => r >= 1 && c >= 1;
+    const rightDef = (r, c) => c + 2 < W && isL(r, c + 1) && isL(r, c + 2);
+    const vOne = (r, c) => isD(r - 1, c) && (r + 1 >= H || fixedDef(r + 1, c)); // colonne d'une lettre déjà fermée
+    const ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const ALPHA_ARR = ALPHA.split('');
+    const LETTERS = ALPHA.length;
+    let nodes = 0, defs = 0;
+    const order = [];
+    for (let i = 0; i < N; i++) if (g[i] !== DEF) order.push(i);
+
+    function run(r, c, dr, dc) {
+      let s = '';
+      for (let rr = r - dr, cc = c - dc; isL(rr, cc); rr -= dr, cc -= dc) s = g[rr * W + cc] + s;
+      return s;
     }
-    words.sort((a, b) => (a.dir === b.dir ? a.n - b.n : a.dir === 'H' ? -1 : 1));
-    return Object.assign({ id: MC.uid(), w, h, cells, words, nums }, meta);
+    const fits = (p, extra) => {
+      const e = pre.get(p);
+      if (!e) return 0;
+      const n = p.length, m = ((1 << (extra + 1)) - 1) << n;
+      return e[0] & m ? e[1] : 0;
+    };
+    const okWord = p => dict.has(p) && !used.has(p);
+
+    function forcedLetter(r, c) {
+      if (interior(r - 1, c) && isD(r - 1, c) && !rightDef(r - 1, c)) return true;
+      if (interior(r - 2, c) && isD(r - 2, c) && !rightDef(r - 2, c) && isL(r - 1, c)) return true;
+      if (r >= H - 2) {
+        if (interior(r, c - 1) && isD(r, c - 1)) return true;
+        if (interior(r, c - 2) && isD(r, c - 2) && isL(r, c - 1)) return true;
+      }
+      // lettre isolée dans les deux sens
+      if (isL(r - 1, c) && isD(r - 2, c) && isD(r - 1, c - 1) && isD(r - 1, c + 1)) return true;
+      if (isL(r, c - 1) && isD(r, c - 2) && vOne(r, c - 1)) return true;
+      return false;
+    }
+
+    function step(k) {
+      if (k === order.length) return true;
+      if (++nodes > opts.budget) return false;
+      const i = order[k], r = (i / W) | 0, c = i % W;
+      const h = run(r, c, 0, 1), v = run(r, c, 1, 0);
+      const extraH = r === 0 ? 0 : W - 1 - c, extraV = c === 0 ? 0 : H - 1 - r;
+      const cands = [];
+
+      for (let a = 0; a < LETTERS; a++) {
+        const ch = ALPHA_ARR[a], ph = h + ch, pv = v + ch;
+        let sh = 1, sv = 1;
+        if (ph.length > 1) {
+          sh = fits(ph, extraH);
+          if (!sh || (extraH === 0 && !okWord(ph))) continue;
+        } else if (r !== 0) sh = 3;
+        if (pv.length > 1) {
+          sv = fits(pv, extraV);
+          if (!sv || (extraV === 0 && !okWord(pv))) continue;
+        } else if (c !== 0) sv = 3;
+        if (ph.length === 1 && pv.length === 1 && extraH === 0 && extraV === 0) continue;
+        if (extraH === 0 && extraV === 0 && ph.length > 1 && ph === pv) continue;
+        cands.push({ ch, s: Math.log(1 + sh) + Math.log(1 + sv) + rng() * opts.noise });
+      }
+      cands.sort((x, y) => y.s - x.s);
+
+      // Case-définition possible ?
+      let defOk = interior(r, c) && !(r >= H - 2 && c >= W - 2) && !forcedLetter(r, c);
+      if (defOk) {
+        if (h.length > 1 && !okWord(h)) defOk = false;
+        else if (v.length > 1 && !okWord(v)) defOk = false;
+        else if (h.length > 1 && h === v) defOk = false;
+        else if (isD(r - 1, c) && isD(r, c - 1) && isD(r - 1, c - 1)) defOk = false; // pas de bloc 2×2
+        else if (isD(r, c - 1) && isD(r, c - 2) && c >= 2) defOk = false;         // ni 3 définitions alignées
+        else if (isD(r - 1, c) && isD(r - 2, c) && r >= 2) defOk = false;
+      }
+      if (defOk) {
+        // Plus on vient de terminer de longs mots, plus une définition est bienvenue ; on vise une densité cible.
+        const done = (h.length > 1 ? 1 : 0) + (v.length > 1 ? 1 : 0);
+        const dens = defs / Math.max(1, k + 1);
+        let p = done === 2 ? 0.75 : done === 1 ? 0.45 : 0.08;
+        if (dens > opts.density) p *= 0.4;
+        const pos = rng() < p ? 0 : Math.min(cands.length, 1 + Math.floor(rng() * 4));
+        cands.splice(pos, 0, { ch: DEF });
+      }
+
+      const lim = Math.min(cands.length, opts.branch);
+      for (let a = 0; a < lim; a++) {
+        const ch = cands[a].ch, added = [];
+        if (ch === DEF) {
+          if (h.length > 1) { used.add(h); added.push(h); }
+          if (v.length > 1) { used.add(v); added.push(v); }
+          defs++;
+        } else {
+          const ph = h + ch, pv = v + ch;
+          if (extraH === 0 && ph.length > 1) { used.add(ph); added.push(ph); }
+          if (extraV === 0 && pv.length > 1) { used.add(pv); added.push(pv); }
+        }
+        g[i] = ch;
+        if (step(k + 1)) return true;
+        g[i] = '';
+        if (ch === DEF) defs--;
+        for (const w of added) used.delete(w);
+        if (nodes > opts.budget) return false;
+      }
+      return false;
+    }
+
+    return step(0) ? g : null;
+  }
+
+  /* Extrait les mots et rattache chaque définition à sa case. */
+  function finalize(W, H, g, dict, meta) {
+    const isL = (r, c) => r >= 0 && c >= 0 && r < H && c < W && g[r * W + c] !== DEF;
+    const words = [];
+    for (let r = 0; r < H; r++) {
+      for (let c = 0; c < W; c++) {
+        if (!isL(r, c)) continue;
+        for (const dir of ['H', 'V']) {
+          const dr = dir === 'V' ? 1 : 0, dc = 1 - dr;
+          if (isL(r - dr, c - dc)) continue; // pas un début de mot
+          let len = 0, s = '';
+          while (isL(r + dr * len, c + dc * len)) { s += g[(r + dr * len) * W + c + dc * len]; len++; }
+          if (len < 2) continue;
+          let at, arrow;
+          if (dir === 'H') {
+            if (c > 0) { at = r * W + c - 1; arrow = 'r'; } else { at = (r - 1) * W; arrow = 'dr'; }
+          } else if (r > 0) { at = (r - 1) * W + c; arrow = 'd'; } else { at = c - 1; arrow = 'rd'; }
+          const e = dict.get(s);
+          words.push({ dir, r, c, len, answer: s, clue: e.clue, at, arrow });
+        }
+      }
+    }
+    // Ordre de lecture : case-définition, puis flèche « vers la droite » avant « vers le bas ».
+    const top = a => (a === 'r' || a === 'rd' ? 0 : 1);
+    words.sort((a, b) => a.at - b.at || top(a.arrow) - top(b.arrow));
+    words.forEach((w, n) => { w.n = n + 1; });
+    const cells = g.map(x => (x === DEF ? '' : x));
+    return Object.assign({ id: MC.uid(), type: 'fleche', w: W, h: H, cells, words }, meta);
+  }
+
+  /* Score d'une grille remplie : on préfère les mots longs et les définitions « faites main ». */
+  function scoreGrid(W, H, g, dict) {
+    let score = 0, defs = 0;
+    const P = finalize(W, H, g, dict, {});
+    for (const w of P.words) {
+      score += w.len * 1.2 - (w.len === 2 ? 2 : 0);
+      if (dict.get(w.answer).r === 0) score += 1.5;
+    }
+    g.forEach(x => { if (x === DEF) defs++; });
+    return score - defs * 1.5;
   }
 
   /* opts: { level, seed, exclude?: Set de mots } -> puzzle */
@@ -121,18 +187,31 @@ window.MC = window.MC || {};
     const L = MC.LEVELS[opts.level] || MC.LEVELS.moyen;
     const seed = opts.seed >>> 0;
     const rng = MC.rng(seed);
-    const ex = opts.exclude || new Set(); // mots signalés par l'utilisateur
-    const fits = w => w.word.length >= 3 && w.word.length <= L.size && !ex.has(w.word);
-    const lists = {
-      share: L.curated == null ? 1 : L.curated,
-      curated: MC.DICO.filter(w => w.r === 0 && fits(w)),
-      wiki: MC.DICO.filter(w => w.r > 0 && w.r <= (L.maxRank == null ? Infinity : L.maxRank) && fits(w))
-    };
-    let best = null;
-    for (let a = 0; a < L.attempts; a++) {
-      const res = build(lists, L.size, L.target, rng);
-      if (!best || res.score > best.score) best = res;
+    const ex = opts.exclude || new Set();
+    const maxLen = Math.max(L.w, L.h);
+    const ok = w => w.word.length >= 2 && w.word.length <= maxLen && !ex.has(w.word);
+    const maxRank = L.maxRank == null ? Infinity : L.maxRank;
+
+    // Mots « faits main » toujours ; Wiktionnaire limité aux mots les plus courants selon le niveau.
+    // Les mots faits main sont présentés en premier : en cas de doublon, leur définition l'emporte.
+    const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || w.r <= maxRank));
+    const idx = buildIndex(base, maxLen);
+
+    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3 };
+    // Plusieurs grilles sont tentées ; on garde la meilleure parmi les premières réussies.
+    let best = null, bestScore = -Infinity, found = 0;
+    const t0 = Date.now();
+    for (let a = 0; a < 400 && found < (L.keep || 3); a++) {
+      if (found && Date.now() - t0 > 500) break;
+      const g = fill(L.w, L.h, idx, rng, params);
+      if (!g) continue;
+      found++;
+      const s = scoreGrid(L.w, L.h, g, idx.dict);
+      if (s > bestScore) { best = g; bestScore = s; }
     }
-    return finalize(best, { level: opts.level, seed, created: Date.now() });
+    if (!best) throw new Error('Impossible de générer la grille');
+    return finalize(L.w, L.h, best, idx.dict, { level: opts.level, seed, created: Date.now() });
   };
+  MC._fillGrid = fill;       // pour les tests
+  MC._buildIndex = buildIndex;
 })(window.MC);

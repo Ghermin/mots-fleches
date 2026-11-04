@@ -1,6 +1,6 @@
-# Mots croisés
+# Mots fléchés
 
-Application web de mots croisés en français, pensée pour la tablette. Pas de compte ni de serveur :
+Application web de mots fléchés en français, pensée pour la tablette. Pas de compte ni de serveur :
 tout tourne dans le navigateur, et les parties sont enregistrées sur l'appareil.
 
 ## Lancer
@@ -17,9 +17,11 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 
 ## Fonctions
 
-- Grilles générées à la demande (4 niveaux) + **grille du jour** (la même pour tout le monde).
-- Toucher une case pour la sélectionner, la toucher à nouveau pour changer de sens (horizontal / vertical).
-  Toucher une définition sélectionne le mot.
+- Grilles pleines générées à la demande (4 niveaux, de 8 × 8 à 12 × 14) + **grille du jour**
+  (la même pour tout le monde). Les définitions sont dans les cases, une flèche indique le sens du mot.
+- Toucher une case-définition sélectionne son mot (moitié haute ou basse quand elle en contient deux).
+  Toucher une lettre la sélectionne, la toucher à nouveau change de sens (horizontal / vertical).
+- La définition complète du mot en cours s'affiche dans le bandeau (et dans le panneau en paysage).
 - **Zoom** : pincer à deux doigts, glisser pour déplacer, boutons − / ajuster / +.
 - **Clavier** intégré (AZERTY, QWERTY ou alphabétique) et clavier physique
   (flèches, Tab, Espace pour changer de sens, Ctrl+Z / Ctrl+Y).
@@ -35,9 +37,10 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 
 ## Dictionnaire
 
-- `js/dico.js` : ~800 mots avec des définitions écrites à la main (prioritaires).
-  Mélange par niveau : Facile = 100 % de ces mots, puis environ 60 % (Moyen), 45 % (Difficile)
-  et 30 % (Expert), le reste venant du Wiktionnaire.
+- `js/dico.js` : ~870 mots avec des définitions écrites à la main (prioritaires), dont les mots
+  de 2 lettres indispensables aux mots fléchés (articles, notes, pronoms…).
+  Facile n'utilise que ces mots ; les autres niveaux y ajoutent le Wiktionnaire
+  (en pratique ~75 % de mots faits main en Moyen, ~60 % en Expert).
 - `js/dico-wiki.js` : plusieurs milliers de mots courants avec une définition tirée du
   [Wiktionnaire](https://fr.wiktionary.org) (licence CC BY-SA 4.0). Régénérer avec :
 
@@ -46,3 +49,12 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
   ```
 
   Plus le niveau est facile, plus les mots du Wiktionnaire sont limités aux mots courants.
+  Les définitions peu jouables (lettres d'alphabets étrangers, langues régionales, simple
+  contexte comme « Dans un télégramme ») sont écartées au chargement.
+
+## Générateur
+
+`js/generator.js` remplit la grille case par case (retour arrière + redémarrages) : la première
+ligne et la première colonne alternent définition / lettre, les autres cases-définitions sont
+placées au fil du remplissage. Chaque suite de 2 lettres ou plus doit être un mot du dictionnaire
+(sans doublon) ; chaque case-définition définit 1 ou 2 mots ; aucune lettre n'est isolée.

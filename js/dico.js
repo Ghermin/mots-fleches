@@ -3,6 +3,64 @@ window.MC = window.MC || {};
 (function (MC) {
   'use strict';
   const RAW = `
+AH|Cri de surprise
+AI|Paresseux d'Amérique
+AN|Douze mois
+AS|Carte maîtresse
+AU|Article contracté
+BU|Avalé
+CA|Pronom démonstratif familier
+CE|Démonstratif
+CI|Ici, en abrégé
+DE|Préposition
+DO|Première note de la gamme
+DU|Article contracté
+EH|Interjection d'appel
+EN|Préposition de lieu
+ES|Tu le suis
+ET|Conjonction de coordination
+EU|Participe d'avoir
+EX|Ancien conjoint
+FA|Note de musique
+GO|Jeu de pions japonais
+HA|Unité de surface agricole (abr.)
+IF|Conifère des cimetières
+IL|Pronom masculin
+JE|Pronom de la première personne
+KO|Hors de combat
+LA|Note ou article
+LE|Article défini masculin
+LU|Parcouru des yeux
+MA|Possessif féminin
+ME|Pronom personnel
+MI|Note de musique
+MU|Lettre grecque
+NE|Négation
+NI|Conjonction négative
+NU|Sans vêtement
+OH|Cri d'étonnement
+OK|D'accord
+ON|Pronom indéfini
+OR|Métal précieux
+OS|Pièce du squelette
+OU|Conjonction de choix
+PI|Il vaut environ 3,14
+PU|Participe de pouvoir
+RE|Note de musique
+RU|Petit ruisseau
+SA|Possessif féminin
+SE|Pronom réfléchi
+SI|Note ou condition
+SU|Connu
+TA|Possessif féminin
+TE|Pronom personnel
+TU|Pronom de la deuxième personne
+UN|Article indéfini
+US|Usages, coutumes
+UT|Ancien nom du do
+VA|Pars !
+VU|Aperçu
+XI|Lettre grecque
 AIR|On le respire
 AMI|Copain fidèle
 ANE|Cousin du cheval, réputé têtu
@@ -858,11 +916,19 @@ ZEBU|Bœuf à bosse
 
   // 2) Dictionnaire étendu tiré du Wiktionnaire (js/dico-wiki.js), si présent.
   //    r = rang de fréquence du mot en français : plus il est petit, plus le mot est courant.
+  //    On écarte les définitions peu jouables : lettres d'alphabets étrangers, langues
+  //    régionales, et définitions qui ne donnent qu'un contexte (« Dans un télégramme »).
+  const obscure = /lettre de l[’']alphabet|ancienne lettre|^Langue .*(parlée|papoue|du groupe)|^De \d/i;
+  const context = c => !/[,;:]/.test(c) && (
+    /^Dans (un|une|les|la|l[’']|plusieurs|certain)/.test(c) && c.split(' ').length <= 5 ||
+    /^En (parlant|composition|géométrie|droit|chapellerie|[A-Z])/.test(c) ||
+    /^(Au|Chez) /.test(c) && c.split(' ').length <= 3);
   if (MC.DICO_WIKI) {
     for (const l of MC.DICO_WIKI.split('\n')) {
       const p = l.split('|');
       if (p.length < 3) continue;
       const w = { word: p[0], r: +p[1] || 99999, clue: p.slice(2).join('|').trim() };
+      if (obscure.test(w.clue) || context(w.clue)) continue;
       if (keep(w)) MC.DICO.push(w);
     }
   }

@@ -7,12 +7,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Mots croisés">
-<meta name="description" content="Mots croisés en français, pensés pour la tablette : clavier, stylet, zoom, historique.">
+<meta name="apple-mobile-web-app-title" content="Mots fléchés">
+<meta name="description" content="Mots fléchés en français, pensés pour la tablette : clavier, stylet, zoom, historique.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>Mots croisés</title>
+<title>Mots fléchés</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -51,11 +51,11 @@
     <div class="home-wrap">
       <header class="home-head">
         <div class="logo" aria-hidden="true">
-          <span>M</span><span>O</span><span>T</span><span>S</span><i></i>
-          <i></i><span class="b">C</span><i></i><i></i><i></i>
+          <i class="d"></i><span>M</span><span>O</span><span>T</span><span>S</span>
+          <i class="d"></i><span class="b">F</span><i></i><i></i><i></i>
         </div>
         <div>
-          <h1>Mots croisés</h1>
+          <h1>Mots fléchés</h1>
           <p class="muted">Au doigt, au clavier ou au stylet.</p>
         </div>
       </header>
@@ -123,8 +123,9 @@
 
     <div class="side-col">
       <div id="clues">
-        <div class="clue-list"><h3>Horizontalement</h3><ol id="clues-H"></ol></div>
-        <div class="clue-list"><h3>Verticalement</h3><ol id="clues-V"></ol></div>
+        <div class="def-card" id="d-cur"><span class="d-head"></span><p></p></div>
+        <div class="def-card cross" id="d-cross"><span class="d-head"></span><p></p></div>
+        <p class="muted d-tip">Touchez une case-définition pour choisir son mot. Toucher deux fois une lettre change de sens.</p>
       </div>
       <div id="input-panel">
         <div class="tabs">
@@ -185,6 +186,7 @@
 
 <div id="modal" class="modal hidden"><div class="modal-box" id="modal-box"></div></div>
 <div id="toast"></div>
+<div id="busy" class="hidden"><div><span class="spin"></span><p>Création de la grille…</p></div></div>
 
 <script src="js/util.js"></script>
 <script src="js/dico-wiki.js"></script>
