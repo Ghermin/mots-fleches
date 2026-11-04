@@ -90,7 +90,7 @@ def clean(line):
     s = re.sub(r'\(\s*\)', '', s)
     s = re.sub(r'\s+', ' ', s).strip(' .:;,—-')
     s = re.split(r' ; | — | : |\. ', s)[0].strip(' .,')
-    if len(s) > 60:  # une définition de mots croisés doit rester courte
+    if len(s) > 60:  # une définition de mots fléchés doit rester courte
         cut = s.find(',', 12)
         s = s[:cut] if 0 < cut <= 60 else s
     if len(s) > 70:
