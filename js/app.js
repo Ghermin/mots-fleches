@@ -247,10 +247,13 @@
      Exprimée en fraction de --cell, elle suit ensuite le zoom. */
   function fitDefs() {
     if (!V.cell) return;
+    clearTimeout(defTimer);
+    defCell = V.cell;
     defEl.forEach(q => {
       if (!q) return;
       const t = q.firstChild;
-      const fits = () => t.offsetHeight <= q.clientHeight && t.scrollWidth <= t.clientWidth + 1;
+      // Petite marge de sécurité : l'arrondi des polices varie un peu selon le zoom.
+      const fits = () => t.offsetHeight <= q.clientHeight * 0.9 && t.scrollWidth <= t.clientWidth;
       let lo = 0.07, hi = 0.205;
       q.classList.remove('brk');
       for (let k = 0; k < 7; k++) {
@@ -726,22 +729,30 @@
   /* =================== Zoom & déplacement =================== */
   const vp = $('#viewport'), board = $('#board');
   const V = { cell: 40, tx: 0, ty: 0, fit: 40, isFit: true };
-  const MAXC = 130;
+  const MAXC = 160;
+  const ZOOM_W = 62, FIT_M = 8; // colonne des boutons de zoom, marge autour de la grille
   const minCell = () => Math.max(12, Math.min(V.fit * 0.7, 26));
 
+  let defTimer = 0, defCell = 0;
   function applyView() {
     board.style.setProperty('--cell', V.cell + 'px');
     board.style.transform = `translate3d(${V.tx}px, ${V.ty}px, 0)`;
+    // Après un zoom, on recalcule la taille des définitions (l'arrondi des polices varie).
+    if (Math.abs(V.cell - defCell) > 0.5) {
+      clearTimeout(defTimer);
+      defTimer = setTimeout(fitDefs, 220);
+    }
   }
   function fitView() {
     const P = S.P;
     if (!P) return;
     const vw = vp.clientWidth, vh = vp.clientHeight;
     if (!vw || !vh) return;
-    const c = MC.clamp(Math.floor(Math.min((vw - 28) / P.w, (vh - 80) / P.h)), 14, 110);
+    // Les boutons de zoom sont en colonne à droite : la grille prend toute la hauteur.
+    const c = MC.clamp(Math.floor(Math.min((vw - 2 * FIT_M - ZOOM_W) / P.w, (vh - 2 * FIT_M) / P.h)), 14, 130);
     V.fit = V.cell = c;
-    V.tx = Math.round((vw - P.w * c) / 2);
-    V.ty = Math.round(Math.max(12, (vh - 56 - P.h * c) / 2));
+    V.tx = Math.round(Math.max(FIT_M, (vw - ZOOM_W - P.w * c) / 2));
+    V.ty = Math.round((vh - P.h * c) / 2);
     V.isFit = true;
     applyView();
   }
@@ -749,8 +760,8 @@
     const P = S.P;
     if (!P) return;
     const vw = vp.clientWidth, vh = vp.clientHeight, bw = P.w * V.cell, bh = P.h * V.cell, m = 40;
-    V.tx = bw + 2 * m <= vw ? MC.clamp(V.tx, m, vw - bw - m) : MC.clamp(V.tx, vw - bw - m, m);
-    V.ty = bh + 2 * m + 56 <= vh ? MC.clamp(V.ty, m / 2, vh - bh - m - 56) : MC.clamp(V.ty, vh - bh - m - 56, m);
+    V.tx = bw + 2 * m + ZOOM_W <= vw ? MC.clamp(V.tx, m, vw - bw - m - ZOOM_W) : MC.clamp(V.tx, vw - bw - m - ZOOM_W, m);
+    V.ty = bh + 2 * m <= vh ? MC.clamp(V.ty, m / 2, vh - bh - m / 2) : MC.clamp(V.ty, vh - bh - m, m);
   }
   function zoomAt(p, f, smooth) {
     const nc = MC.clamp(V.cell * f, minCell(), MAXC), r = nc / V.cell;
@@ -772,7 +783,7 @@
   function ensureVisible() {
     const P = S.P;
     if (!P || S.sel.idx < 0) return;
-    const vw = vp.clientWidth, vh = vp.clientHeight - 56, cell = V.cell, m = Math.min(28, cell * 0.6);
+    const vw = vp.clientWidth - ZOOM_W, vh = vp.clientHeight, cell = V.cell, m = Math.min(28, cell * 0.6);
     if (!vw || vh <= 0) return;
     const sr = (S.sel.idx / P.w) | 0, sc = S.sel.idx % P.w, wd = curWord();
     let r0 = sr, c0 = sc, r1 = sr, c1 = sc;

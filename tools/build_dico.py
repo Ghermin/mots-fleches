@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / 'tools' / '.cache'
 FREQ_URL = 'https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/fr/fr_50k.txt'
 API = 'https://fr.wiktionary.org/w/api.php'
-UA = 'MotsCroisesBuilder/1.0 (application personnelle de mots croises)'
+UA = 'MotsFlechesBuilder/1.0 (application personnelle de mots fleches)'
 
 DELAY = 4  # secondes entre deux requêtes (le Wiktionnaire limite le débit)
 POS_OK = {'nom', 'adjectif', 'verbe', 'adverbe'}

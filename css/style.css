@@ -176,12 +176,13 @@ body.bigclues #b-clue { font-size: 20px; }
 .cell.def { background: var(--def-bg); color: var(--def-ink); display: flex; flex-direction: column; cursor: pointer; }
 .cell.def .q {
   flex: 1 1 0; min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;
-  padding: 0 calc(var(--cell) * .04); font-size: calc(var(--cell) * .16);
+  padding: 0 calc(var(--cell) * .06); font-size: calc(var(--cell) * .16);
 }
 .cell.def .q + .q { border-top: 1px solid var(--line); }
 .cell.def .q span { display: block; width: 100%; text-align: center; line-height: 1.06; overflow-wrap: normal; hyphens: manual; }
 .cell.def .q.brk span { overflow-wrap: anywhere; hyphens: auto; }
-.cell.def .q.active { background: var(--def-on); font-weight: 600; }
+/* Sélection : seulement la couleur, jamais la graisse (le texte garderait sinon une autre taille). */
+.cell.def .q.active { background: var(--def-on); }
 .cell.def .q.cross { background: var(--cross-bg); }
 .cell.def .q.filled:not(.active) { color: var(--muted); }
 .cell.def .q.reported span { font-style: italic; text-decoration: line-through; text-decoration-color: var(--wrong); }
@@ -206,12 +207,12 @@ body.bigclues #b-clue { font-size: 20px; }
   border-width: 0 calc(var(--cell) * .24) calc(var(--cell) * .24) 0; border-color: transparent var(--reveal) transparent transparent;
 }
 #board.done .cell.on { background: var(--done-bg); }
-#board.done .cell.def .q { background: transparent; font-weight: 400; color: var(--def-ink); }
+#board.done .cell.def .q { background: transparent; color: var(--def-ink); }
 #board.paused { filter: blur(14px); }
 #ink { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 
 .zoom {
-  position: absolute; right: 10px; bottom: 10px; display: flex; gap: 2px; padding: 3px;
+  position: absolute; right: 8px; bottom: 8px; display: flex; flex-direction: column; gap: 2px; padding: 3px;
   background: var(--panel); border-radius: 14px; box-shadow: var(--shadow);
 }
 .zoom .icon-btn { width: 44px; height: 44px; }
@@ -274,7 +275,7 @@ body.bigclues #b-clue { font-size: 20px; }
   #kbd, #penpanel { max-width: 760px; width: 100%; margin: 0 auto; }
   .key { max-width: 74px; height: 56px; }
   .key.wide { max-width: 120px; }
-  #pad { height: 170px; }
+  #pad { height: 130px; }
 }
 @media (max-width: 560px) {
   .tools .icon-btn { width: 42px; }
@@ -381,3 +382,12 @@ body.bigclues #b-clue { font-size: 20px; }
 .train-letter { font-size: 64px; font-weight: 700; text-align: center; line-height: 1; margin: 6px 0 10px; color: var(--accent); }
 #train-pad { width: 100%; height: 240px; border-radius: 14px; background: var(--cell-bg); box-shadow: inset 0 0 0 2px var(--border); touch-action: none; display: block; }
 .train-res { text-align: center; min-height: 24px; margin-top: 8px; color: var(--muted); }
+
+/* ---------- Bored Dev Playground (kit css/playground.css) ---------- */
+:root {
+  --pg-bg: var(--bg); --pg-surface: var(--panel); --pg-surface-2: var(--key-act);
+  --pg-text: var(--ink); --pg-muted: var(--muted); --pg-line: var(--border);
+  --pg-accent: var(--accent); --pg-accent-2: var(--sel-bg);
+}
+.pg-strip__in { width: min(688px, 100% - 32px); }
+.home-foot { margin-top: 18px; text-align: center; }
