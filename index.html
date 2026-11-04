@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#24477a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mots croisés">
+<meta name="description" content="Mots croisés en français, pensés pour la tablette : clavier, stylet, zoom, historique.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Mots croisés</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/></symbol>
+  <symbol id="i-redo" viewBox="0 0 24 24"><path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 000 11H13"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l4.5-1L19 8.5 15.5 5 5 15.5z"/><path d="M13.5 7l3.5 3.5"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.8 10.6c.6.6.8 1.4.8 2.4h6c0-1 .2-1.8.8-2.4A6 6 0 0012 3z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-kbd" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M3 21c3-1 5-3 7-6l7-7-3-3-7 7c-3 2-5 4-4 9z"/><path d="M14 5l5 5"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M5 9l7 7 7-7"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M9 6H20v12H9l-6-6z"/><path d="M12 10l4 4M16 10l-4 4"/></symbol>
+  <symbol id="i-eraser" viewBox="0 0 24 24"><path d="M8 20h12"/><path d="M4.5 15.5l9-9a2 2 0 012.8 0l2.2 2.2a2 2 0 010 2.8L12 18H7z"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M5 12h14M15 8l4 4-4 4"/><path d="M12 5v14M8 15l4 4 4-4" opacity=".45"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+  <symbol id="i-restart" viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M5.5 15a7 7 0 101.6-7.3L4 10"/></symbol>
+</svg>
+
+<!-- ======================= ACCUEIL ======================= -->
+<section id="screen-home" class="screen active">
+  <div class="scroll">
+    <div class="home-wrap">
+      <header class="home-head">
+        <div class="logo" aria-hidden="true">
+          <span>M</span><span>O</span><span>T</span><span>S</span><i></i>
+          <i></i><span class="b">C</span><i></i><i></i><i></i>
+        </div>
+        <div>
+          <h1>Mots croisés</h1>
+          <p class="muted">Au doigt, au clavier ou au stylet.</p>
+        </div>
+      </header>
+
+      <button id="btn-resume" class="card resume hidden">
+        <svg class="ic"><use href="#i-play"/></svg>
+        <span><b>Reprendre la partie</b><small id="resume-info"></small></span>
+      </button>
+
+      <button id="btn-daily" class="card daily">
+        <svg class="ic"><use href="#i-cal"/></svg>
+        <span><b>Grille du jour</b><small id="daily-info"></small></span>
+      </button>
+
+      <div class="card newgame">
+        <h2>Nouvelle grille</h2>
+        <div class="levels" id="levels"></div>
+      </div>
+
+      <div class="home-row">
+        <button id="btn-history" class="card small"><svg class="ic"><use href="#i-list"/></svg><b>Historique &amp; stats</b></button>
+        <button id="btn-settings" class="card small"><svg class="ic"><use href="#i-gear"/></svg><b>Réglages</b></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= JEU ======================= -->
+<section id="screen-game" class="screen">
+  <header class="topbar">
+    <button class="icon-btn" id="g-home" aria-label="Accueil"><svg class="ic"><use href="#i-home"/></svg></button>
+    <div class="g-title">
+      <b id="g-level"></b>
+      <span class="g-meta"><svg class="ic"><use href="#i-clock"/></svg><span id="g-timer">0:00</span> · <span id="g-progress">0 %</span></span>
+    </div>
+    <div class="tools">
+      <button class="icon-btn" id="g-undo" aria-label="Annuler"><svg class="ic"><use href="#i-undo"/></svg></button>
+      <button class="icon-btn" id="g-redo" aria-label="Rétablir"><svg class="ic"><use href="#i-redo"/></svg></button>
+      <button class="icon-btn" id="g-pencil" aria-label="Mode crayon (lettres incertaines)"><svg class="ic"><use href="#i-pencil"/></svg></button>
+      <button class="icon-btn" id="g-help" aria-label="Aide"><svg class="ic"><use href="#i-bulb"/></svg></button>
+      <button class="icon-btn" id="g-pause" aria-label="Pause"><svg class="ic"><use href="#i-pause"/></svg></button>
+    </div>
+  </header>
+
+  <div class="game-body">
+    <div class="board-col">
+      <div id="banner">
+        <button class="icon-btn" id="b-prev" aria-label="Définition précédente"><svg class="ic"><use href="#i-left"/></svg></button>
+        <button id="b-text" aria-label="Changer de sens"><span id="b-num"></span><span id="b-clue"></span></button>
+        <button class="icon-btn" id="b-next" aria-label="Définition suivante"><svg class="ic"><use href="#i-right"/></svg></button>
+      </div>
+      <div id="viewport">
+        <div id="board"></div>
+        <canvas id="ink"></canvas>
+        <div class="zoom">
+          <button class="icon-btn" id="z-out" aria-label="Dézoomer"><svg class="ic"><use href="#i-minus"/></svg></button>
+          <button class="icon-btn" id="z-fit" aria-label="Ajuster"><svg class="ic"><use href="#i-fit"/></svg></button>
+          <button class="icon-btn" id="z-in" aria-label="Zoomer"><svg class="ic"><use href="#i-plus"/></svg></button>
+        </div>
+        <div id="alts" class="alts hidden"></div>
+        <div id="pause-overlay" class="hidden"><div><svg class="ic"><use href="#i-play"/></svg><p>Pause — touchez pour reprendre</p></div></div>
+      </div>
+    </div>
+
+    <div class="side-col">
+      <div id="clues">
+        <div class="clue-list"><h3>Horizontalement</h3><ol id="clues-H"></ol></div>
+        <div class="clue-list"><h3>Verticalement</h3><ol id="clues-V"></ol></div>
+      </div>
+      <div id="input-panel">
+        <div class="tabs">
+          <button data-mode="kbd"><svg class="ic"><use href="#i-kbd"/></svg>Clavier</button>
+          <button data-mode="pen"><svg class="ic"><use href="#i-pen"/></svg>Stylo</button>
+          <button data-mode="hide" aria-label="Masquer le panneau"><svg class="ic"><use href="#i-down"/></svg></button>
+        </div>
+        <div id="kbd"></div>
+        <div id="penpanel" class="hidden">
+          <div class="alts inline" id="pen-alts"><span class="muted">Écrivez une lettre dans le cadre</span></div>
+          <canvas id="pad"></canvas>
+          <div class="krow" id="pen-keys"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="help-menu" class="popover hidden">
+    <div class="pop-sec">Vérifier</div>
+    <div class="pop-row"><button data-act="check:cell">Case</button><button data-act="check:word">Mot</button><button data-act="check:grid">Grille</button></div>
+    <div class="pop-sec">Révéler</div>
+    <div class="pop-row"><button data-act="reveal:cell">Case</button><button data-act="reveal:word">Mot</button><button data-act="reveal:grid">Grille</button></div>
+    <div class="pop-sec">Effacer</div>
+    <div class="pop-row"><button data-act="clear:cell">Case</button><button data-act="clear:word">Mot</button><button data-act="clear:grid">Grille</button></div>
+  </div>
+</section>
+
+<!-- ======================= HISTORIQUE ======================= -->
+<section id="screen-history" class="screen">
+  <header class="topbar">
+    <button class="icon-btn back" aria-label="Retour"><svg class="ic"><use href="#i-left"/></svg></button>
+    <div class="g-title"><b>Historique &amp; statistiques</b></div>
+  </header>
+  <div class="scroll">
+    <div class="page">
+      <div id="stats" class="stats"></div>
+      <div class="filters" id="hist-filters">
+        <button data-f="all" class="on">Toutes</button>
+        <button data-f="playing">En cours</button>
+        <button data-f="done">Terminées</button>
+      </div>
+      <div id="hist-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RÉGLAGES ======================= -->
+<section id="screen-settings" class="screen">
+  <header class="topbar">
+    <button class="icon-btn back" aria-label="Retour"><svg class="ic"><use href="#i-left"/></svg></button>
+    <div class="g-title"><b>Réglages</b></div>
+  </header>
+  <div class="scroll">
+    <div class="page" id="settings-form"></div>
+  </div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+</section>
+
+<div id="modal" class="modal hidden"><div class="modal-box" id="modal-box"></div></div>
+<div id="toast"></div>
+
+<script src="js/util.js"></script>
+<script src="js/dico-wiki.js"></script>
+<script src="js/dico.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/recognizer.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
