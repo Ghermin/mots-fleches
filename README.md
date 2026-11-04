@@ -26,6 +26,8 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 - **Stylet** : écrire directement dans une case de la grille, ou dans le cadre de l'onglet *Stylo*.
   Si une lettre est mal lue, toucher la bonne proposition : l'app apprend votre écriture.
 - Annuler / rétablir sans limite, effacer une case, un mot ou la grille.
+- **Signaler une définition ratée** (drapeau ⚑ à côté de la définition) : le mot est retiré des
+  prochaines grilles. La liste se retrouve dans les réglages (rétablir, copier).
 - **Mode crayon** pour les lettres incertaines (affichées en gris).
 - Aide : vérifier ou révéler une case, un mot ou la grille.
 - Chrono, pause, historique des parties, statistiques et records par niveau, série de grilles du jour.

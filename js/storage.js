@@ -2,7 +2,7 @@
 window.MC = window.MC || {};
 (function (MC) {
   'use strict';
-  const K = { games: 'mc.v1.games', settings: 'mc.v1.settings', ink: 'mc.v1.ink' };
+  const K = { games: 'mc.v1.games', settings: 'mc.v1.settings', ink: 'mc.v1.ink', banned: 'mc.v1.banned' };
   const MAX_GAMES = 300;
 
   function read(k, def) {
@@ -61,11 +61,16 @@ window.MC = window.MC || {};
     deleteGame(id) { write(K.games, this.games().filter(g => g.id !== id)); },
     clearGames() { write(K.games, []); },
 
+    /* Définitions signalées : [{ w: MOT, c: définition, t: date }] — ces mots sont exclus des grilles. */
+    banned() { return read(K.banned, []); },
+    saveBanned(list) { write(K.banned, list); },
+    bannedSet() { return new Set(this.banned().map(b => b.w)); },
+
     ink() { return read(K.ink, []); },
     saveInk(list) { write(K.ink, list); },
 
     exportAll() {
-      return { app: 'mots-croises', version: 1, exported: Date.now(), games: this.games(), settings: this.loadSettings(), ink: this.ink() };
+      return { app: 'mots-croises', version: 1, exported: Date.now(), games: this.games(), settings: this.loadSettings(), ink: this.ink(), banned: this.banned() };
     },
     importAll(data) {
       if (!data || data.app !== 'mots-croises' || !Array.isArray(data.games)) throw new Error('Fichier non reconnu');
@@ -75,6 +80,10 @@ window.MC = window.MC || {};
       merged.sort((a, b) => b.updated - a.updated);
       write(K.games, merged.slice(0, MAX_GAMES));
       if (Array.isArray(data.ink) && data.ink.length) write(K.ink, this.ink().concat(data.ink));
+      if (Array.isArray(data.banned)) {
+        const have = this.bannedSet();
+        write(K.banned, this.banned().concat(data.banned.filter(b => b && b.w && !have.has(b.w))));
+      }
       return data.games.length;
     }
   };
