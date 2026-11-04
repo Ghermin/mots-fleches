@@ -33,7 +33,9 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 
 ## Dictionnaire
 
-- `js/dico.js` : ~640 mots avec des définitions écrites à la main (prioritaires).
+- `js/dico.js` : ~800 mots avec des définitions écrites à la main (prioritaires).
+  Mélange par niveau : Facile = 100 % de ces mots, puis environ 60 % (Moyen), 45 % (Difficile)
+  et 30 % (Expert), le reste venant du Wiktionnaire.
 - `js/dico-wiki.js` : plusieurs milliers de mots courants avec une définition tirée du
   [Wiktionnaire](https://fr.wiktionary.org) (licence CC BY-SA 4.0). Régénérer avec :
 
@@ -41,4 +43,4 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
   python tools/build_dico.py --top 20000
   ```
 
-  Les niveaux faciles n'utilisent que les mots les plus fréquents du français.
+  Plus le niveau est facile, plus les mots du Wiktionnaire sont limités aux mots courants.

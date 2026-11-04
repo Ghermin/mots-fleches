@@ -646,6 +646,201 @@ GRENOUILLE|Elle coasse
 CITROUILLE|Courge d'Halloween
 CHAMPIGNON|Cèpe ou girolle
 ASTRONAUTE|Voyageur de l'espace
+AMIE|Copine fidèle
+ARTS|Beaux-…
+AVEU|Reconnaissance d'une faute
+BAIE|Petit fruit, ou grande fenêtre
+BALAI|Il sert à ramasser la poussière
+BARQUE|Petit bateau à rames
+BIEN|Contraire de mal
+BOEUF|Il tire la charrue
+BOTTE|Chaussure de pluie
+BRISE|Vent léger
+BROSSE|Pour les cheveux ou les dents
+BRUIT|Son désagréable
+CADEAU|Il se trouve sous le sapin
+CALME|Tranquille
+CANAL|Voie d'eau creusée par l'homme
+CANOE|Embarcation légère à pagaie
+CARRE|Figure à quatre côtés égaux
+CASQUE|Il protège la tête
+CHAMP|Terre cultivée
+CHANT|Mélodie de la voix
+CHAUD|Contraire de froid
+CHEMINEE|Conduit de fumée
+CHENE|Arbre aux glands
+CHOU|Légume de la choucroute
+CLAIR|Lumineux, limpide
+COQ|Il chante au lever du jour
+CORNE|Pointe sur la tête du taureau
+COTE|Bord de mer, ou os de la cage thoracique
+COUDE|Articulation du bras
+COURSE|Compétition de vitesse
+CRUCHE|Récipient à anse, ou personne sotte
+CUIR|Peau tannée
+CYGNE|Oiseau blanc au long cou
+DECOR|Toile de fond du théâtre
+DINER|Repas du soir
+DOIGT|On en compte dix aux mains
+DOUZE|Une douzaine
+DRAP|Linge du lit
+EGOUT|Canalisation sous la ville
+ELEVE|Il apprend en classe
+EPAULE|Haut du bras
+ERREUR|Faute, méprise
+ESPOIR|Attente confiante
+ETAGE|Niveau d'un immeuble
+ETE|Saison chaude
+EVIER|On y fait la vaisselle
+FARCE|Blague, ou hachis de viande
+FAUX|Contraire de vrai
+FENTE|Ouverture étroite
+FER|Métal, ou outil à repasser
+FEUILLE|Elle tombe en automne
+FIGUE|Fruit séché de Méditerranée
+FLAMME|Langue de feu
+FLOCON|Il tombe en hiver
+FOLIE|Démence
+FOULE|Multitude de gens
+FRERE|Fils des mêmes parents
+FUMEE|Elle sort de la cheminée
+GALET|Caillou poli par la mer
+GARE|Station de train
+GENOU|On le plie pour s'agenouiller
+GLOBE|Sphère, ou planète
+GORGE|Elle avale, ou vallée étroite
+GRUE|Oiseau échassier, ou engin de chantier
+GUEPE|Elle pique en été
+HACHE|Outil du bûcheron
+HALLE|Marché couvert
+HARPE|Instrument à cordes pincées
+HOTE|Il reçoit ses invités
+HUILE|Olive ou tournesol
+IGLOO|Maison de glace
+INDICE|Piste pour l'enquêteur
+JAMBE|Membre inférieur
+JOUE|Partie du visage
+JUPE|Vêtement féminin sans jambes
+LAINE|Fil du tricot
+LANGUE|Elle goûte, ou elle se parle
+LARME|Goutte de chagrin
+LEGER|Contraire de lourd
+LENT|Contraire de rapide
+LIERRE|Plante grimpante
+LIMON|Dépôt de rivière
+LINGE|Draps et serviettes
+LIVRE|Ouvrage, ou demi-kilo
+LOGE|Petite pièce du concierge ou de l'artiste
+LOURD|Contraire de léger
+LUTIN|Petit génie farceur
+MAGASIN|Boutique
+MALLE|Grand coffre de voyage
+MARE|Petite étendue d'eau
+MARRON|Fruit du marronnier, ou couleur
+MASQUE|Il cache le visage
+MATIN|Début de journée
+MEDAILLE|Récompense du vainqueur
+MERE|Maman
+MIETTE|Petit morceau de pain
+MOTO|Deux-roues motorisé
+MOUSSE|Végétal des sous-bois, ou dessert léger
+MOUTARDE|Condiment de Dijon
+NAPPE|Linge de table
+NATURE|Ensemble des êtres et des choses
+NEVEU|Fils du frère ou de la sœur
+NIECE|Fille du frère ou de la sœur
+NOEUD|Il attache la corde
+NOIX|Fruit du noyer
+NOYAU|Cœur dur de la cerise
+OCRE|Terre jaune
+ODEUR|Parfum ou puanteur
+OGRE|Mangeur d'enfants des contes
+ONGLE|On le coupe au bout du doigt
+ORDRE|Commandement, ou rangement
+OREILLE|Organe de l'ouïe
+ORGUE|Instrument de l'église
+OSEILLE|Plante acide, ou argent familier
+OTARIE|Phoque à oreilles
+OUTIL|Marteau ou tournevis
+PAILLE|Tige séchée, ou tube pour boire
+PANIER|Corbeille à anse
+PAON|Oiseau qui fait la roue
+PARAPET|Petit mur de protection
+PATE|Elle devient pain ou gâteau
+PATTE|Jambe d'animal
+PAVE|Bloc de pierre de la rue
+PELLE|Outil pour creuser
+PENTE|Inclinaison du terrain
+PERLE|Bille de collier
+PIEGE|Il attrape les imprudents
+PILE|Batterie, ou côté de la pièce
+PLUME|Elle sert à écrire autrefois
+POCHE|On y met ses clés
+POELE|Ustensile pour frire
+POING|Main fermée
+POIVRE|Épice noire
+PORTAIL|Grande porte du jardin
+POT|Pour la confiture
+POUDRE|Fine poussière
+PRUNE|Fruit violet à noyau
+PUITS|On y puise l'eau
+QUAI|On y attend le train
+RACINE|Partie souterraine de la plante
+RADEAU|Embarcation de fortune
+RAME|Elle fait avancer la barque
+RAYURE|Trait sur le zèbre
+RECIT|Histoire racontée
+RENNE|Il tire le traîneau du père Noël
+RIDEAU|Il se ferme à la fenêtre
+ROSEAU|Plante des marais qui plie
+ROUTE|Voie pour les voitures
+RUCHE|Maison des abeilles
+SABOT|Chaussure de bois, ou pied du cheval
+SAULE|Arbre pleureur
+SCIE|Outil à dents
+SEAU|Récipient à anse pour l'eau
+SECRET|Ce qu'on ne doit pas dire
+SEMAINE|Sept jours
+SIESTE|Repos après le déjeuner
+SINGE|Primate farceur
+SOEUR|Fille des mêmes parents
+SOMME|Petit sommeil, ou total
+SONNETTE|On l'actionne à la porte
+SOUFFLE|Air expiré
+SOURCE|Naissance d'un ruisseau
+SUCRE|Il sucre le café
+TACHE|Salissure
+TAILLE|Hauteur, ou ceinture
+TAMIS|Il sert à filtrer la farine
+TAPIS|Il couvre le parquet
+TASSE|Récipient à anse
+TENTE|Abri du campeur
+TIGE|Elle porte la feuille
+TIMBRE|Il s'affranchit sur l'enveloppe
+TOILE|Œuvre du peintre, ou tissu
+TONNEAU|Barrique
+TORCHE|Lampe de poche
+TOUPIE|Jouet qui tourne
+TRAIT|Ligne tracée
+TRESSE|Coiffure en natte
+TRIBU|Groupe de familles
+TROTTOIR|Il borde la rue
+TUILE|Elle couvre le toit
+VAISSEAU|Navire, ou veine
+VALLEE|Creux entre deux montagnes
+VAPEUR|Eau en gaz
+VEAU|Petit de la vache
+VELOURS|Tissu doux à côtes
+VERGER|Jardin d'arbres fruitiers
+VESTE|Vêtement à manches
+VIANDE|Bœuf ou porc
+VIDE|Contraire de plein
+VIGNE|Elle donne le raisin
+VITRE|Carreau de fenêtre
+VITESSE|Rapidité
+VOISIN|Il habite à côté
+VOLET|Il ferme la fenêtre
+ZEBU|Bœuf à bosse
 `;
   const seen = new Set();
   const keep = w => /^[A-Z]{2,}$/.test(w.word) && w.clue && !seen.has(w.word) && seen.add(w.word);

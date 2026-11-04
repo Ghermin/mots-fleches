@@ -65,10 +65,11 @@ window.MC = window.MC || {};
   MC.clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
   MC.LEVELS = {
-    // maxRank : n'utilise que les mots parmi les N plus fréquents du français.
-    facile:    { label: 'Facile',    size: 9,  target: 9,  attempts: 24, maxRank: 3000 },
-    moyen:     { label: 'Moyen',     size: 13, target: 16, attempts: 16, maxRank: 8000 },
-    difficile: { label: 'Difficile', size: 15, target: 23, attempts: 12, maxRank: 14000 },
-    expert:    { label: 'Expert',    size: 17, target: 32, attempts: 10, maxRank: Infinity }
+    // curated : part des mots aux définitions écrites à la main (le reste vient du Wiktionnaire).
+    // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français.
+    facile:    { label: 'Facile',    size: 9,  target: 9,  attempts: 24, curated: 1,    maxRank: 0 },
+    moyen:     { label: 'Moyen',     size: 13, target: 16, attempts: 16, curated: 0.75, maxRank: 8000 },
+    difficile: { label: 'Difficile', size: 15, target: 23, attempts: 12, curated: 0.35, maxRank: 14000 },
+    expert:    { label: 'Expert',    size: 17, target: 32, attempts: 10, curated: 0.15, maxRank: Infinity }
   };
 })(window.MC);

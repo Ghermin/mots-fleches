@@ -125,7 +125,7 @@ def definition(word, wikitext):
             d = clean(line[2:])
             if len(d) < 6 or SKIP_START.search(d) or re.search(r'sens précédent|ci-dessus|\(genre ', d):
                 continue
-            nd, nw = norm(d), norm(word)
+            nd, nw = re.sub(r'[^a-z]', '', norm(d)), norm(word)
             stem = nw[:max(4, -(-len(nw) * 6 // 10))]  # racine : 60 % du mot
             if nw in nd or (len(nw) >= 5 and stem in nd):
                 continue  # la définition donnerait la réponse
