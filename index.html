@@ -11,8 +11,10 @@
 <meta name="description" content="Mots fléchés en français, pensés pour la tablette : clavier, stylet, zoom, historique.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <title>Mots fléchés</title>
+<link rel="stylesheet" href="css/playground.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,6 +50,19 @@
 <!-- ======================= ACCUEIL ======================= -->
 <section id="screen-home" class="screen active">
   <div class="scroll">
+    <nav class="pg-strip" aria-label="Bored Dev Playground">
+      <div class="pg-strip__in">
+        <a class="pg-strip__home" href="https://ghermin.github.io/">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pg-logo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#pg-logo)"/><path d="M14 27h14M36 27h14" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><path d="M16 27a5 5 0 0 0 10 0zM38 27a5 5 0 0 0 10 0z" fill="#fff"/><rect x="24" y="41" width="16" height="4.5" rx="2.25" fill="#fff"/></svg>
+          <b>bored dev playground</b><span class="pg-strip__crumb">/ mots-fleches</span>
+        </a>
+        <a class="pg-strip__all" href="https://ghermin.github.io/">tous les projets <span aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+    <script>
+      // Lien vers le Bored Dev Playground : seulement dans le navigateur, pas dans la PWA installée
+      if (matchMedia('(display-mode: standalone)').matches || navigator.standalone) document.currentScript.previousElementSibling.hidden = true;
+    </script>
     <div class="home-wrap">
       <header class="home-head">
         <div class="logo" aria-hidden="true">
@@ -79,6 +94,8 @@
         <button id="btn-history" class="card small"><svg class="ic"><use href="#i-list"/></svg><b>Historique &amp; stats</b></button>
         <button id="btn-settings" class="card small"><svg class="ic"><use href="#i-gear"/></svg><b>Réglages</b></button>
       </div>
+
+      <footer class="home-foot"><a class="pg-sig" href="https://ghermin.github.io/">un projet du bored dev playground</a></footer>
     </div>
   </div>
 </section>
