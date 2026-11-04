@@ -1,7 +1,7 @@
 {
-  "name": "Mots croisés",
-  "short_name": "Mots croisés",
-  "description": "Mots croisés en français pour tablette : clavier, stylet, zoom, historique.",
+  "name": "Mots fléchés",
+  "short_name": "Mots fléchés",
+  "description": "Mots fléchés en français pour tablette : clavier, stylet, zoom, historique.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

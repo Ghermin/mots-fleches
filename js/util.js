@@ -65,11 +65,11 @@ window.MC = window.MC || {};
   MC.clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
   MC.LEVELS = {
-    // curated : part des mots aux définitions écrites à la main (le reste vient du Wiktionnaire).
-    // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français.
-    facile:    { label: 'Facile',    size: 9,  target: 9,  attempts: 24, curated: 1,    maxRank: 0 },
-    moyen:     { label: 'Moyen',     size: 13, target: 16, attempts: 16, curated: 0.75, maxRank: 8000 },
-    difficile: { label: 'Difficile', size: 15, target: 23, attempts: 12, curated: 0.35, maxRank: 14000 },
-    expert:    { label: 'Expert',    size: 17, target: 32, attempts: 10, curated: 0.15, maxRank: Infinity }
+    // w × h : taille de la grille (paire). maxRank : mots du Wiktionnaire limités aux N plus
+    // fréquents du français (0 = uniquement les définitions écrites à la main).
+    facile:    { label: 'Facile',    w: 8,  h: 8,  maxRank: 0,        budget: 20000, keep: 4 },
+    moyen:     { label: 'Moyen',     w: 10, h: 10, maxRank: 8000,     budget: 25000, keep: 3 },
+    difficile: { label: 'Difficile', w: 10, h: 12, maxRank: 14000,    budget: 30000, keep: 3 },
+    expert:    { label: 'Expert',    w: 12, h: 14, maxRank: Infinity, budget: 30000, keep: 2 }
   };
 })(window.MC);
