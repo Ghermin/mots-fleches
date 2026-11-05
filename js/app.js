@@ -111,10 +111,8 @@
     const seed = opts.seed != null ? opts.seed : (Math.random() * 4294967296) >>> 0;
     busy = true;
     $('#busy').classList.remove('hidden');
-    // On laisse le navigateur afficher « Création de la grille… » avant le calcul.
-    setTimeout(() => {
-      let puzzle = null;
-      try { puzzle = MC.generate({ level, seed, daily: !!opts.daily, exclude: MC.store.bannedSet() }); } catch (err) { console.error(err); }
+    $('#busy-info').textContent = '';
+    const done = puzzle => {
       busy = false;
       $('#busy').classList.add('hidden');
       if (!puzzle) return toast('La grille n’a pas pu être créée, réessayez', 3000);
@@ -124,7 +122,38 @@
       };
       MC.store.saveGame(g);
       openGame(g);
-    }, 60);
+    };
+    const req = { level, seed, daily: !!opts.daily, exclude: [...MC.store.bannedSet()] };
+    // La recherche se fait en arrière-plan (js/worker.js) ; à défaut, ici même.
+    const w = genWorker();
+    if (w) {
+      w.onmessage = e => {
+        const d = e.data;
+        if (d.progress) { showProgress(d.progress); return; }
+        if (d.error) console.error(d.error);
+        done(d.puzzle || null);
+      };
+      w.onerror = err => { console.error(err); worker = null; done(fallbackGenerate(req)); };
+      w.postMessage(req);
+      return;
+    }
+    setTimeout(() => done(fallbackGenerate(req)), 60);
+  }
+  let worker;
+  function genWorker() {
+    if (worker === undefined) {
+      try { worker = typeof Worker !== 'undefined' && /^https?:$/.test(location.protocol) ? new Worker('js/worker.js') : null; } catch (_) { worker = null; }
+    }
+    return worker;
+  }
+  function fallbackGenerate(req) {
+    try { return MC.generate(Object.assign({}, req, { exclude: new Set(req.exclude) })); } catch (err) { console.error(err); return null; }
+  }
+  /* « Création de la grille… » : on montre où en est la recherche de la meilleure grille. */
+  function showProgress(p) {
+    $('#busy-info').textContent = p.found
+      ? `${p.found} grille${p.found > 1 ? 's' : ''} sur ${p.keep}, on garde la meilleure`
+      : `essai ${p.tries}…`;
   }
   function openDaily() {
     const key = MC.todayKey();
@@ -1088,9 +1117,11 @@
       else if (it.type === 'range') ctl = `<input type="range" data-key="${it.key}" min="${it.min}" max="${it.max}" step="${it.step}" value="${v}"><span class="rv" data-rv="${it.key}">${v} ${it.unit}</span>`;
       html += `<label class="set-row"><span class="lbl">${it.label}${it.hint ? `<small>${it.hint}</small>` : ''}</span>${ctl}</label>`;
     }
-    const forms = MC.DICO_FORMS_N || 0, wiki = MC.DICO.length - MC.DICO_CURATED - forms;
-    html += `<p class="muted" style="margin:18px 4px">Dictionnaire : ${MC.DICO.length} mots
-      (${MC.DICO_CURATED} choisis à la main${wiki ? `, ${wiki} tirés du <a href="https://fr.wiktionary.org" target="_blank" rel="noopener">Wiktionnaire</a>, licence CC BY-SA 4.0` : ''}${forms ? `, et ${forms} pluriels, féminins et conjugaisons` : ''}).<br>
+    const link = (u, t) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`;
+    html += `<p class="muted" style="margin:18px 4px">Dictionnaire : ${MC.DICO.length} mots et formes.
+      Définitions écrites à la main, tirées du ${link('https://fr.wiktionary.org', 'Wiktionnaire')} (CC BY-SA 4.0)
+      et de vrais mots fléchés de ${link('https://www.lapetitecase.fr', 'La Petite Case')} (CC BY 4.0) ;
+      pluriels, féminins et conjugaisons d'après ${link('http://www.lexique.org', 'Lexique 3.83')} (CC BY-SA 4.0).<br>
       Toutes les données restent sur cet appareil.</p>`;
     $('#settings-form').innerHTML = html;
   }

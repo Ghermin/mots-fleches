@@ -70,9 +70,10 @@ window.MC = window.MC || {};
     // wikiLen : pour ces mots, seulement le sens principal, s'il ne dépasse pas ce nombre de caractères.
     // rare (0 → 1) : préférence pour les mots peu courants. curClue : part des définitions faites main.
     // max2 / max3 : nombre maximum de mots de 2 / 3 lettres par grille (desserré si la grille n'aboutit pas).
-    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 3000,     rare: 0,   curClue: 1,   max2: 10, max3: 11, wikiLen: 34, budget: 20000, keep: 3 },
-    moyen:     { label: 'Moyen',     desc: 'Mots courants',          w: 10, h: 14, maxRank: 12000,    rare: 0.1, curClue: 0.8, max2: 7, max3: 9, budget: 25000, keep: 3 },
-    difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 22000,    rare: 0.6, curClue: 0.5, max2: 7, max3: 9, budget: 30000, keep: 4 },
-    expert:    { label: 'Expert',    desc: 'Mots rares',             w: 10, h: 14, maxRank: Infinity, rare: 1,   curClue: 0.3, max2: 7, max3: 9, budget: 30000, keep: 4 }
+    // keep : grilles complètes cherchées (on garde la meilleure), time : durée maximale de la recherche (ms).
+    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 3000,     rare: 0,   curClue: 1,   max2: 9, max3: 10, wikiLen: 34, budget: 20000, keep: 5, time: 6000 },
+    moyen:     { label: 'Moyen',     desc: 'Mots courants',          w: 10, h: 14, maxRank: 12000,    rare: 0.1, curClue: 0.8, max2: 6, max3: 8, budget: 25000, keep: 5, time: 6000 },
+    difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 22000,    rare: 0.6, curClue: 0.5, max2: 6, max3: 8, budget: 30000, keep: 5, time: 6000 },
+    expert:    { label: 'Expert',    desc: 'Mots rares',             w: 10, h: 14, maxRank: Infinity, rare: 1,   curClue: 0.3, max2: 6, max3: 8, budget: 30000, keep: 5, time: 6000 }
   };
 })(window.MC);

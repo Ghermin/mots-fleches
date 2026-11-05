@@ -186,17 +186,20 @@ window.MC = window.MC || {};
   }
 
   /* Choisit une définition par mot parmi ses variantes, sans répéter deux fois le même texte
-     dans la grille. L.curClue : probabilité de préférer une définition faite main. */
+     dans la grille. Définitions « humaines » (faites main, ou de vrais mots fléchés de La Petite
+     Case) d'abord : L.curClue est la probabilité de les préférer à celles du Wiktionnaire. */
   function chooseClues(words, dict, L, rng) {
     const usedText = new Set(), key = t => t.toLowerCase().replace(/[^a-zà-ÿ]/g, '');
     const shuffle = a => MC.shuffle(a.slice(), rng);
     for (const w of words) {
       const e = dict.get(w.answer);
-      const cur = e.r === 0 ? e.clues : [], wiki = (e.r === 0 ? e.wclues : e.clues) || [];
+      const human = [...new Set((e.r === 0 ? e.clues : []).concat(e.pclues || []))];
+      const wiki = e.lpc ? [] : (e.r === 0 ? e.wclues : e.clues) || [];
+      // Wiktionnaire : le sens principal le plus souvent.
+      const wikiOrder = rng() < 0.4 + 0.4 * L.curClue ? wiki.slice() : shuffle(wiki.slice(1)).concat(wiki.slice(0, 1));
       let order;
-      if (L.wikiLen) order = e.r === 0 ? shuffle(cur) : wiki.slice(0, 1); // Facile : fait main, ou sens principal
-      else if (e.r === 0) order = rng() < L.curClue ? shuffle(cur).concat(shuffle(wiki)) : shuffle(wiki).concat(shuffle(cur));
-      else order = rng() < 0.4 + 0.4 * L.curClue ? wiki.slice() : shuffle(wiki.slice(1)).concat(wiki.slice(0, 1)); // sens principal, le plus souvent
+      if (L.wikiLen) order = human.length ? shuffle(human) : wiki.slice(0, 1); // Facile : humain, ou sens principal
+      else order = rng() < Math.max(L.curClue, 0.6) ? shuffle(human).concat(wikiOrder) : wikiOrder.concat(shuffle(human));
       if (!order.length) order = e.clues.concat(e.wclues || []);
       const pick = order.find(t => !usedText.has(key(t))) || order[0];
       usedText.add(key(pick));
@@ -212,7 +215,7 @@ window.MC = window.MC || {};
     const rare = L.rare || 0;
     for (const w of extract(W, H, g)) {
       const e = dict.get(w.answer);
-      score += w.len * 1.2 - (w.len === 2 ? 6 : w.len === 3 ? 2 : 0);
+      score += w.len * 1.2 - (w.len === 2 ? 8 : w.len === 3 ? 3 : 0);
       score += e.r === 0 ? (1 - rare) * 1.5 : rare * 4 * rarity(e);
     }
     g.forEach(x => { if (x === DEF) defs++; });
@@ -232,7 +235,7 @@ window.MC = window.MC || {};
     // Mots « faits main » toujours ; Wiktionnaire limité aux mots les plus courants selon le niveau.
     // Les mots faits main sont présentés en premier : en cas de doublon, leur définition l'emporte.
     // Facile (wikiLen) : seulement les mots courants dont le sens principal est court.
-    const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || (w.r <= maxRank && (!L.wikiLen || w.clues[0].length <= L.wikiLen))));
+    const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || (w.r <= maxRank && (!L.wikiLen || (w.pclues && w.pclues.length) || w.clues[0].length <= L.wikiLen))));
     // Aux niveaux élevés, les lettres qui mènent à des mots rares sont essayées en premier.
     const rare = L.rare || 0;
     const weight = w => (1 - rare) + rare * (w.r === 0 ? 0.5 : 0.3 + 2.7 * rarity(w));
@@ -240,22 +243,27 @@ window.MC = window.MC || {};
 
     // Mots de 2 et 3 lettres plafonnés : ils ne servent qu'à boucher les derniers trous.
     const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, max2: L.max2 || 99, max3: L.max3 || 99 };
-    // Plusieurs grilles sont tentées ; on garde la meilleure. La grille du jour n'a pas de limite
+    // Plusieurs grilles sont tentées et on garde la meilleure (L.keep) : la recherche peut durer
+    // quelques secondes (L.time), elle se fait en arrière-plan. La grille du jour n'a pas de limite
     // de temps, pour être identique sur tous les appareils.
+    const keep = L.keep || 3, time = opts.time != null ? opts.time : (L.time || 6000);
+    const progress = opts.onProgress || (() => {});
     let best = null, bestScore = -Infinity, found = 0, fails = 0;
     const t0 = Date.now();
-    for (let a = 0; a < 400 && found < (L.keep || 3); a++) {
-      if (!opts.daily && found && Date.now() - t0 > 700) break;
+    for (let a = 0; a < 600 && found < keep; a++) {
+      if (!opts.daily && found && Date.now() - t0 > time) break;
+      progress({ tries: a + 1, found, keep });
       const g = fill(L.w, L.h, idx, rng, params);
       if (!g) {
-        // Plafonds trop serrés pour cette grille : on les desserre un peu tous les 5 échecs
+        // Plafonds trop serrés pour cette grille : on les desserre d'un cran tous les 10 échecs
         // (au nombre d'essais, pas au temps : la grille du jour reste la même partout).
-        if (++fails % 5 === 0) { params.max2++; params.max3++; }
+        if (++fails % 10 === 0) { params.max2++; params.max3++; }
         continue;
       }
       found++;
       const s = scoreGrid(L.w, L.h, g, idx.dict, L);
       if (s > bestScore) { best = g; bestScore = s; }
+      progress({ tries: a + 1, found, keep });
     }
     if (!best) throw new Error('Impossible de générer la grille');
     const words = chooseClues(extract(L.w, L.h, best), idx.dict, L, rng);

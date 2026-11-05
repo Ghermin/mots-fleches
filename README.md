@@ -43,22 +43,31 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
   Facile y ajoute seulement les 3 000 mots les plus courants du Wiktionnaire dont le sens principal
   est court ; les autres niveaux, davantage de mots du Wiktionnaire.
 - `js/dico-wiki.js` : des milliers de mots avec jusqu'à 3 sens tirés du
-  [Wiktionnaire](https://fr.wiktionary.org) (licence CC BY-SA 4.0), plus ~10 000 **formes
-  accordées et conjuguées** : pluriels et féminins réguliers (CHATS, PETITE), verbes en -er à la
-  3e personne (présent, imparfait, futur, passé simple) et au participe (MANGEAIT, QUITTEES).
-  Leur définition est accordée de la même façon (« Quitter quelqu'un » → « Quittait quelqu'un ») ;
-  quand la règle n'est pas sûre, la forme est écartée. Une grille ne contient jamais deux formes
-  du même mot. Régénérer avec :
+  [Wiktionnaire](https://fr.wiktionary.org) (licence CC BY-SA 4.0), plus ~12 600 **formes
+  accordées et conjuguées** : pluriels et féminins (CHEVAUX, PETITE), verbes à la 3e personne
+  (présent, imparfait, futur, passé simple) et au participe (PRENAIT, QUITTEES), tous groupes
+  confondus. Les formes et la nature des mots viennent de [Lexique 3.83](http://www.lexique.org)
+  (licence CC BY-SA 4.0) ; la définition est accordée de la même façon, mot par mot, d'après
+  Lexique (« Prendre la fuite » → « Prenait la fuite ») ; au moindre doute, la forme est écartée.
+  Une grille ne contient jamais deux formes du même mot.
+- `js/dico-lpc.js` : ~12 700 mots avec de **vraies définitions de mots fléchés**, vérifiées à la
+  main, de [La Petite Case](https://www.lapetitecase.fr) (jeux de données
+  [mots-fleches-definitions](https://huggingface.co/datasets/lapetitecase/mots-fleches-definitions) et
+  [dictionnaire-mots-fleches](https://huggingface.co/datasets/lapetitecase/dictionnaire-mots-fleches),
+  licence CC BY 4.0). Elles passent avant celles du Wiktionnaire.
 
-  ```bash
-  python tools/build_dico.py --top 35000
-  ```
+Régénérer les deux fichiers avec :
 
-  (`--offline` pour régénérer depuis le cache `tools/.cache`, sans réseau.)
-  Plus le niveau est élevé, plus les mots rares sont favorisés (Difficile, Expert) et plus les
-  définitions du Wiktionnaire remplacent celles écrites à la main.
-  Les définitions peu jouables (lettres d'alphabets étrangers, langues régionales, simple
-  contexte comme « Dans un télégramme ») sont écartées au chargement.
+```bash
+python tools/build_dico.py --top 35000
+```
+
+(`--offline` pour régénérer depuis le cache `tools/.cache`, sans réseau ; Lexique et les
+fichiers de La Petite Case y sont téléchargés au premier lancement.)
+Plus le niveau est élevé, plus les mots rares sont favorisés (Difficile, Expert) et plus les
+définitions du Wiktionnaire remplacent celles écrites à la main.
+Les définitions peu jouables (lettres d'alphabets étrangers, langues régionales, simple
+contexte comme « Dans un télégramme ») sont écartées au chargement.
 
 ## Générateur
 
@@ -66,8 +75,9 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 ligne et la première colonne alternent définition / lettre, les autres cases-définitions sont
 placées au fil du remplissage. Chaque suite de 2 lettres ou plus doit être un mot du dictionnaire
 (sans doublon) ; chaque case-définition définit 1 ou 2 mots ; aucune lettre n'est isolée.
-Les mots de 2 et 3 lettres ne servent qu'à boucher les derniers trous : ils sont plafonnés (7 et 9
-par grille, 10 et 11 en Facile, plafonds desserrés d'un cran tous les 5 essais ratés), clore un
-mot de 2 ou 3 lettres par une case-définition n'est tenté qu'en dernier recours, et les grilles
-avec plus de mots longs sont préférées. Environ un mot sur trois fait 2 ou 3 lettres (la moitié
-en Facile), contre plus d'un sur deux auparavant.
+Les mots de 2 et 3 lettres ne servent qu'à boucher les derniers trous : ils sont plafonnés (6 et 8
+par grille, 9 et 10 en Facile, plafonds desserrés d'un cran tous les 10 essais ratés), clore un
+mot de 2 ou 3 lettres par une case-définition n'est tenté qu'en dernier recours, et sur 5 grilles
+complètes, on garde celle qui a le plus de mots longs. La recherche dure quelques secondes, en
+arrière-plan (`js/worker.js`). Environ un mot sur trois fait 2 ou 3 lettres (46 % en Facile),
+comme dans les grilles de magazine.
