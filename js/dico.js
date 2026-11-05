@@ -1040,7 +1040,7 @@ YES|Oui d'outre-Manche
   //    r = rang de fréquence du mot en français : plus il est petit, plus le mot est courant.
   //    On écarte les définitions peu jouables : lettres d'alphabets étrangers, langues
   //    régionales, et définitions qui ne donnent qu'un contexte (« Dans un télégramme »).
-  const obscure = /lettre de l[’']alphabet|ancienne lettre|^Langue .*(parlée|papoue|du groupe)|^De \d/i;
+  const obscure = /lettre de l[’']alphabet|ancienne lettre|^Langue .*(parlée|papoue|du groupe)|^De \d|\b(cette|ces deux|ce dernier|celui-ci|ceux-ci|ci-dessus|même sens)\b/i;
   const context = c => !/[,;:]/.test(c) && (
     /^Dans (un|une|les|la|l[’']|plusieurs|certain)/.test(c) && c.split(' ').length <= 5 ||
     /^En (parlant|composition|géométrie|droit|chapellerie|[A-Z])/.test(c) ||

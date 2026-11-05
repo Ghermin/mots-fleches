@@ -69,7 +69,7 @@ window.MC = window.MC || {};
     // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français (0 = définitions faites main).
     // rare (0 → 1) : préférence pour les mots peu courants. curClue : part des définitions faites main.
     // max2 : nombre maximum de mots de 2 lettres par grille.
-    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 0,        rare: 0,   curClue: 1,   max2: 16, budget: 20000, keep: 3 },
+    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 0,        rare: 0,   curClue: 1,   max2: 18, budget: 20000, keep: 3 },
     moyen:     { label: 'Moyen',     desc: 'Mots courants',          w: 10, h: 14, maxRank: 8000,     rare: 0.1, curClue: 0.8, max2: 12, budget: 25000, keep: 3 },
     difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 22000,    rare: 0.6, curClue: 0.5, max2: 12, budget: 30000, keep: 4 },
     expert:    { label: 'Expert',    desc: 'Mots rares',             w: 10, h: 14, maxRank: Infinity, rare: 1,   curClue: 0.3, max2: 12, budget: 30000, keep: 4 }
