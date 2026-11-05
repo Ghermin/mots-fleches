@@ -71,11 +71,7 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 .home-head { display: flex; align-items: center; gap: 18px; margin-bottom: 8px; }
 .home-head h1 { margin: 0; font-size: 34px; letter-spacing: -.5px; }
 .home-head p { margin: 2px 0 0; }
-.logo { display: grid; grid-template-columns: repeat(5, 22px); grid-auto-rows: 22px; gap: 2px; flex: none; }
-.logo span, .logo i { display: grid; place-items: center; border-radius: 4px; font-weight: 700; font-size: 14px; font-style: normal; }
-.logo span { background: var(--cell-bg); box-shadow: inset 0 0 0 1.5px var(--line); }
-.logo span.b { background: var(--sel-bg); }
-.logo i.d { background: var(--def-bg); box-shadow: inset 0 0 0 1.5px var(--line); }
+.app-logo { width: 64px; height: 64px; flex: none; display: block; }
 .card {
   border: none; background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow);
   padding: 18px 20px; display: flex; align-items: center; gap: 14px; text-align: left; width: 100%;
@@ -133,20 +129,23 @@ body.lefty .side-col { order: -1; border-left: none; border-right: 1px solid var
 .d-tip { font-size: 14px; margin: auto 4px 0; }
 body.bigclues .def-card p { font-size: 23px; }
 body.bigclues .def-card.cross p { font-size: 19px; }
-body.bigclues #b-clue { font-size: 20px; }
 
 #banner {
-  display: flex; align-items: center; gap: 4px; padding: 6px; background: var(--accent-soft); flex: none; min-height: 60px;
+  display: flex; align-items: center; gap: 2px; padding: 4px; background: var(--accent-soft); flex: none; height: 70px;
 }
+#banner .icon-btn { width: 40px; height: 100%; color: var(--accent); }
 #b-text {
-  flex: 1; min-width: 0; border: none; background: transparent; text-align: left; display: flex; gap: 10px; align-items: baseline;
-  padding: 6px 4px; font-size: 17px; line-height: 1.25;
+  flex: 1; min-width: 0; height: 100%; border: none; border-radius: 10px; background: transparent; text-align: left;
+  display: flex; gap: 10px; align-items: center; padding: 2px 4px; line-height: 1.2; overflow: hidden;
 }
-#b-num { font-weight: 700; white-space: nowrap; color: var(--accent); }
-#b-clue { flex: 1; }
-#banner .flag { width: 40px; color: var(--muted); }
-#banner .flag .ic { width: 20px; height: 20px; }
-#banner .flag.on { background: transparent; color: var(--wrong); }
+#b-text:active { background: rgba(127, 127, 127, .12); }
+/* Pastille du sens : on la touche (ou toute la définition) pour passer d'un sens à l'autre. */
+#b-num {
+  flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent); color: var(--panel); font-weight: 700; font-size: 20px; line-height: 1;
+}
+#b-clue { flex: 1; min-width: 0; font-size: 19px; font-weight: 500; overflow-wrap: break-word; }
+#b-clue small { font-size: .72em; font-weight: 600; color: var(--muted); white-space: nowrap; }
 .banned-list { max-height: 50vh; overflow-y: auto; margin: 8px 0; }
 .banned-list div { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .banned-list div span { flex: 1; font-size: 15px; }
@@ -166,14 +165,17 @@ body.bigclues #b-clue { font-size: 20px; }
 }
 .cell.on { background: var(--cell-bg); }
 .cell.word { background: var(--word-bg); }
-.cell.sel { background: var(--sel-bg); }
+.cell.sel { background: var(--sel-bg); box-shadow: inset 0 0 0 2px var(--accent); }
 .cell .ltr {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
   font-weight: 600; font-size: calc(var(--cell) * .56);
 }
 
 /* Cases-définitions : une ou deux définitions (flèche vers la droite en haut, vers le bas en dessous). */
-.cell.def { background: var(--def-bg); color: var(--def-ink); display: flex; flex-direction: column; cursor: pointer; }
+.cell.def {
+  background: var(--def-bg); color: var(--def-ink); display: flex; flex-direction: column; cursor: pointer;
+  font-family: sans-serif-condensed, "Roboto Condensed", "Arial Narrow", system-ui, sans-serif; font-weight: 500;
+}
 .cell.def .q {
   flex: 1 1 0; min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;
   padding: 0 calc(var(--cell) * .06); font-size: calc(var(--cell) * .16);
@@ -211,11 +213,6 @@ body.bigclues #b-clue { font-size: 20px; }
 #board.paused { filter: blur(14px); }
 #ink { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 
-.zoom {
-  position: absolute; right: 8px; bottom: 8px; display: flex; flex-direction: column; gap: 2px; padding: 3px;
-  background: var(--panel); border-radius: 14px; box-shadow: var(--shadow);
-}
-.zoom .icon-btn { width: 44px; height: 44px; }
 #pause-overlay { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; cursor: pointer; }
 #pause-overlay .ic { width: 64px; height: 64px; color: var(--accent); }
 #pause-overlay p { font-size: 18px; font-weight: 600; }
@@ -255,17 +252,12 @@ body.bigclues #b-clue { font-size: 20px; }
 .key.grow { flex: 3 1 0; max-width: none; }
 .pick { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: 8px; }
 .pick .key { max-width: none; }
-.key.wide { flex: 1.5 1 0; max-width: 92px; font-size: 14px; font-weight: 600; }
-.key.act { background: var(--key-act); }
-/* Aide et brouillon : bien visibles sur la dernière rangée du clavier. */
-.key.feat {
-  flex: 2 1 0; max-width: none; font-size: 17px; font-weight: 700; gap: 8px;
-  background: var(--accent-soft); color: var(--accent); box-shadow: 0 1px 0 rgba(0, 0, 0, .22), 0 0 0 2px var(--accent);
-}
-.key.feat .ic { width: 24px; height: 24px; }
-.key.feat.on { background: var(--accent); color: #fff; }
-.key.draft.on::after { content: 'activé'; font-size: 12px; font-weight: 600; opacity: .85; }
 .key .ic { width: 22px; height: 22px; }
+.key.tool { flex: 1.45 1 0; max-width: 100px; flex-direction: column; gap: 2px; font-size: 10.5px; font-weight: 700; letter-spacing: 0; }
+.key.tool span { line-height: 1; }
+.key.act { background: var(--key-act); }
+.key.help, .key.draft { background: var(--accent-soft); color: var(--accent); box-shadow: 0 1px 0 rgba(0, 0, 0, .22), 0 0 0 1.5px var(--accent); }
+.key.draft.on { background: var(--accent); color: var(--panel); }
 .key.down { transform: translateY(1px); filter: brightness(.88); }
 #penpanel { padding: 8px; display: flex; flex-direction: column; gap: 8px; }
 #pen-alts { min-height: 44px; }
@@ -282,32 +274,43 @@ body.bigclues #b-clue { font-size: 20px; }
   #clues { display: none; } /* le bandeau au-dessus de la grille suffit */
   #kbd, #penpanel { max-width: 760px; width: 100%; margin: 0 auto; }
   /* Grille 10 × 14 : on laisse un maximum de hauteur à la grille. */
-  .key { max-width: 74px; height: 48px; }
-  .key.wide { max-width: 120px; }
-  #kbd { gap: 5px; padding: 6px 8px; }
-  #banner { min-height: 52px; padding: 4px 6px; }
+  .key { max-width: 74px; height: 50px; }
+  .key.tool { max-width: 110px; }
+  #kbd { gap: 6px; padding: 8px 6px 4px; }
+  .krow { gap: 5px; }
+  .topbar { min-height: 54px; padding: 3px 4px; }
+  .side-col { border-top: none; }
+  #banner { border-top: 1px solid var(--border); }
 }
 /* Paysage : le bandeau (définition, mot précédent / suivant, signalement) passe dans la colonne
    de droite, au-dessus de la définition croisée ; la grille gagne toute la hauteur. */
-body.side-banner #banner { border-radius: 14px; min-height: 0; align-items: flex-start; padding: 8px 6px; }
-body.side-banner #b-text { font-size: 19px; flex-wrap: wrap; }
+body.side-banner #banner { border-radius: 14px; height: auto; align-items: flex-start; padding: 8px 6px; }
+body.side-banner #banner .icon-btn { height: 48px; }
+body.side-banner #b-text { height: auto; align-items: flex-start; }
+body.side-banner #b-clue { font-size: 20px; }
+body.side-banner.bigclues #b-clue { font-size: 23px; }
 body.side-banner #d-cur { display: none; }
 @media (max-width: 560px) {
   .tools .icon-btn { width: 42px; }
-  .key { height: 48px; font-size: 19px; }
+  .key { font-size: 21px; }
 }
 
 /* ---------- Menus, modales, toasts ---------- */
 .popover {
   position: fixed; z-index: 30; background: var(--panel); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
-  padding: 8px 12px 12px; width: 280px;
+  padding: 8px 12px 12px; width: min(330px, calc(100vw - 16px));
 }
 .pop-sec { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 8px 2px 6px; }
 .pop-row { display: flex; gap: 6px; }
 .pop-row button {
-  flex: 1; height: 46px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--bg); font-weight: 600;
+  flex: 1; height: 48px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--bg); font-weight: 600; font-size: 16px;
 }
-.pop-row button:active { background: var(--key-act); }
+.pop-row button:active, .pop-flag:active { background: var(--key-act); }
+.pop-flag {
+  display: flex; align-items: center; gap: 10px; width: 100%; height: 46px; margin-top: 12px; padding: 0 6px;
+  border: none; border-top: 1px solid var(--border); background: transparent; color: var(--muted); font-weight: 600;
+}
+.pop-flag .ic { width: 20px; height: 20px; }
 
 .modal { position: fixed; inset: 0; z-index: 50; background: rgba(10, 14, 22, .45); display: grid; place-items: center; padding: 16px; }
 .modal-box {

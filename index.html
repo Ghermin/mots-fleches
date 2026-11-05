@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<meta name="theme-color" content="#24477a">
+<meta name="theme-color" content="#fffdf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b2029" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Mots fléchés">
-<meta name="description" content="Mots fléchés en français, pensés pour la tablette : clavier, zoom, aide, historique.">
+<meta name="description" content="Mots fléchés en français pour téléphone et tablette : grilles à volonté, grille du jour, aide, historique.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
@@ -44,6 +45,8 @@
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
   <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
   <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-zoomin" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20 20M10.5 8v5M8 10.5h5"/></symbol>
+  <symbol id="i-zoomout" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20 20M8 10.5h5"/></symbol>
   <symbol id="i-restart" viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M5.5 15a7 7 0 101.6-7.3L4 10"/></symbol>
 </svg>
 
@@ -65,10 +68,7 @@
     </script>
     <div class="home-wrap">
       <header class="home-head">
-        <div class="logo" aria-hidden="true">
-          <i class="d"></i><span>M</span><span>O</span><span>T</span><span>S</span>
-          <i class="d"></i><span class="b">F</span><i></i><i></i><i></i>
-        </div>
+        <img class="app-logo" src="icons/icon.svg" alt="" width="64" height="64">
         <div>
           <h1>Mots fléchés</h1>
           <p class="muted">Grilles 10 × 14, comme dans les magazines.</p>
@@ -111,6 +111,7 @@
     <div class="tools">
       <button class="icon-btn" id="g-undo" aria-label="Annuler"><svg class="ic"><use href="#i-undo"/></svg></button>
       <button class="icon-btn" id="g-redo" aria-label="Rétablir"><svg class="ic"><use href="#i-redo"/></svg></button>
+      <button class="icon-btn" id="g-zoom" aria-label="Zoomer sur le mot"><svg class="ic"><use href="#i-zoomin"/></svg></button>
       <button class="icon-btn" id="g-pause" aria-label="Pause"><svg class="ic"><use href="#i-pause"/></svg></button>
     </div>
   </header>
@@ -121,15 +122,9 @@
         <button class="icon-btn" id="b-prev" aria-label="Définition précédente"><svg class="ic"><use href="#i-left"/></svg></button>
         <button id="b-text" aria-label="Changer de sens"><span id="b-num"></span><span id="b-clue"></span></button>
         <button class="icon-btn" id="b-next" aria-label="Définition suivante"><svg class="ic"><use href="#i-right"/></svg></button>
-        <button class="icon-btn flag" id="b-flag" aria-label="Signaler une définition ratée"><svg class="ic"><use href="#i-flag"/></svg></button>
       </div>
       <div id="viewport">
         <div id="board"></div>
-        <div class="zoom">
-          <button class="icon-btn" id="z-out" aria-label="Dézoomer"><svg class="ic"><use href="#i-minus"/></svg></button>
-          <button class="icon-btn" id="z-fit" aria-label="Ajuster"><svg class="ic"><use href="#i-fit"/></svg></button>
-          <button class="icon-btn" id="z-in" aria-label="Zoomer"><svg class="ic"><use href="#i-plus"/></svg></button>
-        </div>
         <div id="pause-overlay" class="hidden"><div><svg class="ic"><use href="#i-play"/></svg><p>Pause — touchez pour reprendre</p></div></div>
       </div>
     </div>
@@ -138,7 +133,7 @@
       <div id="clues">
         <div class="def-card" id="d-cur"><span class="d-head"></span><p></p></div>
         <div class="def-card cross" id="d-cross"><span class="d-head"></span><p></p></div>
-        <p class="muted d-tip">Touchez une case-définition pour choisir son mot. Toucher deux fois une lettre change de sens.</p>
+        <p class="muted d-tip">Touchez une case-définition pour choisir son mot. Touchez la définition en cours (ou deux fois la même lettre) pour changer de sens. Pincez pour zoomer.</p>
       </div>
       <div id="input-panel">
         <div id="kbd"></div>
@@ -153,6 +148,7 @@
     <div class="pop-row"><button data-act="reveal:cell">Case</button><button data-act="reveal:word">Mot</button><button data-act="reveal:grid">Grille</button></div>
     <div class="pop-sec">Effacer</div>
     <div class="pop-row"><button data-act="clear:cell">Case</button><button data-act="clear:word">Mot</button><button data-act="clear:grid">Grille</button></div>
+    <button class="pop-flag" data-act="report"><svg class="ic"><use href="#i-flag"/></svg><span>Signaler une définition ratée</span></button>
   </div>
 </section>
 

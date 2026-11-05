@@ -1,5 +1,5 @@
 /* Hors-ligne : réseau d'abord (mises à jour immédiates), cache si pas de connexion. */
-const CACHE = 'mots-fleches-v3';
+const CACHE = 'mots-fleches-v4';
 const ASSETS = [
   './', 'index.html', 'css/playground.css', 'css/style.css', 'manifest.webmanifest',
   'js/util.js', 'js/dico-wiki.js', 'js/dico.js', 'js/generator.js', 'js/storage.js', 'js/app.js',
