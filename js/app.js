@@ -98,7 +98,7 @@
   /* =================== Accueil =================== */
   function buildLevels() {
     $('#levels').innerHTML = Object.entries(MC.LEVELS).map(([k, L]) =>
-      `<button data-level="${k}"><b>${L.label}</b><small>${L.w} × ${L.h} cases</small></button>`).join('');
+      `<button data-level="${k}"><b>${L.label}</b><small>${L.desc} · ${L.w} × ${L.h}</small></button>`).join('');
   }
   function renderHome() {
     const games = MC.store.games();
@@ -1395,9 +1395,19 @@
     if (pad) pad.draw();
   }
 
+  /* En paysage, le bandeau va dans la colonne de droite (voir css : body.side-banner). */
+  const portraitMQ = window.matchMedia('(orientation: portrait), (max-width: 900px)');
+  function placeBanner() {
+    const side = !portraitMQ.matches, b = $('#banner');
+    if (side) $('#clues').prepend(b); else $('.board-col').prepend(b);
+    document.body.classList.toggle('side-banner', side);
+  }
+
   /* =================== Démarrage =================== */
   function init() {
     applySettings();
+    placeBanner();
+    portraitMQ.addEventListener('change', placeBanner);
     buildLevels();
 
     // Accueil

@@ -17,7 +17,7 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 
 ## Fonctions
 
-- Grilles pleines générées à la demande (4 niveaux, de 8 × 8 à 12 × 14) + **grille du jour**
+- Grilles pleines générées à la demande (format magazine 10 × 14, 4 niveaux de vocabulaire) + **grille du jour**
   (la même pour tout le monde). Les définitions sont dans les cases, une flèche indique le sens du mot.
 - Toucher une case-définition sélectionne son mot (moitié haute ou basse quand elle en contient deux).
   Toucher une lettre la sélectionne, la toucher à nouveau change de sens (horizontal / vertical).
