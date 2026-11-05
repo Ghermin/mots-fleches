@@ -1,6 +1,6 @@
 # Mots fléchés
 
-Application web de mots fléchés en français, pensée pour la tablette. Pas de compte ni de serveur :
+Application web de mots fléchés en français, pour téléphone et tablette. Pas de compte ni de serveur :
 tout tourne dans le navigateur, et les parties sont enregistrées sur l'appareil.
 
 ## Lancer
@@ -21,14 +21,15 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
   (la même pour tout le monde). Les définitions sont dans les cases, une flèche indique le sens du mot.
 - Toucher une case-définition sélectionne son mot (moitié haute ou basse quand elle en contient deux).
   Toucher une lettre la sélectionne, la toucher à nouveau change de sens (horizontal / vertical).
-- La définition complète du mot en cours s'affiche dans le bandeau (et dans le panneau en paysage).
-- **Zoom** : pincer à deux doigts, glisser pour déplacer, boutons − / ajuster / +.
-- **Clavier** intégré (AZERTY, QWERTY ou alphabétique) et clavier physique
+- La définition complète du mot en cours s'affiche en grand dans le bandeau, juste au-dessus du clavier
+  (dans le panneau de droite en paysage). Le toucher change de sens ; ‹ › passent au mot précédent / suivant.
+- **Zoom** : pincer à deux doigts, glisser pour déplacer, ou la loupe de la barre du haut (zoom sur le mot en cours / grille entière).
+- **Clavier** intégré sur 3 rangées (AZERTY, QWERTY ou alphabétique), avec vibration au toucher, et clavier physique
   (flèches, Tab, Espace pour changer de sens, Ctrl+Z / Ctrl+Y). On se déplace en touchant la grille.
-- **Aide** (grande touche du clavier) : vérifier, révéler ou effacer une case, un mot ou la grille.
-- **Brouillon** (grande touche du clavier) : les lettres tapées sont provisoires (affichées en gris).
+- **Aide** (touche du clavier) : vérifier, révéler ou effacer une case, un mot ou la grille, signaler une définition.
+- **Brouillon** (touche du clavier) : les lettres tapées sont provisoires (affichées en gris).
 - Annuler / rétablir sans limite.
-- **Signaler une définition ratée** (drapeau ⚑ à côté de la définition) : le mot est retiré des
+- **Signaler une définition ratée** (menu Aide) : le mot est retiré des
   prochaines grilles. La liste se retrouve dans les réglages (rétablir, copier).
 - Chrono, pause, historique des parties, statistiques et records par niveau, série de grilles du jour.
 - Export / import des données (fichier JSON) pour changer d'appareil.

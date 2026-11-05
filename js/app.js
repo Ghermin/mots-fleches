@@ -83,7 +83,7 @@
   /* =================== Accueil =================== */
   function buildLevels() {
     $('#levels').innerHTML = Object.entries(MC.LEVELS).map(([k, L]) =>
-      `<button data-level="${k}"><b>${L.label}</b><small>${L.desc} · ${L.w} × ${L.h}</small></button>`).join('');
+      `<button data-level="${k}"><b>${L.label}</b><small>${L.desc}</small></button>`).join('');
   }
   function renderHome() {
     const games = MC.store.games();
@@ -207,7 +207,7 @@
         for (const wd of list) {
           const q = document.createElement('div'), t = document.createElement('span');
           q.className = 'q';
-          t.textContent = shortClue(wd.clue, list.length > 1 ? 30 : 46);
+          t.textContent = shortClue(wd.clue, list.length > 1 ? 22 : 36);
           q.appendChild(t);
           d.appendChild(q);
           defEl[wd.i] = q;
@@ -236,7 +236,7 @@
       const t = q.firstChild;
       // Petite marge de sécurité : l'arrondi des polices varie un peu selon le zoom.
       const fits = () => t.offsetHeight <= q.clientHeight * 0.9 && t.scrollWidth <= t.clientWidth;
-      let lo = 0.07, hi = 0.205;
+      let lo = 0.07, hi = 0.25;
       q.classList.remove('brk');
       for (let k = 0; k < 7; k++) {
         const mid = (lo + hi) / 2;
@@ -268,12 +268,13 @@
       const ch = e ? e.ch : '';
       if (ltrEl[i].textContent !== ch) ltrEl[i].textContent = ch;
     }
-    if (wd) {
+    if (wd && wd !== S.lastWord) {
       $('#b-num').textContent = wd.dir === 'H' ? '→' : '↓';
-      $('#b-clue').textContent = `${wd.clue} (${wd.len})`;
+      $('#b-num').setAttribute('aria-label', wd.dir === 'H' ? 'horizontal' : 'vertical');
+      $('#b-clue').innerHTML = `${MC.esc(wd.clue)} <small>${wd.len} lettres</small>`;
+      fitClue();
     }
     const banned = MC.store.bannedSet();
-    $('#b-flag').classList.toggle('on', !!wd && banned.has(wd.answer));
     P.words.forEach(w => {
       const q = defEl[w.i];
       if (!q) return;
@@ -290,6 +291,19 @@
     $$('[data-k="draft"]').forEach(b => b.classList.toggle('on', S.pencil));
     $('#g-progress').textContent = g.status === 'done' ? 'terminée ✓' : progressOf(g) + ' %';
     $('#board').classList.toggle('done', g.status === 'done');
+  }
+
+  /* Définition en cours : la plus grande taille qui tient dans le bandeau (hauteur fixe,
+     pour que la grille ne bouge pas d'un mot à l'autre). */
+  function fitClue() {
+    const t = $('#b-text'), c = $('#b-clue');
+    c.style.fontSize = '';
+    if (!t.clientHeight || document.body.classList.contains('side-banner')) return;
+    const max = document.body.classList.contains('bigclues') ? 22 : 19;
+    for (let fs = max; fs >= 12; fs--) {
+      c.style.fontSize = fs + 'px';
+      if (c.scrollHeight <= t.clientHeight - 4) break;
+    }
   }
 
   /* Panneau latéral (paysage) : définition en cours et définition croisée, en entier. */
@@ -500,6 +514,7 @@
     closeHelp();
     if (!S.game) return;
     const [kind, scope] = act.split(':');
+    if (kind === 'report') return reportClue();
     if (S.game.status === 'done') return toast('Grille déjà terminée');
     if (S.paused) setPaused(false);
     if (kind === 'check') return check(scope);
@@ -595,7 +610,8 @@
   }
 
   function openHelp(anchor) {
-    const m = $('#help-menu'), r = anchor.getBoundingClientRect();
+    const m = $('#help-menu'), r = anchor.getBoundingClientRect(), wd = curWord();
+    $('.pop-flag span', m).textContent = wd && MC.store.bannedSet().has(wd.answer) ? 'Définition signalée ✓' : 'Signaler une définition ratée';
     m.classList.remove('hidden');
     const w = m.offsetWidth, h = m.offsetHeight;
     m.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + 'px';
@@ -717,7 +733,7 @@
   const vp = $('#viewport'), board = $('#board');
   const V = { cell: 40, tx: 0, ty: 0, fit: 40, isFit: true };
   const MAXC = 160;
-  const ZOOM_W = 62, FIT_M = 8; // colonne des boutons de zoom, marge autour de la grille
+  const ZOOM_W = 0, FIT_M = 6; // la grille prend toute la largeur ; marge autour
   const minCell = () => Math.max(12, Math.min(V.fit * 0.7, 26));
 
   let defTimer = 0, defCell = 0;
@@ -742,6 +758,20 @@
     V.ty = Math.round((vh - P.h * c) / 2);
     V.isFit = true;
     applyView();
+    zoomIcon();
+  }
+  function zoomIcon() {
+    const b = $('#g-zoom');
+    b.innerHTML = svg(V.isFit ? 'zoomin' : 'zoomout');
+    b.setAttribute('aria-label', V.isFit ? 'Zoomer sur le mot' : 'Voir toute la grille');
+  }
+  /* Loupe : grossit autour de la case en cours, ou revient à la grille entière. */
+  function toggleZoom() {
+    if (!V.isFit) { smoothOnce(); fitView(); return; }
+    const P = S.P, i = Math.max(0, S.sel.idx);
+    const p = { x: V.tx + ((i % P.w) + 0.5) * V.cell, y: V.ty + (((i / P.w) | 0) + 0.5) * V.cell };
+    zoomAt(p, Math.max(1.6, 58 / V.cell), true);
+    ensureVisible();
   }
   function clampView() {
     const P = S.P;
@@ -759,6 +789,7 @@
     clampView();
     if (smooth) smoothOnce();
     applyView();
+    zoomIcon();
   }
   let smoothH = null;
   function smoothOnce() {
@@ -810,7 +841,7 @@
   const letterAt = p => { const i = cellAt(p); return i >= 0 && S.P.cells[i] ? i : -1; };
 
   function onDown(e) {
-    if (!S.game || e.target.closest('.zoom')) return;
+    if (!S.game) return;
     if (S.paused) { setPaused(false); return; }
     vpRect = vp.getBoundingClientRect();
     const p = loc(e);
@@ -845,7 +876,7 @@
       V.cell = nc;
       V.tx = mx - (gest.mx - gest.tx) * r;
       V.ty = my - (gest.my - gest.ty) * r;
-      V.isFit = false;
+      if (V.isFit) { V.isFit = false; zoomIcon(); }
       clampView(); applyView();
     }
   }
@@ -888,18 +919,21 @@
     const k = (label, act, cls, aria) => `<button class="key ${cls || ''}" data-k="${act}"${aria ? ` aria-label="${aria}"` : ''}>${label}</button>`;
     const row = s => [...s].map(c => k(c, c)).join('');
     // On se déplace en touchant la grille : pas de touches « mot suivant » ni « changer de sens ».
-    // Aide et brouillon sont mis en avant sur la dernière rangée.
+    // Trois rangées seulement (la grille garde la hauteur) : Aide à gauche de la dernière,
+    // Brouillon et retour arrière à droite, comme Entrée / ⌫ sur un clavier de téléphone.
+    const tool = (ic, lbl) => svg(ic) + `<span>${lbl}</span>`;
     $('#kbd').innerHTML =
       `<div class="krow">${row(L[0])}</div>` +
       `<div class="krow">${row(L[1])}</div>` +
-      `<div class="krow">${row(L[2])}${k(svg('back'), 'bksp', 'wide act', 'Retour arrière')}</div>` +
-      `<div class="krow">${k(svg('bulb') + 'Aide', 'help', 'feat help')}${k(svg('eraser') + 'Effacer', 'erase', 'wide act')}${k(svg('pencil') + 'Brouillon', 'draft', 'feat draft', 'Mode brouillon : lettres provisoires')}</div>`;
+      `<div class="krow">${k(tool('bulb', 'Aide'), 'help', 'tool help')}${row(L[2])}` +
+      `${k(tool('pencil', 'Brouillon'), 'draft', 'tool draft', 'Mode brouillon : lettres provisoires')}${k(svg('back'), 'bksp', 'tool act', 'Effacer')}</div>`;
     $$('[data-k="draft"]').forEach(b => b.classList.toggle('on', S.pencil));
   }
   function onKeyPress(e) {
     const b = e.target.closest('.key');
     if (!b) return;
     e.preventDefault();
+    if (settings.haptics && navigator.vibrate) navigator.vibrate(8);
     b.classList.add('down');
     setTimeout(() => b.classList.remove('down'), 120);
     keyAction(b.dataset.k, b);
@@ -1026,6 +1060,7 @@
     { key: 'skipFilled', type: 'toggle', label: 'Sauter les cases déjà remplies' },
     { key: 'autoNext', type: 'toggle', label: 'Passer au mot suivant quand un mot est complet' },
     { key: 'autoCheck', type: 'toggle', label: 'Signaler les erreurs immédiatement', hint: 'Mode facile : une lettre fausse s\'affiche en rouge.' },
+    { key: 'haptics', type: 'toggle', label: 'Vibration des touches', hint: 'Petit retour au toucher (Android).' },
     { key: 'keyboard', type: 'select', label: 'Disposition du clavier', options: [['azerty', 'AZERTY'], ['qwerty', 'QWERTY'], ['abc', 'Alphabétique']] },
     { group: 'Affichage' },
     { key: 'theme', type: 'select', label: 'Thème', options: [['auto', 'Automatique'], ['light', 'Clair'], ['dark', 'Sombre']] },
@@ -1109,6 +1144,7 @@
     if (settings.theme === 'auto') delete root.dataset.theme; else root.dataset.theme = settings.theme;
     document.body.classList.toggle('lefty', !!settings.lefty);
     document.body.classList.toggle('bigclues', !!settings.bigClues);
+    if (S.game) fitClue();
     readColors();
     buildKeyboard();
   }
@@ -1117,8 +1153,9 @@
   const portraitMQ = window.matchMedia('(orientation: portrait), (max-width: 900px)');
   function placeBanner() {
     const side = !portraitMQ.matches, b = $('#banner');
-    if (side) $('#clues').prepend(b); else $('.board-col').prepend(b);
+    if (side) $('#clues').prepend(b); else $('.side-col').prepend(b);
     document.body.classList.toggle('side-banner', side);
+    requestAnimationFrame(fitClue);
   }
 
   /* =================== Démarrage =================== */
@@ -1144,10 +1181,8 @@
     $('#b-prev').addEventListener('click', () => nextWord(-1, false));
     $('#b-next').addEventListener('click', () => nextWord(1, false));
     $('#b-text').addEventListener('click', toggleDir);
-    $('#b-flag').addEventListener('click', reportClue);
-    $('#z-in').addEventListener('click', () => zoomAt({ x: vp.clientWidth / 2, y: vp.clientHeight / 2 }, 1.3, true));
-    $('#z-out').addEventListener('click', () => zoomAt({ x: vp.clientWidth / 2, y: vp.clientHeight / 2 }, 1 / 1.3, true));
-    $('#z-fit').addEventListener('click', () => { smoothOnce(); fitView(); });
+    $('#g-zoom').addEventListener('click', toggleZoom);
+    $('#help-menu').addEventListener('click', e => { const b = e.target.closest('[data-act]'); if (b) helpAction(b.dataset.act); });
     $('#kbd').addEventListener('pointerdown', onKeyPress);
 
     vp.addEventListener('pointerdown', onDown);
@@ -1159,6 +1194,7 @@
     new ResizeObserver(() => {
       if (S.screen === 'game' && S.P) {
         if (V.isFit) fitView(); else { clampView(); applyView(); }
+        fitClue();
       }
     }).observe(vp);
 

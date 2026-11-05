@@ -16,6 +16,7 @@ window.MC = window.MC || {};
     skipFilled: true,
     autoNext: true,
     autoCheck: false,
+    haptics: true,
     keyboard: 'azerty',
     theme: 'auto',
     lefty: false,
