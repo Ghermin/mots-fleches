@@ -66,12 +66,13 @@ window.MC = window.MC || {};
 
   MC.LEVELS = {
     // Format magazine : 10 colonnes × 14 lignes à tous les niveaux ; la difficulté vient du vocabulaire.
-    // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français (0 = définitions faites main).
+    // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français.
+    // wikiLen : pour ces mots, seulement le sens principal, s'il ne dépasse pas ce nombre de caractères.
     // rare (0 → 1) : préférence pour les mots peu courants. curClue : part des définitions faites main.
-    // max2 : nombre maximum de mots de 2 lettres par grille.
-    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 0,        rare: 0,   curClue: 1,   max2: 14, budget: 20000, keep: 3 },
-    moyen:     { label: 'Moyen',     desc: 'Mots courants',          w: 10, h: 14, maxRank: 8000,     rare: 0.1, curClue: 0.8, max2: 10, budget: 25000, keep: 3 },
-    difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 22000,    rare: 0.6, curClue: 0.5, max2: 10, budget: 30000, keep: 4 },
-    expert:    { label: 'Expert',    desc: 'Mots rares',             w: 10, h: 14, maxRank: Infinity, rare: 1,   curClue: 0.3, max2: 10, budget: 30000, keep: 4 }
+    // max2 / max3 : nombre maximum de mots de 2 / 3 lettres par grille (desserré si la grille n'aboutit pas).
+    facile:    { label: 'Facile',    desc: 'Définitions simples',    w: 10, h: 14, maxRank: 3000,     rare: 0,   curClue: 1,   max2: 10, max3: 11, wikiLen: 34, budget: 20000, keep: 3 },
+    moyen:     { label: 'Moyen',     desc: 'Mots courants',          w: 10, h: 14, maxRank: 12000,    rare: 0.1, curClue: 0.8, max2: 7, max3: 9, budget: 25000, keep: 3 },
+    difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 22000,    rare: 0.6, curClue: 0.5, max2: 7, max3: 9, budget: 30000, keep: 4 },
+    expert:    { label: 'Expert',    desc: 'Mots rares',             w: 10, h: 14, maxRank: Infinity, rare: 1,   curClue: 0.3, max2: 7, max3: 9, budget: 30000, keep: 4 }
   };
 })(window.MC);

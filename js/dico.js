@@ -1061,4 +1061,24 @@ YES|Oui d'outre-Manche
       MC.DICO.push(w);
     }
   }
+
+  // 3) Formes accordées et conjuguées (js/dico-wiki.js) : pluriels et féminins réguliers (CHATS,
+  //    PETITE), verbes en -er à la 3e personne et au participe (MANGEAIT, MANGEES), avec des
+  //    définitions accordées de la même façon. base = le mot de départ : une grille ne contient
+  //    jamais deux formes du même mot. Rang 0 : forme d'un mot fait main (gardée en Facile).
+  MC.DICO_FORMS_N = 0;
+  if (MC.DICO_FORMS) {
+    for (const l of MC.DICO_FORMS.split('\n')) {
+      const p = l.split('|');
+      if (p.length < 4 || !/^[A-Z]{3,}$/.test(p[0]) || byWord.has(p[0])) continue;
+      const base = byWord.get(p[1]);
+      if (!base) continue;
+      const clues = p.slice(3).map(c => c.trim()).filter(c => c.length >= 3 && !obscure.test(c) && !context(c));
+      if (!clues.length) continue;
+      const w = { word: p[0], base: p[1], r: +p[2] ? +p[2] : base.r, clue: clues[0], clues, wclues: [] };
+      byWord.set(w.word, w);
+      MC.DICO.push(w);
+      MC.DICO_FORMS_N++;
+    }
+  }
 })(window.MC);

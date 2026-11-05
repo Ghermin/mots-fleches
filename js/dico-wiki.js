@@ -10609,3 +10609,9953 @@ INCUBATION|34997|Action des volatiles qui couvent leurs œufs|Passage d'une cult
 HONGROISE|34998|Ornement des tenues de hussards
 FLAMBE|34999|Sorte d’iris
 `;
+/* Formes accordées et conjuguées : pluriels et féminins réguliers, verbes en -er (3e personne,
+   participes), avec leurs définitions accordées.
+   Format : FORME|MOT DE BASE|rang (0 = mot fait main)|définitions… */
+window.MC.DICO_FORMS = `
+POURS|POUR|27|Arguments favorables, avantages|Votes en faveur de
+NONS|NON|42|Opérateurs de négation logique
+MONS|MON|47|Insignes héraldiques japonais
+FAITS|FAIT|51|Réalisés|Constitués, conformés
+FAITE|FAIT|51|Réalisée|Constituée, conformée
+FAITES|FAIT|51|Réalisées|Constituées, conformées
+SURE|SUR|60|Qui a un goût acide et aigrelet
+DITS|DIT|71|Appelés, surnommés
+DITE|DIT|71|Appelée, surnommée
+DITES|DIT|71|Appelées, surnommées
+TONS|TON|88|Qualités de la voix
+PARS|PAR|90|Quinzièmes lettres de l’alphabet géorgien
+PEUTS|PEUT|109|Sales, mauvais, méchants
+MONDES|MONDE|136|Planètes
+PARLE|PARLER|143|Use de la faculté du langage|Imite le langage de l’homme|Exprime sa pensée en articulant les mots d’une langue
+PARLENT|PARLER|143|Usent de la faculté du langage|Imitent le langage de l’homme|Expriment sa pensée en articulant les mots d’une langue
+PARLAIT|PARLER|143|Usait de la faculté du langage|Imitait le langage de l’homme|Exprimait sa pensée en articulant les mots d’une langue
+PARLAIENT|PARLER|143|Usaient de la faculté du langage|Imitaient le langage de l’homme|Exprimaient sa pensée en articulant les mots d’une langue
+PARLERA|PARLER|143|Usera de la faculté du langage|Imitera le langage de l’homme|Exprimera sa pensée en articulant les mots d’une langue
+PARLA|PARLER|143|Usa de la faculté du langage|Imita le langage de l’homme|Exprima sa pensée en articulant les mots d’une langue
+PARLEE|PARLER|143|Usée de la faculté du langage
+PARLES|PARLER|143|Usés de la faculté du langage
+PARLEES|PARLER|143|Usées de la faculté du langage
+PERSONNES|PERSONNE|144|Précédés d’un adjectif possessif
+PERES|PERE|146|Titres donnés aux dignitaires des congrégations et des ordres religieux
+HOMMES|HOMME|157|Êtres humains adultes de genre ou de sexe masculin|Personnes masculines douées de sentiments humains
+VRAIE|VRAI|159|Qui convient
+FEMMES|FEMME|160|Conjointes|Personnes adultes de genre féminin
+BONNES|BONNE|172|Servantes dans une maison bourgeoise
+MORTS|MORT|173|Peines capitales
+MORTE|MORT|173|Qui semble sans vie|Épuisée
+MORTES|MORT|173|Épuisées
+FILLES|FILLE|179|Enfants de genre féminin, par opposition à garçon|Tout êtres humains de genre féminin
+DESOLES|DESOLE|184|Déserts|Affligés
+PETITS|PETIT|188|Mesquins
+PETITES|PETIT|188|Mesquines
+PASSES|PASSE|195|Les temps écoulés
+JOURS|JOUR|197|Périodes de vingt-quatre heures|Ces même périodes sur d’autres corps célestes|Dates particulières du calendrier
+SALUTS|SALUT|202|Faits d’échapper à la damnation éternelle
+NOMS|NOM|204|Pseudonymes|Naissances illustres, noblesses, maisons nobles|Qualifications, épithètes
+BONJOURS|BONJOUR|206|Salutations
+RAISONS|RAISON|208|Facultés intellectuelles par laquelle l’homme connaît
+MAMANS|MAMAN|211|Dames, madames
+MOMENTS|MOMENT|213|Points dans le temps|Des certaines durées|Produits d’une force par le bras du levier
+AIDENT|AIDER|216|Facilitent l’accomplissement d’une action|Facilitent l’accomplissement d’une action accomplie par quelqu’un
+AIDAIT|AIDER|216|Facilitait l’accomplissement d’une action|Facilitait l’accomplissement d’une action accomplie par quelqu’un
+AIDAIENT|AIDER|216|Facilitaient l’accomplissement d’une action|Facilitaient l’accomplissement d’une action accomplie par quelqu’un
+AIDERA|AIDER|216|Facilitera l’accomplissement d’une action|Facilitera l’accomplissement d’une action accomplie par quelqu’un
+AIDA|AIDER|216|Facilita l’accomplissement d’une action|Facilita l’accomplissement d’une action accomplie par quelqu’un
+AIRS|AIR|217|Zones situées au-dessus du sol
+PROBLEMES|PROBLEME|222|Questions scientifiques à résoudre|Affaires embrouillées
+PEURS|PEUR|224|Craintes, frayeurs|Craintes faibles
+TROUVES|TROUVE|228|Auparavants abandonnés|Heureux, bons
+TROUVENT|TROUVER|233|Rencontrent par hasard
+TROUVAIT|TROUVER|233|Rencontrait par hasard
+TROUVAIENT|TROUVER|233|Rencontraient par hasard
+TROUVERA|TROUVER|233|Rencontrera par hasard
+TROUVA|TROUVER|233|Rencontra par hasard
+TROUVEE|TROUVER|233|Rencontrée par hasard
+TROUVEES|TROUVER|233|Rencontrées par hasard
+TETES|TETE|245|Parties supérieures du corps|Chevelures
+VOITURES|VOITURE|257|Automobiles
+PENDANTE|PENDANT|262|Qui pend
+IDEES|IDEE|263|Suggestions|Possibilités|Façons de faire
+CHANCES|CHANCE|264|Possibilités subjectives estimées de réalisation
+GRANDS|GRAND|270|Extrêmes
+GRANDE|GRAND|270|Extrême
+GRANDES|GRAND|270|Extrêmes
+AMIES|AMI|273|Propices, favorables
+PASSENT|PASSER|279|Traversent en subissant
+PASSAIT|PASSER|279|Traversait en subissant
+PASSAIENT|PASSER|279|Traversaient en subissant
+PASSERA|PASSER|279|Traversera en subissant
+PASSA|PASSER|279|Traversa en subissant
+PASSEES|PASSER|279|Traversées en subissant
+PORTES|PORTE|287|Tout passages d’un lieu ou d’une situation, à un autre|Espaces entre deux piquets lors d’un slalom|Unités de base d’une fonction logique combinatoire
+HEURES|HEURE|290|Unités de mesure du temps
+CONTRES|CONTRE|291|Retours d'une bille
+ENTENDUS|ENTENDU|294|Bien compris, complices
+ENSEMBLES|ENSEMBLE|297|Collections d’éléments harmonisés, assortis
+AMOURS|AMOUR|299|Plaisirs, intérêts, voire obsessions|Copulations, relations sexuelles, unions charnelles
+RESTENT|RESTER|305|Continuent à exister
+RESTAIT|RESTER|305|Continuait à exister
+RESTAIENT|RESTER|305|Continuaient à exister
+RESTERA|RESTER|305|Continuera à exister
+RESTA|RESTER|305|Continua à exister
+RESTEE|RESTER|305|Continuée à exister
+RESTES|RESTER|305|Continués à exister
+RESTEES|RESTER|305|Continuées à exister
+FINIE|FINI|308|Qui a une fin, limité|Achevée, faite, terminée
+FINIES|FINI|308|Achevées, faites, terminées
+QUESTIONS|QUESTION|311|Interrogations
+PARTIES|PARTIE|312|Portions d’un tout
+HISTOIRES|HISTOIRE|313|Récits d’actions, d’événements, de choses dignes de mémoire
+DEMANDES|DEMANDE|317|Questions, interrogations
+CHERCHE|CHERCHER|318|Se donne du mouvement|Se comporte comme pour essayer de trouver
+CHERCHENT|CHERCHER|318|Se donnent du mouvement|Se comportent comme pour essayer de trouver
+CHERCHAIT|CHERCHER|318|Se donnait du mouvement|Se comportait comme pour essayer de trouver
+CHERCHAIENT|CHERCHER|318|Se donnaient du mouvement|Se comportaient comme pour essayer de trouver
+CHERCHERA|CHERCHER|318|Se donnera du mouvement|Se comportera comme pour essayer de trouver
+CHERCHA|CHERCHER|318|Se donna du mouvement|Se comporta comme pour essayer de trouver
+GENRES|GENRE|320|Catégories à laquelle appartient un objet
+LAISSENT|LAISSER|326|Oublient de prendre avec soi
+LAISSAIT|LAISSER|326|Oubliait de prendre avec soi
+LAISSAIENT|LAISSER|326|Oubliaient de prendre avec soi
+LAISSERA|LAISSER|326|Oubliera de prendre avec soi
+LAISSA|LAISSER|326|Oublia de prendre avec soi
+LAISSEE|LAISSER|326|Oubliée de prendre avec soi
+LAISSES|LAISSER|326|Oubliés de prendre avec soi
+BEBES|BEBE|341|Embryons ou fœtus
+REVOIRS|REVOIR|343|Actions de voir à nouveau
+ATTENTIONS|ATTENTION|350|Concentrations particulières sur quelque chose|Vigilances
+DONNENT|DONNER|351|Font un don
+DONNAIT|DONNER|351|Faisait un don
+DONNAIENT|DONNER|351|Faisaient un don
+DONNERA|DONNER|351|Fera un don
+DONNA|DONNER|351|Fit un don
+ENDROITS|ENDROIT|353|Parties déterminées d’un espace
+FACONS|FACON|356|Actions de faire|Manières
+DONNES|DONNE|357|Reçus en don|Peu chers, facilements accessibles
+TRAINS|TRAIN|360|Allures régulières dans une course de fond ou de demi-fond
+ECOUTES|ECOUTE|362|Cordages attachés à un coin d’une voile
+POUVOIRS|POUVOIR|365|Capacités à produire un effet
+TYPES|TYPE|366|Spécimens de référence
+PERDUS|PERDU|367|Égarés, introuvables
+PERDUES|PERDU|367|Égarées, introuvables
+PREMIERES|PREMIERE|369|Élèves de cette classe
+POINTS|POINT|371|Douleurs piquantes
+MAINS|MAIN|373|Habiletés manuelles
+MATINS|MATIN|378|Commencements, débuts
+ARRETENT|ARRETER|390|Débusquent le gibier|Empêchent de bouger|Font un nœud pour que le fil ne s’échappe pas
+ARRETAIT|ARRETER|390|Débusquait le gibier|Empêchait de bouger|Faisait un nœud pour que le fil ne s’échappe pas
+ARRETAIENT|ARRETER|390|Débusquaient le gibier|Empêchaient de bouger|Faisaient un nœud pour que le fil ne s’échappe pas
+ARRETERA|ARRETER|390|Débusquera le gibier|Empêchera de bouger|Fera un nœud pour que le fil ne s’échappe pas
+ARRETA|ARRETER|390|Débusqua le gibier|Empêcha de bouger|Fit un nœud pour que le fil ne s’échappe pas
+ARRETEE|ARRETER|390|Empêchée de bouger
+ARRETES|ARRETER|390|Empêchés de bouger
+ARRETEES|ARRETER|390|Empêchées de bouger
+CAUSES|CAUSE|391|Raisons, sujets, motifs
+CHAMBRES|CHAMBRE|394|Logements dans une auberge, un hôtel, un hospice, etc|Assemblées législatives
+DROITS|DROIT|395|Rectilignes ou rectilinéaires
+DROITES|DROIT|395|Rectilignes ou rectilinéaires
+PARTIS|PARTI|396|Décisions|Avantages, utilités, profits
+TERRES|TERRE|401|Sols sur lequel nous marchons
+BELLES|BELLE|402|Petites amies
+FINS|FIN|409|Cessations, interruptions|Objectifs
+AURAS|AURA|412|Prolongements|Sensations subjectives vagues
+POSSIBLES|POSSIBLE|422|Éventuels
+DEMANDENT|DEMANDER|424|Indiquent à quelqu’un par des paroles|S'adressent à la justice
+DEMANDAIT|DEMANDER|424|Indiquait à quelqu’un par des paroles|S'adressait à la justice
+DEMANDAIENT|DEMANDER|424|Indiquaient à quelqu’un par des paroles|S'adressaient à la justice
+DEMANDERA|DEMANDER|424|Indiquera à quelqu’un par des paroles|S'adressera à la justice
+DEMANDA|DEMANDER|424|Indiqua à quelqu’un par des paroles|S'adressa à la justice
+DEMANDEE|DEMANDER|424|Indiquée à quelqu’un par des paroles
+DEMANDEES|DEMANDER|424|Indiquées à quelqu’un par des paroles
+DOCTEURS|DOCTEUR|431|Médecins
+CONFIANCES|CONFIANCE|433|Assurances, hardiesses
+CHEFS|CHEF|438|Crânes d'un saint
+TELEPHONES|TELEPHONE|448|Appareils utilisés par deux personnes ou plus
+MANGE|MANGER|460|Mâche et avale un aliment dans le but de se nourrir|Prend un repas|Occupe une grande partie de quelque chose
+MANGENT|MANGER|460|Mâchent et avalent un aliment dans le but de se nourrir|Prennent un repas|Occupent une grande partie de quelque chose
+MANGEAIT|MANGER|460|Mâchait et avalait un aliment dans le but de se nourrir|Prenait un repas|Occupait une grande partie de quelque chose
+MANGEAIENT|MANGER|460|Mâchaient et avalaient un aliment dans le but de se nourrir|Prenaient un repas|Occupaient une grande partie de quelque chose
+MANGERA|MANGER|460|Mâchera et avalera un aliment dans le but de se nourrir|Prendra un repas|Occupera une grande partie de quelque chose
+MANGEA|MANGER|460|Mâcha et avala un aliment dans le but de se nourrir|Prit un repas|Occupa une grande partie de quelque chose
+GUERRES|GUERRE|463|Arts militaires|Actions de grande ampleur pour une cause ou contre un phénomène|Affrontements sociopolitiques
+APPELES|APPELE|465|Conscrits
+GARCONS|GARCON|468|Jeunes hommes|Hommes de genre masculin
+IMPORTANTS|IMPORTANT|470|Essentiels
+FORTS|FORT|474|Costauds, robustes, vigoureux|Solides
+FORTE|FORT|474|Costaude, robuste, vigoureuse|Solide
+FORTES|FORT|474|Costaudes, robustes, vigoureuses|Solides
+MARIAGES|MARIAGE|479|Unions d'une femme et d'un homme|Durées de cette union
+CAPITAINES|CAPITAINE|481|Grades d’officier
+DERNIERS|DERNIER|482|Les plus récents
+FOUS|FOU|483|Extrêmements gais, badins, enjoués
+VUES|VUE|487|Facultés de voir|Organes des yeux et du regard
+ENVIES|ENVIE|490|Désirs, volontés
+NUMEROS|NUMERO|499|Places ordonnées d’un élément dans un ensemble dénombrable
+PARFAITE|PARFAIT|502|Qui réunit toutes les qualités, sans nul mélange de défauts|Qui n’a que des qualités
+RETOURS|RETOUR|506|Tours en sens contraire|Expulsions
+PEINES|PEINE|509|Souffrances physiques ou morales|Douleurs, afflictions, chagrins, déplaisirs
+MINUTES|MINUTE|510|Unités de mesure de temps|Unités de mesure d’angle plan
+INSTANTS|INSTANT|513|Durées très brèves, voire infinitésimales
+PRISONS|PRISON|515|Peines afflictives subies dans un tel lieu
+PENSENT|PENSER|516|Exercent l’activité de l’esprit|Estiment
+PENSAIT|PENSER|516|Exerçait l’activité de l’esprit|Estimait
+PENSAIENT|PENSER|516|Exerçaient l’activité de l’esprit|Estimaient
+PENSERA|PENSER|516|Exercera l’activité de l’esprit|Estimera
+PENSA|PENSER|516|Exerça l’activité de l’esprit|Estima
+PENSES|PENSER|516|Estimés
+PENSEES|PENSER|516|Estimées
+TRAVAILLENT|TRAVAILLER|522|Tourmentent|Soignent, exécutent avec soin
+TRAVAILLAIT|TRAVAILLER|522|Tourmentait|Soignait, exécutait avec soin
+TRAVAILLERA|TRAVAILLER|522|Tourmentera|Soignera, exécutera avec soin
+TRAVAILLA|TRAVAILLER|522|Tourmenta|Soigna, exécuta avec soin
+TRAVAILLEE|TRAVAILLER|522|Tourmentée|Soignée, exécutée avec soin
+TRAVAILLES|TRAVAILLER|522|Tourmentés|Soignés, exécutés avec soin
+TRAVAILLEES|TRAVAILLER|522|Tourmentées|Soignées, exécutées avec soin
+RENTRENT|RENTRER|524|Enfoncent, percutent
+RENTRAIT|RENTRER|524|Enfonçait, percutait
+RENTRAIENT|RENTRER|524|Enfonçaient, percutaient
+RENTRERA|RENTRER|524|Enfoncera, percutera
+RENTRA|RENTRER|524|Enfonça, percuta
+RENTRES|RENTRER|524|Enfoncés, percutés
+RENTREES|RENTRER|524|Enfoncées, percutées
+REGARDE|REGARDER|525|Estime|S'observe mutuellement
+REGARDENT|REGARDER|525|Estiment|S'observent mutuellement
+REGARDAIT|REGARDER|525|Estimait|S'observait mutuellement
+REGARDAIENT|REGARDER|525|Estimaient|S'observaient mutuellement
+REGARDERA|REGARDER|525|Estimera|S'observera mutuellement
+REGARDA|REGARDER|525|Estima|S'observa mutuellement
+REGARDEE|REGARDER|525|Estimée
+REGARDES|REGARDER|525|Estimés
+REGARDEES|REGARDER|525|Estimées
+FILMS|FILM|529|Industries du cinéma
+ABORDS|ABORD|530|Accueils faits par quelqu’un
+FAUTES|FAUTE|532|Adultères|Manquements contre les règles de l'art
+PLAISIRS|PLAISIR|538|Sentiments, sensations agréables|Divertissements|Volontés
+HEUREUSE|HEUREUX|539|Qui jouit du bonheur|Qui rend fortuné
+ENTRENT|ENTRER|540|Passent par une ouverture|Se mettent
+ENTRAIENT|ENTRER|540|Passaient par une ouverture|Se mettaient
+ENTRERA|ENTRER|540|Passera par une ouverture|Se mettra
+ENTRA|ENTRER|540|Passa par une ouverture|Se mit
+ENTRES|ENTRER|540|Passés par une ouverture
+ENTREES|ENTRER|540|Passées par une ouverture
+PROPRES|PROPRE|543|Convenables à quelqu’un ou à quelque chose|Nettoyés
+TOURS|TOUR|545|Constructions élevées, cylindriques, carrées ou polygonales|Pièces du jeu d’échecs
+GARDENT|GARDER|548|Veillent ou surveillent étroitement
+GARDAIT|GARDER|548|Veillait ou surveillait étroitement
+GARDAIENT|GARDER|548|Veillaient ou surveillaient étroitement
+GARDERA|GARDER|548|Veillera ou surveillera étroitement
+GARDA|GARDER|548|Veilla ou surveilla étroitement
+AGENTS|AGENT|549|Fonctionnaires de police
+LITS|LIT|551|Couches régulières de matière quelconque
+ROUTES|ROUTE|557|Voies praticables par les voitures en dehors des agglomérations|Grandes allées percées dans un bois
+SERVICES|SERVICE|562|Indiques les faits d’être le domestique de quelqu’un
+DROLES|DROLE|565|Comiques|Enfants, marmots, gamins
+PIRES|PIRE|568|Plus mauvais, plus défectueux, plus nuisibles
+SUJETS|SUJET|571|Accoutumés de faire quelque chose
+ETATS|ETAT|572|Listes, registres|Mémoires, inventaires
+IMPOSSIBLES|IMPOSSIBLE|574|Invraisemblables|Insupportables
+BIZARRES|BIZARRE|582|Fantasques, capricieux, extravagants|Extraordinaires, singuliers
+CHIENS|CHIEN|594|Outils utilisés par les cordonniers pour assembler les chaussures
+CALMES|CALME|599|Absences de bruit, de mouvement
+MONTRENT|MONTRER|601|Font voir|Font voir par un geste, indiquent|Donnent des marques
+MONTRAIT|MONTRER|601|Faisait voir|Faisait voir par un geste, indiquait|Donnait des marques
+MONTRAIENT|MONTRER|601|Faisaient voir|Faisaient voir par un geste, indiquaient|Donnaient des marques
+MONTRERA|MONTRER|601|Fera voir|Fera voir par un geste, indiquera|Donnera des marques
+MONTRA|MONTRER|601|Fit voir|Fit voir par un geste, indiqua|Donna des marques
+MONTREE|MONTRER|601|Donnée des marques
+MONTRES|MONTRER|601|Donnés des marques
+MONTREES|MONTRER|601|Données des marques
+COEURS|COEUR|607|Organes musculaires
+VERRES|VERRE|609|Matières solides|Objets de cette matière|Systèmes optiques utilisés par exemple sur les lunettes
+DOUTES|DOUTE|613|Méthodes par laquelle l’esprit
+MOYENNES|MOYEN|617|Ordinaires, médiocres
+SERIEUSE|SERIEUX|625|Qui ne fait pas d’écart de conduite
+SECONDES|SECONDE|626|Intervalles compris entre deux notes consécutives|Soixantièmes parties d’une minute
+ESPRITS|ESPRIT|630|Substances incorporelles et immatérielles
+SALLES|SALLE|637|Pièces d’une habitation ouverte aux visiteurs|Pièces de cette habitation à usage particulier
+GENTILS|GENTIL|640|Agréables, charmants, mignons, aimables|Sages, tranquilles|Coquets, importants
+GENTILE|GENTIL|640|Agréable, charmante, mignonne, aimable|Sage, tranquille
+GENTILES|GENTIL|640|Agréables, charmantes, mignonnes, aimables|Sages, tranquilles
+CELLES|CELLE|646|Compartiments des bains romains|Petits monastères|Dépendances d’une abbaye
+DINE|DINER|650|Prend le repas du soir
+DINENT|DINER|650|Prennent le repas du soir
+DINAIT|DINER|650|Prenait le repas du soir
+DINAIENT|DINER|650|Prenaient le repas du soir
+DINERA|DINER|650|Prendra le repas du soir
+DINA|DINER|650|Prit le repas du soir
+PROCHAINES|PROCHAINE|658|Suivantes
+VISAGES|VISAGE|659|Faces humaines|Ses airs|Aspects d’une chose
+FACES|FACE|662|Visages|Les parties antérieures de la tête
+RETARDS|RETARD|666|Faits d’arriver
+ECRITS|ECRIT|667|Recouverts de signes graphiques|Marqués
+ECRITE|ECRIT|667|Qui a une valeur juridique fondée sur la jurisprudence|Marquée
+ECRITES|ECRIT|667|Marquées
+LIVRES|LIVRE|668|Chacunes des parties principales de certains ouvrages
+RAPPORTS|RAPPORT|669|Relations entre des choses ou des personnes
+MESSAGES|MESSAGE|671|Informations publicitaires
+ERREURS|ERREUR|682|Fausses opinions
+DEVENIRS|DEVENIR|692|Mouvements par lequel une chose
+RENCONTRENT|RENCONTRER|694|Commencent à trouver la piste du gibier
+RENCONTRAIT|RENCONTRER|694|Commençait à trouver la piste du gibier
+RENCONTRERA|RENCONTRER|694|Commencera à trouver la piste du gibier
+RENCONTRA|RENCONTRER|694|Commença à trouver la piste du gibier
+RENCONTREE|RENCONTRER|694|Commencée à trouver la piste du gibier
+RENCONTRES|RENCONTRER|694|Commencés à trouver la piste du gibier
+RENCONTREES|RENCONTRER|694|Commencées à trouver la piste du gibier
+COMMENCE|COMMENCER|696|Engage une action
+COMMENCENT|COMMENCER|696|Engagent une action
+COMMENCAIT|COMMENCER|696|Engageait une action
+COMMENCAIENT|COMMENCER|696|Engageaient une action
+COMMENCERA|COMMENCER|696|Engagera une action
+COMMENCA|COMMENCER|696|Engagea une action
+PIECES|PIECE|701|Éléments composites d’un ensemble
+INTERIEURS|INTERIEUR|705|Spirituels
+INTERIEURES|INTERIEUR|705|Spirituelles
+REVES|REVE|712|Expériences illusoires
+CARTES|CARTE|713|Représentations géométriques conventionnelles|Géographies d’un pays, d'une région, etc
+APPELS|APPEL|715|Entrées en communication par l’intermédiaire du téléphone|Actions de réclamer, d’invoquer
+MANQUES|MANQUE|716|États de stress dû à la privation d’une drogue
+DEBUTS|DEBUT|718|Commencements|Premiers ouvrages d’un auteur
+BONSOIRS|BONSOIR|723|Signes de salutations
+CONTENTS|CONTENT|724|Satisfaits, heureux
+CONTENTE|CONTENT|724|Satisfaite, heureuse
+CONTENTES|CONTENT|724|Satisfaites, heureuses
+VENUES|VENUE|726|Actions de venir|Entrées en scène d’un personnage historique
+EFFETS|EFFET|729|Efforts transmis par un mécanisme
+SACS|SAC|731|Contenants pour toutes sortes de marchandises
+OCCUPENT|OCCUPER|736|Prennent possession de
+OCCUPAIT|OCCUPER|736|Prenait possession de
+OCCUPAIENT|OCCUPER|736|Prenaient possession de
+OCCUPERA|OCCUPER|736|Prendra possession de
+OCCUPA|OCCUPER|736|Prit possession de
+AGES|AGE|744|Vieillesses
+RUES|RUE|746|Voies de circulation d'une ville|Tranchées vides après son exploitation dans une carrière ou une mine
+PATRONS|PATRON|753|Fondateurs d’une église ou d’un bénéfice|Chefs d’entreprise artisanale ou commerciale
+AVOCATS|AVOCAT|754|Professionnels du droit
+BOUTS|BOUT|760|Parties extrêmes d’une chose|Petites parties de certaines choses
+ORDRES|ORDRE|761|Arrangements raisonnés et logiques|Demandes impératives
+VOYAGES|VOYAGE|768|Trips, défonces
+BIENVENUES|BIENVENUE|772|Heureuses arrivées de quelqu’un
+DISPARUE|DISPARU|773|Que l’on ne retrouve pas, en parlant d’une personne|Qui n'existe plus, en parlant d'une espèce animale
+PROTEGENT|PROTEGER|774|S'intéressent, contribuent à la fortune d’une personne
+PROTEGEAIT|PROTEGER|774|S'intéressait, contribuait à la fortune d’une personne
+PROTEGEAIENT|PROTEGER|774|S'intéressaient, contribuaient à la fortune d’une personne
+PROTEGERA|PROTEGER|774|S'intéressera, contribuera à la fortune d’une personne
+PROTEGEA|PROTEGER|774|S'intéressa, contribua à la fortune d’une personne
+SITUATIONS|SITUATION|776|Positions d’une ville|Moments critiques dans l’action d’un drame, d’un roman, etc
+LISTES|LISTE|787|Marques allongées en tête|Suites de noms de personnes ou de choses
+ARMEES|ARMEE|791|Ensemble structurés de soldats
+CRIMES|CRIME|795|Homicides volontaires, meurtres|Actions blâmables ou condamnables
+BOUGES|BOUGE|804|Logements obscurs et malpropres|Cuves de vinification|Courbures transversales du pont d’un bateau
+IDIOTS|IDIOT|809|Ignares, ignorants
+IDIOTE|IDIOT|809|Ignare, ignorante
+IDIOTES|IDIOT|809|Ignares, ignorantes
+IMPRESSIONS|IMPRESSION|816|Actions d’imprimer un livre, un journal, etc|Documents imprimés
+HABITUDES|HABITUDE|823|Pratiques sociales constantes
+TABLES|TABLE|824|Surfaces planes de bois|Restaurants
+ROUGES|ROUGE|825|Déficits
+SYSTEMES|SYSTEME|826|Organisations politiques ou sociales
+MEDECINS|MEDECIN|828|Remèdes|Guérisseurs
+FAIMS|FAIM|832|Les besoins de manger, lui-même
+SURPRISES|SURPRISE|835|Événements inattendus
+LIGNES|LIGNE|838|Traits simples|Rangs en mérite ou en réputation
+PORTENT|PORTER|839|Mettent sur soi
+PORTAIT|PORTER|839|Mettait sur soi
+PORTAIENT|PORTER|839|Mettaient sur soi
+PORTERA|PORTER|839|Mettra sur soi
+PORTA|PORTER|839|Mit sur soi
+PORTEES|PORTER|839|Mises sur soi
+CLAIRS|CLAIR|842|Transparents, pas troubles, purs
+BALLES|BALLE|845|Objets sphériques utilisés pour jouer|Conditionnements quelconques|Projectiles d’arme à feu
+RISQUES|RISQUE|850|Possibilités d’un événement négatif, péril possible, danger
+MISSIONS|MISSION|854|Buts de son action|Compagnies de prêtres
+EXPLIQUE|EXPLIQUER|860|Rend clair|Fait connaître la cause
+EXPLIQUENT|EXPLIQUER|860|Rendent clair|Font connaître la cause
+EXPLIQUAIT|EXPLIQUER|860|Rendait clair|Faisait connaître la cause
+EXPLIQUAIENT|EXPLIQUER|860|Rendaient clair|Faisaient connaître la cause
+EXPLIQUERA|EXPLIQUER|860|Rendra clair|Fera connaître la cause
+EXPLIQUA|EXPLIQUER|860|Rendit clair|Fit connaître la cause
+REPONSES|REPONSE|876|Paroles dites, ous actes effectués|Réfutations
+POTES|POTE|879|Arrondis, gros
+PIEDS|PIED|881|Membres cuisinés d’un animal
+MARCHERS|MARCHER|882|Déplacements par mouvements alternatifs des jambes ou des pattes
+MARCHENT|MARCHER|882|S'avancent de quelque manière que ce soit
+MARCHAIT|MARCHER|882|S'avançait de quelque manière que ce soit
+MARCHAIENT|MARCHER|882|S'avançaient de quelque manière que ce soit
+MARCHERA|MARCHER|882|S'avancera de quelque manière que ce soit
+MARCHA|MARCHER|882|S'avança de quelque manière que ce soit
+ESPECES|ESPECE|887|Unités fondamentales de la systématique|Substances simples ou peu composées
+PAREILE|PAREIL|890|Qui présente une forte ressemblance ou similitude
+SOLEILS|SOLEIL|892|Étoiles considérées par rapport à ses planètes
+COINS|COIN|895|Pièces de fer ou de bois ou de toute autre matière dure|Pièces de bois
+GROSSES|GROSSE|901|Des douzaines de douzaines
+VOULOIRS|VOULOIR|902|Bienveillances, malveillances
+VIEILLES|VIEILLE|904|Femmes âgées
+CONTINUENT|CONTINUER|906|Prolongent
+CONTINUAIT|CONTINUER|906|Prolongeait
+CONTINUAIENT|CONTINUER|906|Prolongeaient
+CONTINUERA|CONTINUER|906|Prolongera
+CONTINUA|CONTINUER|906|Prolongea
+CONTINUEE|CONTINUER|906|Prolongée
+CONTINUES|CONTINUER|906|Prolongés
+CONTINUEES|CONTINUER|906|Prolongées
+SORTIES|SORTIE|908|Passages d’un lieu dans un autre
+RECHERCHES|RECHERCHE|909|Enquêtes|Enquêtes judiciaires
+JOLIE|JOLI|913|Qui a de la grâce, de l’agrément
+CLUBS|CLUB|917|Cannes à spatule de bois ou d’acier|Boîtes de nuit
+POSENT|POSER|921|Placent, mettent sur quelque chose|Mettent, fixent une pierre
+POSAIT|POSER|921|Plaçait, mettait sur quelque chose|Mettait, fixait une pierre
+POSAIENT|POSER|921|Plaçaient, mettaient sur quelque chose|Mettaient, fixaient une pierre
+POSERA|POSER|921|Placera, mettra sur quelque chose|Mettra, fixera une pierre
+POSA|POSER|921|Plaça, mit sur quelque chose|Mit, fixa une pierre
+POSES|POSER|921|Placés, mis sur quelque chose
+POSEES|POSER|921|Placées, mises sur quelque chose
+CHAUDS|CHAUD|922|Brillants et vigoureux
+CHAUDES|CHAUD|922|Brillantes et vigoureuses
+PROFESSEURS|PROFESSEUR|927|Titres obtenus à l’issue d’un cursus universitaire
+QUITTENT|QUITTER|928|Laissent quelqu’un quelque part|Se retirent de quelque part
+QUITTAIT|QUITTER|928|Laissait quelqu’un quelque part|Se retirait de quelque part
+QUITTAIENT|QUITTER|928|Laissaient quelqu’un quelque part|Se retiraient de quelque part
+QUITTERA|QUITTER|928|Laissera quelqu’un quelque part|Se retirera de quelque part
+QUITTA|QUITTER|928|Laissa quelqu’un quelque part|Se retira de quelque part
+LOIS|LOI|929|Règles, obligations écrites|Puissances
+FORMES|FORME|935|Aspects extérieurs
+CONSEILS|CONSEIL|937|Assemblées permanentes ou réunions extraordinaires
+BARS|BAR|938|Débits de boissons|Chairs cuisinées de ce poisson
+DANGEREUSE|DANGEREUX|941|Qui a les moyens de nuire
+FOLLES|FOLLE|942|Filets à larges mailles, tendu lâche
+TIRES|TIRE|944|Abattus, amaigris|Chasses au fusil|Endroits aménagés pour cette chasse
+OFFRES|OFFRE|947|Propositions|Propositions commerciales
+BUTS|BUT|948|Objectifs, cibles
+FROIDE|FROID|949|Qui manque de feu, d’âme, d’expression
+GAMINS|GAMIN|953|Appels adressés à un jeune garçon
+ATTAQUES|ATTAQUE|960|Actions violentes, agressions
+ENQUETES|ENQUETE|962|Recherches méthodiques d’informations précises
+VISITES|VISITE|963|Consultations d’un médecin|Actions des médecins et des chirurgiens d’un hôpital
+OUBLIENT|OUBLIER|970|Négligent
+OUBLIAIT|OUBLIER|970|Négligeait
+OUBLIAIENT|OUBLIER|970|Négligeaient
+OUBLIERA|OUBLIER|970|Négligera
+OUBLIA|OUBLIER|970|Négligea
+OUBLIEE|OUBLIER|970|Négligée
+OUBLIES|OUBLIER|970|Négligés
+OUBLIEES|OUBLIER|970|Négligées
+AIMENT|AIMER|976|Apprécient, trouvent agréable
+AIMAIT|AIMER|976|Appréciait, trouvait agréable
+AIMAIENT|AIMER|976|Appréciaient, trouvaient agréable
+AIMERA|AIMER|976|Appréciera, trouvera agréable
+AIMA|AIMER|976|Apprécia, trouva agréable
+ECOUTENT|ECOUTER|980|Font attention, prêtent l’oreille pour entendre|Prêtent l’oreille|Donnent quelque croyance
+ECOUTAIT|ECOUTER|980|Faisait attention, prêtait l’oreille pour entendre|Prêtait l’oreille|Donnait quelque croyance
+ECOUTAIENT|ECOUTER|980|Faisaient attention, prêtaient l’oreille pour entendre|Prêtaient l’oreille|Donnaient quelque croyance
+ECOUTERA|ECOUTER|980|Fera attention, prêtera l’oreille pour entendre|Prêtera l’oreille|Donnera quelque croyance
+ECOUTA|ECOUTER|980|Fit attention, prêta l’oreille pour entendre|Prêta l’oreille|Donna quelque croyance
+TOMBES|TOMBE|988|Fosses mortuaires
+SANTES|SANTE|992|États sains de l’organisme|Bons états du moral, de la raison|États de l’organisme, bon ou mauvais
+COUCHERS|COUCHER|997|Usages du lit et du logement en général|Moments de la disparition d’un astre sous l’horizon
+COUCHENT|COUCHER|997|S'allongent sur le sol|Mettent quelqu’un au lit
+COUCHAIT|COUCHER|997|S'allongeait sur le sol|Mettait quelqu’un au lit
+COUCHAIENT|COUCHER|997|S'allongeaient sur le sol|Mettaient quelqu’un au lit
+COUCHERA|COUCHER|997|S'allongera sur le sol|Mettra quelqu’un au lit
+COUCHA|COUCHER|997|S'allongea sur le sol|Mit quelqu’un au lit
+CUISINES|CUISINE|998|Actions de préparer à manger
+RELATIONS|RELATION|1003|Liaisons affectives ou amoureuses
+DAMES|DAME|1005|Femmes à laquelle un chevalier consacrait ses soins et ses exploits
+CHANSONS|CHANSON|1007|Ces textes chantés|Textes mis en musique|Ces textes et ses partitions imprimés
+VOLENT|VOLER|1009|Pilotent un avion
+VOLAIT|VOLER|1009|Pilotait un avion
+VOLAIENT|VOLER|1009|Pilotaient un avion
+VOLERA|VOLER|1009|Pilotera un avion
+VOLA|VOLER|1009|Pilota un avion
+CERTAINE|CERTAIN|1012|Indubitable
+CERTAINES|CERTAIN|1012|Indubitables
+DONS|DON|1013|Actions d’offrir à quelqu’un quelque chose|Aptitudes|Quatrièmes lettres de l’alphabet géorgien
+AMES|AME|1014|Principes du sentiment
+COMPAGNIES|COMPAGNIE|1020|Troupes, bandes|Groupes d’oiseaux en particulier des perdrix|Sociétés commerciales
+DEJEUNERS|DEJEUNER|1021|Pièces de vaisselle de la forme d’une tasse
+DEJEUNE|DEJEUNER|1021|Prend le repas du matin
+DEJEUNENT|DEJEUNER|1021|Prennent le repas du matin
+DEJEUNAIT|DEJEUNER|1021|Prenait le repas du matin
+DEJEUNAIENT|DEJEUNER|1021|Prenaient le repas du matin
+DEJEUNERA|DEJEUNER|1021|Prendra le repas du matin
+DEJEUNA|DEJEUNER|1021|Prit le repas du matin
+DIFFERENTE|DIFFERENT|1022|Qui souffre d’un handicap
+CLES|CLE|1025|Immobilisations ou contrôles permanents
+LIEUTENANTS|LIEUTENANT|1036|Grades donnés à un officier subalterne
+DIABLES|DIABLE|1040|Créatures infernales
+MONTENT|MONTER|1042|Se déplacent vers le haut|Se placent et se déplacent dans un véhicule
+MONTAIT|MONTER|1042|Se déplaçait vers le haut|Se plaçait et se déplaçait dans un véhicule
+MONTAIENT|MONTER|1042|Se déplaçaient vers le haut|Se plaçaient et se déplaçaient dans un véhicule
+MONTA|MONTER|1042|Se déplaça vers le haut|Se plaça et se déplaça dans un véhicule
+CAPABLES|CAPABLE|1045|Habiles, intelligents
+BOUCHES|BOUCHE|1049|Organes de l'être humain|Étapes dans l’analyse sensorielle et la dégustation du vin
+SOINS|SOIN|1054|Applications d’esprit à faire quelque chose|Charges, fonctions
+PROCHAINS|PROCHAIN|1057|Voisins immédiats
+BLAGUES|BLAGUE|1061|Petits sachets taillés dans une grosse toile|Farces faites à quelqu’un
+EPOQUES|EPOQUE|1063|Ères géologiques
+VOIES|VOIE|1065|Chemins matérialisés par deux rails parallèles
+REUNIONS|REUNION|1066|Actions de rapprocher|Assemblées de personnes
+ALLEES|ALLEE|1068|Espaces pour le passage dans un édifice
+INTERETS|INTERET|1069|Participations, parts
+COMBATS|COMBAT|1071|Guerres
+SILENCES|SILENCE|1072|Absences de bruit|Actions de ne pas exprimer sa pensée, oralement ou par écrit
+TROUS|TROU|1078|Avantages de douze points
+CACHENT|CACHER|1083|Mettent à l’abri
+CACHAIT|CACHER|1083|Mettait à l’abri
+CACHAIENT|CACHER|1083|Mettaient à l’abri
+CACHERA|CACHER|1083|Mettra à l’abri
+CACHA|CACHER|1083|Mit à l’abri
+CACHEE|CACHER|1083|Mise à l’abri
+CACHES|CACHER|1083|Mis à l’abri
+CACHEES|CACHER|1083|Mises à l’abri
+AMOUREUSE|AMOUREUX|1084|Qui a une grande passion pour quelque chose|Qui prend, retient bien l’encre
+PRISES|PRISE|1093|Facultés de prendre, de saisir|Actions de prendre quelqu’un ou quelque chose
+ADRESSES|ADRESSE|1097|Indications, désignations|Conseils
+CONTACTS|CONTACT|1099|Actions de toucher physiquement|Liaisons
+DINGUES|DINGUE|1100|Bizarres, extraordinaires, saugrenus|Enjoués au plus haut point
+RECUPERE|RECUPERER|1102|Recouvre
+RECUPERENT|RECUPERER|1102|Recouvrent
+RECUPERAIT|RECUPERER|1102|Recouvrait
+RECUPERAIENT|RECUPERER|1102|Recouvraient
+RECUPERERA|RECUPERER|1102|Recouvrera
+RECUPERA|RECUPERER|1102|Recouvra
+RECUPEREE|RECUPERER|1102|Recouvrée
+RECUPERES|RECUPERER|1102|Recouvrés
+RECUPEREES|RECUPERER|1102|Recouvrées
+FICHES|FICHE|1110|Piquets pour marquer les lignes d’un camp|Pièces de cuivre ou de bois
+SOCIETES|SOCIETE|1116|Classes dirigeantes de cet assemblage
+OUVERTE|OUVERT|1121|Qui dénote une personne affable , qui ne discrimine pas
+MERS|MER|1124|Ses états pour la navigation|Grandes étendues de liquide
+BIERES|BIERE|1129|Boissons fermentées à base de malt|Des verres, des pintes, des bouteilles
+ROBES|ROBE|1131|Vêtements longs|Professions de magistrat, d’avocat|Professions des ecclésiastiques, des religieux
+OPERATIONS|OPERATION|1135|Actions d’opérer|Manières d'opérer|Interventions chirurgicales sur le corps de l’homme ou de l’animal
+FUTS|FUT|1137|Parties en bois d’un objet|Tiges de la colonne
+VOLS|VOL|1144|Mouvements des oiseaux et de divers animaux
+VINS|VIN|1146|Boissons alcoolisées obtenues par fermentation d’autres végétaux|Sixièmes lettres de l’alphabet géorgien
+DOMMAGES|DOMMAGE|1147|Choses regrettables
+COLONELS|COLONEL|1150|Fonctionnaires titulaires de ce grade
+RAMENE|RAMENER|1151|Fait revenir
+RAMENENT|RAMENER|1151|Font revenir
+RAMENAIT|RAMENER|1151|Faisait revenir
+RAMENAIENT|RAMENER|1151|Faisaient revenir
+RAMENERA|RAMENER|1151|Fera revenir
+RAMENA|RAMENER|1151|Fit revenir
+JUSTICES|JUSTICE|1154|Bons droits|Actions de reconnaître le droit de quelqu’un à quelque chose
+DECOUVERTS|DECOUVERT|1156|Terrains sans arbres
+DEPARTS|DEPART|1157|Démissions|Actions de démarrer|Sources, origines
+BRUITS|BRUIT|1158|Ses peu distincts, confus
+VERIFIE|VERIFIER|1160|Examine, recherche si une chose est vraie
+VERIFIENT|VERIFIER|1160|Examinent, recherchent si une chose est vraie
+VERIFIAIT|VERIFIER|1160|Examinait, recherchait si une chose est vraie
+VERIFIAIENT|VERIFIER|1160|Examinaient, recherchaient si une chose est vraie
+VERIFIERA|VERIFIER|1160|Examinera, recherchera si une chose est vraie
+VERIFIA|VERIFIER|1160|Examina, rechercha si une chose est vraie
+MISES|MISE|1162|Actions de mettre
+EXCUSES|EXCUSE|1167|Dispenses d’une obligation, en particulier scolaire|Cartes du jeu de tarot
+POSITIONS|POSITION|1173|Situations dans une structure|Postures d’une personne
+AVENIRS|AVENIR|1176|Devenirs d’une personne, d’une organisation|Postérités
+BETES|BETE|1179|Les mal
+APPROCHES|APPROCHE|1182|Interlettrages
+NOURRITURES|NOURRITURE|1183|Aliments|Subsistances des hommes et des animaux au moyen des aliments
+FRICS|FRIC|1184|Argents
+EMPECHENT|EMPECHER|1188|Entravent quelqu’un dans la réalisation de quelque chose|Gênent ou arrêtent par un obstacle
+EMPECHAIT|EMPECHER|1188|Entravait quelqu’un dans la réalisation de quelque chose|Gênait ou arrêtait par un obstacle
+EMPECHAIENT|EMPECHER|1188|Entravaient quelqu’un dans la réalisation de quelque chose|Gênaient ou arrêtaient par un obstacle
+EMPECHERA|EMPECHER|1188|Entravera quelqu’un dans la réalisation de quelque chose|Gênera ou arrêtera par un obstacle
+EMPECHA|EMPECHER|1188|Entrava quelqu’un dans la réalisation de quelque chose|Gêna ou arrêta par un obstacle
+EMPECHEE|EMPECHER|1188|Gênée ou arrêtée par un obstacle
+EMPECHES|EMPECHER|1188|Gênés ou arrêtés par un obstacle
+EMPECHEES|EMPECHER|1188|Gênées ou arrêtées par un obstacle
+LUNES|LUNE|1195|Chacunes des phases du cycle lunaire
+PITIES|PITIE|1196|Compassions|Détresses, états misérables
+LIBERTES|LIBERTE|1197|Pouvoirs inaliénables de l’individu
+EXPERIENCES|EXPERIENCE|1198|Connaissances des choses|Acquisitions de connaissances par l’épreuve des choses
+MURS|MUR|1206|Contreforts des terres en terrasses|Supports d’un ouvrage
+COPINES|COPINE|1216|Amoureuses|Amantes
+BAISERS|BAISER|1217|Contacts de la bouche sur le visage
+REINES|REINE|1231|Femelles fertiles
+CROITS|CROIT|1232|Augmentations d’un troupeau par la naissance des petits
+EGLISES|EGLISE|1234|Religions
+PERSONNELS|PERSONNEL|1239|Individuels
+PERSONNELLE|PERSONNEL|1239|Individuelle
+PERSONNELLES|PERSONNEL|1239|Individuelles
+CODES|CODE|1243|Droits, lois
+HUITS|HUIT|1244|Signes utilisés pour représenter ce nombre
+ESPOIRS|ESPOIR|1246|Faits d’espérer quelque chose|Les choses espérées
+DEFENSES|DEFENSE|1251|Chacunes des deux longues dents
+BOMBES|BOMBE|1256|Projectiles creux|Engins remplis de substances explosives
+ZONES|ZONE|1258|Bandes ou marques plus ou moins circulaires|Chacunes des cinq grandes divisions du globe terrestre
+TANTES|TANTE|1259|Sœurs de l’un des deux parents|Cousines de l’un des deux parents
+EXCUSENT|EXCUSER|1261|Disculpent dans une certaine mesure|Autorisent quelqu’un à ne pas faire une chose
+EXCUSAIT|EXCUSER|1261|Disculpait dans une certaine mesure|Autorisait quelqu’un à ne pas faire une chose
+EXCUSAIENT|EXCUSER|1261|Disculpaient dans une certaine mesure|Autorisaient quelqu’un à ne pas faire une chose
+EXCUSERA|EXCUSER|1261|Disculpera dans une certaine mesure|Autorisera quelqu’un à ne pas faire une chose
+EXCUSA|EXCUSER|1261|Disculpa dans une certaine mesure|Autorisa quelqu’un à ne pas faire une chose
+EXCUSEE|EXCUSER|1261|Disculpée dans une certaine mesure
+EXCUSEES|EXCUSER|1261|Disculpées dans une certaine mesure
+MAGASINS|MAGASIN|1262|Entrepôts, dépôts, réserves
+SOUVENIRS|SOUVENIR|1266|Facultés même de la mémoire
+DOULEURS|DOULEUR|1270|Sensations de souffrance|Peines de l’esprit ou du cœur
+RAVIS|RAVI|1275|Enchantés
+RAVIE|RAVI|1275|Enchantée
+RAVIES|RAVI|1275|Enchantées
+FENETRES|FENETRE|1279|Ouvertures faites dans certaines parties d’un bâtiment
+TERRAINS|TERRAIN|1281|Espaces de terre
+SERGENTS|SERGENT|1282|Policiers des villes médiévales|Poissons
+QUARTIERS|QUARTIER|1285|Divisions de certains fruits|Bois fendus|Parties importantes d'un tout
+RAPIDES|RAPIDE|1288|Très inclinés
+ASSURENT|ASSURER|1290|Rendent stable
+ASSURAIT|ASSURER|1290|Rendait stable
+ASSURAIENT|ASSURER|1290|Rendaient stable
+ASSURERA|ASSURER|1290|Rendra stable
+ASSURA|ASSURER|1290|Rendit stable
+MIGNONS|MIGNON|1292|Tendres
+MIGNONNES|MIGNON|1292|Tendres
+BOBS|BOB|1295|Ses enregistrés
+PRESENTENT|PRESENTER|1299|Montrent une première fois|Montrent ostensiblement
+PRESENTAIT|PRESENTER|1299|Montrait une première fois|Montrait ostensiblement
+PRESENTAIENT|PRESENTER|1299|Montraient une première fois|Montraient ostensiblement
+PRESENTERA|PRESENTER|1299|Montrera une première fois|Montrera ostensiblement
+PRESENTA|PRESENTER|1299|Montra une première fois|Montra ostensiblement
+IMPORTANCES|IMPORTANCE|1300|Autorités, crédits, influences
+MACHINES|MACHINE|1305|Engins destinés aux travaux de l’agriculture
+PROUVE|PROUVER|1315|Montre, indique, marque
+PROUVENT|PROUVER|1315|Montrent, indiquent, marquent
+PROUVAIT|PROUVER|1315|Montrait, indiquait, marquait
+PROUVAIENT|PROUVER|1315|Montraient, indiquaient, marquaient
+PROUVERA|PROUVER|1315|Montrera, indiquera, marquera
+PROUVA|PROUVER|1315|Montra, indiqua, marqua
+PROUVEE|PROUVER|1315|Montrée, indiquée, marquée
+PROUVES|PROUVER|1315|Montrés, indiqués, marqués
+PROUVEES|PROUVER|1315|Montrées, indiquées, marquées
+GLACES|GLACE|1317|Vitrages
+DISCUTE|DISCUTER|1322|Liquide judiciairement les biens d’une personne
+DISCUTENT|DISCUTER|1322|Liquident judiciairement les biens d’une personne
+DISCUTAIT|DISCUTER|1322|Liquidait judiciairement les biens d’une personne
+DISCUTAIENT|DISCUTER|1322|Liquidaient judiciairement les biens d’une personne
+DISCUTERA|DISCUTER|1322|Liquidera judiciairement les biens d’une personne
+DISCUTA|DISCUTER|1322|Liquida judiciairement les biens d’une personne
+VILLAGES|VILLAGE|1323|Groupes d’habitations rurales
+SPECTACLES|SPECTACLE|1324|Divertissements offerts au public|Manifestations publiques remarquables ou admirables
+ROSES|ROSE|1327|Empreints de douceur, gentil, parfaitement inoffensif
+REALITES|REALITE|1335|Existences effectives
+RESPECTS|RESPECT|1337|Sentiments de considération|Soucis de ne pas porter atteinte à cette personne ou à cette chose|Hommages
+SOLUTIONS|SOLUTION|1349|Liquides formés par le mélange homogène d’un ou plusieurs corps purs
+MONSTRES|MONSTRE|1352|Figurations dramatiques liées à cette chose
+NATURES|NATURE|1356|Puissances, forces actives et créatrices|Campagnes avec ses aspects divers
+ENERGIES|ENERGIE|1358|Forces en action|Vigueurs de caractère, ardeur dans l’action
+PIERRES|PIERRE|1359|Roches solides et plus ou moins dures|Blocs de taille variable
+PRESSIONS|PRESSION|1361|Contraintes morales destinées à convaincre ou faire agir|Verres d’une telle bière
+MARIES|MARIE|1366|Personnes, hommes ou femmes
+ESPACES|ESPACE|1367|Étendues indéfinies|Étendues limitées et ordinairements superficielles|Endroits
+PREPARE|PREPARER|1371|Médite, dispose dans sa mémoire après réflexion
+PREPARENT|PREPARER|1371|Méditent, disposent dans sa mémoire après réflexion
+PREPARAIT|PREPARER|1371|Méditait, disposait dans sa mémoire après réflexion
+PREPARAIENT|PREPARER|1371|Méditaient, disposaient dans sa mémoire après réflexion
+PREPARERA|PREPARER|1371|Méditera, disposera dans sa mémoire après réflexion
+PREPARA|PREPARER|1371|Médita, disposa dans sa mémoire après réflexion
+PREPAREE|PREPARER|1371|Méditée, disposée dans sa mémoire après réflexion
+PREPARES|PREPARER|1371|Médités, disposés dans sa mémoire après réflexion
+PREPAREES|PREPARER|1371|Méditées, disposées dans sa mémoire après réflexion
+COURTS|COURT|1373|Prompts, faciles, expéditifs|Concis, peu développés
+COURTE|COURT|1373|Prompte, facile, expéditive
+COURTES|COURT|1373|Promptes, faciles, expéditives
+ENNEMIS|ENNEMI|1384|Les diables
+TESTS|TEST|1390|Coquilles externes dures|Examens, concours ou épreuves
+ENLEVENT|ENLEVER|1399|Déplacent vers le haut|Emportent, retirent ou ôtent quelque chose d’un endroit
+ENLEVAIT|ENLEVER|1399|Déplaçait vers le haut|Emportait, retirait ou ôtait quelque chose d’un endroit
+ENLEVAIENT|ENLEVER|1399|Déplaçaient vers le haut|Emportaient, retiraient ou ôtaient quelque chose d’un endroit
+ENLEVERA|ENLEVER|1399|Déplacera vers le haut|Emportera, retirera ou ôtera quelque chose d’un endroit
+ENLEVA|ENLEVER|1399|Déplaça vers le haut|Emporta, retira ou ôta quelque chose d’un endroit
+ENLEVEE|ENLEVER|1399|Déplacée vers le haut
+ENLEVES|ENLEVER|1399|Déplacés vers le haut
+ENLEVEES|ENLEVER|1399|Déplacées vers le haut
+EPOUSENT|EPOUSER|1402|Prennent en mariage|S'adaptent exactement à une forme donnée
+EPOUSAIT|EPOUSER|1402|Prenait en mariage|S'adaptait exactement à une forme donnée
+EPOUSAIENT|EPOUSER|1402|Prenaient en mariage|S'adaptaient exactement à une forme donnée
+EPOUSERA|EPOUSER|1402|Prendra en mariage|S'adaptera exactement à une forme donnée
+EPOUSA|EPOUSER|1402|Prit en mariage|S'adapta exactement à une forme donnée
+EPOUSEE|EPOUSER|1402|Prise en mariage
+EPOUSES|EPOUSER|1402|Pris en mariage
+EPOUSEES|EPOUSER|1402|Prises en mariage
+ARRANGE|ARRANGER|1407|Dispose, organise
+ARRANGENT|ARRANGER|1407|Disposent, organisent
+ARRANGEAIT|ARRANGER|1407|Disposait, organisait
+ARRANGEAIENT|ARRANGER|1407|Disposaient, organisaient
+ARRANGERA|ARRANGER|1407|Disposera, organisera
+ARRANGEA|ARRANGER|1407|Disposa, organisa
+ARRANGEE|ARRANGER|1407|Disposée, organisée
+ARRANGES|ARRANGER|1407|Disposés, organisés
+ARRANGEES|ARRANGER|1407|Disposées, organisées
+RICHES|RICHE|1408|Abondants
+ANCIENS|ANCIEN|1410|Personnes âgées
+ACCEPTE|ACCEPTER|1412|Fait rentrer une personne dans un groupe
+ACCEPTENT|ACCEPTER|1412|Font rentrer une personne dans un groupe
+ACCEPTAIT|ACCEPTER|1412|Faisait rentrer une personne dans un groupe
+ACCEPTAIENT|ACCEPTER|1412|Faisaient rentrer une personne dans un groupe
+ACCEPTERA|ACCEPTER|1412|Fera rentrer une personne dans un groupe
+ACCEPTA|ACCEPTER|1412|Fit rentrer une personne dans un groupe
+SAUTENT|SAUTER|1415|Font tomber
+SAUTAIT|SAUTER|1415|Faisait tomber
+SAUTAIENT|SAUTER|1415|Faisaient tomber
+SAUTERA|SAUTER|1415|Fera tomber
+SAUTA|SAUTER|1415|Fit tomber
+POLITIQUES|POLITIQUE|1420|Fins et adroits
+TOURNENT|TOURNER|1431|Bougent
+TOURNAIT|TOURNER|1431|Bougeait
+TOURNAIENT|TOURNER|1431|Bougeaient
+TOURNERA|TOURNER|1431|Bougera
+TOURNA|TOURNER|1431|Bougea
+TOURNES|TOURNER|1431|Bougés
+TOURNEES|TOURNER|1431|Bougées
+MEMOIRES|MEMOIRE|1433|Capacités à retenir
+SERIES|SERIE|1434|Suites, successions, séquences|Quantités d'un même modèle industriel
+MARIEES|MARIEE|1435|Épouses
+CONTRAIRES|CONTRAIRE|1436|Concepts inverses, logiquements opposés
+CHATS|CHAT|1442|Mammifères carnivores félins de taille moyenne|Individus mâles de cet animal
+DURES|DURE|1447|Surfaces fermes du sol
+CARRIERES|CARRIERE|1448|Espaces de dimensions réduites|Les mouvements périodiques des astres
+UNIVERSITES|UNIVERSITE|1453|Centres d’enseignement supérieur
+VECUS|VECU|1458|Ressentis
+VECUE|VECU|1458|Qui a eu lieu dans la vie de quelqu’un|Ressentie
+VECUES|VECU|1458|Ressenties
+COURAGES|COURAGE|1459|Duretés de cœur
+BEAUTES|BEAUTE|1460|Jolies filles ou belles femmes
+COUPLES|COUPLE|1471|Paires, deux choses associées ou non|Paires de la forme \{\{x\}
+DIFFERENCES|DIFFERENCE|1474|Objets de comparaison|Résultats de la soustraction
+CIBLES|CIBLE|1481|Buts, objectifs|Points de mire
+JOYEUSE|JOYEUX|1482|Qui a de la joie|Qui exprime la joie|Qui donne, qui inspire de la joie
+BONHEURS|BONHEUR|1483|États heureux causés par une complète satisfaction|Événements heureux|Chances favorables
+CRISES|CRISE|1496|Troubles dans le fonctionnement normal d’un régime politique
+PISTES|PISTE|1497|Terrains aménagés pour les courses de chevaux
+BLANCHES|BLANCHE|1500|Pizzas à la mozzarella
+COUPES|COUPE|1501|Exploitations d’une parcelle pour en extraire du bois|Manières de tailler les pierres|Divisions, distributions
+MARRANTE|MARRANT|1504|Ennuyeuse, fâcheuse
+MARRANTES|MARRANT|1504|Ennuyeuses, fâcheuses
+ALCOOLS|ALCOOL|1519|Poudres très fines|Liquides incolores
+CLAIRES|CLAIRE|1527|Chaudières à clarifier le sucre|Coupelles à raffiner l’or|Réservoirs d’eau de mer limpide pour les huîtres
+REMERCIE|REMERCIER|1530|Rend grâce, exprime la gratitude
+REMERCIENT|REMERCIER|1530|Rendent grâce, expriment la gratitude
+REMERCIAIT|REMERCIER|1530|Rendait grâce, exprimait la gratitude
+REMERCIAIENT|REMERCIER|1530|Rendaient grâce, exprimaient la gratitude
+REMERCIERA|REMERCIER|1530|Rendra grâce, exprimera la gratitude
+REMERCIA|REMERCIER|1530|Rendit grâce, exprima la gratitude
+REGLENT|REGLER|1541|Mettent dans un bon ordre
+REGLAIT|REGLER|1541|Mettait dans un bon ordre
+REGLAIENT|REGLER|1541|Mettaient dans un bon ordre
+REGLERA|REGLER|1541|Mettra dans un bon ordre
+REGLA|REGLER|1541|Mit dans un bon ordre
+REGLEE|REGLER|1541|Mise dans un bon ordre
+REGLES|REGLER|1541|Mis dans un bon ordre
+REGLEES|REGLER|1541|Mises dans un bon ordre
+ENTIERE|ENTIER|1543|Qui a toutes ses parties
+IMAGES|IMAGE|1549|Représentations d’êtres ou d’objets par le dessin|Représentations
+AMUSE|AMUSER|1553|Fait perdre le temps
+AMUSENT|AMUSER|1553|Font perdre le temps
+AMUSAIT|AMUSER|1553|Faisait perdre le temps
+AMUSAIENT|AMUSER|1553|Faisaient perdre le temps
+AMUSERA|AMUSER|1553|Fera perdre le temps
+AMUSA|AMUSER|1553|Fit perdre le temps
+SUIVIS|SUIVI|1555|Mises en observation du progrès
+LANGUES|LANGUE|1557|Organes musculaires charnus et mobiles
+DIRECTIONS|DIRECTION|1558|Actions de diriger
+BOUGENT|BOUGER|1564|Se déplacent d’un endroit vers un autre
+BOUGEAIT|BOUGER|1564|Se déplaçait d’un endroit vers un autre
+BOUGEAIENT|BOUGER|1564|Se déplaçaient d’un endroit vers un autre
+BOUGERA|BOUGER|1564|Se déplacera d’un endroit vers un autre
+BOUGEA|BOUGER|1564|Se déplaça d’un endroit vers un autre
+FRAPPES|FRAPPE|1565|Expressifs
+FRAPPENT|FRAPPER|1566|Donnent une empreinte à quelque chose
+FRAPPAIT|FRAPPER|1566|Donnait une empreinte à quelque chose
+FRAPPAIENT|FRAPPER|1566|Donnaient une empreinte à quelque chose
+FRAPPERA|FRAPPER|1566|Donnera une empreinte à quelque chose
+FRAPPA|FRAPPER|1566|Donna une empreinte à quelque chose
+RATES|RATE|1568|Manques de succès
+TROISIEMES|TROISIEME|1574|Dernières classes du collège
+BLEUS|BLEU|1581|Vivements surpris de quelque chose
+PONTS|PONT|1586|Constructions élevées d’un bord à l’autre d’une rivière
+ATTRAPENT|ATTRAPER|1591|Prennent à une trappe|Prennent sur le fait
+ATTRAPAIT|ATTRAPER|1591|Prenait à une trappe|Prenait sur le fait
+ATTRAPAIENT|ATTRAPER|1591|Prenaient à une trappe|Prenaient sur le fait
+ATTRAPERA|ATTRAPER|1591|Prendra à une trappe|Prendra sur le fait
+ATTRAPA|ATTRAPER|1591|Prit à une trappe|Prit sur le fait
+ATTRAPEE|ATTRAPER|1591|Prise à une trappe|Prise sur le fait
+ATTRAPES|ATTRAPER|1591|Pris à une trappe|Pris sur le fait
+ATTRAPEES|ATTRAPER|1591|Prises à une trappe|Prises sur le fait
+DATES|DATE|1597|Indiques las temporalités
+INTENTIONS|INTENTION|1598|Volontés|Prières catholiques dans un but particulier
+GOUTS|GOUT|1600|Saveurs|Appétences des aliments
+LAITS|LAIT|1606|Toutes boissons importantes pour une personne|Crèmes utilisées pour les soins de la peau|Glaires des œufs frais
+DESTINS|DESTIN|1610|Sorts d’une personne ou d’une chose
+MARRES|MARRE|1611|Pelles larges et courbées
+PAIES|PAIE|1614|Actions de payer
+PRESENCES|PRESENCE|1618|Existences d’une personne au lieu de son domicile|Résidences habituelles d’une personne dans le ressort d’une cour d’appel
+PARTENAIRES|PARTENAIRE|1620|Concubins
+COSTUMES|COSTUME|1625|Habillements au théâtre|Vêtements professionnels|Habits masculins formés d’une veste et d’un pantalon assortis
+ENTREPRISES|ENTREPRISE|1626|Opérations militaires
+MOINDRES|MOINDRE|1634|Plus petits|Les plus petits
+AMENENT|AMENER|1636|Tirent à soi|Font descendre
+AMENAIT|AMENER|1636|Tirait à soi|Faisait descendre
+AMENAIENT|AMENER|1636|Tiraient à soi|Faisaient descendre
+AMENERA|AMENER|1636|Tirera à soi|Fera descendre
+AMENA|AMENER|1636|Tira à soi|Fit descendre
+AMENES|AMENER|1636|Tirés à soi
+AMENEES|AMENER|1636|Tirées à soi
+OBLIGES|OBLIGE|1660|Redevables|Contraints
+FORMIDABLES|FORMIDABLE|1661|Fantastiques
+IDENTITES|IDENTITE|1663|Personnalités civiles d’un individu
+CAMPAGNES|CAMPAGNE|1664|Plaines, pays plats et découverts
+COUPENT|COUPER|1667|Taillent suivant les règles de l’art
+COUPAIT|COUPER|1667|Taillait suivant les règles de l’art
+COUPAIENT|COUPER|1667|Taillaient suivant les règles de l’art
+COUPERA|COUPER|1667|Taillera suivant les règles de l’art
+COUPA|COUPER|1667|Tailla suivant les règles de l’art
+MARKS|MARK|1668|Projectiles de skeet|Fans, souvent jeunes
+NOMBRES|NOMBRE|1672|Objets de base des mathématiques|Quantités indéterminées|Multitudes
+INTELLIGENTE|INTELLIGENT|1673|Qui a beaucoup d’habileté, d’adresse
+COMPTENT|COMPTER|1678|Calculent
+COMPTAIT|COMPTER|1678|Calculait
+COMPTAIENT|COMPTER|1678|Calculaient
+COMPTERA|COMPTER|1678|Calculera
+COMPTA|COMPTER|1678|Calcula
+COMPTEE|COMPTER|1678|Calculée
+COMPTES|COMPTER|1678|Calculés
+COMPTEES|COMPTER|1678|Calculées
+JOIES|JOIE|1682|Sentiments de bonheur|Gaietés
+REGARDS|REGARD|1686|Manières de diriger les yeux vers quelque chose afin de voir|Expressions des yeux
+VENDUE|VENDU|1689|Qui a fait l’objet d’une vente
+MAJESTES|MAJESTE|1690|Grandeurs suprêmes|Airs de grandeur propre à inspirer de l’admiration
+APPAREILS|APPAREIL|1693|Objets complexes conçus par l’homme afin de faciliter un travail|Téléphones
+PRIVES|PRIVE|1696|Réservés à certains particuliers
+JAMBES|JAMBE|1701|Chacunes des deux parties d’un pantalon|Pieds de champignon
+ANGES|ANGE|1703|Personnes d’une grande utilité, d’une grande influence
+DECIDENT|DECIDER|1714|Arrêtent ou déterminent ce qu’on doit faire
+DECIDAIT|DECIDER|1714|Arrêtait ou déterminait ce qu’on doit faire
+DECIDAIENT|DECIDER|1714|Arrêtaient ou déterminaient ce qu’on doit faire
+DECIDERA|DECIDER|1714|Arrêtera ou déterminera ce qu’on doit faire
+DECIDA|DECIDER|1714|Arrêta ou détermina ce qu’on doit faire
+REPARE|REPARER|1722|Ôte les défauts d’aspect|Efface, fait disparaître
+REPARENT|REPARER|1722|Ôtent les défauts d’aspect|Effacent, font disparaître
+REPARAIT|REPARER|1722|Ôtait les défauts d’aspect|Effaçait, faisait disparaître
+REPARAIENT|REPARER|1722|Ôtaient les défauts d’aspect|Effaçaient, faisaient disparaître
+REPARERA|REPARER|1722|Ôtera les défauts d’aspect|Effacera, fera disparaître
+REPARA|REPARER|1722|Ôta les défauts d’aspect|Effaça, fit disparaître
+GERE|GERER|1724|Administre pour le compte d’un autre|Administre
+GERENT|GERER|1724|Administrent pour le compte d’un autre|Administrent
+GERAIT|GERER|1724|Administrait pour le compte d’un autre|Administrait
+GERAIENT|GERER|1724|Administraient pour le compte d’un autre|Administraient
+GERERA|GERER|1724|Administrera pour le compte d’un autre|Administrera
+GERA|GERER|1724|Administra pour le compte d’un autre|Administra
+GEREE|GERER|1724|Administrée pour le compte d’un autre|Administrée
+GERES|GERER|1724|Administrés pour le compte d’un autre|Administrés
+GEREES|GERER|1724|Administrées pour le compte d’un autre|Administrées
+ECHANGES|ECHANGE|1727|Flux réciproques entre des parties|Commerces|Remises, communications ou envois réciproques
+MINCES|MINCE|1728|Sveltes, élancés, pas gros
+VITESSES|VITESSE|1733|Dérivées de la position par rapport au temps
+ODEURS|ODEUR|1740|Parfums
+PAINS|PAIN|1741|Pâtes cuites au four
+AISES|AISE|1743|États commodes et agréables
+IMAGINE|IMAGINER|1746|Se représente quelque chose dans l’esprit|Invente
+IMAGINENT|IMAGINER|1746|Se représentent quelque chose dans l’esprit|Inventent
+IMAGINAIT|IMAGINER|1746|Se représentait quelque chose dans l’esprit|Inventait
+IMAGINAIENT|IMAGINER|1746|Se représentaient quelque chose dans l’esprit|Inventaient
+IMAGINERA|IMAGINER|1746|Se représentera quelque chose dans l’esprit|Inventera
+IMAGINA|IMAGINER|1746|Se représenta quelque chose dans l’esprit|Inventa
+IMAGINEE|IMAGINER|1746|Inventée
+IMAGINES|IMAGINER|1746|Inventés
+IMAGINEES|IMAGINER|1746|Inventées
+MINISTRES|MINISTRE|1753|Membres du clergé, pasteur luthérien|Membres de premier rang d’un gouvernement
+LEVENT|LEVER|1757|Font qu’une chose soit plus haut qu’elle n’était
+LEVAIT|LEVER|1757|Faisait qu’une chose soit plus haut qu’elle n’était
+LEVAIENT|LEVER|1757|Faisaient qu’une chose soit plus haut qu’elle n’était
+LEVERA|LEVER|1757|Fera qu’une chose soit plus haut qu’elle n’était
+LEVA|LEVER|1757|Fit qu’une chose soit plus haut qu’elle n’était
+ARBRES|ARBRE|1758|Axes de rotation
+FAVEURS|FAVEUR|1760|Bienveillances
+EGALEMENTS|EGALEMENT|1765|Distributions préalables
+APPORTE|APPORTER|1767|Donne, procure un conseil
+APPORTENT|APPORTER|1767|Donnent, procurent un conseil
+APPORTAIT|APPORTER|1767|Donnait, procurait un conseil
+APPORTAIENT|APPORTER|1767|Donnaient, procuraient un conseil
+APPORTERA|APPORTER|1767|Donnera, procurera un conseil
+APPORTA|APPORTER|1767|Donna, procura un conseil
+ECHAPPENT|ECHAPPER|1772|Se sauvent des mains de quelqu’un
+ECHAPPAIT|ECHAPPER|1772|Se sauvait des mains de quelqu’un
+ECHAPPAIENT|ECHAPPER|1772|Se sauvaient des mains de quelqu’un
+ECHAPPERA|ECHAPPER|1772|Se sauvera des mains de quelqu’un
+ECHAPPA|ECHAPPER|1772|Se sauva des mains de quelqu’un
+VALEURS|VALEUR|1773|Noblesses de caractère d’une personne
+COUVERTURES|COUVERTURE|1776|Parties extérieures de la toiture
+MILLIONS|MILLION|1777|Des nombres indéfinis, mais considérables
+ARTICLES|ARTICLE|1778|Phalanges de la main ou du pied
+PARCS|PARC|1780|Grandes étendues de terrain
+TOITS|TOIT|1781|Plafonds|Parties supérieures d'une chose
+UNITES|UNITE|1782|Grandeurs finies
+PARTAGENT|PARTAGER|1785|Divisent une chose en plusieurs parties séparées|Donnent une partie de ce qu'on détient
+PARTAGEAIT|PARTAGER|1785|Divisait une chose en plusieurs parties séparées|Donnait une partie de ce qu'on détient
+PARTAGEAIENT|PARTAGER|1785|Divisaient une chose en plusieurs parties séparées|Donnaient une partie de ce qu'on détient
+PARTAGERA|PARTAGER|1785|Divisera une chose en plusieurs parties séparées|Donnera une partie de ce qu'on détient
+PARTAGEA|PARTAGER|1785|Divisa une chose en plusieurs parties séparées|Donna une partie de ce qu'on détient
+COFFRES|COFFRE|1791|Meubles en forme de caisse|Appétits
+MODES|MODE|1797|Façons, manières, habitudes collectives, us ou coutumes
+FOLIES|FOLIE|1798|Absences de raison, extravagance, manque de jugement|Actions folles, idées folles
+VANS|VAN|1800|Instruments d’osier|Instruments identiques au précédent|Remorques destinées au transport des chevaux
+MEMBRES|MEMBRE|1801|Parties extérieures du corps d’un être humain ou d’un animal|Éléments d’un groupe humain|Parties distinctes d’un tout
+INQUIETE|INQUIETER|1804|Trouble quelqu’un dans la possession d’une chose|S'occupe
+INQUIETENT|INQUIETER|1804|Troublent quelqu’un dans la possession d’une chose|S'occupent
+INQUIETAIT|INQUIETER|1804|Troublait quelqu’un dans la possession d’une chose|S'occupait
+INQUIETAIENT|INQUIETER|1804|Troublaient quelqu’un dans la possession d’une chose|S'occupaient
+INQUIETERA|INQUIETER|1804|Troublera quelqu’un dans la possession d’une chose|S'occupera
+INQUIETA|INQUIETER|1804|Troubla quelqu’un dans la possession d’une chose|S'occupa
+HASARDS|HASARD|1805|Risques, dangers, incertitudes
+GENIES|GENIE|1808|Personnes douées d’un talent exceptionnel dans un domaine
+ABANDONNENT|ABANDONNER|1818|Laissent
+ABANDONNAIT|ABANDONNER|1818|Laissait
+ABANDONNERA|ABANDONNER|1818|Laissera
+ABANDONNA|ABANDONNER|1818|Laissa
+ABANDONNES|ABANDONNER|1818|Laissés
+ABANDONNEES|ABANDONNER|1818|Laissées
+POCHES|POCHE|1829|Espaces confectionnés pour contenir des objets ou des liquides
+CREENT|CREER|1835|Tirent quelque chose du néant, font de rien quelque chose|Donnent l’existence à quelque chose qui n’existait pas encore
+CREAIT|CREER|1835|Tirait quelque chose du néant, faisait de rien quelque chose|Donnait l’existence à quelque chose qui n’existait pas encore
+CREAIENT|CREER|1835|Tiraient quelque chose du néant, faisaient de rien quelque chose|Donnaient l’existence à quelque chose qui n’existait pas encore
+CREERA|CREER|1835|Tirera quelque chose du néant, fera de rien quelque chose|Donnera l’existence à quelque chose qui n’existait pas encore
+CREA|CREER|1835|Tira quelque chose du néant, fit de rien quelque chose|Donna l’existence à quelque chose qui n’existait pas encore
+SAMEDIS|SAMEDI|1836|Sixièmes jours de la semaine
+REALISES|REALISE|1840|Rendus réels
+VIANDES|VIANDE|1844|Chairs animales utilisées pour la nourriture
+CHANGEMENTS|CHANGEMENT|1851|Passages d'un état à un autre
+PAGES|PAGE|1854|Faces d’une feuille de papier|Écritures|Serviteurs d’un aristocrate
+CONDUITS|CONDUIT|1855|Motets d'église
+PASSAGES|PASSAGE|1856|Actions de passer|Changements d’une situation
+PIEGES|PIEGE|1857|Cendriers|Avions de chasse
+AMUSANTE|AMUSANT|1863|Qui amuse, qui divertit
+PERTES|PERTE|1870|Privations de quelque chose de précieux|Dons des mises après échec
+FANTOMES|FANTOME|1871|Formes cristallines préservées à l’intérieur d’un cristal
+NAISSANCES|NAISSANCE|1872|Origines|Commencements
+ETRANGENT|ETRANGER|1878|Font éloigner d’un lieu|S'éloignent, s'écartent
+ETRANGEAIT|ETRANGER|1878|Faisait éloigner d’un lieu|S'éloignait, s'écartait
+ETRANGEAIENT|ETRANGER|1878|Faisaient éloigner d’un lieu|S'éloignaient, s'écartaient
+ETRANGERA|ETRANGER|1878|Fera éloigner d’un lieu|S'éloignera, s'écartera
+ETRANGEA|ETRANGER|1878|Fit éloigner d’un lieu|S'éloigna, s'écarta
+DEBARRASSE|DEBARRASSER|1881|Dégage de ce qui embarrasse
+DEBARRASSENT|DEBARRASSER|1881|Dégagent de ce qui embarrasse
+DEBARRASSAIT|DEBARRASSER|1881|Dégageait de ce qui embarrasse
+DEBARRASSERA|DEBARRASSER|1881|Dégagera de ce qui embarrasse
+DEBARRASSA|DEBARRASSER|1881|Dégagea de ce qui embarrasse
+DEBARRASSEE|DEBARRASSER|1881|Dégagée de ce qui embarrasse
+DEBARRASSES|DEBARRASSER|1881|Dégagés de ce qui embarrasse
+DEBARRASSEES|DEBARRASSER|1881|Dégagées de ce qui embarrasse
+FANTASTIQUES|FANTASTIQUE|1885|Sujets à des imaginations chimériques|Registres et genres littéraires
+BATIMENTS|BATIMENT|1890|Activités économiques liées à la construction des logements|Navires
+EMBRASSENT|EMBRASSER|1893|Entourent, contournent|Serrent avec les cuisses son cheval pour être plus ferme
+EMBRASSAIT|EMBRASSER|1893|Entourait, contournait|Serrait avec les cuisses son cheval pour être plus ferme
+EMBRASSAIENT|EMBRASSER|1893|Entouraient, contournaient|Serraient avec les cuisses son cheval pour être plus ferme
+EMBRASSERA|EMBRASSER|1893|Entourera, contournera|Serrera avec les cuisses son cheval pour être plus ferme
+EMBRASSA|EMBRASSER|1893|Entoura, contourna|Serra avec les cuisses son cheval pour être plus ferme
+EMBRASSEE|EMBRASSER|1893|Entourée, contournée|Serrée avec les cuisses son cheval pour être plus ferme
+EMBRASSES|EMBRASSER|1893|Entourés, contournés|Serrés avec les cuisses son cheval pour être plus ferme
+EMBRASSEES|EMBRASSER|1893|Entourées, contournées|Serrées avec les cuisses son cheval pour être plus ferme
+EMISSIONS|EMISSION|1908|Présentations d'informations|Écoulements sous pression d'un liquide à l'extérieur du corps
+DIMANCHES|DIMANCHE|1912|Septièmes jours de la semaine
+CONSCIENCES|CONSCIENCE|1915|Subjectivités|Images de soi-même
+BATAILLES|BATAILLE|1922|Toutes sortes de lutte
+NOTES|NOTE|1931|Remarques, indications|Extraits sommaires
+DOIGTS|DOIGT|1932|Extrémités articulées des mains de l’être humain|Orteils
+MENSONGES|MENSONGE|1933|Propos contraires à la vérité, tenu avec dessein de tromper|Fables, fictions, inventions
+VICTOIRES|VICTOIRE|1936|Personnifications du succès dans le combat
+DIRECTE|DIRECT|1937|Qui se fait sans intermédiaire ou sans étapes
+NERVEUSE|NERVEUX|1945|Qui a de bons nerfs|Qui tend à se déformer après l’abattage
+TRAITEMENTS|TRAITEMENT|1952|Rémunérations d’un fonctionnaire
+CANCERS|CANCER|1955|Maladies causées par une tumeur maligne
+REPOSE|REPOSER|1957|Met dans une situation tranquille|Arrête son regard pour admirer
+REPOSENT|REPOSER|1957|Mettent dans une situation tranquille|Arrêtent son regard pour admirer
+REPOSAIT|REPOSER|1957|Mettait dans une situation tranquille|Arrêtait son regard pour admirer
+REPOSAIENT|REPOSER|1957|Mettaient dans une situation tranquille|Arrêtaient son regard pour admirer
+REPOSERA|REPOSER|1957|Mettra dans une situation tranquille|Arrêtera son regard pour admirer
+REPOSA|REPOSER|1957|Mit dans une situation tranquille|Arrêta son regard pour admirer
+REPOSEE|REPOSER|1957|Mise dans une situation tranquille
+REPOSES|REPOSER|1957|Mis dans une situation tranquille
+REPOSEES|REPOSER|1957|Mises dans une situation tranquille
+DOUCHES|DOUCHE|1965|Aménagements de salle de bain, de sauna ou hammam, etc
+INTERDITS|INTERDIT|1967|Défendus par la loi, ou par la morale
+TRACES|TRACE|1970|Impressions laissées par un événement
+CONTROLENT|CONTROLER|1971|Examinent avec une curiosité importune
+CONTROLAIT|CONTROLER|1971|Examinait avec une curiosité importune
+CONTROLAIENT|CONTROLER|1971|Examinaient avec une curiosité importune
+CONTROLERA|CONTROLER|1971|Examinera avec une curiosité importune
+CONTROLA|CONTROLER|1971|Examina avec une curiosité importune
+CONTROLEE|CONTROLER|1971|Examinée avec une curiosité importune
+CONTROLES|CONTROLER|1971|Examinés avec une curiosité importune
+CONTROLEES|CONTROLER|1971|Examinées avec une curiosité importune
+SIGNENT|SIGNER|1972|S'engagent
+SIGNAIT|SIGNER|1972|S'engageait
+SIGNAIENT|SIGNER|1972|S'engageaient
+SIGNERA|SIGNER|1972|S'engagera
+SIGNA|SIGNER|1972|S'engagea
+INTERNETS|INTERNET|1975|Les mondes virtuels formés par l’ensemble des réseaux
+LANCERS|LANCER|1982|Actions de jeter|Techniques de pêche à la ligne
+LANCENT|LANCER|1982|Diffusent une première fois
+LANCAIT|LANCER|1982|Diffusait une première fois
+LANCAIENT|LANCER|1982|Diffusaient une première fois
+LANCERA|LANCER|1982|Diffusera une première fois
+LANCA|LANCER|1982|Diffusa une première fois
+PROTECTIONS|PROTECTION|1983|Actions de prendre soin de la fortune
+STYLES|STYLE|1987|Aiguilles d’un cadran solaire
+SEMBLANTS|SEMBLANT|1989|Apparences trompeuses|Insuffisances|Petites quantités de quelque chose
+ACTES|ACTE|1997|Capacités d’agir
+QUEUES|QUEUE|2008|Appendices postérieurs
+INNOCENTE|INNOCENT|2012|Qui ignore le mal
+METIERS|METIER|2020|Domaines d’activité d’une entreprise
+CRETINS|CRETIN|2021|Idiots, stupides, bêtes
+CRETINE|CRETIN|2021|Qui a atteint un degré de bêtise indescriptible
+RETIRENT|RETIRER|2022|Font sortir de
+RETIRAIT|RETIRER|2022|Faisait sortir de
+RETIRAIENT|RETIRER|2022|Faisaient sortir de
+RETIRERA|RETIRER|2022|Fera sortir de
+RETIRA|RETIRER|2022|Fit sortir de
+MILITAIRES|MILITAIRE|2028|Destinés à l’usage des troupes|Autoritaires
+PILOTES|PILOTE|2033|Prototypes miniatures d’un projet industriel
+LECONS|LECON|2037|Textes d’un auteur|Petits chapitres de l’écriture ou des pères
+MANS|MAN|2039|Douzièmes lettres de l’alphabet géorgien
+IMMEUBLES|IMMEUBLE|2041|Bâtiments urbains d'une certaine importance
+AVEUGLES|AVEUGLE|2045|Privés du sens de la vue
+ANCIENNES|ANCIENNE|2049|Femmes âgées
+MANDATS|MANDAT|2064|Durées de cette mission|Titres de paiement
+CELEBRES|CELEBRE|2067|Personnes connues, illustres
+CARTERS|CARTER|2074|Enveloppes de cuir
+TERMES|TERME|2079|Fins d’un espace à parcourir|Fins d’une période de temps|Moments fixés d’avance pour un paiement
+VERTS|VERT|2080|Relatifs aux mouvements politiques écologistes
+VERTE|VERT|2080|Qui n’a pas encore la maturité requise
+HATES|HATE|2083|Extrêmes promptitudes
+REVEILLENT|REVEILLER|2084|Tirent du sommeil
+REVEILLAIT|REVEILLER|2084|Tirait du sommeil
+REVEILLAIENT|REVEILLER|2084|Tiraient du sommeil
+REVEILLERA|REVEILLER|2084|Tirera du sommeil
+REVEILLA|REVEILLER|2084|Tira du sommeil
+REVEILLEE|REVEILLER|2084|Tirée du sommeil
+REVEILLES|REVEILLER|2084|Tirés du sommeil
+REVEILLEES|REVEILLER|2084|Tirées du sommeil
+COMMANDES|COMMANDE|2085|Mécanismes d’entraînement
+PARLANTE|PARLANT|2101|Qui parle|Qui aime à parler, qui parle d'abondance, bavard|Qui reproduit les paroles des personnages
+VIRENT|VIRER|2104|Tournent d’un côté sur l’autre
+VIRAIT|VIRER|2104|Tournait d’un côté sur l’autre
+VIRAIENT|VIRER|2104|Tournaient d’un côté sur l’autre
+VIRERA|VIRER|2104|Tournera d’un côté sur l’autre
+VIRA|VIRER|2104|Tourna d’un côté sur l’autre
+VIRES|VIRER|2104|Tournés d’un côté sur l’autre
+VIREES|VIRER|2104|Tournées d’un côté sur l’autre
+BLESSE|BLESSER|2113|Frappe d’un coup qui fait une contusion
+BLESSENT|BLESSER|2113|Frappent d’un coup qui fait une contusion
+BLESSAIT|BLESSER|2113|Frappait d’un coup qui fait une contusion
+BLESSAIENT|BLESSER|2113|Frappaient d’un coup qui fait une contusion
+BLESSERA|BLESSER|2113|Frappera d’un coup qui fait une contusion
+BLESSA|BLESSER|2113|Frappa d’un coup qui fait une contusion
+BLESSEE|BLESSER|2113|Frappée d’un coup qui fait une contusion
+BLESSES|BLESSER|2113|Frappés d’un coup qui fait une contusion
+BLESSEES|BLESSER|2113|Frappées d’un coup qui fait une contusion
+OMBRES|OMBRE|2114|Personnes anonymes|Fidèles ou inséparables compagnons
+EPISODES|EPISODE|2116|Périodes complètes inscrites dans le déroulement du temps
+TALENTS|TALENT|2117|Capacités, habiletés
+ASSURANCES|ASSURANCE|2119|Certitudes|Confiances|Confiances en soi-même
+SITES|SITE|2122|Parties pittoresques d’un paysage
+NEIGES|NEIGE|2123|Bruits blancs sur un écran de télévision analogique|Breynias nivosas
+EMPLOIS|EMPLOI|2128|Collocations de certaines sommes d’argent ou de capitaux
+SURVEILLE|SURVEILLER|2130|Observe avec attention
+SURVEILLENT|SURVEILLER|2130|Observent avec attention
+SURVEILLAIT|SURVEILLER|2130|Observait avec attention
+SURVEILLERA|SURVEILLER|2130|Observera avec attention
+SURVEILLA|SURVEILLER|2130|Observa avec attention
+SURVEILLEE|SURVEILLER|2130|Observée avec attention
+SURVEILLES|SURVEILLER|2130|Observés avec attention
+SURVEILLEES|SURVEILLER|2130|Observées avec attention
+SAINTS|SAINT|2133|Purs, souverainements parfaits et bienheureux|Appartenants à la religion
+JURYS|JURY|2141|Commissions chargées de prendre une décision
+CHAISES|CHAISE|2146|Sièges avec dossier, sans accoudoirs|Fonctions
+ACCUSES|ACCUSE|2147|Accentués
+MOUVEMENTS|MOUVEMENT|2150|Transports d’un corps ou d’une de ses parties d’un lieu
+SOMMEILS|SOMMEIL|2152|États inconscients
+TRADUCTIONS|TRADUCTION|2158|Résultats de ce travail|Synthèses d’une protéine à partir d’une matrice d’acide ribonucléique
+PUISSANCES|PUISSANCE|2164|Dominations, empires|États souverains
+CELLULES|CELLULE|2167|Petites pièces d’habitation, espace clos|Pièces exiguës pour l’habitation dans une institution
+VIOLENCES|VIOLENCE|2172|Impétuosités
+GORGES|GORGE|2174|Parties antérieures du cou de l’être humain ou de l’animal|Sachets supérieurs de l’oiseau|Parties supérieures de la chemise d’une femme
+EXAMENS|EXAMEN|2175|Observations attentives, réfléchies
+MAJORS|MAJOR|2177|Premiers d’une promotion
+EVIDENTE|EVIDENT|2179|Dont le sens s’impose naturellement à l’esprit
+DISTANCES|DISTANCE|2180|Intervalles|Intervalles de temps
+LUNDIS|LUNDI|2182|Premiers jours de la semaine de travail
+THEATRES|THEATRE|2185|Activités de comédien, de comédienne
+EXPLOSE|EXPLOSER|2186|Coupe son effort brutalement par manque de force
+EXPLOSENT|EXPLOSER|2186|Coupent son effort brutalement par manque de force
+EXPLOSAIT|EXPLOSER|2186|Coupait son effort brutalement par manque de force
+EXPLOSAIENT|EXPLOSER|2186|Coupaient son effort brutalement par manque de force
+EXPLOSERA|EXPLOSER|2186|Coupera son effort brutalement par manque de force
+EXPLOSA|EXPLOSER|2186|Coupa son effort brutalement par manque de force
+RIVIERES|RIVIERE|2188|Tirages de la dernière carte du tableau|Colliers faits d'une chaîne avec un grand nombre des pierres précieuses
+LOGIQUES|LOGIQUE|2193|Ouvrages sur cette science
+MIRACLES|MIRACLE|2195|Actes de la puissance divine contraire aux lois connues de la nature|Actes extraordinaires|Choses extraordinaires ou hasards merveilleux
+MONTAGNES|MONTAGNE|2197|Prairies d'altitude, alpage
+ATTAQUENT|ATTAQUER|2207|Affrontent pour tenter de résoudre|Intentent une action judiciaire
+ATTAQUAIT|ATTAQUER|2207|Affrontait pour tenter de résoudre|Intentait une action judiciaire
+ATTAQUAIENT|ATTAQUER|2207|Affrontaient pour tenter de résoudre|Intentaient une action judiciaire
+ATTAQUERA|ATTAQUER|2207|Affrontera pour tenter de résoudre|Intentera une action judiciaire
+ATTAQUA|ATTAQUER|2207|Affronta pour tenter de résoudre|Intenta une action judiciaire
+ATTAQUEE|ATTAQUER|2207|Affrontée pour tenter de résoudre
+ATTAQUEES|ATTAQUER|2207|Affrontées pour tenter de résoudre
+MINES|MINE|2208|Charges explosives|Charges explosives destinées à abattre de la roche
+PISTOLETS|PISTOLET|2209|Armes à feu courte et portative
+DIVORCES|DIVORCE|2210|Dissolutions judiciaires du mariage
+FORETS|FORET|2214|Vastes terrains couverts de bois, de nombreux arbres proches|Grandes quantités
+RESPIRE|RESPIRER|2215|Aspire
+RESPIRENT|RESPIRER|2215|Aspirent
+RESPIRAIT|RESPIRER|2215|Aspirait
+RESPIRAIENT|RESPIRER|2215|Aspiraient
+RESPIRERA|RESPIRER|2215|Aspirera
+RESPIRA|RESPIRER|2215|Aspira
+RESPIREE|RESPIRER|2215|Aspirée
+RESPIRES|RESPIRER|2215|Aspirés
+RESPIREES|RESPIRER|2215|Aspirées
+FORTUNES|FORTUNE|2216|Hasards, chances
+EXPLOSIONS|EXPLOSION|2219|Actions d’éclater, produite par l’excès de tension|Accroissements très rapides, spectaculaires
+MENES|MENE|2221|Des manches au jeu de boules, et par extension à la belote
+EPEES|EPEE|2228|Pratiques sportives
+TIENNES|TIENNE|2229|Côtes, montées, tertres
+CABINETS|CABINET|2232|Petites pièces retirées
+NORMALES|NORMALE|2233|Droites perpendiculaires au plan tangent en un point d’une courbe
+ALERTES|ALERTE|2234|Avertissements d’être sur ses gardes
+LIBERENT|LIBERER|2237|Relâchent quelqu’un détenu contre son gré
+LIBERAIT|LIBERER|2237|Relâchait quelqu’un détenu contre son gré
+LIBERAIENT|LIBERER|2237|Relâchaient quelqu’un détenu contre son gré
+LIBERERA|LIBERER|2237|Relâchera quelqu’un détenu contre son gré
+LIBERA|LIBERER|2237|Relâcha quelqu’un détenu contre son gré
+VISIONS|VISION|2243|Chimères
+MESURES|MESURE|2246|Dimensions|Volumes|Actions d’évaluer une grandeur
+FUITES|FUITE|2255|Actions de fuir|Délais, retards, échappatoires
+ANNONCES|ANNONCE|2257|Pauses publicitaires
+POUSSENT|POUSSER|2258|Impriment quelque mouvement à un corps|Portent un coup
+POUSSAIT|POUSSER|2258|Imprimait quelque mouvement à un corps|Portait un coup
+POUSSAIENT|POUSSER|2258|Imprimaient quelque mouvement à un corps|Portaient un coup
+POUSSERA|POUSSER|2258|Imprimera quelque mouvement à un corps|Portera un coup
+POUSSA|POUSSER|2258|Imprima quelque mouvement à un corps|Porta un coup
+CARDIAQUES|CARDIAQUE|2264|Relatifs au cœur
+MINUITS|MINUIT|2265|Heures situées au milieu de la nuit, à la limite de deux jours
+HUMEURS|HUMEUR|2266|Des dispositions chagrines|Fantaisies, caprices
+ROMANTIQUES|ROMANTIQUE|2276|Idéalistes
+VACHES|VACHE|2279|Femmes bien en chair, à forte poitrine
+CASSENT|CASSER|2283|Brisent
+CASSAIT|CASSER|2283|Brisait
+CASSAIENT|CASSER|2283|Brisaient
+CASSERA|CASSER|2283|Brisera
+CASSA|CASSER|2283|Brisa
+CASSEE|CASSER|2283|Brisée
+CASSEES|CASSER|2283|Brisées
+MODELES|MODELE|2285|Exemplaires caractéristiques
+VERSIONS|VERSION|2287|Manières de rapporter ou d’interpréter des faits
+PRUDENTE|PRUDENT|2290|Qui ne prend pas de risque immodéré
+CONCERTS|CONCERT|2294|Harmonies formées par plusieurs voix
+PUISSANTS|PUISSANT|2300|Habiles
+PUISSANTE|PUISSANT|2300|Qui a beaucoup de pouvoir|Habile
+PUISSANTES|PUISSANT|2300|Habiles
+SOUFFLES|SOUFFLE|2308|Simples respirations|Agitations de l’air|Mouvements d’un gaz
+DEMONS|DEMON|2310|Génies, esprits ou divinités, bons ou mauvais
+BOSSES|BOSSE|2319|Saillies du dos ou de la poitrine
+USINES|USINE|2327|Établissements pourvus de machines
+GARAGES|GARAGE|2331|Actions de faire entrer un bateau dans une gare maritime
+AVANCENT|AVANCER|2337|Poussent en avant|Portent à un moment antérieur dans le temps
+AVANCAIT|AVANCER|2337|Poussait en avant|Portait à un moment antérieur dans le temps
+AVANCAIENT|AVANCER|2337|Poussaient en avant|Portaient à un moment antérieur dans le temps
+AVANCERA|AVANCER|2337|Poussera en avant|Portera à un moment antérieur dans le temps
+AVANCA|AVANCER|2337|Poussa en avant|Porta à un moment antérieur dans le temps
+AVANCES|AVANCER|2337|Poussés en avant|Portés à un moment antérieur dans le temps
+AVANCEES|AVANCER|2337|Poussées en avant|Portées à un moment antérieur dans le temps
+CREDITS|CREDIT|2343|Réputations d’être solvable et de bien payer|Autorisations à prendre à une caisse
+PUCES|PUCE|2348|Boucles d'oreille de petite taille
+CANONS|CANON|2350|Pièces d’artillerie en forme de tube|Parties creuses d’un objet, tube
+LIQUIDES|LIQUIDE|2351|Liquéfiés
+PARTICULIERE|PARTICULIER|2353|Qui présente une caractéristique spéciale
+TRAVERSENT|TRAVERSER|2355|Percent de part en part|Suscitent des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSAIT|TRAVERSER|2355|Perçait de part en part|Suscitait des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSAIENT|TRAVERSER|2355|Perçaient de part en part|Suscitaient des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSERA|TRAVERSER|2355|Percera de part en part|Suscitera des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSA|TRAVERSER|2355|Perça de part en part|Suscita des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSES|TRAVERSER|2355|Percés de part en part|Suscités des obstacles pour empêcher le succès de quelque entreprise
+TRAVERSEES|TRAVERSER|2355|Percées de part en part|Suscitées des obstacles pour empêcher le succès de quelque entreprise
+CRIMINELLES|CRIMINEL|2358|Condamnables, illicites
+FROMAGES|FROMAGE|2385|Aliments moulés
+CHALEURS|CHALEUR|2390|Températures produites par l’action du soleil
+OBJETS|OBJET|2393|Choses tangibles et visibles, concrètes|Choses fabriquées par l’homme
+FUSILS|FUSIL|2408|Habiles tireurs
+GARDIENS|GARDIEN|2409|Conservateurs
+DERANGE|DERANGER|2410|Fait que quelqu’un soit obligé de quitter sa place
+DERANGENT|DERANGER|2410|Font que quelqu’un soit obligé de quitter sa place
+DERANGEAIT|DERANGER|2410|Faisait que quelqu’un soit obligé de quitter sa place
+DERANGEAIENT|DERANGER|2410|Faisaient que quelqu’un soit obligé de quitter sa place
+DERANGERA|DERANGER|2410|Fera que quelqu’un soit obligé de quitter sa place
+DERANGEA|DERANGER|2410|Fit que quelqu’un soit obligé de quitter sa place
+SIECLES|SIECLE|2429|Périodes de cent ans|Périodes plus ou moins longues|Temps rendus célèbres par le règne de quelque grand prince
+ATTENTES|ATTENTE|2430|Actions de compter sur quelqu’un
+PISCINES|PISCINE|2434|Bassins destinés à l'élevage de poissons
+LENDEMAINS|LENDEMAIN|2436|Avenirs plus ou moins proches
+INVITENT|INVITER|2443|Engagent, excitent à quelque chose
+INVITAIT|INVITER|2443|Engageait, excitait à quelque chose
+INVITAIENT|INVITER|2443|Engageaient, excitaient à quelque chose
+INVITERA|INVITER|2443|Engagera, excitera à quelque chose
+INVITA|INVITER|2443|Engagea, excita à quelque chose
+INVITEE|INVITER|2443|Engagée, excitée à quelque chose
+INVITES|INVITER|2443|Engagés, excités à quelque chose
+INVITEES|INVITER|2443|Engagées, excitées à quelque chose
+ELEVES|ELEVE|2446|Formés par l’éducation
+CHAINES|CHAINE|2449|Successions d’anneaux ou maillons|Parties en mouvement de la lame de tronçonneuse
+CHEQUES|CHEQUE|2450|Billets à vue et au porteur sur un établissement de crédit
+BELS|BEL|2459|Unités sans dimension
+PROFITE|PROFITER|2460|Tire un émolument, fait un gain|Tire avantage, tire parti de quelque chose que ce soit|Fait du progrès en quelque chose
+PROFITENT|PROFITER|2460|Tirent un émolument, font un gain|Tirent avantage, tirent parti de quelque chose que ce soit|Font du progrès en quelque chose
+PROFITAIT|PROFITER|2460|Tirait un émolument, faisait un gain|Tirait avantage, tirait parti de quelque chose que ce soit|Faisait du progrès en quelque chose
+PROFITAIENT|PROFITER|2460|Tiraient un émolument, faisaient un gain|Tiraient avantage, tiraient parti de quelque chose que ce soit|Faisaient du progrès en quelque chose
+PROFITERA|PROFITER|2460|Tirera un émolument, fera un gain|Tirera avantage, tirera parti de quelque chose que ce soit|Fera du progrès en quelque chose
+PROFITA|PROFITER|2460|Tira un émolument, fit un gain|Tira avantage, tira parti de quelque chose que ce soit|Fit du progrès en quelque chose
+PROFITEE|PROFITER|2460|Faite du progrès en quelque chose
+PROFITES|PROFITER|2460|Faits du progrès en quelque chose
+PROFITEES|PROFITER|2460|Faites du progrès en quelque chose
+SCIENCES|SCIENCE|2461|Connaissances, savoirs|Histoires, idées saugrenues
+BILLETS|BILLET|2463|Écrits imprimés ous à la main
+CRANES|CRANE|2464|Assemblages des os de la tête
+ARRESTATIONS|ARRESTATION|2467|Actions d’arrêter quelqu’un pour l’emprisonner
+CAISSES|CAISSE|2470|Contenants rigides
+PROMESSES|PROMESSE|2479|Engagements à terme
+CLOCHES|CLOCHE|2488|Instruments faits de métal
+REPUTATIONS|REPUTATION|2491|Honorabilités|Notoriétés
+ETUDIENT|ETUDIER|2492|S'exercent sur un instrument de musique|S'exercent, s'appliquent à apprendre une science
+ETUDIAIT|ETUDIER|2492|S'exerçait sur un instrument de musique|S'exerçait, s'appliquait à apprendre une science
+ETUDIAIENT|ETUDIER|2492|S'exerçaient sur un instrument de musique|S'exerçaient, s'appliquaient à apprendre une science
+ETUDIERA|ETUDIER|2492|S'exercera sur un instrument de musique|S'exercera, s'appliquera à apprendre une science
+ETUDIA|ETUDIER|2492|S'exerça sur un instrument de musique|S'exerça, s'appliqua à apprendre une science
+TROMPES|TROMPE|2493|Bouches de certains insectes
+CHUTES|CHUTE|2494|Puissantes cascades d’un cours d’eau
+DEMIS|DEMI|2496|Moitiés d’unité
+PLAINTES|PLAINTE|2498|Gémissements
+SORCIERES|SORCIERE|2502|Tourbillons de vent
+VENANTE|VENANT|2503|Qui vient
+TENUES|TENUE|2506|Actions de tenir|Ancrages d’un navire
+DEPARTEMENTS|DEPARTEMENT|2516|Principales divisions administratives du territoire français
+POITRINES|POITRINE|2531|Parties du corps depuis le bas du cou jusqu’au diaphragme
+JENNYS|JENNY|2533|Machines à filer le coton en gros ou en doux
+REMONTES|REMONTE|2536|Achats des chevaux nécessaires pour cette fourniture
+AVENTURES|AVENTURE|2537|Relations adultères|Entreprises hasardeuses
+BARRES|BARRE|2541|Pièces de bois, de métal, etc., étroite et longue|Objets assez rigides à la section plutôt rectangloïde et uniforme|Présentations d'un aliment en morceau oblong
+FOYERS|FOYER|2542|Salles communes d’un théâtre|Centres, sources
+JEANS|JEAN|2543|Pantalons taillés dans ce tissu
+UNIFORMES|UNIFORME|2546|Costumes militaires
+CAUCHEMARS|CAUCHEMAR|2547|Personnes ou choses très ennuyeuses, très importunes
+SOUPES|SOUPE|2548|Tout types de potage
+CORDES|CORDE|2555|Supplices de la potence
+CHAMPIONS|CHAMPION|2556|Défenseurs, combattants
+SOMMES|SOMME|2557|Résultats de l’addition de plusieurs nombres|Quantités d’argent
+CONFERENCES|CONFERENCE|2558|Réunions de diplomates
+COMMISSAIRES|COMMISSAIRE|2559|Délégués chargés par un gouvernement de missions politiques temporaires|Personnes responsables de la conception
+DEVINE|DEVINER|2564|Trouve le mot
+DEVINENT|DEVINER|2564|Trouvent le mot
+DEVINAIT|DEVINER|2564|Trouvait le mot
+DEVINAIENT|DEVINER|2564|Trouvaient le mot
+DEVINERA|DEVINER|2564|Trouvera le mot
+DEVINA|DEVINER|2564|Trouva le mot
+COMPLETS|COMPLET|2567|Totalités
+COULOIRS|COULOIR|2577|Passages longs et étroits
+HORREURS|HORREUR|2578|Sentiments de saisissement|Énormités d’une mauvaise action
+PROPRIETES|PROPRIETE|2579|Vertus particulières
+MATERIELLE|MATERIEL|2581|Qui a rapport à la matière, qui tient de la matière
+CONSEILLE|CONSEILLER|2594|Renseigne quelqu’un sur ce qu’il doit faire
+CONSEILLENT|CONSEILLER|2594|Renseignent quelqu’un sur ce qu’il doit faire
+CONSEILLAIT|CONSEILLER|2594|Renseignait quelqu’un sur ce qu’il doit faire
+CONSEILLERA|CONSEILLER|2594|Renseignera quelqu’un sur ce qu’il doit faire
+CONSEILLA|CONSEILLER|2594|Renseigna quelqu’un sur ce qu’il doit faire
+HUMANITES|HUMANITE|2595|Natures ou conditions humaines
+STUDIOS|STUDIO|2596|Ateliers d’artiste|Entreprises de production cinématographique
+LAPINS|LAPIN|2598|Individus mâles de cette espèce
+BOUTIQUES|BOUTIQUE|2603|Étalages en plein vent ou baraque de marchand forain
+DISCUSSIONS|DISCUSSION|2609|Recherches des biens d’un débiteur pour les faire vendre en justice|Disputes, contestations
+REMONTENT|REMONTER|2614|Retournent où l’on était avant de descendre|Se dirigent dans une direction septentrionale
+REMONTAIT|REMONTER|2614|Retournait où l’on était avant de descendre|Se dirigeait dans une direction septentrionale
+REMONTAIENT|REMONTER|2614|Retournaient où l’on était avant de descendre|Se dirigeaient dans une direction septentrionale
+REMONTERA|REMONTER|2614|Retournera où l’on était avant de descendre|Se dirigera dans une direction septentrionale
+REMONTA|REMONTER|2614|Retourna où l’on était avant de descendre|Se dirigea dans une direction septentrionale
+INCENDIES|INCENDIE|2615|Réactions de combustion
+SURFACES|SURFACE|2621|Objets géométriques à deux dimensions
+ATTEINTS|ATTEINT|2623|Touchés, blessés, diminués|Réalisés|Mentalements troublés
+ATTEINTES|ATTEINT|2623|Touchées, blessées, diminuées|Réalisées
+CURIEUSE|CURIEUX|2625|Qui a le désir d’apprendre|Qui a cure de, soin de, souci de, etc|Qui veut connaître un secret
+ASCENSEURS|ASCENSEUR|2627|Sauts portés
+ABRIS|ABRI|2630|Installations destinées à protéger des projectiles ennemis
+IMPLIQUES|IMPLIQUE|2633|Faisants parties intégrantes
+REPETE|REPETER|2634|Rapporte ce qu’on a entendu
+REPETENT|REPETER|2634|Rapportent ce qu’on a entendu
+REPETAIT|REPETER|2634|Rapportait ce qu’on a entendu
+REPETAIENT|REPETER|2634|Rapportaient ce qu’on a entendu
+REPETERA|REPETER|2634|Rapportera ce qu’on a entendu
+REPETA|REPETER|2634|Rapporta ce qu’on a entendu
+PARDONNE|PARDONNER|2635|Fait grâce
+PARDONNENT|PARDONNER|2635|Font grâce
+PARDONNAIT|PARDONNER|2635|Faisait grâce
+PARDONNAIENT|PARDONNER|2635|Faisaient grâce
+PARDONNERA|PARDONNER|2635|Fera grâce
+PARDONNA|PARDONNER|2635|Fit grâce
+FRONTS|FRONT|2641|Parties antérieures de quelque chose|Parties supérieures de la face|Parties supérieures de la tête
+TRAINENT|TRAINER|2643|Tirent après soi
+TRAINAIT|TRAINER|2643|Tirait après soi
+TRAINAIENT|TRAINER|2643|Tiraient après soi
+TRAINERA|TRAINER|2643|Tirera après soi
+TRAINA|TRAINER|2643|Tira après soi
+TRAINES|TRAINER|2643|Tirés après soi
+TRAINEES|TRAINER|2643|Tirées après soi
+PARKINGS|PARKING|2647|Espaces de stationnement pour une automobile
+DOUES|DOUE|2656|Lavoirs
+GLOIRES|GLOIRE|2657|Renommées brillantes|Choses uniques et remarquables
+COMMUNAUTES|COMMUNAUTE|2659|Sociétés de biens entre conjoints
+DECLARATIONS|DECLARATION|2661|Mémoires ou états détaillés|Introductions d’une variable par son nom
+FRONTIERES|FRONTIERE|2666|Représentations de cette limite sur une carte
+TENTENT|TENTER|2672|Éprouvent la fidélité à Dieu|Donnent envie
+TENTAIT|TENTER|2672|Éprouvait la fidélité à Dieu|Donnait envie
+TENTAIENT|TENTER|2672|Éprouvaient la fidélité à Dieu|Donnaient envie
+TENTERA|TENTER|2672|Éprouvera la fidélité à Dieu|Donnera envie
+TENTA|TENTER|2672|Éprouva la fidélité à Dieu|Donna envie
+LIAISONS|LIAISON|2673|Communications
+CEREMONIES|CEREMONIE|2674|Civilités gênantes, importunes
+OCEANS|OCEAN|2678|Grandes étendues d’eau|Modèles de canot de plaisance
+VELOS|VELO|2679|Véhicules munis de deux roues|Cyclismes
+REALISENT|REALISER|2681|Font des offres à deniers découverts
+REALISAIT|REALISER|2681|Faisait des offres à deniers découverts
+REALISAIENT|REALISER|2681|Faisaient des offres à deniers découverts
+REALISERA|REALISER|2681|Fera des offres à deniers découverts
+REALISA|REALISER|2681|Fit des offres à deniers découverts
+REALISEE|REALISER|2681|Faite des offres à deniers découverts
+REALISEES|REALISER|2681|Faites des offres à deniers découverts
+REMPLACE|REMPLACER|2687|Donne pour successeur
+REMPLACENT|REMPLACER|2687|Donnent pour successeur
+REMPLACAIT|REMPLACER|2687|Donnait pour successeur
+REMPLACAIENT|REMPLACER|2687|Donnaient pour successeur
+REMPLACERA|REMPLACER|2687|Donnera pour successeur
+REMPLACA|REMPLACER|2687|Donna pour successeur
+REMPLACEE|REMPLACER|2687|Donnée pour successeur
+REMPLACES|REMPLACER|2687|Donnés pour successeur
+REMPLACEES|REMPLACER|2687|Données pour successeur
+PRISONNIERS|PRISONNIER|2688|Captifs
+PRISONNIERES|PRISONNIER|2688|Captives
+BOUTONS|BOUTON|2693|Petites pièces de diverses matières
+MEDECINES|MEDECINE|2700|Sciences des maladies et art de les guérir
+LOURDS|LOURD|2702|Pesants|Pesants, étouffants
+LOURDES|LOURD|2702|Pesantes|Pesantes, étouffantes
+BAISSES|BAISSE|2712|Diminutions de prix, de valeur|Diminutions de valeur des monnaies
+FILERS|FILER|2713|Dispositifs de stockage de fichiers
+FILENT|FILER|2713|Tirent un fil de son corps
+FILAIT|FILER|2713|Tirait un fil de son corps
+FILAIENT|FILER|2713|Tiraient un fil de son corps
+FILERA|FILER|2713|Tirera un fil de son corps
+FILA|FILER|2713|Tira un fil de son corps
+VEHICULES|VEHICULE|2715|Transmetteurs
+RATENT|RATER|2723|Manquent ce qu’on vise
+RATAIT|RATER|2723|Manquait ce qu’on vise
+RATAIENT|RATER|2723|Manquaient ce qu’on vise
+RATERA|RATER|2723|Manquera ce qu’on vise
+RATA|RATER|2723|Manqua ce qu’on vise
+BRULENT|BRULER|2728|Font du feu de quelque matière
+BRULAIT|BRULER|2728|Faisait du feu de quelque matière
+BRULAIENT|BRULER|2728|Faisaient du feu de quelque matière
+BRULERA|BRULER|2728|Fera du feu de quelque matière
+BRULA|BRULER|2728|Fit du feu de quelque matière
+BRULEE|BRULER|2728|Faite du feu de quelque matière
+BRULES|BRULER|2728|Faits du feu de quelque matière
+BRULEES|BRULER|2728|Faites du feu de quelque matière
+ORIGINES|ORIGINE|2735|Commencements|Points de départ
+ABSENCES|ABSENCE|2742|Inexistences|Défauts de présence à une réunion
+LACHENT|LACHER|2743|Laissent aller
+LACHAIT|LACHER|2743|Laissait aller
+LACHAIENT|LACHER|2743|Laissaient aller
+LACHERA|LACHER|2743|Laissera aller
+LACHA|LACHER|2743|Laissa aller
+TEMPETES|TEMPETE|2744|Tourmentes atmosphériques
+ECRANS|ECRAN|2750|Paravents posés sur la table de jeu
+ENTERREMENTS|ENTERREMENT|2754|Convois funèbres
+INSTALLENT|INSTALLER|2761|Mettent solennellement en possession d’une place
+INSTALLAIT|INSTALLER|2761|Mettait solennellement en possession d’une place
+INSTALLAIENT|INSTALLER|2761|Mettaient solennellement en possession d’une place
+INSTALLERA|INSTALLER|2761|Mettra solennellement en possession d’une place
+INSTALLA|INSTALLER|2761|Mit solennellement en possession d’une place
+RYTHMES|RYTHME|2764|Nombres|Successions répétitives d'une variable physiologique
+BALLONS|BALLON|2770|Objets de forme sphérique
+EQUIPAGES|EQUIPAGE|2771|Personnels à bord d’un aéronef
+PERSONNAGES|PERSONNAGE|2793|Figures d’une composition
+CONVAINCUS|CONVAINCU|2797|Intimements persuadés|Fervents
+CONVAINCUE|CONVAINCU|2797|Qui marque de la conviction|Fervente
+CONVAINCUES|CONVAINCU|2797|Ferventes
+LIMITES|LIMITE|2801|Restrictions
+PANIQUES|PANIQUE|2802|Terreurs subites, souvent irraisonnées
+BRILLANTS|BRILLANT|2804|Diamants taillés à facettes par-dessus et par-dessous
+REGIONS|REGION|2808|Vastes territoires|Territoires alentours|Circonscriptions territoriales
+SALAIRES|SALAIRE|2811|Rémunérations pour un travail|Récompenses d’un service
+VEILLES|VEILLE|2812|États du corps de l’homme ou de l’animal|Des certaines parties de la nuit
+CASIERS|CASIER|2822|Nasses pour prendre|Niches placées sous les pupitres d’écolier
+NOMMES|NOMME|2828|Sélectionnés|Désignés à un emploi, un poste, une distinction
+INCIDENTE|INCIDENT|2829|Qui survient accessoirement dans une affaire
+SOPHIES|SOPHIE|2831|Blageons|Agrions jouvencelles
+HAINES|HAINE|2836|Sentiments d’aversion
+IDENTIFIENT|IDENTIFIER|2837|Déterminent la nature
+IDENTIFIAIT|IDENTIFIER|2837|Déterminait la nature
+IDENTIFIERA|IDENTIFIER|2837|Déterminera la nature
+IDENTIFIA|IDENTIFIER|2837|Détermina la nature
+ANNONCENT|ANNONCER|2840|Font connaître|Déclarent des cartes remarquables de son jeu
+ANNONCAIT|ANNONCER|2840|Faisait connaître|Déclarait des cartes remarquables de son jeu
+ANNONCAIENT|ANNONCER|2840|Faisaient connaître|Déclaraient des cartes remarquables de son jeu
+ANNONCERA|ANNONCER|2840|Fera connaître|Déclarera des cartes remarquables de son jeu
+ANNONCA|ANNONCER|2840|Fit connaître|Déclara des cartes remarquables de son jeu
+ANNONCEE|ANNONCER|2840|Déclarée des cartes remarquables de son jeu
+ANNONCEES|ANNONCER|2840|Déclarées des cartes remarquables de son jeu
+FLEURS|FLEUR|2842|Virginités d’une femme|Surfaces d’une chose
+JEUDIS|JEUDI|2848|Quatrièmes jours de la semaine
+ABRUTIS|ABRUTI|2849|Physiquements
+AFFRONTE|AFFRONTER|2858|Pose face à face
+AFFRONTENT|AFFRONTER|2858|Posent face à face
+AFFRONTAIT|AFFRONTER|2858|Posait face à face
+AFFRONTAIENT|AFFRONTER|2858|Posaient face à face
+AFFRONTERA|AFFRONTER|2858|Posera face à face
+AFFRONTA|AFFRONTER|2858|Posa face à face
+MASQUES|MASQUE|2862|Faux visages de carton ou d’autre matière
+COUVERTS|COUVERT|2863|Protégés par-dessus|Obturés, bouchés
+COUVERTES|COUVERT|2863|Obturées, bouchées
+MALHEURS|MALHEUR|2865|Mauvaises fortunes|Accidents fâcheux
+ROYAUMES|ROYAUME|2867|Régimes politiques d'un tel pays
+ENTRETIENS|ENTRETIEN|2871|Maintenances|Ouvrages rédigés sous forme de dialogues
+BLOCS|BLOC|2875|Parpaings
+ALARMES|ALARME|2886|Émotions causées dans un camp|Inquiétudes, soucis, chagrins
+ETOILES|ETOILE|2890|Formes géométriques composées de branches, comme ☆ et ✡
+ENGAGENT|ENGAGER|2891|Donnent pour assurance
+ENGAGEAIT|ENGAGER|2891|Donnait pour assurance
+ENGAGEAIENT|ENGAGER|2891|Donnaient pour assurance
+ENGAGERA|ENGAGER|2891|Donnera pour assurance
+ENGAGEA|ENGAGER|2891|Donna pour assurance
+ENGAGEE|ENGAGER|2891|Donnée pour assurance
+ENGAGES|ENGAGER|2891|Donnés pour assurance
+ENGAGEES|ENGAGER|2891|Données pour assurance
+COLLES|COLLE|2893|Questions difficiles|Groupes de vendangeurs
+ASSISTANTS|ASSISTANT|2895|Personnes présentes en un lieu
+NATURELLE|NATUREL|2900|Qui a un lien de parenté biologique
+CAGES|CAGE|2904|Petites loges portatives en bois avec des carreaux translucides|Loges portatives d’assez grandes dimensions|Espaces clos
+ALLIANCES|ALLIANCE|2906|Unions entre personnes
+COLLIERS|COLLIER|2908|Cercles de cuir|Marques naturelles en forme de cercle
+CORRECTE|CORRECT|2910|Où il n’y a pas de fautes
+QUANTS|QUANT|2913|Analystes financiers chargés de créer des modèles mathématiques
+ASSASSINES|ASSASSINE|2914|Tués en guet-apens
+PLACARDS|PLACARD|2915|Armoires pratiquées dans un enfoncement de mur|Meubles ou petites pièces
+ECHAPPES|ECHAPPE|2932|Hauteurs mesurées à la verticale entre le nez de marche et le plafond
+CLASSIQUES|CLASSIQUE|2944|Traditionnels ets sans extravagance|Auteurs de référence
+ANALYSES|ANALYSE|2954|Résolutions d’un tout en ses parties|Recherches, déterminations
+MYSTERES|MYSTERE|2956|Composantes du rosaire
+PORTS|PORT|2958|Havres côtiers
+TENSIONS|TENSION|2959|Actions de tendre|Dissentiments entre deux états mentaux d’une personne
+QUALITES|QUALITE|2960|Manières d’être
+SECTEURS|SECTEUR|2965|Instruments d’astronomie|Circonscriptions administratives
+SECRETES|SECRETE|2970|Jupons autrefois portés par les femmes
+DISPUTES|DISPUTE|2971|Altercations violentes, querelles
+BOUFFES|BOUFFE|2974|Plaisanteries, blagues
+JUGEMENTS|JUGEMENT|2975|Décisions rendues par un tribunal
+COURAGEUSE|COURAGEUX|2977|Qui montre de l’ardeur au travail
+DESIRS|DESIR|2980|Pulsions charnelles
+CONDITIONS|CONDITION|2981|Qualités d’un objet par rapport à sa destination
+VOLANTE|VOLANT|2984|Qui a la faculté de voler
+TASSES|TASSE|2992|Contenus de ce récipient
+HALLS|HALL|2997|Grandes salles
+PILES|PILE|3001|Superpositions verticales d’objets
+ESSAIS|ESSAI|3006|Tests, examens|Tentatives
+CHARLOTTES|CHARLOTTE|3014|Variétés de pomme de terre|Coiffures de femme, sorte de bonnet en vogue aux et siècles
+AVOUENT|AVOUER|3016|Approuvent
+AVOUAIT|AVOUER|3016|Approuvait
+AVOUAIENT|AVOUER|3016|Approuvaient
+AVOUERA|AVOUER|3016|Approuvera
+AVOUA|AVOUER|3016|Approuva
+AVOUEE|AVOUER|3016|Approuvée
+AVOUES|AVOUER|3016|Approuvés
+AVOUEES|AVOUER|3016|Approuvées
+EPREUVES|EPREUVE|3018|Actions d’éprouver quelque chose ou quelqu'un|Parties d'examen ou de concours
+CONDUITES|CONDUITE|3020|Directions d’un ouvrage, d’un projet, d’une affaire|Gouvernements soits politiques
+AVANTAGES|AVANTAGE|3025|Utilités|Supériorités|Succès militaires, victoires
+MIROIRS|MIROIR|3028|Excréments de bécasse
+COPIES|COPIE|3032|Doubles faits d’après un original|Reproductions d’un ouvrage d’art|Simples imitations, emprunts, plagiats
+JAUNES|JAUNE|3033|Colorants de cette couleur|Verres de pastis
+ANNULENT|ANNULER|3043|Rendent nul|Suppriment
+ANNULAIT|ANNULER|3043|Rendait nul|Supprimait
+ANNULAIENT|ANNULER|3043|Rendaient nul|Supprimaient
+ANNULERA|ANNULER|3043|Rendra nul|Supprimera
+ANNULA|ANNULER|3043|Rendit nul|Supprima
+ANNULEE|ANNULER|3043|Supprimée
+ANNULES|ANNULER|3043|Supprimés
+ANNULEES|ANNULER|3043|Supprimées
+SECTIONS|SECTION|3044|Petites unités
+FIGURES|FIGURE|3058|Formes extérieures d’un corps, d’un être|Visages de l’être humain|Airs, contenances, manières, etcs
+PROFILS|PROFIL|3061|Coupes, aspects
+INTERROGE|INTERROGER|3067|Pousse à la réflexion
+INTERROGENT|INTERROGER|3067|Poussent à la réflexion
+INTERROGEAIT|INTERROGER|3067|Poussait à la réflexion
+INTERROGERA|INTERROGER|3067|Poussera à la réflexion
+INTERROGEA|INTERROGER|3067|Poussa à la réflexion
+INTERROGEE|INTERROGER|3067|Poussée à la réflexion
+INTERROGES|INTERROGER|3067|Poussés à la réflexion
+INTERROGEES|INTERROGER|3067|Poussées à la réflexion
+PARTAGES|PARTAGE|3076|Divisions de quelque chose en plusieurs portions|Répartitions égales
+ACCUSATIONS|ACCUSATION|3080|Tout reproches
+BOULES|BOULE|3082|Corps ronds en tous sens, généralement plein
+PATIENCES|PATIENCE|3085|Tranquillités
+OEUVRES|OEUVRE|3094|Productions littéraires, artistiques ou intellectuelles|Actions productives des hommes
+ATTITUDES|ATTITUDE|3099|Orientations|Évaluations positives ou négatives
+EFFORTS|EFFORT|3102|Actions énergiques d’une force physique ou intellectuelle
+PAREILLES|PAREILLE|3108|Toutes personnes semblables
+SERPENTS|SERPENT|3110|Reptiles apodes de l’ordre des squamates|Instruments de musique à vent
+AUDIENCES|AUDIENCE|3112|Séances d’un tribunal
+MAUDITE|MAUDIT|3121|Qui encourt la malédiction
+COCHONS|COCHON|3122|Sangliers
+COCHONNE|COCHON|3122|Obscène
+COCHONNES|COCHON|3122|Obscènes
+CONDAMNES|CONDAMNE|3126|Destinés à mourir sans remède
+VISITENT|VISITER|3133|S'assurent que les choses sont dans l’ordre où elles doivent être|Observent ou inspectent un lieu pour se donner un avis
+VISITAIT|VISITER|3133|S'assurait que les choses sont dans l’ordre où elles doivent être|Observait ou inspectait un lieu pour se donner un avis
+VISITAIENT|VISITER|3133|S'assuraient que les choses sont dans l’ordre où elles doivent être|Observaient ou inspectaient un lieu pour se donner un avis
+VISITERA|VISITER|3133|S'assurera que les choses sont dans l’ordre où elles doivent être|Observera ou inspectera un lieu pour se donner un avis
+VISITA|VISITER|3133|S'assura que les choses sont dans l’ordre où elles doivent être|Observa ou inspecta un lieu pour se donner un avis
+RATS|RAT|3136|Rongeurs à museau pointu
+AJOUTENT|AJOUTER|3137|Mettent en plus|Augmentent
+AJOUTAIT|AJOUTER|3137|Mettait en plus|Augmentait
+AJOUTAIENT|AJOUTER|3137|Mettaient en plus|Augmentaient
+AJOUTERA|AJOUTER|3137|Mettra en plus|Augmentera
+AJOUTA|AJOUTER|3137|Mit en plus|Augmenta
+AJOUTEE|AJOUTER|3137|Mise en plus|Augmentée
+AJOUTES|AJOUTER|3137|Mis en plus|Augmentés
+AJOUTEES|AJOUTER|3137|Mises en plus|Augmentées
+SEPARENT|SEPARER|3139|Font que des personnes|Éloignent, font cesser le combat
+SEPARAIT|SEPARER|3139|Faisait que des personnes|Éloignait, faisait cesser le combat
+SEPARAIENT|SEPARER|3139|Faisaient que des personnes|Éloignaient, faisaient cesser le combat
+SEPARERA|SEPARER|3139|Fera que des personnes|Éloignera, fera cesser le combat
+SEPARA|SEPARER|3139|Fit que des personnes|Éloigna, fit cesser le combat
+VALISES|VALISE|3140|Petites malles accrochées sur le porte-bagages d’une moto
+EMPEREURS|EMPEREUR|3144|Souverains d’un empire
+FORCENT|FORCER|3145|Obligent à donner son consentement
+FORCAIT|FORCER|3145|Obligeait à donner son consentement
+FORCAIENT|FORCER|3145|Obligeaient à donner son consentement
+FORCERA|FORCER|3145|Obligera à donner son consentement
+FORCA|FORCER|3145|Obligea à donner son consentement
+FORCEE|FORCER|3145|Obligée à donner son consentement
+FORCEES|FORCER|3145|Obligées à donner son consentement
+LEGENDES|LEGENDE|3161|Listes placées sur un plan d’architecture
+POULES|POULE|3167|Femelles du coq|Viandes de cette volaille
+EDUCATIONS|EDUCATION|3169|Actions d’élever|Élévations morales
+DRAGONS|DRAGON|3171|Enfants mutins et déterminés|Lézards de l’écozone australasienne
+PLAQUES|PLAQUE|3172|Lames ou feuilles plus ou moins épaisses|Jetons de casino
+MOBILES|MOBILE|3175|Corps susceptibles d’être mis en mouvement
+MUSEES|MUSEE|3182|Collections de choses diverses
+CHASSENT|CHASSER|3195|Cherchent à tuer le gibier|Cherchent à tuer toute sorte de gibier
+CHASSAIT|CHASSER|3195|Cherchait à tuer le gibier|Cherchait à tuer toute sorte de gibier
+CHASSAIENT|CHASSER|3195|Cherchaient à tuer le gibier|Cherchaient à tuer toute sorte de gibier
+CHASSERA|CHASSER|3195|Cherchera à tuer le gibier|Cherchera à tuer toute sorte de gibier
+CHASSA|CHASSER|3195|Chercha à tuer le gibier|Chercha à tuer toute sorte de gibier
+CHASSEE|CHASSER|3195|Cherchée à tuer le gibier|Cherchée à tuer toute sorte de gibier
+CHASSEES|CHASSER|3195|Cherchées à tuer le gibier|Cherchées à tuer toute sorte de gibier
+DEPOSENT|DEPOSER|3217|Ôtent un objet de la place où on l’avait fixé|Placent ou laissent une chose quelque part
+DEPOSAIT|DEPOSER|3217|Ôtait un objet de la place où on l’avait fixé|Plaçait ou laissait une chose quelque part
+DEPOSAIENT|DEPOSER|3217|Ôtaient un objet de la place où on l’avait fixé|Plaçaient ou laissaient une chose quelque part
+DEPOSERA|DEPOSER|3217|Ôtera un objet de la place où on l’avait fixé|Placera ou laissera une chose quelque part
+DEPOSA|DEPOSER|3217|Ôta un objet de la place où on l’avait fixé|Plaça ou laissa une chose quelque part
+IMAGINATIONS|IMAGINATION|3218|Facultés d’inventer|Produits de ces inventions talentueuses|Pensées, conceptions
+ORDINAIRES|ORDINAIRE|3223|Communs
+MAGAZINES|MAGAZINE|3229|Publications périodiques, généralements illustrées|Émissions périodiques de radio
+MATIERES|MATIERE|3230|Substances étendues
+LIBERES|LIBERE|3234|Déchargés d’une dette, d’une servitude
+BAGARRES|BAGARRE|3237|Tumultes, mêlées bruyantes et désordonnées|Querelles, rixes
+SOLIDES|SOLIDE|3239|Vigoureux, violents, fort
+LIES|LIE|3240|Attachés|Dépendants|Quatorzièmes lettres de l’alphabet cyrillique serbe, љ
+CERCLES|CERCLE|3242|Lignes circulaires, circonférences|Toutes pièces de métal ou d’autre matière
+CAROLINES|CAROLINE|3243|Écritures de couleur rouge
+CONGES|CONGE|3252|Permissions, autorisations
+ENTRAINE|ENTRAINER|3263|Dresse toute espèce de bêtes
+ENTRAINENT|ENTRAINER|3263|Dressent toute espèce de bêtes
+ENTRAINAIT|ENTRAINER|3263|Dressait toute espèce de bêtes
+ENTRAINAIENT|ENTRAINER|3263|Dressaient toute espèce de bêtes
+ENTRAINERA|ENTRAINER|3263|Dressera toute espèce de bêtes
+ENTRAINA|ENTRAINER|3263|Dressa toute espèce de bêtes
+EPAULES|EPAULE|3272|Carrures
+MAMIES|MAMIE|3281|Vieilles dames
+VOYANTS|VOYANT|3285|Ostentatoires
+VOYANTES|VOYANT|3285|Ostentatoires
+EXAMINE|EXAMINER|3286|Juge quelqu’un au point de vue de ses connaissances
+EXAMINENT|EXAMINER|3286|Jugent quelqu’un au point de vue de ses connaissances
+EXAMINAIT|EXAMINER|3286|Jugeait quelqu’un au point de vue de ses connaissances
+EXAMINAIENT|EXAMINER|3286|Jugeaient quelqu’un au point de vue de ses connaissances
+EXAMINERA|EXAMINER|3286|Jugera quelqu’un au point de vue de ses connaissances
+EXAMINA|EXAMINER|3286|Jugea quelqu’un au point de vue de ses connaissances
+OUVERTURES|OUVERTURE|3290|Actions d’ouvrir|Symphonies par laquelle commence un opéra
+HUILES|HUILE|3292|Personnalités importantes, influentes
+PARFUMS|PARFUM|3296|Odeurs aromatiques
+SAINTES|SAINTE|3304|Femmes d’une haute valeur morale
+ELIMINE|ELIMINER|3308|Met dehors|Assassine
+ELIMINENT|ELIMINER|3308|Mettent dehors|Assassinent
+ELIMINAIT|ELIMINER|3308|Mettait dehors|Assassinait
+ELIMINAIENT|ELIMINER|3308|Mettaient dehors|Assassinaient
+ELIMINERA|ELIMINER|3308|Mettra dehors|Assassinera
+ELIMINA|ELIMINER|3308|Mit dehors|Assassina
+ELIMINEE|ELIMINER|3308|Assassinée
+ELIMINES|ELIMINER|3308|Assassinés
+ELIMINEES|ELIMINER|3308|Assassinées
+THERAPIES|THERAPIE|3314|Traitements pour guérir une personne malade
+SIGNATURES|SIGNATURE|3317|Actions de signer
+DONNEES|DONNEE|3320|Informations sur un sujet particulier
+ADAPTATIONS|ADAPTATION|3326|Intégrations d’une organisation|Aménagements, dérogations, interprétations
+BRAVES|BRAVE|3327|Serviables
+GEANTS|GEANT|3336|Excédants de beaucoup la stature ordinaire, très grand
+TAPENT|TAPER|3338|Frappent trois coups pour annoncer le début du spectacle
+TAPAIT|TAPER|3338|Frappait trois coups pour annoncer le début du spectacle
+TAPAIENT|TAPER|3338|Frappaient trois coups pour annoncer le début du spectacle
+TAPERA|TAPER|3338|Frappera trois coups pour annoncer le début du spectacle
+TAPA|TAPER|3338|Frappa trois coups pour annoncer le début du spectacle
+TERRITOIRES|TERRITOIRE|3340|Aires sur laquelle vit un groupe humain
+ADORE|ADORER|3344|Honore une divinité en lui rendant le culte qui lui est dû|Rend des respects extraordinaires en se prosternant
+ADORENT|ADORER|3344|Honorent une divinité en lui rendant le culte qui lui est dû|Rendent des respects extraordinaires en se prosternant
+ADORAIT|ADORER|3344|Honorait une divinité en lui rendant le culte qui lui est dû|Rendait des respects extraordinaires en se prosternant
+ADORAIENT|ADORER|3344|Honoraient une divinité en lui rendant le culte qui lui est dû|Rendaient des respects extraordinaires en se prosternant
+ADORERA|ADORER|3344|Honorera une divinité en lui rendant le culte qui lui est dû|Rendra des respects extraordinaires en se prosternant
+ADORA|ADORER|3344|Honora une divinité en lui rendant le culte qui lui est dû|Rendit des respects extraordinaires en se prosternant
+ADOREE|ADORER|3344|Rendue des respects extraordinaires en se prosternant
+ADORES|ADORER|3344|Rendus des respects extraordinaires en se prosternant
+ADOREES|ADORER|3344|Rendues des respects extraordinaires en se prosternant
+SCENARIOS|SCENARIO|3345|Descriptions détaillées des différentes scènes d’un film|Schémas d’analyse d’action possible
+EMPRUNTENT|EMPRUNTER|3346|Prennent pour s’approprier et utilisent
+EMPRUNTAIT|EMPRUNTER|3346|Prenait pour s’approprier et utilisait
+EMPRUNTAIENT|EMPRUNTER|3346|Prenaient pour s’approprier et utilisaient
+EMPRUNTERA|EMPRUNTER|3346|Prendra pour s’approprier et utilisera
+EMPRUNTA|EMPRUNTER|3346|Prit pour s’approprier et utilisa
+EMPRUNTEE|EMPRUNTER|3346|Prise pour s’approprier et utilisée
+EMPRUNTES|EMPRUNTER|3346|Pris pour s’approprier et utilisés
+EMPRUNTEES|EMPRUNTER|3346|Prises pour s’approprier et utilisées
+RESPECTE|RESPECTER|3351|Honore
+RESPECTENT|RESPECTER|3351|Honorent
+RESPECTAIT|RESPECTER|3351|Honorait
+RESPECTAIENT|RESPECTER|3351|Honoraient
+RESPECTERA|RESPECTER|3351|Honorera
+RESPECTA|RESPECTER|3351|Honora
+RESPECTEE|RESPECTER|3351|Honorée
+RESPECTES|RESPECTER|3351|Honorés
+RESPECTEES|RESPECTER|3351|Honorées
+LIVRENT|LIVRER|3357|Mettent une chose au pouvoir
+LIVRAIT|LIVRER|3357|Mettait une chose au pouvoir
+LIVRAIENT|LIVRER|3357|Mettaient une chose au pouvoir
+LIVRERA|LIVRER|3357|Mettra une chose au pouvoir
+LIVRA|LIVRER|3357|Mit une chose au pouvoir
+SUPERIEURES|SUPERIEUR|3364|Plus grandes ou égales
+POILS|POIL|3366|Les chevelures|Les barbes de l’homme
+PANNES|PANNE|3375|Cessations de l’alimentation, de la fourniture
+INVITATIONS|INVITATION|3383|Les lettres, les billets|Conseils, prescriptions, demandes, incitations|Convocations
+CINGLES|CINGLE|3394|Enragés|Personnes folles
+MOCHES|MOCHE|3395|Minables, moralements inacceptables|Contrariants, ennuyeux
+JUNIORS|JUNIOR|3399|Relatifs aux jeunes
+RACES|RACE|3411|Variétés physiques constantes dans l’espèce humaine|Subdivisions des animaux
+TRAFICS|TRAFIC|3415|Commerces illicites ou clandestins|Volumes de la circulation des marchandises
+EXERCICES|EXERCICE|3418|Apprentissages du maniement des armes et des évolutions militaires|Entrainements du corps|Pratiques régulières d’une discipline
+CABINES|CABINE|3423|Petites chambres à coucher, à bord d’un bateau|Petites chambres, chambrettes, petites pièces isolées|Espaces clos aménagés dans un camion
+NAGENT|NAGER|3430|Flottent|Baignent|Portent un vêtement beaucoup trop ample
+NAGEAIT|NAGER|3430|Flottait|Baignait|Portait un vêtement beaucoup trop ample
+NAGEAIENT|NAGER|3430|Flottaient|Baignaient|Portaient un vêtement beaucoup trop ample
+NAGERA|NAGER|3430|Flottera|Baignera|Portera un vêtement beaucoup trop ample
+NAGEA|NAGER|3430|Flotta|Baigna|Porta un vêtement beaucoup trop ample
+NAGEE|NAGER|3430|Flottée|Baignée
+NAGES|NAGER|3430|Flottés|Baignés
+NAGEES|NAGER|3430|Flottées|Baignées
+NATIONS|NATION|3438|Ethnies, peuples
+CASSETTES|CASSETTE|3444|Trésors particuliers d’un prince, d’un souverain|Sens dérivés du précédent|Plumiers d’écolier
+REMISES|REMISE|3449|Actions de remettre en un lieu|Actions de remettre à quelqu’un, de rendre, de livrer|Actions de remettre
+SEXUELS|SEXUEL|3451|Relatifs au sexe
+SEXUELLE|SEXUEL|3451|Qui aime à faire l’amour
+ANGLES|ANGLE|3467|Façons de voir ou de présenter les choses, point de vue
+COUCOUS|COUCOU|3471|Cris de cet oiseau
+TEMPERATURES|TEMPERATURE|3472|Degrés de chaleur ou de froideur d’un corps ou d’un environnement|Degrés de chaleur de l’atmosphère
+BOURSES|BOURSE|3475|Petits sacs de cuir|Allocations financières dans un but d’étude, de projets
+RANGENT|RANGER|3491|Mettent en ordre quelque chose, ordonnent|Mettent chaque élément à sa place, placent|Classent dans un ordre déterminé
+RANGEAIT|RANGER|3491|Mettait en ordre quelque chose, ordonnait|Mettait chaque élément à sa place, plaçait|Classait dans un ordre déterminé
+RANGEAIENT|RANGER|3491|Mettaient en ordre quelque chose, ordonnaient|Mettaient chaque élément à sa place, plaçaient|Classaient dans un ordre déterminé
+RANGERA|RANGER|3491|Mettra en ordre quelque chose, ordonnera|Mettra chaque élément à sa place, placera|Classera dans un ordre déterminé
+RANGEA|RANGER|3491|Mit en ordre quelque chose, ordonna|Mit chaque élément à sa place, plaça|Classa dans un ordre déterminé
+RANGES|RANGER|3491|Mis en ordre quelque chose, ordonnés|Classés dans un ordre déterminé
+RANGEES|RANGER|3491|Mises en ordre quelque chose, ordonnées|Classées dans un ordre déterminé
+ELEVENT|ELEVER|3492|Mettent plus haut, portent plus haut, rendent plus haut|Font construire
+ELEVAIT|ELEVER|3492|Mettait plus haut, portait plus haut, rendait plus haut|Faisait construire
+ELEVAIENT|ELEVER|3492|Mettaient plus haut, portaient plus haut, rendaient plus haut|Faisaient construire
+ELEVERA|ELEVER|3492|Mettra plus haut, portera plus haut, rendra plus haut|Fera construire
+ELEVA|ELEVER|3492|Mit plus haut, porta plus haut, rendit plus haut|Fit construire
+AUTORITES|AUTORITE|3494|Administrations|Crédits, considérations
+TRIBUS|TRIBU|3497|Divisions du peuple, chez quelques nations anciennes
+COMEDIES|COMEDIE|3499|Œuvres dramatiques
+ABSURDES|ABSURDE|3506|Insensés
+SOUFFRANCES|SOUFFRANCE|3507|Douleurs physiques ou morales
+RATTRAPE|RATTRAPER|3508|Regagne ce qu’on avait perdu
+RATTRAPENT|RATTRAPER|3508|Regagnent ce qu’on avait perdu
+RATTRAPAIT|RATTRAPER|3508|Regagnait ce qu’on avait perdu
+RATTRAPAIENT|RATTRAPER|3508|Regagnaient ce qu’on avait perdu
+RATTRAPERA|RATTRAPER|3508|Regagnera ce qu’on avait perdu
+RATTRAPA|RATTRAPER|3508|Regagna ce qu’on avait perdu
+RECEPTIONS|RECEPTION|3516|Actions de recevoir des ondes|Accueils
+UNIONS|UNION|3524|Mariages|Rapports sexuels, copulations|Groupements d’individus
+DURENT|DURER|3526|Continuent d’être, se prolongent
+DURAIT|DURER|3526|Continuait d’être, se prolongeait
+DURAIENT|DURER|3526|Continuaient d’être, se prolongeaient
+DURERA|DURER|3526|Continuera d’être, se prolongera
+TEMOIGNE|TEMOIGNER|3531|Manifeste, fait connaître ce qu’on sait
+TEMOIGNENT|TEMOIGNER|3531|Manifestent, font connaître ce qu’on sait
+TEMOIGNAIT|TEMOIGNER|3531|Manifestait, faisait connaître ce qu’on sait
+TEMOIGNAIENT|TEMOIGNER|3531|Manifestaient, faisaient connaître ce qu’on sait
+TEMOIGNERA|TEMOIGNER|3531|Manifestera, fera connaître ce qu’on sait
+TEMOIGNA|TEMOIGNER|3531|Manifesta, fit connaître ce qu’on sait
+TUNNELS|TUNNEL|3534|Voies souterraines percées à travers une montagne|Serres basses en matière plastique soutenue par des arceaux
+PURES|PUR|3536|Abstraites, fondamentales
+POUDRES|POUDRE|3537|Substances solides broyées ou pilées
+INFLUENCES|INFLUENCE|3540|Actions d’une personne|Autorités, crédits, ascendants
+TARTES|TARTE|3549|Bérets de chasseur alpin
+FINALES|FINALE|3553|Dernières lettres d'un mot, ou dernière syllabe d'une phrase|Dernières parties d’une période, d'une longue phrase|Dernières notes d’un air
+CULTURES|CULTURE|3554|Actions de cultiver la terre
+PRODUCTIONS|PRODUCTION|3560|Prolongements, allongements
+BIBLES|BIBLE|3561|Livres de petit format|Machines pour lancer des pierres en usage du au siècle
+MINISTERES|MINISTERE|3573|Fonctions d’un huissier
+TEMOIGNAGES|TEMOIGNAGE|3575|Preuves
+EFFRAYANTE|EFFRAYANT|3577|Qui fait peur
+FOUILLENT|FOUILLER|3578|Pratiquent un creux dans la terre|Creusent la terre en vue de chercher|Explorent avec soin
+FOUILLAIT|FOUILLER|3578|Pratiquait un creux dans la terre|Creusait la terre en vue de chercher|Explorait avec soin
+FOUILLAIENT|FOUILLER|3578|Pratiquaient un creux dans la terre|Creusaient la terre en vue de chercher|Exploraient avec soin
+FOUILLERA|FOUILLER|3578|Pratiquera un creux dans la terre|Creusera la terre en vue de chercher|Explorera avec soin
+FOUILLA|FOUILLER|3578|Pratiqua un creux dans la terre|Creusa la terre en vue de chercher|Explora avec soin
+FOUILLEE|FOUILLER|3578|Explorée avec soin
+FOUILLES|FOUILLER|3578|Explorés avec soin
+FOUILLEES|FOUILLER|3578|Explorées avec soin
+PRIE|PRIER|3579|Adore la divinité en lui demandant une grâce|Demande par grâce|Invite
+PRIENT|PRIER|3579|Adorent la divinité en lui demandant une grâce|Demandent par grâce|Invitent
+PRIAIT|PRIER|3579|Adorait la divinité en lui demandant une grâce|Demandait par grâce|Invitait
+PRIAIENT|PRIER|3579|Adoraient la divinité en lui demandant une grâce|Demandaient par grâce|Invitaient
+PRIERA|PRIER|3579|Adorera la divinité en lui demandant une grâce|Demandera par grâce|Invitera
+PRIA|PRIER|3579|Adora la divinité en lui demandant une grâce|Demanda par grâce|Invita
+PRIEE|PRIER|3579|Demandée par grâce|Invitée
+PRIES|PRIER|3579|Demandés par grâce|Invités
+PRIEES|PRIER|3579|Demandées par grâce|Invitées
+DIANES|DIANE|3580|Les lunes
+PISSE|PISSER|3584|Évacue en urinant
+PISSENT|PISSER|3584|Évacuent en urinant
+PISSAIT|PISSER|3584|Évacuait en urinant
+PISSAIENT|PISSER|3584|Évacuaient en urinant
+PISSERA|PISSER|3584|Évacuera en urinant
+PISSA|PISSER|3584|Évacua en urinant
+PISSEE|PISSER|3584|Évacuée en urinant
+PISSES|PISSER|3584|Évacués en urinant
+PISSEES|PISSER|3584|Évacuées en urinant
+CAUSENT|CAUSER|3585|Parlent avec malignité
+CAUSAIT|CAUSER|3585|Parlait avec malignité
+CAUSAIENT|CAUSER|3585|Parlaient avec malignité
+CAUSERA|CAUSER|3585|Parlera avec malignité
+CAUSA|CAUSER|3585|Parla avec malignité
+CAUSEE|CAUSER|3585|Parlée avec malignité
+CAUSEES|CAUSER|3585|Parlées avec malignité
+SALADES|SALADE|3597|Casques de forme ronde
+MATINEES|MATINEE|3599|Représentations
+RAGES|RAGE|3602|Crises douloureuses
+SACHANTS|SACHANT|3611|Personnes pourvues de connaissances apprises
+SACHANTE|SACHANT|3611|Qui sait, qui peut apporter un éclairage
+COMMANDENT|COMMANDER|3617|Donnent un ordre|Dominent par son élévation
+COMMANDAIT|COMMANDER|3617|Donnait un ordre|Dominait par son élévation
+COMMANDAIENT|COMMANDER|3617|Donnaient un ordre|Dominaient par son élévation
+COMMANDERA|COMMANDER|3617|Donnera un ordre|Dominera par son élévation
+COMMANDA|COMMANDER|3617|Donna un ordre|Domina par son élévation
+COMMANDEE|COMMANDER|3617|Dominée par son élévation
+COMMANDEES|COMMANDER|3617|Dominées par son élévation
+COMTES|COMTE|3621|Dignitaires des derniers temps de l’empire romain et du bas-empire|Commandants militaires
+APPRECIE|APPRECIER|3626|Détermine
+APPRECIENT|APPRECIER|3626|Déterminent
+APPRECIAIT|APPRECIER|3626|Déterminait
+APPRECIAIENT|APPRECIER|3626|Déterminaient
+APPRECIERA|APPRECIER|3626|Déterminera
+APPRECIA|APPRECIER|3626|Détermina
+APPRECIEE|APPRECIER|3626|Déterminée
+APPRECIES|APPRECIER|3626|Déterminés
+APPRECIEES|APPRECIER|3626|Déterminées
+AUTEURS|AUTEUR|3627|Inventeurs
+ALBUMS|ALBUM|3639|Disques de musique|Grands formats de contenu musical d'un même artiste ou groupe
+SPENCERS|SPENCER|3647|Habits sans basques|Corsages sans jupe
+DIVISIONS|DIVISION|3654|Directions opérationnelles|Désunions, oppositions|Distributions entre plusieurs personnes ou catégories de personnes
+ROBOTS|ROBOT|3660|Machines de forme humaine
+COLLECTIONS|COLLECTION|3668|Groupes de plusieurs ouvrages d'un même éditeur sur un même sujet
+OPTIONS|OPTION|3670|Actions d’opter|Droits préférentiels|Matières scolaires étudiées de façon volontaire dans un cursus
+RIGOLES|RIGOLE|3673|Filets de liquide
+VAGUES|VAGUE|3675|Incertains
+LABORATOIRES|LABORATOIRE|3679|Ateliers garnis de fourneaux|Unités administratives d’organisation de la recherche
+CHARMES|CHARME|3684|Pouvoirs de séduction
+TERRORISTES|TERRORISTE|3688|Relatifs à un régime de terreur
+PARAITRES|PARAITRE|3689|Apparences
+DIPLOMES|DIPLOME|3696|Chartes, titres
+ENNUYEUSE|ENNUYEUX|3699|Qui cause de l’ennui, de la lassitude|Qui cause du souci
+PHASES|PHASE|3706|Cycles d’apparition de la lune et d’autres planètes|Décalages angulaires entre des tensions ou signaux de forme sinusoïdale|Fils conducteurs
+REVOLUTIONS|REVOLUTION|3711|Renversements brusques d’un régime politique par la force
+SEINS|SEIN|3713|Parties antérieures du thorax humain|Poitrines des femmes|Chacunes des mamelles des femmes
+PARIS|PARI|3716|Promesses réciproques
+COMMERCES|COMMERCE|3720|Objets de transaction
+FORMATIONS|FORMATION|3721|Groupes de personnes, sous-ensemble d’un autre|Compagnies ou régiments ainsi formés
+HABILLENT|HABILLER|3722|Équipent un cheval pour le monter
+HABILLAIT|HABILLER|3722|Équipait un cheval pour le monter
+HABILLAIENT|HABILLER|3722|Équipaient un cheval pour le monter
+HABILLERA|HABILLER|3722|Équipera un cheval pour le monter
+HABILLA|HABILLER|3722|Équipa un cheval pour le monter
+FICHUS|FICHU|3723|Faits, arrangés
+FICHUE|FICHU|3723|Faite, arrangée
+FICHUES|FICHU|3723|Faites, arrangées
+PARENTS|PARENT|3727|Les pères et les mères
+GRATUITE|GRATUIT|3730|Que l’on donne librement sans obligation
+ETEINTE|ETEINT|3739|Qui ne se consume plus, en parlant d’un feu
+ETUDES|ETUDE|3740|Apprentissages|Instructions scolaires
+ECARTS|ECART|3743|Entorses de l’articulation antérieure du cheval, du bœuf, etc
+CHARGENT|CHARGER|3744|Mettent avec profusion certaines choses sur une autre
+CHARGEAIT|CHARGER|3744|Mettait avec profusion certaines choses sur une autre
+CHARGEAIENT|CHARGER|3744|Mettaient avec profusion certaines choses sur une autre
+CHARGERA|CHARGER|3744|Mettra avec profusion certaines choses sur une autre
+CHARGEA|CHARGER|3744|Mit avec profusion certaines choses sur une autre
+CHARGEE|CHARGER|3744|Mise avec profusion certaines choses sur une autre
+CHARGES|CHARGER|3744|Mis avec profusion certaines choses sur une autre
+CHARGEES|CHARGER|3744|Mises avec profusion certaines choses sur une autre
+DETTES|DETTE|3749|Sommes dues à un créancier
+LEGERE|LEGER|3763|Qui pèse le poids d’une petite chose|Qui se manie facilement, meuble, malléable
+CITES|CITE|3769|Citoyennetés
+VOLEES|VOLEE|3782|Branles des cloches|Raclées
+EMPREINTES|EMPREINTE|3787|Traces laissées par un contact de la peau sur un objet
+SAINE|SAIN|3789|Qui ne présente pas de danger, pas d’écueils
+IDENTIFIES|IDENTIFIE|3790|Reconnus
+REMEDES|REMEDE|3795|Lavements
+COULENT|COULER|3797|Laissent échapper un liquide|Glissent
+COULAIT|COULER|3797|Laissait échapper un liquide|Glissait
+COULAIENT|COULER|3797|Laissaient échapper un liquide|Glissaient
+COULERA|COULER|3797|Laissera échapper un liquide|Glissera
+COULA|COULER|3797|Laissa échapper un liquide|Glissa
+COULES|COULER|3797|Glissés
+COULEES|COULER|3797|Glissées
+EMPORTENT|EMPORTER|3799|Entraînent, arrachent
+EMPORTAIT|EMPORTER|3799|Entraînait, arrachait
+EMPORTAIENT|EMPORTER|3799|Entraînaient, arrachaient
+EMPORTERA|EMPORTER|3799|Entraînera, arrachera
+EMPORTA|EMPORTER|3799|Entraîna, arracha
+EMPORTEE|EMPORTER|3799|Entraînée, arrachée
+EMPORTES|EMPORTER|3799|Entraînés, arrachés
+EMPORTEES|EMPORTER|3799|Entraînées, arrachées
+FACHES|FACHE|3800|Tristes, chagrinés
+CAUTIONS|CAUTION|3824|Conditions requises pour entériner quelque chose
+CARACTERES|CARACTERE|3830|Empreintes, marques
+EXPRIME|EXPRIMER|3846|Fait sortir le suc|Parle|Fabrique l’ARN
+EXPRIMENT|EXPRIMER|3846|Font sortir le suc|Parlent|Fabriquent l’ARN
+EXPRIMAIT|EXPRIMER|3846|Faisait sortir le suc|Parlait|Fabriquait l’ARN
+EXPRIMAIENT|EXPRIMER|3846|Faisaient sortir le suc|Parlaient|Fabriquaient l’ARN
+EXPRIMERA|EXPRIMER|3846|Fera sortir le suc|Parlera|Fabriquera l’ARN
+EXPRIMA|EXPRIMER|3846|Fit sortir le suc|Parla|Fabriqua l’ARN
+EXPRIMEE|EXPRIMER|3846|Parlée
+EXPRIMES|EXPRIMER|3846|Parlés
+EXPRIMEES|EXPRIMER|3846|Parlées
+SURVIES|SURVIE|3848|Prolongements de l’existence après la mort
+TRADITIONS|TRADITION|3854|Actions de transmettre|Croyances répandues
+STRATEGIES|STRATEGIE|3859|Manœuvres|Conduites
+ATTACHES|ATTACHE|3866|Fixés, liés|Emplois de fonctionnaire dans plusieurs administrations
+AMELIORENT|AMELIORER|3868|Rendent meilleur|Donnent plus de valeur|Augmentent les performances
+AMELIORAIT|AMELIORER|3868|Rendait meilleur|Donnait plus de valeur|Augmentait les performances
+AMELIORAIENT|AMELIORER|3868|Rendaient meilleur|Donnaient plus de valeur|Augmentaient les performances
+AMELIORERA|AMELIORER|3868|Rendra meilleur|Donnera plus de valeur|Augmentera les performances
+AMELIORA|AMELIORER|3868|Rendit meilleur|Donna plus de valeur|Augmenta les performances
+ESCALIERS|ESCALIER|3875|Voies piétonnes constituées d’un ensemble de marches
+DEFIS|DEFI|3878|Épreuves à surmonter
+QUATRIEMES|QUATRIEME|3885|Élèves dans cette classe
+ACCENTS|ACCENT|3888|Élévations de la voix sur une syllabe
+GOUTERS|GOUTER|3900|Petits repas pris entre le déjeuner et le dîner
+GOUTE|GOUTER|3900|Examine, vérifie la saveur
+GOUTENT|GOUTER|3900|Examinent, vérifient la saveur
+GOUTAIT|GOUTER|3900|Examinait, vérifiait la saveur
+GOUTAIENT|GOUTER|3900|Examinaient, vérifiaient la saveur
+GOUTERA|GOUTER|3900|Examinera, vérifiera la saveur
+GOUTA|GOUTER|3900|Examina, vérifia la saveur
+MECHANTES|MECHANTE|3913|Personnes cruelles
+DESSINS|DESSIN|3916|Représentations d’objets, de personnages, de paysages, etc|Motifs fantaisies
+GENEREUSE|GENEREUX|3917|Qui produit beaucoup
+BOURRES|BOURRE|3919|Pleins à craquer|Serrés, compressés
+MANUELLE|MANUEL|3921|Qui se fait avec la main
+BOISSONS|BOISSON|3924|Breuvages alcoolisés|Mélanges d’eau de cidre et de marc de pomme
+APPETITS|APPETIT|3927|Désirs sélectifs pour combler une sensation de faim|Ciboulettes
+DECOUVERTES|DECOUVERTE|3929|Actions d’inventer
+RISQUENT|RISQUER|3930|Osent une parole|S'aventurent
+RISQUAIT|RISQUER|3930|Osait une parole|S'aventurait
+RISQUAIENT|RISQUER|3930|Osaient une parole|S'aventuraient
+RISQUERA|RISQUER|3930|Osera une parole|S'aventurera
+RISQUA|RISQUER|3930|Osa une parole|S'aventura
+ROULENT|ROULER|3933|Font avancer une chose en la faisant tourner sur elle-même|Avancent en tournant sur soi-même|Tournent sur soi-même sans avancer
+ROULAIT|ROULER|3933|Faisait avancer une chose en la faisant tourner sur elle-même|Avançait en tournant sur soi-même|Tournait sur soi-même sans avancer
+ROULAIENT|ROULER|3933|Faisaient avancer une chose en la faisant tourner sur elle-même|Avançaient en tournant sur soi-même|Tournaient sur soi-même sans avancer
+ROULERA|ROULER|3933|Fera avancer une chose en la faisant tourner sur elle-même|Avancera en tournant sur soi-même|Tournera sur soi-même sans avancer
+ROULA|ROULER|3933|Fit avancer une chose en la faisant tourner sur elle-même|Avança en tournant sur soi-même|Tourna sur soi-même sans avancer
+ROULEE|ROULER|3933|Avancée en tournant sur soi-même|Tournée sur soi-même sans avancer
+ROULES|ROULER|3933|Avancés en tournant sur soi-même|Tournés sur soi-même sans avancer
+ROULEES|ROULER|3933|Avancées en tournant sur soi-même|Tournées sur soi-même sans avancer
+CABLES|CABLE|3934|Moulures en forme de gros cordage|Groupes de conducteurs électriques réunis sous une même enveloppe
+PHRASES|PHRASE|3936|Suites non interrompues de sons simples ou d’accords
+REVEILS|REVEIL|3937|Appellations communes de l’hellébore fétide
+DOSES|DOSE|3943|Quantités de poison ou de drogue prise en une seule fois
+COMAS|COMA|3944|Chevelures d’une comète
+CUISINENT|CUISINER|3945|Préparent à manger
+CUISINAIT|CUISINER|3945|Préparait à manger
+CUISINAIENT|CUISINER|3945|Préparaient à manger
+CUISINERA|CUISINER|3945|Préparera à manger
+CUISINA|CUISINER|3945|Prépara à manger
+CUISINEE|CUISINER|3945|Préparée à manger
+CUISINEES|CUISINER|3945|Préparées à manger
+DEPECHES|DEPECHE|3948|Messages
+ASSISTENT|ASSISTER|3950|Accompagnent pour quelque action
+ASSISTAIT|ASSISTER|3950|Accompagnait pour quelque action
+ASSISTAIENT|ASSISTER|3950|Accompagnaient pour quelque action
+ASSISTERA|ASSISTER|3950|Accompagnera pour quelque action
+ASSISTA|ASSISTER|3950|Accompagna pour quelque action
+ASSISTEE|ASSISTER|3950|Accompagnée pour quelque action
+ASSISTES|ASSISTER|3950|Accompagnés pour quelque action
+ASSISTEES|ASSISTER|3950|Accompagnées pour quelque action
+STYLOS|STYLO|3962|Objets allongés munis d’un réservoir d’encre et d’une pointe
+HOMICIDES|HOMICIDE|3964|Faits de tuer un être humain|Meurtriers d’un être humain
+REGARDANTS|REGARDANT|3972|Spectateurs
+TRANSFERTS|TRANSFERT|3980|Changements de club par un sportif
+PORTRAITS|PORTRAIT|3985|Descriptions de toute sorte d’objets
+DESASTRES|DESASTRE|3990|Événements funestes
+MASSES|MASSE|4001|Quantités de matière|Quantités de matière d’un corps
+CABANES|CABANE|4014|Abris pour les animaux, poules, lapins, etc|Maisons longues amérindiennes
+LIONS|LION|4015|Grands félins carnivores|Mâles de cette espèce
+BUDGETS|BUDGET|4017|Affectations de ressources financières|Prévisions de revenus et dépenses d’une entreprise
+MALEDICTIONS|MALEDICTION|4019|Actions de maudire|Malheurs
+RUMEURS|RUMEUR|4026|Bruits confus d’un certain nombre de voix|Mouvements de suspicion publique contre quelqu’un
+METHODES|METHODE|4029|Titres de certains livres élémentaires
+AVENUES|AVENUE|4031|Voies urbaines d’importance et de taille diverses|Voies urbaines bordées d’arbres
+PRIORITES|PRIORITE|4041|Les faits de venir avant, dans l’ordre du temps
+SERRES|SERRE|4042|Très ajustés, étreints, pressés|Très rapprochés, étroits
+CASINOS|CASINO|4045|Établissements de jeu|Établissements de jeu de hasard
+POMMES|POMME|4048|Fruits de plusieurs végétaux|Fruits interdits du paradis terrestre
+CANS|CAN|4052|Boîtes de conserve
+BATONS|BATON|4061|Objets durs en forme de baguette
+NEGOCIE|NEGOCIER|4068|Traite une affaire avec quelqu'un
+NEGOCIENT|NEGOCIER|4068|Traitent une affaire avec quelqu'un
+NEGOCIAIT|NEGOCIER|4068|Traitait une affaire avec quelqu'un
+NEGOCIAIENT|NEGOCIER|4068|Traitaient une affaire avec quelqu'un
+NEGOCIERA|NEGOCIER|4068|Traitera une affaire avec quelqu'un
+NEGOCIA|NEGOCIER|4068|Traita une affaire avec quelqu'un
+ABATTUS|ABATTU|4075|Abaissés
+ABATTUE|ABATTU|4075|Abaissée
+ABATTUES|ABATTU|4075|Abaissées
+OTAGES|OTAGE|4077|Personnes prises pour faire pression sur quelqu’un
+INTERVIEWS|INTERVIEW|4079|Enquêtes faites par un journaliste
+COURUS|COURU|4080|Fréquentés|Recherchés|Certains
+COURUE|COURU|4080|Fréquentée|Recherchée|Certaine
+COURUES|COURU|4080|Fréquentées|Recherchées|Certaines
+RUPTURES|RUPTURE|4084|Actions par laquelle une chose est rompue
+ENSEIGNES|ENSEIGNE|4088|Raisons sociales
+MANAGERS|MANAGER|4089|Responsables d'une équipe|Imprésarios
+COMPLICES|COMPLICE|4100|Acolytes
+TESTE|TESTER|4109|Déclare par un acte ce que l’on veut qui soit exécuté après sa mort|Défie, provoque, se mesure à
+TESTENT|TESTER|4109|Déclarent par un acte ce que l’on veut qui soit exécuté après sa mort|Défient, provoquent, se mesurent à
+TESTAIT|TESTER|4109|Déclarait par un acte ce que l’on veut qui soit exécuté après sa mort|Défiait, provoquait, se mesurait à
+TESTAIENT|TESTER|4109|Déclaraient par un acte ce que l’on veut qui soit exécuté après sa mort|Défiaient, provoquaient, se mesuraient à
+TESTERA|TESTER|4109|Déclarera par un acte ce que l’on veut qui soit exécuté après sa mort|Défiera, provoquera, se mesurera à
+TESTA|TESTER|4109|Déclara par un acte ce que l’on veut qui soit exécuté après sa mort|Défia, provoqua, se mesura à
+TESTEE|TESTER|4109|Déclarée par un acte ce que l’on veut qui soit exécuté après sa mort
+TESTES|TESTER|4109|Déclarés par un acte ce que l’on veut qui soit exécuté après sa mort
+TESTEES|TESTER|4109|Déclarées par un acte ce que l’on veut qui soit exécuté après sa mort
+GENERATIONS|GENERATION|4110|Actions d’engendrer, de produire son semblable
+TORTURES|TORTURE|4112|Fortes contrariétés
+LOYAUTES|LOYAUTE|4118|Fidélités à tenir parole, à faire honneur à ses engagements
+EFFACENT|EFFACER|4122|Annulent
+EFFACAIT|EFFACER|4122|Annulait
+EFFACAIENT|EFFACER|4122|Annulaient
+EFFACERA|EFFACER|4122|Annulera
+EFFACA|EFFACER|4122|Annula
+EFFACEE|EFFACER|4122|Annulée
+EFFACES|EFFACER|4122|Annulés
+EFFACEES|EFFACER|4122|Annulées
+COLLEGES|COLLEGE|4129|Établissements universitaires de l’ancien régime
+LEADERS|LEADER|4130|Numéros uns d’un secteur économique
+DENTS|DENT|4138|Petits organes composés d’émail
+CHARITES|CHARITE|4146|Vertus théologales|Bienveillances habituelles|Bienfaisances
+REVERENDS|REVEREND|4148|Titres donnés aux prélats, aux religieux et aux religieuses
+RESOLUE|RESOLU|4159|Déterminée|Dont on a trouvé la solution|Qui se rapporte à la définition
+RESOLUES|RESOLU|4159|Déterminées
+ARRACHENT|ARRACHER|4166|Détachent avec effort|Détournent, écartent
+ARRACHAIT|ARRACHER|4166|Détachait avec effort|Détournait, écartait
+ARRACHAIENT|ARRACHER|4166|Détachaient avec effort|Détournaient, écartaient
+ARRACHERA|ARRACHER|4166|Détachera avec effort|Détournera, écartera
+ARRACHA|ARRACHER|4166|Détacha avec effort|Détourna, écarta
+ARRACHEE|ARRACHER|4166|Détachée avec effort|Détournée, écartée
+ARRACHES|ARRACHER|4166|Détachés avec effort|Détournés, écartés
+ARRACHEES|ARRACHER|4166|Détachées avec effort|Détournées, écartées
+SAUTS|SAUT|4170|Disciplines sportives
+MICKEYS|MICKEY|4172|Dessins
+CHEVALIERS|CHEVALIER|4177|Cavaliers
+CHEVALIERE|CHEVALIER|4177|Cavalière
+CHEVALIERES|CHEVALIER|4177|Cavalières
+CRUELS|CRUEL|4197|Insensibles
+CRUELLES|CRUEL|4197|Douloureuses|Insensibles
+DEMENAGE|DEMENAGER|4212|Ôte d’une maison|Quitte l’endroit où l’on demeure
+DEMENAGENT|DEMENAGER|4212|Ôtent d’une maison|Quittent l’endroit où l’on demeure
+DEMENAGEAIT|DEMENAGER|4212|Ôtait d’une maison|Quittait l’endroit où l’on demeure
+DEMENAGERA|DEMENAGER|4212|Ôtera d’une maison|Quittera l’endroit où l’on demeure
+DEMENAGEA|DEMENAGER|4212|Ôta d’une maison|Quitta l’endroit où l’on demeure
+DEMENAGEE|DEMENAGER|4212|Ôtée d’une maison
+DEMENAGES|DEMENAGER|4212|Ôtés d’une maison
+DEMENAGEES|DEMENAGER|4212|Ôtées d’une maison
+CESARS|CESAR|4228|Princes de l’empire byzantin
+VEUVES|VEUVE|4240|Dernières lignes d’un paragraphe
+GENANTS|GENANT|4254|Embarrassants
+GENANTE|GENANT|4254|Qui gêne|Embarrassante
+GENANTES|GENANT|4254|Embarrassantes
+CAPACITES|CAPACITE|4270|Pouvoirs de réaliser ou de produire quelque chose|Quantités d’un contenant, volume, contenance|Productions maximales
+SENSATIONS|SENSATION|4274|Effets psychophysiologiques modificateurs d’un être conscient|Réactions de plusieurs personnes d’intérêt ou d’excitement
+INFORMENT|INFORMER|4278|Cherchent à obtenir des renseignements
+INFORMAIT|INFORMER|4278|Cherchait à obtenir des renseignements
+INFORMAIENT|INFORMER|4278|Cherchaient à obtenir des renseignements
+INFORMERA|INFORMER|4278|Cherchera à obtenir des renseignements
+INFORMA|INFORMER|4278|Chercha à obtenir des renseignements
+INFORMEE|INFORMER|4278|Cherchée à obtenir des renseignements
+INFORMES|INFORMER|4278|Cherchés à obtenir des renseignements
+INFORMEES|INFORMER|4278|Cherchées à obtenir des renseignements
+POTENTIELS|POTENTIEL|4281|Énergies issues de la position dans un champ
+BAISSENT|BAISSER|4282|Font descendre, mettent plus bas|Inclinent vers le sol|Diminuent de hauteur, rendent plus bas
+BAISSAIT|BAISSER|4282|Faisait descendre, mettait plus bas|Inclinait vers le sol|Diminuait de hauteur, rendait plus bas
+BAISSAIENT|BAISSER|4282|Faisaient descendre, mettaient plus bas|Inclinaient vers le sol|Diminuaient de hauteur, rendaient plus bas
+BAISSERA|BAISSER|4282|Fera descendre, mettra plus bas|Inclinera vers le sol|Diminuera de hauteur, rendra plus bas
+BAISSA|BAISSER|4282|Fit descendre, mit plus bas|Inclina vers le sol|Diminua de hauteur, rendit plus bas
+BAISSEE|BAISSER|4282|Inclinée vers le sol
+BAISSEES|BAISSER|4282|Inclinées vers le sol
+MORALES|MORALE|4284|Sciences de la séparation du bien et du mal
+PATROUILLES|PATROUILLE|4286|Rondes de nuit faite par des troupes de garde dans une ville|Marches de surveillance
+IMPACTS|IMPACT|4288|Chocs d’un projectile contre un corps
+PARTANTE|PARTANT|4289|Qui part
+POKERS|POKER|4297|Tisonniers
+FRUITS|FRUIT|4311|Organes des angiospermes
+MARGES|MARGE|4313|Lisières|Ces bords virtuels
+POSSESSIONS|POSSESSION|4319|Jouissances de certains plaisirs
+CONFIRMENT|CONFIRMER|4320|Font persister quelqu’un dans une opinion|Prouvent plus fortement quelque chose
+CONFIRMAIT|CONFIRMER|4320|Faisait persister quelqu’un dans une opinion|Prouvait plus fortement quelque chose
+CONFIRMAIENT|CONFIRMER|4320|Faisaient persister quelqu’un dans une opinion|Prouvaient plus fortement quelque chose
+CONFIRMERA|CONFIRMER|4320|Fera persister quelqu’un dans une opinion|Prouvera plus fortement quelque chose
+CONFIRMA|CONFIRMER|4320|Fit persister quelqu’un dans une opinion|Prouva plus fortement quelque chose
+PROPOSE|PROPOSER|4328|Met en avant|Met au concours
+PROPOSENT|PROPOSER|4328|Mettent en avant|Mettent au concours
+PROPOSAIT|PROPOSER|4328|Mettait en avant|Mettait au concours
+PROPOSAIENT|PROPOSER|4328|Mettaient en avant|Mettaient au concours
+PROPOSERA|PROPOSER|4328|Mettra en avant|Mettra au concours
+PROPOSA|PROPOSER|4328|Mit en avant|Mit au concours
+PROPOSEE|PROPOSER|4328|Mise en avant|Mise au concours
+PROPOSES|PROPOSER|4328|Mis en avant|Mis au concours
+PROPOSEES|PROPOSER|4328|Mises en avant|Mises au concours
+EXCEPTIONS|EXCEPTION|4331|Moyens de défense
+BOYS|BOY|4336|Jeunes garçons anglais|Supports élévateurs
+CHAPITRES|CHAPITRE|4339|Divisions
+AUDITIONS|AUDITION|4344|Actions d’entendre|Actions de recevoir un témoignage, d’examiner un compte|Concerts de musique d'orgue
+ORDURES|ORDURE|4345|Déchets|Excréments de certains animaux
+PUBLICITES|PUBLICITE|4347|Annonces de caractère commercial par les journaux
+MOTIFS|MOTIF|4349|Éléments graphiques répétés sur un tissu ou un papier
+REGRETTE|REGRETTER|4354|Éprouve un repentir
+REGRETTENT|REGRETTER|4354|Éprouvent un repentir
+REGRETTAIT|REGRETTER|4354|Éprouvait un repentir
+REGRETTAIENT|REGRETTER|4354|Éprouvaient un repentir
+REGRETTERA|REGRETTER|4354|Éprouvera un repentir
+REGRETTA|REGRETTER|4354|Éprouva un repentir
+BOUES|BOUE|4356|Fanges des rues et des chemins
+APPARENCES|APPARENCE|4367|Désirs de briller
+PRINCIPES|PRINCIPE|4368|Commencements|Règles de fonctionnement|Éléments constitutifs des corps
+ESSENTIELLE|ESSENTIEL|4370|Indispensable
+ESSENTIELLES|ESSENTIEL|4370|Indispensables
+CANADAS|CANADA|4383|Variétés de pomme de reinette|Pommes de terre
+SYMBOLES|SYMBOLE|4392|Figurations graphiques
+ENDORMIS|ENDORMI|4393|Caméléons
+ENDORMIE|ENDORMI|4393|Qui se trouve dans un état de sommeil
+SATELLITES|SATELLITE|4406|Périphériques, situés autours
+REMBOURSE|REMBOURSER|4409|Rend à quelqu’un le montant de ses débours|Verse le capital d'une rente
+REMBOURSENT|REMBOURSER|4409|Rendent à quelqu’un le montant de ses débours|Versent le capital d'une rente
+REMBOURSAIT|REMBOURSER|4409|Rendait à quelqu’un le montant de ses débours|Versait le capital d'une rente
+REMBOURSERA|REMBOURSER|4409|Rendra à quelqu’un le montant de ses débours|Versera le capital d'une rente
+REMBOURSA|REMBOURSER|4409|Rendit à quelqu’un le montant de ses débours|Versa le capital d'une rente
+REMBOURSEE|REMBOURSER|4409|Rendue à quelqu’un le montant de ses débours
+REMBOURSES|REMBOURSER|4409|Rendus à quelqu’un le montant de ses débours
+REMBOURSEES|REMBOURSER|4409|Rendues à quelqu’un le montant de ses débours
+LUXES|LUXE|4411|Somptuosités dans le vêtement, la table, l’ameublement, etc
+VALLEES|VALLEE|4412|Bassins d’un cours d’eau
+TRANSPORTS|TRANSPORT|4415|Actions de porter d’un lieu à un autre sur une certaine distance|Mouvements passionnés
+FRANCE|FRANC|4417|Sincère, loyale, honnête
+FRANCES|FRANC|4417|Sincères, loyales, honnêtes
+COURONNES|COURONNE|4418|Cercles faits de métal
+PLANTES|PLANTE|4421|Jeunes vignes
+BONTES|BONTE|4428|Justices
+BRANCHES|BRANCHE|4439|Versions d’un logiciel, d’un ensemble de fichiers
+ENGAGEMENTS|ENGAGEMENT|4441|Enrôlements volontaires d’un soldat
+FONCTIONS|FONCTION|4453|Ces charges, ces emplois même
+CUIRS|CUIR|4460|Objets fabriqués dans une telle peau
+GOUTTES|GOUTTE|4464|Affections caractérisées par des troubles articulaires
+DOUTENT|DOUTER|4467|Hésitent, balancent
+DOUTAIT|DOUTER|4467|Hésitait, balançait
+DOUTAIENT|DOUTER|4467|Hésitaient, balançaient
+DOUTERA|DOUTER|4467|Hésitera, balancera
+DOUTA|DOUTER|4467|Hésita, balança
+DOUTEE|DOUTER|4467|Hésitée, balancée
+DOUTEES|DOUTER|4467|Hésitées, balancées
+DEPOSITIONS|DEPOSITION|4477|Transitions de phase
+DEUILS|DEUIL|4480|Grandes tristesses causées par une chose funeste, déplorable|Décorums funéraires
+AVOCATES|AVOCATE|4484|Professionnelles du droit
+STATUES|STATUE|4485|Figures en pied
+REMARQUENT|REMARQUER|4498|Observent quelque chose
+REMARQUAIT|REMARQUER|4498|Observait quelque chose
+REMARQUAIENT|REMARQUER|4498|Observaient quelque chose
+REMARQUERA|REMARQUER|4498|Observera quelque chose
+REMARQUA|REMARQUER|4498|Observa quelque chose
+CASQUES|CASQUE|4503|Protections protègents et couvrants las têtes
+PRIMES|PRIME|4507|Premiers
+ECLATE|ECLATER|4514|S'emporte jusqu’à l’extrême
+ECLATENT|ECLATER|4514|S'emportent jusqu’à l’extrême
+ECLATAIT|ECLATER|4514|S'emportait jusqu’à l’extrême
+ECLATAIENT|ECLATER|4514|S'emportaient jusqu’à l’extrême
+ECLATERA|ECLATER|4514|S'emportera jusqu’à l’extrême
+ECLATA|ECLATER|4514|S'emporta jusqu’à l’extrême
+PROTOCOLES|PROTOCOLE|4520|Recueils des formules prescrites pour la rédaction des actes publics|Bons usages, politesses
+CHATTES|CHATTE|4522|Petits voiliers amphidromes|Allèges portuaires
+GLORIAS|GLORIA|4526|Compositions sur le texte de cet hymne
+ROUES|ROUE|4530|Objets de forme circulaire
+MORDUE|MORDU|4534|Qui a subi quelque atteinte comparée à une morsure
+LEGITIMES|LEGITIME|4536|Réserves légales
+DELIRES|DELIRE|4537|Idées, propositions stupides, insensées
+DOULOUREUSE|DOULOUREUX|4542|Qui cause de la douleur ou qui marque de la douleur|Qui cause de la peine, du chagrin, de l’affliction|Qui exprime sa douleur, peiné, chagrin, affligé
+JERSEYS|JERSEY|4545|Textiles naturels
+DEMOISELLES|DEMOISELLE|4546|Filles nées de parents nobles|Insectes du sous-ordres des zygoptères
+CONFLITS|CONFLIT|4554|Expressions d’exigences internes inconciliables|Incompatibilités
+BADGES|BADGE|4561|Insignes scouts cousus sur un vêtement
+CHAGRINE|CHAGRIN|4568|Qui éprouve du déplaisir, de la tristesse|Qui marque du déplaisir, de la tristesse
+FILME|FILMER|4572|Enregistre des images animées par tout moyen technologique moderne
+FILMENT|FILMER|4572|Enregistrent des images animées par tout moyen technologique moderne
+FILMAIT|FILMER|4572|Enregistrait des images animées par tout moyen technologique moderne
+FILMAIENT|FILMER|4572|Enregistraient des images animées par tout moyen technologique moderne
+FILMERA|FILMER|4572|Enregistrera des images animées par tout moyen technologique moderne
+FILMA|FILMER|4572|Enregistra des images animées par tout moyen technologique moderne
+FILMEE|FILMER|4572|Enregistrée des images animées par tout moyen technologique moderne
+FILMES|FILMER|4572|Enregistrés des images animées par tout moyen technologique moderne
+FILMEES|FILMER|4572|Enregistrées des images animées par tout moyen technologique moderne
+CANDIDATS|CANDIDAT|4584|Postulants à un titre, à une place, à une fonction
+CERCUEILS|CERCUEIL|4594|Caisses de bois
+TRONES|TRONE|4599|Puissances souveraines, synonymes|Sièges placés au haut du chœur
+ALLUMENT|ALLUMER|4604|Enflamment|Font de la lumière|Mettent en marche un appareil électrique
+ALLUMAIT|ALLUMER|4604|Enflammait|Faisait de la lumière|Mettait en marche un appareil électrique
+ALLUMAIENT|ALLUMER|4604|Enflammaient|Faisaient de la lumière|Mettaient en marche un appareil électrique
+ALLUMERA|ALLUMER|4604|Enflammera|Fera de la lumière|Mettra en marche un appareil électrique
+ALLUMA|ALLUMER|4604|Enflamma|Fit de la lumière|Mit en marche un appareil électrique
+ALLUMEE|ALLUMER|4604|Enflammée|Faite de la lumière|Mise en marche un appareil électrique
+ALLUMES|ALLUMER|4604|Enflammés|Faits de la lumière|Mis en marche un appareil électrique
+ALLUMEES|ALLUMER|4604|Enflammées|Faites de la lumière|Mises en marche un appareil électrique
+FABRIQUES|FABRIQUE|4619|Activités d'entretien et de réparation de l’édifice
+COLLINES|COLLINE|4625|Vallées
+RENONCENT|RENONCER|4640|Quittent, abandonnent la possession|Se dépouillent de tout amour-propre
+RENONCAIT|RENONCER|4640|Quittait, abandonnait la possession|Se dépouillait de tout amour-propre
+RENONCAIENT|RENONCER|4640|Quittaient, abandonnaient la possession|Se dépouillaient de tout amour-propre
+RENONCERA|RENONCER|4640|Quittera, abandonnera la possession|Se dépouillera de tout amour-propre
+RENONCA|RENONCER|4640|Quitta, abandonna la possession|Se dépouilla de tout amour-propre
+FACTURES|FACTURE|4648|Fabrications des instruments de musique
+MEDAILLES|MEDAILLE|4653|Pièces d’or, d’argent
+TEXTES|TEXTE|4654|Suites ordonnées de mots écrits
+KONGS|KONG|4658|Carrés de quatre tuiles identiques
+GUERRIERS|GUERRIER|4662|Soldats
+ENTRAINS|ENTRAIN|4664|Ardeurs à faire quelque chose
+ACCEDE|ACCEDER|4668|Accepte, donne son aval
+ACCEDENT|ACCEDER|4668|Acceptent, donnent son aval
+ACCEDAIT|ACCEDER|4668|Acceptait, donnait son aval
+ACCEDAIENT|ACCEDER|4668|Acceptaient, donnaient son aval
+ACCEDERA|ACCEDER|4668|Acceptera, donnera son aval
+ACCEDA|ACCEDER|4668|Accepta, donna son aval
+SUPREMES|SUPREME|4669|Derniers
+ENVELOPPES|ENVELOPPE|4674|Revêtements extérieurs d'un aéronat
+MANCHES|MANCHE|4676|Parties du vêtement|Conduits d’évacuation, tuyau à liquide ou à gaz
+DALLES|DALLE|4682|Surfaces en matière homogène peu épaisse
+CADRES|CADRE|4685|Bordures de bois|Environnements physiques, intérieurs ou extérieurs
+ENSEIGNENT|ENSEIGNER|4686|Font connaître
+ENSEIGNAIT|ENSEIGNER|4686|Faisait connaître
+ENSEIGNAIENT|ENSEIGNER|4686|Faisaient connaître
+ENSEIGNERA|ENSEIGNER|4686|Fera connaître
+ENSEIGNA|ENSEIGNER|4686|Fit connaître
+MAQUILLAGES|MAQUILLAGE|4687|Actions de dissimuler
+RESTANTE|RESTANT|4689|Qui reste
+ENLEVEMENTS|ENLEVEMENT|4696|Retraits d’une marchandise de son lieu de stockage
+HISTORIQUES|HISTORIQUE|4698|Narrations des faits dans leur ordre et leurs circonstances
+PIQUENT|PIQUER|4701|Percent, entament légèrement avec quelque chose de pointu
+PIQUAIT|PIQUER|4701|Perçait, entamait légèrement avec quelque chose de pointu
+PIQUAIENT|PIQUER|4701|Perçaient, entamaient légèrement avec quelque chose de pointu
+PIQUERA|PIQUER|4701|Percera, entamera légèrement avec quelque chose de pointu
+PIQUA|PIQUER|4701|Perça, entama légèrement avec quelque chose de pointu
+LANCEMENTS|LANCEMENT|4704|Introductions à une émission ou à une chronique
+QUANTITES|QUANTITE|4705|Nombres plus ou moins grands|Multitudes, abondances
+PLACENT|PLACER|4717|Situent|Positionnent dans une série
+PLACAIT|PLACER|4717|Situait|Positionnait dans une série
+PLACAIENT|PLACER|4717|Situaient|Positionnaient dans une série
+PLACERA|PLACER|4717|Situera|Positionnera dans une série
+PLACA|PLACER|4717|Situa|Positionna dans une série
+PLACEE|PLACER|4717|Située|Positionnée dans une série
+PLACES|PLACER|4717|Situés|Positionnés dans une série
+PLACEES|PLACER|4717|Situées|Positionnées dans une série
+REDUITS|REDUIT|4718|Retraites|Pièces très petites|Premiers liquides obtenus
+REDUITE|REDUIT|4718|Concentrée
+REDUITES|REDUIT|4718|Concentrées
+TUBES|TUBE|4724|Parties inférieures d’un calice, d’une corolle monopétale
+TENDUS|TENDU|4729|Arrondis, enflés, œdémateux, turgescents
+TENDUES|TENDU|4729|Arrondies, enflées, œdémateuses, turgescentes
+PORTANTE|PORTANT|4735|Qui porte, dans les différents sens du verbe porter
+INFECTIONS|INFECTION|4739|Grandes puanteurs|Contaminations par un agent pathogène|Contaminations par un logiciel indésirable ou nuisible
+FAIBLESSES|FAIBLESSE|4740|Manques de force ou de vigueur|Manques d’intelligence|Défaillances
+LIBERATIONS|LIBERATION|4750|Décharges d’une dette ou d’une servitude|Suppressions d’une variable
+ELEMENTS|ELEMENT|4752|Parties unitaires d’un ensemble
+BOUFFENT|BOUFFER|4756|Consomment excessivement
+BOUFFAIT|BOUFFER|4756|Consommait excessivement
+BOUFFAIENT|BOUFFER|4756|Consommaient excessivement
+BOUFFERA|BOUFFER|4756|Consommera excessivement
+BOUFFA|BOUFFER|4756|Consomma excessivement
+PROFONDES|PROFONDE|4758|Couches épaisses de neige
+SODAS|SODA|4764|Boissons gazeuses et sucrées
+TOURNAGES|TOURNAGE|4770|Activités de filmer les acteurs et décors d’un film
+EFFRACTIONS|EFFRACTION|4772|Ruptures d’un organe musculaire ou osseux
+REQUINS|REQUIN|4781|Les chairs d'un de ces animaux pour l'alimentation humaine
+DETENTIONS|DETENTION|4782|Peines afflictives et infamantes
+OBSERVE|OBSERVER|4787|Regarde avec attention
+OBSERVENT|OBSERVER|4787|Regardent avec attention
+OBSERVAIT|OBSERVER|4787|Regardait avec attention
+OBSERVAIENT|OBSERVER|4787|Regardaient avec attention
+OBSERVERA|OBSERVER|4787|Regardera avec attention
+OBSERVA|OBSERVER|4787|Regarda avec attention
+OBSERVEE|OBSERVER|4787|Regardée avec attention
+OBSERVES|OBSERVER|4787|Regardés avec attention
+OBSERVEES|OBSERVER|4787|Regardées avec attention
+SORTANTE|SORTANT|4792|Qui sort|Qui termine un mandat électif
+ENFERME|ENFERMER|4794|Met quelqu’un dans un asile psychiatrique|Serre, met une chose dans un lieu
+ENFERMENT|ENFERMER|4794|Mettent quelqu’un dans un asile psychiatrique|Serrent, mettent une chose dans un lieu
+ENFERMAIT|ENFERMER|4794|Mettait quelqu’un dans un asile psychiatrique|Serrait, mettait une chose dans un lieu
+ENFERMAIENT|ENFERMER|4794|Mettaient quelqu’un dans un asile psychiatrique|Serraient, mettaient une chose dans un lieu
+ENFERMERA|ENFERMER|4794|Mettra quelqu’un dans un asile psychiatrique|Serrera, mettra une chose dans un lieu
+ENFERMA|ENFERMER|4794|Mit quelqu’un dans un asile psychiatrique|Serra, mit une chose dans un lieu
+TUMEURS|TUMEUR|4796|Éminences, grosseurs plus ou moins considérables|Gonflements d'un tissu végétal
+PANIERS|PANIER|4799|Casiers de pêche
+IMMUNITES|IMMUNITE|4801|Exemptions d’impôts, de devoirs, de charges, etc
+SCOTCHS|SCOTCH|4810|Whiskys écossais|Verres de ce whisky
+FASCINANTE|FASCINANT|4825|Qui suscite une profonde attirance
+AVALENT|AVALER|4827|Font descendre par le gosier dans l’estomac
+AVALAIT|AVALER|4827|Faisait descendre par le gosier dans l’estomac
+AVALAIENT|AVALER|4827|Faisaient descendre par le gosier dans l’estomac
+AVALERA|AVALER|4827|Fera descendre par le gosier dans l’estomac
+AVALA|AVALER|4827|Fit descendre par le gosier dans l’estomac
+NIECES|NIECE|4828|Filles du frère ou de la sœur|Filles du cousin ou de la cousine
+DOUZAINES|DOUZAINE|4845|Douze ous à peu près douze
+SERRENT|SERRER|4850|Mettent près l’un de l’autre, rapprochent étroitement
+SERRAIT|SERRER|4850|Mettait près l’un de l’autre, rapprochait étroitement
+SERRAIENT|SERRER|4850|Mettaient près l’un de l’autre, rapprochaient étroitement
+SERRERA|SERRER|4850|Mettra près l’un de l’autre, rapprochera étroitement
+SERRA|SERRER|4850|Mit près l’un de l’autre, rapprocha étroitement
+USAGES|USAGE|4857|Coutumes|Connaissances pratiques acquises par l’expérience|Emplois d’une chose
+RAPPORTE|RAPPORTER|4858|Prend dans un lieu
+RAPPORTENT|RAPPORTER|4858|Prennent dans un lieu
+RAPPORTAIT|RAPPORTER|4858|Prenait dans un lieu
+RAPPORTAIENT|RAPPORTER|4858|Prenaient dans un lieu
+RAPPORTERA|RAPPORTER|4858|Prendra dans un lieu
+RAPPORTA|RAPPORTER|4858|Prit dans un lieu
+RAPPORTEE|RAPPORTER|4858|Prise dans un lieu
+RAPPORTES|RAPPORTER|4858|Pris dans un lieu
+RAPPORTEES|RAPPORTER|4858|Prises dans un lieu
+INTERESSENT|INTERESSER|4861|Attirent l’attention
+INTERESSAIT|INTERESSER|4861|Attirait l’attention
+INTERESSERA|INTERESSER|4861|Attirera l’attention
+INTERESSA|INTERESSER|4861|Attira l’attention
+INDUSTRIES|INDUSTRIE|4864|Usages habiles de moyens illégaux, illégitimes ou immoraux|Professions mécaniques ou mercantiles
+COMMUNIQUENT|COMMUNIQUER|4871|Font connaître|Se mettent en relation avec
+COMMUNIQUAIT|COMMUNIQUER|4871|Faisait connaître|Se mettait en relation avec
+COMMUNIQUERA|COMMUNIQUER|4871|Fera connaître|Se mettra en relation avec
+COMMUNIQUA|COMMUNIQUER|4871|Fit connaître|Se mit en relation avec
+LINGES|LINGE|4881|Vêtements de dessous à l’origine en fil ou en coton
+CALINS|CALIN|4883|Relations sexuelles
+FABULEUSE|FABULEUX|4888|Qui a le caractère d’une fable
+SUICIDE|SUICIDER|4893|Se tue volontairement|Fait disparaître quelque chose de souhaitable par sa propre attitude
+SUICIDENT|SUICIDER|4893|Se tuent volontairement|Font disparaître quelque chose de souhaitable par sa propre attitude
+SUICIDAIT|SUICIDER|4893|Se tuait volontairement|Faisait disparaître quelque chose de souhaitable par sa propre attitude
+SUICIDAIENT|SUICIDER|4893|Se tuaient volontairement|Faisaient disparaître quelque chose de souhaitable par sa propre attitude
+SUICIDERA|SUICIDER|4893|Se tuera volontairement|Fera disparaître quelque chose de souhaitable par sa propre attitude
+SUICIDA|SUICIDER|4893|Se tua volontairement|Fit disparaître quelque chose de souhaitable par sa propre attitude
+CHANTS|CHANT|4894|Cris du coq|Crissements de la cigale
+CURIOSITES|CURIOSITE|4896|Passions, désirs|Grandes envies
+BALANCENT|BALANCER|4897|Compensent une chose par une autre
+BALANCAIT|BALANCER|4897|Compensait une chose par une autre
+BALANCAIENT|BALANCER|4897|Compensaient une chose par une autre
+BALANCERA|BALANCER|4897|Compensera une chose par une autre
+BALANCA|BALANCER|4897|Compensa une chose par une autre
+INTIMITES|INTIMITE|4902|Caractères de confiance réciproque des relations sociales
+DEMEURES|DEMEURE|4903|Habitations, domiciles
+DEBATS|DEBAT|4925|Contestations, altercations
+NAVETTES|NAVETTE|4943|Instruments de tisserand
+BARONS|BARON|4945|Grands seigneurs du royaume|Grosses pièces de viande
+AUGMENTENT|AUGMENTER|4954|Rendent une quantité plus grande
+AUGMENTAIT|AUGMENTER|4954|Rendait une quantité plus grande
+AUGMENTAIENT|AUGMENTER|4954|Rendaient une quantité plus grande
+AUGMENTERA|AUGMENTER|4954|Rendra une quantité plus grande
+AUGMENTA|AUGMENTER|4954|Rendit une quantité plus grande
+TRAGIQUES|TRAGIQUE|4955|Auteurs de tragédies
+EXPOSITIONS|EXPOSITION|4967|Explications|Parties d'introduction d'une œuvre|Placements ou situations
+NIDS|NID|4969|Endroits cachés, cachettes, retraites|Endroits confortables
+ASSIETTES|ASSIETTE|4974|Situations du cavalier sur la selle|Situations d’une maison, d’une ville, d’une forteresse
+FREQUENCES|FREQUENCE|4981|Probabilités de la survenance d'un phénomène|Successions rapides des battements
+BOUMS|BOUM|4989|Bruits d’une explosion|Développements considérables
+BALADES|BALADE|4993|Promenades sans but précis
+MASSAGES|MASSAGE|5000|Pétrissages des muscles pour les assouplir
+DEPRESSIONS|DEPRESSION|5011|Abaissements d'une surface, enfoncement
+OPERAS|OPERA|5014|Compositions dramatiques|Ces genres de composition
+ECHANGENT|ECHANGER|5019|Donnent une chose contre une autre|S'adressent réciproquement
+ECHANGEAIT|ECHANGER|5019|Donnait une chose contre une autre|S'adressait réciproquement
+ECHANGEAIENT|ECHANGER|5019|Donnaient une chose contre une autre|S'adressaient réciproquement
+ECHANGERA|ECHANGER|5019|Donnera une chose contre une autre|S'adressera réciproquement
+ECHANGEA|ECHANGER|5019|Donna une chose contre une autre|S'adressa réciproquement
+FILLETTES|FILLETTE|5021|Contenus de cette bouteille
+PUNITIONS|PUNITION|5025|Actions de punir, d’infliger une correction à quelqu’un|Châtiments
+JULIETTES|JULIETTE|5026|Juillets
+ACCROCHENT|ACCROCHER|5027|Heurtent ou arrêtent une voiture en passant trop près avec une autre|Collent au fond d’un récipient pendant la cuisson
+ACCROCHAIT|ACCROCHER|5027|Heurtait ou arrêtait une voiture en passant trop près avec une autre|Collait au fond d’un récipient pendant la cuisson
+ACCROCHAIENT|ACCROCHER|5027|Heurtaient ou arrêtaient une voiture en passant trop près avec une autre|Collaient au fond d’un récipient pendant la cuisson
+ACCROCHERA|ACCROCHER|5027|Heurtera ou arrêtera une voiture en passant trop près avec une autre|Collera au fond d’un récipient pendant la cuisson
+ACCROCHA|ACCROCHER|5027|Heurta ou arrêta une voiture en passant trop près avec une autre|Colla au fond d’un récipient pendant la cuisson
+ACCROCHEE|ACCROCHER|5027|Collée au fond d’un récipient pendant la cuisson
+ACCROCHES|ACCROCHER|5027|Collés au fond d’un récipient pendant la cuisson
+ACCROCHEES|ACCROCHER|5027|Collées au fond d’un récipient pendant la cuisson
+CHAUSSURES|CHAUSSURE|5030|Ferrures d'un cheval
+INQUIETUDES|INQUIETUDE|5044|États de tourment|Inconstances d’humeur|États de trouble
+ALLANTS|ALLANT|5047|Andantes
+ALLANTE|ALLANT|5047|Qui aime à aller et venir|Andante
+ALLANTES|ALLANT|5047|Andantes
+TIGRES|TIGRE|5070|Danseuses du corps de ballet, de rang supérieur au rat
+MANNEQUINS|MANNEQUIN|5076|Figurines d’homme ou de femme|Paniers longs et étroits|Paniers ronds et profonds
+LOCALISENT|LOCALISER|5078|Rapportent à une date|Désignent l’endroit où réside une cause morbide
+LOCALISAIT|LOCALISER|5078|Rapportait à une date|Désignait l’endroit où réside une cause morbide
+LOCALISAIENT|LOCALISER|5078|Rapportaient à une date|Désignaient l’endroit où réside une cause morbide
+LOCALISERA|LOCALISER|5078|Rapportera à une date|Désignera l’endroit où réside une cause morbide
+LOCALISA|LOCALISER|5078|Rapporta à une date|Désigna l’endroit où réside une cause morbide
+LOCALISEE|LOCALISER|5078|Rapportée à une date
+LOCALISES|LOCALISER|5078|Rapportés à une date
+LOCALISEES|LOCALISER|5078|Rapportées à une date
+AIGUILLES|AIGUILLE|5081|Petites tiges de métal fine
+SUISSES|SUISSE|5083|Gardes de certaines institutions, dans certains pays
+SPERMES|SPERME|5093|Agrafes
+EVACUENT|EVACUER|5097|Font sortir du corps des matières fécales
+EVACUAIT|EVACUER|5097|Faisait sortir du corps des matières fécales
+EVACUAIENT|EVACUER|5097|Faisaient sortir du corps des matières fécales
+EVACUERA|EVACUER|5097|Fera sortir du corps des matières fécales
+EVACUA|EVACUER|5097|Fit sortir du corps des matières fécales
+PLAFONDS|PLAFOND|5105|Voûtes d’une mine ou d’une carrière souterraine
+SIGNALENT|SIGNALER|5108|Se distinguent, se rendent célèbre
+SIGNALAIT|SIGNALER|5108|Se distinguait, se rendait célèbre
+SIGNALAIENT|SIGNALER|5108|Se distinguaient, se rendaient célèbre
+SIGNALERA|SIGNALER|5108|Se distinguera, se rendra célèbre
+SIGNALA|SIGNALER|5108|Se distingua, se rendit célèbre
+POEMES|POEME|5110|Ouvrages de littérature en vers
+PENDUS|PENDU|5111|Attachés en hauteur à quelque chose
+PENDUE|PENDU|5111|Qui se tient obstinément près de
+DEGUEULASSES|DEGUEULASSE|5119|Laids, disgracieux, hideux, repoussants
+LIGUES|LIGUE|5121|Associations à but social ou humanitaire
+PERIMETRES|PERIMETRE|5130|Contours d’une figure plane|Longueurs de ce contour|Surfaces environnantes
+MASSACRES|MASSACRE|5133|Grandes tueries de gibier, d'animaux
+DESCRIPTIONS|DESCRIPTION|5145|Actions de décrire
+DEFAUTS|DEFAUT|5146|Imperfections physiques|Imperfections morales
+REFAITS|REFAIT|5164|Faits de nouveau
+HORLOGES|HORLOGE|5167|Instruments destinés à mesurer le temps et à indiquer l'heure|Appareils horaires placés dans une gaine ou dans une boîte
+ECONOMIES|ECONOMIE|5173|Épargnes dans la dépense|Épargnes mises en réserve|Ensemble cohérents des flux de biens
+PETRINS|PETRIN|5177|Embarras, gênes, dénuements
+PIPES|PIPE|5180|Objets pour fumer du tabac ou une autre substance fumable|Grandes futailles pour mettre du vin des liquides
+PIRATES|PIRATE|5182|Enfants turbulents
+ACIDES|ACIDE|5196|Composés chimiques capables
+IMMOBILIERE|IMMOBILIER|5197|Qui concerne ou qui a pour objet un immeuble, des immeubles
+VEDETTES|VEDETTE|5206|Personnes célèbres
+FIXES|FIXE|5211|Immobiles|Invariants, définitifs
+DIGNITES|DIGNITE|5212|Postes, grades éminents, charges ou offices considérables
+CATASTROPHES|CATASTROPHE|5218|Événements soudains|Désastres
+JETS|JET|5223|Actions d’introduire
+AFFECTIONS|AFFECTION|5230|Sentiments d’aimer quelqu’un avec attachement ou tendresse|Maladies
+ENREGISTRE|ENREGISTRER|5232|Met en mémoire|Constate, note, remarque
+ENREGISTRENT|ENREGISTRER|5232|Mettent en mémoire|Constatent, notent, remarquent
+ENREGISTRAIT|ENREGISTRER|5232|Mettait en mémoire|Constatait, notait, remarquait
+ENREGISTRERA|ENREGISTRER|5232|Mettra en mémoire|Constatera, notera, remarquera
+ENREGISTRA|ENREGISTRER|5232|Mit en mémoire|Constata, nota, remarqua
+ENREGISTREE|ENREGISTRER|5232|Mise en mémoire|Constatée, notée, remarquée
+ENREGISTRES|ENREGISTRER|5232|Mis en mémoire|Constatés, notés, remarqués
+ENREGISTREES|ENREGISTRER|5232|Mises en mémoire|Constatées, notées, remarquées
+POIGNARDES|POIGNARDE|5237|Traversés par un objet pointu
+SCANNERS|SCANNER|5240|Tests passés avec cet appareil
+SCANNE|SCANNER|5240|Analyse automatiquement un document|Contrôle avec des moyens d’imagerie tels les rayons X
+SCANNENT|SCANNER|5240|Analysent automatiquement un document|Contrôlent avec des moyens d’imagerie tels les rayons X
+SCANNAIT|SCANNER|5240|Analysait automatiquement un document|Contrôlait avec des moyens d’imagerie tels les rayons X
+SCANNAIENT|SCANNER|5240|Analysaient automatiquement un document|Contrôlaient avec des moyens d’imagerie tels les rayons X
+SCANNERA|SCANNER|5240|Analysera automatiquement un document|Contrôlera avec des moyens d’imagerie tels les rayons X
+SCANNA|SCANNER|5240|Analysa automatiquement un document|Contrôla avec des moyens d’imagerie tels les rayons X
+SCANNEE|SCANNER|5240|Contrôlée avec des moyens d’imagerie tels les rayons X
+SCANNES|SCANNER|5240|Contrôlés avec des moyens d’imagerie tels les rayons X
+SCANNEES|SCANNER|5240|Contrôlées avec des moyens d’imagerie tels les rayons X
+DOCUMENTS|DOCUMENT|5241|Pièces écrites|Objets, images|Réalisations définitives avant reproduction
+REPETITIONS|REPETITION|5251|Actions d’expliquer à des élèves la leçon d’un professeur
+DENTISTES|DENTISTE|5253|Spécialistes du soin des dents
+DETERMINENT|DETERMINER|5263|Fixent les limites de
+DETERMINAIT|DETERMINER|5263|Fixait les limites de
+DETERMINERA|DETERMINER|5263|Fixera les limites de
+DETERMINA|DETERMINER|5263|Fixa les limites de
+CELEBRENT|CELEBRER|5268|Font la fête
+CELEBRAIT|CELEBRER|5268|Faisait la fête
+CELEBRAIENT|CELEBRER|5268|Faisaient la fête
+CELEBRERA|CELEBRER|5268|Fera la fête
+CELEBRA|CELEBRER|5268|Fit la fête
+MONTEES|MONTEE|5271|Augmentations ou accroissements|Hauteurs d’une voûte
+CIVILS|CIVIL|5274|Citoyens
+CIVILE|CIVIL|5274|Citoyenne|Qui appartient à la société, par opposition à sauvage
+CIVILES|CIVIL|5274|Citoyennes
+MARCS|MARC|5277|Résidus obtenus après décoction
+PROMENADES|PROMENADE|5278|Exercices de marche pour les troupes
+JETEES|JETEE|5280|Chaques nouvels essaims d'abeilles
+PROFITS|PROFIT|5281|Gains, bénéfices, avantages, utilités|Rémunérations variables
+ABSENTE|ABSENT|5287|Qui manque
+CREATIONS|CREATION|5291|Actions de créer, de donner l’être, l’existence
+REFUGES|REFUGE|5296|Habitats de montagne pour les alpinistes
+DIAMANTS|DIAMANT|5298|Outils de vitrier|Pointes d’un tourne-disque
+ANTENNES|ANTENNE|5300|Appendices articulés en forme de corne|Chaînes de radio ou de télévision|Implantations locales d’une organisation
+REUSSITES|REUSSITE|5304|Bons succès
+PROVOQUE|PROVOQUER|5306|Incite, excite|Incite à réagir violemment
+PROVOQUENT|PROVOQUER|5306|Incitent, excitent|Incitent à réagir violemment
+PROVOQUAIT|PROVOQUER|5306|Incitait, excitait|Incitait à réagir violemment
+PROVOQUAIENT|PROVOQUER|5306|Incitaient, excitaient|Incitaient à réagir violemment
+PROVOQUERA|PROVOQUER|5306|Incitera, excitera|Incitera à réagir violemment
+PROVOQUA|PROVOQUER|5306|Incita, excita|Incita à réagir violemment
+PROVOQUEE|PROVOQUER|5306|Incitée, excitée|Incitée à réagir violemment
+PROVOQUES|PROVOQUER|5306|Incités, excités|Incités à réagir violemment
+PROVOQUEES|PROVOQUER|5306|Incitées, excitées|Incitées à réagir violemment
+FORMULES|FORMULE|5307|Recettes pharmaceutiques|Recettes culinaires
+PLAIES|PLAIE|5312|Cicatrices
+BENEDICTIONS|BENEDICTION|5316|Actions de bénir
+DUCS|DUC|5323|Titres de quelques princes souverains
+BIDONS|BIDON|5325|Petites bailles à deux anses|Récipients en fer-blanc|Les contenus de ce récipient
+RELEVENT|RELEVER|5327|Réparent|Font une nouvelle levée
+RELEVAIT|RELEVER|5327|Réparait|Faisait une nouvelle levée
+RELEVAIENT|RELEVER|5327|Réparaient|Faisaient une nouvelle levée
+RELEVERA|RELEVER|5327|Réparera|Fera une nouvelle levée
+RELEVA|RELEVER|5327|Répara|Fit une nouvelle levée
+RELEVES|RELEVER|5327|Réparés
+RELEVEES|RELEVER|5327|Réparées
+ILLUSIONS|ILLUSION|5336|Erreurs des sens ou de l’esprit produite par ces fausses apparences
+EXPOSES|EXPOSE|5345|Comptes rendus|Présentations d'un thème musical
+VIOLETS|VIOLET|5346|Couleurs de la robe d’un vin rouge
+BENJAMINS|BENJAMIN|5355|Jeunes sportifs au début de l’adolescence
+LAVES|LAVE|5359|Ces roches après refroidissement
+DESORDRES|DESORDRE|5365|Dérèglements de mœurs|Querelles, dissensions
+STRUCTURES|STRUCTURE|5371|Organisations du réseau régulier de maillons élémentaires
+DISCRETS|DISCRET|5374|Distincts, séparés, discontinus
+DISCRETE|DISCRET|5374|Qui ne se fait pas remarquer|Qui sait garder un secret|Distincte, séparée, discontinue
+DISCRETES|DISCRET|5374|Distinctes, séparées, discontinues
+DELICATE|DELICAT|5376|Qui fait preuve d’adresse et de légèreté
+DRAMES|DRAME|5392|Pièces de théâtre en vers ou en prose
+ARES|ARE|5393|Unités de mesure de surface de terrains
+VERDICTS|VERDICT|5398|Déclarations du jury, résultat de sa délibération|Appréciations définitives, jugements sévères
+ASSAUTS|ASSAUT|5402|Attaques pour enlever de vive force|Sollicitations vives et pressantes|Simulacres de combat
+POURSUITES|POURSUITE|5409|Actions de rechercher avec ardeur quelque chose|Compétitions de cyclisme sur piste
+MOUCHES|MOUCHE|5418|Catégories de poids dans les sports de combat
+BOTTENT|BOTTER|5419|Frappent à l’aide du pied|Utilisent un bot
+BOTTAIT|BOTTER|5419|Frappait à l’aide du pied|Utilisait un bot
+BOTTAIENT|BOTTER|5419|Frappaient à l’aide du pied|Utilisaient un bot
+BOTTERA|BOTTER|5419|Frappera à l’aide du pied|Utilisera un bot
+BOTTA|BOTTER|5419|Frappa à l’aide du pied|Utilisa un bot
+BOTTEE|BOTTER|5419|Frappée à l’aide du pied
+BOTTES|BOTTER|5419|Frappés à l’aide du pied
+BOTTEES|BOTTER|5419|Frappées à l’aide du pied
+BINGOS|BINGO|5421|Faits de placer toutes ses sept lettres d’un coup
+RELECTURES|RELECTURE|5427|Pratiques spirituelles
+GLISSE|GLISSER|5435|Se met en mouvement
+GLISSENT|GLISSER|5435|Se mettent en mouvement
+GLISSAIT|GLISSER|5435|Se mettait en mouvement
+GLISSAIENT|GLISSER|5435|Se mettaient en mouvement
+GLISSERA|GLISSER|5435|Se mettra en mouvement
+GLISSA|GLISSER|5435|Se mit en mouvement
+VIDENT|VIDER|5440|Retirent les viscères|Purgent
+VIDAIT|VIDER|5440|Retirait les viscères|Purgeait
+VIDAIENT|VIDER|5440|Retiraient les viscères|Purgeaient
+VIDERA|VIDER|5440|Retirera les viscères|Purgera
+VIDA|VIDER|5440|Retira les viscères|Purgea
+VIDEE|VIDER|5440|Purgée
+VIDES|VIDER|5440|Purgés
+VIDEES|VIDER|5440|Purgées
+BAIGNOIRES|BAIGNOIRE|5449|Cockpits d’un voilier
+COINCE|COINCER|5450|Se met dans l’impossibilité de se mouvoir
+COINCENT|COINCER|5450|Se mettent dans l’impossibilité de se mouvoir
+COINCAIT|COINCER|5450|Se mettait dans l’impossibilité de se mouvoir
+COINCAIENT|COINCER|5450|Se mettaient dans l’impossibilité de se mouvoir
+COINCERA|COINCER|5450|Se mettra dans l’impossibilité de se mouvoir
+COINCA|COINCER|5450|Se mit dans l’impossibilité de se mouvoir
+EMOTIONS|EMOTION|5458|Réactions affectives subites
+SALETES|SALETE|5464|Ordures, personnes méprisables
+LONGUEURS|LONGUEUR|5469|Durées du temps
+THEMES|THEME|5470|Traductions de la langue maternelle vers une langue étrangère
+LUTTENT|LUTTER|5472|Rivalisent
+LUTTAIT|LUTTER|5472|Rivalisait
+LUTTAIENT|LUTTER|5472|Rivalisaient
+LUTTERA|LUTTER|5472|Rivalisera
+LUTTA|LUTTER|5472|Rivalisa
+LUTTEE|LUTTER|5472|Rivalisée
+LUTTES|LUTTER|5472|Rivalisés
+LUTTEES|LUTTER|5472|Rivalisées
+CONTENUS|CONTENU|5476|Enfermés dans un volume ou dans un espace|Retenus, freinés
+CONTENUE|CONTENU|5476|Retenue, freinée
+CONTENUES|CONTENU|5476|Retenues, freinées
+ENNUIS|ENNUI|5477|Contrariétés
+CACHETTES|CACHETTE|5481|Cachotteries
+ASSASSINATS|ASSASSINAT|5489|Meurtres avec préméditation
+GARANTIES|GARANTIE|5492|Sûretés
+BACONS|BACON|5494|Lards très maigres, fumés, salés
+CONCLUSIONS|CONCLUSION|5498|Terminaisons d’une affaire, d’une délibération, etc
+DEFONCES|DEFONCE|5503|Percés, troués, perforés|Personnes droguées
+FRAICHES|FRAICHE|5504|Vents faibles du matin ou du soir
+REGNES|REGNE|5508|Existences, vies
+MISERES|MISERE|5510|États de faiblesse et de néantise de l’homme
+COLLENT|COLLER|5515|Mettent dans du vin|Ajoutent de la gélatine à une préparation
+COLLAIT|COLLER|5515|Mettait dans du vin|Ajoutait de la gélatine à une préparation
+COLLAIENT|COLLER|5515|Mettaient dans du vin|Ajoutaient de la gélatine à une préparation
+COLLERA|COLLER|5515|Mettra dans du vin|Ajoutera de la gélatine à une préparation
+COLLA|COLLER|5515|Mit dans du vin|Ajouta de la gélatine à une préparation
+COLLEE|COLLER|5515|Mise dans du vin|Ajoutée de la gélatine à une préparation
+COLLEES|COLLER|5515|Mises dans du vin|Ajoutées de la gélatine à une préparation
+GROTTES|GROTTE|5516|Cavités plus ou moins profondes
+ELECTIONS|ELECTION|5517|Nominations des élus du peuple
+TRISTESSES|TRISTESSE|5522|Mélancolies de tempérament
+ORCHESTRES|ORCHESTRE|5523|Techniques particulières à chaque compositeur
+PORTAILS|PORTAIL|5527|Grandes portes|Les grandes portes d’une église avec tout son appareil architectural
+GENETIQUES|GENETIQUE|5533|Relatifs aux gènes
+LOUCHES|LOUCHE|5552|Troubles|Quelques choses de suspect|Précipités en suspension dans un liquide
+REPORTERS|REPORTER|5563|Journalistes d’information
+REPORTE|REPORTER|5563|Rapporte une chose au lieu où elle était auparavant|Transporte, place dans un autre lieu
+REPORTENT|REPORTER|5563|Rapportent une chose au lieu où elle était auparavant|Transportent, placent dans un autre lieu
+REPORTAIT|REPORTER|5563|Rapportait une chose au lieu où elle était auparavant|Transportait, plaçait dans un autre lieu
+REPORTAIENT|REPORTER|5563|Rapportaient une chose au lieu où elle était auparavant|Transportaient, plaçaient dans un autre lieu
+REPORTERA|REPORTER|5563|Rapportera une chose au lieu où elle était auparavant|Transportera, placera dans un autre lieu
+REPORTA|REPORTER|5563|Rapporta une chose au lieu où elle était auparavant|Transporta, plaça dans un autre lieu
+REPORTEE|REPORTER|5563|Transportée, placée dans un autre lieu
+REPORTES|REPORTER|5563|Transportés, placés dans un autre lieu
+REPORTEES|REPORTER|5563|Transportées, placées dans un autre lieu
+BAZARS|BAZAR|5564|Fourbis, grands désordres
+MAILS|MAIL|5567|Petites masses cylindriques de bois|Des centres d’achat
+QUARANTAINES|QUARANTAINE|5573|Isolements, exclusions forcées ou volontaires|Isolements d'un fichier suspect par un antivirus
+DESCENTES|DESCENTE|5597|Disciplines de course en canoë-kayak
+TERREURS|TERREUR|5605|Émotions profondes causées dans l’âme par la présence
+PLOMBS|PLOMB|5615|Corps simples métalliques de cet élément d’un blanc bleuâtre|Intoxications causées par les émanations des fosses d’aisances
+PIPENT|PIPER|5618|Imitent le cri de la chouette pour attirer les petits oiseaux
+PIPAIT|PIPER|5618|Imitait le cri de la chouette pour attirer les petits oiseaux
+PIPAIENT|PIPER|5618|Imitaient le cri de la chouette pour attirer les petits oiseaux
+PIPERA|PIPER|5618|Imitera le cri de la chouette pour attirer les petits oiseaux
+PIPA|PIPER|5618|Imita le cri de la chouette pour attirer les petits oiseaux
+GALERIES|GALERIE|5620|Vestibules, portiques|Salles de palais|Recueils de portraits littéraires et moraux
+INSENSES|INSENSE|5623|Contraires à la raison, au bon sens
+DECHARGES|DECHARGE|5627|Justifications|Soulagements
+PRENANTS|PRENANT|5631|Accaparants
+PRENANTE|PRENANT|5631|Qui prend, ou qui permet de prendre en facilitant la prise|Accaparante
+PRENANTES|PRENANT|5631|Accaparantes
+GRAVITES|GRAVITE|5635|Grandes importances
+ATTACHENT|ATTACHER|5636|Collent au fond d’un récipient pendant la cuisson|S'appliquent vivement, s'intéressent à une chose
+ATTACHAIT|ATTACHER|5636|Collait au fond d’un récipient pendant la cuisson|S'appliquait vivement, s'intéressait à une chose
+ATTACHAIENT|ATTACHER|5636|Collaient au fond d’un récipient pendant la cuisson|S'appliquaient vivement, s'intéressaient à une chose
+ATTACHERA|ATTACHER|5636|Collera au fond d’un récipient pendant la cuisson|S'appliquera vivement, s'intéressera à une chose
+ATTACHA|ATTACHER|5636|Colla au fond d’un récipient pendant la cuisson|S'appliqua vivement, s'intéressa à une chose
+ATTACHEE|ATTACHER|5636|Collée au fond d’un récipient pendant la cuisson
+ATTACHEES|ATTACHER|5636|Collées au fond d’un récipient pendant la cuisson
+CENTAINES|CENTAINE|5638|Des nombres de cent ou environ|Dizaines de dizaine
+SACRIFIENT|SACRIFIER|5643|Abandonnent volontairement quelque chose
+SACRIFIAIT|SACRIFIER|5643|Abandonnait volontairement quelque chose
+SACRIFIAIENT|SACRIFIER|5643|Abandonnaient volontairement quelque chose
+SACRIFIERA|SACRIFIER|5643|Abandonnera volontairement quelque chose
+SACRIFIA|SACRIFIER|5643|Abandonna volontairement quelque chose
+INSPIRATIONS|INSPIRATION|5648|Actions par laquelle l’air entre dans le poumon|Actes de stimulation de l’intellect
+MAJORITES|MAJORITE|5650|Les plus grands nombres
+MELS|MEL|5653|Messages électroniques transmis entre différents utilisateurs
+MOQUENT|MOQUER|5664|Méprisent
+MOQUAIT|MOQUER|5664|Méprisait
+MOQUAIENT|MOQUER|5664|Méprisaient
+MOQUERA|MOQUER|5664|Méprisera
+MOQUA|MOQUER|5664|Méprisa
+MOQUEE|MOQUER|5664|Méprisée
+MOQUES|MOQUER|5664|Méprisés
+MOQUEES|MOQUER|5664|Méprisées
+RITUELS|RITUEL|5665|Relatifs aux rites|Livres des rites
+TORDUS|TORDU|5668|Déformés, pas droits|Illogiques, abracadabrantesques
+TORDUE|TORDU|5668|Qui a subi une torsion|Illogique, abracadabrantesque
+TORDUES|TORDU|5668|Illogiques, abracadabrantesques
+CONCEPTS|CONCEPT|5669|Idées abstraites et générales|Idées générales de quelque chose|Vues de l’esprit
+EXTRAS|EXTRA|5670|Surnuméraires|Supplémentaires|Supers, fameux, formidables, sensationnels
+NETTOYAGES|NETTOYAGE|5671|Actions de rendre propre les vêtements sans lavage
+SYNDICATS|SYNDICAT|5673|Organisations de défense des intérêts professionnels
+CIRCUITS|CIRCUIT|5675|Détours|Parcours organisés
+TOURNOIS|TOURNOI|5676|Compétitions amicales|Combats à armes courtoises entre deux ou plusieurs partis de chevaliers
+DENONCENT|DENONCER|5677|Signalent comme coupable
+DENONCAIT|DENONCER|5677|Signalait comme coupable
+DENONCAIENT|DENONCER|5677|Signalaient comme coupable
+DENONCERA|DENONCER|5677|Signalera comme coupable
+DENONCA|DENONCER|5677|Signala comme coupable
+DENONCEE|DENONCER|5677|Signalée comme coupable
+DENONCES|DENONCER|5677|Signalés comme coupable
+DENONCEES|DENONCER|5677|Signalées comme coupable
+BONDS|BOND|5683|Passages du flux d’un routeur à l’autre
+DEESSES|DEESSE|5685|Divinités de genre féminin
+SIRENES|SIRENE|5690|Êtres fabuleux, moitiés femmes, moitiés poissons
+DEPECHENT|DEPECHER|5695|Se débarrassent vite de quelqu’un après en avoir fini avec lui|S'hâtent
+DEPECHAIT|DEPECHER|5695|Se débarrassait vite de quelqu’un après en avoir fini avec lui|S'hâtait
+DEPECHAIENT|DEPECHER|5695|Se débarrassaient vite de quelqu’un après en avoir fini avec lui|S'hâtaient
+DEPECHERA|DEPECHER|5695|Se débarrassera vite de quelqu’un après en avoir fini avec lui|S'hâtera
+DEPECHA|DEPECHER|5695|Se débarrassa vite de quelqu’un après en avoir fini avec lui|S'hâta
+RASSEMBLE|RASSEMBLER|5696|Met ensemble un cheval
+RASSEMBLENT|RASSEMBLER|5696|Mettent ensemble un cheval
+RASSEMBLAIT|RASSEMBLER|5696|Mettait ensemble un cheval
+RASSEMBLERA|RASSEMBLER|5696|Mettra ensemble un cheval
+RASSEMBLA|RASSEMBLER|5696|Mit ensemble un cheval
+LESBIENNES|LESBIENNE|5697|Femmes homosexuelles
+DEGAGE|DEGAGER|5699|Rend à quelqu’un sa parole|Fait bien paraître la personne qui le porte
+DEGAGENT|DEGAGER|5699|Rendent à quelqu’un sa parole|Font bien paraître la personne qui le porte
+DEGAGEAIT|DEGAGER|5699|Rendait à quelqu’un sa parole|Faisait bien paraître la personne qui le porte
+DEGAGEAIENT|DEGAGER|5699|Rendaient à quelqu’un sa parole|Faisaient bien paraître la personne qui le porte
+DEGAGERA|DEGAGER|5699|Rendra à quelqu’un sa parole|Fera bien paraître la personne qui le porte
+DEGAGEA|DEGAGER|5699|Rendit à quelqu’un sa parole|Fit bien paraître la personne qui le porte
+DEGAGEE|DEGAGER|5699|Rendue à quelqu’un sa parole
+DEGAGES|DEGAGER|5699|Rendus à quelqu’un sa parole
+DEGAGEES|DEGAGER|5699|Rendues à quelqu’un sa parole
+BOUCHENT|BOUCHER|5703|Se ferment|Font son lit
+BOUCHAIT|BOUCHER|5703|Se fermait|Faisait son lit
+BOUCHAIENT|BOUCHER|5703|Se fermaient|Faisaient son lit
+BOUCHERA|BOUCHER|5703|Se fermera|Fera son lit
+BOUCHA|BOUCHER|5703|Se ferma|Fit son lit
+STATUTS|STATUT|5710|États fixés par une loi, un règlement, etc|Situations d'une personne dans un groupe
+CARTONS|CARTON|5711|Ébauches, tracés
+REQUETES|REQUETE|5714|Demandes écrites ou verbales|Demandes par écrit
+PLANTENT|PLANTER|5716|Mettent en terre avec la main|Enfoncent en terre en laissant paraître une partie en dehors
+PLANTAIT|PLANTER|5716|Mettait en terre avec la main|Enfonçait en terre en laissant paraître une partie en dehors
+PLANTAIENT|PLANTER|5716|Mettaient en terre avec la main|Enfonçaient en terre en laissant paraître une partie en dehors
+PLANTERA|PLANTER|5716|Mettra en terre avec la main|Enfoncera en terre en laissant paraître une partie en dehors
+PLANTA|PLANTER|5716|Mit en terre avec la main|Enfonça en terre en laissant paraître une partie en dehors
+PLANTEE|PLANTER|5716|Mise en terre avec la main|Enfoncée en terre en laissant paraître une partie en dehors
+PLANTEES|PLANTER|5716|Mises en terre avec la main|Enfoncées en terre en laissant paraître une partie en dehors
+ARNAQUES|ARNAQUE|5730|Offres commerciales disproportionnées ou inéquitables
+QUAIS|QUAI|5734|Rivages d’un port de mer|Trottoirs d’embarquement dans une gare de chemin de fer
+COCKTAILS|COCKTAIL|5738|Mélanges|Réceptions plutôts informelles
+PECHENT|PECHER|5739|Prennent du poisson|Tirent quelque chose de l’eau
+PECHAIT|PECHER|5739|Prenait du poisson|Tirait quelque chose de l’eau
+PECHAIENT|PECHER|5739|Prenaient du poisson|Tiraient quelque chose de l’eau
+PECHERA|PECHER|5739|Prendra du poisson|Tirera quelque chose de l’eau
+PECHA|PECHER|5739|Prit du poisson|Tira quelque chose de l’eau
+PECHEE|PECHER|5739|Prise du poisson
+PECHES|PECHER|5739|Pris du poisson
+PECHEES|PECHER|5739|Prises du poisson
+CORRECTIONS|CORRECTION|5743|Actions de corriger|Actions de corriger les épreuves|Châtiments, peines
+COMPTABLES|COMPTABLE|5745|Dénombrables, calculables
+TACTIQUES|TACTIQUE|5760|Arts de disposer et de manœuvrer les troupes sur le terrain|Arts de faire évoluer les bâtiments, les escadres au combat
+VILLAS|VILLA|5764|Maisons de plaisance à la campagne
+CICATRICES|CICATRICE|5767|Marques des blessures
+VITRES|VITRE|5768|Fenêtres
+TONNERRES|TONNERRE|5773|Bruits de la foudre|Endroits du canon d’un fusil
+DEGRES|DEGRE|5783|Espaces compris entre deux marches d’un escalier|Unités de mesure de longitude et latitude
+FLIPPE|FLIPPER|5796|Rend invisible un piercing nasal en le cachant dans le nez
+FLIPPENT|FLIPPER|5796|Rendent invisible un piercing nasal en le cachant dans le nez
+FLIPPAIT|FLIPPER|5796|Rendait invisible un piercing nasal en le cachant dans le nez
+FLIPPAIENT|FLIPPER|5796|Rendaient invisible un piercing nasal en le cachant dans le nez
+FLIPPERA|FLIPPER|5796|Rendra invisible un piercing nasal en le cachant dans le nez
+FLIPPA|FLIPPER|5796|Rendit invisible un piercing nasal en le cachant dans le nez
+ENGINS|ENGIN|5822|Instruments|Personnes à l'apparence ou au comportement étrange|Missiles
+MAILLOTS|MAILLOT|5824|Vêtements de bain
+TRAJETS|TRAJET|5827|Espaces à traverser, route à faire d’un lieu à un autre
+DEVELOPPENT|DEVELOPPER|5828|Dégagent une chose de ce qui l’enveloppe
+DEVELOPPAIT|DEVELOPPER|5828|Dégageait une chose de ce qui l’enveloppe
+DEVELOPPERA|DEVELOPPER|5828|Dégagera une chose de ce qui l’enveloppe
+DEVELOPPA|DEVELOPPER|5828|Dégagea une chose de ce qui l’enveloppe
+DEMARRE|DEMARRER|5829|Quitte le port en parlant d’un bâtiment|Détache ce qui est amarré
+DEMARRENT|DEMARRER|5829|Quittent le port en parlant d’un bâtiment|Détachent ce qui est amarré
+DEMARRAIT|DEMARRER|5829|Quittait le port en parlant d’un bâtiment|Détachait ce qui est amarré
+DEMARRAIENT|DEMARRER|5829|Quittaient le port en parlant d’un bâtiment|Détachaient ce qui est amarré
+DEMARRERA|DEMARRER|5829|Quittera le port en parlant d’un bâtiment|Détachera ce qui est amarré
+DEMARRA|DEMARRER|5829|Quitta le port en parlant d’un bâtiment|Détacha ce qui est amarré
+PESTES|PESTE|5831|Maladies épidémiques
+CONFESSIONS|CONFESSION|5839|Appartenances à une secte ou croyance
+ACADEMIES|ACADEMIE|5840|Assemblées de gens de lettres|Figures entières, nues ou légèrements drapées
+INVENTE|INVENTER|5842|Trouve et met au point un système
+INVENTENT|INVENTER|5842|Trouvent et mettent au point un système
+INVENTAIT|INVENTER|5842|Trouvait et mettait au point un système
+INVENTAIENT|INVENTER|5842|Trouvaient et mettaient au point un système
+INVENTERA|INVENTER|5842|Trouvera et mettra au point un système
+INVENTA|INVENTER|5842|Trouva et mit au point un système
+INVENTEE|INVENTER|5842|Trouvée et mise au point un système
+INVENTES|INVENTER|5842|Trouvés et mis au point un système
+INVENTEES|INVENTER|5842|Trouvées et mises au point un système
+CARNETS|CARNET|5851|Livrets d’épargne
+DEPOTS|DEPOT|5860|Entrepôts|Remises pour les locomotives ou autres véhicules
+SONNENT|SONNER|5865|Rendent un son|Font rendre des sons à des instruments à vent
+SONNAIT|SONNER|5865|Rendait un son|Faisait rendre des sons à des instruments à vent
+SONNAIENT|SONNER|5865|Rendaient un son|Faisaient rendre des sons à des instruments à vent
+SONNERA|SONNER|5865|Rendra un son|Fera rendre des sons à des instruments à vent
+SONNA|SONNER|5865|Rendit un son|Fit rendre des sons à des instruments à vent
+REGISTRES|REGISTRE|5872|Étendues de l’échelle vocale
+POMPES|POMPE|5874|Cortèges solennels
+FABRIQUENT|FABRIQUER|5878|Transforment manuellement des matières premières en objets utilisables
+FABRIQUAIT|FABRIQUER|5878|Transformait manuellement des matières premières en objets utilisables
+FABRIQUAIENT|FABRIQUER|5878|Transformaient manuellement des matières premières en objets utilisables
+FABRIQUERA|FABRIQUER|5878|Transformera manuellement des matières premières en objets utilisables
+FABRIQUA|FABRIQUER|5878|Transforma manuellement des matières premières en objets utilisables
+SALUE|SALUER|5880|Donne à quelqu’un une marque de civilité|Donne les marques de civilité
+SALUENT|SALUER|5880|Donnent à quelqu’un une marque de civilité|Donnent les marques de civilité
+SALUAIT|SALUER|5880|Donnait à quelqu’un une marque de civilité|Donnait les marques de civilité
+SALUAIENT|SALUER|5880|Donnaient à quelqu’un une marque de civilité|Donnaient les marques de civilité
+SALUERA|SALUER|5880|Donnera à quelqu’un une marque de civilité|Donnera les marques de civilité
+SALUA|SALUER|5880|Donna à quelqu’un une marque de civilité|Donna les marques de civilité
+SALUEE|SALUER|5880|Donnée à quelqu’un une marque de civilité
+SALUES|SALUER|5880|Donnés à quelqu’un une marque de civilité
+SALUEES|SALUER|5880|Données à quelqu’un une marque de civilité
+JOINTS|JOINT|5881|Endroits, lignes|Fissures dans un morceau de roche, une veine|Solutions, possibilités, arrangements
+GRIPPES|GRIPPE|5886|Caprices dictés par une mode|Zoonoses infectieuses
+DETRESSES|DETRESSE|5887|Angoisses causées par un malheur imminent|Situations malheureuses
+CHIFFRES|CHIFFRE|5889|Caractères utilisés pour écrire les nombres|Tout nombres|Codes secrets pour la transmission des dépêches militaires
+HURLE|HURLER|5893|Pousse des cris prolongés|Pousse des cris humains
+HURLENT|HURLER|5893|Poussent des cris prolongés|Poussent des cris humains
+HURLAIT|HURLER|5893|Poussait des cris prolongés|Poussait des cris humains
+HURLAIENT|HURLER|5893|Poussaient des cris prolongés|Poussaient des cris humains
+HURLERA|HURLER|5893|Poussera des cris prolongés|Poussera des cris humains
+HURLA|HURLER|5893|Poussa des cris prolongés|Poussa des cris humains
+HURLEE|HURLER|5893|Poussée des cris prolongés|Poussée des cris humains
+HURLES|HURLER|5893|Poussés des cris prolongés|Poussés des cris humains
+HURLEES|HURLER|5893|Poussées des cris prolongés|Poussées des cris humains
+ORAGES|ORAGE|5898|Perturbations atmosphériques
+CAVALIERS|CAVALIER|5900|Pièces du jeu d’échecs
+CAVALIERES|CAVALIER|5900|Dégagées, libres, aisées
+PYJAMAS|PYJAMA|5915|Costumes d’intérieur fait le plus souvent d’une étoffe légère
+HOMMAGES|HOMMAGE|5918|Témoignages de respectueux dévouement|Dons respectueux, offrandes
+ORDONNANCES|ORDONNANCE|5922|Dispositions des choses selon l’ordre, la convenance|Prescriptions|Actes législatifs pris par le gouvernement
+ANGLAISES|ANGLAISE|5923|Danses d’un mouvement très vif|Écritures cursives penchées vers la droite
+INTUITIONS|INTUITION|5934|Connaissances immédiates|Facultés de comprendre vite, de prévoir, de deviner
+FONDATIONS|FONDATION|5936|Actions de fonder, de bâtir la base de quelque chose
+CONSULTE|CONSULTER|5937|Étudie pour y chercher des éclaircissements
+CONSULTENT|CONSULTER|5937|Étudient pour y chercher des éclaircissements
+CONSULTAIT|CONSULTER|5937|Étudiait pour y chercher des éclaircissements
+CONSULTAIENT|CONSULTER|5937|Étudiaient pour y chercher des éclaircissements
+CONSULTERA|CONSULTER|5937|Étudiera pour y chercher des éclaircissements
+CONSULTA|CONSULTER|5937|Étudia pour y chercher des éclaircissements
+CONSULTEE|CONSULTER|5937|Étudiée pour y chercher des éclaircissements
+CONSULTES|CONSULTER|5937|Étudiés pour y chercher des éclaircissements
+CONSULTEES|CONSULTER|5937|Étudiées pour y chercher des éclaircissements
+BETISES|BETISE|5940|Défauts d’intelligence
+ETABLIS|ETABLI|5951|Solides, stables|Prouvés, démontrés
+ETABLIE|ETABLI|5951|Solide, stable|Prouvée, démontrée
+ETABLIES|ETABLI|5951|Solides, stables|Prouvées, démontrées
+RONDES|RONDE|5955|Surveillances|Symboles de solfège|Manèges, successions, défilés, processions
+STANDARDS|STANDARD|5979|Éléments de référence
+SOUPENT|SOUPER|5984|Prennent le repas du soir|Prennent un repas plus tardif que le dîner
+SOUPAIT|SOUPER|5984|Prenait le repas du soir|Prenait un repas plus tardif que le dîner
+SOUPAIENT|SOUPER|5984|Prenaient le repas du soir|Prenaient un repas plus tardif que le dîner
+SOUPERA|SOUPER|5984|Prendra le repas du soir|Prendra un repas plus tardif que le dîner
+SOUPA|SOUPER|5984|Prit le repas du soir|Prit un repas plus tardif que le dîner
+INSTITUTS|INSTITUT|5987|Constitutions d’un ordre religieux|Ces ordres même
+FRACTURES|FRACTURE|5992|Ruptures avec effort
+ELEPHANTS|ELEPHANT|6002|Mammifères herbivores de très grande taille
+BOUCLIERS|BOUCLIER|6003|Élytres de certains insectes
+CONSIDERE|CONSIDERER|6005|Regarde attentivement
+CONSIDERENT|CONSIDERER|6005|Regardent attentivement
+CONSIDERAIT|CONSIDERER|6005|Regardait attentivement
+CONSIDERERA|CONSIDERER|6005|Regardera attentivement
+CONSIDERA|CONSIDERER|6005|Regarda attentivement
+VOYOUS|VOYOU|6009|Gamins des rues|Vauriens
+DEPUTES|DEPUTE|6019|Envoyés, délégués
+PATRONNES|PATRONNE|6021|Fondatrices d’une église ou d’un bénéfice
+BARRIERES|BARRIERE|6023|Assemblages de plusieurs pièces de bois ou d’autres matériaux|Endroits mal famés
+DISPOSITIONS|DISPOSITION|6025|Inclinations
+PAPILLONS|PAPILLON|6026|Styles de nage ventrale
+DRAMATIQUES|DRAMATIQUE|6033|Relatifs au drame
+DISTRICTS|DISTRICT|6040|Divisions territoriales de moyenne étendue|Anciennes divisions principales d’un département
+HALTES|HALTE|6049|Stations secondaires
+MALES|MALE|6057|Hommes dans l’espèce humaine
+LICENCES|LICENCE|6064|Permissions|Grades et diplômes
+RECULENT|RECULER|6079|Tirent ou poussent un objet en arrière
+RECULAIT|RECULER|6079|Tirait ou poussait un objet en arrière
+RECULAIENT|RECULER|6079|Tiraient ou poussaient un objet en arrière
+RECULERA|RECULER|6079|Tirera ou poussera un objet en arrière
+RECULA|RECULER|6079|Tira ou poussa un objet en arrière
+MONTANTES|MONTANT|6084|Verticales
+MAITRISES|MAITRISE|6087|Actions de dominer quelque chose ou quelqu’un|Chœurs laïcs d’enfants|Diplômes académiques supérieurs
+TOILES|TOILE|6091|Tissus d'armure simple|Treillis métalliques d’un crible ou d'un tamis
+SABRES|SABRE|6104|Symboles de la force des armes, du militarisme|Rasoirs à manche et à longue lame
+FILETS|FILET|6105|Fils déliés, petits fils|Techniques de couture|Sacs en mailles
+ANALYSENT|ANALYSER|6112|Examinent en ses différentes parties|Résument un écrit en ses différentes parties
+ANALYSAIT|ANALYSER|6112|Examinait en ses différentes parties|Résumait un écrit en ses différentes parties
+ANALYSAIENT|ANALYSER|6112|Examinaient en ses différentes parties|Résumaient un écrit en ses différentes parties
+ANALYSERA|ANALYSER|6112|Examinera en ses différentes parties|Résumera un écrit en ses différentes parties
+ANALYSA|ANALYSER|6112|Examina en ses différentes parties|Résuma un écrit en ses différentes parties
+ANALYSEE|ANALYSER|6112|Examinée en ses différentes parties
+ANALYSEES|ANALYSER|6112|Examinées en ses différentes parties
+FIXERS|FIXER|6123|Drogués
+LEVEES|LEVEE|6124|Actions de déplacer, de porter de bas en haut|Germinations puis débuts de croissance d'un semis
+POLIE|POLI|6126|Lisse, luisante
+POLIES|POLI|6126|Lisses, luisantes
+VISUELS|VISUEL|6131|Relatifs à la vue ou à la vision|Photographies, illustrations ou vidéos
+CONTES|CONTE|6140|Récits d’aventures imaginaires|Formes littéraires courtes et simples
+COMPAGNONS|COMPAGNON|6141|Ouvriers qualifiés d’une entreprise|Membres d’un groupe ou d’une organisation anarchiste
+DIFFICULTES|DIFFICULTE|6142|Misères
+CARAVANES|CARAVANE|6145|Convois de marchands
+EMBETE|EMBETER|6148|Énerve, importune quelqu’un
+EMBETENT|EMBETER|6148|Énervent, importunent quelqu’un
+EMBETAIT|EMBETER|6148|Énervait, importunait quelqu’un
+EMBETAIENT|EMBETER|6148|Énervaient, importunaient quelqu’un
+EMBETERA|EMBETER|6148|Énervera, importunera quelqu’un
+EMBETA|EMBETER|6148|Énerva, importuna quelqu’un
+BALADENT|BALADER|6149|Font croire des choses fausses à quelqu’un
+BALADAIT|BALADER|6149|Faisait croire des choses fausses à quelqu’un
+BALADAIENT|BALADER|6149|Faisaient croire des choses fausses à quelqu’un
+BALADERA|BALADER|6149|Fera croire des choses fausses à quelqu’un
+BALADA|BALADER|6149|Fit croire des choses fausses à quelqu’un
+DEFILES|DEFILE|6151|Déplacements ordonnés d'une troupe|Parades de mannequins pour la présentation d'attifiaux
+RAMASSES|RAMASSE|6152|Tiges métalliques utilisées pour nettoyer le canon d'une arme|Récupérations par un grumier de multiples bois ou tas de bois épars
+NOUNOUS|NOUNOU|6169|Flocons de poussière, de poils
+REPERENT|REPERER|6172|Attirent l’attention|Indiquent la position d’un point par ses coordonnées
+REPERAIT|REPERER|6172|Attirait l’attention|Indiquait la position d’un point par ses coordonnées
+REPERAIENT|REPERER|6172|Attiraient l’attention|Indiquaient la position d’un point par ses coordonnées
+REPERERA|REPERER|6172|Attirera l’attention|Indiquera la position d’un point par ses coordonnées
+REPERA|REPERER|6172|Attira l’attention|Indiqua la position d’un point par ses coordonnées
+DISCIPLINES|DISCIPLINE|6185|Méthodes d’enseignement, d’éducation et de direction|Matières d’enseignement
+LOGES|LOGE|6200|Loggias|Compartiments d’une salle de spectacle
+ROCHERS|ROCHER|6202|Petites pâtisseries à base de noix de coco de sucre et de blanc d'œuf
+ROCHENT|ROCHER|6202|Moussent en parlant de la bière qui fermente
+ROCHAIT|ROCHER|6202|Moussait en parlant de la bière qui fermente
+ROCHAIENT|ROCHER|6202|Moussaient en parlant de la bière qui fermente
+ROCHERA|ROCHER|6202|Moussera en parlant de la bière qui fermente
+ROCHA|ROCHER|6202|Moussa en parlant de la bière qui fermente
+ROCHEE|ROCHER|6202|Moussée en parlant de la bière qui fermente
+ROCHES|ROCHER|6202|Moussés en parlant de la bière qui fermente
+ROCHEES|ROCHER|6202|Moussées en parlant de la bière qui fermente
+INDIVIDUS|INDIVIDU|6211|Personnes physiques
+ASSASSINENT|ASSASSINER|6229|Tuent intentionnellement|Fatiguent, importunent avec excès
+ASSASSINAIT|ASSASSINER|6229|Tuait intentionnellement|Fatiguait, importunait avec excès
+ASSASSINERA|ASSASSINER|6229|Tuera intentionnellement|Fatiguera, importunera avec excès
+ASSASSINA|ASSASSINER|6229|Tua intentionnellement|Fatigua, importuna avec excès
+ASSASSINEE|ASSASSINER|6229|Fatiguée, importunée avec excès
+ASSASSINEES|ASSASSINER|6229|Fatiguées, importunées avec excès
+RENFORTS|RENFORT|6239|Augmentations de force
+BLAMENT|BLAMER|6250|Reprochent
+BLAMAIT|BLAMER|6250|Reprochait
+BLAMAIENT|BLAMER|6250|Reprochaient
+BLAMERA|BLAMER|6250|Reprochera
+BLAMA|BLAMER|6250|Reprocha
+BLAMEE|BLAMER|6250|Reprochée
+BLAMES|BLAMER|6250|Reprochés
+BLAMEES|BLAMER|6250|Reprochées
+BROUILLARDS|BROUILLARD|6254|Des amas de fines gouttelettes d'eau
+CALIBRES|CALIBRE|6262|Diamètres intérieurs d’un tube quelconque|Grosseurs du projectile
+FOUDRES|FOUDRE|6272|Décharges électriques|Réprobations religieuses
+LOUPES|LOUPE|6275|Erreurs commises par un joueur
+SUEURS|SUEUR|6289|Actions de suer
+BATTUES|BATTUE|6292|Opérations par laquelle|Mouvements faits avec la main
+PRECIEUSES|PRECIEUSE|6294|Femmes affectées dans son air
+IMPLIQUENT|IMPLIQUER|6295|Enveloppent, engagent|Comportent comme partie intégrante
+IMPLIQUAIT|IMPLIQUER|6295|Enveloppait, engageait|Comportait comme partie intégrante
+IMPLIQUAIENT|IMPLIQUER|6295|Enveloppaient, engageaient|Comportaient comme partie intégrante
+IMPLIQUERA|IMPLIQUER|6295|Enveloppera, engagera|Comportera comme partie intégrante
+IMPLIQUA|IMPLIQUER|6295|Enveloppa, engagea|Comporta comme partie intégrante
+IMPLIQUEE|IMPLIQUER|6295|Enveloppée, engagée|Comportée comme partie intégrante
+IMPLIQUEES|IMPLIQUER|6295|Enveloppées, engagées|Comportées comme partie intégrante
+PLONGENT|PLONGER|6298|Enfoncent profondément|S'enfoncent entièrement dans l’eau
+PLONGEAIT|PLONGER|6298|Enfonçait profondément|S'enfonçait entièrement dans l’eau
+PLONGEAIENT|PLONGER|6298|Enfonçaient profondément|S'enfonçaient entièrement dans l’eau
+PLONGERA|PLONGER|6298|Enfoncera profondément|S'enfoncera entièrement dans l’eau
+PLONGEA|PLONGER|6298|Enfonça profondément|S'enfonça entièrement dans l’eau
+DECRITS|DECRIT|6304|Tracés parcourus
+DECRITE|DECRIT|6304|Tracée parcourue
+DECRITES|DECRIT|6304|Tracées parcourues
+FORMENT|FORMER|6309|Proposent, exposent ce qu’on a conçu
+FORMAIT|FORMER|6309|Proposait, exposait ce qu’on a conçu
+FORMAIENT|FORMER|6309|Proposaient, exposaient ce qu’on a conçu
+FORMERA|FORMER|6309|Proposera, exposera ce qu’on a conçu
+FORMA|FORMER|6309|Proposa, exposa ce qu’on a conçu
+FAILLES|FAILLE|6313|Défauts, faiblesses
+ALLURES|ALLURE|6315|Façons d’aller, de marcher|Apparences|Vitesses de déplacement
+SUCENT|SUCER|6316|Aspirent avec la bouche un liquide|Exercent un mouvement de succion sur une chose|Pratiquent une fellation
+SUCAIT|SUCER|6316|Aspirait avec la bouche un liquide|Exerçait un mouvement de succion sur une chose|Pratiquait une fellation
+SUCAIENT|SUCER|6316|Aspiraient avec la bouche un liquide|Exerçaient un mouvement de succion sur une chose|Pratiquaient une fellation
+SUCERA|SUCER|6316|Aspirera avec la bouche un liquide|Exercera un mouvement de succion sur une chose|Pratiquera une fellation
+SUCA|SUCER|6316|Aspira avec la bouche un liquide|Exerça un mouvement de succion sur une chose|Pratiqua une fellation
+SUCEE|SUCER|6316|Aspirée avec la bouche un liquide
+SUCES|SUCER|6316|Aspirés avec la bouche un liquide
+SUCEES|SUCER|6316|Aspirées avec la bouche un liquide
+ALLONGENT|ALLONGER|6320|Rendent plus long|Portent les profits d’une charge
+ALLONGEAIT|ALLONGER|6320|Rendait plus long|Portait les profits d’une charge
+ALLONGEAIENT|ALLONGER|6320|Rendaient plus long|Portaient les profits d’une charge
+ALLONGERA|ALLONGER|6320|Rendra plus long|Portera les profits d’une charge
+ALLONGEA|ALLONGER|6320|Rendit plus long|Porta les profits d’une charge
+RESSORTS|RESSORT|6321|Reprises de l’état initial|Organes élastiques d’un mécanisme
+CHAMPIONNATS|CHAMPIONNAT|6328|Ces même types d'épreuve hors du sport
+DOMESTIQUES|DOMESTIQUE|6331|Relatifs au ménage, à l'intérieur de la famille|Relatifs à un pays ou à un peuple
+VEINES|VEINE|6334|Nervures de la feuille|Filons d’un dépôt long et mince
+HONNETETES|HONNETETE|6338|Chastetés, pudeurs|Bienséances|Civilités
+APPROPRIES|APPROPRIE|6343|Convenables
+PATRIES|PATRIE|6344|Les terres des ancêtres
+PHILIPPES|PHILIPPE|6348|Monnaies d’or
+GUIDENT|GUIDER|6351|Accompagnent quelqu’un pour lui montrer le chemin
+GUIDAIT|GUIDER|6351|Accompagnait quelqu’un pour lui montrer le chemin
+GUIDAIENT|GUIDER|6351|Accompagnaient quelqu’un pour lui montrer le chemin
+GUIDERA|GUIDER|6351|Accompagnera quelqu’un pour lui montrer le chemin
+GUIDA|GUIDER|6351|Accompagna quelqu’un pour lui montrer le chemin
+CERTIFICATS|CERTIFICAT|6353|Diplômes|Actes délivrés au cours d’études supérieures
+AMENDES|AMENDE|6354|Peines pécuniaires imposées par la justice
+FUSEES|FUSEE|6358|Parties terminales d’un mât ou d’une vergue
+SEPARATIONS|SEPARATION|6360|Limites|Actions d’inclure deux parties disjointes dans deux ouverts disjoints
+CACAS|CACA|6365|Matières fécales
+DESESPOIRS|DESESPOIR|6366|Pertes d’espérance|Contrariétés, soucis
+BISHOPS|BISHOP|6371|Boissons chaudes ou froides
+RECHERCHENT|RECHERCHER|6376|Désirent de voir
+RECHERCHAIT|RECHERCHER|6376|Désirait de voir
+RECHERCHERA|RECHERCHER|6376|Désirera de voir
+RECHERCHA|RECHERCHER|6376|Désira de voir
+RECHERCHEE|RECHERCHER|6376|Désirée de voir
+RECHERCHEES|RECHERCHER|6376|Désirées de voir
+SOIES|SOIE|6377|Matières filamenteuses|Poils de certains animaux
+CHEVRES|CHEVRE|6379|Dispositifs propres à élever des fardeaux
+HACHES|HACHE|6380|Instruments de fer|Parties pointues du piolet|Armes de même forme
+CARBURANTS|CARBURANT|6388|Corps nécessaires à la combustion
+ALIENS|ALIEN|6396|Extraterrestres
+FARCES|FARCE|6400|Pièces de théâtre bouffonne
+EXPLORE|EXPLORER|6404|Visite, examine les parties intérieures du corps
+EXPLORENT|EXPLORER|6404|Visitent, examinent les parties intérieures du corps
+EXPLORAIT|EXPLORER|6404|Visitait, examinait les parties intérieures du corps
+EXPLORAIENT|EXPLORER|6404|Visitaient, examinaient les parties intérieures du corps
+EXPLORERA|EXPLORER|6404|Visitera, examinera les parties intérieures du corps
+EXPLORA|EXPLORER|6404|Visita, examina les parties intérieures du corps
+NOAHS|NOAH|6406|Ceps de ce cépage|Vins de ce cépage
+CORRUPTIONS|CORRUPTION|6419|Actions de corrompre|Actions de détourner quelqu’un de son devoir
+ADOPTE|ADOPTER|6434|Vote un texte
+ADOPTENT|ADOPTER|6434|Votent un texte
+ADOPTAIT|ADOPTER|6434|Votait un texte
+ADOPTAIENT|ADOPTER|6434|Votaient un texte
+ADOPTERA|ADOPTER|6434|Votera un texte
+ADOPTA|ADOPTER|6434|Vota un texte
+DEMANDANTE|DEMANDANT|6436|Qui sollicite, qui cherche à obtenir quelque chose
+EPICERIES|EPICERIE|6437|Supermarchés ou marchés
+SOUHAITE|SOUHAITER|6446|Fait des vœux pour quelqu’un
+SOUHAITENT|SOUHAITER|6446|Font des vœux pour quelqu’un
+SOUHAITAIT|SOUHAITER|6446|Faisait des vœux pour quelqu’un
+SOUHAITAIENT|SOUHAITER|6446|Faisaient des vœux pour quelqu’un
+SOUHAITERA|SOUHAITER|6446|Fera des vœux pour quelqu’un
+SOUHAITA|SOUHAITER|6446|Fit des vœux pour quelqu’un
+SOUHAITEE|SOUHAITER|6446|Faite des vœux pour quelqu’un
+SOUHAITES|SOUHAITER|6446|Faits des vœux pour quelqu’un
+SOUHAITEES|SOUHAITER|6446|Faites des vœux pour quelqu’un
+CRACHES|CRACHE|6452|Canines surnuméraires
+SURMONTENT|SURMONTER|6459|Surpassent
+SURMONTAIT|SURMONTER|6459|Surpassait
+SURMONTAIENT|SURMONTER|6459|Surpassaient
+SURMONTERA|SURMONTER|6459|Surpassera
+SURMONTA|SURMONTER|6459|Surpassa
+SURMONTEE|SURMONTER|6459|Surpassée
+SURMONTES|SURMONTER|6459|Surpassés
+SURMONTEES|SURMONTER|6459|Surpassées
+EXECUTE|EXECUTER|6461|Met à effet|Fait un ouvrage quelconque|Joue ou représente
+EXECUTENT|EXECUTER|6461|Mettent à effet|Font un ouvrage quelconque|Jouent ou représentent
+EXECUTAIT|EXECUTER|6461|Mettait à effet|Faisait un ouvrage quelconque|Jouait ou représentait
+EXECUTAIENT|EXECUTER|6461|Mettaient à effet|Faisaient un ouvrage quelconque|Jouaient ou représentaient
+EXECUTERA|EXECUTER|6461|Mettra à effet|Fera un ouvrage quelconque|Jouera ou représentera
+EXECUTA|EXECUTER|6461|Mit à effet|Fit un ouvrage quelconque|Joua ou représenta
+EXECUTEE|EXECUTER|6461|Mise à effet|Jouée ou représentée
+EXECUTES|EXECUTER|6461|Mis à effet|Joués ou représentés
+EXECUTEES|EXECUTER|6461|Mises à effet|Jouées ou représentées
+SYNDROMES|SYNDROME|6464|Vecteurs produits d'un mot et d'une matrice de contrôle
+DIMENSIONS|DIMENSION|6466|Mesures d’une chose dans chacune des directions de l’espace|Tailles relatives|Aspects
+SCOLAIRES|SCOLAIRE|6472|Élèves d'une école
+RASE|RASER|6478|Coupe le poil de la barbe au plus près de la peau|Ôte à un navire la partie supérieure de ses œuvres mortes
+RASENT|RASER|6478|Coupent le poil de la barbe au plus près de la peau|Ôtent à un navire la partie supérieure de ses œuvres mortes
+RASAIT|RASER|6478|Coupait le poil de la barbe au plus près de la peau|Ôtait à un navire la partie supérieure de ses œuvres mortes
+RASAIENT|RASER|6478|Coupaient le poil de la barbe au plus près de la peau|Ôtaient à un navire la partie supérieure de ses œuvres mortes
+RASERA|RASER|6478|Coupera le poil de la barbe au plus près de la peau|Ôtera à un navire la partie supérieure de ses œuvres mortes
+RASA|RASER|6478|Coupa le poil de la barbe au plus près de la peau|Ôta à un navire la partie supérieure de ses œuvres mortes
+RASEE|RASER|6478|Ôtée à un navire la partie supérieure de ses œuvres mortes
+RASES|RASER|6478|Ôtés à un navire la partie supérieure de ses œuvres mortes
+RASEES|RASER|6478|Ôtées à un navire la partie supérieure de ses œuvres mortes
+SAOULS|SAOUL|6483|Ivres, avinés
+SAOULE|SAOUL|6483|Ivre, avinée
+SAOULES|SAOUL|6483|Ivres, avinées
+OBSERVATIONS|OBSERVATION|6492|Actions de regarder avec attention, de surveiller|Actions de considérer avec attention
+GROSSIERS|GROSSIER|6494|Malhonnêtes, incivils
+MOMES|MOME|6499|Enfantins, jeunes
+PAPYS|PAPY|6503|Hommes âgés
+PROFONDEURS|PROFONDEUR|6507|Étendues dans le sens horizontal perpendiculairement à la largeur|Épaisseurs
+REGRETS|REGRET|6511|Toutes sortes de déplaisir, léger ou considérable
+TORTURENT|TORTURER|6520|Tourmentent
+TORTURAIT|TORTURER|6520|Tourmentait
+TORTURAIENT|TORTURER|6520|Tourmentaient
+TORTURERA|TORTURER|6520|Tourmentera
+TORTURA|TORTURER|6520|Tourmenta
+TORTUREE|TORTURER|6520|Tourmentée
+TORTUREES|TORTURER|6520|Tourmentées
+CHARS|CHAR|6525|Véhicules militaires armés|Autocars
+PROIES|PROIE|6538|Butins faits à la guerre|Actions d'être soumis au ravage ou à la destruction
+FURIEUSES|FURIEUSE|6539|Femmes impétueuses, véhémentes, violentes
+ANGOISSES|ANGOISSE|6540|Anxiétés extrêmes
+BARRAGES|BARRAGE|6547|Droits de péage sur les voitures et les bêtes de somme
+DUREES|DUREE|6556|Successions non interrompues des moments
+DEBROUILLES|DEBROUILLE|6565|Activités économiques informelles
+DIAGNOSTICS|DIAGNOSTIC|6567|Conclusions de cette identification|Conclusions d'une étude technique|Les étapes, les processus
+TEXTOS|TEXTO|6569|Langages abrégés utilisés dans ces messages
+DELAIS|DELAI|6571|Temps accordés pour faire une chose
+MANIPULENT|MANIPULER|6581|Manient avec soin|Se livrent à des expériences scientifiques, expérimentent|Manœuvrent, manient, tripotent
+MANIPULAIT|MANIPULER|6581|Maniait avec soin|Se livrait à des expériences scientifiques, expérimentait|Manœuvrait, maniait, tripotait
+MANIPULAIENT|MANIPULER|6581|Maniaient avec soin|Se livraient à des expériences scientifiques, expérimentaient|Manœuvraient, maniaient, tripotaient
+MANIPULERA|MANIPULER|6581|Maniera avec soin|Se livrera à des expériences scientifiques, expérimentera|Manœuvrera, maniera, tripotera
+MANIPULA|MANIPULER|6581|Mania avec soin|Se livra à des expériences scientifiques, expérimenta|Manœuvra, mania, tripota
+MANIPULEE|MANIPULER|6581|Maniée avec soin|Manœuvrée, maniée, tripotée
+MANIPULES|MANIPULER|6581|Maniés avec soin|Manœuvrés, maniés, tripotés
+MANIPULEES|MANIPULER|6581|Maniées avec soin|Manœuvrées, maniées, tripotées
+REPRESENTE|REPRESENTER|6582|Exhibe|Fait comparaître quelqu’un personnellement
+REPRESENTENT|REPRESENTER|6582|Exhibent|Font comparaître quelqu’un personnellement
+REPRESENTAIT|REPRESENTER|6582|Exhibait|Faisait comparaître quelqu’un personnellement
+REPRESENTERA|REPRESENTER|6582|Exhibera|Fera comparaître quelqu’un personnellement
+REPRESENTA|REPRESENTER|6582|Exhiba|Fit comparaître quelqu’un personnellement
+REPRESENTEE|REPRESENTER|6582|Exhibée
+REPRESENTES|REPRESENTER|6582|Exhibés
+REPRESENTEES|REPRESENTER|6582|Exhibées
+ARAIGNEES|ARAIGNEE|6585|Crapaudines
+EGALITES|EGALITE|6589|Uniformités
+HONORENT|HONORER|6590|Font honneur à
+HONORAIT|HONORER|6590|Faisait honneur à
+HONORAIENT|HONORER|6590|Faisaient honneur à
+HONORERA|HONORER|6590|Fera honneur à
+HONORA|HONORER|6590|Fit honneur à
+RENARDS|RENARD|6598|Mammifères carnivores|Anciens outils de navigation
+DEFENDUS|DEFENDU|6607|Interdits, prohibés|Impossibles
+DEFENDUE|DEFENDU|6607|Interdite, prohibée|Impossible
+DEFENDUES|DEFENDU|6607|Interdites, prohibées|Impossibles
+PACTES|PACTE|6616|Alliances
+TRANSPORTENT|TRANSPORTER|6628|Mettent hors de soi, agitent violemment
+TRANSPORTAIT|TRANSPORTER|6628|Mettait hors de soi, agitait violemment
+TRANSPORTERA|TRANSPORTER|6628|Mettra hors de soi, agitera violemment
+TRANSPORTA|TRANSPORTER|6628|Mit hors de soi, agita violemment
+AMBITIONS|AMBITION|6629|Recherches d’honneurs|Motivations pour améliorer une situation
+DESSINE|DESSINER|6633|Trace le contour|Élabore et rédige les plans d'un vaisseau
+DESSINENT|DESSINER|6633|Tracent le contour|Élaborent et rédigent les plans d'un vaisseau
+DESSINAIT|DESSINER|6633|Traçait le contour|Élaborait et rédigeait les plans d'un vaisseau
+DESSINAIENT|DESSINER|6633|Traçaient le contour|Élaboraient et rédigeaient les plans d'un vaisseau
+DESSINERA|DESSINER|6633|Tracera le contour|Élaborera et rédigera les plans d'un vaisseau
+DESSINA|DESSINER|6633|Traça le contour|Élabora et rédigea les plans d'un vaisseau
+MOUILLES|MOUILLE|6634|Mêlés d’émotion ou de larmes
+OBSESSIONS|OBSESSION|6637|Pensées négatives inspirées par le diable ou ses démons
+INVASIONS|INVASION|6642|Irruptions faites dans le dessein de piller un pays|Actions d’envahir un organisme
+PRETEXTES|PRETEXTE|6643|Causes simulées, supposées|Toges blanches bordées d’une large bande de pourpre|Robes longues et blanches
+IMPASSES|IMPASSE|6646|Voies sans issue, cul-de-sac
+MODESTES|MODESTE|6653|Subalternes
+GRAISSES|GRAISSE|6663|Substances onctueuses
+STOCKS|STOCK|6665|Entrepôts, réserves
+ARCS|ARC|6673|Portions définies d’une courbe
+GENTILLESSES|GENTILLESSE|6677|Agréments accompagnés de délicatesse|Tours de souplesse agréable
+MISSILES|MISSILE|6683|Projectiles
+REPLIQUES|REPLIQUE|6687|Réponses faites avec humeur
+COMMUNES|COMMUNE|6690|Divisions du territoire
+ASPECTS|ASPECT|6691|Vues d’une personne ou d’une chose|Angles remarquables entre deux planètes dans un thème astral
+THERAPEUTES|THERAPEUTE|6693|Médecins ou guérisseurs
+COMPARE|COMPARER|6699|Confronte et examine si deux choses sont de la même main|Assimile deux idées
+COMPARENT|COMPARER|6699|Confrontent et examinent si deux choses sont de la même main|Assimilent deux idées
+COMPARAIT|COMPARER|6699|Confrontait et examinait si deux choses sont de la même main|Assimilait deux idées
+COMPARAIENT|COMPARER|6699|Confrontaient et examinaient si deux choses sont de la même main|Assimilaient deux idées
+COMPARERA|COMPARER|6699|Confrontera et examinera si deux choses sont de la même main|Assimilera deux idées
+COMPARA|COMPARER|6699|Confronta et examina si deux choses sont de la même main|Assimila deux idées
+CALS|CAL|6723|Durillons, duretés cutanées
+DECOLLE|DECOLLER|6728|Éloigne, détache la bille|Quitte le sol pour un aéronef|Met progressivement un train en mouvement
+DECOLLENT|DECOLLER|6728|Éloignent, détachent la bille|Quittent le sol pour un aéronef|Mettent progressivement un train en mouvement
+DECOLLAIT|DECOLLER|6728|Éloignait, détachait la bille|Quittait le sol pour un aéronef|Mettait progressivement un train en mouvement
+DECOLLAIENT|DECOLLER|6728|Éloignaient, détachaient la bille|Quittaient le sol pour un aéronef|Mettaient progressivement un train en mouvement
+DECOLLERA|DECOLLER|6728|Éloignera, détachera la bille|Quittera le sol pour un aéronef|Mettra progressivement un train en mouvement
+DECOLLA|DECOLLER|6728|Éloigna, détacha la bille|Quitta le sol pour un aéronef|Mit progressivement un train en mouvement
+DECLARE|DECLARER|6729|Fait connaître d’une façon manifeste|Fait connaître d’une façon décisive|S'explique, se manifeste ou se fait connaître
+DECLARENT|DECLARER|6729|Font connaître d’une façon manifeste|Font connaître d’une façon décisive|S'expliquent, se manifestent ou se font connaître
+DECLARAIT|DECLARER|6729|Faisait connaître d’une façon manifeste|Faisait connaître d’une façon décisive|S'expliquait, se manifestait ou se faisait connaître
+DECLARAIENT|DECLARER|6729|Faisaient connaître d’une façon manifeste|Faisaient connaître d’une façon décisive|S'expliquaient, se manifestaient ou se faisaient connaître
+DECLARERA|DECLARER|6729|Fera connaître d’une façon manifeste|Fera connaître d’une façon décisive|S'expliquera, se manifestera ou se fera connaître
+DECLARA|DECLARER|6729|Fit connaître d’une façon manifeste|Fit connaître d’une façon décisive|S'expliqua, se manifesta ou se fit connaître
+TIMINGS|TIMING|6730|Rythmes|Minutages|Emplois du temps
+EMPIRENT|EMPIRER|6734|Rendent pire, font devenir de pire qualité
+EMPIRAIT|EMPIRER|6734|Rendait pire, faisait devenir de pire qualité
+EMPIRAIENT|EMPIRER|6734|Rendaient pire, faisaient devenir de pire qualité
+EMPIRERA|EMPIRER|6734|Rendra pire, fera devenir de pire qualité
+EMPIRA|EMPIRER|6734|Rendit pire, fit devenir de pire qualité
+ATTENTATS|ATTENTAT|6736|Entreprises criminelles contre les personnes ou les choses
+RENVERSENT|RENVERSER|6739|Se mettent, se couchent sur le dos
+RENVERSAIT|RENVERSER|6739|Se mettait, se couchait sur le dos
+RENVERSAIENT|RENVERSER|6739|Se mettaient, se couchaient sur le dos
+RENVERSERA|RENVERSER|6739|Se mettra, se couchera sur le dos
+RENVERSA|RENVERSER|6739|Se mit, se coucha sur le dos
+MORTELLES|MORTELLE|6741|Femmes destinées à mourir un jour
+FLORENCES|FLORENCE|6755|Taffetas légers utilisés pour réaliser des doublures
+BETONS|BETON|6769|Les villes, les immeubles et tours
+BARAQUES|BARAQUE|6776|Constructions provisoires et légères
+TORTUES|TORTUE|6778|Reptiles à quatre pattes|Machines de guerre
+PERFORMANCES|PERFORMANCE|6782|Ensemble évalués|Capacités à remplir efficacement sa mission
+PROFESSIONS|PROFESSION|6786|Déclarations publiques d’un sentiment habituel|Déclarations de principes philosophiques
+LESSIVES|LESSIVE|6795|Actions de laver|Toutes sortes d’eau détersive|Solutions aqueuses alcalines
+SCORES|SCORE|6798|Performances réalisées dans différents domaines
+ESCORTES|ESCORTE|6800|Femmes ou hommes prostituées
+LOCATIONS|LOCATION|6801|Actions de retenir à l’avance sa place
+JUSTIFIENT|JUSTIFIER|6812|Rendent juste par l’action de la grâce
+JUSTIFIAIT|JUSTIFIER|6812|Rendait juste par l’action de la grâce
+JUSTIFIAIENT|JUSTIFIER|6812|Rendaient juste par l’action de la grâce
+JUSTIFIERA|JUSTIFIER|6812|Rendra juste par l’action de la grâce
+JUSTIFIA|JUSTIFIER|6812|Rendit juste par l’action de la grâce
+SYMPATHIQUES|SYMPATHIQUE|6816|Systèmes nerveux ganglionnaires
+LATINE|LATIN|6819|Qui s’exprime dans cette langue
+ACTIVES|ACTIVE|6826|Femmes en âge de travailler
+DISPOSITIFS|DISPOSITIF|6827|Mécanismes
+CONFUSIONS|CONFUSION|6828|Désordres d’un état|Défauts d’ordre|Actions de confondre une chose avec une autre
+JUPES|JUPE|6831|Parties de certains vêtements d’homme|Éléments de structure
+PLANCHERS|PLANCHER|6832|Horizons inférieurs|Traits inférieurs d’un cran de chute
+PLANCHENT|PLANCHER|6832|Présentent en loge un travail écrit|Travaillent dur sur un sujet
+PLANCHAIT|PLANCHER|6832|Présentait en loge un travail écrit|Travaillait dur sur un sujet
+PLANCHAIENT|PLANCHER|6832|Présentaient en loge un travail écrit|Travaillaient dur sur un sujet
+PLANCHERA|PLANCHER|6832|Présentera en loge un travail écrit|Travaillera dur sur un sujet
+PLANCHA|PLANCHER|6832|Présenta en loge un travail écrit|Travailla dur sur un sujet
+PLANCHEE|PLANCHER|6832|Présentée en loge un travail écrit
+PLANCHES|PLANCHER|6832|Présentés en loge un travail écrit
+PLANCHEES|PLANCHER|6832|Présentées en loge un travail écrit
+EPARGNENT|EPARGNER|6833|Laissent la vie sauve
+EPARGNAIT|EPARGNER|6833|Laissait la vie sauve
+EPARGNAIENT|EPARGNER|6833|Laissaient la vie sauve
+EPARGNERA|EPARGNER|6833|Laissera la vie sauve
+EPARGNA|EPARGNER|6833|Laissa la vie sauve
+SEQUENCES|SEQUENCE|6840|Suites ordonnées d’éléments
+VIOLATIONS|VIOLATION|6843|Actions de violer un engagement
+MARINAS|MARINA|6845|Ensemble résidentiels construits en bord de mer
+SOULAGEMENTS|SOULAGEMENT|6847|Diminutions de mal
+CAPES|CAPE|6851|Vêtements de dessus ample et sans manches
+GINS|GIN|6867|Boissons alcoolisées aromatisées aux baies de genévrier
+MENACENT|MENACER|6870|Se proposent intempestivement de faire|Risquent de se produire
+MENACAIT|MENACER|6870|Se proposait intempestivement de faire|Risquait de se produire
+MENACAIENT|MENACER|6870|Se proposaient intempestivement de faire|Risquaient de se produire
+MENACERA|MENACER|6870|Se proposera intempestivement de faire|Risquera de se produire
+MENACA|MENACER|6870|Se proposa intempestivement de faire|Risqua de se produire
+MENACEE|MENACER|6870|Risquée de se produire
+MENACES|MENACER|6870|Risqués de se produire
+MENACEES|MENACER|6870|Risquées de se produire
+ASSISTANCES|ASSISTANCE|6881|Présences|Aides, secours
+LESTE|LESTER|6892|Se cale, prend de la nourriture
+LESTENT|LESTER|6892|Se calent, prennent de la nourriture
+LESTAIT|LESTER|6892|Se calait, prenait de la nourriture
+LESTAIENT|LESTER|6892|Se calaient, prenaient de la nourriture
+LESTERA|LESTER|6892|Se calera, prendra de la nourriture
+LESTA|LESTER|6892|Se cala, prit de la nourriture
+POINTERS|POINTER|6904|Races de grand chien d’arrêt britannique
+POINTENT|POINTER|6904|Indiquent sur une feuille|Signalent soi-même sa présence au travail|Indiquent les personnes absentes
+POINTAIT|POINTER|6904|Indiquait sur une feuille|Signalait soi-même sa présence au travail|Indiquait les personnes absentes
+POINTAIENT|POINTER|6904|Indiquaient sur une feuille|Signalaient soi-même sa présence au travail|Indiquaient les personnes absentes
+POINTERA|POINTER|6904|Indiquera sur une feuille|Signalera soi-même sa présence au travail|Indiquera les personnes absentes
+POINTA|POINTER|6904|Indiqua sur une feuille|Signala soi-même sa présence au travail|Indiqua les personnes absentes
+POINTEE|POINTER|6904|Indiquée sur une feuille
+POINTEES|POINTER|6904|Indiquées sur une feuille
+DEPASSENT|DEPASSER|6911|Débordent
+DEPASSAIT|DEPASSER|6911|Débordait
+DEPASSAIENT|DEPASSER|6911|Débordaient
+DEPASSERA|DEPASSER|6911|Débordera
+DEPASSA|DEPASSER|6911|Déborda
+DEPASSEE|DEPASSER|6911|Débordée
+DEPASSES|DEPASSER|6911|Débordés
+DEPASSEES|DEPASSER|6911|Débordées
+RECOLTES|RECOLTE|6946|Actions de recueillir les produits de la terre
+EXPEDITIONS|EXPEDITION|6958|Tout voyages, surtout maritimes
+TROPHEES|TROPHEE|6961|Dépouilles d’un vaincu|Assemblages d’armes
+CHIMIQUES|CHIMIQUE|6963|Cannabinoïdes de synthèse
+PINCES|PINCE|6966|Barres de fer|Outils ou dispositifs
+BAIES|BAIE|6978|Grandes fenêtres, grandes ouvertures
+INVENTIONS|INVENTION|6980|Solutions nouvelles|Fugues à deux voix
+MEXICAINE|MEXICAIN|6983|Qui se rapporte au Mexique, à ses habitants
+PAIEMENTS|PAIEMENT|6986|Actions de payer
+RAPPELS|RAPPEL|6992|Actions de pardonner et de faire revenir|Réclamations pour exiger le respect des obligations|Actions de faire revenir à la mémoire de quelqu’un
+FRANGINS|FRANGIN|7005|Surnoms donnés à un frère
+CROCHETS|CROCHET|7013|Fortes courbures d’un objet de cette forme|Fourches utilisées pour la paille ou le fumier
+RUDES|RUDE|7017|Âpres au toucher|Âpres au goût
+TRAQUE|TRAQUER|7022|Fouille un bois pour en faire sortir le gibier
+TRAQUENT|TRAQUER|7022|Fouillent un bois pour en faire sortir le gibier
+TRAQUAIT|TRAQUER|7022|Fouillait un bois pour en faire sortir le gibier
+TRAQUAIENT|TRAQUER|7022|Fouillaient un bois pour en faire sortir le gibier
+TRAQUERA|TRAQUER|7022|Fouillera un bois pour en faire sortir le gibier
+TRAQUA|TRAQUER|7022|Fouilla un bois pour en faire sortir le gibier
+ADDITIONS|ADDITION|7028|Actions d’ajouter|Ajouts de dates
+GRATITUDES|GRATITUDE|7031|Reconnaissances d’un bienfait, d’un service reçu
+CARGAISONS|CARGAISON|7034|Les valeurs de ces marchandises
+PREPARATIONS|PREPARATION|7038|Actions de libérer le terrain des troupes ennemies
+PASSAGERE|PASSAGER|7041|Qui ne s’arrête pas dans un lieu
+VIAS|VIA|7060|Routes antiques
+OVERDOSES|OVERDOSE|7062|Quantités excédentaires de toute chose
+PRIVILEGES|PRIVILEGE|7066|Droits, prérogatives, avantages|Titres à la préférence
+FAUCHES|FAUCHE|7069|Coupés à la faux|Personnes sans le sou
+SEVERES|SEVERE|7071|Simples, dépouillés
+PUBLIE|PUBLIER|7077|Fait paraître
+PUBLIENT|PUBLIER|7077|Font paraître
+PUBLIAIT|PUBLIER|7077|Faisait paraître
+PUBLIAIENT|PUBLIER|7077|Faisaient paraître
+PUBLIERA|PUBLIER|7077|Fera paraître
+PUBLIA|PUBLIER|7077|Fit paraître
+ALTITUDES|ALTITUDE|7094|Hauteurs d’un lieu par rapport au niveau de la mer|Distances verticales d'un lieu à une surface de référence
+PELLES|PELLE|7095|Outils constitués d’une plaque mince
+MORPHINES|MORPHINE|7097|Composés hétérocycliques à cinq noyaux issu de certains pavots
+GRENOUILLES|GRENOUILLE|7098|Amphibiens anoures à taille mince et à peau lisse|Argents déposés dans cette tirelire
+MONTAGES|MONTAGE|7102|Actions de transporter quelque chose de bas en haut|Actions d'assembler bout à bout plusieurs plans
+OFFENSENT|OFFENSER|7104|Blessent
+OFFENSAIT|OFFENSER|7104|Blessait
+OFFENSAIENT|OFFENSER|7104|Blessaient
+OFFENSERA|OFFENSER|7104|Blessera
+OFFENSA|OFFENSER|7104|Blessa
+OFFENSEE|OFFENSER|7104|Blessée
+OFFENSES|OFFENSER|7104|Blessés
+OFFENSEES|OFFENSER|7104|Blessées
+CLAUDES|CLAUDE|7116|Stupides
+CHARBONS|CHARBON|7119|Combustibles solides|Matières noires combustibles|Produits de la combustion de substances végétales ou animales
+ARMURES|ARMURE|7127|Armatures
+ASSUMENT|ASSUMER|7147|Prennent en charge une responsabilité|Se prennent en charge|Acceptent sa condition
+ASSUMAIT|ASSUMER|7147|Prenait en charge une responsabilité|Se prenait en charge|Acceptait sa condition
+ASSUMAIENT|ASSUMER|7147|Prenaient en charge une responsabilité|Se prenaient en charge|Acceptaient sa condition
+ASSUMERA|ASSUMER|7147|Prendra en charge une responsabilité|Se prendra en charge|Acceptera sa condition
+ASSUMA|ASSUMER|7147|Prit en charge une responsabilité|Se prit en charge|Accepta sa condition
+ASSUMEE|ASSUMER|7147|Prise en charge une responsabilité
+ASSUMES|ASSUMER|7147|Pris en charge une responsabilité
+ASSUMEES|ASSUMER|7147|Prises en charge une responsabilité
+KARMAS|KARMA|7153|Environnements défavorables, négatifs
+VASTES|VASTE|7176|Grandes étendues
+VOISINAGES|VOISINAGE|7177|Proximités d’un lieu à l’égard d’un autre|Proximités d’un événement
+DELTAS|DELTA|7179|Différences, écarts, amplitudes|Discriminants|Triangles
+DISTORSIONS|DISTORSION|7190|Aberrations des miroirs ou des lentilles|Déformations d'un signal acoustique|Altérations de l’espace-temps ou d’un espace virtuel
+COSTAUDS|COSTAUD|7195|Calés, compétents|Résistants, solides|Intelligents, bien pensés
+PROXIMITES|PROXIMITE|7198|Voisinages d’une chose à l’égard d’une autre|Rapprochements dans le temps
+MOINES|MOINE|7203|Appareils destinés à chauffer les lits
+GARENT|GARER|7213|Font entrer|Se rangent sur le côté de la voie
+GARAIT|GARER|7213|Faisait entrer|Se rangeait sur le côté de la voie
+GARAIENT|GARER|7213|Faisaient entrer|Se rangeaient sur le côté de la voie
+GARERA|GARER|7213|Fera entrer|Se rangera sur le côté de la voie
+GARA|GARER|7213|Fit entrer|Se rangea sur le côté de la voie
+CHIMIES|CHIMIE|7219|Études d’une molécule ou d’un groupe de molécules
+FOURNIS|FOURNI|7220|Épais, abondants|Pourvus, munis|Délivrés, donnés, apportés
+FOURNIE|FOURNI|7220|Pourvue, munie|Délivrée, donnée, apportée
+FOURNIES|FOURNI|7220|Pourvues, munies|Délivrées, données, apportées
+PHENOMENES|PHENOMENE|7226|Faits observables, ordinaires, remarquables ou extraordinaires
+DUELS|DUEL|7231|Combats singuliers entre deux personnes
+DUELLE|DUEL|7231|Qui a deux aspects, qui exprime une dualité
+INTEGRENT|INTEGRER|7237|Assemblent des parties pour former un tout|Ajoutent une nouvelle partie à un tout pour former un tout plus complet|Entrent dans une organisation sélective voire occulte
+INTEGRAIT|INTEGRER|7237|Assemblait des parties pour former un tout|Ajoutait une nouvelle partie à un tout pour former un tout plus complet|Entrait dans une organisation sélective voire occulte
+INTEGRAIENT|INTEGRER|7237|Assemblaient des parties pour former un tout|Ajoutaient une nouvelle partie à un tout pour former un tout plus complet|Entraient dans une organisation sélective voire occulte
+INTEGRERA|INTEGRER|7237|Assemblera des parties pour former un tout|Ajoutera une nouvelle partie à un tout pour former un tout plus complet|Entrera dans une organisation sélective voire occulte
+INTEGRA|INTEGRER|7237|Assembla des parties pour former un tout|Ajouta une nouvelle partie à un tout pour former un tout plus complet|Entra dans une organisation sélective voire occulte
+INTEGREE|INTEGRER|7237|Assemblée des parties pour former un tout|Entrée dans une organisation sélective voire occulte
+INTEGRES|INTEGRER|7237|Assemblés des parties pour former un tout|Entrés dans une organisation sélective voire occulte
+INTEGREES|INTEGRER|7237|Assemblées des parties pour former un tout|Entrées dans une organisation sélective voire occulte
+FERMIERS|FERMIER|7238|Agriculteurs, cultivateurs, paysans
+CARRES|CARRE|7251|Quadrangulaires|Aspects de forte tension
+PIGEONS|PIGEON|7255|Cibles de ball-trap|Clous à quatre pointes
+PLANNINGS|PLANNING|7256|Déterminations d’une suite de tâches à accomplir|Emplois du temps
+AGENDAS|AGENDA|7258|Emplois du temps
+CYCLES|CYCLE|7266|Révolutions astronomiques|Périodes de temps de longueur variable
+COLLECTES|COLLECTE|7287|Ramassages d’objets|Recensements
+INSPECTIONS|INSPECTION|7288|Actions d’examiner avec attention
+POMPIERS|POMPIER|7301|Fellations, pipes|Artistes conventionnels
+CALCULS|CALCUL|7314|Estimations|Arithmétiques
+ACHATS|ACHAT|7315|Acquisitions faites à prix d’argent|Choses achetées
+MOUSSES|MOUSSE|7329|Polymères solidifiés sous la forme de micro-bulles
+CHAUFFENT|CHAUFFER|7331|Rendent chaud|Brûlent|Donnent de la chaleur
+CHAUFFAIT|CHAUFFER|7331|Rendait chaud|Brûlait|Donnait de la chaleur
+CHAUFFAIENT|CHAUFFER|7331|Rendaient chaud|Brûlaient|Donnaient de la chaleur
+CHAUFFERA|CHAUFFER|7331|Rendra chaud|Brûlera|Donnera de la chaleur
+CHAUFFA|CHAUFFER|7331|Rendit chaud|Brûla|Donna de la chaleur
+CHAUFFEE|CHAUFFER|7331|Brûlée|Donnée de la chaleur
+CHAUFFES|CHAUFFER|7331|Brûlés|Donnés de la chaleur
+CHAUFFEES|CHAUFFER|7331|Brûlées|Données de la chaleur
+STAGES|STAGE|7333|Périodes de travail auprès d’un employeur
+ATROCES|ATROCE|7338|Noirs, sombres
+ETOUFFE|ETOUFFER|7346|Fait mourir en arrêtant la respiration|Suffoque, empêche de respirer librement
+ETOUFFENT|ETOUFFER|7346|Font mourir en arrêtant la respiration|Suffoquent, empêchent de respirer librement
+ETOUFFAIT|ETOUFFER|7346|Faisait mourir en arrêtant la respiration|Suffoquait, empêchait de respirer librement
+ETOUFFAIENT|ETOUFFER|7346|Faisaient mourir en arrêtant la respiration|Suffoquaient, empêchaient de respirer librement
+ETOUFFERA|ETOUFFER|7346|Fera mourir en arrêtant la respiration|Suffoquera, empêchera de respirer librement
+ETOUFFA|ETOUFFER|7346|Fit mourir en arrêtant la respiration|Suffoqua, empêcha de respirer librement
+ETOUFFEE|ETOUFFER|7346|Suffoquée, empêchée de respirer librement
+ETOUFFES|ETOUFFER|7346|Suffoqués, empêchés de respirer librement
+ETOUFFEES|ETOUFFER|7346|Suffoquées, empêchées de respirer librement
+BREAKS|BREAK|7349|Voitures hippomobiles destinées au dressage des chevaux|Courtes interruptions de la rythmique
+PENETRENT|PENETRER|7352|Passent à travers|Pratiquent un coït sur
+PENETRAIT|PENETRER|7352|Passait à travers|Pratiquait un coït sur
+PENETRAIENT|PENETRER|7352|Passaient à travers|Pratiquaient un coït sur
+PENETRERA|PENETRER|7352|Passera à travers|Pratiquera un coït sur
+PENETRA|PENETRER|7352|Passa à travers|Pratiqua un coït sur
+PENETREE|PENETRER|7352|Passée à travers
+PENETRES|PENETRER|7352|Passés à travers
+PENETREES|PENETRER|7352|Passées à travers
+TRAUMAS|TRAUMA|7355|Lésions causées par une action extérieure
+TONTONS|TONTON|7357|Informateurs|Trésoriers d'une association
+GELEES|GELEE|7360|États gélatineux de parties végétales ou animales
+GRIMPES|GRIMPE|7364|Escalades
+PLUMES|PLUME|7365|Phanères cornés
+ATOUTS|ATOUT|7368|Avantages de quelqu’un ou de quelque chose
+FELICITENT|FELICITER|7369|Complimentent quelqu’un sur un succès
+FELICITAIT|FELICITER|7369|Complimentait quelqu’un sur un succès
+FELICITAIENT|FELICITER|7369|Complimentaient quelqu’un sur un succès
+FELICITERA|FELICITER|7369|Complimentera quelqu’un sur un succès
+FELICITA|FELICITER|7369|Complimenta quelqu’un sur un succès
+PERMANENCES|PERMANENCE|7378|Durées constantes de quelque chose
+PROCEDENT|PROCEDER|7382|Se comportent d’une certaine manière envers les autres
+PROCEDAIT|PROCEDER|7382|Se comportait d’une certaine manière envers les autres
+PROCEDAIENT|PROCEDER|7382|Se comportaient d’une certaine manière envers les autres
+PROCEDERA|PROCEDER|7382|Se comportera d’une certaine manière envers les autres
+PROCEDA|PROCEDER|7382|Se comporta d’une certaine manière envers les autres
+DECROCHE|DECROCHER|7385|Détache une chose qui était accrochée
+DECROCHENT|DECROCHER|7385|Détachent une chose qui était accrochée
+DECROCHAIT|DECROCHER|7385|Détachait une chose qui était accrochée
+DECROCHAIENT|DECROCHER|7385|Détachaient une chose qui était accrochée
+DECROCHERA|DECROCHER|7385|Détachera une chose qui était accrochée
+DECROCHA|DECROCHER|7385|Détacha une chose qui était accrochée
+REFLEXIONS|REFLEXION|7389|Phénomènes par lequel les rayons lumineux|Capacités d’un programme à examiner sa propre structure
+CHILIS|CHILI|7391|Plats épicés avec ce mélange
+IMPOSENT|IMPOSER|7392|Mettent dessus|Rendent obligatoire|Inspirent du respect
+IMPOSAIT|IMPOSER|7392|Mettait dessus|Rendait obligatoire|Inspirait du respect
+IMPOSAIENT|IMPOSER|7392|Mettaient dessus|Rendaient obligatoire|Inspiraient du respect
+IMPOSERA|IMPOSER|7392|Mettra dessus|Rendra obligatoire|Inspirera du respect
+IMPOSA|IMPOSER|7392|Mit dessus|Rendit obligatoire|Inspira du respect
+IMPOSEE|IMPOSER|7392|Inspirée du respect
+IMPOSES|IMPOSER|7392|Inspirés du respect
+IMPOSEES|IMPOSER|7392|Inspirées du respect
+LOGICIELS|LOGICIEL|7393|Programmes informatiques
+ADOPTIONS|ADOPTION|7394|Actions d’admettre
+MILES|MILE|7399|Unités de mesure de longueur anglo-saxonne
+RELACHENT|RELACHER|7402|Font qu’une chose soit moins tendue|Purgent légèrement|Laissent aller
+RELACHAIT|RELACHER|7402|Faisait qu’une chose soit moins tendue|Purgeait légèrement|Laissait aller
+RELACHAIENT|RELACHER|7402|Faisaient qu’une chose soit moins tendue|Purgeaient légèrement|Laissaient aller
+RELACHERA|RELACHER|7402|Fera qu’une chose soit moins tendue|Purgera légèrement|Laissera aller
+RELACHA|RELACHER|7402|Fit qu’une chose soit moins tendue|Purgea légèrement|Laissa aller
+GUISES|GUISE|7403|Manières, façons, goûts, fantaisies|Cuves destinées au moulage de la fonte pour la fabrication de l’acier
+ADAPTENT|ADAPTER|7409|Appliquent une chose à une autre|Font correspondre
+ADAPTAIT|ADAPTER|7409|Appliquait une chose à une autre|Faisait correspondre
+ADAPTAIENT|ADAPTER|7409|Appliquaient une chose à une autre|Faisaient correspondre
+ADAPTERA|ADAPTER|7409|Appliquera une chose à une autre|Fera correspondre
+ADAPTA|ADAPTER|7409|Appliqua une chose à une autre|Fit correspondre
+SAUCISSES|SAUCISSE|7411|Viandes hachées et assaisonnées|Manches à air
+BOUQUINS|BOUQUIN|7412|Vieux boucs|Lièvres ou lapins mâles
+ECHOUE|ECHOUER|7418|Donne sur le sable|Fait reposer sur le sable une embarcation
+ECHOUENT|ECHOUER|7418|Donnent sur le sable|Font reposer sur le sable une embarcation
+ECHOUAIT|ECHOUER|7418|Donnait sur le sable|Faisait reposer sur le sable une embarcation
+ECHOUAIENT|ECHOUER|7418|Donnaient sur le sable|Faisaient reposer sur le sable une embarcation
+ECHOUERA|ECHOUER|7418|Donnera sur le sable|Fera reposer sur le sable une embarcation
+ECHOUA|ECHOUER|7418|Donna sur le sable|Fit reposer sur le sable une embarcation
+ECHOUEE|ECHOUER|7418|Donnée sur le sable
+ECHOUES|ECHOUER|7418|Donnés sur le sable
+ECHOUEES|ECHOUER|7418|Données sur le sable
+SUBSTANCES|SUBSTANCE|7421|Toutes sortes de matière
+MAITRISENT|MAITRISER|7422|Se domptent soi-même
+MAITRISAIT|MAITRISER|7422|Se domptait soi-même
+MAITRISAIENT|MAITRISER|7422|Se domptaient soi-même
+MAITRISERA|MAITRISER|7422|Se domptera soi-même
+MAITRISA|MAITRISER|7422|Se dompta soi-même
+PRONONCENT|PRONONCER|7437|Récitent
+PRONONCAIT|PRONONCER|7437|Récitait
+PRONONCAIENT|PRONONCER|7437|Récitaient
+PRONONCERA|PRONONCER|7437|Récitera
+PRONONCA|PRONONCER|7437|Récita
+PRONONCEE|PRONONCER|7437|Récitée
+PRONONCES|PRONONCER|7437|Récités
+PRONONCEES|PRONONCER|7437|Récitées
+CEDENT|CEDER|7450|Laissent, abandonnent une chose à quelqu’un
+CEDAIT|CEDER|7450|Laissait, abandonnait une chose à quelqu’un
+CEDAIENT|CEDER|7450|Laissaient, abandonnaient une chose à quelqu’un
+CEDERA|CEDER|7450|Laissera, abandonnera une chose à quelqu’un
+CEDA|CEDER|7450|Laissa, abandonna une chose à quelqu’un
+RIGOLENT|RIGOLER|7451|Se moquent|Prennent du bon temps, s'amusent
+RIGOLAIT|RIGOLER|7451|Se moquait|Prenait du bon temps, s'amusait
+RIGOLAIENT|RIGOLER|7451|Se moquaient|Prenaient du bon temps, s'amusaient
+RIGOLERA|RIGOLER|7451|Se moquera|Prendra du bon temps, s'amusera
+RIGOLA|RIGOLER|7451|Se moqua|Prit du bon temps, s'amusa
+MINUSCULES|MINUSCULE|7454|Très petits
+INJECTIONS|INJECTION|7474|Dispositifs d’alimentation d’un moteur à explosion
+FANTASMES|FANTASME|7490|Visions illusoires|Constructions imaginaires
+BALEINES|BALEINE|7491|Scies à pierre tendre
+JURIDIQUES|JURIDIQUE|7494|Relatifs au droit
+FRATERNITES|FRATERNITE|7499|Idées selon laquelle tous les humains
+CONSEQUENCES|CONSEQUENCE|7503|Importances|Conclusions tirées d’une ou plusieurs propositions et
+EMBARQUENT|EMBARQUER|7507|Arrêtent quelqu’un|Laissent entrer de l’eau
+EMBARQUAIT|EMBARQUER|7507|Arrêtait quelqu’un|Laissait entrer de l’eau
+EMBARQUAIENT|EMBARQUER|7507|Arrêtaient quelqu’un|Laissaient entrer de l’eau
+EMBARQUERA|EMBARQUER|7507|Arrêtera quelqu’un|Laissera entrer de l’eau
+EMBARQUA|EMBARQUER|7507|Arrêta quelqu’un|Laissa entrer de l’eau
+CARTELS|CARTEL|7514|Plaquettes ou étiquettes
+AUTELS|AUTEL|7522|Tables ou monuments|Droits de jouir des oblations et des revenus casuels d'une église
+CINGLEES|CINGLEE|7538|Coups de fouet|Coups de vent, bourrasque
+RIMES|RIME|7549|Retours d'un ou plusieurs phonèmes à la fin de deux ou plusieurs vers
+SOULE|SOUL|7550|Ivre, avinée
+SOULES|SOUL|7550|Ivres, avinées
+LITTERATURES|LITTERATURE|7554|Domaines particuliers de production éditoriale|Bibliographies sur un sujet
+SKIS|SKI|7558|Patins très longs|Sports de glisse sur neige ou sur eau
+VOLUMES|VOLUME|7571|Intensités d’un son, puissance acoustique
+ECHOS|ECHO|7576|Rumeurs|Informations anecdotiques sur les rumeurs
+LIGHTS|LIGHT|7581|Cigarettes blondes
+OBLIGENT|OBLIGER|7593|Lient quelqu’un par un contrat
+OBLIGEAIT|OBLIGER|7593|Liait quelqu’un par un contrat
+OBLIGEAIENT|OBLIGER|7593|Liaient quelqu’un par un contrat
+OBLIGERA|OBLIGER|7593|Liera quelqu’un par un contrat
+OBLIGEA|OBLIGER|7593|Lia quelqu’un par un contrat
+COTONS|COTON|7596|Fibres textiles végétales|Duvets formés de poils longs|Races de chien au poil long et blanc
+ALTERNATIVES|ALTERNATIVE|7598|Options entre deux propositions, entre deux choses|Chacunes de ces deux propositions
+CRAYONS|CRAYON|7607|Petites barres de produit cosmétique ou pharmaceutique solide|Marnes argileuses et sablonneuses|Tubes de faible diamètre
+BACS|BAC|7611|Auges destinées à divers usages|Casiers de bières
+RECHAUFFENT|RECHAUFFER|7617|Rendent encore plus chaud ce qui est déjà chaud
+RECHAUFFAIT|RECHAUFFER|7617|Rendait encore plus chaud ce qui est déjà chaud
+RECHAUFFERA|RECHAUFFER|7617|Rendra encore plus chaud ce qui est déjà chaud
+RECHAUFFA|RECHAUFFER|7617|Rendit encore plus chaud ce qui est déjà chaud
+COMPORTES|COMPORTE|7628|Cuves en bois
+CLOTURES|CLOTURE|7631|Fermetures
+TONNES|TONNE|7640|Unités de mesure de masse anglo-saxonne|Quantités énormes|Récipients de bois à deux fonds
+INVESTIE|INVESTI|7648|Qui montre beaucoup de motivation
+SOULEVE|SOULEVER|7653|Excite
+SOULEVENT|SOULEVER|7653|Excitent
+SOULEVAIT|SOULEVER|7653|Excitait
+SOULEVAIENT|SOULEVER|7653|Excitaient
+SOULEVERA|SOULEVER|7653|Excitera
+SOULEVA|SOULEVER|7653|Excita
+SOULEVEE|SOULEVER|7653|Excitée
+SOULEVES|SOULEVER|7653|Excités
+SOULEVEES|SOULEVER|7653|Excitées
+TERRIFIANTE|TERRIFIANT|7659|Qui provoque une réaction de terreur|Qui fait extrêmement peur|Qui effraie un peu
+ENCOURAGE|ENCOURAGER|7661|Favorise le progrès|Incite quelqu’un à faire pour le mieux|Excite quelqu'un
+ENCOURAGENT|ENCOURAGER|7661|Favorisent le progrès|Incitent quelqu’un à faire pour le mieux|Excitent quelqu'un
+ENCOURAGEAIT|ENCOURAGER|7661|Favorisait le progrès|Incitait quelqu’un à faire pour le mieux|Excitait quelqu'un
+ENCOURAGERA|ENCOURAGER|7661|Favorisera le progrès|Incitera quelqu’un à faire pour le mieux|Excitera quelqu'un
+ENCOURAGEA|ENCOURAGER|7661|Favorisa le progrès|Incita quelqu’un à faire pour le mieux|Excita quelqu'un
+DEFONCENT|DEFONCER|7666|Remuent la terre jusqu’à une certaine profondeur
+DEFONCAIT|DEFONCER|7666|Remuait la terre jusqu’à une certaine profondeur
+DEFONCAIENT|DEFONCER|7666|Remuaient la terre jusqu’à une certaine profondeur
+DEFONCERA|DEFONCER|7666|Remuera la terre jusqu’à une certaine profondeur
+DEFONCA|DEFONCER|7666|Remua la terre jusqu’à une certaine profondeur
+GRENADES|GRENADE|7667|Ornements de l’uniforme des pompiers et des sapeurs
+FOURGONS|FOURGON|7670|Véhicules utilitaires
+BALLETS|BALLET|7679|Danses classiques figurées
+NOYES|NOYE|7693|Morts par noyade
+APPARITIONS|APPARITION|7696|Passages rapides
+ASSEMBLEES|ASSEMBLEE|7699|Réunions d’un certain nombre de personnes dans un même lieu
+CHANGS|CHANG|7705|Anciennes unités de mesure chinoise
+BLOQUENT|BLOQUER|7717|Ferment par un blocus les avenues d'une place
+BLOQUAIT|BLOQUER|7717|Fermait par un blocus les avenues d'une place
+BLOQUAIENT|BLOQUER|7717|Fermaient par un blocus les avenues d'une place
+BLOQUERA|BLOQUER|7717|Fermera par un blocus les avenues d'une place
+BLOQUA|BLOQUER|7717|Ferma par un blocus les avenues d'une place
+BLOQUEE|BLOQUER|7717|Fermée par un blocus les avenues d'une place
+BLOQUES|BLOQUER|7717|Fermés par un blocus les avenues d'une place
+BLOQUEES|BLOQUER|7717|Fermées par un blocus les avenues d'une place
+REPASSENT|REPASSER|7722|Traversent de nouveau
+REPASSAIT|REPASSER|7722|Traversait de nouveau
+REPASSAIENT|REPASSER|7722|Traversaient de nouveau
+REPASSERA|REPASSER|7722|Traversera de nouveau
+REPASSA|REPASSER|7722|Traversa de nouveau
+REPASSEE|REPASSER|7722|Traversée de nouveau
+REPASSES|REPASSER|7722|Traversés de nouveau
+REPASSEES|REPASSER|7722|Traversées de nouveau
+SURETES|SURETE|7724|Éloignements de tout péril|Précautions
+AVERTIE|AVERTI|7725|Qui se tient sur ses gardes
+NAZES|NAZE|7726|Fatigués
+COMPOSES|COMPOSE|7730|Formés de deux ou de plusieurs éléments mathématiques sous-jacents
+MIMIS|MIMI|7738|Baisers ou caresses
+CONVENTIONS|CONVENTION|7746|Clauses|Assemblées nationales formées pour établir une constitution
+SOULAGE|SOULAGER|7752|Délivre, débarrasse d’une partie de quelque fardeau
+SOULAGENT|SOULAGER|7752|Délivrent, débarrassent d’une partie de quelque fardeau
+SOULAGEAIT|SOULAGER|7752|Délivrait, débarrassait d’une partie de quelque fardeau
+SOULAGEAIENT|SOULAGER|7752|Délivraient, débarrassaient d’une partie de quelque fardeau
+SOULAGERA|SOULAGER|7752|Délivrera, débarrassera d’une partie de quelque fardeau
+SOULAGEA|SOULAGER|7752|Délivra, débarrassa d’une partie de quelque fardeau
+SOULAGEE|SOULAGER|7752|Délivrée, débarrassée d’une partie de quelque fardeau
+SOULAGES|SOULAGER|7752|Délivrés, débarrassés d’une partie de quelque fardeau
+SOULAGEES|SOULAGER|7752|Délivrées, débarrassées d’une partie de quelque fardeau
+DISTRAITE|DISTRAIT|7759|Qui n’a pas d’attention à ce qu’il dit ou à ce qu’il fait
+DECHIRENT|DECHIRER|7762|Blessent
+DECHIRAIT|DECHIRER|7762|Blessait
+DECHIRAIENT|DECHIRER|7762|Blessaient
+DECHIRERA|DECHIRER|7762|Blessera
+DECHIRA|DECHIRER|7762|Blessa
+DECHIREE|DECHIRER|7762|Blessée
+DECHIRES|DECHIRER|7762|Blessés
+DECHIREES|DECHIRER|7762|Blessées
+VASES|VASE|7764|Récipients pour contenir un fluide ou une substance granuleuse
+TORCHES|TORCHE|7765|Batines
+ROULANTE|ROULANT|7775|Qui roule|Qui se prête bien à la circulation automobile
+OUTILS|OUTIL|7778|Instruments pour réaliser une action
+COUPURES|COUPURE|7789|Fragments|Fragments détachés d’un journal pour le conserver ou pour le reproduire
+CRAQUES|CRAQUE|7792|Fendillés
+HOURRAS|HOURRA|7796|Cris d’acclamation|Acclamations pour accueillir un souverain|Acclamations poussées en l’honneur de quelqu’un
+PICS|PIC|7801|Piverts|Sommets pointus d’un massif montagneux
+HALEINES|HALEINE|7802|Souffles de la respiration|Facultés de respirer
+CATEGORIES|CATEGORIE|7806|Groupes de sportifs de valeur semblable
+RUBANS|RUBAN|7813|Décorations militaires
+BUFFETS|BUFFET|7815|Meubles massifs composés de tiroirs
+BOUGIES|BOUGIE|7826|Chandelles de cire
+DEPRIMES|DEPRIME|7834|Aplatis selon l’axe dorso-ventral
+COUDES|COUDE|7843|Angles faits par quelque chose de long
+DEFINITIONS|DEFINITION|7853|Nombres de pixels d’une image matricielle
+DYNAMITES|DYNAMITE|7860|Substances explosives
+ALLEMANDES|ALLEMANDE|7864|Répétitions des déplacements et actions de jeu
+REPROCHE|REPROCHER|7865|Cause des renvois gastriques
+REPROCHENT|REPROCHER|7865|Causent des renvois gastriques
+REPROCHAIT|REPROCHER|7865|Causait des renvois gastriques
+REPROCHAIENT|REPROCHER|7865|Causaient des renvois gastriques
+REPROCHERA|REPROCHER|7865|Causera des renvois gastriques
+REPROCHA|REPROCHER|7865|Causa des renvois gastriques
+REPROCHEE|REPROCHER|7865|Causée des renvois gastriques
+REPROCHES|REPROCHER|7865|Causés des renvois gastriques
+REPROCHEES|REPROCHER|7865|Causées des renvois gastriques
+ASPIRINES|ASPIRINE|7874|Des doses de ce médicament
+RICHESSES|RICHESSE|7889|Opulences|Abondances des productions naturelles|Abondances d’une langue en expressions et en tours
+EGARDS|EGARD|7890|Actions de prendre quelque chose en considération
+BILANS|BILAN|7893|Récapitulatifs
+ARCHITECTES|ARCHITECTE|7896|Constructeurs, bâtisseurs
+MATENT|MATER|7900|Rendent mat, diminuent l'éclat
+MATAIT|MATER|7900|Rendait mat, diminuait l'éclat
+MATAIENT|MATER|7900|Rendaient mat, diminuaient l'éclat
+MATERA|MATER|7900|Rendra mat, diminuera l'éclat
+FOUETS|FOUET|7912|Cordelettes de chanvre ou de cuir|Bouts de l’aile d’un oiseau|Queues du chien
+ARTERES|ARTERE|7914|Tubes musculaires
+APOCALYPSES|APOCALYPSE|7919|Fins du monde|Catastrophes générales comparables à la fin du monde
+CHAPELLES|CHAPELLE|7922|Petits édifices religieux
+JANS|JAN|7923|Chacunes des deux tables du jeu de trictrac
+VERSES|VERSE|7924|Nombreux, tous icis
+MERLINS|MERLIN|7927|Fils à faire le cordage aussière
+ARBITRES|ARBITRE|7930|Personnes choisies pour terminer un différend|Maitres absolus
+LECHENT|LECHER|7931|Passent la langue sur quelque chose
+LECHAIT|LECHER|7931|Passait la langue sur quelque chose
+LECHAIENT|LECHER|7931|Passaient la langue sur quelque chose
+LECHERA|LECHER|7931|Passera la langue sur quelque chose
+LECHA|LECHER|7931|Passa la langue sur quelque chose
+RELACHES|RELACHE|7938|Interruptions d'un travail, d'une étude, d'un exercice
+CERTITUDES|CERTITUDE|7940|Stabilités, pérennités
+BECS|BEC|7941|Parties saillantes|Parties pointues d’un outil
+HAMBURGERS|HAMBURGER|7946|Sandwichs composés de deux pains ronds
+GAIS|GAI|7953|Enjoués, joyeux|Allegros
+GAIE|GAI|7953|Enjouée, joyeuse|Qui a ingéré une substance enivrante|Allegroe
+GAIES|GAI|7953|Enjouées, joyeuses|Allegroes
+NOTENT|NOTER|7959|Marquent sur un carnet
+NOTAIT|NOTER|7959|Marquait sur un carnet
+NOTAIENT|NOTER|7959|Marquaient sur un carnet
+NOTERA|NOTER|7959|Marquera sur un carnet
+NOTA|NOTER|7959|Marqua sur un carnet
+NOTEE|NOTER|7959|Marquée sur un carnet
+NOTEES|NOTER|7959|Marquées sur un carnet
+MOUCHOIRS|MOUCHOIR|7963|Grands bordages placés à la fesse du navire
+MODIFIE|MODIFIER|7966|Change une chose dans quelqu’une de ses parties
+MODIFIENT|MODIFIER|7966|Changent une chose dans quelqu’une de ses parties
+MODIFIAIT|MODIFIER|7966|Changeait une chose dans quelqu’une de ses parties
+MODIFIAIENT|MODIFIER|7966|Changeaient une chose dans quelqu’une de ses parties
+MODIFIERA|MODIFIER|7966|Changera une chose dans quelqu’une de ses parties
+MODIFIA|MODIFIER|7966|Changea une chose dans quelqu’une de ses parties
+GRANDEURS|GRANDEUR|7970|Importances
+ACCOUCHE|ACCOUCHER|7977|Met au monde un enfant
+ACCOUCHENT|ACCOUCHER|7977|Mettent au monde un enfant
+ACCOUCHAIT|ACCOUCHER|7977|Mettait au monde un enfant
+ACCOUCHAIENT|ACCOUCHER|7977|Mettaient au monde un enfant
+ACCOUCHERA|ACCOUCHER|7977|Mettra au monde un enfant
+ACCOUCHA|ACCOUCHER|7977|Mit au monde un enfant
+ACCOUCHEE|ACCOUCHER|7977|Mise au monde un enfant
+ACCOUCHES|ACCOUCHER|7977|Mis au monde un enfant
+ACCOUCHEES|ACCOUCHER|7977|Mises au monde un enfant
+METRES|METRE|7979|Pieds déterminés
+ECLATS|ECLAT|7980|Mesures violentes, partis extrêmes|Lueurs brillantes
+FALAISES|FALAISE|7982|Masses de terres et de rochers en escarpement au bord de la mer
+CROISENT|CROISER|7986|Disposent en forme de croix|Disposent l’un sur l’autre|Disposent un vêtement de manière que les côtés passent l’un sur l’autre
+CROISAIT|CROISER|7986|Disposait en forme de croix|Disposait l’un sur l’autre|Disposait un vêtement de manière que les côtés passent l’un sur l’autre
+CROISAIENT|CROISER|7986|Disposaient en forme de croix|Disposaient l’un sur l’autre|Disposaient un vêtement de manière que les côtés passent l’un sur l’autre
+CROISERA|CROISER|7986|Disposera en forme de croix|Disposera l’un sur l’autre|Disposera un vêtement de manière que les côtés passent l’un sur l’autre
+CROISA|CROISER|7986|Disposa en forme de croix|Disposa l’un sur l’autre|Disposa un vêtement de manière que les côtés passent l’un sur l’autre
+CROISES|CROISER|7986|Disposés en forme de croix
+CROISEES|CROISER|7986|Disposées en forme de croix
+RETRAITS|RETRAIT|7997|Actions de retirer|Actions de retirer un produit de la vente|Actions en justice
+CLOUS|CLOU|8004|Punitions de la salle de police
+INITIATIVES|INITIATIVE|8015|Actions de proposer ou faire le premier quelque chose|Droits de faire le premier certaines propositions
+ARGUMENTS|ARGUMENT|8016|Raisonnements construits selon certaines règles
+SIROPS|SIROP|8019|Solutions de sucre dans l'eau|Liquides formés d’une dissolution de sucre
+CONSEQUENTE|CONSEQUENT|8026|Qui raisonne|Qui qualifie une démarche logique avec soi-même, cohérent
+RUELLES|RUELLE|8029|Petites rues étroites
+ECARTE|ECARTER|8045|Sépare|Détourne
+ECARTENT|ECARTER|8045|Séparent|Détournent
+ECARTAIT|ECARTER|8045|Séparait|Détournait
+ECARTAIENT|ECARTER|8045|Séparaient|Détournaient
+ECARTERA|ECARTER|8045|Séparera|Détournera
+ECARTA|ECARTER|8045|Sépara|Détourna
+ECARTEE|ECARTER|8045|Séparée|Détournée
+ECARTES|ECARTER|8045|Séparés|Détournés
+ECARTEES|ECARTER|8045|Séparées|Détournées
+ACCELERE|ACCELERER|8046|Rend plus rapide|Relance
+ACCELERENT|ACCELERER|8046|Rendent plus rapide|Relancent
+ACCELERAIT|ACCELERER|8046|Rendait plus rapide|Relançait
+ACCELERAIENT|ACCELERER|8046|Rendaient plus rapide|Relançaient
+ACCELERERA|ACCELERER|8046|Rendra plus rapide|Relancera
+ACCELERA|ACCELERER|8046|Rendit plus rapide|Relança
+ACCELEREE|ACCELERER|8046|Relancée
+ACCELERES|ACCELERER|8046|Relancés
+ACCELEREES|ACCELERER|8046|Relancées
+NUQUES|NUQUE|8049|Parties dorsales du cou|Parties de la chevelure à l’arrière du cou|Parties arrières de la tourelle d’un char
+DOUBLENT|DOUBLER|8050|Appliquent une étoffe contre l’envers d’une autre|Passent devant
+DOUBLAIT|DOUBLER|8050|Appliquait une étoffe contre l’envers d’une autre|Passait devant
+DOUBLAIENT|DOUBLER|8050|Appliquaient une étoffe contre l’envers d’une autre|Passaient devant
+DOUBLERA|DOUBLER|8050|Appliquera une étoffe contre l’envers d’une autre|Passera devant
+DOUBLA|DOUBLER|8050|Appliqua une étoffe contre l’envers d’une autre|Passa devant
+RECENTE|RECENT|8052|Qui existe depuis peu
+AERIENNE|AERIEN|8059|Qui évoque la légèreté
+VALETS|VALET|8070|Jeunes écuyers au service d’un seigneur|Désignes certains outils
+PAYSAGES|PAYSAGE|8071|Étendues de territoire couverte par le regard|Formats normalisés de châssis et de toiles|Descriptions d’un aspect de nature
+GACHETTES|GACHETTE|8078|Petites pièces à encoches d’une serrure|Tueurs à gages
+CURES|CURE|8080|Soins, soucis|Traitements des maladies, des affections graves ou chroniques
+FOSSES|FOSSE|8085|Cavités dans le sol, le plus souvent artificielle|Creux faits à même la terre par la nature ou par la main de l’homme
+LINS|LIN|8088|Tissus faits de cette fibre
+RANCUNES|RANCUNE|8089|Ressentiments tenaces
+AUTOGRAPHES|AUTOGRAPHE|8095|Écrits de la main même d’un auteur|Signatures données à un admirateur à usage de relique
+SUPPLIE|SUPPLIER|8102|Implore
+SUPPLIENT|SUPPLIER|8102|Implorent
+SUPPLIAIT|SUPPLIER|8102|Implorait
+SUPPLIAIENT|SUPPLIER|8102|Imploraient
+SUPPLIERA|SUPPLIER|8102|Implorera
+SUPPLIA|SUPPLIER|8102|Implora
+SUPPLIEE|SUPPLIER|8102|Implorée
+SUPPLIES|SUPPLIER|8102|Implorés
+SUPPLIEES|SUPPLIER|8102|Implorées
+CORRIGENT|CORRIGER|8120|Indiquent par des marques les corrections à faire sur une épreuve
+CORRIGEAIT|CORRIGER|8120|Indiquait par des marques les corrections à faire sur une épreuve
+CORRIGEAIENT|CORRIGER|8120|Indiquaient par des marques les corrections à faire sur une épreuve
+CORRIGERA|CORRIGER|8120|Indiquera par des marques les corrections à faire sur une épreuve
+CORRIGEA|CORRIGER|8120|Indiqua par des marques les corrections à faire sur une épreuve
+CORRIGEE|CORRIGER|8120|Indiquée par des marques les corrections à faire sur une épreuve
+CORRIGES|CORRIGER|8120|Indiqués par des marques les corrections à faire sur une épreuve
+CORRIGEES|CORRIGER|8120|Indiquées par des marques les corrections à faire sur une épreuve
+SOUFFLENT|SOUFFLER|8123|Poussent de l’air hors de la bouche|Font une pause pour reprendre haleine|Poussent, agitent l’air
+SOUFFLAIT|SOUFFLER|8123|Poussait de l’air hors de la bouche|Faisait une pause pour reprendre haleine|Poussait, agitait l’air
+SOUFFLAIENT|SOUFFLER|8123|Poussaient de l’air hors de la bouche|Faisaient une pause pour reprendre haleine|Poussaient, agitaient l’air
+SOUFFLERA|SOUFFLER|8123|Poussera de l’air hors de la bouche|Fera une pause pour reprendre haleine|Poussera, agitera l’air
+SOUFFLA|SOUFFLER|8123|Poussa de l’air hors de la bouche|Fit une pause pour reprendre haleine|Poussa, agita l’air
+SOUFFLEE|SOUFFLER|8123|Poussée de l’air hors de la bouche
+SOUFFLEES|SOUFFLER|8123|Poussées de l’air hors de la bouche
+CASERNES|CASERNE|8133|Bâtiments destinés au logement des troupes|Services militaires
+REPORTAGES|REPORTAGE|8136|Diffusions de ces nouvelles dans un média
+ENFONCENT|ENFONCER|8157|Mettent au fond
+ENFONCAIT|ENFONCER|8157|Mettait au fond
+ENFONCAIENT|ENFONCER|8157|Mettaient au fond
+ENFONCERA|ENFONCER|8157|Mettra au fond
+ENFONCA|ENFONCER|8157|Mit au fond
+ENFONCEE|ENFONCER|8157|Mise au fond
+ENFONCES|ENFONCER|8157|Mis au fond
+ENFONCEES|ENFONCER|8157|Mises au fond
+YACHTS|YACHT|8165|Bâtiments de plaisance, à voiles ou à moteur
+CONVOIS|CONVOI|8182|Transports de munitions, de vivres, etc
+PELOUSES|PELOUSE|8183|Végétations de très faible hauteur|Terrains couverts de gazon|Terrains de sport couvert de gazon
+CONTENTENT|CONTENTER|8198|Apaisent quelqu’un en lui donnant
+CONTENTAIT|CONTENTER|8198|Apaisait quelqu’un en lui donnant
+CONTENTAIENT|CONTENTER|8198|Apaisaient quelqu’un en lui donnant
+CONTENTERA|CONTENTER|8198|Apaisera quelqu’un en lui donnant
+CONTENTA|CONTENTER|8198|Apaisa quelqu’un en lui donnant
+FICTIONS|FICTION|8204|Inventions fabuleuses
+SPIRITUELLE|SPIRITUEL|8207|Qui regarde la religion, l’Église, par opposition à temporel
+IDOLES|IDOLE|8219|Ampullaires, coquilles univalves
+DOYENS|DOYEN|8235|Les plus anciens en âge
+MESURENT|MESURER|8242|Cherchent à connaître
+MESURAIT|MESURER|8242|Cherchait à connaître
+MESURAIENT|MESURER|8242|Cherchaient à connaître
+MESURERA|MESURER|8242|Cherchera à connaître
+MESURA|MESURER|8242|Chercha à connaître
+MESUREE|MESURER|8242|Cherchée à connaître
+MESUREES|MESURER|8242|Cherchées à connaître
+PATES|PATE|8256|Substances ou mélanges
+MAJEURS|MAJEUR|8267|Très grands|Intervalles, hors quartes
+MAJEURES|MAJEUR|8267|Très grandes
+SOUTENUE|SOUTENU|8268|Qui se maintient à un niveau élevé
+PSYCHOLOGIES|PSYCHOLOGIE|8274|Séries d’états d’âme
+SECOUE|SECOUER|8278|Se remue fortement pour faire tomber quelque chose qui incommode
+SECOUENT|SECOUER|8278|Se remuent fortement pour faire tomber quelque chose qui incommode
+SECOUAIT|SECOUER|8278|Se remuait fortement pour faire tomber quelque chose qui incommode
+SECOUAIENT|SECOUER|8278|Se remuaient fortement pour faire tomber quelque chose qui incommode
+SECOUERA|SECOUER|8278|Se remuera fortement pour faire tomber quelque chose qui incommode
+SECOUA|SECOUER|8278|Se remua fortement pour faire tomber quelque chose qui incommode
+PANIQUENT|PANIQUER|8287|Prennent peur, s'affolent
+PANIQUAIT|PANIQUER|8287|Prenait peur, s'affolait
+PANIQUAIENT|PANIQUER|8287|Prenaient peur, s'affolaient
+PANIQUERA|PANIQUER|8287|Prendra peur, s'affolera
+PANIQUA|PANIQUER|8287|Prit peur, s'affola
+MILLIARDS|MILLIARD|8290|Grands nombres
+SEMESTRES|SEMESTRE|8296|Espaces de six mois consécutifs|Rentes, traitements
+RACINES|RACINE|8303|Parties des ongles
+JURENT|JURER|8304|Affirment par serment|Assurent ou certifient une chose
+JURAIT|JURER|8304|Affirmait par serment|Assurait ou certifiait une chose
+JURAIENT|JURER|8304|Affirmaient par serment|Assuraient ou certifiaient une chose
+JURERA|JURER|8304|Affirmera par serment|Assurera ou certifiera une chose
+JURES|JURER|8304|Affirmés par serment
+JUREES|JURER|8304|Affirmées par serment
+BUNKERS|BUNKER|8314|Fosses de sable artificielle pour retarder un joueur du golf
+CAPSULES|CAPSULE|8315|Fruits secs déhiscents|Parties en forme de sac ou de poche
+EPONGES|EPONGE|8316|Objets spongieux destinés au nettoyage|Extrémités arrondies de chaque branche d’un fer à cheval
+NOMMENT|NOMMER|8322|Attribuent, imposent un nom à une personne
+NOMMAIT|NOMMER|8322|Attribuait, imposait un nom à une personne
+NOMMAIENT|NOMMER|8322|Attribuaient, imposaient un nom à une personne
+NOMMERA|NOMMER|8322|Attribuera, imposera un nom à une personne
+NOMMA|NOMMER|8322|Attribua, imposa un nom à une personne
+LAVAGES|LAVAGE|8324|Actions de laver|Actions de nettoyer|Nettoyages d’un organe au moyen d’irrigations
+PERCENT|PERCER|8329|Font plusieurs blessures avec une arme blanche
+PERCAIT|PERCER|8329|Faisait plusieurs blessures avec une arme blanche
+PERCAIENT|PERCER|8329|Faisaient plusieurs blessures avec une arme blanche
+PERCERA|PERCER|8329|Fera plusieurs blessures avec une arme blanche
+PERCA|PERCER|8329|Fit plusieurs blessures avec une arme blanche
+POSTENT|POSTER|8330|Placent
+POSTAIT|POSTER|8330|Plaçait
+POSTAIENT|POSTER|8330|Plaçaient
+POSTERA|POSTER|8330|Placera
+POSTA|POSTER|8330|Plaça
+POSTEE|POSTER|8330|Placée
+POSTES|POSTER|8330|Placés
+POSTEES|POSTER|8330|Placées
+ROBINSONS|ROBINSON|8331|Larges parapluies
+MALIKS|MALIK|8332|Régents, dirigeants
+IRONIQUES|IRONIQUE|8335|Contraires, opposés
+AVATARS|AVATAR|8336|Mésaventures, malheurs
+TOURNANTS|TOURNANT|8337|Faits de modifier sa trajectoire lors d’un déplacement|Tirages de la quatrième carte du tableau
+SECHENT|SECHER|8343|Rendent sec|Mettent à sec
+SECHAIT|SECHER|8343|Rendait sec|Mettait à sec
+SECHAIENT|SECHER|8343|Rendaient sec|Mettaient à sec
+SECHERA|SECHER|8343|Rendra sec|Mettra à sec
+SECHA|SECHER|8343|Rendit sec|Mit à sec
+SECHEE|SECHER|8343|Mise à sec
+SECHES|SECHER|8343|Mis à sec
+SECHEES|SECHER|8343|Mises à sec
+THONS|THON|8347|Chairs de ce poisson
+DEBARQUES|DEBARQUE|8367|Impromptus
+ANOMALIES|ANOMALIE|8398|Irrégularités des mouvements planétaires
+FIDELITES|FIDELITE|8415|Attachements à ses devoirs|Exactitudes, vérités ou sincérités
+TRIOMPHES|TRIOMPHE|8432|Victoires, grands succès militaires
+CONCURRENCES|CONCURRENCE|8437|Égalités de droit
+TRAITS|TRAIT|8438|Actions de tirer à l’arc
+HORAIRES|HORAIRE|8443|Relatifs aux heures
+DEPITS|DEPIT|8444|Irritations causées par un froissement d’amour-propre
+SPAS|SPA|8449|Stations thermales|Bains à remous
+COQUES|COQUE|8450|Enveloppes extérieures de l’œuf|Enveloppes protectrices|Enveloppes des bordages
+INDIQUENT|INDIQUER|8456|Font connaître|Déterminent, assignent
+INDIQUAIT|INDIQUER|8456|Faisait connaître|Déterminait, assignait
+INDIQUAIENT|INDIQUER|8456|Faisaient connaître|Déterminaient, assignaient
+INDIQUERA|INDIQUER|8456|Fera connaître|Déterminera, assignera
+INDIQUA|INDIQUER|8456|Fit connaître|Détermina, assigna
+INDIQUEE|INDIQUER|8456|Déterminée, assignée
+INDIQUES|INDIQUER|8456|Déterminés, assignés
+INDIQUEES|INDIQUER|8456|Déterminées, assignées
+NINJAS|NINJA|8462|Espions japonais|Menaces destinées à pousser les joueurs et joueuses à l’action
+FORTERESSES|FORTERESSE|8463|Prisons militaires
+PRECISIONS|PRECISION|8465|Justesses|Mesures de l’aptitude à distinguer des valeurs très voisines
+BENEFICES|BENEFICE|8471|Gains ou profits
+CONCEPTIONS|CONCEPTION|8472|Manières de voir les choses
+LARGUENT|LARGUER|8479|Lâchent une manœuvre|Laissent sans précaution
+LARGUAIT|LARGUER|8479|Lâchait une manœuvre|Laissait sans précaution
+LARGUAIENT|LARGUER|8479|Lâchaient une manœuvre|Laissaient sans précaution
+LARGUERA|LARGUER|8479|Lâchera une manœuvre|Laissera sans précaution
+LARGUA|LARGUER|8479|Lâcha une manœuvre|Laissa sans précaution
+LARGUEE|LARGUER|8479|Laissée sans précaution
+LARGUES|LARGUER|8479|Laissés sans précaution
+LARGUEES|LARGUER|8479|Laissées sans précaution
+POTIONS|POTION|8480|Remèdes liquides
+HILARANTE|HILARANT|8489|Qui fait rire
+ENTRANTE|ENTRANT|8499|Qui entre|Qui entre dans une charge, dans une fonction élective
+EMBALLE|EMBALLER|8500|Accepte la proposition de couleur d'un autre joueur
+EMBALLENT|EMBALLER|8500|Acceptent la proposition de couleur d'un autre joueur
+EMBALLAIT|EMBALLER|8500|Acceptait la proposition de couleur d'un autre joueur
+EMBALLAIENT|EMBALLER|8500|Acceptaient la proposition de couleur d'un autre joueur
+EMBALLERA|EMBALLER|8500|Acceptera la proposition de couleur d'un autre joueur
+EMBALLA|EMBALLER|8500|Accepta la proposition de couleur d'un autre joueur
+INFINIE|INFINI|8512|Qui n’a ni commencement ni fin|Qui ne doit pas avoir de fin|Dont on ne peut assigner les bornes, le terme, etc
+BOUCHEES|BOUCHEE|8514|Petits fours sucrés|Confiseries au chocolat
+CONDAMNENT|CONDAMNER|8515|Déclarent quelqu’un|Obligent
+CONDAMNAIT|CONDAMNER|8515|Déclarait quelqu’un|Obligeait
+CONDAMNAIENT|CONDAMNER|8515|Déclaraient quelqu’un|Obligeaient
+CONDAMNERA|CONDAMNER|8515|Déclarera quelqu’un|Obligera
+CONDAMNA|CONDAMNER|8515|Déclara quelqu’un|Obligea
+CONDAMNEES|CONDAMNER|8515|Obligées
+COUVENTS|COUVENT|8525|Maisons dans laquelle des religieux ou des religieuses vivent en commun
+RESERVATIONS|RESERVATION|8526|Droits en vertu duquel le pape
+DIFFUSIONS|DIFFUSION|8529|Actions de répandre dans tous les sens|Distributions
+EXAGERES|EXAGERE|8536|Extrémistes politiques
+NOEUDS|NOEUD|8537|Articulations|Vertèbres de la queue du cheval, du chien, du chat etc
+HUMILIENT|HUMILIER|8547|Font apparaître quelque chose comme inférieure
+HUMILIAIT|HUMILIER|8547|Faisait apparaître quelque chose comme inférieure
+HUMILIAIENT|HUMILIER|8547|Faisaient apparaître quelque chose comme inférieure
+HUMILIERA|HUMILIER|8547|Fera apparaître quelque chose comme inférieure
+HUMILIA|HUMILIER|8547|Fit apparaître quelque chose comme inférieure
+PERILS|PERIL|8561|Dangers, risques
+GEANTES|GEANTE|8569|Étoiles de grande taille et souvent massive|Planètes massives avec une atmosphère épaisse
+SUGGERE|SUGGERER|8570|Insinue ou fait entrer dans l’esprit de quelqu’un|Laisse entendre
+SUGGERENT|SUGGERER|8570|Insinuent ou font entrer dans l’esprit de quelqu’un|Laissent entendre
+SUGGERAIT|SUGGERER|8570|Insinuait ou faisait entrer dans l’esprit de quelqu’un|Laissait entendre
+SUGGERAIENT|SUGGERER|8570|Insinuaient ou faisaient entrer dans l’esprit de quelqu’un|Laissaient entendre
+SUGGERERA|SUGGERER|8570|Insinuera ou fera entrer dans l’esprit de quelqu’un|Laissera entendre
+SUGGERA|SUGGERER|8570|Insinua ou fit entrer dans l’esprit de quelqu’un|Laissa entendre
+BISCUITS|BISCUIT|8573|Pains en forme de galette
+HEURTES|HEURTE|8574|Races de pigeon
+CANYONS|CANYON|8582|Gorges très étroites et profondéments encaissées
+IMMEDIATE|IMMEDIAT|8599|Qui suit ou précède sans intervalle
+TREVES|TREVE|8604|Suspensions de l’usage des armes|Toutes suspensions d’hostilités entre adversaires
+VISAS|VISA|8606|Cachets apposés sur un passeport
+TETUS|TETU|8608|Opiniâtres, obstinés|Personnages obstinés
+TETUES|TETU|8608|Opiniâtres, obstinées
+GRILLENT|GRILLER|8609|Chauffent des minerais métalliques au contact de l’air
+GRILLAIT|GRILLER|8609|Chauffait des minerais métalliques au contact de l’air
+GRILLAIENT|GRILLER|8609|Chauffaient des minerais métalliques au contact de l’air
+GRILLERA|GRILLER|8609|Chauffera des minerais métalliques au contact de l’air
+GRILLA|GRILLER|8609|Chauffa des minerais métalliques au contact de l’air
+GRILLEE|GRILLER|8609|Chauffée des minerais métalliques au contact de l’air
+GRILLES|GRILLER|8609|Chauffés des minerais métalliques au contact de l’air
+GRILLEES|GRILLER|8609|Chauffées des minerais métalliques au contact de l’air
+APPLICATIONS|APPLICATION|8625|Extensions d’un usage
+DECEPTIONS|DECEPTION|8629|Faits d’être déçu ou de subir une situation inférieure à ses attentes
+SEMINAIRES|SEMINAIRE|8631|Réunions de professionnels en vue de l’étude d’un sujet particulier
+NOURRIE|NOURRI|8640|Où abondent
+MEUTES|MEUTE|8644|Groupes de louveteaux
+COQS|COQ|8652|Mâles de la poule|Mâles de la perdrix et de quelques autres oiseaux
+MINOUS|MINOU|8655|Chéries, chéris|Duvets de laine
+MULES|MULE|8668|Engins de halage
+TERRASSES|TERRASSE|8671|Levées de terre artificielle en plate-forme
+CAVALERIES|CAVALERIE|8674|Spéculations financières
+PREFETS|PREFET|8676|Commandants de la garde prétorienne|Prêtres chargés de la discipline dans certains collèges religieux
+VERSENT|VERSER|8679|Font couler|Font coucher au sol|Apportent à une caisse
+VERSAIT|VERSER|8679|Faisait couler|Faisait coucher au sol|Apportait à une caisse
+VERSAIENT|VERSER|8679|Faisaient couler|Faisaient coucher au sol|Apportaient à une caisse
+VERSERA|VERSER|8679|Fera couler|Fera coucher au sol|Apportera à une caisse
+VERSA|VERSER|8679|Fit couler|Fit coucher au sol|Apporta à une caisse
+VERSEE|VERSER|8679|Apportée à une caisse
+VERSEES|VERSER|8679|Apportées à une caisse
+SECTES|SECTE|8683|Groupes dissidents minoritaires
+INSECTES|INSECTE|8689|Imagos de cet animal
+EXTRAITS|EXTRAIT|8691|Parfums concentrés|Abrégés, sommaires, analyses
+SENTENCES|SENTENCE|8695|Apophtegmes, maximes|Jugements rendus par des juges
+RELIGIEUSES|RELIGIEUSE|8697|Pratiquantes
+SUPPOSENT|SUPPOSER|8700|Forment une conjecture|Forment le préalable à une chose qui demande
+SUPPOSAIT|SUPPOSER|8700|Formait une conjecture|Formait le préalable à une chose qui demande
+SUPPOSAIENT|SUPPOSER|8700|Formaient une conjecture|Formaient le préalable à une chose qui demande
+SUPPOSERA|SUPPOSER|8700|Formera une conjecture|Formera le préalable à une chose qui demande
+SUPPOSA|SUPPOSER|8700|Forma une conjecture|Forma le préalable à une chose qui demande
+SHANNONS|SHANNON|8716|Unités de mesure de l’information
+BOURBONS|BOURBON|8718|Whiskeys américains produits à partir de maïs
+APPLIQUENT|APPLIQUER|8728|Mettent une chose sur une autre|Font usage d’une loi
+APPLIQUAIT|APPLIQUER|8728|Mettait une chose sur une autre|Faisait usage d’une loi
+APPLIQUAIENT|APPLIQUER|8728|Mettaient une chose sur une autre|Faisaient usage d’une loi
+APPLIQUERA|APPLIQUER|8728|Mettra une chose sur une autre|Fera usage d’une loi
+APPLIQUA|APPLIQUER|8728|Mit une chose sur une autre|Fit usage d’une loi
+CHATONS|CHATON|8732|Chéris, chéries|Saules décolorés
+BANDITS|BANDIT|8736|Malfaiteurs vagabonds et armés|Personnes sans aveu
+TREMPES|TREMPE|8750|Fortements mouillés
+PROPHETIES|PROPHETIE|8757|Prédictions des choses futures par inspiration divine
+UTILITES|UTILITE|8759|Aptitudes d’une chose
+TREMBLEMENTS|TREMBLEMENT|8760|Trilles
+EXCITATIONS|EXCITATION|8773|Productions d’un flux d’induction dans un circuit magnétique
+DECOLLAGES|DECOLLAGE|8775|Mises en mouvement progressive d’un train
+FROCS|FROC|8788|Ces habits dans son ensemble
+CHALETS|CHALET|8796|Cabanes sur l’alpage|Maisons de campagne, maison de plaisance de style rustique|Lampes suspendues au plafond
+CONFESSE|CONFESSER|8808|Déclare ses péchés au tribunal de la pénitence
+CONFESSENT|CONFESSER|8808|Déclarent ses péchés au tribunal de la pénitence
+CONFESSAIT|CONFESSER|8808|Déclarait ses péchés au tribunal de la pénitence
+CONFESSAIENT|CONFESSER|8808|Déclaraient ses péchés au tribunal de la pénitence
+CONFESSERA|CONFESSER|8808|Déclarera ses péchés au tribunal de la pénitence
+CONFESSA|CONFESSER|8808|Déclara ses péchés au tribunal de la pénitence
+MOTIVATIONS|MOTIVATION|8818|Désirs ou volontés spontanés
+TENTANTE|TENTANT|8820|Qui tente, qui cause une envie, un désir
+ROTIS|ROTI|8833|Viandes grillées
+ILLEGALES|ILLEGALE|8870|Espionnes
+CIRES|CIRE|8878|Esters d'éthylène glycol et d’acides gras|Matières molles|Produits ménagers
+GAMMES|GAMME|8882|Successions de nuances|Ensemble souvent ordonnés d’éléments
+ECHARPES|ECHARPE|8887|Larges bandes d’étoffe|Petites moulures du chapiteau dorique
+LIENT|LIER|8888|Font un nœud
+LIAIT|LIER|8888|Faisait un nœud
+LIAIENT|LIER|8888|Faisaient un nœud
+LIERA|LIER|8888|Fera un nœud
+LIA|LIER|8888|Fit un nœud
+BRUNES|BRUNE|8890|Bières à forte fermentation|Races laitières de grand taurin
+LIBRAIRIES|LIBRAIRIE|8894|Bibliothèques
+ENDURE|ENDURER|8919|Relâche son effort sur les avirons
+ENDURENT|ENDURER|8919|Relâchent son effort sur les avirons
+ENDURAIT|ENDURER|8919|Relâchait son effort sur les avirons
+ENDURAIENT|ENDURER|8919|Relâchaient son effort sur les avirons
+ENDURERA|ENDURER|8919|Relâchera son effort sur les avirons
+ENDURA|ENDURER|8919|Relâcha son effort sur les avirons
+EVIERS|EVIER|8930|Tables en céramique
+COMMUNIQUES|COMMUNIQUE|8938|Messages à la presse
+OUVRIERS|OUVRIER|8940|Relatifs aux travailleurs
+TENANTE|TENANT|8941|Qui tient
+ONDES|ONDE|8943|Les mers
+MASSACRENT|MASSACRER|8962|Tuent, égorgent des personnes qui ne se défendent pas|Donnent un grand nombre de blessures|Tuent de nombreux animaux à la chasse
+MASSACRAIT|MASSACRER|8962|Tuait, égorgeait des personnes qui ne se défendent pas|Donnait un grand nombre de blessures|Tuait de nombreux animaux à la chasse
+MASSACRAIENT|MASSACRER|8962|Tuaient, égorgeaient des personnes qui ne se défendent pas|Donnaient un grand nombre de blessures|Tuaient de nombreux animaux à la chasse
+MASSACRERA|MASSACRER|8962|Tuera, égorgera des personnes qui ne se défendent pas|Donnera un grand nombre de blessures|Tuera de nombreux animaux à la chasse
+MASSACRA|MASSACRER|8962|Tua, égorgea des personnes qui ne se défendent pas|Donna un grand nombre de blessures|Tua de nombreux animaux à la chasse
+MASSACREE|MASSACRER|8962|Tuée, égorgée des personnes qui ne se défendent pas|Tuée de nombreux animaux à la chasse
+MASSACREES|MASSACRER|8962|Tuées, égorgées des personnes qui ne se défendent pas|Tuées de nombreux animaux à la chasse
+LARDS|LARD|8972|Zones tendres du bois
+OPPOSITIONS|OPPOSITION|8978|Résistances
+CONSOLENT|CONSOLER|8981|Soulagent quelqu’un dans son affliction par des discours
+CONSOLAIT|CONSOLER|8981|Soulageait quelqu’un dans son affliction par des discours
+CONSOLAIENT|CONSOLER|8981|Soulageaient quelqu’un dans son affliction par des discours
+CONSOLERA|CONSOLER|8981|Soulagera quelqu’un dans son affliction par des discours
+CONSOLA|CONSOLER|8981|Soulagea quelqu’un dans son affliction par des discours
+EVALUE|EVALUER|8983|Estime une chose quant à son prix|Détermine la valeur d'une expression
+EVALUENT|EVALUER|8983|Estiment une chose quant à son prix|Déterminent la valeur d'une expression
+EVALUAIT|EVALUER|8983|Estimait une chose quant à son prix|Déterminait la valeur d'une expression
+EVALUAIENT|EVALUER|8983|Estimaient une chose quant à son prix|Déterminaient la valeur d'une expression
+EVALUERA|EVALUER|8983|Estimera une chose quant à son prix|Déterminera la valeur d'une expression
+EVALUA|EVALUER|8983|Estima une chose quant à son prix|Détermina la valeur d'une expression
+SNIPE|SNIPER|8990|Joue avec un fusil de précision|Tue un adversaire
+SNIPENT|SNIPER|8990|Jouent avec un fusil de précision|Tuent un adversaire
+SNIPAIT|SNIPER|8990|Jouait avec un fusil de précision|Tuait un adversaire
+SNIPAIENT|SNIPER|8990|Jouaient avec un fusil de précision|Tuaient un adversaire
+SNIPERA|SNIPER|8990|Jouera avec un fusil de précision|Tuera un adversaire
+SNIPA|SNIPER|8990|Joua avec un fusil de précision|Tua un adversaire
+SNIPEE|SNIPER|8990|Jouée avec un fusil de précision
+SNIPES|SNIPER|8990|Joués avec un fusil de précision
+SNIPEES|SNIPER|8990|Jouées avec un fusil de précision
+PROCURE|PROCURER|8993|Fait obtenir à une personne quelque avantage par son crédit
+PROCURENT|PROCURER|8993|Font obtenir à une personne quelque avantage par son crédit
+PROCURAIT|PROCURER|8993|Faisait obtenir à une personne quelque avantage par son crédit
+PROCURAIENT|PROCURER|8993|Faisaient obtenir à une personne quelque avantage par son crédit
+PROCURERA|PROCURER|8993|Fera obtenir à une personne quelque avantage par son crédit
+PROCURA|PROCURER|8993|Fit obtenir à une personne quelque avantage par son crédit
+MAREES|MAREE|8995|Variations périodiques du niveau de la mer
+CLICHES|CLICHE|8997|Épreuves négatives
+ASIATIQUES|ASIATIQUE|9018|Races de chat
+COMBLES|COMBLE|9026|Parties d’un édifice sur laquelle repose immédiatement la couverture
+ABORDE|ABORDER|9028|Arrive au bord, prend terre
+ABORDENT|ABORDER|9028|Arrivent au bord, prennent terre
+ABORDAIT|ABORDER|9028|Arrivait au bord, prenait terre
+ABORDAIENT|ABORDER|9028|Arrivaient au bord, prenaient terre
+ABORDERA|ABORDER|9028|Arrivera au bord, prendra terre
+ABORDA|ABORDER|9028|Arriva au bord, prit terre
+ECUREUILS|ECUREUIL|9032|Caténairistes
+SCIES|SCIE|9037|Disques minces de bronze phosphoreux|Vieilles mélodies
+EMBAUCHENT|EMBAUCHER|9039|Engagent un salarié, passent avec lui un contrat de travail|Commencent sa journée de travail
+EMBAUCHAIT|EMBAUCHER|9039|Engageait un salarié, passait avec lui un contrat de travail|Commençait sa journée de travail
+EMBAUCHAIENT|EMBAUCHER|9039|Engageaient un salarié, passaient avec lui un contrat de travail|Commençaient sa journée de travail
+EMBAUCHERA|EMBAUCHER|9039|Engagera un salarié, passera avec lui un contrat de travail|Commencera sa journée de travail
+EMBAUCHA|EMBAUCHER|9039|Engagea un salarié, passa avec lui un contrat de travail|Commença sa journée de travail
+SYMPATHIES|SYMPATHIE|9040|Bienveillances
+MALIGNES|MALIGNE|9062|Personnes fines et rusées
+ACHEVENT|ACHEVER|9070|Cessent quelque chose|Frappent à mort quelqu’un qui est déjà blessé
+ACHEVAIT|ACHEVER|9070|Cessait quelque chose|Frappait à mort quelqu’un qui est déjà blessé
+ACHEVAIENT|ACHEVER|9070|Cessaient quelque chose|Frappaient à mort quelqu’un qui est déjà blessé
+ACHEVERA|ACHEVER|9070|Cessera quelque chose|Frappera à mort quelqu’un qui est déjà blessé
+ACHEVA|ACHEVER|9070|Cessa quelque chose|Frappa à mort quelqu’un qui est déjà blessé
+ACHEVEE|ACHEVER|9070|Frappée à mort quelqu’un qui est déjà blessé
+ACHEVES|ACHEVER|9070|Frappés à mort quelqu’un qui est déjà blessé
+ACHEVEES|ACHEVER|9070|Frappées à mort quelqu’un qui est déjà blessé
+PARAPLUIES|PARAPLUIE|9071|Outils destinés à crocheter les serrures
+DISPOSENT|DISPOSER|9073|Arrangent, mettent dans l’ordre le plus convenable|Approprient
+DISPOSAIT|DISPOSER|9073|Arrangeait, mettait dans l’ordre le plus convenable|Appropriait
+DISPOSAIENT|DISPOSER|9073|Arrangeaient, mettaient dans l’ordre le plus convenable|Appropriaient
+DISPOSERA|DISPOSER|9073|Arrangera, mettra dans l’ordre le plus convenable|Appropriera
+DISPOSA|DISPOSER|9073|Arrangea, mit dans l’ordre le plus convenable|Appropria
+DISPOSEE|DISPOSER|9073|Arrangée, mise dans l’ordre le plus convenable|Appropriée
+DISPOSES|DISPOSER|9073|Arrangés, mis dans l’ordre le plus convenable|Appropriés
+DISPOSEES|DISPOSER|9073|Arrangées, mises dans l’ordre le plus convenable|Appropriées
+FRANCHISES|FRANCHISE|9079|Exemptions, immunités, libertés|Exemptions fiscales accordées sur un territoire ou à un groupe
+CORDONS|CORDON|9100|Attaches d’un instrument de corps|Attaches d’une voile sur son support|Ceintures distinctives d’un ordre
+EPARGNES|EPARGNE|9110|Économies dans la dépense|Espaces réservés en blanc
+CONFITURES|CONFITURE|9115|Mélanges gélifiés de sucre
+EXERCE|EXERCER|9126|Dresse, forme|Dresse un animal|Fait mouvoir
+EXERCENT|EXERCER|9126|Dressent, forment|Dressent un animal|Font mouvoir
+EXERCAIT|EXERCER|9126|Dressait, formait|Dressait un animal|Faisait mouvoir
+EXERCAIENT|EXERCER|9126|Dressaient, formaient|Dressaient un animal|Faisaient mouvoir
+EXERCERA|EXERCER|9126|Dressera, formera|Dressera un animal|Fera mouvoir
+EXERCA|EXERCER|9126|Dressa, forma|Dressa un animal|Fit mouvoir
+EXERCEE|EXERCER|9126|Dressée, formée
+EXERCES|EXERCER|9126|Dressés, formés
+EXERCEES|EXERCER|9126|Dressées, formées
+DISTRIBUENT|DISTRIBUER|9129|Donnent profusément d'une manière aléatoire|Divisent ou disposent, rangent
+DISTRIBUAIT|DISTRIBUER|9129|Donnait profusément d'une manière aléatoire|Divisait ou disposait, rangeait
+DISTRIBUERA|DISTRIBUER|9129|Donnera profusément d'une manière aléatoire|Divisera ou disposera, rangera
+DISTRIBUA|DISTRIBUER|9129|Donna profusément d'une manière aléatoire|Divisa ou disposa, rangea
+DISTRIBUEE|DISTRIBUER|9129|Divisée ou disposée, rangée
+DISTRIBUES|DISTRIBUER|9129|Divisés ou disposés, rangés
+DISTRIBUEES|DISTRIBUER|9129|Divisées ou disposées, rangées
+INATTENDUS|INATTENDU|9131|Événements non prévus
+GYMNASES|GYMNASE|9145|Grandes salles aménagées pour les exercices du corps
+AMENDEMENTS|AMENDEMENT|9150|Produits épandus sur le sol pour provoquer cette amélioration|Modifications d’un jugement
+SALIVES|SALIVE|9154|Liquides clairs
+PEIGNES|PEIGNE|9159|Instruments de buis|Ces même objets courbes à longues dents
+BAIGNE|BAIGNER|9166|Mouille
+BAIGNENT|BAIGNER|9166|Mouillent
+BAIGNAIT|BAIGNER|9166|Mouillait
+BAIGNAIENT|BAIGNER|9166|Mouillaient
+BAIGNERA|BAIGNER|9166|Mouillera
+BAIGNA|BAIGNER|9166|Mouilla
+BAIGNEE|BAIGNER|9166|Mouillée
+BAIGNES|BAIGNER|9166|Mouillés
+BAIGNEES|BAIGNER|9166|Mouillées
+RALENTIS|RALENTI|9168|Mouvements à vitesse plus basse
+DRONES|DRONE|9180|Engins mobiles terrestres
+DETOURNE|DETOURNER|9181|Éloigne dans une autre direction|Donne une signification à quelque chose|Dissuade
+DETOURNENT|DETOURNER|9181|Éloignent dans une autre direction|Donnent une signification à quelque chose|Dissuadent
+DETOURNAIT|DETOURNER|9181|Éloignait dans une autre direction|Donnait une signification à quelque chose|Dissuadait
+DETOURNAIENT|DETOURNER|9181|Éloignaient dans une autre direction|Donnaient une signification à quelque chose|Dissuadaient
+DETOURNERA|DETOURNER|9181|Éloignera dans une autre direction|Donnera une signification à quelque chose|Dissuadera
+DETOURNA|DETOURNER|9181|Éloigna dans une autre direction|Donna une signification à quelque chose|Dissuada
+DETOURNEE|DETOURNER|9181|Éloignée dans une autre direction|Dissuadée
+DETOURNES|DETOURNER|9181|Éloignés dans une autre direction|Dissuadés
+DETOURNEES|DETOURNER|9181|Éloignées dans une autre direction|Dissuadées
+DUCHESSES|DUCHESSE|9184|Épouses d’un duc
+CARGOS|CARGO|9187|Navires destinés à transporter des marchandises
+BANCAIRES|BANCAIRE|9188|Relatifs à la banque
+CLINS|CLIN|9189|Clignements|Planches de la coque d’un bateau|Manières de faire chevaucher des planches horizontales
+PRECAUTIONS|PRECAUTION|9198|Circonspections
+GRAINES|GRAINE|9199|Organes reproducteurs des spermaphytes
+SESSIONS|SESSION|9208|Séances d’un concile
+ITINERAIRES|ITINERAIRE|9212|Chemins à suivre pour aller d’un lieu à un autre
+MILLIERS|MILLIER|9222|Nombres indéfinis, mais considérables
+DISTRACTIONS|DISTRACTION|9228|Résultats de cette inattention
+FONDUS|FONDU|9240|Liquéfiés
+FONDUE|FONDU|9240|Liquéfiée
+FONDUES|FONDU|9240|Liquéfiées
+DEVISES|DEVISE|9242|Fasces réduites posées en chef
+MANIFESTES|MANIFESTE|9243|Notoires
+VIRAGES|VIRAGE|9253|Actions de faire tourner un véhicule, un avion, etc|Actions de virer de bord
+BRIDGES|BRIDGE|9258|Parties de ce jeu
+DEVOUES|DEVOUE|9266|Voués, exposés
+GLOBES|GLOBE|9268|Sphères, corps sphériques|Enveloppes de verre ou de cristal
+LENTES|LENTE|9272|Œufs de pou
+ARCHES|ARCHE|9273|Parties cintrées d’un pont, d’un aqueduc, d’un viaduc, etc|Voûtes en arc d’un bâtiment
+ECLAIRENT|ECLAIRER|9279|Apportent de la lumière dans un endroit sombre
+ECLAIRAIT|ECLAIRER|9279|Apportait de la lumière dans un endroit sombre
+ECLAIRAIENT|ECLAIRER|9279|Apportaient de la lumière dans un endroit sombre
+ECLAIRERA|ECLAIRER|9279|Apportera de la lumière dans un endroit sombre
+ECLAIRA|ECLAIRER|9279|Apporta de la lumière dans un endroit sombre
+ECLAIREE|ECLAIRER|9279|Apportée de la lumière dans un endroit sombre
+ECLAIRES|ECLAIRER|9279|Apportés de la lumière dans un endroit sombre
+ECLAIREES|ECLAIRER|9279|Apportées de la lumière dans un endroit sombre
+RACCOURCIS|RACCOURCI|9282|Chemins plus courts|Aspects de certains objets
+MODULES|MODULE|9284|Diamètres comparatifs d’une médaille par rapport à d’autres
+FOURCHETTES|FOURCHETTE|9285|Ustensiles de table
+TRANSITIONS|TRANSITION|9296|Remplacements
+MORSURES|MORSURE|9306|Actions de mordre|Meurtrissures, atteintes quelconques
+ITALIENNES|ITALIENNE|9311|Répétitions sans mettre le ton
+SERMONS|SERMON|9312|Prédications ou discours chrétiens
+ALASKAS|ALASKA|9314|Races de lapins|Glaces fixées sur un bâtonnet de bois
+HOSPITALITES|HOSPITALITE|9326|Droits réciproques de loger les uns chez les autres
+FAUCONS|FAUCON|9331|Petites bombardes
+APPUYES|APPUYE|9336|Marqués, significatifs
+BARRENT|BARRER|9337|Verrouillent, ferment à clef
+BARRAIT|BARRER|9337|Verrouillait, fermait à clef
+BARRAIENT|BARRER|9337|Verrouillaient, fermaient à clef
+BARRERA|BARRER|9337|Verrouillera, fermera à clef
+BARRA|BARRER|9337|Verrouilla, ferma à clef
+BARREE|BARRER|9337|Verrouillée, fermée à clef
+BARREES|BARRER|9337|Verrouillées, fermées à clef
+CONTREBANDES|CONTREBANDE|9353|Passages en fraude de marchandise
+ASTRONAUTES|ASTRONAUTE|9354|Personnes formées en vue d’un tel vol|Membres d’un vaisseau spatial américain
+PARASITES|PARASITE|9356|Perturbations
+DOMES|DOME|9358|Coupoles|Voûtes de verdure, de feuillage, des cieux
+IDENTIQUES|IDENTIQUE|9372|Propriétés de plusieurs objets distincts d'être semblables
+BOUCS|BOUC|9383|Poulies garnies d’une corne de fer pour faire monter une chaîne
+AIRES|AIRE|9388|Surfaces planes
+CITATIONS|CITATION|9390|Actions de rapporter avec exactitude|Mentions honorifiques accordées à un soldat pour faits d'armes
+MELANGENT|MELANGER|9395|Provoquent la confusion chez quelqu’un
+MELANGEAIT|MELANGER|9395|Provoquait la confusion chez quelqu’un
+MELANGEAIENT|MELANGER|9395|Provoquaient la confusion chez quelqu’un
+MELANGERA|MELANGER|9395|Provoquera la confusion chez quelqu’un
+MELANGEA|MELANGER|9395|Provoqua la confusion chez quelqu’un
+THESES|THESE|9397|Toutes propositions
+BAVARDENT|BAVARDER|9410|Parlent de choses qu’on devrait tenir secrètes
+BAVARDAIT|BAVARDER|9410|Parlait de choses qu’on devrait tenir secrètes
+BAVARDAIENT|BAVARDER|9410|Parlaient de choses qu’on devrait tenir secrètes
+BAVARDERA|BAVARDER|9410|Parlera de choses qu’on devrait tenir secrètes
+BAVARDA|BAVARDER|9410|Parla de choses qu’on devrait tenir secrètes
+BAVARDEE|BAVARDER|9410|Parlée de choses qu’on devrait tenir secrètes
+BAVARDES|BAVARDER|9410|Parlés de choses qu’on devrait tenir secrètes
+BAVARDEES|BAVARDER|9410|Parlées de choses qu’on devrait tenir secrètes
+SORCELLERIES|SORCELLERIE|9411|Arts des sorciers
+ABSOLUS|ABSOLU|9413|Complets
+ABSOLUE|ABSOLU|9413|Impérieuse
+ABSOLUES|ABSOLU|9413|Impérieuses
+NOTIONS|NOTION|9418|Connaissances élémentaires|Traités élémentaires d’une science|Concepts
+LABYRINTHES|LABYRINTHE|9420|Grands embarras|Cavités intérieures de l’oreille
+CONTOURNENT|CONTOURNER|9427|Font le tour de quelque chose
+CONTOURNAIT|CONTOURNER|9427|Faisait le tour de quelque chose
+CONTOURNERA|CONTOURNER|9427|Fera le tour de quelque chose
+CONTOURNA|CONTOURNER|9427|Fit le tour de quelque chose
+ENTREVUES|ENTREVUE|9434|Interviews
+APPUIS|APPUI|9437|Les parties d’une fenêtre
+REFLETS|REFLET|9439|Apparences furtives ou affaiblies
+RABBINS|RABBIN|9444|Docteurs des juifs
+CRIANTE|CRIANT|9450|Qui crie
+HOMARDS|HOMARD|9466|Chairs de cet animal
+BAGUETTES|BAGUETTE|9472|Petits bâtons minces, plus ou moins longs et flexibles|Petits objets allongés à caractère distinctif
+PONEYS|PONEY|9476|Faits de retomber à cheval sur le sommet d'une bosse
+AMPOULES|AMPOULE|9484|Boules de verre
+PERSUADE|PERSUADER|9498|Fait croire, inspire quelque chose à quelqu’un
+PERSUADENT|PERSUADER|9498|Font croire, inspirent quelque chose à quelqu’un
+PERSUADAIT|PERSUADER|9498|Faisait croire, inspirait quelque chose à quelqu’un
+PERSUADAIENT|PERSUADER|9498|Faisaient croire, inspiraient quelque chose à quelqu’un
+PERSUADERA|PERSUADER|9498|Fera croire, inspirera quelque chose à quelqu’un
+PERSUADA|PERSUADER|9498|Fit croire, inspira quelque chose à quelqu’un
+SIFFLETS|SIFFLET|9511|Évidements pratiqués dans la corne du sabot|Rétrécissements
+ABANDONS|ABANDON|9512|Faits de renoncer à une cause, une croyance|Faits de renoncer à un parti, un engagement
+DORMANTS|DORMANT|9521|Consacrés au sommeil
+DORMANTE|DORMANT|9521|Qui dort
+DETONATEURS|DETONATEUR|9541|Substances capables de provoquer des explosions violentes
+CHATIMENTS|CHATIMENT|9543|Peines infligées en vue de corriger
+ETENDUES|ETENDUE|9553|Dimensions d’une chose en longueur, largeur et profondeur|Les volumes des choses|Superficies d’une chose
+COUTUMES|COUTUME|9557|Usages établis|Pratiques collectives
+CAPOTES|CAPOTE|9561|Couvertures mobiles de voitures, de landaus, etc
+CRUAUTES|CRUAUTE|9564|Actions cruelles
+CREUSE|CREUX|9569|Qui présente une cavité, un trou intérieur
+MELODIES|MELODIE|9575|Arrangements de sons|Pièces de musique vocale avec accompagnement
+KETCHUPS|KETCHUP|9585|Sauces sucrées à la tomate
+VETERINAIRES|VETERINAIRE|9588|Relatifs à la médecine des animaux
+FREQUENTE|FREQUENTER|9593|Hante
+FREQUENTENT|FREQUENTER|9593|Hantent
+FREQUENTAIT|FREQUENTER|9593|Hantait
+FREQUENTERA|FREQUENTER|9593|Hantera
+FREQUENTA|FREQUENTER|9593|Hanta
+FREQUENTEE|FREQUENTER|9593|Hantée
+FREQUENTES|FREQUENTER|9593|Hantés
+FREQUENTEES|FREQUENTER|9593|Hantées
+REVENANTS|REVENANT|9603|Rescapés
+CRITIQUENT|CRITIQUER|9614|Font ressortir|Exercent son intelligence à démêler le vrai du faux
+CRITIQUAIT|CRITIQUER|9614|Faisait ressortir|Exerçait son intelligence à démêler le vrai du faux
+CRITIQUAIENT|CRITIQUER|9614|Faisaient ressortir|Exerçaient son intelligence à démêler le vrai du faux
+CRITIQUERA|CRITIQUER|9614|Fera ressortir|Exercera son intelligence à démêler le vrai du faux
+CRITIQUA|CRITIQUER|9614|Fit ressortir|Exerça son intelligence à démêler le vrai du faux
+OTE|OTER|9623|Tire une chose de la place où elle est
+OTENT|OTER|9623|Tirent une chose de la place où elle est
+OTAIT|OTER|9623|Tirait une chose de la place où elle est
+OTAIENT|OTER|9623|Tiraient une chose de la place où elle est
+OTERA|OTER|9623|Tirera une chose de la place où elle est
+OTA|OTER|9623|Tira une chose de la place où elle est
+MECANISMES|MECANISME|9632|Constructions de combinaisons|Structures des éléments de la parole
+FINANCENT|FINANCER|9654|Apportent de l’argent
+FINANCAIT|FINANCER|9654|Apportait de l’argent
+FINANCAIENT|FINANCER|9654|Apportaient de l’argent
+FINANCERA|FINANCER|9654|Apportera de l’argent
+FINANCA|FINANCER|9654|Apporta de l’argent
+FINANCEE|FINANCER|9654|Apportée de l’argent
+FINANCES|FINANCER|9654|Apportés de l’argent
+FINANCEES|FINANCER|9654|Apportées de l’argent
+MASCULINE|MASCULIN|9664|Qui possède les caractéristiques de ce sexe de manière développée
+INSENSIBLES|INSENSIBLE|9665|Imperceptibles
+ISOLENT|ISOLER|9667|Séparent un élément des autres composants d’un mélange
+ISOLAIT|ISOLER|9667|Séparait un élément des autres composants d’un mélange
+ISOLAIENT|ISOLER|9667|Séparaient un élément des autres composants d’un mélange
+ISOLERA|ISOLER|9667|Séparera un élément des autres composants d’un mélange
+ISOLA|ISOLER|9667|Sépara un élément des autres composants d’un mélange
+LAINES|LAINE|9669|Poils longs, assez fins et doux
+SUSPENSIONS|SUSPENSION|9685|Figures artistiques de la danse et du cirque|Mélanges de particules dans un fluide de cette nature
+RECLAMENT|RECLAMER|9702|Implorent|Demandent|Revendiquent
+RECLAMAIT|RECLAMER|9702|Implorait|Demandait|Revendiquait
+RECLAMAIENT|RECLAMER|9702|Imploraient|Demandaient|Revendiquaient
+RECLAMERA|RECLAMER|9702|Implorera|Demandera|Revendiquera
+RECLAMA|RECLAMER|9702|Implora|Demanda|Revendiqua
+RECLAMEE|RECLAMER|9702|Implorée|Demandée|Revendiquée
+RECLAMES|RECLAMER|9702|Implorés|Demandés|Revendiqués
+RECLAMEES|RECLAMER|9702|Implorées|Demandées|Revendiquées
+SCHEMAS|SCHEMA|9704|Représentations sommaires
+OPPOSENT|OPPOSER|9706|Mettent une chose vis-à-vis d’une autre|Placent une chose de manière qu’elle fasse obstacle à une autre
+OPPOSAIT|OPPOSER|9706|Mettait une chose vis-à-vis d’une autre|Plaçait une chose de manière qu’elle fasse obstacle à une autre
+OPPOSAIENT|OPPOSER|9706|Mettaient une chose vis-à-vis d’une autre|Plaçaient une chose de manière qu’elle fasse obstacle à une autre
+OPPOSERA|OPPOSER|9706|Mettra une chose vis-à-vis d’une autre|Placera une chose de manière qu’elle fasse obstacle à une autre
+OPPOSA|OPPOSER|9706|Mit une chose vis-à-vis d’une autre|Plaça une chose de manière qu’elle fasse obstacle à une autre
+TAPETTES|TAPETTE|9709|Petites tapes faites avec la main
+ELANS|ELAN|9714|Comportements vifs et dynamiques
+TENTATIONS|TENTATION|9718|Attirances vers un désir
+FATALS|FATAL|9719|Marqués par le destin
+INCULPE|INCULPER|9730|Accuse quelqu’un d’une faute
+INCULPENT|INCULPER|9730|Accusent quelqu’un d’une faute
+INCULPAIT|INCULPER|9730|Accusait quelqu’un d’une faute
+INCULPAIENT|INCULPER|9730|Accusaient quelqu’un d’une faute
+INCULPERA|INCULPER|9730|Accusera quelqu’un d’une faute
+INCULPA|INCULPER|9730|Accusa quelqu’un d’une faute
+MOUCHARDS|MOUCHARD|9731|Avions de reconnaissance
+PREDITS|PREDIT|9738|Annoncés d’avance
+ATHLETES|ATHLETE|9755|Personnes très fortes, robustes
+OCCUPATIONS|OCCUPATION|9757|Les faits d’habiter
+CAOUTCHOUCS|CAOUTCHOUC|9772|Vêtements imperméables de cette matière
+LUEURS|LUEUR|9777|Lumières faibles ou affaiblies
+TRIANGLES|TRIANGLE|9780|Espaces géographiques délimités par trois points|Instruments à percussion de l’orchestre
+ORIENTATIONS|ORIENTATION|9781|Dispositions convenables des voiles et des vergues
+REMUENT|REMUER|9786|Déplacent, déménagent quelqu'un|Transportent de la terre d’un lieu à un autre
+REMUAIT|REMUER|9786|Déplaçait, déménageait quelqu'un|Transportait de la terre d’un lieu à un autre
+REMUAIENT|REMUER|9786|Déplaçaient, déménageaient quelqu'un|Transportaient de la terre d’un lieu à un autre
+REMUERA|REMUER|9786|Déplacera, déménagera quelqu'un|Transportera de la terre d’un lieu à un autre
+REMUA|REMUER|9786|Déplaça, déménagea quelqu'un|Transporta de la terre d’un lieu à un autre
+REMUEE|REMUER|9786|Transportée de la terre d’un lieu à un autre
+REMUES|REMUER|9786|Transportés de la terre d’un lieu à un autre
+REMUEES|REMUER|9786|Transportées de la terre d’un lieu à un autre
+RESOLUTIONS|RESOLUTION|9806|Réductions d’un corps en ses éléments
+INSTITUTIONS|INSTITUTION|9809|Organisations
+DUOS|DUO|9815|Couples, paires, binômes
+CAVALES|CAVALE|9826|Juments
+GRATTENT|GRATTER|9830|Remuent avec ses ongles
+GRATTAIT|GRATTER|9830|Remuait avec ses ongles
+GRATTAIENT|GRATTER|9830|Remuaient avec ses ongles
+GRATTERA|GRATTER|9830|Remuera avec ses ongles
+GRATTA|GRATTER|9830|Remua avec ses ongles
+GRATTEE|GRATTER|9830|Remuée avec ses ongles
+GRATTES|GRATTER|9830|Remués avec ses ongles
+GRATTEES|GRATTER|9830|Remuées avec ses ongles
+CONSERVES|CONSERVE|9856|Préservations des aliments|Toutes sortes de substances alimentaires
+DEPLACEMENTS|DEPLACEMENT|9860|Changements de résidence ou d’affectation d’un fonctionnaire
+IVRESSES|IVRESSE|9861|États d’une personne ivre
+RESERVENT|RESERVER|9862|Se proposent de faire une chose
+RESERVAIT|RESERVER|9862|Se proposait de faire une chose
+RESERVAIENT|RESERVER|9862|Se proposaient de faire une chose
+RESERVERA|RESERVER|9862|Se proposera de faire une chose
+RESERVA|RESERVER|9862|Se proposa de faire une chose
+OBSCURS|OBSCUR|9864|Sombres, moins clairs
+OBSCURE|OBSCUR|9864|Où il y a peu, où il n’y a pas de lumière|Sombre, moins claire
+OBSCURES|OBSCUR|9864|Sombres, moins claires
+VITRINES|VITRINE|9869|Devantures vitrées d’une boutique|Armoires vitrées|Mollusques gastéropodes
+BRUYANTE|BRUYANT|9875|Où il se fait, où l’on entend beaucoup de bruit
+BOUFFONNE|BOUFFON|9878|Qui fait rire par extrême ridicule
+AFFIRME|AFFIRMER|9888|Exprime qu’une chose est certaine|Assure avec serment
+AFFIRMENT|AFFIRMER|9888|Expriment qu’une chose est certaine|Assurent avec serment
+AFFIRMAIT|AFFIRMER|9888|Exprimait qu’une chose est certaine|Assurait avec serment
+AFFIRMAIENT|AFFIRMER|9888|Exprimaient qu’une chose est certaine|Assuraient avec serment
+AFFIRMERA|AFFIRMER|9888|Exprimera qu’une chose est certaine|Assurera avec serment
+AFFIRMA|AFFIRMER|9888|Exprima qu’une chose est certaine|Assura avec serment
+AFFIRMEE|AFFIRMER|9888|Assurée avec serment
+AFFIRMES|AFFIRMER|9888|Assurés avec serment
+AFFIRMEES|AFFIRMER|9888|Assurées avec serment
+NAVIGATIONS|NAVIGATION|9895|Techniques de repérage dans l'espace
+PATATES|PATATE|9906|Grosses billes
+VOLCANS|VOLCAN|9925|Chambres magmatiques|Cheminées
+SELECTIONS|SELECTION|9928|Actions de choisir ou résultat de ce choix
+MALLES|MALLE|9953|Coffres de voiture
+PELUCHES|PELUCHE|9954|Étoffes de laine
+HANCHES|HANCHE|9980|Trains de derrière d’un cheval
+CONSACRENT|CONSACRER|9983|Dédient à Dieu
+CONSACRAIT|CONSACRER|9983|Dédiait à Dieu
+CONSACRAIENT|CONSACRER|9983|Dédiaient à Dieu
+CONSACRERA|CONSACRER|9983|Dédiera à Dieu
+CONSACRA|CONSACRER|9983|Dédia à Dieu
+CONSACREE|CONSACRER|9983|Dédiée à Dieu
+CONSACRES|CONSACRER|9983|Dédiés à Dieu
+CONSACREES|CONSACRER|9983|Dédiées à Dieu
+ANDOUILLES|ANDOUILLE|9984|Pavés de deuxième choix
+INTACTE|INTACT|9985|Qui n’a pas souffert d’altération
+LANCEES|LANCEE|9996|Directions générales d'une action, élan, essor
+GASPILLE|GASPILLER|9997|Dépense ou consomme avec prodigalité
+GASPILLENT|GASPILLER|9997|Dépensent ou consomment avec prodigalité
+GASPILLAIT|GASPILLER|9997|Dépensait ou consommait avec prodigalité
+GASPILLAIENT|GASPILLER|9997|Dépensaient ou consommaient avec prodigalité
+GASPILLERA|GASPILLER|9997|Dépensera ou consommera avec prodigalité
+GASPILLA|GASPILLER|9997|Dépensa ou consomma avec prodigalité
+GASPILLEE|GASPILLER|9997|Dépensée ou consommée avec prodigalité
+GASPILLES|GASPILLER|9997|Dépensés ou consommés avec prodigalité
+GASPILLEES|GASPILLER|9997|Dépensées ou consommées avec prodigalité
+ABDOMENS|ABDOMEN|9999|Parties inférieures des arthropodes
+DESHABILLENT|DESHABILLER|10005|Mettent les murs à nu dans un local
+DESHABILLAIT|DESHABILLER|10005|Mettait les murs à nu dans un local
+DESHABILLERA|DESHABILLER|10005|Mettra les murs à nu dans un local
+DESHABILLA|DESHABILLER|10005|Mit les murs à nu dans un local
+SOLDES|SOLDE|10033|Différences entre le débit et le crédit d’un compte
+PUNCHS|PUNCH|10036|Efficacités, dynamismes
+AVORTEMENTS|AVORTEMENT|10037|Expulsions d'un fœtus|Expulsions d’un fœtus non viable|Échecs d’un développement quelconque sans rapport avec la procréation
+POLES|POLE|10047|Quelques choses d’attractif|Tringles
+EXPULSE|EXPULSER|10048|Chasse quelqu’un d’un lieu|Pousse au dehors, fait évacuer
+EXPULSENT|EXPULSER|10048|Chassent quelqu’un d’un lieu|Poussent au dehors, font évacuer
+EXPULSAIT|EXPULSER|10048|Chassait quelqu’un d’un lieu|Poussait au dehors, faisait évacuer
+EXPULSAIENT|EXPULSER|10048|Chassaient quelqu’un d’un lieu|Poussaient au dehors, faisaient évacuer
+EXPULSERA|EXPULSER|10048|Chassera quelqu’un d’un lieu|Poussera au dehors, fera évacuer
+EXPULSA|EXPULSER|10048|Chassa quelqu’un d’un lieu|Poussa au dehors, fit évacuer
+BATTANTS|BATTANT|10050|Flexibles, confortables|Parties mobiles d’une porte ou d’une fenêtre
+BATTANTES|BATTANT|10050|Flexibles, confortables
+FLATTES|FLATTE|10058|Touchés par la louange
+GAMES|GAME|10059|Goitres du mouton
+TALONS|TALON|10070|Parties postérieures du pied|Éperons|Parties d’une chaussure sur laquelle pose le derrière du pied
+BOUCHONS|BOUCHON|10072|Flotteurs d’une ligne de pêche
+INFLUENCENT|INFLUENCER|10074|Fixent dans le but d’impressionner
+INFLUENCAIT|INFLUENCER|10074|Fixait dans le but d’impressionner
+INFLUENCERA|INFLUENCER|10074|Fixera dans le but d’impressionner
+INFLUENCA|INFLUENCER|10074|Fixa dans le but d’impressionner
+INFLUENCEE|INFLUENCER|10074|Fixée dans le but d’impressionner
+INFLUENCEES|INFLUENCER|10074|Fixées dans le but d’impressionner
+AFFECTENT|AFFECTER|10082|Marquent une prédilection excessive pour certaines choses
+AFFECTAIT|AFFECTER|10082|Marquait une prédilection excessive pour certaines choses
+AFFECTAIENT|AFFECTER|10082|Marquaient une prédilection excessive pour certaines choses
+AFFECTERA|AFFECTER|10082|Marquera une prédilection excessive pour certaines choses
+AFFECTA|AFFECTER|10082|Marqua une prédilection excessive pour certaines choses
+ACTIVENT|ACTIVER|10090|Mettent en action
+ACTIVAIT|ACTIVER|10090|Mettait en action
+ACTIVAIENT|ACTIVER|10090|Mettaient en action
+ACTIVERA|ACTIVER|10090|Mettra en action
+ACTIVA|ACTIVER|10090|Mit en action
+ACTIVEE|ACTIVER|10090|Mise en action
+ACTIVEES|ACTIVER|10090|Mises en action
+NEANTS|NEANT|10091|États d’inexistence des êtres et des choses
+ABEILLES|ABEILLE|10097|Insectes hyménoptères ailés
+LEZARDS|LEZARD|10103|Petits reptiles à quatre pattes et à longue queue|Bruits de sifflement parasite
+POIVRES|POIVRE|10105|Valeurs secrètes utilisées pour chiffrer
+LECHES|LECHE|10107|Petites touches de peinture minutieuse|Laîches|Maryses
+LOINTAINE|LOINTAIN|10128|Qui provient de loin
+ANXIETES|ANXIETE|10141|Pénibles embarras
+ARMEMENTS|ARMEMENT|10147|Actions d’armer, de préparer en vue de la guerre|Actions d’armer un bâtiment en vue du commerce
+GONFLES|GONFLE|10149|Remplis d’air ou de gaz ou de toute autre matière
+DECORATIONS|DECORATION|10164|Nominations dans un ordre honorifique ou insignes de cet ordre
+TORNADES|TORNADE|10169|Bourrasques violentes en tourbillon
+CAMPENT|CAMPER|10180|Plantent|Restent un certain temps à un endroit considéré comme temporaire
+CAMPAIT|CAMPER|10180|Plantait|Restait un certain temps à un endroit considéré comme temporaire
+CAMPAIENT|CAMPER|10180|Plantaient|Restaient un certain temps à un endroit considéré comme temporaire
+CAMPERA|CAMPER|10180|Plantera|Restera un certain temps à un endroit considéré comme temporaire
+CAMPA|CAMPER|10180|Planta|Resta un certain temps à un endroit considéré comme temporaire
+CAMPEE|CAMPER|10180|Plantée
+CAMPES|CAMPER|10180|Plantés
+CAMPEES|CAMPER|10180|Plantées
+SEXUALITES|SEXUALITE|10184|Orientations sexuelles ou comportements sexuels
+REBELLIONS|REBELLION|10186|Révoltes, soulèvements
+ORTEILS|ORTEIL|10189|Doigts du pied, chez les humains et les primates
+REGULIERE|REGULIER|10194|Qui se conforme avec exactitude aux préceptes de la religion|Qui a ses angles, ses côtés égaux
+RAGOUTS|RAGOUT|10206|Viandes accommodées avec une sauce
+ROMANCES|ROMANCE|10213|Chansons tendres ou plaintives
+DIZAINES|DIZAINE|10218|Environs dix
+RENFORCE|RENFORCER|10225|Donne plus de vivacité
+RENFORCENT|RENFORCER|10225|Donnent plus de vivacité
+RENFORCAIT|RENFORCER|10225|Donnait plus de vivacité
+RENFORCAIENT|RENFORCER|10225|Donnaient plus de vivacité
+RENFORCERA|RENFORCER|10225|Donnera plus de vivacité
+RENFORCA|RENFORCER|10225|Donna plus de vivacité
+IMITE|IMITER|10231|S'efforce de prendre
+IMITENT|IMITER|10231|S'efforcent de prendre
+IMITAIT|IMITER|10231|S'efforçait de prendre
+IMITAIENT|IMITER|10231|S'efforçaient de prendre
+IMITERA|IMITER|10231|S'efforcera de prendre
+IMITA|IMITER|10231|S'efforça de prendre
+POIGNARDS|POIGNARD|10247|Armes à lame courte et pointue
+AGITATIONS|AGITATION|10249|Mouvements populaires d’opposition ou de rébellion|États d’un lieu
+BOUSILLES|BOUSILLE|10252|Pièces réalisées par les ouvriers verriers sur leur temps de pause
+IMPUISSANTE|IMPUISSANT|10254|Qui n’a pas de pouvoir, de moyens pour faire quelque chose|Qui ne peut produire aucun effet
+ESCALADES|ESCALADE|10255|Assauts d’une position au moyen d’échelles|Actions de grimper
+JURIDICTIONS|JURIDICTION|10267|Pouvoirs d'un juge de rendre la justice
+VIRGINITES|VIRGINITE|10271|États d’une personne vierge|Puretés morales
+PROJECTIONS|PROJECTION|10292|Images d’un objet|Acheminements
+ETINCELLES|ETINCELLE|10297|Parcelles incandescentes d’un feu
+MELEES|MELEE|10315|Combats opiniâtres|Luttes entre plusieurs individus|Contestations vives entre plusieurs personnes
+GELS|GEL|10324|Solidifications de l’eau en glace
+EXTINCTIONS|EXTINCTION|10334|Épuisements, lassitudes
+SENSIBILITES|SENSIBILITE|10347|Sentiments d’humanité, de pitié, de tendresse|Propriétés de marquer les plus légères différences
+PIRATENT|PIRATER|10350|Téléchargent illégalement de la musique|Volent, profitent de quelque chose ne vous étant pas destiné
+PIRATAIT|PIRATER|10350|Téléchargeait illégalement de la musique|Volait, profitait de quelque chose ne vous étant pas destiné
+PIRATAIENT|PIRATER|10350|Téléchargeaient illégalement de la musique|Volaient, profitaient de quelque chose ne vous étant pas destiné
+PIRATERA|PIRATER|10350|Téléchargera illégalement de la musique|Volera, profitera de quelque chose ne vous étant pas destiné
+PIRATA|PIRATER|10350|Téléchargea illégalement de la musique|Vola, profita de quelque chose ne vous étant pas destiné
+PIRATEE|PIRATER|10350|Volée, profitée de quelque chose ne vous étant pas destiné
+PIRATEES|PIRATER|10350|Volées, profitées de quelque chose ne vous étant pas destiné
+ASCENSIONS|ASCENSION|10352|Actions de gravir une montagne|Élévations d’une personne vers le ciel
+AXES|AXE|10353|Droites avec une orientation
+DEBORDES|DEBORDE|10359|Surchargés de travail
+LUMINEUSE|LUMINEUX|10364|Qui a, qui jette de la lumière|Ingénieuse
+LUMINEUSES|LUMINEUX|10364|Ingénieuses
+CHESTERS|CHESTER|10365|Fromages crus anglais
+ANIMES|ANIME|10368|Doués d’esprit ou capable d'agir|Mus par|Excités, actifs
+INFRACTIONS|INFRACTION|10374|Transgressions
+MAJORDOMES|MAJORDOME|10377|Chefs du service intérieur de la maison d’un souverain|Valets de nuit
+RECONFORTE|RECONFORTER|10378|Console dans l’affliction
+RECONFORTENT|RECONFORTER|10378|Consolent dans l’affliction
+RECONFORTAIT|RECONFORTER|10378|Consolait dans l’affliction
+RECONFORTERA|RECONFORTER|10378|Consolera dans l’affliction
+RECONFORTA|RECONFORTER|10378|Consola dans l’affliction
+RECONFORTEE|RECONFORTER|10378|Consolée dans l’affliction
+RECONFORTES|RECONFORTER|10378|Consolés dans l’affliction
+RECONFORTEES|RECONFORTER|10378|Consolées dans l’affliction
+VOCATIONS|VOCATION|10381|Dispositions
+CHANTANTE|CHANTANT|10391|Qui a des intonations mélodieuses, musicales|Qui manque de naturel|Qui caractérise l'accent du Midi de la France
+AUDACIEUSE|AUDACIEUX|10392|Qui a une noble hardiesse ou une grande intrépidité
+MADELEINES|MADELEINE|10398|Expériences de mémoire involontaire|Fers à plisser le linge
+COMPOSITIONS|COMPOSITION|10399|Arrangements des caractères pour en former des mots|Actions de mélanger et d’unir certaines substances|Préparations faites pour imiter certaines choses
+BARQUES|BARQUE|10408|Ces sortes de gréement
+AUTORISE|AUTORISER|10433|Met en droit de faire une chose|Accorde le pouvoir
+AUTORISENT|AUTORISER|10433|Mettent en droit de faire une chose|Accordent le pouvoir
+AUTORISAIT|AUTORISER|10433|Mettait en droit de faire une chose|Accordait le pouvoir
+AUTORISAIENT|AUTORISER|10433|Mettaient en droit de faire une chose|Accordaient le pouvoir
+AUTORISERA|AUTORISER|10433|Mettra en droit de faire une chose|Accordera le pouvoir
+AUTORISA|AUTORISER|10433|Mit en droit de faire une chose|Accorda le pouvoir
+AUTORISEE|AUTORISER|10433|Mise en droit de faire une chose
+AUTORISES|AUTORISER|10433|Mis en droit de faire une chose
+AUTORISEES|AUTORISER|10433|Mises en droit de faire une chose
+EMPOISONNE|EMPOISONNER|10435|Fait mourir par une qualité vénéneuse
+EMPOISONNENT|EMPOISONNER|10435|Font mourir par une qualité vénéneuse
+EMPOISONNAIT|EMPOISONNER|10435|Faisait mourir par une qualité vénéneuse
+EMPOISONNERA|EMPOISONNER|10435|Fera mourir par une qualité vénéneuse
+EMPOISONNA|EMPOISONNER|10435|Fit mourir par une qualité vénéneuse
+POLOS|POLO|10440|Vêtements à manches courtes
+PLANIFIE|PLANIFIER|10454|Organise dans le temps une succession d’événements|Organise selon un plan précis
+PLANIFIENT|PLANIFIER|10454|Organisent dans le temps une succession d’événements|Organisent selon un plan précis
+PLANIFIAIT|PLANIFIER|10454|Organisait dans le temps une succession d’événements|Organisait selon un plan précis
+PLANIFIAIENT|PLANIFIER|10454|Organisaient dans le temps une succession d’événements|Organisaient selon un plan précis
+PLANIFIERA|PLANIFIER|10454|Organisera dans le temps une succession d’événements|Organisera selon un plan précis
+PLANIFIA|PLANIFIER|10454|Organisa dans le temps une succession d’événements|Organisa selon un plan précis
+PLANIFIEE|PLANIFIER|10454|Organisée dans le temps une succession d’événements|Organisée selon un plan précis
+PLANIFIES|PLANIFIER|10454|Organisés dans le temps une succession d’événements|Organisés selon un plan précis
+PLANIFIEES|PLANIFIER|10454|Organisées dans le temps une succession d’événements|Organisées selon un plan précis
+FABRICATIONS|FABRICATION|10462|Actions d’inventer quelque chose
+SEUILS|SEUIL|10465|Entrées d’une maison|Petits barrages|Valeurs limites
+VERTIGES|VERTIGE|10475|Tournoiements de tête|Propensions à ce malaise
+ROBINETS|ROBINET|10476|Pièces ajustées à l’issue d’un tuyau|Organes sexuels mâles, pénis
+TRAPPES|TRAPPE|10480|Plaques de tôle
+FREINS|FREIN|10488|Dispositifs destinés à modérer la vitesse d’un mécanisme|Ligaments, replis muqueux
+HESITE|HESITER|10495|Marque un temps d’arrêt dans son élocution
+HESITENT|HESITER|10495|Marquent un temps d’arrêt dans son élocution
+HESITAIT|HESITER|10495|Marquait un temps d’arrêt dans son élocution
+HESITAIENT|HESITER|10495|Marquaient un temps d’arrêt dans son élocution
+HESITERA|HESITER|10495|Marquera un temps d’arrêt dans son élocution
+HESITA|HESITER|10495|Marqua un temps d’arrêt dans son élocution
+PANSEMENTS|PANSEMENT|10506|Toilettes d’un animal domestique, en particulier d’un cheval
+BAPTEMES|BAPTEME|10516|Rites d’entrée dans l’islam pour les musulmans|Bizutages
+DEFILENT|DEFILER|10538|Détachent une chose du fil du cordon où elle était passée
+DEFILAIT|DEFILER|10538|Détachait une chose du fil du cordon où elle était passée
+DEFILAIENT|DEFILER|10538|Détachaient une chose du fil du cordon où elle était passée
+DEFILERA|DEFILER|10538|Détachera une chose du fil du cordon où elle était passée
+DEFILA|DEFILER|10538|Détacha une chose du fil du cordon où elle était passée
+GRETCHENS|GRETCHEN|10540|Sobriquets populaires pour désigner les femmes allemandes
+TAMBOURS|TAMBOUR|10553|Caisses de forme cylindrique
+PREFERENCES|PREFERENCE|10570|Réglages personnalisés d’un logiciel, d’un site web
+FILTRES|FILTRE|10579|Dispositifs conçus pour épurer, séparer des éléments|Tamis, tris|Structures définies sur un ensemble
+CHANCELIERS|CHANCELIER|10584|Personnes chargées de garder les sceaux
+BROUHAHAS|BROUHAHA|10590|Bruits confus produits par une foule|Bruits confus, tumultes
+LEVIERS|LEVIER|10596|Commandes de machine en forme de barre
+DEVORE|DEVORER|10597|Avale goulûment|Mange entièrement sans rien laisser
+DEVORENT|DEVORER|10597|Avalent goulûment|Mangent entièrement sans rien laisser
+DEVORAIT|DEVORER|10597|Avalait goulûment|Mangeait entièrement sans rien laisser
+DEVORAIENT|DEVORER|10597|Avalaient goulûment|Mangeaient entièrement sans rien laisser
+DEVORERA|DEVORER|10597|Avalera goulûment|Mangera entièrement sans rien laisser
+DEVORA|DEVORER|10597|Avala goulûment|Mangea entièrement sans rien laisser
+EFFICACITES|EFFICACITE|10601|Capacités de produire un résultat
+RAIDS|RAID|10623|Épreuves d’endurance
+ECURIES|ECURIE|10631|Bâtiments destinés à loger des chevaux, des mulets, etc
+EGRATIGNURES|EGRATIGNURE|10635|Blessures légères et peu dangereuses
+ANCRES|ANCRE|10638|Objets lourds au bout d’une corde ou chaine
+ECLAIRAGES|ECLAIRAGE|10647|Manières particulières de voir, d'envisager quelque chose|Missions de recherche de renseignements
+TRIMESTRES|TRIMESTRE|10655|Espaces de trois mois|Éléments de calcul de la retraite
+REGNENT|REGNER|10657|Exercent le pouvoir souverain dans un État monarchique
+REGNAIT|REGNER|10657|Exerçait le pouvoir souverain dans un État monarchique
+REGNAIENT|REGNER|10657|Exerçaient le pouvoir souverain dans un État monarchique
+REGNERA|REGNER|10657|Exercera le pouvoir souverain dans un État monarchique
+REGNA|REGNER|10657|Exerça le pouvoir souverain dans un État monarchique
+ODIEUSE|ODIEUX|10658|Qui excite la haine|Qui a un comportement très désagréable, qui irrite
+ENTENTES|ENTENTE|10659|Bonnes intelligences entre des parties
+PAIRS|PAIR|10665|Personnes de même condition et de même rang dans l’état
+REALISATIONS|REALISATION|10669|Manifestations concrètes
+NEUTRALISE|NEUTRALISER|10676|Rend un pays|Rend une arme inopérante en la modifiant de façon irréversible|Ferme une voie à la circulation
+NEUTRALISENT|NEUTRALISER|10676|Rendent un pays|Rendent une arme inopérante en la modifiant de façon irréversible|Ferment une voie à la circulation
+NEUTRALISAIT|NEUTRALISER|10676|Rendait un pays|Rendait une arme inopérante en la modifiant de façon irréversible|Fermait une voie à la circulation
+NEUTRALISERA|NEUTRALISER|10676|Rendra un pays|Rendra une arme inopérante en la modifiant de façon irréversible|Fermera une voie à la circulation
+NEUTRALISA|NEUTRALISER|10676|Rendit un pays|Rendit une arme inopérante en la modifiant de façon irréversible|Ferma une voie à la circulation
+TRACS|TRAC|10686|Sentiments de tension
+TRAFIQUANTS|TRAFIQUANT|10691|Truands spécialisés dans le commerce de produits interdits
+HABILES|HABILE|10719|Adroits
+EMPRISES|EMPRISE|10735|Actions de prendre des terrains par expropriation|Occupations d’une région, d’un territoire|Projections d'une construction sur une surface
+NEGLIGENCES|NEGLIGENCE|10744|Défauts de soin, d’exactitude, d’application
+AQUARIUMS|AQUARIUM|10745|Réservoirs d’eau
+ORGANES|ORGANE|10750|Les voix
+REPRISES|REPRISE|10754|Actions de reprendre
+CEDES|CEDE|10775|Disques compacts
+TURKS|TURK|10778|Relatifs aux peuples de langues turciques
+POLITESSES|POLITESSE|10779|Bonnes manières de vivre
+PELOTONS|PELOTON|10792|Balles à jouer à la paume|Petits groupes de soldats
+FONDENT|FONDER|10798|Créent un établissement
+FONDAIT|FONDER|10798|Créait un établissement
+FONDAIENT|FONDER|10798|Créaient un établissement
+FONDERA|FONDER|10798|Créera un établissement
+FONDA|FONDER|10798|Créa un établissement
+DISTINGUENT|DISTINGUER|10808|Discernent par l’un des sens|Discernent par l’opération de l’esprit|Marquent les divers sens qu’une proposition peut avoir
+DISTINGUAIT|DISTINGUER|10808|Discernait par l’un des sens|Discernait par l’opération de l’esprit|Marquait les divers sens qu’une proposition peut avoir
+DISTINGUERA|DISTINGUER|10808|Discernera par l’un des sens|Discernera par l’opération de l’esprit|Marquera les divers sens qu’une proposition peut avoir
+DISTINGUA|DISTINGUER|10808|Discerna par l’un des sens|Discerna par l’opération de l’esprit|Marqua les divers sens qu’une proposition peut avoir
+DISTINGUEE|DISTINGUER|10808|Discernée par l’un des sens|Discernée par l’opération de l’esprit
+DISTINGUES|DISTINGUER|10808|Discernés par l’un des sens|Discernés par l’opération de l’esprit
+DISTINGUEES|DISTINGUER|10808|Discernées par l’un des sens|Discernées par l’opération de l’esprit
+TRANCHENT|TRANCHER|10809|Coupent net
+TRANCHAIT|TRANCHER|10809|Coupait net
+TRANCHAIENT|TRANCHER|10809|Coupaient net
+TRANCHERA|TRANCHER|10809|Coupera net
+TRANCHA|TRANCHER|10809|Coupa net
+DYNAMIQUES|DYNAMIQUE|10814|Énergiques
+BRANCHENT|BRANCHER|10816|Adaptent un conduit particulier à une conduite principale
+BRANCHAIT|BRANCHER|10816|Adaptait un conduit particulier à une conduite principale
+BRANCHAIENT|BRANCHER|10816|Adaptaient un conduit particulier à une conduite principale
+BRANCHERA|BRANCHER|10816|Adaptera un conduit particulier à une conduite principale
+BRANCHA|BRANCHER|10816|Adapta un conduit particulier à une conduite principale
+FLACONS|FLACON|10821|Bouteilles de dimensions réduites
+ERECTIONS|ERECTION|10823|Actions d’ériger un monument
+COQUINS|COQUIN|10832|Amants habiles au jeu de la séduction et de l’amour
+CROTTES|CROTTE|10833|Friandises au chocolat
+CANTINES|CANTINE|10837|Flacons
+REPUBLICAINE|REPUBLICAIN|10841|Qui s’oppose aux extrémismes
+JOGGINGS|JOGGING|10842|Survêtements de sport
+FAVORITES|FAVORITE|10853|Maitresses préférées d’un souverain
+REPARLE|REPARLER|10855|Renoue amitié, se réconcilie
+REPARLENT|REPARLER|10855|Renouent amitié, se réconcilient
+REPARLAIT|REPARLER|10855|Renouait amitié, se réconciliait
+REPARLAIENT|REPARLER|10855|Renouaient amitié, se réconciliaient
+REPARLERA|REPARLER|10855|Renouera amitié, se réconciliera
+REPARLA|REPARLER|10855|Renoua amitié, se réconcilia
+AUDACES|AUDACE|10875|Hardiesses, parfois excessives
+DOLLYS|DOLLY|10879|Supports de caméra sur roues ou rails
+COLUMBIAS|COLUMBIA|10887|Races de moutons
+HACKERS|HACKER|10888|Bidouilleurs informatiques
+HACKE|HACKER|10888|Explore, fouille
+HACKENT|HACKER|10888|Explorent, fouillent
+HACKAIT|HACKER|10888|Explorait, fouillait
+HACKAIENT|HACKER|10888|Exploraient, fouillaient
+HACKERA|HACKER|10888|Explorera, fouillera
+HACKA|HACKER|10888|Explora, fouilla
+HACKEE|HACKER|10888|Explorée, fouillée
+HACKES|HACKER|10888|Explorés, fouillés
+HACKEES|HACKER|10888|Explorées, fouillées
+ARROGANCES|ARROGANCE|10900|Attitudes hautaines et présomptueuses
+COMPLICITES|COMPLICITE|10907|Participations au délit ou au crime d’un autre
+PUNKS|PUNK|10908|Personnes parties prenantes du mouvement éponyme
+BOULEVARDS|BOULEVARD|10911|Promenades plantées d’arbres|Passages au niveau du pont d’un bateau
+MUTATIONS|MUTATION|10912|Remplacements d’une personne par une autre|Changements
+SOUPCONS|SOUPCON|10914|Simples conjectures de croyances, intuition|Légères apparences, légères atteintes
+INSPECTE|INSPECTER|10915|Examine avec attention|Examine avec autorité
+INSPECTENT|INSPECTER|10915|Examinent avec attention|Examinent avec autorité
+INSPECTAIT|INSPECTER|10915|Examinait avec attention|Examinait avec autorité
+INSPECTAIENT|INSPECTER|10915|Examinaient avec attention|Examinaient avec autorité
+INSPECTERA|INSPECTER|10915|Examinera avec attention|Examinera avec autorité
+INSPECTA|INSPECTER|10915|Examina avec attention|Examina avec autorité
+INSPECTEE|INSPECTER|10915|Examinée avec attention|Examinée avec autorité
+INSPECTES|INSPECTER|10915|Examinés avec attention|Examinés avec autorité
+INSPECTEES|INSPECTER|10915|Examinées avec attention|Examinées avec autorité
+ESTHETIQUES|ESTHETIQUE|10919|Relatifs au sentiment du beau
+CONTROLEURS|CONTROLEUR|10927|Parties d’un logiciel
+MENEES|MENEE|10938|Routes suivies par une bête en fuite, en particulier un cerf|Congères
+NAVIGUE|NAVIGUER|10950|Pilote
+NAVIGUENT|NAVIGUER|10950|Pilotent
+NAVIGUAIT|NAVIGUER|10950|Pilotait
+NAVIGUAIENT|NAVIGUER|10950|Pilotaient
+NAVIGUERA|NAVIGUER|10950|Pilotera
+NAVIGUA|NAVIGUER|10950|Pilota
+NAVIGUEE|NAVIGUER|10950|Pilotée
+NAVIGUES|NAVIGUER|10950|Pilotés
+NAVIGUEES|NAVIGUER|10950|Pilotées
+OPERATEURS|OPERATEUR|10951|Ouvriers sur machine|Cadreurs
+ABOUTS|ABOUT|10956|Extrémités par laquelle une pièce de charpente
+DORES|DORE|10961|Couleurs de la robe d’un vin blanc
+CHARGEURS|CHARGEUR|10962|Transformateurs et câbles électriques|Engins de travaux publics
+CACHETS|CACHET|10978|Ces empreintes même|Empreintes faites par le tampon de la poste
+ADAPTES|ADAPTE|10985|Faits pour
+TYRANS|TYRAN|10989|Rois absolus, monarques
+CIMENTS|CIMENT|11003|Liants à prise hydraulique
+AUTOMOBILES|AUTOMOBILE|11005|Véhicules terrestres à quatre roues
+COURSIERS|COURSIER|11008|Canons de chasse des chaloupes canonnières
+PIONS|PION|11019|Pièces de certains autres jeux|Particules du type méson
+ETENDUS|ETENDU|11020|Grands, larges, vastes
+SLOGANS|SLOGAN|11030|Cris de guerre d’un clan écossais|Formules concises et expressives|Phrases courtes et facilements mémorisées
+DEMARCHES|DEMARCHE|11042|Tentatives faites auprès de quelqu'un pour mener à bien une entreprise
+REDACTEURS|REDACTEUR|11062|Collaborateurs réguliers d’un journal
+DRESSENT|DRESSER|11072|Forment un angle très aigu avec la tige
+DRESSAIT|DRESSER|11072|Formait un angle très aigu avec la tige
+DRESSAIENT|DRESSER|11072|Formaient un angle très aigu avec la tige
+DRESSERA|DRESSER|11072|Formera un angle très aigu avec la tige
+DRESSA|DRESSER|11072|Forma un angle très aigu avec la tige
+NAUSEES|NAUSEE|11076|Envies de vomir
+RUNS|RUN|11089|Rodéos urbains, courses sauvages
+PENTES|PENTE|11094|Inclinaisons d’un terrain
+COLTS|COLT|11101|Armes à feu, et en particulier revolver
+VAGABONDE|VAGABOND|11102|Qui erre çà et là
+COLLISIONS|COLLISION|11109|Chocs de deux corps, de deux véhicules
+ANNUELLE|ANNUEL|11111|Qui dure un an|Qui revient tous les ans, qu’on accumule chaque année
+MATERNITES|MATERNITE|11112|Grossesses, gestations|Qualités d’autrice
+NONNES|NONNE|11115|Religieuses
+FLANCS|FLANC|11119|Côtés de diverses choses
+PLATES|PLATE|11131|Embarcations pour une à deux personnes|Ennuyants, regrettables
+GENERIQUES|GENERIQUE|11132|Relatifs au genre|Produits vendus sans nom de marque|Typés au moment de la compilation
+ANESTHESIES|ANESTHESIE|11136|Suppressions momentanées
+RELAXENT|RELAXER|11140|Rendent moins tendu
+RELAXAIT|RELAXER|11140|Rendait moins tendu
+RELAXAIENT|RELAXER|11140|Rendaient moins tendu
+RELAXERA|RELAXER|11140|Rendra moins tendu
+RELAXA|RELAXER|11140|Rendit moins tendu
+ANIMATIONS|ANIMATION|11141|Actions d’animer
+YAOURTS|YAOURT|11143|Laits caillés préparés à partir de ferments lactiques
+COUSSINS|COUSSIN|11144|Pièces de bois tendre pour préserver les barres
+FUREURS|FUREUR|11147|Extrêmes colères
+TELLS|TELL|11155|Collines artificielles formées par les ruines d’une ville antique
+DELIVRE|DELIVRER|11156|Rend libre de ce qui oppresse|Accouche
+DELIVRENT|DELIVRER|11156|Rendent libre de ce qui oppresse|Accouchent
+DELIVRAIT|DELIVRER|11156|Rendait libre de ce qui oppresse|Accouchait
+DELIVRAIENT|DELIVRER|11156|Rendaient libre de ce qui oppresse|Accouchaient
+DELIVRERA|DELIVRER|11156|Rendra libre de ce qui oppresse|Accouchera
+DELIVRA|DELIVRER|11156|Rendit libre de ce qui oppresse|Accoucha
+DELIVREE|DELIVRER|11156|Accouchée
+DELIVRES|DELIVRER|11156|Accouchés
+DELIVREES|DELIVRER|11156|Accouchées
+MENTIONS|MENTION|11167|Distinctions décernées dans un concours ou dans un examen
+FOURRENT|FOURRER|11176|Mettent en prison
+FOURRAIT|FOURRER|11176|Mettait en prison
+FOURRAIENT|FOURRER|11176|Mettaient en prison
+FOURRERA|FOURRER|11176|Mettra en prison
+FOURRA|FOURRER|11176|Mit en prison
+FOURREE|FOURRER|11176|Mise en prison
+FOURRES|FOURRER|11176|Mis en prison
+FOURREES|FOURRER|11176|Mises en prison
+SENTIERS|SENTIER|11180|Chemins étroits au travers des champs, des bois, etc|Passages d’engins d’exploitation, cloisonnement
+BUILDINGS|BUILDING|11181|Très hauts immeubles
+COMMOTIONS|COMMOTION|11183|Secousses violentes
+SUPERVISEURS|SUPERVISEUR|11192|Comptes utilisateurs d’un système d’exploitation
+BRAQUENT|BRAQUER|11197|Orientent brusquement dans une autre direction
+BRAQUAIT|BRAQUER|11197|Orientait brusquement dans une autre direction
+BRAQUAIENT|BRAQUER|11197|Orientaient brusquement dans une autre direction
+BRAQUERA|BRAQUER|11197|Orientera brusquement dans une autre direction
+BRAQUA|BRAQUER|11197|Orienta brusquement dans une autre direction
+OBSTRUCTIONS|OBSTRUCTION|11210|Toutes espèces d’engorgement dans toute espèce de conduits
+PYRAMIDES|PYRAMIDE|11222|Schémas statistiques faits d'un empilement de barres horizontales
+ABUSENT|ABUSER|11231|Trompent|Violent
+ABUSAIT|ABUSER|11231|Trompait|Violait
+ABUSAIENT|ABUSER|11231|Trompaient|Violaient
+ABUSERA|ABUSER|11231|Trompera|Violera
+ABUSA|ABUSER|11231|Trompa|Viola
+ABUSEE|ABUSER|11231|Trompée|Violée
+ABUSES|ABUSER|11231|Trompés|Violés
+ABUSEES|ABUSER|11231|Trompées|Violées
+TAVERNES|TAVERNE|11245|Cabarets
+CATALOGUES|CATALOGUE|11261|Listes d’objets à vendre|Dénombrements
+AGONIES|AGONIE|11274|Dernières luttes de la nature contre la mort
+MONSTRUEUSE|MONSTRUEUX|11276|Qui a une conformation contre nature, anormale
+CLIPS|CLIP|11279|Vidéos musicales|Des contenus vidéos courts|Bijous montés sur une pince, broche, boucle d'oreille
+DIALOGUES|DIALOGUE|11300|Entretiens entre deux ou plusieurs personnes
+BENNES|BENNE|11302|Réceptacles de forme parallélépipédique|Hottes à l’usage des vendangeurs, et autrefois, des pêcheurs|Espaces clos pour arrêter le poisson
+CLANDESTINS|CLANDESTIN|11304|Personnes présentes dans un territoire sans titre de séjour valide
+CLANDESTINE|CLANDESTIN|11304|Qui se fait en cachette et contre les lois ou la morale
+CHAUSSETTES|CHAUSSETTE|11305|Dispositifs constitués de tissus synthétiques
+BANDENT|BANDER|11309|Posent les pierres d’une voûte
+BANDAIT|BANDER|11309|Posait les pierres d’une voûte
+BANDAIENT|BANDER|11309|Posaient les pierres d’une voûte
+BANDERA|BANDER|11309|Posera les pierres d’une voûte
+BANDA|BANDER|11309|Posa les pierres d’une voûte
+TABLETTES|TABLETTE|11321|Agendas|Écritoires|Formules de présentation de produits alimentaires
+ESCORTENT|ESCORTER|11325|Accompagnent pour protéger|Accompagnent isolément
+ESCORTAIT|ESCORTER|11325|Accompagnait pour protéger|Accompagnait isolément
+ESCORTAIENT|ESCORTER|11325|Accompagnaient pour protéger|Accompagnaient isolément
+ESCORTERA|ESCORTER|11325|Accompagnera pour protéger|Accompagnera isolément
+ESCORTA|ESCORTER|11325|Accompagna pour protéger|Accompagna isolément
+ESCORTEE|ESCORTER|11325|Accompagnée pour protéger
+ESCORTEES|ESCORTER|11325|Accompagnées pour protéger
+VENINS|VENIN|11328|Poisons produits
+CONTENANTE|CONTENANT|11331|Qui contient
+EMBALLAGES|EMBALLAGE|11334|Contenants d'un produit de grande consommation
+PRESSINGS|PRESSING|11337|Repassages à la vapeur
+OUBLIS|OUBLI|11348|Manques de souvenir|Négligences, manquements|Pardons, renoncements
+LOGENT|LOGER|11349|Séjournent|Trouvent place dans|Mettent
+LOGEAIT|LOGER|11349|Séjournait|Trouvait place dans|Mettait
+LOGEAIENT|LOGER|11349|Séjournaient|Trouvaient place dans|Mettaient
+LOGERA|LOGER|11349|Séjournera|Trouvera place dans|Mettra
+LOGEA|LOGER|11349|Séjourna|Trouva place dans|Mit
+LOGEE|LOGER|11349|Séjournée|Mise
+LOGEES|LOGER|11349|Séjournées|Mises
+DIVISENT|DIVISER|11350|Séparent en parties|Séparent en parts égales|Coupent un mot à la fin d’une ligne
+DIVISAIT|DIVISER|11350|Séparait en parties|Séparait en parts égales|Coupait un mot à la fin d’une ligne
+DIVISAIENT|DIVISER|11350|Séparaient en parties|Séparaient en parts égales|Coupaient un mot à la fin d’une ligne
+DIVISERA|DIVISER|11350|Séparera en parties|Séparera en parts égales|Coupera un mot à la fin d’une ligne
+DIVISA|DIVISER|11350|Sépara en parties|Sépara en parts égales|Coupa un mot à la fin d’une ligne
+DIVISES|DIVISER|11350|Séparés en parties|Séparés en parts égales
+DIVISEES|DIVISER|11350|Séparées en parties|Séparées en parts égales
+FONCENT|FONCER|11357|Creusent verticalement
+FONCAIT|FONCER|11357|Creusait verticalement
+FONCAIENT|FONCER|11357|Creusaient verticalement
+FONCERA|FONCER|11357|Creusera verticalement
+FONCA|FONCER|11357|Creusa verticalement
+PROVISEURS|PROVISEUR|11372|Chefs de certaines corporations
+PEIGNOIRS|PEIGNOIR|11378|Vêtements d’intérieur
+RECRUTE|RECRUTER|11379|Sélectionne et embauche du personnel
+RECRUTENT|RECRUTER|11379|Sélectionnent et embauchent du personnel
+RECRUTAIT|RECRUTER|11379|Sélectionnait et embauchait du personnel
+RECRUTAIENT|RECRUTER|11379|Sélectionnaient et embauchaient du personnel
+RECRUTERA|RECRUTER|11379|Sélectionnera et embauchera du personnel
+RECRUTA|RECRUTER|11379|Sélectionna et embaucha du personnel
+RECRUTEE|RECRUTER|11379|Sélectionnée et embauchée du personnel
+RECRUTES|RECRUTER|11379|Sélectionnés et embauchés du personnel
+RECRUTEES|RECRUTER|11379|Sélectionnées et embauchées du personnel
+PURETES|PURETE|11382|Chastetés|Exactitudes dans le choix
+PRIVENT|PRIVER|11383|Ôtent à quelqu’un ce qu’il a|Retirent à quelqu'un ce qu’il désire
+PRIVAIT|PRIVER|11383|Ôtait à quelqu’un ce qu’il a|Retirait à quelqu'un ce qu’il désire
+PRIVAIENT|PRIVER|11383|Ôtaient à quelqu’un ce qu’il a|Retiraient à quelqu'un ce qu’il désire
+PRIVERA|PRIVER|11383|Ôtera à quelqu’un ce qu’il a|Retirera à quelqu'un ce qu’il désire
+PRIVA|PRIVER|11383|Ôta à quelqu’un ce qu’il a|Retira à quelqu'un ce qu’il désire
+PRIVEE|PRIVER|11383|Ôtée à quelqu’un ce qu’il a|Retirée à quelqu'un ce qu’il désire
+PRIVEES|PRIVER|11383|Ôtées à quelqu’un ce qu’il a|Retirées à quelqu'un ce qu’il désire
+DOCTORATS|DOCTORAT|11387|Grades de docteur
+DEPENDANCES|DEPENDANCE|11410|Tout accessoires d’une chose principale
+CROUTES|CROUTE|11411|Pellicules supérieures|Parties extérieures du pain
+ESCADRONS|ESCADRON|11417|Unités d’avions de combat
+ASPIRATIONS|ASPIRATION|11418|Actions d’attirer l’air extérieur dans ses poumons
+FLUIDES|FLUIDE|11425|Rapides, continus|Liquides ou gaz
+HAMECONS|HAMECON|11441|Crochets en matière métallique
+DIVANS|DIVAN|11449|Conseils suprêmes|Salles de réception
+POELES|POELE|11455|Ustensiles de cuisine|Appareils de chauffage en fonte, en fer, en faïence etc
+GENDRES|GENDRE|11458|Les maris de la fille ou du fils de quelqu’un
+EVOLUE|EVOLUER|11463|Se transforme progressivement
+EVOLUENT|EVOLUER|11463|Se transforment progressivement
+EVOLUAIT|EVOLUER|11463|Se transformait progressivement
+EVOLUAIENT|EVOLUER|11463|Se transformaient progressivement
+EVOLUERA|EVOLUER|11463|Se transformera progressivement
+EVOLUA|EVOLUER|11463|Se transforma progressivement
+INTIMIDE|INTIMIDER|11469|Trouble quelqu’un en lui causant de la crainte
+INTIMIDENT|INTIMIDER|11469|Troublent quelqu’un en lui causant de la crainte
+INTIMIDAIT|INTIMIDER|11469|Troublait quelqu’un en lui causant de la crainte
+INTIMIDAIENT|INTIMIDER|11469|Troublaient quelqu’un en lui causant de la crainte
+INTIMIDERA|INTIMIDER|11469|Troublera quelqu’un en lui causant de la crainte
+INTIMIDA|INTIMIDER|11469|Troubla quelqu’un en lui causant de la crainte
+CURRYS|CURRY|11484|Plats assaisonnés de cette épice|Curcumas
+AVORTE|AVORTER|11485|Met fin volontairement à une grossesse avant son terme
+AVORTENT|AVORTER|11485|Mettent fin volontairement à une grossesse avant son terme
+AVORTAIT|AVORTER|11485|Mettait fin volontairement à une grossesse avant son terme
+AVORTAIENT|AVORTER|11485|Mettaient fin volontairement à une grossesse avant son terme
+AVORTERA|AVORTER|11485|Mettra fin volontairement à une grossesse avant son terme
+AVORTA|AVORTER|11485|Mit fin volontairement à une grossesse avant son terme
+FACHENT|FACHER|11487|Mettent en colère, irritent|Se mettent en colère
+FACHAIT|FACHER|11487|Mettait en colère, irritait|Se mettait en colère
+FACHAIENT|FACHER|11487|Mettaient en colère, irritaient|Se mettaient en colère
+FACHERA|FACHER|11487|Mettra en colère, irritera|Se mettra en colère
+FACHA|FACHER|11487|Mit en colère, irrita|Se mit en colère
+FACHEE|FACHER|11487|Mise en colère, irritée
+FACHEES|FACHER|11487|Mises en colère, irritées
+BOUILLIES|BOUILLIE|11492|Suspensions épaisses d’un matériau insoluble dans un liquide
+HABITS|HABIT|11494|Costumes des religieux et des religieuses
+PORTIERES|PORTIERE|11495|Personnes bavardes, souvent médisantes|Ouvertures de la voiture
+FIRMES|FIRME|11496|Grosses entreprises commerciales
+ZOOMS|ZOOM|11498|Agrandissements
+CAVERNES|CAVERNE|11507|Cavités naturelles dans des rochers
+DIABETES|DIABETE|11520|Dispositifs utilisés en laboratoire
+TATAS|TATA|11521|Nourrices
+OLLIES|OLLIE|11531|Mouvements pour décoller la planche du sol sans les mains
+PERTINENTE|PERTINENT|11538|Qui se rapporte à la question|Qui a de l’à-propos, de la répartie, de l’esprit
+CAVIARS|CAVIAR|11539|Mets faits avec des œufs d’esturgeon
+BROCHES|BROCHE|11551|Outils utilisés par les maçons pour casser les matériaux
+PNEUMONIES|PNEUMONIE|11557|Inflammations du parenchyme des poumons
+RACAILLES|RACAILLE|11559|Personnages issus de ce groupe d’individus
+BRINS|BRIN|11567|Toutes petites parties de certaines choses longues et minces
+INSTRUCTIONS|INSTRUCTION|11570|Leçons, préceptes
+SUBTILE|SUBTIL|11578|Qui perçoit finement
+IMPRIMENT|IMPRIMER|11579|Font ou laissent une empreinte sur quelque chose|Donnent à quelque chose un certain mouvement en poussant
+IMPRIMAIT|IMPRIMER|11579|Faisait ou laissait une empreinte sur quelque chose|Donnait à quelque chose un certain mouvement en poussant
+IMPRIMAIENT|IMPRIMER|11579|Faisaient ou laissaient une empreinte sur quelque chose|Donnaient à quelque chose un certain mouvement en poussant
+IMPRIMERA|IMPRIMER|11579|Fera ou laissera une empreinte sur quelque chose|Donnera à quelque chose un certain mouvement en poussant
+IMPRIMA|IMPRIMER|11579|Fit ou laissa une empreinte sur quelque chose|Donna à quelque chose un certain mouvement en poussant
+IMPRIMEE|IMPRIMER|11579|Donnée à quelque chose un certain mouvement en poussant
+IMPRIMES|IMPRIMER|11579|Donnés à quelque chose un certain mouvement en poussant
+IMPRIMEES|IMPRIMER|11579|Données à quelque chose un certain mouvement en poussant
+MURMURES|MURMURE|11580|Bruits de voix sourd et confus|Plaintes sourdes d’une seule personne
+ULTRAS|ULTRA|11581|Personnes exagérées dans ses opinions
+AGRESSE|AGRESSER|11582|Entame par la force
+AGRESSENT|AGRESSER|11582|Entament par la force
+AGRESSAIT|AGRESSER|11582|Entamait par la force
+AGRESSAIENT|AGRESSER|11582|Entamaient par la force
+AGRESSERA|AGRESSER|11582|Entamera par la force
+AGRESSA|AGRESSER|11582|Entama par la force
+AGRESSEE|AGRESSER|11582|Entamée par la force
+AGRESSES|AGRESSER|11582|Entamés par la force
+AGRESSEES|AGRESSER|11582|Entamées par la force
+SANGUINES|SANGUINE|11584|Minerais de fer riche en hématite|Dessins faits avec ces crayons
+HURLANTE|HURLANT|11585|Qui hurle
+VATICANE|VATICAN|11588|Papale, catholique romaine
+VATICANES|VATICAN|11588|Papales, catholiques romaines
+CARNAGES|CARNAGE|11594|Actes de tuer violemment ou en grand nombre
+DILIGENCES|DILIGENCE|11598|Promptitudes d’action
+VAUDOUS|VAUDOU|11601|Adeptes de ce culte
+EQUATIONS|EQUATION|11612|Rapports de concordance entre des groupes sociaux|Écritures symboliques d’une réaction chimique
+NOBLESSES|NOBLESSE|11618|Caractères élevés de la composition
+ARENES|ARENE|11622|Terrains très meubles|Parties sablées d’un amphithéâtre pour les jeux et les combats
+CASCADES|CASCADE|11627|Exercices périlleux faits
+INDUSTRIELS|INDUSTRIEL|11630|Entreprises d’un secteur particulier
+ONCES|ONCE|11641|Petites quantités de quelque chose
+INFERIEURES|INFERIEUR|11653|Plus petites ou égales
+ERUPTIONS|ERUPTION|11655|Poussées de taches
+GROTESQUES|GROTESQUE|11682|Très ornés, voire ampoulés|Bizarres|Bouffons, excentriques
+MESSAGERIES|MESSAGERIE|11706|Services d’acheminement
+RADIATIONS|RADIATION|11721|Actions de rayer, de radier|Énergies ainsi émises et propagées
+INTERPRETENT|INTERPRETER|11725|Expliquent, devinent
+INTERPRETAIT|INTERPRETER|11725|Expliquait, devinait
+INTERPRETERA|INTERPRETER|11725|Expliquera, devinera
+INTERPRETA|INTERPRETER|11725|Expliqua, devina
+INTERPRETEE|INTERPRETER|11725|Expliquée, devinée
+INTERPRETES|INTERPRETER|11725|Expliqués, devinés
+INTERPRETEES|INTERPRETER|11725|Expliquées, devinées
+BETTES|BETTE|11747|Petites embarcations de pêche
+MANEGES|MANEGE|11766|Dressages des chevaux|Toutes attractions de fête foraine ou de parc d'attractions|Pistes de cirque
+STRICTE|STRICT|11770|Qui exclut l’égalité
+LANCEURS|LANCEUR|11771|Fusées capables de placer une charge utile dans l’espace
+CRECHES|CRECHE|11775|Mangeoires des bœufs, des brebis et autres animaux semblables|Parties de l’ouvrage d’un pont ou d’une fortification
+BRAVOURES|BRAVOURE|11783|Courages guerriers
+PINCENT|PINCER|11785|Serrent fortement avec des doigts|Rapprochent en serrant fortement|Causent une douleur
+PINCAIT|PINCER|11785|Serrait fortement avec des doigts|Rapprochait en serrant fortement|Causait une douleur
+PINCAIENT|PINCER|11785|Serraient fortement avec des doigts|Rapprochaient en serrant fortement|Causaient une douleur
+PINCERA|PINCER|11785|Serrera fortement avec des doigts|Rapprochera en serrant fortement|Causera une douleur
+PINCA|PINCER|11785|Serra fortement avec des doigts|Rapprocha en serrant fortement|Causa une douleur
+PINCEES|PINCER|11785|Rapprochées en serrant fortement
+INGRATE|INGRAT|11807|Qui n’a pas de reconnaissance|Qui ne récompense pas des dépenses qu’on fait
+STOCKAGES|STOCKAGE|11814|Mémoires|Enregistrements
+BATTEMENTS|BATTEMENT|11819|Secousses produites par l’oscillation du pendule d’une horloge
+DESIRENT|DESIRER|11820|Souhaitent
+DESIRAIT|DESIRER|11820|Souhaitait
+DESIRAIENT|DESIRER|11820|Souhaitaient
+DESIRERA|DESIRER|11820|Souhaitera
+DESIRA|DESIRER|11820|Souhaita
+DESIREE|DESIRER|11820|Souhaitée
+DESIRES|DESIRER|11820|Souhaités
+DESIREES|DESIRER|11820|Souhaitées
+CHOQUANTE|CHOQUANT|11822|Qui offense, qui déplaît par son immoralité ou son inconvenance
+MAESTROS|MAESTRO|11826|Compositeurs de musique ou chef d’orchestre en renom
+OFFRANTE|OFFRANT|11827|Qui offre, qui fait une offre
+SUPPLEMENTS|SUPPLEMENT|11828|Ajouts à quelque chose
+SAVANTE|SAVANT|11834|Qui sait beaucoup en matière d’érudition ou de science
+AMICALES|AMICALE|11838|Associations d’entraide
+RAMPENT|RAMPER|11846|Se traînent sur le ventre
+RAMPAIT|RAMPER|11846|Se traînait sur le ventre
+RAMPAIENT|RAMPER|11846|Se traînaient sur le ventre
+RAMPERA|RAMPER|11846|Se traînera sur le ventre
+RAMPA|RAMPER|11846|Se traîna sur le ventre
+INSPIRE|INSPIRER|11862|Fait pénétrer artificiellement de l’air dans les poumons|Fait entrer naturellement de l’air dans ses poumons|Fait naître dans le cœur
+INSPIRENT|INSPIRER|11862|Font pénétrer artificiellement de l’air dans les poumons|Font entrer naturellement de l’air dans ses poumons|Font naître dans le cœur
+INSPIRAIT|INSPIRER|11862|Faisait pénétrer artificiellement de l’air dans les poumons|Faisait entrer naturellement de l’air dans ses poumons|Faisait naître dans le cœur
+INSPIRAIENT|INSPIRER|11862|Faisaient pénétrer artificiellement de l’air dans les poumons|Faisaient entrer naturellement de l’air dans ses poumons|Faisaient naître dans le cœur
+INSPIRERA|INSPIRER|11862|Fera pénétrer artificiellement de l’air dans les poumons|Fera entrer naturellement de l’air dans ses poumons|Fera naître dans le cœur
+INSPIRA|INSPIRER|11862|Fit pénétrer artificiellement de l’air dans les poumons|Fit entrer naturellement de l’air dans ses poumons|Fit naître dans le cœur
+FACADES|FACADE|11866|Faces des murs en contact avec l’extérieur
+GOLFES|GOLFE|11867|Parties de mer plus ou moins vaste
+MOUILLENT|MOUILLER|11900|Mettent à l’eau
+MOUILLAIT|MOUILLER|11900|Mettait à l’eau
+MOUILLAIENT|MOUILLER|11900|Mettaient à l’eau
+MOUILLERA|MOUILLER|11900|Mettra à l’eau
+MOUILLA|MOUILLER|11900|Mit à l’eau
+MOUILLEE|MOUILLER|11900|Mise à l’eau
+MOUILLEES|MOUILLER|11900|Mises à l’eau
+CARESSENT|CARESSER|11905|Se masturbent
+CARESSAIT|CARESSER|11905|Se masturbait
+CARESSAIENT|CARESSER|11905|Se masturbaient
+CARESSERA|CARESSER|11905|Se masturbera
+CARESSA|CARESSER|11905|Se masturba
+ACES|ACE|11906|Personnes asexuelles
+MOMIES|MOMIE|11924|Personnes maigres
+SPECIALISES|SPECIALISE|11937|Personnes, entreprises
+ENFILE|ENFILER|11954|Traverse d’un fil par une ouverture pratiquée à cet effet|Passe à l'intérieur de
+ENFILENT|ENFILER|11954|Traversent d’un fil par une ouverture pratiquée à cet effet|Passent à l'intérieur de
+ENFILAIT|ENFILER|11954|Traversait d’un fil par une ouverture pratiquée à cet effet|Passait à l'intérieur de
+ENFILAIENT|ENFILER|11954|Traversaient d’un fil par une ouverture pratiquée à cet effet|Passaient à l'intérieur de
+ENFILERA|ENFILER|11954|Traversera d’un fil par une ouverture pratiquée à cet effet|Passera à l'intérieur de
+ENFILA|ENFILER|11954|Traversa d’un fil par une ouverture pratiquée à cet effet|Passa à l'intérieur de
+ENFILEE|ENFILER|11954|Traversée d’un fil par une ouverture pratiquée à cet effet|Passée à l'intérieur de
+ENFILES|ENFILER|11954|Traversés d’un fil par une ouverture pratiquée à cet effet|Passés à l'intérieur de
+ENFILEES|ENFILER|11954|Traversées d’un fil par une ouverture pratiquée à cet effet|Passées à l'intérieur de
+AUDIOS|AUDIO|11956|Enregistrements sonores
+ALLERGIES|ALLERGIE|11958|Réactions anormales
+PENCHENT|PENCHER|11961|Inclinent
+PENCHAIT|PENCHER|11961|Inclinait
+PENCHAIENT|PENCHER|11961|Inclinaient
+PENCHERA|PENCHER|11961|Inclinera
+PENCHA|PENCHER|11961|Inclina
+PENCHEE|PENCHER|11961|Inclinée
+PENCHES|PENCHER|11961|Inclinés
+PENCHEES|PENCHER|11961|Inclinées
+CONCESSIONS|CONCESSION|11963|Places dans un cimetière
+DETECTE|DETECTER|11972|Se rend compte de
+DETECTENT|DETECTER|11972|Se rendent compte de
+DETECTAIT|DETECTER|11972|Se rendait compte de
+DETECTAIENT|DETECTER|11972|Se rendaient compte de
+DETECTERA|DETECTER|11972|Se rendra compte de
+DETECTA|DETECTER|11972|Se rendit compte de
+TEMPORELS|TEMPOREL|11977|Relatifs au temps
+TEMPORELLE|TEMPOREL|11977|Qui passe avec le temps, périssable
+BIKINIS|BIKINI|11978|Maillots de bain deux-pièces
+PROBABILITES|PROBABILITE|11979|Chances
+DIFFUSE|DIFFUSER|11981|Se propage
+DIFFUSENT|DIFFUSER|11981|Se propagent
+DIFFUSAIT|DIFFUSER|11981|Se propageait
+DIFFUSAIENT|DIFFUSER|11981|Se propageaient
+DIFFUSERA|DIFFUSER|11981|Se propagera
+DIFFUSA|DIFFUSER|11981|Se propagea
+VIRILS|VIRIL|11989|Relatifs à l’homme adulte
+VIRILE|VIRIL|11989|Qui appartient à l’homme, en tant que mâle
+CLARIFIE|CLARIFIER|11990|Rend claire une substance trouble|Purifie une substance fluide quelconque
+CLARIFIENT|CLARIFIER|11990|Rendent claire une substance trouble|Purifient une substance fluide quelconque
+CLARIFIAIT|CLARIFIER|11990|Rendait claire une substance trouble|Purifiait une substance fluide quelconque
+CLARIFIAIENT|CLARIFIER|11990|Rendaient claire une substance trouble|Purifiaient une substance fluide quelconque
+CLARIFIERA|CLARIFIER|11990|Rendra claire une substance trouble|Purifiera une substance fluide quelconque
+CLARIFIA|CLARIFIER|11990|Rendit claire une substance trouble|Purifia une substance fluide quelconque
+TAILLENT|TAILLER|11994|Distribuent les cartes et jouent seul contre tous les autres joueurs
+TAILLAIT|TAILLER|11994|Distribuait les cartes et jouait seul contre tous les autres joueurs
+TAILLAIENT|TAILLER|11994|Distribuaient les cartes et jouaient seul contre tous les autres joueurs
+TAILLERA|TAILLER|11994|Distribuera les cartes et jouera seul contre tous les autres joueurs
+TAILLA|TAILLER|11994|Distribua les cartes et joua seul contre tous les autres joueurs
+DISCOS|DISCO|11997|Danses sur ce rythme
+PINGOUINS|PINGOUIN|12003|Manchots
+CHAMPIGNONS|CHAMPIGNON|12017|Formes parasitaires de la peau humaine|Accélérateurs d’un véhicule à moteur
+CLAVIERS|CLAVIER|12026|Rangées des touches d’un piano|Gammes, larges choix, palettes
+PRESCRITS|PRESCRIT|12027|Recommandations explicites
+TROMPETTES|TROMPETTE|12033|Instruments à vent
+MARYLANDS|MARYLAND|12042|Cigarettes fabriquées avec ce tabac
+DINOSAURES|DINOSAURE|12043|Personnes en place depuis très longtemps
+REMONTANTE|REMONTANT|12057|Qui repousse à l’arrière-saison
+BALISES|BALISE|12058|Tout moyens de marquage d’un point de la surface terrestre|Chemins de halage
+PELLICULES|PELLICULE|12059|Couches fines à la surface d’un liquide ou d’un solide
+BAVENT|BAVER|12065|Provoquent, font le fanfaron
+BAVAIT|BAVER|12065|Provoquait, faisait le fanfaron
+BAVAIENT|BAVER|12065|Provoquaient, faisaient le fanfaron
+BAVERA|BAVER|12065|Provoquera, fera le fanfaron
+BAVA|BAVER|12065|Provoqua, fit le fanfaron
+COMBLENT|COMBLER|12084|Font que ce qui était creux ne le soit plus
+COMBLAIT|COMBLER|12084|Faisait que ce qui était creux ne le soit plus
+COMBLAIENT|COMBLER|12084|Faisaient que ce qui était creux ne le soit plus
+COMBLERA|COMBLER|12084|Fera que ce qui était creux ne le soit plus
+COMBLA|COMBLER|12084|Fit que ce qui était creux ne le soit plus
+HUMIDITES|HUMIDITE|12088|Traces d’eau
+SERVANTS|SERVANT|12094|Militaires, notamments artilleurs
+OUTRAGES|OUTRAGE|12102|Injures graves de fait ou de parole|Torts, dommages
+HYMNES|HYMNE|12109|Poèmes chantés|Cantiques
+FAMINES|FAMINE|12113|Indisponibilités générales des aliments les plus essentiels
+DETENDUS|DETENDU|12121|Relax, relâchés
+OLIVIERS|OLIVIER|12124|Les bois de cet arbre
+CONQUETES|CONQUETE|12143|Prises de possession|Actions de séduire
+EXPLORATIONS|EXPLORATION|12154|Examens des parties intérieures du corps
+FIBRES|FIBRE|12155|Cordes d’une lyre
+DISSIMULENT|DISSIMULER|12169|Cachent ses sentiments|Font semblant de ne pas remarquer
+DISSIMULAIT|DISSIMULER|12169|Cachait ses sentiments|Faisait semblant de ne pas remarquer
+DISSIMULERA|DISSIMULER|12169|Cachera ses sentiments|Fera semblant de ne pas remarquer
+DISSIMULA|DISSIMULER|12169|Cacha ses sentiments|Fit semblant de ne pas remarquer
+HERCULES|HERCULE|12173|Hommes d’une force physique extraordinaire
+TOMBANTE|TOMBANT|12182|Qui tombe, qui pend|Qui décline, en parlant du jour
+GEEKS|GEEK|12185|Personnes prises par une passion|Technophiles férus d’informatique|Personnes érudites dans un domaine ésotérique
+AFFILEES|AFFILEE|12196|Maladies pécuaires
+CONTRARIE|CONTRARIER|12207|Fait passer un fil
+CONTRARIENT|CONTRARIER|12207|Font passer un fil
+CONTRARIAIT|CONTRARIER|12207|Faisait passer un fil
+CONTRARIERA|CONTRARIER|12207|Fera passer un fil
+CONTRARIA|CONTRARIER|12207|Fit passer un fil
+ESCROQUERIES|ESCROQUERIE|12212|Vols commis par des moyens frauduleux
+REJETS|REJET|12217|Actions de repousser une chose
+SOPHISTIQUES|SOPHISTIQUE|12223|Très raffinés|Très perfectionnés
+HANDICAPS|HANDICAP|12226|Entraves, gênes
+ALLUMETTES|ALLUMETTE|12234|Bâtonnets de bois ou de carton recouvert|Petites quantités
+NATATIONS|NATATION|12235|Actions de nager
+BOWLS|BOWL|12246|Repas complets servis dans un bol|Grands modules de skatepark en béton et généralement en forme de cuvette
+VIOLETTES|VIOLETTE|12253|Anciens noms de l’alto
+NEGLIGES|NEGLIGE|12263|Vêtements portés de façon intime|Outsiders
+LEURRES|LEURRE|12290|Dispositifs de contremesure
+MOQUETTES|MOQUETTE|12294|Étoffes à chaîne et à trame de fil|Excréments de chevreuil
+CACAHUETES|CACAHUETE|12301|Graines de l’arachide
+OUIES|OUIE|12306|Actions d'ouïr
+COMPENSE|COMPENSER|12320|Dédommage une perte par un avantage considéré comme équivalent
+COMPENSENT|COMPENSER|12320|Dédommagent une perte par un avantage considéré comme équivalent
+COMPENSAIT|COMPENSER|12320|Dédommageait une perte par un avantage considéré comme équivalent
+COMPENSAIENT|COMPENSER|12320|Dédommageaient une perte par un avantage considéré comme équivalent
+COMPENSERA|COMPENSER|12320|Dédommagera une perte par un avantage considéré comme équivalent
+COMPENSA|COMPENSER|12320|Dédommagea une perte par un avantage considéré comme équivalent
+COMMANDOS|COMMANDO|12321|Soldats de ces forces spéciales
+DERIVES|DERIVE|12323|Déplacements en mer|Ailerons situés sous la planche de surf
+DILEMMES|DILEMME|12329|Choix difficiles ou cornéliens
+OPTIQUES|OPTIQUE|12333|Relatifs aux phénomènes de la lumière et de la vision|Manières d’observer une situation, un événement
+CASTORS|CASTOR|12339|Ses fourrures
+STUPEFIANTE|STUPEFIANT|12342|Qui cause une grande surprise
+VETEMENTS|VETEMENT|12347|Pièces formées par quatre triangles
+CLEMENCES|CLEMENCE|12348|Douceurs, modérations
+CUBES|CUBE|12362|Puissances troisièmes représentées par le symbole ³|Disciplines aériennes du cirque
+TROUSSES|TROUSSE|12371|Étuis d’écolier
+REDEMPTIONS|REDEMPTION|12373|Actions de ramener quelqu’un au bien|Rachats de part
+SCOOTERS|SCOOTER|12388|Petites motocyclettes caractérisées par de petites roues|Autos tamponneuses
+CUITES|CUITE|12392|Coctions|Concentrations d’un liquide
+ERRANTE|ERRANT|12406|Qui ne cesse de voyager
+FLOTS|FLOT|12409|Masses liquides en mouvement|Marées montantes|Ornements de laine
+VENTILATIONS|VENTILATION|12430|Régulations
+FIASCOS|FIASCO|12433|Échecs complets|Défaillances sexuelles masculines|Flasques
+FANTAISIES|FANTAISIE|12434|Esprits|Sentiments|Caprices
+EGARES|EGARE|12435|Écartés
+DECHARGENT|DECHARGER|12443|Tirent d'une arme à feu
+DECHARGEAIT|DECHARGER|12443|Tirait d'une arme à feu
+DECHARGERA|DECHARGER|12443|Tirera d'une arme à feu
+DECHARGEA|DECHARGER|12443|Tira d'une arme à feu
+DECHARGEE|DECHARGER|12443|Tirée d'une arme à feu
+DECHARGEES|DECHARGER|12443|Tirées d'une arme à feu
+TOLERANCES|TOLERANCE|12461|Capacités à supporter un inconvénient|Condescendances
+MASCOTTES|MASCOTTE|12464|Êtres, personnes
+FRISSONS|FRISSON|12465|Tremblements causés par le froid ou la fièvre|Sensations d’émotions légères et même agréables
+PLEURANTS|PLEURANT|12468|Figures de personnage dans une attitude de désolation
+PERTURBE|PERTURBER|12475|Trouble, change les habitudes|Dérange le déroulement d'un évènement
+PERTURBENT|PERTURBER|12475|Troublent, changent les habitudes|Dérangent le déroulement d'un évènement
+PERTURBAIT|PERTURBER|12475|Troublait, changeait les habitudes|Dérangeait le déroulement d'un évènement
+PERTURBAIENT|PERTURBER|12475|Troublaient, changeaient les habitudes|Dérangeaient le déroulement d'un évènement
+PERTURBERA|PERTURBER|12475|Troublera, changera les habitudes|Dérangera le déroulement d'un évènement
+PERTURBA|PERTURBER|12475|Troubla, changea les habitudes|Dérangea le déroulement d'un évènement
+REDONNE|REDONNER|12479|Rend, restitue quelque chose qui avait été pris à quelqu’un
+REDONNENT|REDONNER|12479|Rendent, restituent quelque chose qui avait été pris à quelqu’un
+REDONNAIT|REDONNER|12479|Rendait, restituait quelque chose qui avait été pris à quelqu’un
+REDONNAIENT|REDONNER|12479|Rendaient, restituaient quelque chose qui avait été pris à quelqu’un
+REDONNERA|REDONNER|12479|Rendra, restituera quelque chose qui avait été pris à quelqu’un
+REDONNA|REDONNER|12479|Rendit, restitua quelque chose qui avait été pris à quelqu’un
+SKIPS|SKIP|12483|Capitaines d'une équipe sportive
+ECOUTANTS|ECOUTANT|12493|Auditeurs d’un colloque, d’un discours
+PEPES|PEPE|12497|Vieils hommes
+PIANISTES|PIANISTE|12506|Atteints du pian|Relatifs au pian|Personnes atteintes du pian
+BALLADES|BALLADE|12517|Poèmes à forme fixe|Récits en vers
+MORTONS|MORTON|12533|Agarics meurtriers
+CROYANCES|CROYANCE|12535|Des telles connaissances affirmées dans une religion
+SEMES|SEME|12551|Dispersés
+DECENTE|DECENT|12552|Qui respecte les convenances|Convenable, régulière, normale
+DECENTES|DECENT|12552|Convenables, régulières, normales
+VINAIGRES|VINAIGRE|12557|Allures du jeu de corde à sauter
+CARESSES|CARESSE|12560|Témoignages d’affection|Témoignages par paroles d’une affection plus ou moins sincère
+TEMPERAMENTS|TEMPERAMENT|12566|Caractères
+SPOTS|SPOT|12571|Endroits souvent fréquentés
+VIEILLIE|VIEILLI|12606|Qui a pris un coup de vieux
+POIRES|POIRE|12617|Fruits à pépin|Petites pièces de viande de bœuf|Mois, mézigues
+STRIKES|STRIKE|12621|Avertissements
+BREVES|BREVE|12629|Informations par définition courte
+EXCENTRIQUES|EXCENTRIQUE|12646|Objets rituels de la culture maya|Spéléothèmes de forme irrégulière, comme une hélictite
+REFLEXES|REFLEXE|12660|Promptes réactions à une situation délicate ou difficile
+RESTAURE|RESTAURER|12672|Répare
+RESTAURENT|RESTAURER|12672|Réparent
+RESTAURAIT|RESTAURER|12672|Réparait
+RESTAURAIENT|RESTAURER|12672|Réparaient
+RESTAURERA|RESTAURER|12672|Réparera
+RESTAURA|RESTAURER|12672|Répara
+RESTAUREE|RESTAURER|12672|Réparée
+RESTAURES|RESTAURER|12672|Réparés
+RESTAUREES|RESTAURER|12672|Réparées
+OIGNONS|OIGNON|12696|Plantes à bulbe comestible
+PLAISANTS|PLAISANT|12699|Agréables|Amusants
+PLAISANTE|PLAISANT|12699|Agréable|Amusante
+PLAISANTES|PLAISANT|12699|Agréables|Amusantes
+GALANTS|GALANT|12730|Libertins
+GALANTE|GALANT|12730|Qui a des manières d’agir honnêtes et élégantes|Qui traitent avec complaisance de sujets amoureux|Libertine
+GALANTES|GALANT|12730|Libertines
+PROSPERITES|PROSPERITE|12733|Heureux états
+RIGUEURS|RIGUEUR|12735|Sévérités inflexibles, duretés, austérités|Recherches d’exactitude
+PORTOS|PORTO|12736|Verres de ce vin
+TELEPORTE|TELEPORTER|12744|Transporte au loin|Voyage ou transporte un objet sans
+TELEPORTENT|TELEPORTER|12744|Transportent au loin|Voyagent ou transportent un objet sans
+TELEPORTAIT|TELEPORTER|12744|Transportait au loin|Voyageait ou transportait un objet sans
+TELEPORTERA|TELEPORTER|12744|Transportera au loin|Voyagera ou transportera un objet sans
+TELEPORTA|TELEPORTER|12744|Transporta au loin|Voyagea ou transporta un objet sans
+TELEPORTEE|TELEPORTER|12744|Transportée au loin
+TELEPORTES|TELEPORTER|12744|Transportés au loin
+TELEPORTEES|TELEPORTER|12744|Transportées au loin
+CONSTANCES|CONSTANCE|12772|Persévérances
+TOLERENT|TOLERER|12775|Supportent|Supportent chez autrui ce que l’on n’approuve pas
+TOLERAIT|TOLERER|12775|Supportait|Supportait chez autrui ce que l’on n’approuve pas
+TOLERAIENT|TOLERER|12775|Supportaient|Supportaient chez autrui ce que l’on n’approuve pas
+TOLERERA|TOLERER|12775|Supportera|Supportera chez autrui ce que l’on n’approuve pas
+TOLERA|TOLERER|12775|Supporta|Supporta chez autrui ce que l’on n’approuve pas
+TOLEREE|TOLERER|12775|Supportée|Supportée chez autrui ce que l’on n’approuve pas
+TOLERES|TOLERER|12775|Supportés|Supportés chez autrui ce que l’on n’approuve pas
+TOLEREES|TOLERER|12775|Supportées|Supportées chez autrui ce que l’on n’approuve pas
+RAMES|RAME|12777|Assemblages de tiges de forage
+VANITES|VANITE|12782|Inutilités, inconsistances|Choses vaines, inconsistantes et inutiles
+ONGLES|ONGLE|12789|Lames dures, cornées
+COLOMBES|COLOMBE|12791|Tourterelles domestiques
+EMUE|EMU|12800|Qui manifeste une émotion
+TRONCS|TRONC|12803|Parties principales du corps d’un homme
+CRAPULES|CRAPULE|12806|Ivrogneries|Débauches habituelles et grossières|Malhonnêtes, vicieux
+BICHES|BICHE|12807|Femelles du cerf|Chéries|Gazelles, antilopes
+MOULES|MOULE|12812|Mollusques bivalves|Unités de volume de bois, de volume variable selon la région
+EMBARRASSES|EMBARRASSE|12831|Troublés
+MANOEUVRES|MANOEUVRE|12842|Actions par laquelle la main fait mouvoir un appareil|Actions de gouverner
+SOUFFRANTS|SOUFFRANT|12843|Légèrements malades
+TIRANTE|TIRANT|12845|Qui tire
+SOUTERRAINS|SOUTERRAIN|12854|Passages pratiqués sous terre
+PRODIGES|PRODIGE|12856|Choses extraordinaires|Personnes extraordinaires
+GERBENT|GERBER|12871|Mettent en tas|Secouent
+GERBAIT|GERBER|12871|Mettait en tas|Secouait
+GERBAIENT|GERBER|12871|Mettaient en tas|Secouaient
+GERBERA|GERBER|12871|Mettra en tas|Secouera
+GERBA|GERBER|12871|Mit en tas|Secoua
+GERBEE|GERBER|12871|Mise en tas|Secouée
+GERBES|GERBER|12871|Mis en tas|Secoués
+GERBEES|GERBER|12871|Mises en tas|Secouées
+PUANTEURS|PUANTEUR|12881|Odeurs infectes
+OPIUMS|OPIUM|12891|Sucs de plusieurs espèces de pavots
+HESITATIONS|HESITATION|12899|Incertitudes dans l’énonciation
+VEXES|VEXE|12904|Froissés, chagrinés, dépités
+COFFRENT|COFFRER|12907|Emprisonnent
+COFFRAIT|COFFRER|12907|Emprisonnait
+COFFRAIENT|COFFRER|12907|Emprisonnaient
+COFFRERA|COFFRER|12907|Emprisonnera
+COFFRA|COFFRER|12907|Emprisonna
+COFFREE|COFFRER|12907|Emprisonnée
+COFFREES|COFFRER|12907|Emprisonnées
+TOURNURES|TOURNURE|12909|Tailles, aspects extérieurs
+COLLANTE|COLLANT|12916|Qui colle
+SUPPOSITIONS|SUPPOSITION|12924|Productions d’une fausse pièce
+RESIDENTS|RESIDENT|12928|Personnes établies à demeure dans un pays étranger
+PRECIPITES|PRECIPITE|12933|Hâtés, accélérés, prompts, rapides voire impétueux|Changements de décor rapide
+FANFARES|FANFARE|12935|Airs exécutés par des cors ou des trompettes|Musiques militaires, très sonores
+RANDONNEES|RANDONNEE|12943|Longues promenades
+ARROSENT|ARROSER|12951|Font circuler de l’eau dans des terres
+ARROSAIT|ARROSER|12951|Faisait circuler de l’eau dans des terres
+ARROSAIENT|ARROSER|12951|Faisaient circuler de l’eau dans des terres
+ARROSERA|ARROSER|12951|Fera circuler de l’eau dans des terres
+ARROSA|ARROSER|12951|Fit circuler de l’eau dans des terres
+ASSOCIE|ASSOCIER|12961|Prend quelqu’un pour compagnon|Hante, fréquente quelqu’un
+ASSOCIENT|ASSOCIER|12961|Prennent quelqu’un pour compagnon|Hantent, fréquentent quelqu’un
+ASSOCIAIT|ASSOCIER|12961|Prenait quelqu’un pour compagnon|Hantait, fréquentait quelqu’un
+ASSOCIAIENT|ASSOCIER|12961|Prenaient quelqu’un pour compagnon|Hantaient, fréquentaient quelqu’un
+ASSOCIERA|ASSOCIER|12961|Prendra quelqu’un pour compagnon|Hantera, fréquentera quelqu’un
+ASSOCIA|ASSOCIER|12961|Prit quelqu’un pour compagnon|Hanta, fréquenta quelqu’un
+DEGUISE|DEGUISER|12975|Change pour tromper
+DEGUISENT|DEGUISER|12975|Changent pour tromper
+DEGUISAIT|DEGUISER|12975|Changeait pour tromper
+DEGUISAIENT|DEGUISER|12975|Changeaient pour tromper
+DEGUISERA|DEGUISER|12975|Changera pour tromper
+DEGUISA|DEGUISER|12975|Changea pour tromper
+DEGUISEE|DEGUISER|12975|Changée pour tromper
+DEGUISES|DEGUISER|12975|Changés pour tromper
+DEGUISEES|DEGUISER|12975|Changées pour tromper
+INJONCTIONS|INJONCTION|12979|Commandements exprès
+PETITIONS|PETITION|12985|Actions de demander
+RUCHES|RUCHE|12992|Bandes plissées d’étoffe
+TOURISMES|TOURISME|12995|Actions de voyager pour son plaisir
+COMPETENTE|COMPETENT|13000|Qui peut donner son avis sur une chose
+TAOS|TAO|13011|Enchaînements de mouvements de kung-fu
+CHALLENGES|CHALLENGE|13018|Projets ambitieux
+IMPROVISE|IMPROVISER|13019|Organise sans préparation antérieure
+IMPROVISENT|IMPROVISER|13019|Organisent sans préparation antérieure
+IMPROVISAIT|IMPROVISER|13019|Organisait sans préparation antérieure
+IMPROVISERA|IMPROVISER|13019|Organisera sans préparation antérieure
+IMPROVISA|IMPROVISER|13019|Organisa sans préparation antérieure
+IMPROVISEE|IMPROVISER|13019|Organisée sans préparation antérieure
+IMPROVISES|IMPROVISER|13019|Organisés sans préparation antérieure
+IMPROVISEES|IMPROVISER|13019|Organisées sans préparation antérieure
+HYBRIDES|HYBRIDE|13024|Composés d'éléments de différentes natures
+REDIGE|REDIGER|13031|Met par écrit
+REDIGENT|REDIGER|13031|Mettent par écrit
+REDIGEAIT|REDIGER|13031|Mettait par écrit
+REDIGEAIENT|REDIGER|13031|Mettaient par écrit
+REDIGERA|REDIGER|13031|Mettra par écrit
+REDIGEA|REDIGER|13031|Mit par écrit
+REDIGEE|REDIGER|13031|Mise par écrit
+REDIGES|REDIGER|13031|Mis par écrit
+REDIGEES|REDIGER|13031|Mises par écrit
+SOUCHES|SOUCHE|13037|Bases d’un élément de construction
+CHINATOWNS|CHINATOWN|13042|Quartiers chinois ou asiatiques
+DIARRHEES|DIARRHEE|13044|Maladies caractérisées par des évacuations de selles
+CONSTATE|CONSTATER|13056|Observe en faisant remarquer
+CONSTATENT|CONSTATER|13056|Observent en faisant remarquer
+CONSTATAIT|CONSTATER|13056|Observait en faisant remarquer
+CONSTATAIENT|CONSTATER|13056|Observaient en faisant remarquer
+CONSTATERA|CONSTATER|13056|Observera en faisant remarquer
+CONSTATA|CONSTATER|13056|Observa en faisant remarquer
+CONSTATEE|CONSTATER|13056|Observée en faisant remarquer
+CONSTATES|CONSTATER|13056|Observés en faisant remarquer
+CONSTATEES|CONSTATER|13056|Observées en faisant remarquer
+CANAILLES|CANAILLE|13092|Personnes malhonnêtes et méprisables|Populaciers, vulgaires, polissons
+SETS|SET|13096|Ensemble, trousses, équipements, assortiments
+BOXERS|BOXER|13099|Insurgés chinois
+MEDIOCRES|MEDIOCRE|13103|Personnes de condition intermédiaire entre le peuple et la noblesse|Personnes sans talent particulier
+ARTIFICIELS|ARTIFICIEL|13114|Peu naturels
+ARTIFICIELLE|ARTIFICIEL|13114|Peu naturelle
+GALES|GALE|13120|Maladies parasitaires causées par le sarcopte|Maladies des végétaux
+YAKUZAS|YAKUZA|13130|Membres de la mafia japonaise
+GIFLES|GIFLE|13140|Coups donnés avec la paume ou le dos de la main sur la joue
+DEMENCES|DEMENCE|13143|Aliénations mentales chroniques|Démarches, actions
+VOCABULAIRES|VOCABULAIRE|13155|Listes de mots
+INCISIONS|INCISION|13165|Coupures dans une couche de terrain
+RIVAGES|RIVAGE|13167|Toutes sortes de rebord
+CONTRAINTES|CONTRAINTE|13172|Conditions à satisfaire
+PUANTE|PUANT|13173|Qui sent mauvais, qui a une mauvaise odeur
+COMPOSENT|COMPOSER|13177|Forment un tout de l’assemblage de plusieurs parties|Assemblent les caractères pour en former des mots
+COMPOSAIT|COMPOSER|13177|Formait un tout de l’assemblage de plusieurs parties|Assemblait les caractères pour en former des mots
+COMPOSAIENT|COMPOSER|13177|Formaient un tout de l’assemblage de plusieurs parties|Assemblaient les caractères pour en former des mots
+COMPOSERA|COMPOSER|13177|Formera un tout de l’assemblage de plusieurs parties|Assemblera les caractères pour en former des mots
+COMPOSA|COMPOSER|13177|Forma un tout de l’assemblage de plusieurs parties|Assembla les caractères pour en former des mots
+ABIMENT|ABIMER|13182|Font perdre en qualité
+ABIMAIT|ABIMER|13182|Faisait perdre en qualité
+ABIMAIENT|ABIMER|13182|Faisaient perdre en qualité
+ABIMERA|ABIMER|13182|Fera perdre en qualité
+ABIMA|ABIMER|13182|Fit perdre en qualité
+DUPENT|DUPER|13190|Se trompent, se leurrent
+DUPAIT|DUPER|13190|Se trompait, se leurrait
+DUPAIENT|DUPER|13190|Se trompaient, se leurraient
+DUPERA|DUPER|13190|Se trompera, se leurrera
+DUPA|DUPER|13190|Se trompa, se leurra
+RODEOS|RODEO|13191|Rassemblements du bétail pour le marquage
+SILHOUETTES|SILHOUETTE|13197|Apparences d’un corps|Profils caractéristiques d’une ville ou d’un paysage
+DESACTIVE|DESACTIVER|13206|Arrête une des fonctionnalités de quelque chose qui fonctionne
+DESACTIVENT|DESACTIVER|13206|Arrêtent une des fonctionnalités de quelque chose qui fonctionne
+DESACTIVAIT|DESACTIVER|13206|Arrêtait une des fonctionnalités de quelque chose qui fonctionne
+DESACTIVERA|DESACTIVER|13206|Arrêtera une des fonctionnalités de quelque chose qui fonctionne
+DESACTIVA|DESACTIVER|13206|Arrêta une des fonctionnalités de quelque chose qui fonctionne
+APPRENANTE|APPRENANT|13210|Qui acquiert une connaissance ou un savoir-faire
+ANEVRISMES|ANEVRISME|13230|Lésions des veines et des artères|Dilatations morbides du cœur
+BRANLES|BRANLE|13244|Mises en mouvement|Lits de matelot, hamac sur un navire
+PARQUETS|PARQUET|13269|Assemblages de bois, bordure d’encadrement|Pistes couvertes pour danser
+TABLIERS|TABLIER|13270|Pièces de toile|Ornements sculptés sur la face d’un piédestal
+ALGORITHMES|ALGORITHME|13271|Méthodes générales pour résoudre un ensemble de problèmes
+POPULARITES|POPULARITE|13279|Faveurs publiques
+CREVEES|CREVEE|13282|Trouées, échancrures, déchirures|Grosses quantités
+HOBBYS|HOBBY|13284|Occupations préférées
+RENVOIS|RENVOI|13287|Ajournements, remises
+ROTATIONS|ROTATION|13288|Rythmes de renouvellement du personnel
+PLATEFORMES|PLATEFORME|13298|Infrastructures de base
+GIBIERS|GIBIER|13303|Viandes issues de ces animaux
+STRATEGIQUES|STRATEGIQUE|13304|Relatifs aux rapports entre la guerre
+COMPETENCES|COMPETENCE|13321|Aptitudes d’une personne à travailler dans un domaine
+ECROULE|ECROULER|13335|Tombe en s’affaissant|Tombe en décadence
+ECROULENT|ECROULER|13335|Tombent en s’affaissant|Tombent en décadence
+ECROULAIT|ECROULER|13335|Tombait en s’affaissant|Tombait en décadence
+ECROULAIENT|ECROULER|13335|Tombaient en s’affaissant|Tombaient en décadence
+ECROULERA|ECROULER|13335|Tombera en s’affaissant|Tombera en décadence
+ECROULA|ECROULER|13335|Tomba en s’affaissant|Tomba en décadence
+ECROULEE|ECROULER|13335|Tombée en s’affaissant|Tombée en décadence
+ECROULES|ECROULER|13335|Tombés en s’affaissant|Tombés en décadence
+ECROULEES|ECROULER|13335|Tombées en s’affaissant|Tombées en décadence
+DANSANTS|DANSANT|13345|Très appropriés pour faire danser
+DANSANTE|DANSANT|13345|Qui danse
+VESSIES|VESSIE|13372|Poches emplies d'air ou d'eau
+MATELOTE|MATELOT|13376|Qui relève de l’équipage manœuvrier d’un bâtiment de mer|Qui suit ou précède, dans une ligne navale
+PESE|PESER|13377|Examine la pesanteur d’une chose|Occupe un certain espace de stockage
+PESENT|PESER|13377|Examinent la pesanteur d’une chose|Occupent un certain espace de stockage
+PESAIT|PESER|13377|Examinait la pesanteur d’une chose|Occupait un certain espace de stockage
+PESAIENT|PESER|13377|Examinaient la pesanteur d’une chose|Occupaient un certain espace de stockage
+PESERA|PESER|13377|Examinera la pesanteur d’une chose|Occupera un certain espace de stockage
+PESA|PESER|13377|Examina la pesanteur d’une chose|Occupa un certain espace de stockage
+INGENIEUSE|INGENIEUX|13380|Qui marque de l’invention ou de l’adresse
+BUVANTE|BUVANT|13402|Qui boit
+VETERANS|VETERAN|13414|Anciens soldats|Soldats depuis longtemps sous les drapeaux
+GONFLENT|GONFLER|13415|Transforment une image|Augmentent de volume, enflent
+GONFLAIT|GONFLER|13415|Transformait une image|Augmentait de volume, enflait
+GONFLAIENT|GONFLER|13415|Transformaient une image|Augmentaient de volume, enflaient
+GONFLERA|GONFLER|13415|Transformera une image|Augmentera de volume, enflera
+GONFLA|GONFLER|13415|Transforma une image|Augmenta de volume, enfla
+GONFLEE|GONFLER|13415|Augmentée de volume, enflée
+GONFLEES|GONFLER|13415|Augmentées de volume, enflées
+ASTUCES|ASTUCE|13419|Solutions pour résoudre un problème, une question
+MUSTANGS|MUSTANG|13425|Races de cheval de travail
+STUPIDITES|STUPIDITE|13461|Pesanteurs d’esprit|Privations d’esprit et de jugement
+SERREES|SERREE|13462|Contractions
+PIAULES|PIAULE|13481|Chambres|Logements de très petite taille
+GOUFFRES|GOUFFRE|13492|Cavités souterraines naturelles, larges et profondes
+IRRUPTIONS|IRRUPTION|13510|Toutes entrées ou intrusions brusques, inattendues ou malvenues
+TALBOTS|TALBOT|13520|Anciennes races de chien d'origine française ou belge
+INTERCEPTE|INTERCEPTER|13521|S'empare par surprise de ce qui est adressé
+INTERCEPTENT|INTERCEPTER|13521|S'emparent par surprise de ce qui est adressé
+INTERCEPTAIT|INTERCEPTER|13521|S'emparait par surprise de ce qui est adressé
+INTERCEPTERA|INTERCEPTER|13521|S'emparera par surprise de ce qui est adressé
+INTERCEPTA|INTERCEPTER|13521|S'empara par surprise de ce qui est adressé
+IMPERATRICES|IMPERATRICE|13526|Souveraines d’un empire|Épouses d’un empereur
+INSOLENTE|INSOLENT|13535|Qui s'oppose à son supérieur|Qui en use avec orgueil, avec dureté
+PARTIELS|PARTIEL|13545|Examens au cours du semestre
+LICORNES|LICORNE|13546|Quadrupèdes fabuleux|Femmes, généralements bisexuelles
+MEDITATIONS|MEDITATION|13566|Oraisons mentales
+ALERTENT|ALERTER|13573|Mettent en éveil|Signalent un commentaire hors charte au modérateur
+ALERTAIT|ALERTER|13573|Mettait en éveil|Signalait un commentaire hors charte au modérateur
+ALERTAIENT|ALERTER|13573|Mettaient en éveil|Signalaient un commentaire hors charte au modérateur
+ALERTERA|ALERTER|13573|Mettra en éveil|Signalera un commentaire hors charte au modérateur
+ALERTA|ALERTER|13573|Mit en éveil|Signala un commentaire hors charte au modérateur
+ALERTEE|ALERTER|13573|Mise en éveil
+ALERTEES|ALERTER|13573|Mises en éveil
+EXCURSIONS|EXCURSION|13577|Courses au dehors, promenade de recherche, de découverte|Variations temporaires d’une grandeur en dehors de sa valeur habituelle
+REPANDUE|REPANDU|13581|Qui a des relations, qui a ses entrées dans la société
+ROULETTES|ROULETTE|13591|Petites roues de bois|Instruments de fer en forme de petite roue pour tracer des filets|Instruments en forme de petite roue
+CROSSES|CROSSE|13594|Parties postérieures d'une arme à feu portative|Manches d’une arme de poing
+HUMILITES|HUMILITE|13603|Sentiments personnels de peu d’importance
+ESCALADENT|ESCALADER|13605|Attaquent
+ESCALADAIT|ESCALADER|13605|Attaquait
+ESCALADAIENT|ESCALADER|13605|Attaquaient
+ESCALADERA|ESCALADER|13605|Attaquera
+ESCALADA|ESCALADER|13605|Attaqua
+ESCALADEE|ESCALADER|13605|Attaquée
+ESCALADEES|ESCALADER|13605|Attaquées
+EMOUVANTE|EMOUVANT|13609|Qui émeut, qui fait naître de vives émotions
+SPECIMENS|SPECIMEN|13625|Modèles, échantillons
+ELEGANCES|ELEGANCE|13630|Certaines distinctions dans l’habillement et dans les manières
+FRUSTRES|FRUSTRE|13636|Trompés, déçus
+DEMONTENT|DEMONTER|13638|Arrêtent le mouvement d’un mécanisme
+DEMONTAIT|DEMONTER|13638|Arrêtait le mouvement d’un mécanisme
+DEMONTAIENT|DEMONTER|13638|Arrêtaient le mouvement d’un mécanisme
+DEMONTERA|DEMONTER|13638|Arrêtera le mouvement d’un mécanisme
+DEMONTA|DEMONTER|13638|Arrêta le mouvement d’un mécanisme
+OCULAIRES|OCULAIRE|13641|Relatifs à la vue ou à la vision
+ETALAGES|ETALAGE|13644|Actions d’étaler une chose
+SYMPTOMES|SYMPTOME|13650|Phénomènes caractéristiques d’un trouble organique ou fonctionnel
+DECEVANTE|DECEVANT|13655|Qui déçoit
+HOLLANDES|HOLLANDE|13662|Variétés de pomme de terre jaune, grosse et farineuse
+MOLLES|MOLLE|13666|Bottes d'osier fendu
+SIGNIFIENT|SIGNIFIER|13672|Expriment ce qu’on entend par un mot
+SIGNIFIAIT|SIGNIFIER|13672|Exprimait ce qu’on entend par un mot
+SIGNIFIAIENT|SIGNIFIER|13672|Exprimaient ce qu’on entend par un mot
+SIGNIFIERA|SIGNIFIER|13672|Exprimera ce qu’on entend par un mot
+SIGNIFIA|SIGNIFIER|13672|Exprima ce qu’on entend par un mot
+CRANIENS|CRANIEN|13684|Relatifs au crâne
+RELANCES|RELANCE|13690|Impulsions nouvelles données à une action diplomatique
+DETERRE|DETERRER|13694|Exhume, retire un corps de la sépulture
+DETERRENT|DETERRER|13694|Exhument, retirent un corps de la sépulture
+DETERRAIT|DETERRER|13694|Exhumait, retirait un corps de la sépulture
+DETERRAIENT|DETERRER|13694|Exhumaient, retiraient un corps de la sépulture
+DETERRERA|DETERRER|13694|Exhumera, retirera un corps de la sépulture
+DETERRA|DETERRER|13694|Exhuma, retira un corps de la sépulture
+RECOMMANDE|RECOMMANDER|13698|Ordonne à quelqu’un|Conseille particulièrement quelque chose|Désigne à l’attention
+RECOMMANDENT|RECOMMANDER|13698|Ordonnent à quelqu’un|Conseillent particulièrement quelque chose|Désignent à l’attention
+RECOMMANDAIT|RECOMMANDER|13698|Ordonnait à quelqu’un|Conseillait particulièrement quelque chose|Désignait à l’attention
+RECOMMANDERA|RECOMMANDER|13698|Ordonnera à quelqu’un|Conseillera particulièrement quelque chose|Désignera à l’attention
+RECOMMANDA|RECOMMANDER|13698|Ordonna à quelqu’un|Conseilla particulièrement quelque chose|Désigna à l’attention
+RECOMMANDEE|RECOMMANDER|13698|Ordonnée à quelqu’un|Désignée à l’attention
+RECOMMANDES|RECOMMANDER|13698|Ordonnés à quelqu’un|Désignés à l’attention
+RECOMMANDEES|RECOMMANDER|13698|Ordonnées à quelqu’un|Désignées à l’attention
+CULTIVENT|CULTIVER|13699|Prennent soin des plantes
+CULTIVAIT|CULTIVER|13699|Prenait soin des plantes
+CULTIVAIENT|CULTIVER|13699|Prenaient soin des plantes
+CULTIVERA|CULTIVER|13699|Prendra soin des plantes
+CULTIVA|CULTIVER|13699|Prit soin des plantes
+GRECQUES|GRECQUE|13700|Dispositifs de contrôle de vitesse des trains automatiques
+OPENS|OPEN|13709|Compétitions ouvertes aux amateurs comme aux professionnels
+COMPLIQUE|COMPLIQUER|13711|Forme un assemblage dont les parties|Aggrave
+COMPLIQUENT|COMPLIQUER|13711|Forment un assemblage dont les parties|Aggravent
+COMPLIQUAIT|COMPLIQUER|13711|Formait un assemblage dont les parties|Aggravait
+COMPLIQUERA|COMPLIQUER|13711|Formera un assemblage dont les parties|Aggravera
+COMPLIQUA|COMPLIQUER|13711|Forma un assemblage dont les parties|Aggrava
+COMPLIQUEE|COMPLIQUER|13711|Aggravée
+COMPLIQUES|COMPLIQUER|13711|Aggravés
+COMPLIQUEES|COMPLIQUER|13711|Aggravées
+PLANTATIONS|PLANTATION|13730|Manières de camper un personnage
+DYNASTIES|DYNASTIE|13735|Lignées de personnes remarquables|Lignées familiales
+DRAPS|DRAP|13738|Grandes pièces de toile
+SENIORE|SENIOR|13752|Qui concerne les joueurs adultes|Qui concerne une personne âgée
+VOGUES|VOGUE|13777|Popularités|Fêtes votives|Endroits en désordre
+PILOTAGES|PILOTAGE|13784|Arts de conduire un vaisseau
+MAQUETTES|MAQUETTE|13785|Modèles réduits d’un ouvrage d’art|Mises en page des différents éléments
+CROISEMENTS|CROISEMENT|13790|Actions d’accoupler des animaux de même espèce|Produits de cette hybridation
+AIDANTS|AIDANT|13795|Personnes, les plus souvent bénévoles
+AIDANTE|AIDANT|13795|Qui aide
+LOBES|LOBE|13802|Extrémités inférieures du pavillon de l’oreille|Sections continues d’un diagramme de rayonnement|Tirs d’un ballon au dessus des adversaires
+VALSES|VALSE|13806|Danses tournantes exécutées par un couple sur un mouvement|Parades amoureuses du coq
+MANIENT|MANIER|13813|Prennent, tâtent|Tournent ou gouvernent à son gré|Travaillent du beurre pour y incorporer de la farine
+MANIAIT|MANIER|13813|Prenait, tâtait|Tournait ou gouvernait à son gré|Travaillait du beurre pour y incorporer de la farine
+MANIAIENT|MANIER|13813|Prenaient, tâtaient|Tournaient ou gouvernaient à son gré|Travaillaient du beurre pour y incorporer de la farine
+MANIERA|MANIER|13813|Prendra, tâtera|Tournera ou gouvernera à son gré|Travaillera du beurre pour y incorporer de la farine
+MANIA|MANIER|13813|Prit, tâta|Tourna ou gouverna à son gré|Travailla du beurre pour y incorporer de la farine
+MANIEE|MANIER|13813|Prise, tâtée|Tournée ou gouvernée à son gré|Travaillée du beurre pour y incorporer de la farine
+MANIES|MANIER|13813|Pris, tâtés|Tournés ou gouvernés à son gré|Travaillés du beurre pour y incorporer de la farine
+MANIEES|MANIER|13813|Prises, tâtées|Tournées ou gouvernées à son gré|Travaillées du beurre pour y incorporer de la farine
+DIGERE|DIGERER|13825|Assimile par l’intelligence|Élabore la nourriture mangée
+DIGERENT|DIGERER|13825|Assimilent par l’intelligence|Élaborent la nourriture mangée
+DIGERAIT|DIGERER|13825|Assimilait par l’intelligence|Élaborait la nourriture mangée
+DIGERAIENT|DIGERER|13825|Assimilaient par l’intelligence|Élaboraient la nourriture mangée
+DIGERERA|DIGERER|13825|Assimilera par l’intelligence|Élaborera la nourriture mangée
+DIGERA|DIGERER|13825|Assimila par l’intelligence|Élabora la nourriture mangée
+DIGEREE|DIGERER|13825|Assimilée par l’intelligence
+DIGERES|DIGERER|13825|Assimilés par l’intelligence
+DIGEREES|DIGERER|13825|Assimilées par l’intelligence
+NOMBRILS|NOMBRIL|13835|Cicatrices du cordon ombilical
+COMPOSITEURS|COMPOSITEUR|13860|Auteurs d’une œuvre artistique
+AGITENT|AGITER|13888|Secouent vivement en tout sens|Remuent vivement en tout sens
+AGITAIT|AGITER|13888|Secouait vivement en tout sens|Remuait vivement en tout sens
+AGITAIENT|AGITER|13888|Secouaient vivement en tout sens|Remuaient vivement en tout sens
+AGITERA|AGITER|13888|Secouera vivement en tout sens|Remuera vivement en tout sens
+AGITA|AGITER|13888|Secoua vivement en tout sens|Remua vivement en tout sens
+MASTERS|MASTER|13893|Tournois sportifs|Maîtres
+SURNATURELLE|SURNATUREL|13902|Extraordinaire|Qui relève de Dieu, d'une puissance divine
+MANIFESTENT|MANIFESTER|13905|Se rendent visible
+MANIFESTAIT|MANIFESTER|13905|Se rendait visible
+MANIFESTERA|MANIFESTER|13905|Se rendra visible
+MANIFESTA|MANIFESTER|13905|Se rendit visible
+ACTIVATIONS|ACTIVATION|13909|Actions de rendre actif|Résultats de ce bombardement
+CONFRONTE|CONFRONTER|13923|Met des personnes en présence les unes des autres
+CONFRONTENT|CONFRONTER|13923|Mettent des personnes en présence les unes des autres
+CONFRONTAIT|CONFRONTER|13923|Mettait des personnes en présence les unes des autres
+CONFRONTERA|CONFRONTER|13923|Mettra des personnes en présence les unes des autres
+CONFRONTA|CONFRONTER|13923|Mit des personnes en présence les unes des autres
+CONFRONTEE|CONFRONTER|13923|Mise des personnes en présence les unes des autres
+CONFRONTES|CONFRONTER|13923|Mis des personnes en présence les unes des autres
+CONFRONTEES|CONFRONTER|13923|Mises des personnes en présence les unes des autres
+LEGUMES|LEGUME|13934|Toutes sortes d’herbes potagères
+ETUIS|ETUI|13937|Contenants pour mettre|Douilles
+CROISADES|CROISADE|13941|Carrefours de chemins
+HYDROGENES|HYDROGENE|13959|Gaz diatomiques inodores
+LITRES|LITRE|13963|Contenus de ce récipient
+CHOEURS|CHOEUR|13977|Parties de l’église
+EXPANSIONS|EXPANSION|13981|Croissances, développements
+CHAPERONS|CHAPERON|13998|Bonnets de mailles sous le heaume|Bourrelets particuliers au costume des gens de robe
+BREVETS|BREVET|14001|Diplômes de l’enseignement primaire et secondaire
+STABILISENT|STABILISER|14007|Rendent stable|Font sortir un malade de la phase critique de sa pathologie
+STABILISAIT|STABILISER|14007|Rendait stable|Faisait sortir un malade de la phase critique de sa pathologie
+STABILISERA|STABILISER|14007|Rendra stable|Fera sortir un malade de la phase critique de sa pathologie
+STABILISA|STABILISER|14007|Rendit stable|Fit sortir un malade de la phase critique de sa pathologie
+CASENT|CASER|14021|Ordonnent les idées dans la tête
+CASAIT|CASER|14021|Ordonnait les idées dans la tête
+CASAIENT|CASER|14021|Ordonnaient les idées dans la tête
+CASERA|CASER|14021|Ordonnera les idées dans la tête
+CASA|CASER|14021|Ordonna les idées dans la tête
+TEMPES|TEMPE|14025|Parties latérales de la tête entre l’oreille et le front
+SKATES|SKATE|14026|Planches à roulettes
+DERRICKS|DERRICK|14028|Engins de manutention généralement fixe
+SONDAGES|SONDAGE|14037|Actions de sonder un lieu|Mesures de profondeur de fonds aquatiques
+TIRAGES|TIRAGE|14052|Actions de tirer, de déplacer, de mouvoir dans une direction|Transferts d’une information source sur un support|Retraits d’une devise
+RIVALISE|RIVALISER|14076|Dispute de talent
+RIVALISENT|RIVALISER|14076|Disputent de talent
+RIVALISAIT|RIVALISER|14076|Disputait de talent
+RIVALISAIENT|RIVALISER|14076|Disputaient de talent
+RIVALISERA|RIVALISER|14076|Disputera de talent
+RIVALISA|RIVALISER|14076|Disputa de talent
+RIVALISEE|RIVALISER|14076|Disputée de talent
+RIVALISES|RIVALISER|14076|Disputés de talent
+RIVALISEES|RIVALISER|14076|Disputées de talent
+INFLIGE|INFLIGER|14093|Frappe quelqu’un d’une peine pour une transgression|Fait subir à quelqu'un une chose pénible
+INFLIGENT|INFLIGER|14093|Frappent quelqu’un d’une peine pour une transgression|Font subir à quelqu'un une chose pénible
+INFLIGEAIT|INFLIGER|14093|Frappait quelqu’un d’une peine pour une transgression|Faisait subir à quelqu'un une chose pénible
+INFLIGEAIENT|INFLIGER|14093|Frappaient quelqu’un d’une peine pour une transgression|Faisaient subir à quelqu'un une chose pénible
+INFLIGERA|INFLIGER|14093|Frappera quelqu’un d’une peine pour une transgression|Fera subir à quelqu'un une chose pénible
+INFLIGEA|INFLIGER|14093|Frappa quelqu’un d’une peine pour une transgression|Fit subir à quelqu'un une chose pénible
+POSTURES|POSTURE|14109|Comportements
+SACHETS|SACHET|14130|Petits sacs|Petits emballages de papier ou de film plastique
+CONSOLATIONS|CONSOLATION|14154|Soulagements donnés à l’affliction
+COQUINES|COQUINE|14156|Amantes habiles au jeu de la séduction et de l’amour
+GAINS|GAIN|14166|Succès, victoires|Capacités d’amplification d’une antenne
+VRILLES|VRILLE|14177|Pousses filiformes|Fraises de dentiste
+GOUVERNES|GOUVERNE|14184|Actions de diriger une embarcation
+MATURITES|MATURITE|14200|États de développement complet des forces intellectuelles et physiques
+BLOCAGES|BLOCAGE|14214|Actions de réunir en bloc|Assemblages en bloc de moellons|Actions de bloquer, de rendre immobile
+CAPITOLES|CAPITOLE|14216|Citadelles, acropoles
+PARAGRAPHES|PARAGRAPHE|14221|Sections d’un développement, d’un chapitre, etc|Passages d'un texte en prose compris entre deux alinéas|Signes figurés de cette manière §
+CHIFFONS|CHIFFON|14223|Mauvais linges
+EXTORSIONS|EXTORSION|14236|Rotations du globe oculaire vers la tempe
+FOUETTENT|FOUETTER|14241|Frappent contre quelque chose|Stimulent, encouragent, excitent
+FOUETTAIT|FOUETTER|14241|Frappait contre quelque chose|Stimulait, encourageait, excitait
+FOUETTAIENT|FOUETTER|14241|Frappaient contre quelque chose|Stimulaient, encourageaient, excitaient
+FOUETTERA|FOUETTER|14241|Frappera contre quelque chose|Stimulera, encouragera, excitera
+FOUETTA|FOUETTER|14241|Frappa contre quelque chose|Stimula, encouragea, excita
+FOUETTEE|FOUETTER|14241|Frappée contre quelque chose|Stimulée, encouragée, excitée
+FOUETTES|FOUETTER|14241|Frappés contre quelque chose|Stimulés, encouragés, excités
+FOUETTEES|FOUETTER|14241|Frappées contre quelque chose|Stimulées, encouragées, excitées
+ABBES|ABBE|14246|Moines supérieurs d’une abbaye
+GOUVERNENT|GOUVERNER|14258|Dirigent un pays|Apportent des soins à une chose pour la maintenir en bon état
+GOUVERNAIT|GOUVERNER|14258|Dirigeait un pays|Apportait des soins à une chose pour la maintenir en bon état
+GOUVERNAIENT|GOUVERNER|14258|Dirigeaient un pays|Apportaient des soins à une chose pour la maintenir en bon état
+GOUVERNERA|GOUVERNER|14258|Dirigera un pays|Apportera des soins à une chose pour la maintenir en bon état
+GOUVERNA|GOUVERNER|14258|Dirigea un pays|Apporta des soins à une chose pour la maintenir en bon état
+GOUVERNEE|GOUVERNER|14258|Apportée des soins à une chose pour la maintenir en bon état
+GOUVERNEES|GOUVERNER|14258|Apportées des soins à une chose pour la maintenir en bon état
+PURGES|PURGE|14265|Éléments indésirables, complexes, lourds|Éliminations d’un fluide indésirable dans un système|Matchs, courses ou épreuves ennuyeux
+YANS|YAN|14266|Vingtièmes lettres de l’alphabet tifinagh, ⵏ
+IMPOTS|IMPOT|14268|Prélèvements pécuniaires
+ALVINE|ALVIN|14277|Qui a rapport au bas-ventre
+PLIES|PLIE|14280|Chairs cuisinées de ce poisson
+BUISSONS|BUISSON|14281|Touffes d’arbustes sauvages
+EXTENSIONS|EXTENSION|14294|Accroissements d’étendue|Actions d’étendre un corps
+PATERNITES|PATERNITE|14297|Qualités d’auteur
+ALUMINIUMS|ALUMINIUM|14300|Corps simples élémentaires
+PSYCHIATRIES|PSYCHIATRIE|14301|Médecines des maladies mentales
+COLLECTENT|COLLECTER|14313|S'amassent dans une cavité
+COLLECTAIT|COLLECTER|14313|S'amassait dans une cavité
+COLLECTAIENT|COLLECTER|14313|S'amassaient dans une cavité
+COLLECTERA|COLLECTER|14313|S'amassera dans une cavité
+COLLECTA|COLLECTER|14313|S'amassa dans une cavité
+DECENNIES|DECENNIE|14319|Périodes de dix ans
+NOYADES|NOYADE|14324|Actions de noyer une personne|Accidents graves
+GARDIENNES|GARDIENNE|14329|Les femmes mariées
+ALLEGEANCES|ALLEGEANCE|14335|Faits d’être un homme lige d’un suzerain
+VIPERES|VIPERE|14336|Choses malfaisantes
+PRESAGES|PRESAGE|14349|Conjectures de l’augure|Conjectures tirées d’un fait quelconque
+CLICS|CLIC|14355|Actions d’un doigt sur un bouton de souris|Pulsations du métronome
+CARROSSES|CARROSSE|14365|Logements du capitaine sur une galère|Instruments de cordier pour tordre les câbles
+PIRATAGES|PIRATAGE|14369|Attaques sournoises d'un système informatique
+ATTARDES|ATTARDE|14374|Personnes en retard sur son temps
+FAMILIERES|FAMILIERE|14375|Personnes très proches dans ses habitudes et ses fréquentations
+FLIRTS|FLIRT|14376|Cours amoureuses
+ENTITES|ENTITE|14381|Abstractions, symboles
+SANGLIERS|SANGLIER|14384|Viandes de cet animal
+VIELLES|VIELLE|14388|Instruments de musique à cordes
+INTESTINS|INTESTIN|14395|Subdivisions de ce viscère
+PLACEMENTS|PLACEMENT|14417|Ventes ou emplois
+TIMBRES|TIMBRE|14419|Sonorités d’un instrument ou de la voix
+ELEVAGES|ELEVAGE|14423|Actions d’élever les animaux domestiques
+MARRAINES|MARRAINE|14437|Mères du parrain
+NOCES|NOCE|14441|Mariages|Toutes l’assemblée
+CLARTES|CLARTE|14451|Lumières, lueurs|Transparences
+CIVILISES|CIVILISE|14453|Rendus sociables, évolués, policés|Personnes sociables, évoluées, policées
+CASSEROLES|CASSEROLE|14459|Ustensiles de cuisine de forme cylindrique
+TROLLS|TROLL|14461|Créatures merveilleuses|Les sujets du débat lui-même
+APPROUVENT|APPROUVER|14462|Jugent louable|Autorisent par un témoignage authentique
+APPROUVAIT|APPROUVER|14462|Jugeait louable|Autorisait par un témoignage authentique
+APPROUVAIENT|APPROUVER|14462|Jugeaient louable|Autorisaient par un témoignage authentique
+APPROUVERA|APPROUVER|14462|Jugera louable|Autorisera par un témoignage authentique
+APPROUVA|APPROUVER|14462|Jugea louable|Autorisa par un témoignage authentique
+APPROUVEE|APPROUVER|14462|Autorisée par un témoignage authentique
+APPROUVES|APPROUVER|14462|Autorisés par un témoignage authentique
+APPROUVEES|APPROUVER|14462|Autorisées par un témoignage authentique
+ASPIRE|ASPIRER|14466|Attire l’air extérieur dans ses poumons
+ASPIRENT|ASPIRER|14466|Attirent l’air extérieur dans ses poumons
+ASPIRAIT|ASPIRER|14466|Attirait l’air extérieur dans ses poumons
+ASPIRAIENT|ASPIRER|14466|Attiraient l’air extérieur dans ses poumons
+ASPIRERA|ASPIRER|14466|Attirera l’air extérieur dans ses poumons
+ASPIRA|ASPIRER|14466|Attira l’air extérieur dans ses poumons
+DEFECTUEUSE|DEFECTUEUX|14469|Qui présente un défaut|Qui ne présente pas toutes les qualités requises
+CORPORATIONS|CORPORATION|14470|Associations professionnelles
+REFORMES|REFORME|14478|Rétablissements dans l’ordre|Modifications d’une politique ou d’une institution|Rétablissements de l’ancienne discipline dans un ordre religieux
+QUADRANTS|QUADRANT|14483|Quarts de circonférence|Instruments de navigation pour faire le point
+HAVANES|HAVANE|14493|Cigares cubains|Couleurs marrons clairs
+CREATIVITES|CREATIVITE|14518|Capacités, facultés
+COSMIQUES|COSMIQUE|14522|Relatifs à l’univers
+CHARRETTES|CHARRETTE|14534|Voitures à deux roues, avec deux ridelles et deux limons|Périodes de travail intense
+AUTORITAIRES|AUTORITAIRE|14541|Associés à un concept
+CYANURES|CYANURE|14547|Combinaisons du cyanogène avec un corps simple|Sels de l'acide cyanhydrique et d'une base forte
+ORIGINAIRES|ORIGINAIRE|14560|Personnes issues d’un lieu, d’une ville, d’une région
+EMBARRASSENT|EMBARRASSER|14580|Arrêtent, gênent par un obstacle
+EMBARRASSAIT|EMBARRASSER|14580|Arrêtait, gênait par un obstacle
+EMBARRASSERA|EMBARRASSER|14580|Arrêtera, gênera par un obstacle
+EMBARRASSA|EMBARRASSER|14580|Arrêta, gêna par un obstacle
+EMBARRASSEE|EMBARRASSER|14580|Arrêtée, gênée par un obstacle
+EMBARRASSEES|EMBARRASSER|14580|Arrêtées, gênées par un obstacle
+SPRAYS|SPRAY|14588|Vaporisateurs
+DEVOTIONS|DEVOTION|14609|Attachements aux pratiques religieuses|Accomplissements des pratiques religieuses
+OUVRAGES|OUVRAGE|14618|Résultats d’un travail|Productions de l’esprit
+PROGRESSE|PROGRESSER|14619|Avance
+PROGRESSENT|PROGRESSER|14619|Avancent
+PROGRESSAIT|PROGRESSER|14619|Avançait
+PROGRESSERA|PROGRESSER|14619|Avancera
+PROGRESSA|PROGRESSER|14619|Avança
+PROGRESSEE|PROGRESSER|14619|Avancée
+PROGRESSES|PROGRESSER|14619|Avancés
+PROGRESSEES|PROGRESSER|14619|Avancées
+TERRIENS|TERRIEN|14620|Relatifs à la terre
+CROISSANTE|CROISSANT|14652|Qui s’accroît
+PARTIELLES|PARTIELLE|14657|Épreuves intermédiaires pour obtenir un diplôme
+LESIONS|LESION|14658|Atteintes aux intérêts de quelqu’un ou de quelque chose
+EXCITENT|EXCITER|14679|Engagent|Animent|Provoquent, causent ou font naître une réaction
+EXCITAIT|EXCITER|14679|Engageait|Animait|Provoquait, causait ou faisait naître une réaction
+EXCITAIENT|EXCITER|14679|Engageaient|Animaient|Provoquaient, causaient ou faisaient naître une réaction
+EXCITERA|EXCITER|14679|Engagera|Animera|Provoquera, causera ou fera naître une réaction
+EXCITA|EXCITER|14679|Engagea|Anima|Provoqua, causa ou fit naître une réaction
+EXCITEE|EXCITER|14679|Engagée|Animée
+EXCITES|EXCITER|14679|Engagés|Animés
+EXCITEES|EXCITER|14679|Engagées|Animées
+CHOUCHOUS|CHOUCHOU|14683|Personnes préférées|Élastiques pour attacher ensemble les cheveux
+COMMUNIONS|COMMUNION|14701|Partages d'idées ou de sentiments
+PILIERS|PILIER|14705|Piles, empilements
+FIES|FIE|14720|Épicéas
+BONDES|BONDE|14745|Tout pleins, trop pleins
+RENOMMEES|RENOMMEE|14750|Êtres mythologiques et allégoriques
+RELANCENT|RELANCER|14756|Mettent un enjeu supérieur|Donnent un nouvel élan
+RELANCAIT|RELANCER|14756|Mettait un enjeu supérieur|Donnait un nouvel élan
+RELANCAIENT|RELANCER|14756|Mettaient un enjeu supérieur|Donnaient un nouvel élan
+RELANCERA|RELANCER|14756|Mettra un enjeu supérieur|Donnera un nouvel élan
+RELANCA|RELANCER|14756|Mit un enjeu supérieur|Donna un nouvel élan
+DEBUTE|DEBUTER|14779|Commence|Fait les premières démarches dans un genre de vie
+DEBUTENT|DEBUTER|14779|Commencent|Font les premières démarches dans un genre de vie
+DEBUTAIT|DEBUTER|14779|Commençait|Faisait les premières démarches dans un genre de vie
+DEBUTAIENT|DEBUTER|14779|Commençaient|Faisaient les premières démarches dans un genre de vie
+DEBUTERA|DEBUTER|14779|Commencera|Fera les premières démarches dans un genre de vie
+DEBUTA|DEBUTER|14779|Commença|Fit les premières démarches dans un genre de vie
+DEBUTEE|DEBUTER|14779|Commencée
+DEBUTES|DEBUTER|14779|Commencés
+DEBUTEES|DEBUTER|14779|Commencées
+DISTINCTIONS|DISTINCTION|14783|Actions de séparer nettement une chose d’une autre
+USENT|USER|14786|Diminuent par le frottement
+USAIT|USER|14786|Diminuait par le frottement
+USAIENT|USER|14786|Diminuaient par le frottement
+USERA|USER|14786|Diminuera par le frottement
+USA|USER|14786|Diminua par le frottement
+USEE|USER|14786|Diminuée par le frottement
+USES|USER|14786|Diminués par le frottement
+USEES|USER|14786|Diminuées par le frottement
+CAMOUFLAGES|CAMOUFLAGE|14802|Masquages
+JACQUELINES|JACQUELINE|14814|Cruches ventrues
+SUCETTES|SUCETTE|14828|Microphones à main
+EPROUVENT|EPROUVER|14829|Testent des personnes pour vérifier leurs qualités
+EPROUVAIT|EPROUVER|14829|Testait des personnes pour vérifier leurs qualités
+EPROUVAIENT|EPROUVER|14829|Testaient des personnes pour vérifier leurs qualités
+EPROUVERA|EPROUVER|14829|Testera des personnes pour vérifier leurs qualités
+EPROUVA|EPROUVER|14829|Testa des personnes pour vérifier leurs qualités
+EPROUVEE|EPROUVER|14829|Testée des personnes pour vérifier leurs qualités
+EPROUVES|EPROUVER|14829|Testés des personnes pour vérifier leurs qualités
+EPROUVEES|EPROUVER|14829|Testées des personnes pour vérifier leurs qualités
+VIEILLESSES|VIEILLESSE|14845|Âges avancés
+THERMIQUES|THERMIQUE|14850|Voitures propulsées par un moteur à explosion
+COCHERE|COCHER|14867|Qui permet le passage des véhicules
+PROLONGENT|PROLONGER|14868|Font durer plus longtemps
+PROLONGEAIT|PROLONGER|14868|Faisait durer plus longtemps
+PROLONGERA|PROLONGER|14868|Fera durer plus longtemps
+PROLONGEA|PROLONGER|14868|Fit durer plus longtemps
+MERCENAIRES|MERCENAIRE|14878|Ouvriers, des artisans|Médecins intérimaires en milieu hospitalier
+ENNUYANTE|ENNUYANT|14881|Qui cause de l’ennui, de la lassitude|Qui cause du souci
+ELASTIQUES|ELASTIQUE|14884|Faits d’une matière souple et flexible|Bandes en caoutchouc, souvent circulaire
+MARGUERITES|MARGUERITE|14887|Strictos sensus|Ses capitules jaunes et blancs
+DETACHES|DETACHE|14898|Isolés, séparés, autonomes
+PAYANTE|PAYANT|14914|Qui paie
+BARGES|BARGE|14922|Grandes quantités
+LICENCIES|LICENCIE|14931|Personnes démises de son poste de travail à titre permanent
+OUVRANTE|OUVRANT|14944|Qui ouvre
+GUERRIERES|GUERRIERE|14948|Militantes féministes
+TRIPOTE|TRIPOTER|14955|Falsifie
+TRIPOTENT|TRIPOTER|14955|Falsifient
+TRIPOTAIT|TRIPOTER|14955|Falsifiait
+TRIPOTAIENT|TRIPOTER|14955|Falsifiaient
+TRIPOTERA|TRIPOTER|14955|Falsifiera
+TRIPOTA|TRIPOTER|14955|Falsifia
+TRIPOTEE|TRIPOTER|14955|Falsifiée
+TRIPOTES|TRIPOTER|14955|Falsifiés
+TRIPOTEES|TRIPOTER|14955|Falsifiées
+FLOTTANTS|FLOTTANT|14970|Moitiés d'un drapeau
+LANTERNES|LANTERNE|14977|Boîtes de verre|Cages circulaires ou carrées
+PLOUCS|PLOUC|14979|Soldats sans grade
+INGREDIENTS|INGREDIENT|14985|Chacunes des substances
+CLIQUES|CLIQUE|14987|Personnes sans morale
+FISSURES|FISSURE|14990|Petites fentes
+BANDAGES|BANDAGE|15004|Actions de bander quelque chose, de le tendre|Actions de placer un bandeau|Pansements, garrots
+AFFECTATIONS|AFFECTATION|15024|Actions d’assigner un poste
+SARCASMES|SARCASME|15041|Railleries amères et cruelles
+TUERIES|TUERIE|15045|Carnages|Actions de mise à mort d'un animal
+JUDICIEUSE|JUDICIEUX|15050|Qui a le jugement bon
+POLLUTIONS|POLLUTION|15053|Émissions involontaires de sperme
+AGACANTE|AGACANT|15056|Qui provoque une sensation d'irritation
+TRANCHANTE|TRANCHANT|15071|Qui décide hardiment|Qui fait un contraste, une opposition sans nuance
+STIMULANTE|STIMULANT|15081|Qui excite, qui aiguillonne l’esprit
+URNES|URNE|15086|Contenants destinés à recevoir des bulletins de vote
+CONTRENT|CONTRER|15100|Parent, empêchent le succès d’une action d’un adversaire
+CONTRAIT|CONTRER|15100|Parait, empêchait le succès d’une action d’un adversaire
+CONTRAIENT|CONTRER|15100|Paraient, empêchaient le succès d’une action d’un adversaire
+CONTRERA|CONTRER|15100|Parera, empêchera le succès d’une action d’un adversaire
+CONTRA|CONTRER|15100|Para, empêcha le succès d’une action d’un adversaire
+TREMPENT|TREMPER|15101|Mouillent une chose en la mettant dans quelque liquide
+TREMPAIT|TREMPER|15101|Mouillait une chose en la mettant dans quelque liquide
+TREMPAIENT|TREMPER|15101|Mouillaient une chose en la mettant dans quelque liquide
+TREMPERA|TREMPER|15101|Mouillera une chose en la mettant dans quelque liquide
+TREMPA|TREMPER|15101|Mouilla une chose en la mettant dans quelque liquide
+SUBSTITUTS|SUBSTITUT|15102|Mères porteuses
+LISSES|LISSE|15104|Réguliers, infiniments dérivables ou différentiables
+TRIBUNES|TRIBUNE|15107|Déambulateurs
+TROUILLARDS|TROUILLARD|15113|Peureux, craintifs, pétochards|Personnes peureuses, craintives, pétochardes
+TROUILLARDE|TROUILLARD|15113|Peureuse, craintive, pétocharde
+TROUILLARDES|TROUILLARD|15113|Peureuses, craintives, pétochardes
+CAMBRIOLE|CAMBRIOLER|15125|Vole, dévalise un local après y être entré par effraction
+CAMBRIOLENT|CAMBRIOLER|15125|Volent, dévalisent un local après y être entré par effraction
+CAMBRIOLAIT|CAMBRIOLER|15125|Volait, dévalisait un local après y être entré par effraction
+CAMBRIOLERA|CAMBRIOLER|15125|Volera, dévalisera un local après y être entré par effraction
+CAMBRIOLA|CAMBRIOLER|15125|Vola, dévalisa un local après y être entré par effraction
+SCOLARITES|SCOLARITE|15130|Durées des études prescrites aux écoliers
+ELOGES|ELOGE|15148|Louanges
+BOUFFEES|BOUFFEE|15156|Souffles de l’haleine
+DESSEINS|DESSEIN|15157|Intentions d’exécuter quelque chose, projet
+BALAYAGES|BALAYAGE|15163|Examens systématiques d'un sujet|Parcours systématiques d’une surface
+SONGENT|SONGER|15165|Pensent
+SONGEAIT|SONGER|15165|Pensait
+SONGEAIENT|SONGER|15165|Pensaient
+SONGERA|SONGER|15165|Pensera
+SONGEA|SONGER|15165|Pensa
+SONGEE|SONGER|15165|Pensée
+SONGES|SONGER|15165|Pensés
+SONGEES|SONGER|15165|Pensées
+RATONS|RATON|15167|Petits du rat|Tartelettes garnies de fromage mou
+ORDONNENT|ORDONNER|15168|Disposent suivant un certain ordre|Commandent
+ORDONNAIT|ORDONNER|15168|Disposait suivant un certain ordre|Commandait
+ORDONNAIENT|ORDONNER|15168|Disposaient suivant un certain ordre|Commandaient
+ORDONNERA|ORDONNER|15168|Disposera suivant un certain ordre|Commandera
+ORDONNA|ORDONNER|15168|Disposa suivant un certain ordre|Commanda
+ORDONNES|ORDONNER|15168|Commandés
+ORDONNEES|ORDONNER|15168|Commandées
+COMBUSTIONS|COMBUSTION|15172|Actions de brûler entièrement
+EDUQUENT|EDUQUER|15187|Forment par l’éducation
+EDUQUAIT|EDUQUER|15187|Formait par l’éducation
+EDUQUAIENT|EDUQUER|15187|Formaient par l’éducation
+EDUQUERA|EDUQUER|15187|Formera par l’éducation
+EDUQUA|EDUQUER|15187|Forma par l’éducation
+EDUQUEE|EDUQUER|15187|Formée par l’éducation
+EDUQUES|EDUQUER|15187|Formés par l’éducation
+EDUQUEES|EDUQUER|15187|Formées par l’éducation
+SPHERES|SPHERE|15194|Voûtes du ciel|Espaces dans lequel la vertu
+CLASSENT|CLASSER|15197|Mettent dans un certain ordre|Assignent un rang|Assignent à un groupe
+CLASSAIT|CLASSER|15197|Mettait dans un certain ordre|Assignait un rang|Assignait à un groupe
+CLASSAIENT|CLASSER|15197|Mettaient dans un certain ordre|Assignaient un rang|Assignaient à un groupe
+CLASSERA|CLASSER|15197|Mettra dans un certain ordre|Assignera un rang|Assignera à un groupe
+CLASSA|CLASSER|15197|Mit dans un certain ordre|Assigna un rang|Assigna à un groupe
+CLASSEE|CLASSER|15197|Mise dans un certain ordre|Assignée à un groupe
+CLASSEES|CLASSER|15197|Mises dans un certain ordre|Assignées à un groupe
+DECRETS|DECRET|15239|Décisions rendues par l’empereur à propos d’un cas particulier
+SODIUMS|SODIUM|15263|Formes métalliques pures de cet élément
+LEUCEMIES|LEUCEMIE|15268|Cancers des cellules de la moelle osseuse
+PROTESTE|PROTESTER|15270|Réclame formellement contre une chose|Déclare que l'on considère
+PROTESTENT|PROTESTER|15270|Réclament formellement contre une chose|Déclarent que l'on considère
+PROTESTAIT|PROTESTER|15270|Réclamait formellement contre une chose|Déclarait que l'on considère
+PROTESTAIENT|PROTESTER|15270|Réclamaient formellement contre une chose|Déclaraient que l'on considère
+PROTESTERA|PROTESTER|15270|Réclamera formellement contre une chose|Déclarera que l'on considère
+PROTESTA|PROTESTER|15270|Réclama formellement contre une chose|Déclara que l'on considère
+ANTIQUITES|ANTIQUITE|15274|Anciennetés reculées
+PERCHES|PERCHE|15290|Longues pièces de bois
+SPLENDEURS|SPLENDEUR|15292|Grands éclats de lumière|Magnificences, pompes
+GUICHETS|GUICHET|15305|Petites portes pratiquées dans une grande
+MALPOLIS|MALPOLI|15307|Grossiers, impolis|Personnes grossières, mal éduquées
+MALPOLIE|MALPOLI|15307|Grossière, impolie
+MALPOLIES|MALPOLI|15307|Grossières, impolies
+INITIALES|INITIALE|15310|Premiers phonèmes consonantiques dans une syllabe
+MUSES|MUSE|15312|Génies artistiques, inspirations|Périodes du rut chez les cerfs
+GONES|GONE|15332|Enfants, gosses|Buts, cochonnets
+RAINS|RAIN|15335|Versants raides, généralements boisés
+FRAPPANTE|FRAPPANT|15342|Qui fait une impression vive sur les sens
+PAROIS|PAROI|15348|Murs, clôtures, enveloppes internes ou externes
+GOUROUS|GOUROU|15358|Maîtres spirituels hindous|Chefs d’un petit groupe spirituel
+ENTRAVES|ENTRAVE|15362|Liens pour attacher les prisonniers
+FLINGUE|FLINGUER|15365|Se suicide avec une arme à feu
+FLINGUENT|FLINGUER|15365|Se suicident avec une arme à feu
+FLINGUAIT|FLINGUER|15365|Se suicidait avec une arme à feu
+FLINGUAIENT|FLINGUER|15365|Se suicidaient avec une arme à feu
+FLINGUERA|FLINGUER|15365|Se suicidera avec une arme à feu
+FLINGUA|FLINGUER|15365|Se suicida avec une arme à feu
+ROMANTISMES|ROMANTISME|15382|Mouvements artistiques
+MECHANCETES|MECHANCETE|15384|Penchants à faire du mal|Paroles médisantes
+GRIFFES|GRIFFE|15386|Ongles crochus|Outils de marquage ou de martelage|Éraflures sur un objet ou égratignure sur la peau
+MILLENAIRES|MILLENAIRE|15392|Millièmes anniversaires
+SORTILEGES|SORTILEGE|15408|Actions de jeter un sort
+BARBIERS|BARBIER|15412|Coiffeurs pour homme
+POLAIRES|POLAIRE|15418|Relatifs à un pôle
+PIEUSE|PIEUX|15421|Qui a de la piété|Qui sert aux exercices de piété|Qui part d’un esprit touché des sentiments de la religion
+AUXILIAIRES|AUXILIAIRE|15432|Accessoires supplémentaires
+RAVINS|RAVIN|15438|Fortes dépressions de terrain
+VIGILES|VIGILE|15455|Hommes chargés de lutter contre les incendies et de surveiller la ville|Veilles d’une grande fête|Relatifs à l’état de veille
+MENDIANTE|MENDIANT|15463|Dont la subsistance dépend de la charité publique|Qui quémande
+TORPILLES|TORPILLE|15467|Engins explosifs destinés à la guerre sous-marine ou à la guerre aérienne
+PLAQUENT|PLAQUER|15487|Appliquent une chose sur une autre|Collent un élément décoratif métallique sur du bois
+PLAQUAIT|PLAQUER|15487|Appliquait une chose sur une autre|Collait un élément décoratif métallique sur du bois
+PLAQUAIENT|PLAQUER|15487|Appliquaient une chose sur une autre|Collaient un élément décoratif métallique sur du bois
+PLAQUERA|PLAQUER|15487|Appliquera une chose sur une autre|Collera un élément décoratif métallique sur du bois
+PLAQUA|PLAQUER|15487|Appliqua une chose sur une autre|Colla un élément décoratif métallique sur du bois
+CAPTE|CAPTER|15490|Cherche à obtenir quelque chose
+CAPTENT|CAPTER|15490|Cherchent à obtenir quelque chose
+CAPTAIT|CAPTER|15490|Cherchait à obtenir quelque chose
+CAPTAIENT|CAPTER|15490|Cherchaient à obtenir quelque chose
+CAPTERA|CAPTER|15490|Cherchera à obtenir quelque chose
+CAPTA|CAPTER|15490|Chercha à obtenir quelque chose
+CAPTEE|CAPTER|15490|Cherchée à obtenir quelque chose
+CAPTES|CAPTER|15490|Cherchés à obtenir quelque chose
+CAPTEES|CAPTER|15490|Cherchées à obtenir quelque chose
+ABONDANCES|ABONDANCE|15491|Grandes quantités|Facilités d’expression et d’élocution
+FAINEANTE|FAINEANT|15492|Qui évite l’effort ou le travail, par paresse
+MAYONNAISES|MAYONNAISE|15494|Mets préparés avec cette sauce|Préparations identiques à la précédente avec de l’huile de lin
+DRAPE|DRAPER|15513|Habille une figure|Dispose une tenture
+DRAPENT|DRAPER|15513|Habillent une figure|Disposent une tenture
+DRAPAIT|DRAPER|15513|Habillait une figure|Disposait une tenture
+DRAPAIENT|DRAPER|15513|Habillaient une figure|Disposaient une tenture
+DRAPERA|DRAPER|15513|Habillera une figure|Disposera une tenture
+DRAPA|DRAPER|15513|Habilla une figure|Disposa une tenture
+CARTOUCHES|CARTOUCHE|15514|Charges entières d’une arme à feu portative
+EVOQUE|EVOQUER|15516|Attire à soi
+EVOQUENT|EVOQUER|15516|Attirent à soi
+EVOQUAIT|EVOQUER|15516|Attirait à soi
+EVOQUAIENT|EVOQUER|15516|Attiraient à soi
+EVOQUERA|EVOQUER|15516|Attirera à soi
+EVOQUA|EVOQUER|15516|Attira à soi
+EVOQUEE|EVOQUER|15516|Attirée à soi
+EVOQUES|EVOQUER|15516|Attirés à soi
+EVOQUEES|EVOQUER|15516|Attirées à soi
+BRANDIS|BRANDI|15524|Agités de la main, comme pour frapper ou pour exhiber
+CENDRIERS|CENDRIER|15525|Espaces au-dessous du foyer d’une locomotive à vapeur|Grands sacs de coton
+MAINTIENS|MAINTIEN|15540|Contenances
+CAMELOTES|CAMELOTE|15560|Produits quelconques
+JUMENTS|JUMENT|15592|Femelles du cheval
+ANDROIDES|ANDROIDE|15599|Robots construits à l’image d’un être humain|Propres à l’homme, de nature masculine
+HOSTILITES|HOSTILITE|15602|Comportements d’inimitié ou d’opposition|Sentiments d’animosité
+OPTIMISMES|OPTIMISME|15606|Des certaines dispositions à voir les choses en beau
+CUPIDITES|CUPIDITE|15609|Recherches immodérées du gain, des richesses
+TOURBILLONS|TOURBILLON|15627|Mouvements élémentaires de la matière
+RIANTE|RIANT|15628|Qui annonce de la gaieté, de la joie
+BICYCLETTES|BICYCLETTE|15633|Véhicules munis de deux roues
+INONDATIONS|INONDATION|15638|Débordements d’un cours d’eau
+SHAMPOINGS|SHAMPOING|15641|Lavages des cheveux
+VARIETES|VARIETE|15659|Rangs taxonomiques inférieurs à la sous-espèce et supérieur à la forme|Erreurs techniques lors de la fabrication d’un timbre-poste
+SHOTS|SHOT|15665|Tirs avec une arme
+DIVULGUE|DIVULGUER|15671|Rend public ce qui n’était pas su
+DIVULGUENT|DIVULGUER|15671|Rendent public ce qui n’était pas su
+DIVULGUAIT|DIVULGUER|15671|Rendait public ce qui n’était pas su
+DIVULGUAIENT|DIVULGUER|15671|Rendaient public ce qui n’était pas su
+DIVULGUERA|DIVULGUER|15671|Rendra public ce qui n’était pas su
+DIVULGUA|DIVULGUER|15671|Rendit public ce qui n’était pas su
+BIBERONS|BIBERON|15681|Boules accolées au but par un pointeur
+SURCHARGES|SURCHARGE|15696|Surintensités
+ENCHERES|ENCHERE|15699|Offres d’un prix supérieur à la mise à prix
+ABSORBE|ABSORBER|15707|Fait pénétrer en soi, assimile|Pompe un fluide|Attire à soi en entier
+ABSORBENT|ABSORBER|15707|Font pénétrer en soi, assimilent|Pompent un fluide|Attirent à soi en entier
+ABSORBAIT|ABSORBER|15707|Faisait pénétrer en soi, assimilait|Pompait un fluide|Attirait à soi en entier
+ABSORBAIENT|ABSORBER|15707|Faisaient pénétrer en soi, assimilaient|Pompaient un fluide|Attiraient à soi en entier
+ABSORBERA|ABSORBER|15707|Fera pénétrer en soi, assimilera|Pompera un fluide|Attirera à soi en entier
+ABSORBA|ABSORBER|15707|Fit pénétrer en soi, assimila|Pompa un fluide|Attira à soi en entier
+ABSORBEE|ABSORBER|15707|Attirée à soi en entier
+ABSORBES|ABSORBER|15707|Attirés à soi en entier
+ABSORBEES|ABSORBER|15707|Attirées à soi en entier
+CORONERS|CORONER|15721|Médecins légistes
+GIFLENT|GIFLER|15723|Frappent quelqu’un avec le plat de la main sur la joue|Font subir une humiliation
+GIFLAIT|GIFLER|15723|Frappait quelqu’un avec le plat de la main sur la joue|Faisait subir une humiliation
+GIFLAIENT|GIFLER|15723|Frappaient quelqu’un avec le plat de la main sur la joue|Faisaient subir une humiliation
+GIFLERA|GIFLER|15723|Frappera quelqu’un avec le plat de la main sur la joue|Fera subir une humiliation
+GIFLA|GIFLER|15723|Frappa quelqu’un avec le plat de la main sur la joue|Fit subir une humiliation
+PENITENCIERS|PENITENCIER|15742|Prisons|Relatifs à la prison
+AFFICHE|AFFICHER|15744|Représente des données sur un écran, visualise|Dresse la première banche d’un coffrage
+AFFICHENT|AFFICHER|15744|Représentent des données sur un écran, visualisent|Dressent la première banche d’un coffrage
+AFFICHAIT|AFFICHER|15744|Représentait des données sur un écran, visualisait|Dressait la première banche d’un coffrage
+AFFICHAIENT|AFFICHER|15744|Représentaient des données sur un écran, visualisaient|Dressaient la première banche d’un coffrage
+AFFICHERA|AFFICHER|15744|Représentera des données sur un écran, visualisera|Dressera la première banche d’un coffrage
+AFFICHA|AFFICHER|15744|Représenta des données sur un écran, visualisa|Dressa la première banche d’un coffrage
+AFFICHEE|AFFICHER|15744|Représentée des données sur un écran, visualisée
+AFFICHES|AFFICHER|15744|Représentés des données sur un écran, visualisés
+AFFICHEES|AFFICHER|15744|Représentées des données sur un écran, visualisées
+PENITENCES|PENITENCE|15745|Punitions imposées pour quelque faute
+INTERFACES|INTERFACE|15746|Surfaces de contact entre deux milieux, deux phases|Relations, liaisons
+HABITANTS|HABITANT|15757|Paysans, campagnards
+CHOQUENT|CHOQUER|15758|Donnent un choc, heurtent
+CHOQUAIT|CHOQUER|15758|Donnait un choc, heurtait
+CHOQUAIENT|CHOQUER|15758|Donnaient un choc, heurtaient
+CHOQUERA|CHOQUER|15758|Donnera un choc, heurtera
+CHOQUA|CHOQUER|15758|Donna un choc, heurta
+PRESTIGES|PRESTIGE|15760|Illusions attribuées à la magie, à un sortilège|Autorités morales d’une personne
+BROUILLENT|BROUILLER|15763|Mettent pêle-mêle, mêlent, mélangent|Troublent, dérangent|Mettent en dégoût
+BROUILLAIT|BROUILLER|15763|Mettait pêle-mêle, mêlait, mélangeait|Troublait, dérangeait|Mettait en dégoût
+BROUILLAIENT|BROUILLER|15763|Mettaient pêle-mêle, mêlaient, mélangeaient|Troublaient, dérangeaient|Mettaient en dégoût
+BROUILLERA|BROUILLER|15763|Mettra pêle-mêle, mêlera, mélangera|Troublera, dérangera|Mettra en dégoût
+BROUILLA|BROUILLER|15763|Mit pêle-mêle, mêla, mélangea|Troubla, dérangea|Mit en dégoût
+BROUILLEE|BROUILLER|15763|Troublée, dérangée|Mise en dégoût
+BROUILLES|BROUILLER|15763|Troublés, dérangés|Mis en dégoût
+BROUILLEES|BROUILLER|15763|Troublées, dérangées|Mises en dégoût
+ASSEMBLE|ASSEMBLER|15765|Met ensemble
+ASSEMBLENT|ASSEMBLER|15765|Mettent ensemble
+ASSEMBLAIT|ASSEMBLER|15765|Mettait ensemble
+ASSEMBLAIENT|ASSEMBLER|15765|Mettaient ensemble
+ASSEMBLERA|ASSEMBLER|15765|Mettra ensemble
+ASSEMBLA|ASSEMBLER|15765|Mit ensemble
+GONGS|GONG|15774|Timbres métalliques ou sonneries
+ATTAQUANTS|ATTAQUANT|15794|Joueurs chargés de marquer des points
+ATTAQUANTE|ATTAQUANT|15794|Qui critique
+DEPLOIEMENTS|DEPLOIEMENT|15802|Actions de mettre sur pied un grand nombre de troupes|Mises en service
+CUTTERS|CUTTER|15804|Bordures de route en béton
+POINTUE|POINTU|15820|Qui fait preuve d’une grande précision dans un domaine|Qui a un accent du type parisien
+NOIRCEURS|NOIRCEUR|15832|Taches noires|Obscurités
+FONDEMENTS|FONDEMENT|15840|Causes, motifs, sujets
+PENCHANTS|PENCHANT|15847|Pendentifs|Pentes d’un relief
+PINGS|PING|15859|Onomatopées|Notifications
+TABOURETS|TABOURET|15860|Dispositifs de raccordement d’une canalisation au réseau
+VIRTUELS|VIRTUEL|15863|Immatériels, dématérialisés
+VIRTUELLE|VIRTUEL|15863|Immatérielle, dématérialisée|Qui n’a aucune existence réelle
+VIRTUELLES|VIRTUEL|15863|Immatérielles, dématérialisées
+VIAGRAS|VIAGRA|15865|Excitants aphrodisiaques
+MITEUSE|MITEUX|15866|Qui a l’apparence misérable
+ASSIGNATIONS|ASSIGNATION|15867|Actions d’attribuer des fonds
+ASTEROIDES|ASTEROIDE|15869|Météorites|Petits corps célestes|Objets en forme d’étoile
+PARCHEMINS|PARCHEMIN|15874|Titres de noblesse, diplôme universitaire, etc
+FREQUENTS|FREQUENT|15875|Personnes irrespectueuses, insolentes, culottées
+REVISIONS|REVISION|15876|Remises en état
+ROUTIERES|ROUTIERE|15886|Conductrices de camion ou de camionnette
+REEDUCATIONS|REEDUCATION|15895|Endoctrinements idéologiques forcés
+ELEMENTAIRES|ELEMENTAIRE|15900|Simples, aisés, rudimentaires
+BOUCANS|BOUCAN|15908|Poisons, maléfices
+BIOGRAPHIES|BIOGRAPHIE|15911|Sciences des écrits relatifs à ce genre d’ouvrages
+GLANDS|GLAND|15916|Extrémités du pénis ou du clitoris|Ouvrages de fil
+PINES|PINE|15918|Pommes de pin
+ANARCHIES|ANARCHIE|15931|Absences totales d’autorité politique ou de gouvernement|Confusions et discordes politiques
+CACHOTS|CACHOT|15932|Cellules basses et obscures
+GIGOLOS|GIGOLO|15937|Proxénètes, souteneurs|Hommes de bonne condition extérieure
+COCKPITS|COCKPIT|15941|Espaces réservés au pilotage d’un avion
+PACHAS|PACHA|15942|Gouverneurs de province|Éléphants de mer mâle adulte
+UNIVERSELLE|UNIVERSEL|15943|Qui concerne, qui affecte quelque chose dans son ensemble
+GYMNASTIQUES|GYMNASTIQUE|15946|Activités corporelles
+REDRESSENT|REDRESSER|15947|Rendent droite une chose qui l’avait été auparavant|Transforment un courant alternatif en courant continu
+REDRESSAIT|REDRESSER|15947|Rendait droite une chose qui l’avait été auparavant|Transformait un courant alternatif en courant continu
+REDRESSAIENT|REDRESSER|15947|Rendaient droite une chose qui l’avait été auparavant|Transformaient un courant alternatif en courant continu
+REDRESSERA|REDRESSER|15947|Rendra droite une chose qui l’avait été auparavant|Transformera un courant alternatif en courant continu
+REDRESSA|REDRESSER|15947|Rendit droite une chose qui l’avait été auparavant|Transforma un courant alternatif en courant continu
+REPERTOIRES|REPERTOIRE|15982|Inventaires méthodiques|Recueils
+RAPIDITES|RAPIDITE|15984|Célérités, grandes vitesses
+BOUGRES|BOUGRE|15994|Individus coquins ou gaillards|Personnes misérables ou malchanceuses
+CAPRICES|CAPRICE|15999|Volontés irréfléchies, soudaines et passagères|Fantaisies|Inclinations pour quelqu’un ou pour quelque chose
+VALIUMS|VALIUM|16008|Diazépams|Des comprimés de ce médicament
+STORYS|STORY|16031|Récits utilisateurs
+DEBRANCHE|DEBRANCHER|16050|Ôte la fiche d’un appareil électrique de la prise de courant|Quitte une voie
+DEBRANCHENT|DEBRANCHER|16050|Ôtent la fiche d’un appareil électrique de la prise de courant|Quittent une voie
+DEBRANCHAIT|DEBRANCHER|16050|Ôtait la fiche d’un appareil électrique de la prise de courant|Quittait une voie
+DEBRANCHERA|DEBRANCHER|16050|Ôtera la fiche d’un appareil électrique de la prise de courant|Quittera une voie
+DEBRANCHA|DEBRANCHER|16050|Ôta la fiche d’un appareil électrique de la prise de courant|Quitta une voie
+CHAUDIERES|CHAUDIERE|16058|Récipients clos|Marmites
+IVOIRES|IVOIRE|16069|Substances dures|Relatifs à la couleur du même nom
+BRANCARDS|BRANCARD|16075|Civières
+RENTABLES|RENTABLE|16077|Avantageux, bénéfiques
+ESTIMENT|ESTIMER|16087|Évaluent par approximation
+ESTIMAIT|ESTIMER|16087|Évaluait par approximation
+ESTIMAIENT|ESTIMER|16087|Évaluaient par approximation
+ESTIMERA|ESTIMER|16087|Évaluera par approximation
+ESTIMA|ESTIMER|16087|Évalua par approximation
+ESTIMEE|ESTIMER|16087|Évaluée par approximation
+ESTIMES|ESTIMER|16087|Évalués par approximation
+ESTIMEES|ESTIMER|16087|Évaluées par approximation
+CROQUE|CROQUER|16088|Mange avec ce bruit certains aliments|Prend rapidement
+CROQUENT|CROQUER|16088|Mangent avec ce bruit certains aliments|Prennent rapidement
+CROQUAIT|CROQUER|16088|Mangeait avec ce bruit certains aliments|Prenait rapidement
+CROQUAIENT|CROQUER|16088|Mangeaient avec ce bruit certains aliments|Prenaient rapidement
+CROQUERA|CROQUER|16088|Mangera avec ce bruit certains aliments|Prendra rapidement
+CROQUA|CROQUER|16088|Mangea avec ce bruit certains aliments|Prit rapidement
+CROQUEE|CROQUER|16088|Mangée avec ce bruit certains aliments
+CROQUES|CROQUER|16088|Mangés avec ce bruit certains aliments
+CROQUEES|CROQUER|16088|Mangées avec ce bruit certains aliments
+ETABLES|ETABLE|16091|Étraves
+CONTENEURS|CONTENEUR|16109|Caisses métalliques
+LIVREES|LIVREE|16139|Apparences de la peau
+SACOCHES|SACOCHE|16143|Sacs de toile forte ou de peau|Sacs à main|Sacs accrochés sur le porte-bagages
+MECONTENTS|MECONTENT|16148|Insatisfaits de quelque chose ou de quelqu'un|Personnes insatisfaites
+MAROCS|MAROC|16152|Étoffes de laine
+SEIGNEURIES|SEIGNEURIE|16158|Droits, puissances
+SUPERVISE|SUPERVISER|16178|Effectue un contrôle sur l’activité d’une machine
+SUPERVISENT|SUPERVISER|16178|Effectuent un contrôle sur l’activité d’une machine
+SUPERVISAIT|SUPERVISER|16178|Effectuait un contrôle sur l’activité d’une machine
+SUPERVISERA|SUPERVISER|16178|Effectuera un contrôle sur l’activité d’une machine
+SUPERVISA|SUPERVISER|16178|Effectua un contrôle sur l’activité d’une machine
+VARIOLES|VARIOLE|16199|Maladies générales
+LARSENS|LARSEN|16224|Ses sursaturés
+SOTTES|SOTTE|16235|Femmes sans esprit, sans jugement
+OBEISSANCES|OBEISSANCE|16247|Actions d’obéir|Dispositions à obéir|Dominations, autorités
+VACARMES|VACARME|16252|Tumultes
+COUTEUSE|COUTEUX|16257|Qui exige un sacrifice
+EXAGERENT|EXAGERER|16269|Donnent à une chose plus d’importance qu’elle n’en a en réalité|Font valoir, font ressortir
+EXAGERAIT|EXAGERER|16269|Donnait à une chose plus d’importance qu’elle n’en a en réalité|Faisait valoir, faisait ressortir
+EXAGERAIENT|EXAGERER|16269|Donnaient à une chose plus d’importance qu’elle n’en a en réalité|Faisaient valoir, faisaient ressortir
+EXAGERERA|EXAGERER|16269|Donnera à une chose plus d’importance qu’elle n’en a en réalité|Fera valoir, fera ressortir
+EXAGERA|EXAGERER|16269|Donna à une chose plus d’importance qu’elle n’en a en réalité|Fit valoir, fit ressortir
+EXAGEREE|EXAGERER|16269|Donnée à une chose plus d’importance qu’elle n’en a en réalité
+EXAGEREES|EXAGERER|16269|Données à une chose plus d’importance qu’elle n’en a en réalité
+VIGILANTE|VIGILANT|16272|Qui veille avec attention
+DIPLOMATIES|DIPLOMATIE|16280|Tacts, prudences
+INDIFFERENTE|INDIFFERENT|16327|Qui ne présente en soi aucune cause de détermination|Qui n’a de lui-même ni l’une ni l’autre des qualités dont on parle|Qui touche peu
+DIRKS|DIRK|16330|Poignards des montagnards écossais
+IMMINENTE|IMMINENT|16341|Qui menace de survenir|Qui menace de devenir, ou qui sera prochainement
+MUTINERIES|MUTINERIE|16348|Indisciplines
+NAVALE|NAVAL|16362|Qui concerne les navires
+DELUGES|DELUGE|16363|Très grandes inondations|Pluies torrentielles
+PENDENTIFS|PENDENTIF|16367|Portions triangulaires d’une voûte sphérique|Pendants d’oreille
+KIOSQUES|KIOSQUE|16375|Structures supérieures d’un sous-marin
+JARGONS|JARGON|16376|Vocabulaires particuliers d'un groupe social ou professionnel
+CRAMPES|CRAMPE|16389|Contractions spasmodiques|Toutes douleurs spasmodiques|Fermetures de moule
+SALSAS|SALSA|16412|Sauces mexicaines à base de poivrons
+ACCESSOIRES|ACCESSOIRE|16425|Dépendants de quelque chose de principal, annexe
+HOSPICES|HOSPICE|16428|Ces types d'établissement pour les vieillards
+LARBINS|LARBIN|16429|Domestiques, serviteurs
+REMONTEES|REMONTEE|16432|Galeries d'une mine
+ANTICIPENT|ANTICIPER|16441|Devancent|S'imaginent dans l’avenir
+ANTICIPAIT|ANTICIPER|16441|Devançait|S'imaginait dans l’avenir
+ANTICIPAIENT|ANTICIPER|16441|Devançaient|S'imaginaient dans l’avenir
+ANTICIPERA|ANTICIPER|16441|Devancera|S'imaginera dans l’avenir
+ANTICIPA|ANTICIPER|16441|Devança|S'imagina dans l’avenir
+ANTICIPEE|ANTICIPER|16441|Devancée
+ANTICIPES|ANTICIPER|16441|Devancés
+ANTICIPEES|ANTICIPER|16441|Devancées
+ZELES|ZELE|16445|Ardeurs religieuses
+BERNE|BERNER|16452|Tourne quelqu’un en ridicule
+BERNENT|BERNER|16452|Tournent quelqu’un en ridicule
+BERNAIT|BERNER|16452|Tournait quelqu’un en ridicule
+BERNAIENT|BERNER|16452|Tournaient quelqu’un en ridicule
+BERNERA|BERNER|16452|Tournera quelqu’un en ridicule
+BERNA|BERNER|16452|Tourna quelqu’un en ridicule
+INTERVALLES|INTERVALLE|16459|Distances d’un lieu à un autre
+APTITUDES|APTITUDE|16460|Capacités, compétences|Compétences à recevoir un legs
+LATTES|LATTE|16484|Lames de bois
+ESQUIVENT|ESQUIVER|16513|Évitent adroitement
+ESQUIVAIT|ESQUIVER|16513|Évitait adroitement
+ESQUIVAIENT|ESQUIVER|16513|Évitaient adroitement
+ESQUIVERA|ESQUIVER|16513|Évitera adroitement
+ESQUIVA|ESQUIVER|16513|Évita adroitement
+BOUSCULENT|BOUSCULER|16518|Se poussent en tous sens
+BOUSCULAIT|BOUSCULER|16518|Se poussait en tous sens
+BOUSCULAIENT|BOUSCULER|16518|Se poussaient en tous sens
+BOUSCULERA|BOUSCULER|16518|Se poussera en tous sens
+BOUSCULA|BOUSCULER|16518|Se poussa en tous sens
+MINORITES|MINORITE|16526|États d’une personne mineure
+TRANSPARENTS|TRANSPARENT|16529|Papiers munis de lignes noires horizontales|Enseignes lumineuses
+BLANCHIE|BLANCHI|16547|Dont on lave le linge
+CONSOMMENT|CONSOMMER|16548|Font usage de quelque chose, utilisent|Absorbent
+CONSOMMAIT|CONSOMMER|16548|Faisait usage de quelque chose, utilisait|Absorbait
+CONSOMMAIENT|CONSOMMER|16548|Faisaient usage de quelque chose, utilisaient|Absorbaient
+CONSOMMERA|CONSOMMER|16548|Fera usage de quelque chose, utilisera|Absorbera
+CONSOMMA|CONSOMMER|16548|Fit usage de quelque chose, utilisa|Absorba
+CONSOMMEE|CONSOMMER|16548|Absorbée
+CONSOMMES|CONSOMMER|16548|Absorbés
+CONSOMMEES|CONSOMMER|16548|Absorbées
+CUVETTES|CUVETTE|16554|Formes concaves, creusées ou déprimées|Configurations de terrain en forme d’entonnoir
+DENTELLES|DENTELLE|16563|Rebords de toiture
+DECOMPTES|DECOMPTE|16564|Dénombrements
+TOXINES|TOXINE|16585|Poisons produits par certains microbes
+RECUEILLIS|RECUEILLI|16588|Rassemblés, collectés
+RECUEILLIE|RECUEILLI|16588|Rassemblée, collectée
+RECUEILLIES|RECUEILLI|16588|Rassemblées, collectées
+CHOPPE|CHOPPER|16590|Fait un faux pas en heurtant du pied contre quelque chose|Prend par surprise
+CHOPPENT|CHOPPER|16590|Font un faux pas en heurtant du pied contre quelque chose|Prennent par surprise
+CHOPPAIT|CHOPPER|16590|Faisait un faux pas en heurtant du pied contre quelque chose|Prenait par surprise
+CHOPPAIENT|CHOPPER|16590|Faisaient un faux pas en heurtant du pied contre quelque chose|Prenaient par surprise
+CHOPPERA|CHOPPER|16590|Fera un faux pas en heurtant du pied contre quelque chose|Prendra par surprise
+CHOPPA|CHOPPER|16590|Fit un faux pas en heurtant du pied contre quelque chose|Prit par surprise
+CHOPPEE|CHOPPER|16590|Prise par surprise
+CHOPPES|CHOPPER|16590|Pris par surprise
+CHOPPEES|CHOPPER|16590|Prises par surprise
+EPINES|EPINE|16595|Branches, feuilles|Excroissances pointues
+HEPATITES|HEPATITE|16598|Pierres précieuses|Sulfates de baryum naturel, incolore, blanc, ou clair
+JOUEES|JOUEE|16606|Parois latérales d'une lucarne|Tissus tendus dans l'espace entre le bras et l'assise d'un siège
+PRESTATIONS|PRESTATION|16613|Actions de prêter, de fournir|Services fournis|Fournitures dues aux militaires
+ESCALES|ESCALE|16614|Actions de relâcher dans un endroit propre au mouillage
+TRANSES|TRANSE|16618|Frayeurs, angoisses très vives
+TYRANNIES|TYRANNIE|16620|Dominations usurpées et illégales|Gouvernements légitimes, mais injustes et cruels|Comportements capricieux et égoïstes
+MAXIS|MAXI|16640|Albums de musique en vinyle
+SATURATIONS|SATURATION|16643|Vivacités de la coloration
+ECLAIREURS|ECLAIREUR|16644|Scouts en milieu de parcours|Bâtiments de guerre
+CONFONDUS|CONFONDU|16645|Troublés, confus|Démasqués, déjoués
+CONFONDUE|CONFONDU|16645|Démasquée, déjouée
+CONFONDUES|CONFONDU|16645|Démasquées, déjouées
+SURPASSE|SURPASSER|16672|Cause un étonnement qui confond les idées
+SURPASSENT|SURPASSER|16672|Causent un étonnement qui confond les idées
+SURPASSAIT|SURPASSER|16672|Causait un étonnement qui confond les idées
+SURPASSAIENT|SURPASSER|16672|Causaient un étonnement qui confond les idées
+SURPASSERA|SURPASSER|16672|Causera un étonnement qui confond les idées
+SURPASSA|SURPASSER|16672|Causa un étonnement qui confond les idées
+INITIATIONS|INITIATION|16673|Admissions à la connaissance de certaines choses secrètes|Connaissances préliminaires d’une science|Amorçages d'un processus
+MOTIVENT|MOTIVER|16675|Justifient par des motifs
+MOTIVAIT|MOTIVER|16675|Justifiait par des motifs
+MOTIVAIENT|MOTIVER|16675|Justifiaient par des motifs
+MOTIVERA|MOTIVER|16675|Justifiera par des motifs
+MOTIVA|MOTIVER|16675|Justifia par des motifs
+MOTIVEE|MOTIVER|16675|Justifiée par des motifs
+MOTIVES|MOTIVER|16675|Justifiés par des motifs
+MOTIVEES|MOTIVER|16675|Justifiées par des motifs
+RIPOSTENT|RIPOSTER|16693|Parent et portent la botte du même mouvement
+RIPOSTAIT|RIPOSTER|16693|Parait et portait la botte du même mouvement
+RIPOSTAIENT|RIPOSTER|16693|Paraient et portaient la botte du même mouvement
+RIPOSTERA|RIPOSTER|16693|Parera et portera la botte du même mouvement
+RIPOSTA|RIPOSTER|16693|Para et porta la botte du même mouvement
+BILLES|BILLE|16712|Troncs d’arbre brut|Traverses de chemin de fer
+SOUTES|SOUTE|16713|Consommations énergétiques des navires et des aéronefs
+DESIGNE|DESIGNER|16715|Fixe, détermine
+DESIGNENT|DESIGNER|16715|Fixent, déterminent
+DESIGNAIT|DESIGNER|16715|Fixait, déterminait
+DESIGNAIENT|DESIGNER|16715|Fixaient, déterminaient
+DESIGNERA|DESIGNER|16715|Fixera, déterminera
+DESIGNA|DESIGNER|16715|Fixa, détermina
+DESIGNEE|DESIGNER|16715|Fixée, déterminée
+DESIGNES|DESIGNER|16715|Fixés, déterminés
+DESIGNEES|DESIGNER|16715|Fixées, déterminées
+CLODOS|CLODO|16718|Clochards
+EXORCISMES|EXORCISME|16719|Pratiques religieuses ou magiques|Stratagèmes de délivrance, “pour en sortir”
+ORGUES|ORGUE|16731|Instruments de musique à vent
+INTEGRATIONS|INTEGRATION|16761|Faits d’assembler des parties pour former un tout|Rassemblements de plusieurs applications
+POMMADES|POMMADE|16766|Compositions molles et onctueuses
+BLADES|BLADE|16768|Plaques de métal pour décapsuler les bouteilles
+INCOGNITOS|INCOGNITO|16772|Anonymes
+DEMOLITIONS|DEMOLITION|16783|Destructions méthodiques d’arguments, d’un raisonnement etc
+TIGES|TIGE|16786|Arbres, semis, pieds|Parties allongées de diverses choses
+THERESES|THERESE|16803|Coiffures de femme
+ABONNEMENTS|ABONNEMENT|16814|Contrats de fourniture
+DEDUCTIONS|DEDUCTION|16815|Actions de soustraire une somme d'une autre|Actions de déduire
+REPUTES|REPUTE|16820|Considérés comme
+NORMES|NORME|16827|Règles de droit|Valeurs différentielles des éléments d’un ensemble
+VETUS|VETU|16844|Enveloppés dans un vêtement|Êtres à l’intérieur d’une enveloppe protectrice
+FOUTOIRS|FOUTOIR|16847|Désordres extrêmes, chaos
+SANITAIRES|SANITAIRE|16850|Cabinets de toilette, toilettes
+CULTIVES|CULTIVE|16863|Travaillés pour rendre plus fertile et productif
+LEVANTE|LEVANT|16868|Qui se lève|Qui se lève, en parlant du soleil
+MESQUINE|MESQUIN|16884|Qui a un esprit étroit|Qui témoigne d’avarice, de parcimonie excessive
+CRATERES|CRATERE|16893|Vases à deux anses|Dépressions limitées par un bord abrupt
+CAPTIVITES|CAPTIVITE|16906|Situations d’un prisonnier de guerre
+COLONS|COLON|16917|Occupants israéliens|Membres d’une période, et, quelquefois aussi, incise
+HERNIES|HERNIE|16926|Maladies des choux
+CRAIES|CRAIE|16928|Roches biogènes de couleur blanche
+DEMARRAGES|DEMARRAGE|16940|Déplacements d’un navire|Départs d'un moyen de locomotion|Commencements d'un mouvement, mise en route
+FURIES|FURIE|16946|Emportements de colère|Comportements sanguinaires
+DENSITES|DENSITE|16954|Nombres de tiges à l’hectare
+COMBUSTIBLES|COMBUSTIBLE|16983|Carburants
+BIZUTS|BIZUT|17002|Débutants
+RENOVATIONS|RENOVATION|17017|Renouvellements, régénérations physiques ou morales|Remplacements de pièces ou d’éléments
+GALOPS|GALOP|17018|Les plus rapides des allures naturelles du cheval|Danses d’origine hongroise à deux temps et d’un mouvement vif
+BOBINES|BOBINE|17024|Cylindres de bois
+DERBYS|DERBY|17048|Courses hippiques réservées aux chevaux de trois ans|Voitures hippomobiles légères
+ALTERCATIONS|ALTERCATION|17056|Débats entre deux ou plusieurs personnes
+CONCORDES|CONCORDE|17066|Variétés de poire
+CALMANTS|CALMANT|17072|Médicaments destinés à calmer
+CALMANTE|CALMANT|17072|Qui calme, au sens physique ou au sens moral
+ARCTIQUES|ARCTIQUE|17073|Relatifs aux régions polaires du nord
+INNS|INN|17075|Auberges, gîtes
+PORTIONS|PORTION|17089|Quantités de pain
+SEMELLES|SEMELLE|17109|Pièces de cuir
+AFROS|AFRO|17131|Crépus et arrondis
+LACHETES|LACHETE|17132|Défauts de courage
+MATRICULES|MATRICULE|17134|Registres, listes
+RHETORIQUES|RHETORIQUE|17140|Affectations d’éloquence, discours vain et pompeux
+MARTYRES|MARTYRE|17142|Peines d’amour
+SUE|SUER|17153|Transpire, rend de la sueur par les pores de la peau
+SUENT|SUER|17153|Transpirent, rendent de la sueur par les pores de la peau
+SUAIT|SUER|17153|Transpirait, rendait de la sueur par les pores de la peau
+SUAIENT|SUER|17153|Transpiraient, rendaient de la sueur par les pores de la peau
+SUERA|SUER|17153|Transpirera, rendra de la sueur par les pores de la peau
+SUA|SUER|17153|Transpira, rendit de la sueur par les pores de la peau
+SUEE|SUER|17153|Transpirée, rendue de la sueur par les pores de la peau
+SUES|SUER|17153|Transpirés, rendus de la sueur par les pores de la peau
+SUEES|SUER|17153|Transpirées, rendues de la sueur par les pores de la peau
+GRIGNOTE|GRIGNOTER|17155|Mange petit à petit en rongeant
+GRIGNOTENT|GRIGNOTER|17155|Mangent petit à petit en rongeant
+GRIGNOTAIT|GRIGNOTER|17155|Mangeait petit à petit en rongeant
+GRIGNOTAIENT|GRIGNOTER|17155|Mangeaient petit à petit en rongeant
+GRIGNOTERA|GRIGNOTER|17155|Mangera petit à petit en rongeant
+GRIGNOTA|GRIGNOTER|17155|Mangea petit à petit en rongeant
+GIRAFES|GIRAFE|17156|Mammifères ongulés artiodactyles et ruminants|Très hauts verres à bière avec robinet|Très hauts monocycles
+BOMBARDENT|BOMBARDER|17162|Attaquent une ville
+BOMBARDAIT|BOMBARDER|17162|Attaquait une ville
+BOMBARDAIENT|BOMBARDER|17162|Attaquaient une ville
+BOMBARDERA|BOMBARDER|17162|Attaquera une ville
+BOMBARDA|BOMBARDER|17162|Attaqua une ville
+TONDEUSES|TONDEUSE|17168|Outils à tondre
+DETAILLES|DETAILLE|17183|Coupés par morceaux|Circonstanciés
+PUERILE|PUERIL|17202|Qui appartient à l’enfance
+ATTRIBUE|ATTRIBUER|17205|Affirme qu’une personne
+ATTRIBUENT|ATTRIBUER|17205|Affirment qu’une personne
+ATTRIBUAIT|ATTRIBUER|17205|Affirmait qu’une personne
+ATTRIBUAIENT|ATTRIBUER|17205|Affirmaient qu’une personne
+ATTRIBUERA|ATTRIBUER|17205|Affirmera qu’une personne
+ATTRIBUA|ATTRIBUER|17205|Affirma qu’une personne
+LIEVRES|LIEVRE|17209|Mammifères à longues oreilles|Les chairs de cet animal
+DANCINGS|DANCING|17214|Établissements publics conçus pour danser
+LOTIONS|LOTION|17215|Actions de mouiller|Actions de laver des terres
+PURGENT|PURGER|17224|Purifient|Ôtent, font sortir ce qu’il y a dans le corps d’impur
+PURGEAIT|PURGER|17224|Purifiait|Ôtait, faisait sortir ce qu’il y a dans le corps d’impur
+PURGEAIENT|PURGER|17224|Purifiaient|Ôtaient, faisaient sortir ce qu’il y a dans le corps d’impur
+PURGERA|PURGER|17224|Purifiera|Ôtera, fera sortir ce qu’il y a dans le corps d’impur
+PURGEA|PURGER|17224|Purifia|Ôta, fit sortir ce qu’il y a dans le corps d’impur
+PURGEE|PURGER|17224|Purifiée
+PURGEES|PURGER|17224|Purifiées
+GENOCIDES|GENOCIDE|17226|Éliminations physiques intentionnelles
+RAJAS|RAJA|17245|Rois dans la tradition védique|Princes hindous
+TREFLES|TREFLE|17247|Groupes de trois pions de la même couleur
+MAMMAS|MAMMA|17268|Mères, mamans, italiennes, ous corses
+COUCHAGES|COUCHAGE|17271|Marcottages|Actions d’installer et de répartir les soldats pour passer la nuit
+AVALS|AVAL|17312|Côtés vers lequel descend un cours d’eau
+CONTREFACONS|CONTREFACON|17322|Copies, imitations
+CHRONOLOGIES|CHRONOLOGIE|17336|Sciences des temps
+INTITULES|INTITULE|17340|Appellations
+AGISSANTE|AGISSANT|17349|Qui agit, qui se donne beaucoup de mouvement|Qui agit, qui opère avec force, avec efficacité
+POCHETTES|POCHETTE|17351|Enveloppes de papier|Petits filets de pêche|Petits violons
+CHUTENT|CHUTER|17354|Tombent sous l’action de son propre poids|Ratent son contrat en n’effectuant pas le nombre de levées prévues
+CHUTAIT|CHUTER|17354|Tombait sous l’action de son propre poids|Ratait son contrat en n’effectuant pas le nombre de levées prévues
+CHUTAIENT|CHUTER|17354|Tombaient sous l’action de son propre poids|Rataient son contrat en n’effectuant pas le nombre de levées prévues
+CHUTERA|CHUTER|17354|Tombera sous l’action de son propre poids|Ratera son contrat en n’effectuant pas le nombre de levées prévues
+CHUTA|CHUTER|17354|Tomba sous l’action de son propre poids|Rata son contrat en n’effectuant pas le nombre de levées prévues
+CHUTEE|CHUTER|17354|Tombée sous l’action de son propre poids
+CHUTEES|CHUTER|17354|Tombées sous l’action de son propre poids
+PARCELLES|PARCELLE|17358|Petites parties de quelque chose|Espaces de terre|Parties de forêt
+THANS|THAN|17365|Huitièmes lettres de l’alphabet géorgien
+SEMENCES|SEMENCE|17370|Éléments originaires d’un être
+STIMULENT|STIMULER|17397|Excitent|Relancent
+STIMULAIT|STIMULER|17397|Excitait|Relançait
+STIMULAIENT|STIMULER|17397|Excitaient|Relançaient
+STIMULERA|STIMULER|17397|Excitera|Relancera
+STIMULA|STIMULER|17397|Excita|Relança
+STIMULEE|STIMULER|17397|Excitée|Relancée
+STIMULES|STIMULER|17397|Excités|Relancés
+STIMULEES|STIMULER|17397|Excitées|Relancées
+VAILLANTS|VAILLANT|17401|Sympathiques, gentils
+REMARIE|REMARIER|17407|Contracte un nouveau mariage
+REMARIENT|REMARIER|17407|Contractent un nouveau mariage
+REMARIAIT|REMARIER|17407|Contractait un nouveau mariage
+REMARIAIENT|REMARIER|17407|Contractaient un nouveau mariage
+REMARIERA|REMARIER|17407|Contractera un nouveau mariage
+REMARIA|REMARIER|17407|Contracta un nouveau mariage
+DEBAUCHES|DEBAUCHE|17427|Dérèglements des mœurs|Fins quotidiennes du travail
+EMINENCES|EMINENCE|17434|Saillies
+RIGOLADES|RIGOLADE|17442|Choses peu sérieuses|Choses aisées à faire ou à supporter
+PADRES|PADRE|17449|Aumôniers militaires
+DICTATURES|DICTATURE|17454|Autorités absolues
+ACQUISITIONS|ACQUISITION|17455|Actions d’acquérir
+RABAISSE|RABAISSER|17464|Met plus bas
+RABAISSENT|RABAISSER|17464|Mettent plus bas
+RABAISSAIT|RABAISSER|17464|Mettait plus bas
+RABAISSAIENT|RABAISSER|17464|Mettaient plus bas
+RABAISSERA|RABAISSER|17464|Mettra plus bas
+RABAISSA|RABAISSER|17464|Mit plus bas
+COCOTTES|COCOTTE|17468|Inflammations du bord de la paupière|Pommes de pin
+CARPES|CARPE|17473|Poissons d’eau douce|Chairs cuisinées de ce poisson
+HEURTENT|HEURTER|17481|Entrent brusquement en contact|Entrent en collision avec un corps|Frappent à une porte pour que l’on vous ouvre
+HEURTAIT|HEURTER|17481|Entrait brusquement en contact|Entrait en collision avec un corps|Frappait à une porte pour que l’on vous ouvre
+HEURTAIENT|HEURTER|17481|Entraient brusquement en contact|Entraient en collision avec un corps|Frappaient à une porte pour que l’on vous ouvre
+HEURTERA|HEURTER|17481|Entrera brusquement en contact|Entrera en collision avec un corps|Frappera à une porte pour que l’on vous ouvre
+HEURTA|HEURTER|17481|Entra brusquement en contact|Entra en collision avec un corps|Frappa à une porte pour que l’on vous ouvre
+HEURTEE|HEURTER|17481|Entrée en collision avec un corps|Frappée à une porte pour que l’on vous ouvre
+HEURTEES|HEURTER|17481|Entrées en collision avec un corps|Frappées à une porte pour que l’on vous ouvre
+DEFUNTES|DEFUNTE|17483|Femmes mortes
+FIXATIONS|FIXATION|17497|Actions de fixer|Actions de déterminer, de régler définitivement
+ERABLES|ERABLE|17500|Bois tirés de cet arbre
+AMBULANTE|AMBULANT|17501|Qui va d’un lieu à un autre
+CUVES|CUVE|17506|Grands récipients de bois|Récipients en toute sorte de matière et pour divers usages|Chaudrons
+JUTEUSE|JUTEUX|17509|Qui a beaucoup de jus
+BACHES|BACHE|17511|Encadrements en bois ou en pierre|Paniers utilisés par les hercheurs pour transporter de la houille
+ADJUDANTS|ADJUDANT|17522|Grades donnés à un sous-officier
+ABRITE|ABRITER|17528|Met à l’abri|Conserve|Se met à l’abri
+ABRITENT|ABRITER|17528|Mettent à l’abri|Conservent|Se mettent à l’abri
+ABRITAIT|ABRITER|17528|Mettait à l’abri|Conservait|Se mettait à l’abri
+ABRITAIENT|ABRITER|17528|Mettaient à l’abri|Conservaient|Se mettaient à l’abri
+ABRITERA|ABRITER|17528|Mettra à l’abri|Conservera|Se mettra à l’abri
+ABRITA|ABRITER|17528|Mit à l’abri|Conserva|Se mit à l’abri
+ABRITEE|ABRITER|17528|Mise à l’abri|Conservée
+ABRITES|ABRITER|17528|Mis à l’abri|Conservés
+ABRITEES|ABRITER|17528|Mises à l’abri|Conservées
+JUSTESSES|JUSTESSE|17530|Manières de faire une chose avec exactitude
+CADENCES|CADENCE|17541|Suites régulières de sons
+AGACES|AGACE|17548|Allumeuses
+SKIE|SKIER|17550|Se déplace sur la neige en utilisant des skis
+SKIENT|SKIER|17550|Se déplacent sur la neige en utilisant des skis
+SKIAIT|SKIER|17550|Se déplaçait sur la neige en utilisant des skis
+SKIAIENT|SKIER|17550|Se déplaçaient sur la neige en utilisant des skis
+SKIERA|SKIER|17550|Se déplacera sur la neige en utilisant des skis
+SKIA|SKIER|17550|Se déplaça sur la neige en utilisant des skis
+ARDENTE|ARDENT|17552|Qui enflamme, qui brûle|Qui donne une sensation de chaleur vive ou de brûlure
+MOBILIERS|MOBILIER|17565|Relatifs aux biens meubles
+SENILES|SENILE|17583|Relatifs à la vieillesse
+ABSTINENCES|ABSTINENCE|17585|Abstentions de relations sexuelles
+MINIATURES|MINIATURE|17590|Très petits, réduits, menus|Lettrines ornées
+SHAMPOOINGS|SHAMPOOING|17593|Produits pour le lavage du pelage d’un animal|Détergents pour moquette ou tapis
+BOULANGE|BOULANGER|17597|Prépare et fait cuire le pain
+BOULANGENT|BOULANGER|17597|Préparent et font cuire le pain
+BOULANGEAIT|BOULANGER|17597|Préparait et faisait cuire le pain
+BOULANGERA|BOULANGER|17597|Préparera et fera cuire le pain
+BOULANGEA|BOULANGER|17597|Prépara et fit cuire le pain
+MOTARDS|MOTARD|17601|Motocyclistes
+INFIDELITES|INFIDELITE|17613|Manques d’exactitude
+BLASPHEMES|BLASPHEME|17614|Discours ou propos injustes, déplacés
+GEMISSEMENTS|GEMISSEMENT|17618|Actions de gémir
+DENSES|DENSE|17625|Épais, compacts
+CLOUDS|CLOUD|17632|Nuages particuliers
+TRUANDS|TRUAND|17640|Malfaiteurs, criminels
+ENTAILLES|ENTAILLE|17652|Coupures avec enlèvement de parties|Coupures faites dans un objet pour y laisser une marque|Coupures faites dans les chairs
+HURLEMENTS|HURLEMENT|17660|Cris du loup
+RISEES|RISEE|17667|Moqueries
+GOBELETS|GOBELET|17674|Vases à boire|Ses contenus
+STOCKE|STOCKER|17684|Accumule une quantité suffisante de produit
+STOCKENT|STOCKER|17684|Accumulent une quantité suffisante de produit
+STOCKAIT|STOCKER|17684|Accumulait une quantité suffisante de produit
+STOCKAIENT|STOCKER|17684|Accumulaient une quantité suffisante de produit
+STOCKERA|STOCKER|17684|Accumulera une quantité suffisante de produit
+STOCKA|STOCKER|17684|Accumula une quantité suffisante de produit
+BOURGEOISES|BOURGEOISE|17704|Monnaies d’argent
+ENTAMENT|ENTAMER|17713|Portent atteinte
+ENTAMAIT|ENTAMER|17713|Portait atteinte
+ENTAMAIENT|ENTAMER|17713|Portaient atteinte
+ENTAMERA|ENTAMER|17713|Portera atteinte
+ENTAMA|ENTAMER|17713|Porta atteinte
+SOUTIRE|SOUTIRER|17729|Se fait donner par adresse
+SOUTIRENT|SOUTIRER|17729|Se font donner par adresse
+SOUTIRAIT|SOUTIRER|17729|Se faisait donner par adresse
+SOUTIRAIENT|SOUTIRER|17729|Se faisaient donner par adresse
+SOUTIRERA|SOUTIRER|17729|Se fera donner par adresse
+SOUTIRA|SOUTIRER|17729|Se fit donner par adresse
+CLAVICULES|CLAVICULE|17730|Os longs pairs
+TOMBEURS|TOMBEUR|17746|Vainqueurs|Séducteurs, séductrices
+TELEPATHIES|TELEPATHIE|17749|Facultés de sentir à distance, extrasensorielle
+BANNIERES|BANNIERE|17750|Enseignes|Signes ou insignes partisans
+DEMASQUE|DEMASQUER|17751|Fait apparaître quelque chose jusque-là dissimulé
+DEMASQUENT|DEMASQUER|17751|Font apparaître quelque chose jusque-là dissimulé
+DEMASQUAIT|DEMASQUER|17751|Faisait apparaître quelque chose jusque-là dissimulé
+DEMASQUAIENT|DEMASQUER|17751|Faisaient apparaître quelque chose jusque-là dissimulé
+DEMASQUERA|DEMASQUER|17751|Fera apparaître quelque chose jusque-là dissimulé
+DEMASQUA|DEMASQUER|17751|Fit apparaître quelque chose jusque-là dissimulé
+PUDEURS|PUDEUR|17752|Hontes honnêtes
+ANECDOTES|ANECDOTE|17753|Particularités historiques|Récits d’un petit fait curieux
+CAFETIERES|CAFETIERE|17758|Volumes contenus dans ce récipient
+HORDES|HORDE|17768|Groupements humains temporaires et instables
+TRUIES|TRUIE|17769|Femelles du porc
+GROGNONS|GROGNON|17778|Renfrognés
+GROGNONNE|GROGNON|17778|Renfrognée
+GROGNONNES|GROGNON|17778|Renfrognées
+GRATINS|GRATIN|17785|Élites mondaines
+TIEDES|TIEDE|17789|Fortes chaleurs
+LOULOUS|LOULOU|17794|Petits chiens à longs poils|Enfants, jeunes hommes|Hommes, types, mecs
+INDICATIONS|INDICATION|17798|Actions d’indiquer
+ERADIQUE|ERADIQUER|17800|Élimine totalement
+ERADIQUENT|ERADIQUER|17800|Éliminent totalement
+ERADIQUAIT|ERADIQUER|17800|Éliminait totalement
+ERADIQUAIENT|ERADIQUER|17800|Éliminaient totalement
+ERADIQUERA|ERADIQUER|17800|Éliminera totalement
+ERADIQUA|ERADIQUER|17800|Élimina totalement
+FORMELLE|FORMEL|17801|Qui existe de façon déterminée
+DEBITS|DEBIT|17804|Quantités, généralements
+CROISEURS|CROISEUR|17839|Bâtiments de guerre, de combat, de grande taille
+HARICOTS|HARICOT|17842|Ragoûts de mouton
+FUTILES|FUTILE|17850|Vases coniques
+NUDITES|NUDITE|17857|Figures nues
+BLANCHIMENTS|BLANCHIMENT|17860|Faits de vider une page de tout contenu
+DISPERSENT|DISPERSER|17866|Forcent à s’enfuir de différents côtés, mettent en désordre
+DISPERSAIT|DISPERSER|17866|Forçait à s’enfuir de différents côtés, mettait en désordre
+DISPERSAIENT|DISPERSER|17866|Forçaient à s’enfuir de différents côtés, mettaient en désordre
+DISPERSERA|DISPERSER|17866|Forcera à s’enfuir de différents côtés, mettra en désordre
+DISPERSA|DISPERSER|17866|Força à s’enfuir de différents côtés, mit en désordre
+DISPERSEE|DISPERSER|17866|Forcée à s’enfuir de différents côtés, mise en désordre
+DISPERSES|DISPERSER|17866|Forcés à s’enfuir de différents côtés, mis en désordre
+DISPERSEES|DISPERSER|17866|Forcées à s’enfuir de différents côtés, mises en désordre
+PERCEES|PERCEE|17867|Ouvertures pratiquées soits pour faire un chemin
+GEOGRAPHIES|GEOGRAPHIE|17897|Livres, manuels
+PATERNELLE|PATERNEL|17908|Qui a rapport au père, qui appartient au père
+PALIERS|PALIER|17910|Parties d’une route|Degrés intermédiaires
+DEFINIS|DEFINI|17930|Proportionnellements fixes et invariables|Fixés par une grandeur
+QUOTAS|QUOTA|17942|Quantités limitées ou réglementaires
+INSOMNIES|INSOMNIE|17953|Nuits à ne pas dormir
+PINTES|PINTE|17959|Verres de bière d’un demi-litre|Débits de boisson, bistro
+PLAINES|PLAINE|17962|Espaces géographiques caractérisés par une surface plane|Grandes surfaces unies
+GOURDES|GOURDE|17974|Calebasses, courges séchées et vidées
+COALITIONS|COALITION|17977|Unions concertées entre ouvriers
+QUALIFIE|QUALIFIER|17992|Marque de quel caractère est une chose
+QUALIFIENT|QUALIFIER|17992|Marquent de quel caractère est une chose
+QUALIFIAIT|QUALIFIER|17992|Marquait de quel caractère est une chose
+QUALIFIAIENT|QUALIFIER|17992|Marquaient de quel caractère est une chose
+QUALIFIERA|QUALIFIER|17992|Marquera de quel caractère est une chose
+QUALIFIA|QUALIFIER|17992|Marqua de quel caractère est une chose
+QUALIFIEE|QUALIFIER|17992|Marquée de quel caractère est une chose
+QUALIFIES|QUALIFIER|17992|Marqués de quel caractère est une chose
+QUALIFIEES|QUALIFIER|17992|Marquées de quel caractère est une chose
+JETONS|JETON|18005|Pièces de métal
+CENDRES|CENDRE|18010|Résidus des réactions de fusion
+EPAISSEURS|EPAISSEUR|18012|Dimensions dans le sens horizontal|Les matières concrètes de l’objet
+EJECTE|EJECTER|18015|Expulse
+EJECTENT|EJECTER|18015|Expulsent
+EJECTAIT|EJECTER|18015|Expulsait
+EJECTAIENT|EJECTER|18015|Expulsaient
+EJECTERA|EJECTER|18015|Expulsera
+EJECTA|EJECTER|18015|Expulsa
+EJECTEE|EJECTER|18015|Expulsée
+EJECTES|EJECTER|18015|Expulsés
+EJECTEES|EJECTER|18015|Expulsées
+SOUDOYERS|SOUDOYER|18021|Hommes d’armes, mercenaire
+MENDIE|MENDIER|18022|Demande l’aumône|Sollicite à titre d’aumône
+MENDIENT|MENDIER|18022|Demandent l’aumône|Sollicitent à titre d’aumône
+MENDIAIT|MENDIER|18022|Demandait l’aumône|Sollicitait à titre d’aumône
+MENDIAIENT|MENDIER|18022|Demandaient l’aumône|Sollicitaient à titre d’aumône
+MENDIERA|MENDIER|18022|Demandera l’aumône|Sollicitera à titre d’aumône
+MENDIA|MENDIER|18022|Demanda l’aumône|Sollicita à titre d’aumône
+MENDIEE|MENDIER|18022|Sollicitée à titre d’aumône
+MENDIES|MENDIER|18022|Sollicités à titre d’aumône
+MENDIEES|MENDIER|18022|Sollicitées à titre d’aumône
+CONFIDENCES|CONFIDENCE|18024|Communications d’un secret
+RAILS|RAIL|18031|Pièces métalliques profilées
+CANETTES|CANETTE|18034|Petites canes
+CUPIDONS|CUPIDON|18040|Symboles de désir, d'amour|Bellâtres de tout âge
+DEDICACES|DEDICACE|18041|Actions de dédier un lieu au culte divin|Actions de placer une église|Consécrations d’un monument à un personnage
+AUTOCOLLANTE|AUTOCOLLANT|18049|Qui adhère tout seul
+SINGERS|SINGER|18067|Machines à coudre
+TRANSITS|TRANSIT|18070|Facultés de faire passer des marchandises|Faits de traverser une ville
+SECOUEES|SECOUEE|18071|Châtiments, peines
+ORTHODOXES|ORTHODOXE|18073|Relatifs aux églises chrétiennes grecques
+REPLIS|REPLI|18096|Plis doubles
+FRACTIONS|FRACTION|18100|Groupes parlementaires
+INCERTAINE|INCERTAIN|18109|Qui n’a pas une forme ou une nature bien arrêtée
+MACHES|MACHE|18111|Tanins du vin
+CORVETTES|CORVETTE|18112|Bâtiments de guerre intermédiaire entre la frégate et le brick
+MENTALITES|MENTALITE|18118|États d’esprit
+COUPANTE|COUPANT|18133|Qui coupe
+DICTE|DICTER|18141|Impose
+DICTENT|DICTER|18141|Imposent
+DICTAIT|DICTER|18141|Imposait
+DICTAIENT|DICTER|18141|Imposaient
+DICTERA|DICTER|18141|Imposera
+DICTA|DICTER|18141|Imposa
+DICTES|DICTER|18141|Imposés
+DICTEES|DICTER|18141|Imposées
+INFECTE|INFECTER|18143|Contamine un ordinateur par un logiciel malveillant
+INFECTENT|INFECTER|18143|Contaminent un ordinateur par un logiciel malveillant
+INFECTAIT|INFECTER|18143|Contaminait un ordinateur par un logiciel malveillant
+INFECTAIENT|INFECTER|18143|Contaminaient un ordinateur par un logiciel malveillant
+INFECTERA|INFECTER|18143|Contaminera un ordinateur par un logiciel malveillant
+INFECTA|INFECTER|18143|Contamina un ordinateur par un logiciel malveillant
+SUPPLICES|SUPPLICE|18150|Peines corporelles ordonnées par un tribunal|Douleurs physiques ou souffrances morales prolongées
+ROULEMENTS|ROULEMENT|18151|Bruits lointains du tonnerre
+GRINGOS|GRINGO|18154|Étrangers
+GOURMANDE|GOURMAND|18167|Qui mange avec avidité et parfois avec excès|Qui aime faire bonne chère
+KIMONOS|KIMONO|18173|Vêtements d’entraînement des arts martiaux japonais
+CONTESTE|CONTESTER|18185|Met en discussion ce que quelqu’un revendique
+CONTESTENT|CONTESTER|18185|Mettent en discussion ce que quelqu’un revendique
+CONTESTAIT|CONTESTER|18185|Mettait en discussion ce que quelqu’un revendique
+CONTESTAIENT|CONTESTER|18185|Mettaient en discussion ce que quelqu’un revendique
+CONTESTERA|CONTESTER|18185|Mettra en discussion ce que quelqu’un revendique
+CONTESTA|CONTESTER|18185|Mit en discussion ce que quelqu’un revendique
+CONTESTEE|CONTESTER|18185|Mise en discussion ce que quelqu’un revendique
+CONTESTES|CONTESTER|18185|Mis en discussion ce que quelqu’un revendique
+CONTESTEES|CONTESTER|18185|Mises en discussion ce que quelqu’un revendique
+FICHENT|FICHER|18190|Font entrer par la pointe
+FICHAIT|FICHER|18190|Faisait entrer par la pointe
+FICHAIENT|FICHER|18190|Faisaient entrer par la pointe
+FICHERA|FICHER|18190|Fera entrer par la pointe
+FICHA|FICHER|18190|Fit entrer par la pointe
+PARADOXES|PARADOXE|18191|Propositions contraires à l’opinion commune ou à la vraisemblance
+MASTURBE|MASTURBER|18192|Excite manuellement pour procurer le plaisir sexuel
+MASTURBENT|MASTURBER|18192|Excitent manuellement pour procurer le plaisir sexuel
+MASTURBAIT|MASTURBER|18192|Excitait manuellement pour procurer le plaisir sexuel
+MASTURBAIENT|MASTURBER|18192|Excitaient manuellement pour procurer le plaisir sexuel
+MASTURBERA|MASTURBER|18192|Excitera manuellement pour procurer le plaisir sexuel
+MASTURBA|MASTURBER|18192|Excita manuellement pour procurer le plaisir sexuel
+FUYANTE|FUYANT|18197|Qui va en arrière
+VEREUSE|VEREUX|18209|Où il y a des vers|Tarée ou corrompue
+VEREUSES|VEREUX|18209|Tarées ou corrompues
+GRIMACES|GRIMACE|18233|Contorsions du visage faite souvent à dessein
+ADVERSES|ADVERSE|18235|Contraires, opposés
+POURPRES|POURPRE|18238|Couleurs de la robe d’un vin rouge
+TILLS|TILL|18240|Drifts non stratifiés
+CLOQUES|CLOQUE|18241|Boursouflures d’une surface quelconque|Ampoules|Proéminences du ventre due à la grossesse
+POTENCES|POTENCE|18242|Assemblages de trois pièces de bois ou de fer
+ANTRES|ANTRE|18260|Cavernes, grottes naturelles|Cavités naturelles de quelques organes du corps humain
+ENFLURES|ENFLURE|18261|Choses enflées, bosses, tumeurs|Outrecuidances, vanités démesurées, orgueils injustifiés
+TOURMENTENT|TOURMENTER|18262|Font souffrir des douleurs causées par la maladie|Importunent beaucoup
+TOURMENTAIT|TOURMENTER|18262|Faisait souffrir des douleurs causées par la maladie|Importunait beaucoup
+TOURMENTERA|TOURMENTER|18262|Fera souffrir des douleurs causées par la maladie|Importunera beaucoup
+TOURMENTA|TOURMENTER|18262|Fit souffrir des douleurs causées par la maladie|Importuna beaucoup
+FENTES|FENTE|18286|Petites ouvertures en long
+RAMPANTE|RAMPANT|18290|Qui rampe, en parlant des animaux et des plantes
+SCELLENT|SCELLER|18296|Marquent d’un sceau|Ferment hermétiquement
+SCELLAIT|SCELLER|18296|Marquait d’un sceau|Fermait hermétiquement
+SCELLAIENT|SCELLER|18296|Marquaient d’un sceau|Fermaient hermétiquement
+SCELLERA|SCELLER|18296|Marquera d’un sceau|Fermera hermétiquement
+SCELLA|SCELLER|18296|Marqua d’un sceau|Ferma hermétiquement
+SCELLEE|SCELLER|18296|Marquée d’un sceau
+SCELLES|SCELLER|18296|Marqués d’un sceau
+SCELLEES|SCELLER|18296|Marquées d’un sceau
+MEDUSES|MEDUSE|18297|Cnidaires aquatiques au corps gélatineux en forme d’ombrelle
+NOSTALGIQUES|NOSTALGIQUE|18322|Mélancoliques, tristes
+DELICATESSES|DELICATESSE|18324|Adresses, légèretés, soins|Faiblesses, débilités
+FATIGANTS|FATIGANT|18333|Importuns, ennuyeux, lassants|Personnes importunes, ennuyeuses
+FATIGANTE|FATIGANT|18333|Qui exige une attention pénible|Importune, ennuyeuse, lassante
+FATIGANTES|FATIGANT|18333|Importunes, ennuyeuses, lassantes
+MANAGEMENTS|MANAGEMENT|18335|Actions de diriger
+PLONGEONS|PLONGEON|18338|Descentes rapides
+VERGERS|VERGER|18349|Pommeraies
+ATTACHEMENTS|ATTACHEMENT|18361|Grandes applications
+RENIFLE|RENIFLER|18364|Aspire fortement par le nez
+RENIFLENT|RENIFLER|18364|Aspirent fortement par le nez
+RENIFLAIT|RENIFLER|18364|Aspirait fortement par le nez
+RENIFLAIENT|RENIFLER|18364|Aspiraient fortement par le nez
+RENIFLERA|RENIFLER|18364|Aspirera fortement par le nez
+RENIFLA|RENIFLER|18364|Aspira fortement par le nez
+PENETRATIONS|PENETRATION|18367|Introductions du pénis|Sagacités de l’esprit|Entrées d’humains à pied ou d’engins sur une parcelle
+LUXURES|LUXURE|18408|Recherches des plaisirs sexuels pour soi-seul
+ARDEURS|ARDEUR|18415|Chaleurs extrêmes
+HOLOCAUSTES|HOLOCAUSTE|18419|Les victimes ainsi sacrifiées|Sacrifices en général
+DENICHE|DENICHER|18446|Ôte du nid|Abandonne le nid
+DENICHENT|DENICHER|18446|Ôtent du nid|Abandonnent le nid
+DENICHAIT|DENICHER|18446|Ôtait du nid|Abandonnait le nid
+DENICHAIENT|DENICHER|18446|Ôtaient du nid|Abandonnaient le nid
+DENICHERA|DENICHER|18446|Ôtera du nid|Abandonnera le nid
+DENICHA|DENICHER|18446|Ôta du nid|Abandonna le nid
+DENICHEE|DENICHER|18446|Ôtée du nid
+DENICHES|DENICHER|18446|Ôtés du nid
+DENICHEES|DENICHER|18446|Ôtées du nid
+CAISSONS|CAISSON|18447|Coffres à l’arrière du navire|Compartiments
+GAZEUSES|GAZEUSE|18455|Bombes lacrymogènes
+AUDITIONNE|AUDITIONNER|18475|Assiste à une représentation dans le but de l'évaluer|Présente une partie de son répertoire
+AUDITIONNENT|AUDITIONNER|18475|Assistent à une représentation dans le but de l'évaluer|Présentent une partie de son répertoire
+AUDITIONNAIT|AUDITIONNER|18475|Assistait à une représentation dans le but de l'évaluer|Présentait une partie de son répertoire
+AUDITIONNERA|AUDITIONNER|18475|Assistera à une représentation dans le but de l'évaluer|Présentera une partie de son répertoire
+AUDITIONNA|AUDITIONNER|18475|Assista à une représentation dans le but de l'évaluer|Présenta une partie de son répertoire
+AUDITIONNEE|AUDITIONNER|18475|Assistée à une représentation dans le but de l'évaluer
+AUDITIONNES|AUDITIONNER|18475|Assistés à une représentation dans le but de l'évaluer
+AUDITIONNEES|AUDITIONNER|18475|Assistées à une représentation dans le but de l'évaluer
+DEPENDANTS|DEPENDANT|18480|Sujets au manque
+GOUDRONS|GOUDRON|18481|Résines noirâtres pour calfater les navires|Matières noirâtres
+GRAFFITIS|GRAFFITI|18482|Inscriptions gravées|Inscriptions, dessins, rapidements tracés, gribouillis
+DELPHINES|DELPHINE|18490|Femelles du dauphin
+PURIFIENT|PURIFIER|18502|Rendent pur
+PURIFIAIT|PURIFIER|18502|Rendait pur
+PURIFIAIENT|PURIFIER|18502|Rendaient pur
+PURIFIERA|PURIFIER|18502|Rendra pur
+PURIFIA|PURIFIER|18502|Rendit pur
+BELIERS|BELIER|18507|Outils à enfoncer les pieux ou d’autres éléments
+SPECULATIONS|SPECULATION|18511|Raisonnements
+ANGUILLES|ANGUILLE|18524|Poissons osseux de la forme d’un serpent
+SENTANTE|SENTANT|18528|Qui a la faculté de sentir
+ESCAPADES|ESCAPADE|18532|Voyages décidés pour changer du quotidien
+ISOLATIONS|ISOLATION|18538|Actions d’isoler
+TROUBLENT|TROUBLER|18542|Causent une agitation désordonnée|Perturbent une fonction physiologique
+TROUBLAIT|TROUBLER|18542|Causait une agitation désordonnée|Perturbait une fonction physiologique
+TROUBLAIENT|TROUBLER|18542|Causaient une agitation désordonnée|Perturbaient une fonction physiologique
+TROUBLERA|TROUBLER|18542|Causera une agitation désordonnée|Perturbera une fonction physiologique
+TROUBLA|TROUBLER|18542|Causa une agitation désordonnée|Perturba une fonction physiologique
+VISEES|VISEE|18548|Actions de diriger la vue|Fenêtres
+PARENTES|PARENTE|18552|Lignées communes|Proximités entre deux êtres
+BUNGALOWS|BUNGALOW|18559|Petites constructions habitables
+REBORDS|REBORD|18560|Bords élevés et ordinairements ajoutés, rapportés|Bords repliés, renversés
+GENDARMES|GENDARME|18576|Poissons nommés vairons ou gardèches
+CACHEMIRES|CACHEMIRE|18581|Textiles naturels|Des châles de cette laine
+ERRES|ERRE|18592|Vitesses acquises d’un bâtiment|Vitesses acquises d’un véhicule
+IMPUISSANCES|IMPUISSANCE|18611|Manques de pouvoir, de moyens pour faire quelque chose|Incapacités sexuelles
+DESAMORCE|DESAMORCER|18617|Arrête un processus
+DESAMORCENT|DESAMORCER|18617|Arrêtent un processus
+DESAMORCAIT|DESAMORCER|18617|Arrêtait un processus
+DESAMORCERA|DESAMORCER|18617|Arrêtera un processus
+DESAMORCA|DESAMORCER|18617|Arrêta un processus
+INFIMES|INFIME|18620|Tout petits
+DIFFERENCIE|DIFFERENCIER|18631|Prend l’accroissement infiniment petit
+DIFFERENCIA|DIFFERENCIER|18631|Prit l’accroissement infiniment petit
+URBAINS|URBAIN|18637|Relatifs à la ville
+SENSEIS|SENSEI|18645|Maîtres d’une discipline japonaise comme l’art martial
+PATINOIRES|PATINOIRE|18654|Aires de jeu d’un théâtre ou d’un match d’improvisation
+VERSETS|VERSET|18663|Petites divisions d’un écrit religieux|Divisions analogues dans un autre ouvrage
+FINESSES|FINESSE|18695|Manières de peindre
+TAGS|TAG|18712|Graffitis|Chats, loups
+BERCAILS|BERCAIL|18718|Communautés religieuses plus ou moins nombreuses
+KRYPTONITES|KRYPTONITE|18723|Roches imaginaires
+APPROCHANTE|APPROCHANT|18725|Qui a quelque ressemblance
+DECODE|DECODER|18738|Déchiffre ce qui est codé
+DECODENT|DECODER|18738|Déchiffrent ce qui est codé
+DECODAIT|DECODER|18738|Déchiffrait ce qui est codé
+DECODAIENT|DECODER|18738|Déchiffraient ce qui est codé
+DECODERA|DECODER|18738|Déchiffrera ce qui est codé
+DECODA|DECODER|18738|Déchiffra ce qui est codé
+CONVERSIONS|CONVERSION|18749|Actions de changer une chose en une autre chose|Changements de croyance ou|Retours à une bonne conduite
+PARJURES|PARJURE|18757|Violations de serment
+ETALENT|ETALER|18782|Exposent en vente|Mettent à plat sur une table
+ETALAIT|ETALER|18782|Exposait en vente|Mettait à plat sur une table
+ETALAIENT|ETALER|18782|Exposaient en vente|Mettaient à plat sur une table
+ETALERA|ETALER|18782|Exposera en vente|Mettra à plat sur une table
+ETALA|ETALER|18782|Exposa en vente|Mit à plat sur une table
+ETALEE|ETALER|18782|Exposée en vente|Mise à plat sur une table
+ETALES|ETALER|18782|Exposés en vente|Mis à plat sur une table
+ETALEES|ETALER|18782|Exposées en vente|Mises à plat sur une table
+REDDITIONS|REDDITION|18786|Faits de rendre, de rembourser
+NAPPES|NAPPE|18796|Vastes étendues
+SENORITAS|SENORITA|18813|Petits cigares à une seule enveloppe de tabac naturel
+VIREMENTS|VIREMENT|18818|Actions de virer|Actions de tourner, de pivoter|Transports d’une somme d’un compte à un autre
+LUXUEUSE|LUXUEUX|18841|Qui tient du luxe
+POULAILLERS|POULAILLER|18852|Abris clos construits pour les poules|Méchantes bicoques, pigeonniers
+NEBULEUSES|NEBULEUSE|18864|Nuages de matière cosmique tantôt obscure
+GREFFIERS|GREFFIER|18875|Sexes de la femme, minou, chatte, etc
+EPATENT|EPATER|18888|Font tomber les quatre fers en l’air
+EPATAIT|EPATER|18888|Faisait tomber les quatre fers en l’air
+EPATAIENT|EPATER|18888|Faisaient tomber les quatre fers en l’air
+EPATERA|EPATER|18888|Fera tomber les quatre fers en l’air
+EPATA|EPATER|18888|Fit tomber les quatre fers en l’air
+SOTS|SOT|18899|Personnes sans esprit, sans jugement
+CORBEILLES|CORBEILLE|18917|Paniers souvent faits d’osier|Poubelles à papiers|Parties du chapiteau entre l’astragale et le tailloir
+BERLINES|BERLINE|18918|Automobiles fermées par un toit rigide et fixe
+BASCULENT|BASCULER|18920|Passent d’une source|Passent d'une situation bien déterminée à une autre
+BASCULAIT|BASCULER|18920|Passait d’une source|Passait d'une situation bien déterminée à une autre
+BASCULAIENT|BASCULER|18920|Passaient d’une source|Passaient d'une situation bien déterminée à une autre
+BASCULERA|BASCULER|18920|Passera d’une source|Passera d'une situation bien déterminée à une autre
+BASCULA|BASCULER|18920|Passa d’une source|Passa d'une situation bien déterminée à une autre
+BASCULEE|BASCULER|18920|Passée d’une source|Passée d'une situation bien déterminée à une autre
+BASCULES|BASCULER|18920|Passés d’une source|Passés d'une situation bien déterminée à une autre
+BASCULEES|BASCULER|18920|Passées d’une source|Passées d'une situation bien déterminée à une autre
+VOUTES|VOUTE|18922|Parties intérieures de l’arc du fer à cheval
+RAIES|RAIE|18936|Lignes tracées sur une surface|Rayons, lignes
+SAIGNANTS|SAIGNANT|18943|Personnes malheureuses, vulnérables
+MEFIANTE|MEFIANT|18949|Qui se méfie
+TAPAGES|TAPAGE|18956|Bruits désordonnés, tumultueux
+AVANCEMENTS|AVANCEMENT|18961|Actions de monter en grade et d’obtenir une meilleure rémunération
+VISONS|VISON|18964|Fourrures de cet animal
+EPOUVANTAILS|EPOUVANTAIL|18975|Figures de rhétorique, synonyme d’homme de paille
+AFFUTS|AFFUT|19000|Tranchants en forme de biseau d’un outil
+NICHES|NICHE|19006|Petites cabanes en bois|Positions occupées par un organisme
+AUGUSTES|AUGUSTE|19010|Monnaies impériales romaines|Personnages désordonnés d’un duo comique
+TRAVESTIS|TRAVESTI|19036|Déguisés|Identités de genre transféminine latino-américaine
+TRAVESTIE|TRAVESTI|19036|Déguisée|Où on se déguise
+TRAVESTIES|TRAVESTI|19036|Déguisées
+TERRIERS|TERRIER|19047|Refuges, repaires
+MARMITES|MARMITE|19057|Récipients de terre ou de métal|Nourritures, subsistances
+RINCENT|RINCER|19059|Font un dernier lavage dans de l’eau sans savon
+RINCAIT|RINCER|19059|Faisait un dernier lavage dans de l’eau sans savon
+RINCAIENT|RINCER|19059|Faisaient un dernier lavage dans de l’eau sans savon
+RINCERA|RINCER|19059|Fera un dernier lavage dans de l’eau sans savon
+RINCA|RINCER|19059|Fit un dernier lavage dans de l’eau sans savon
+FLATTENT|FLATTER|19070|Caressent
+FLATTAIT|FLATTER|19070|Caressait
+FLATTAIENT|FLATTER|19070|Caressaient
+FLATTERA|FLATTER|19070|Caressera
+FLATTA|FLATTER|19070|Caressa
+FLATTEE|FLATTER|19070|Caressée
+FLATTEES|FLATTER|19070|Caressées
+SOUPCONNE|SOUPCONNER|19105|Forme une simple conjecture
+SOUPCONNENT|SOUPCONNER|19105|Forment une simple conjecture
+SOUPCONNAIT|SOUPCONNER|19105|Formait une simple conjecture
+SOUPCONNERA|SOUPCONNER|19105|Formera une simple conjecture
+SOUPCONNA|SOUPCONNER|19105|Forma une simple conjecture
+GLACAGES|GLACAGE|19117|Actions de glacer|Couches ainsi formées
+TORCHONS|TORCHON|19125|Serpillières
+TORCHONNE|TORCHON|19125|Qui néglige l’entretien et la propreté
+ESCARGOTS|ESCARGOT|19133|Mets préparés avec cet animal|Spirales, colimaçons
+AFFRONTS|AFFRONT|19139|Outrages faits en face, soit en paroles, soit en action|Hontes, déshonneurs
+ETOURDIE|ETOURDI|19140|Qui agit sans réflexion|Qui a la tête qui tourne, qui a le vertige
+GAILLARDS|GAILLARD|19141|Grivois, paillards|Personnes de bonne composition
+ACCEPTATIONS|ACCEPTATION|19149|Approbations dans les formes légales|Promesses de payer à échéance
+MARCHANDE|MARCHANDER|19155|Demande le prix d’une chose|Discute pour lésiner|Accorde sans lésiner
+MARCHANDENT|MARCHANDER|19155|Demandent le prix d’une chose|Discutent pour lésiner|Accordent sans lésiner
+MARCHANDAIT|MARCHANDER|19155|Demandait le prix d’une chose|Discutait pour lésiner|Accordait sans lésiner
+MARCHANDERA|MARCHANDER|19155|Demandera le prix d’une chose|Discutera pour lésiner|Accordera sans lésiner
+MARCHANDA|MARCHANDER|19155|Demanda le prix d’une chose|Discuta pour lésiner|Accorda sans lésiner
+MARCHANDEE|MARCHANDER|19155|Discutée pour lésiner|Accordée sans lésiner
+MARCHANDES|MARCHANDER|19155|Discutés pour lésiner|Accordés sans lésiner
+MARCHANDEES|MARCHANDER|19155|Discutées pour lésiner|Accordées sans lésiner
+ABBAYES|ABBAYE|19159|Monastères d’hommes
+VERTUEUSE|VERTUEUX|19160|Qui ne commet pas de péchés
+FLOS|FLO|19167|Nœuds de lacet ou de ruban
+VENDETTAS|VENDETTA|19181|Vengeances, revanches personnelles
+ESQUIVES|ESQUIVE|19183|Petites pièces de bois de forme tronc-conique
+INTERNENT|INTERNER|19188|Obligent à résider dans une certaine localité|Enferment dans un asile d’aliénés
+INTERNAIT|INTERNER|19188|Obligeait à résider dans une certaine localité|Enfermait dans un asile d’aliénés
+INTERNAIENT|INTERNER|19188|Obligeaient à résider dans une certaine localité|Enfermaient dans un asile d’aliénés
+INTERNERA|INTERNER|19188|Obligera à résider dans une certaine localité|Enfermera dans un asile d’aliénés
+INTERNA|INTERNER|19188|Obligea à résider dans une certaine localité|Enferma dans un asile d’aliénés
+INTERNEE|INTERNER|19188|Obligée à résider dans une certaine localité|Enfermée dans un asile d’aliénés
+INTERNES|INTERNER|19188|Obligés à résider dans une certaine localité|Enfermés dans un asile d’aliénés
+INTERNEES|INTERNER|19188|Obligées à résider dans une certaine localité|Enfermées dans un asile d’aliénés
+FEUILLETONS|FEUILLETON|19190|Parties de certains journaux|Longues successions d’évènements
+LAMAS|LAMA|19195|Tissus fabriqués avec la toison laineuse de cet animal
+BUSTES|BUSTE|19209|Ouvrages de peinture, de gravure, etc|Boites en bois de sapin
+STRATAGEMES|STRATAGEME|19222|Ruses de guerre
+EPUISENT|EPUISER|19223|Absorbent toutes les forces vitales
+EPUISAIT|EPUISER|19223|Absorbait toutes les forces vitales
+EPUISAIENT|EPUISER|19223|Absorbaient toutes les forces vitales
+EPUISERA|EPUISER|19223|Absorbera toutes les forces vitales
+EPUISA|EPUISER|19223|Absorba toutes les forces vitales
+DEPLOYES|DEPLOYE|19231|Dépliés, étendus, étalés|Positionnés, engagés, présents
+REPERAGES|REPERAGE|19234|Visites préalables de sites pour préparer un tournage
+GRONDEMENTS|GRONDEMENT|19249|Bruits sourds
+ROSEES|ROSEE|19276|Vapeurs d’eau de l’atmosphère
+CARABINES|CARABINE|19282|Armes à feu d’épaule|Armes à feu d’épaule du type fusil
+BAUMES|BAUME|19283|Variétés de menthe
+CHINOS|CHINO|19286|Pantalons en serge de coton, à l’origine de couleur claire
+CAGOULES|CAGOULE|19287|Protections faciales utilisées pour la soudure
+EQUIPEES|EQUIPEE|19303|Entreprises audacieuses
+PREVENANTE|PREVENANT|19304|Qui prévient
+TEINTURES|TEINTURE|19315|Liquides préparés pour teindre
+RESIDUS|RESIDU|19316|Objets en fin de vie, après consommation
+AERODROMES|AERODROME|19328|Terrains aménagés pour l’atterrissage
+ELABORENT|ELABORER|19347|Préparent un produit par un long travail
+ELABORAIT|ELABORER|19347|Préparait un produit par un long travail
+ELABORAIENT|ELABORER|19347|Préparaient un produit par un long travail
+ELABORERA|ELABORER|19347|Préparera un produit par un long travail
+ELABORA|ELABORER|19347|Prépara un produit par un long travail
+BRASSERIES|BRASSERIE|19353|Industries de la fabrication de la bière
+CLAIRONS|CLAIRON|19354|Parties du jeu de l’orgue
+COUSUS|COUSU|19369|Liés par une couture
+AUTRUCHES|AUTRUCHE|19374|Viandes de l’oiseau
+LENTILLES|LENTILLE|19377|Taches rousses sur la peau, tache de rousseur, éphélide|Verres taillés
+BUANDERIES|BUANDERIE|19382|Pièces aménagées pour faire la lessive|Pressings, laveries
+IMAMS|IMAM|19399|Guides spirituels et temporels
+GUIDAGES|GUIDAGE|19407|Actions de guider
+COMMENTE|COMMENTER|19418|Ajoute malignement à la vérité de la chose
+COMMENTENT|COMMENTER|19418|Ajoutent malignement à la vérité de la chose
+COMMENTAIT|COMMENTER|19418|Ajoutait malignement à la vérité de la chose
+COMMENTAIENT|COMMENTER|19418|Ajoutaient malignement à la vérité de la chose
+COMMENTERA|COMMENTER|19418|Ajoutera malignement à la vérité de la chose
+COMMENTA|COMMENTER|19418|Ajouta malignement à la vérité de la chose
+ABAISSENT|ABAISSER|19421|Mettent en position plus basse|Diminuent la quantité de, rendent moins élevé
+ABAISSAIT|ABAISSER|19421|Mettait en position plus basse|Diminuait la quantité de, rendait moins élevé
+ABAISSAIENT|ABAISSER|19421|Mettaient en position plus basse|Diminuaient la quantité de, rendaient moins élevé
+ABAISSERA|ABAISSER|19421|Mettra en position plus basse|Diminuera la quantité de, rendra moins élevé
+ABAISSA|ABAISSER|19421|Mit en position plus basse|Diminua la quantité de, rendit moins élevé
+ABAISSEE|ABAISSER|19421|Mise en position plus basse
+ABAISSES|ABAISSER|19421|Mis en position plus basse
+ABAISSEES|ABAISSER|19421|Mises en position plus basse
+VANNES|VANNE|19422|Grandes plumes de l’aile
+HABILETES|HABILETE|19425|Facilités, dispositions|Tours d'adresse
+CIRCULAIRES|CIRCULAIRE|19461|Relatifs au cercle
+CHASTETES|CHASTETE|19462|Entières abstinences des plaisirs de l’amour
+REDRESSES|REDRESSE|19470|Cordages très solides
+ATOMES|ATOME|19474|Composants de la matière|Énergies nucléaires|Corps regardés comme indivisible
+FRAICHEURS|FRAICHEUR|19482|Froids doux et modérés|Froidures
+MEMORISE|MEMORISER|19509|Conserve en mémoire
+MEMORISENT|MEMORISER|19509|Conservent en mémoire
+MEMORISAIT|MEMORISER|19509|Conservait en mémoire
+MEMORISAIENT|MEMORISER|19509|Conservaient en mémoire
+MEMORISERA|MEMORISER|19509|Conservera en mémoire
+MEMORISA|MEMORISER|19509|Conserva en mémoire
+MEMORISEE|MEMORISER|19509|Conservée en mémoire
+MEMORISES|MEMORISER|19509|Conservés en mémoire
+MEMORISEES|MEMORISER|19509|Conservées en mémoire
+NACELLES|NACELLE|19512|Les parties suspendues d’un aérostat|Objets de même forme|Moulures en demi-ovale
+CREPES|CREPE|19519|Étoffes claires
+DECAPITENT|DECAPITER|19524|Tranchent la tête à une personne avec une épée|Ôtent violemment la tête d'une personne|Ôtent la tête d'un animal
+DECAPITAIT|DECAPITER|19524|Tranchait la tête à une personne avec une épée|Ôtait violemment la tête d'une personne|Ôtait la tête d'un animal
+DECAPITAIENT|DECAPITER|19524|Tranchaient la tête à une personne avec une épée|Ôtaient violemment la tête d'une personne|Ôtaient la tête d'un animal
+DECAPITERA|DECAPITER|19524|Tranchera la tête à une personne avec une épée|Ôtera violemment la tête d'une personne|Ôtera la tête d'un animal
+DECAPITA|DECAPITER|19524|Trancha la tête à une personne avec une épée|Ôta violemment la tête d'une personne|Ôta la tête d'un animal
+CADDIES|CADDIE|19537|Personnes chargées de transporter le matériel|Voiturettes pour le transport du matériel de golf et des golfeurs
+MIAOUS|MIAOU|19539|Miaulements
+REPRESSIONS|REPRESSION|19558|Actions de réprimer
+TROMBONES|TROMBONE|19573|Instruments à vent
+GUIGNOLS|GUIGNOL|19590|Marionnettes animées de l’intérieur par les doigts du marionnettiste|Pitres, clowns|Triangles situés sur un plan horizontal
+PIQUANTS|PIQUANT|19602|Stimulants comme le piment et le gingembre
+PIQUANTE|PIQUANT|19602|Qui pique|Qui fait une impression vive sur l’organe du goût ou de l’odorat
+GATENT|GATER|19604|Endommagent, mettent en mauvais état
+GATAIT|GATER|19604|Endommageait, mettait en mauvais état
+GATAIENT|GATER|19604|Endommageaient, mettaient en mauvais état
+GATERA|GATER|19604|Endommagera, mettra en mauvais état
+GATA|GATER|19604|Endommagea, mit en mauvais état
+GATES|GATER|19604|Endommagés, mis en mauvais état
+GATEES|GATER|19604|Endommagées, mises en mauvais état
+MIRAGES|MIRAGE|19606|Actions de mirer
+PAYSANNES|PAYSANNE|19611|Pizzas garnies de gruyère
+PENURIES|PENURIE|19615|Extrêmes disettes|Disettes d’argent
+EXPRESSOS|EXPRESSO|19617|Cafés très corsés avec un fort arôme
+AUMONIERS|AUMONIER|19639|Ecclésiastiques attachés à certains corps
+DESARMENT|DESARMER|19645|Dépouillent quelqu’un de ses armes|Font sauter l’épée de la main de son adversaire|Obligent quelqu’un à livrer
+DESARMAIT|DESARMER|19645|Dépouillait quelqu’un de ses armes|Faisait sauter l’épée de la main de son adversaire|Obligeait quelqu’un à livrer
+DESARMAIENT|DESARMER|19645|Dépouillaient quelqu’un de ses armes|Faisaient sauter l’épée de la main de son adversaire|Obligeaient quelqu’un à livrer
+DESARMERA|DESARMER|19645|Dépouillera quelqu’un de ses armes|Fera sauter l’épée de la main de son adversaire|Obligera quelqu’un à livrer
+DESARMA|DESARMER|19645|Dépouilla quelqu’un de ses armes|Fit sauter l’épée de la main de son adversaire|Obligea quelqu’un à livrer
+VISIBILITES|VISIBILITE|19664|Qualités d’un produit|Champs de vision du conducteur d’un véhicule
+SAUTANTE|SAUTANT|19667|Qui saute
+RATIONS|RATION|19671|Portions journalières soits de pain|Quantités ordinaires de nourriture
+ADMINISTRENT|ADMINISTRER|19672|Donnent
+ADMINISTRAIT|ADMINISTRER|19672|Donnait
+ADMINISTRERA|ADMINISTRER|19672|Donnera
+ADMINISTRA|ADMINISTRER|19672|Donna
+ADMINISTREE|ADMINISTRER|19672|Donnée
+ADMINISTRES|ADMINISTRER|19672|Donnés
+ADMINISTREES|ADMINISTRER|19672|Données
+ADEQUATE|ADEQUAT|19675|Qui convient, qui correspond aux attentes
+BISES|BISE|19681|Vents d’hiver|Baisers sur la joue
+BENOITS|BENOIT|19682|Bénis, bienheureux
+BENOITE|BENOIT|19682|Bénie, bienheureuse
+BENOITES|BENOIT|19682|Bénies, bienheureuses
+ORCHIDEES|ORCHIDEE|19683|Plantes monocotylédones et bulbeuses
+LOCOMOTIVES|LOCOMOTIVE|19686|Machines actionnées par la vapeur
+INDULGENCES|INDULGENCE|19694|Facilités à excuser et à pardonner les fautes
+CHENILLES|CHENILLE|19710|Stades larvaires de certains insectes
+CHEQUIERS|CHEQUIER|19719|Carnets à souche
+PIETINE|PIETINER|19722|Foule avec les pieds
+PIETINENT|PIETINER|19722|Foulent avec les pieds
+PIETINAIT|PIETINER|19722|Foulait avec les pieds
+PIETINAIENT|PIETINER|19722|Foulaient avec les pieds
+PIETINERA|PIETINER|19722|Foulera avec les pieds
+PIETINA|PIETINER|19722|Foula avec les pieds
+PIETINEE|PIETINER|19722|Foulée avec les pieds
+PIETINES|PIETINER|19722|Foulés avec les pieds
+PIETINEES|PIETINER|19722|Foulées avec les pieds
+TINS|TIN|19738|Supports de cette cale
+BUCHES|BUCHE|19746|Amendes
+LICENCIENT|LICENCIER|19757|Congédient un employé|Congédient des troupes|Donnent un congé temporaire
+LICENCIAIT|LICENCIER|19757|Congédiait un employé|Congédiait des troupes|Donnait un congé temporaire
+LICENCIAIENT|LICENCIER|19757|Congédiaient un employé|Congédiaient des troupes|Donnaient un congé temporaire
+LICENCIERA|LICENCIER|19757|Congédiera un employé|Congédiera des troupes|Donnera un congé temporaire
+LICENCIA|LICENCIER|19757|Congédia un employé|Congédia des troupes|Donna un congé temporaire
+LICENCIEES|LICENCIER|19757|Congédiées des troupes
+NEGLIGENT|NEGLIGER|19768|Laissent de côté
+NEGLIGEAIT|NEGLIGER|19768|Laissait de côté
+NEGLIGEAIENT|NEGLIGER|19768|Laissaient de côté
+NEGLIGERA|NEGLIGER|19768|Laissera de côté
+NEGLIGEA|NEGLIGER|19768|Laissa de côté
+NEGLIGEE|NEGLIGER|19768|Laissée de côté
+NEGLIGEES|NEGLIGER|19768|Laissées de côté
+CHARTES|CHARTE|19790|Règlements internes à une organisation ou à une fonction
+ASPERGENT|ASPERGER|19795|Se mouillent
+ASPERGEAIT|ASPERGER|19795|Se mouillait
+ASPERGEAIENT|ASPERGER|19795|Se mouillaient
+ASPERGERA|ASPERGER|19795|Se mouillera
+ASPERGEA|ASPERGER|19795|Se mouilla
+NIAGARAS|NIAGARA|19803|Installations construites dans le but de protéger de la grêle
+QUINZAINES|QUINZAINE|19825|Réunions de choses de même nature
+REVERENCES|REVERENCE|19827|Respects profonds, vénérations
+ESCADRILLES|ESCADRILLE|19831|Petits groupes de navires légers|Groupes d’avions
+TETONS|TETON|19838|Mamelles
+MOISSONS|MOISSON|19840|Emblavures de céréales
+DHARMAS|DHARMA|19844|Lois naturelles ou juridiques, normes, coutumes, devoirs|Substances, essences, caractéristiques, vérités, réalités
+DOSAGES|DOSAGE|19849|Actions de doser
+GOUVERNAILS|GOUVERNAIL|19850|Dispositifs mobiles
+FLASQUES|FLASQUE|19853|Récipients métalliques destinés au transport du mercure
+SORORITES|SORORITE|19863|Organismes, associations
+SILVAS|SILVA|19864|Parties boisées ou enforestées
+TALISMANS|TALISMAN|19887|Objets sacrés protecteurs
+HELICES|HELICE|19892|Lignes tracées en forme de vis autour d’un cylindre
+PLANETAIRES|PLANETAIRE|19907|Relatifs à certains systèmes d’engrenages
+LATITUDES|LATITUDE|19911|Étendues, extensions, largeurs
+PIEUVRES|PIEUVRE|19917|Chairs de cet animal
+TONALITES|TONALITE|19921|Nuances de couleur
+EPICIERE|EPICIER|19922|Qui a rapport à l’épicerie
+SAFARIS|SAFARI|19923|Chasses ou excursions touristiques guidées
+VIGNOBLES|VIGNOBLE|19924|Anciens noms vernaculaires d'une mercuriale
+REGALENT|REGALER|19926|Étalent du gravier|Réparent les parties abimées d’une dentelle
+REGALAIT|REGALER|19926|Étalait du gravier|Réparait les parties abimées d’une dentelle
+REGALAIENT|REGALER|19926|Étalaient du gravier|Réparaient les parties abimées d’une dentelle
+REGALERA|REGALER|19926|Étalera du gravier|Réparera les parties abimées d’une dentelle
+REGALA|REGALER|19926|Étala du gravier|Répara les parties abimées d’une dentelle
+REGALEE|REGALER|19926|Étalée du gravier
+REGALES|REGALER|19926|Étalés du gravier
+REGALEES|REGALER|19926|Étalées du gravier
+TAQUINE|TAQUINER|19935|Agace gentiment quelqu’un par jeu
+TAQUINENT|TAQUINER|19935|Agacent gentiment quelqu’un par jeu
+TAQUINAIT|TAQUINER|19935|Agaçait gentiment quelqu’un par jeu
+TAQUINAIENT|TAQUINER|19935|Agaçaient gentiment quelqu’un par jeu
+TAQUINERA|TAQUINER|19935|Agacera gentiment quelqu’un par jeu
+TAQUINA|TAQUINER|19935|Agaça gentiment quelqu’un par jeu
+ARMENT|ARMER|19938|Équipent un bâtiment|Enrôlent un marin sur un navire
+ARMAIT|ARMER|19938|Équipait un bâtiment|Enrôlait un marin sur un navire
+ARMAIENT|ARMER|19938|Équipaient un bâtiment|Enrôlaient un marin sur un navire
+ARMERA|ARMER|19938|Équipera un bâtiment|Enrôlera un marin sur un navire
+ARMA|ARMER|19938|Équipa un bâtiment|Enrôla un marin sur un navire
+RAFFUTS|RAFFUT|19943|Techniques utilisées par le porteur du ballon pour repousser
+CLOCHERS|CLOCHER|19967|Paroisses
+PATIOS|PATIO|19968|Cours centrales d’une maison
+PARTITIONS|PARTITION|19972|Réductions d’un opéra pour piano et chant, ou pour piano seul|Divisions
+TACHYCARDIES|TACHYCARDIE|19978|Augmentations du nombre des battements du cœur
+SUSPICIONS|SUSPICION|19985|Soupçons
+DEPOUILLENT|DEPOUILLER|20018|Mettent à vif un animal en lui enlevant la peau|Examinent un compte
+DEPOUILLAIT|DEPOUILLER|20018|Mettait à vif un animal en lui enlevant la peau|Examinait un compte
+DEPOUILLERA|DEPOUILLER|20018|Mettra à vif un animal en lui enlevant la peau|Examinera un compte
+DEPOUILLA|DEPOUILLER|20018|Mit à vif un animal en lui enlevant la peau|Examina un compte
+DEPOUILLEE|DEPOUILLER|20018|Mise à vif un animal en lui enlevant la peau
+DEPOUILLES|DEPOUILLER|20018|Mis à vif un animal en lui enlevant la peau
+DEPOUILLEES|DEPOUILLER|20018|Mises à vif un animal en lui enlevant la peau
+INSERE|INSERER|20023|Implante
+INSERENT|INSERER|20023|Implantent
+INSERAIT|INSERER|20023|Implantait
+INSERAIENT|INSERER|20023|Implantaient
+INSERERA|INSERER|20023|Implantera
+INSERA|INSERER|20023|Implanta
+INSEREE|INSERER|20023|Implantée
+INSERES|INSERER|20023|Implantés
+INSEREES|INSERER|20023|Implantées
+RETRAVAILLE|RETRAVAILLER|20030|Améliore
+RETRAVAILLA|RETRAVAILLER|20030|Améliora
+RETRAVAILLEE|RETRAVAILLER|20030|Améliorée
+RETRAVAILLES|RETRAVAILLER|20030|Améliorés
+VEILLEUSES|VEILLEUSE|20033|Phares de voiture dit aussi, feu de position
+ETHERS|ETHER|20042|Gaz invisibles
+HUTTES|HUTTE|20045|Petites cabanes faites de bois, de terre, de paille, etc
+XIAOS|XIAO|20046|Flûtes à encoche chinoise en bambou
+EXPIRATIONS|EXPIRATION|20051|Échéances d’un terme|Fins d’une certaine période de temps
+RHODES|RHODE|20052|Subdivisions administratives du canton
+SALAMIS|SALAMI|20093|Saucissons de grande taille d’origine italienne
+LAIRDS|LAIRD|20100|Propriétaires terriens écossais
+RENIE|RENIER|20103|Renonce entièrement à une chose
+RENIENT|RENIER|20103|Renoncent entièrement à une chose
+RENIAIT|RENIER|20103|Renonçait entièrement à une chose
+RENIAIENT|RENIER|20103|Renonçaient entièrement à une chose
+RENIERA|RENIER|20103|Renoncera entièrement à une chose
+RENIA|RENIER|20103|Renonça entièrement à une chose
+PEAGES|PEAGE|20125|Redevances pour circuler sur les autoroutes et certains ponts|Redevances pour circuler sur des routes
+RANIS|RANI|20128|Épouses d'un raja, reine indienne|Secouristes titulaires de ce diplôme
+COMPRESSIONS|COMPRESSION|20130|Proximités des arbres entre eux
+ARROSAGES|ARROSAGE|20131|Taxes ou redevances payées autrefois|Bombardements intenses
+SANGUINAIRES|SANGUINAIRE|20132|Relatifs aux actions cruelles
+PELERINAGES|PELERINAGE|20170|Visites à la tombe d’un saint|Tout voyages vers un lieu porteur de sens
+TOCARDS|TOCARD|20171|Digitales
+TOCARDE|TOCARD|20171|Qui possède une grosse tête|Qui donne des coups de tête
+APLOMBS|APLOMB|20196|Justes pondérations des figures|Équilibres des parties du corps|Précisions de la rectitude de la mesure
+SCELERATE|SCELERAT|20205|Qui manifeste des intentions ou des sentiments criminels et perfides
+POSTULE|POSTULER|20210|Sollicite, fait des démarches pour obtenir quelque chose
+POSTULENT|POSTULER|20210|Sollicitent, font des démarches pour obtenir quelque chose
+POSTULAIT|POSTULER|20210|Sollicitait, faisait des démarches pour obtenir quelque chose
+POSTULAIENT|POSTULER|20210|Sollicitaient, faisaient des démarches pour obtenir quelque chose
+POSTULERA|POSTULER|20210|Sollicitera, fera des démarches pour obtenir quelque chose
+POSTULA|POSTULER|20210|Sollicita, fit des démarches pour obtenir quelque chose
+POSTULEE|POSTULER|20210|Sollicitée, faite des démarches pour obtenir quelque chose
+POSTULES|POSTULER|20210|Sollicités, faits des démarches pour obtenir quelque chose
+POSTULEES|POSTULER|20210|Sollicitées, faites des démarches pour obtenir quelque chose
+GRAVENT|GRAVER|20217|Tracent quelque trait
+GRAVAIT|GRAVER|20217|Traçait quelque trait
+GRAVAIENT|GRAVER|20217|Traçaient quelque trait
+GRAVERA|GRAVER|20217|Tracera quelque trait
+GRAVA|GRAVER|20217|Traça quelque trait
+BEIGES|BEIGE|20225|Couleurs de la laine naturelle
+MACABRES|MACABRE|20229|Lourds à porter
+RALLIE|RALLIER|20233|Se rapproche de
+RALLIENT|RALLIER|20233|Se rapprochent de
+RALLIAIT|RALLIER|20233|Se rapprochait de
+RALLIAIENT|RALLIER|20233|Se rapprochaient de
+RALLIERA|RALLIER|20233|Se rapprochera de
+RALLIA|RALLIER|20233|Se rapprocha de
+NIRVANAS|NIRVANA|20239|Extinctions du désir humain
+FILONS|FILON|20248|Gisements étendus d’une matière|Outils pour restaurer les filetages
+FIANCENT|FIANCER|20263|Engagent par une promesse de mariage
+FIANCAIT|FIANCER|20263|Engageait par une promesse de mariage
+FIANCAIENT|FIANCER|20263|Engageaient par une promesse de mariage
+FIANCERA|FIANCER|20263|Engagera par une promesse de mariage
+FIANCA|FIANCER|20263|Engagea par une promesse de mariage
+FIANCEE|FIANCER|20263|Engagée par une promesse de mariage
+FIANCES|FIANCER|20263|Engagés par une promesse de mariage
+FIANCEES|FIANCER|20263|Engagées par une promesse de mariage
+NIGAUDS|NIGAUD|20272|Petits cormorans
+PRIMITIVES|PRIMITIVE|20274|Éléments graphiques de base
+MALARIAS|MALARIA|20305|Paludismes transmis par l’anophèle
+MAGNATS|MAGNAT|20306|Grands du royaume
+TOURMENTS|TOURMENT|20314|Supplices, tortures|Violentes douleurs corporelles
+ICONES|ICONE|20315|Images saintes
+BARTLETTS|BARTLETT|20322|Variétés de poire
+DEVIE|DEVIER|20332|Se détourne|Écarte une portion du corps de sa direction normale
+DEVIENT|DEVIER|20332|Se détournent|Écartent une portion du corps de sa direction normale
+DEVIAIT|DEVIER|20332|Se détournait|Écartait une portion du corps de sa direction normale
+DEVIAIENT|DEVIER|20332|Se détournaient|Écartaient une portion du corps de sa direction normale
+DEVIERA|DEVIER|20332|Se détournera|Écartera une portion du corps de sa direction normale
+DEVIA|DEVIER|20332|Se détourna|Écarta une portion du corps de sa direction normale
+SHOOTS|SHOOT|20334|Injections intraveineuses de drogue
+SANCTIONS|SANCTION|20343|Actes par lequel le souverain
+DEBORDENT|DEBORDER|20352|Dépassent le bord|Se détachent d’un vaisseau qu’on avait abordé
+DEBORDAIT|DEBORDER|20352|Dépassait le bord|Se détachait d’un vaisseau qu’on avait abordé
+DEBORDAIENT|DEBORDER|20352|Dépassaient le bord|Se détachaient d’un vaisseau qu’on avait abordé
+DEBORDERA|DEBORDER|20352|Dépassera le bord|Se détachera d’un vaisseau qu’on avait abordé
+DEBORDA|DEBORDER|20352|Dépassa le bord|Se détacha d’un vaisseau qu’on avait abordé
+TIGRESSES|TIGRESSE|20358|Femmes violentes|Femmes très sensuelles et très attirantes
+MONTURES|MONTURE|20380|Actions de monter un objet, un outil, un bijou
+FUMANTE|FUMANT|20398|Qui fume, qui jette de la fumée ou quelque vapeur
+SINGULIERE|SINGULIER|20401|Qui ne ressemble pas aux autres
+PRESCOTTS|PRESCOTT|20403|Variétés de melon de type cantaloup
+INSINUE|INSINUER|20428|Se fait admettre quelque part
+INSINUENT|INSINUER|20428|Se font admettre quelque part
+INSINUAIT|INSINUER|20428|Se faisait admettre quelque part
+INSINUAIENT|INSINUER|20428|Se faisaient admettre quelque part
+INSINUERA|INSINUER|20428|Se fera admettre quelque part
+INSINUA|INSINUER|20428|Se fit admettre quelque part
+NOTOIRES|NOTOIRE|20430|Connus du public, manifeste
+TEES|TEE|20432|Supports, socles
+BORGNES|BORGNE|20450|Légumes, généralements uns chous
+MARECAGES|MARECAGE|20462|Endroits malsains
+BARBANTS|BARBANT|20467|Gênants
+BARBANTE|BARBANT|20467|Gênante
+BARBANTES|BARBANT|20467|Gênantes
+PRECHE|PRECHER|20475|Annonce la parole de Dieu|Publie, recommande
+PRECHENT|PRECHER|20475|Annoncent la parole de Dieu|Publient, recommandent
+PRECHAIT|PRECHER|20475|Annonçait la parole de Dieu|Publiait, recommandait
+PRECHAIENT|PRECHER|20475|Annonçaient la parole de Dieu|Publiaient, recommandaient
+PRECHERA|PRECHER|20475|Annoncera la parole de Dieu|Publiera, recommandera
+PRECHA|PRECHER|20475|Annonça la parole de Dieu|Publia, recommanda
+PRECHEE|PRECHER|20475|Publiée, recommandée
+PRECHES|PRECHER|20475|Publiés, recommandés
+PRECHEES|PRECHER|20475|Publiées, recommandées
+LAIS|LAI|20480|Séculiers|Petits poèmes narratifs
+LAIE|LAI|20480|Séculière
+LAIES|LAI|20480|Séculières
+GAULES|GAULE|20489|Petites branches de houx|Manches de la ligne
+EVENTAILS|EVENTAIL|20496|Gammes, larges choix, palettes
+MAGOTS|MAGOT|20513|Gros singes sans queue, du genre des macaques|Hommes laids et courts|Figures grotesques de porcelaine
+HALETANTE|HALETANT|20525|Qui maintient sous une émotion, une curiosité intense
+CLAIRIERES|CLAIRIERE|20541|Passages entre la banquise et les gros amas de glaces
+PROPRETES|PROPRETE|20546|Nettetés
+ENFLAMMENT|ENFLAMMER|20553|Causent une inflammation
+ENFLAMMAIT|ENFLAMMER|20553|Causait une inflammation
+ENFLAMMAIENT|ENFLAMMER|20553|Causaient une inflammation
+ENFLAMMERA|ENFLAMMER|20553|Causera une inflammation
+ENFLAMMA|ENFLAMMER|20553|Causa une inflammation
+AMADOUE|AMADOUER|20559|Se calme
+AMADOUENT|AMADOUER|20559|Se calment
+AMADOUAIT|AMADOUER|20559|Se calmait
+AMADOUAIENT|AMADOUER|20559|Se calmaient
+AMADOUERA|AMADOUER|20559|Se calmera
+AMADOUA|AMADOUER|20559|Se calma
+TRICOTS|TRICOT|20565|Tissus faits en mailles
+GRONDE|GRONDER|20568|Fait entendre un bruit sourd
+GRONDENT|GRONDER|20568|Font entendre un bruit sourd
+GRONDAIT|GRONDER|20568|Faisait entendre un bruit sourd
+GRONDAIENT|GRONDER|20568|Faisaient entendre un bruit sourd
+GRONDERA|GRONDER|20568|Fera entendre un bruit sourd
+GRONDA|GRONDER|20568|Fit entendre un bruit sourd
+EMINENTE|EMINENT|20586|Qui s’élève au-dessus du niveau général|Qui dépasse le niveau commun
+TREBUCHE|TREBUCHER|20601|Fait un faux pas
+TREBUCHENT|TREBUCHER|20601|Font un faux pas
+TREBUCHAIT|TREBUCHER|20601|Faisait un faux pas
+TREBUCHAIENT|TREBUCHER|20601|Faisaient un faux pas
+TREBUCHERA|TREBUCHER|20601|Fera un faux pas
+TREBUCHA|TREBUCHER|20601|Fit un faux pas
+TIBIAS|TIBIA|20616|Les plus gros des deux os de la jambe
+BALLERINES|BALLERINE|20618|Chaussons pour la danse classique
+KERNS|KERN|20627|Comités restreints de ministres
+RAVAGES|RAVAGE|20653|Gravements perturbés
+COUPLETS|COUPLET|20655|Chansons|Suites de vers sur une même rime
+ABOUTIE|ABOUTI|20673|Qui a suppuré
+THERMOMETRES|THERMOMETRE|20680|Prises de la température
+CONTAMINE|CONTAMINER|20702|Infecte en introduisant dans un objet
+CONTAMINENT|CONTAMINER|20702|Infectent en introduisant dans un objet
+CONTAMINAIT|CONTAMINER|20702|Infectait en introduisant dans un objet
+CONTAMINERA|CONTAMINER|20702|Infectera en introduisant dans un objet
+CONTAMINA|CONTAMINER|20702|Infecta en introduisant dans un objet
+CONTAMINEE|CONTAMINER|20702|Infectée en introduisant dans un objet
+CONTAMINES|CONTAMINER|20702|Infectés en introduisant dans un objet
+CONTAMINEES|CONTAMINER|20702|Infectées en introduisant dans un objet
+DIAPHRAGMES|DIAPHRAGME|20710|Parois musculaires larges
+PREFERENT|PREFERER|20711|Mettent au-dessus|Désirent
+PREFERAIT|PREFERER|20711|Mettait au-dessus|Désirait
+PREFERAIENT|PREFERER|20711|Mettaient au-dessus|Désiraient
+PREFERERA|PREFERER|20711|Mettra au-dessus|Désirera
+PREFERA|PREFERER|20711|Mit au-dessus|Désira
+PREFEREE|PREFERER|20711|Désirée
+PREFERES|PREFERER|20711|Désirés
+PREFEREES|PREFERER|20711|Désirées
+PICOLES|PICOLE|20733|Boissons alcooliques
+GRAMMAIRES|GRAMMAIRE|20734|Arts de parler et d’écrire correctement
+BRONZENT|BRONZER|20736|Donnent une couleur hâlée à
+BRONZAIT|BRONZER|20736|Donnait une couleur hâlée à
+BRONZAIENT|BRONZER|20736|Donnaient une couleur hâlée à
+BRONZERA|BRONZER|20736|Donnera une couleur hâlée à
+BRONZA|BRONZER|20736|Donna une couleur hâlée à
+KAMIKAZES|KAMIKAZE|20746|Suicidaires|Pilotes d’avion japonais
+AMPUTE|AMPUTER|20749|Retire une partie de quelque chose, diminue
+AMPUTENT|AMPUTER|20749|Retirent une partie de quelque chose, diminuent
+AMPUTAIT|AMPUTER|20749|Retirait une partie de quelque chose, diminuait
+AMPUTAIENT|AMPUTER|20749|Retiraient une partie de quelque chose, diminuaient
+AMPUTERA|AMPUTER|20749|Retirera une partie de quelque chose, diminuera
+AMPUTA|AMPUTER|20749|Retira une partie de quelque chose, diminua
+DIRECTIVES|DIRECTIVE|20752|Actes par lequel une administration|Instructions destinées au préprocesseur
+SABOTS|SABOT|20767|Cornes du pied du cheval et de plusieurs autres animaux|Connecteurs métalliques utilisés pour raccorder des éléments de charpente
+ROLLERS|ROLLER|20770|Sports pratiqués avec ces patins
+CORPORELS|CORPOREL|20778|Matériels
+CORPORELLE|CORPOREL|20778|Qui a un corps|Qui appartient au corps, qui concerne le corps|Matérielle
+CORPORELLES|CORPOREL|20778|Matérielles
+MAILLONS|MAILLON|20782|Longueurs indivisibles de trente mètres de chaîne{{lien web
+AMAZONES|AMAZONE|20784|Femmes volontaires et indépendantes
+FAUNES|FAUNE|20787|Catalogues descriptifs de ces animaux
+ECORCES|ECORCE|20789|Croûtes externes d'une planète
+RADES|RADE|20791|Entrées de mer
+NECTARS|NECTAR|20792|Breuvages des dieux|Boissons composées de jus de fruit, d’eau et de sucre
+EFFRONTES|EFFRONTE|20793|Personnages sans honte de rien
+CONTONDANTE|CONTONDANT|20798|Qui blesse sans percer ni couper
+CHAOTIQUES|CHAOTIQUE|20807|Remplis de chaos|Extrêmements désorganisés
+VESTONS|VESTON|20810|Vêtements masculins
+MONOLOGUES|MONOLOGUE|20811|Scènes dites par un seul personnage
+RACHATS|RACHAT|20812|Paiements d’une certaine somme pour l’amortissement|Délivrances, rédemptions|Opérations de désinvestissement vis-à-vis d’un fonds financier
+USURES|USURE|20825|Dépérissements|Dégradations d'une surface sous l’effet du frottement
+DEROBENT|DEROBER|20843|Prennent dans l’œuvre d’un autre|Cachent
+DEROBAIT|DEROBER|20843|Prenait dans l’œuvre d’un autre|Cachait
+DEROBAIENT|DEROBER|20843|Prenaient dans l’œuvre d’un autre|Cachaient
+DEROBERA|DEROBER|20843|Prendra dans l’œuvre d’un autre|Cachera
+DEROBA|DEROBER|20843|Prit dans l’œuvre d’un autre|Cacha
+DEROBES|DEROBER|20843|Pris dans l’œuvre d’un autre|Cachés
+DEROBEES|DEROBER|20843|Prises dans l’œuvre d’un autre|Cachées
+CRYPTAGES|CRYPTAGE|20873|Chiffrements
+CRIQUES|CRIQUE|20876|Recettes traditionnelles|Galettes de pomme de terre râpées, cuite à la poêle
+AYAS|AYA|20883|Femmes de chambre indigène
+REGALS|REGAL|20891|Festins, grands repas|Plaisirs de la table
+INCARNATIONS|INCARNATION|20892|Avatars
+BORDE|BORDER|20907|Attache une corde autour d’un filet pour le rendre plus fort
+BORDENT|BORDER|20907|Attachent une corde autour d’un filet pour le rendre plus fort
+BORDAIT|BORDER|20907|Attachait une corde autour d’un filet pour le rendre plus fort
+BORDAIENT|BORDER|20907|Attachaient une corde autour d’un filet pour le rendre plus fort
+BORDERA|BORDER|20907|Attachera une corde autour d’un filet pour le rendre plus fort
+BORDA|BORDER|20907|Attacha une corde autour d’un filet pour le rendre plus fort
+GOBE|GOBER|20918|Avale vivement, mange goulûment
+GOBENT|GOBER|20918|Avalent vivement, mangent goulûment
+GOBAIT|GOBER|20918|Avalait vivement, mangeait goulûment
+GOBAIENT|GOBER|20918|Avalaient vivement, mangeaient goulûment
+GOBERA|GOBER|20918|Avalera vivement, mangera goulûment
+GOBA|GOBER|20918|Avala vivement, mangea goulûment
+ESTROPIES|ESTROPIE|20934|Mutilés, blessés
+ZEBRES|ZEBRE|20950|Coquillages voisins du casque
+SECOUSSES|SECOUSSE|20952|Contractions dues à un choc
+JUMPERS|JUMPER|20955|Cavaliers, fils conducteurs
+DESTABILISE|DESTABILISER|20957|Rend instable
+DESTABILISA|DESTABILISER|20957|Rendit instable
+BRISTOLS|BRISTOL|20960|Des fiches quelconques de ce matériau|Invitations imprimées sur du papier luxueux
+REMISSIONS|REMISSION|20963|Pardons|Adoucissements|Détentes
+CANNIBALES|CANNIBALE|20970|Toutes personnes cruelles et féroces|Relatifs aux anthropophages et à leurs mœurs
+TOUPETS|TOUPET|20975|Petites touffes de poils, de cheveux, de crins, de laine
+FLAGS|FLAG|20989|Propriétés de type discret
+VOLAILLES|VOLAILLE|20990|Viandes d’un animal de basse-cour
+RAVES|RAVE|21002|Lampes de mineur à flamme nue|Fêtes technos avec de la musique de danse électronique
+PATINE|PATINER|21003|Glisse sur le sol sans que les roues tournent
+PATINENT|PATINER|21003|Glissent sur le sol sans que les roues tournent
+PATINAIT|PATINER|21003|Glissait sur le sol sans que les roues tournent
+PATINAIENT|PATINER|21003|Glissaient sur le sol sans que les roues tournent
+PATINERA|PATINER|21003|Glissera sur le sol sans que les roues tournent
+PATINA|PATINER|21003|Glissa sur le sol sans que les roues tournent
+PATINEE|PATINER|21003|Glissée sur le sol sans que les roues tournent
+PATINES|PATINER|21003|Glissés sur le sol sans que les roues tournent
+PATINEES|PATINER|21003|Glissées sur le sol sans que les roues tournent
+SAVOUREUSE|SAVOUREUX|21014|Qui a une bonne saveur, une saveur agréable
+CHANDAILS|CHANDAIL|21019|Maillots en tricot de laine
+GUIMAUVES|GUIMAUVE|21025|Confiseries molles à base de sucre
+BAPTISENT|BAPTISER|21026|Rendent chrétien par le baptême|Donnent un nom par le baptême|Font une cérémonie qui accompagne le baptême
+BAPTISAIT|BAPTISER|21026|Rendait chrétien par le baptême|Donnait un nom par le baptême|Faisait une cérémonie qui accompagne le baptême
+BAPTISAIENT|BAPTISER|21026|Rendaient chrétien par le baptême|Donnaient un nom par le baptême|Faisaient une cérémonie qui accompagne le baptême
+BAPTISERA|BAPTISER|21026|Rendra chrétien par le baptême|Donnera un nom par le baptême|Fera une cérémonie qui accompagne le baptême
+BAPTISA|BAPTISER|21026|Rendit chrétien par le baptême|Donna un nom par le baptême|Fit une cérémonie qui accompagne le baptême
+AFFIRMATIONS|AFFIRMATION|21048|Assurances avec serment et dans les formes juridiques
+OLYMPES|OLYMPE|21074|Endroits élevés et majestueux
+MORVES|MORVE|21076|Maladies bactériennes graves
+PATINS|PATIN|21085|Pantoufles
+GRATIFIANTE|GRATIFIANT|21090|Qui procure un plaisir
+DAIMS|DAIM|21093|Cervidés d’une grandeur moyenne entre le cerf et le chevreuil|Viandes de cet animal
+LIVRETS|LIVRET|21097|Petits registres|Tables de multiplication
+ALLEGENT|ALLEGER|21103|Soulagent d’une partie d’un fardeau
+ALLEGEAIT|ALLEGER|21103|Soulageait d’une partie d’un fardeau
+ALLEGEAIENT|ALLEGER|21103|Soulageaient d’une partie d’un fardeau
+ALLEGERA|ALLEGER|21103|Soulagera d’une partie d’un fardeau
+ALLEGEA|ALLEGER|21103|Soulagea d’une partie d’un fardeau
+ALLEGEE|ALLEGER|21103|Soulagée d’une partie d’un fardeau
+ALLEGES|ALLEGER|21103|Soulagés d’une partie d’un fardeau
+ALLEGEES|ALLEGER|21103|Soulagées d’une partie d’un fardeau
+SHOPS|SHOP|21110|Salons de tatouage
+COULANTE|COULANT|21126|Qui coule aisément
+BOUDINS|BOUDIN|21136|Gros cordons de la base d’une colonne
+EMBLEMES|EMBLEME|21145|Symboles
+GUILDES|GUILDE|21148|Communautés de joueurs
+GAZETTES|GAZETTE|21149|Moules de cuisson des assiettes en porcelaine
+FOURBES|FOURBE|21150|Tromperies basses et odieuses
+VOITURIERS|VOITURIER|21152|Navires spécialisés dans le transport de véhicules
+MELANCOLIES|MELANCOLIE|21155|Certaines dispositions de l’âme à la tristesse
+SAMUS|SAMU|21157|Services d'aide médicale urgente
+PUPILLES|PUPILLE|21163|Jeunes sportifs à la fin de l’enfance|Trous situés au milieu de l’iris de l’œil
+OREILLETTES|OREILLETTE|21174|Anses d’un récipient
+NINES|NINE|21178|Filles, jeunes filles, enfants
+SESAMES|SESAME|21194|Recommandations
+CRUCHES|CRUCHE|21196|Vases de terre ou de grès
+TRIADES|TRIADE|21200|Ensemble composés de trois unités, ou trio|Associations criminelles de la mafia chinoise|Accords constitués de trois notes
+AVERENT|AVERER|21207|Montrent de façon convaincante qu’une chose est vraie
+AVERAIT|AVERER|21207|Montrait de façon convaincante qu’une chose est vraie
+AVERAIENT|AVERER|21207|Montraient de façon convaincante qu’une chose est vraie
+AVERERA|AVERER|21207|Montrera de façon convaincante qu’une chose est vraie
+AVERA|AVERER|21207|Montra de façon convaincante qu’une chose est vraie
+AVEREE|AVERER|21207|Montrée de façon convaincante qu’une chose est vraie
+AVERES|AVERER|21207|Montrés de façon convaincante qu’une chose est vraie
+AVEREES|AVERER|21207|Montrées de façon convaincante qu’une chose est vraie
+CHARISMES|CHARISME|21216|Dons exceptionnels ou grâces|Auras indéfinissables
+COURONNENT|COURONNER|21221|Occupent la partie supérieure d'une chose
+COURONNAIT|COURONNER|21221|Occupait la partie supérieure d'une chose
+COURONNAIENT|COURONNER|21221|Occupaient la partie supérieure d'une chose
+COURONNERA|COURONNER|21221|Occupera la partie supérieure d'une chose
+COURONNA|COURONNER|21221|Occupa la partie supérieure d'une chose
+GRAPPES|GRAPPE|21222|Groupes de personnes
+MORTIERS|MORTIER|21228|Mélanges pâteux
+CUISSONS|CUISSON|21261|Actions de cuire
+SABBATS|SABBAT|21264|Derniers jours de la semaine
+DESCENDANCES|DESCENDANCE|21267|Lignées généalogiques, lignages
+INDECENTE|INDECENT|21271|Qui blesse la pudeur
+TEXTURES|TEXTURE|21281|Structures physiques internes d’un matériau solide|Images appliquées à un polygone pour créer l’apparence d’une surface
+AUDITS|AUDIT|21289|Processus systématiques|Personnes chargées de cette mission
+ELIXIRS|ELIXIR|21297|Liqueurs réputées dotées d’effets magiques
+CLOUE|CLOUER|21298|Fixe d’une manière quelconque un objet contre un autre
+CLOUENT|CLOUER|21298|Fixent d’une manière quelconque un objet contre un autre
+CLOUAIT|CLOUER|21298|Fixait d’une manière quelconque un objet contre un autre
+CLOUAIENT|CLOUER|21298|Fixaient d’une manière quelconque un objet contre un autre
+CLOUERA|CLOUER|21298|Fixera d’une manière quelconque un objet contre un autre
+CLOUA|CLOUER|21298|Fixa d’une manière quelconque un objet contre un autre
+CLOUEE|CLOUER|21298|Fixée d’une manière quelconque un objet contre un autre
+CLOUES|CLOUER|21298|Fixés d’une manière quelconque un objet contre un autre
+CLOUEES|CLOUER|21298|Fixées d’une manière quelconque un objet contre un autre
+GRINCEMENTS|GRINCEMENT|21300|Bruits désagréables produits par certains frottements
+PROCESSEURS|PROCESSEUR|21306|Unités de traitement principale d’un calculateur ou d’un ordinateur
+TABOUS|TABOU|21309|Relatifs à un interdit de caractère religieux|Interdictions religieuses prononcées sur un lieu
+FORMATS|FORMAT|21328|Dimensions d’un volume en hauteur et en largeur
+PAILLASSONS|PAILLASSON|21329|Plats composés de pommes de terre
+SMILES|SMILE|21343|Sourires
+ECOULE|ECOULER|21350|Se débarrasse des éléments les moins flatteurs
+ECOULENT|ECOULER|21350|Se débarrassent des éléments les moins flatteurs
+ECOULAIT|ECOULER|21350|Se débarrassait des éléments les moins flatteurs
+ECOULAIENT|ECOULER|21350|Se débarrassaient des éléments les moins flatteurs
+ECOULERA|ECOULER|21350|Se débarrassera des éléments les moins flatteurs
+ECOULA|ECOULER|21350|Se débarrassa des éléments les moins flatteurs
+HOQUETS|HOQUET|21378|Secousses, chocs, heurts|Mouvements convulsifs du diaphragme
+TOUSSE|TOUSSER|21404|Fait à dessein le bruit de la toux|Fait un bruit rappelant la toux
+TOUSSENT|TOUSSER|21404|Font à dessein le bruit de la toux|Font un bruit rappelant la toux
+TOUSSAIT|TOUSSER|21404|Faisait à dessein le bruit de la toux|Faisait un bruit rappelant la toux
+TOUSSAIENT|TOUSSER|21404|Faisaient à dessein le bruit de la toux|Faisaient un bruit rappelant la toux
+TOUSSERA|TOUSSER|21404|Fera à dessein le bruit de la toux|Fera un bruit rappelant la toux
+TOUSSA|TOUSSER|21404|Fit à dessein le bruit de la toux|Fit un bruit rappelant la toux
+TOUSSEE|TOUSSER|21404|Faite à dessein le bruit de la toux
+TOUSSES|TOUSSER|21404|Faits à dessein le bruit de la toux
+TOUSSEES|TOUSSER|21404|Faites à dessein le bruit de la toux
+DIVINITES|DIVINITE|21408|Représentations matérielles d'un dieu sous forme de sculpture
+NOTICES|NOTICE|21411|Exposés sommaires|Exposés succincts sur un personnage
+CARDIOLOGUES|CARDIOLOGUE|21426|Médecins spécialistes du cœur et de ses maladies
+REDACTRICES|REDACTRICE|21427|Collaboratrices régulières d’un journal
+INSTANTANES|INSTANTANE|21449|Photographies obtenues par une très courte exposition|Images capturées d’une action, d’un évènement
+PAVES|PAVE|21455|Les rues
+DECOMPRESSE|DECOMPRESSER|21472|Rend à un fichier sa structure initiale
+DECOMPRESSA|DECOMPRESSER|21472|Rendit à un fichier sa structure initiale
+DECOMPRESSEE|DECOMPRESSER|21472|Rendue à un fichier sa structure initiale
+DECOMPRESSES|DECOMPRESSER|21472|Rendus à un fichier sa structure initiale
+ARCADES|ARCADE|21493|Parties courbées en arc
+ORATEURS|ORATEUR|21523|Auteurs de sermons, d’oraisons funèbres
+BARMAIDS|BARMAID|21528|Serveuses de bar
+AGENOUILLE|AGENOUILLER|21529|Abaisse le côté d’un véhicule pour|Humilie
+AGENOUILLENT|AGENOUILLER|21529|Abaissent le côté d’un véhicule pour|Humilient
+AGENOUILLAIT|AGENOUILLER|21529|Abaissait le côté d’un véhicule pour|Humiliait
+AGENOUILLERA|AGENOUILLER|21529|Abaissera le côté d’un véhicule pour|Humiliera
+AGENOUILLA|AGENOUILLER|21529|Abaissa le côté d’un véhicule pour|Humilia
+AGENOUILLEE|AGENOUILLER|21529|Humiliée
+AGENOUILLES|AGENOUILLER|21529|Humiliés
+AGENOUILLEES|AGENOUILLER|21529|Humiliées
+BUFFLES|BUFFLE|21558|Disques utilisés pour le polissage
+CORRIDORS|CORRIDOR|21568|Galeries couvertes|Éléments d’un réseau écologique
+PELOTES|PELOTE|21574|Balles du jeu de paume
+DISGRACES|DISGRACE|21576|Pertes de l'estime|Chutes d’une reconnaissance
+MIXEURS|MIXEUR|21577|Robots de cuisine pour broyer|Appareils pour le mixage des bandes son|Spécialistes du mixage
+MONOPOLES|MONOPOLE|21594|Trafics d’un marchand ou de plusieurs marchands réunis
+MONARCHIES|MONARCHIE|21595|Organisations politiques dans laquelle les pouvoirs législatif
+COLORES|COLORE|21603|Fantaisistes
+GERMAINS|GERMAIN|21613|Issus de deux frères|Frères ou sœurs
+POLONAISES|POLONAISE|21620|Redingotes à brandebourgs
+SYNAGOGUES|SYNAGOGUE|21622|Assemblées religieuses des juifs
+RECTIFIE|RECTIFIER|21625|Corrige ou améliore une chose|Rend droit
+RECTIFIENT|RECTIFIER|21625|Corrigent ou améliorent une chose|Rendent droit
+RECTIFIAIT|RECTIFIER|21625|Corrigeait ou améliorait une chose|Rendait droit
+RECTIFIAIENT|RECTIFIER|21625|Corrigeaient ou amélioraient une chose|Rendaient droit
+RECTIFIERA|RECTIFIER|21625|Corrigera ou améliorera une chose|Rendra droit
+RECTIFIA|RECTIFIER|21625|Corrigea ou améliora une chose|Rendit droit
+PERPETES|PERPETE|21628|Grandes distances
+ENCADRE|ENCADRER|21631|Surveille et anime un groupe dont on a la responsabilité
+ENCADRENT|ENCADRER|21631|Surveillent et animent un groupe dont on a la responsabilité
+ENCADRAIT|ENCADRER|21631|Surveillait et animait un groupe dont on a la responsabilité
+ENCADRAIENT|ENCADRER|21631|Surveillaient et animaient un groupe dont on a la responsabilité
+ENCADRERA|ENCADRER|21631|Surveillera et animera un groupe dont on a la responsabilité
+ENCADRA|ENCADRER|21631|Surveilla et anima un groupe dont on a la responsabilité
+CONTRACTES|CONTRACTE|21638|Resserrés sur lui-même
+EVEILS|EVEIL|21642|Alarmes
+BOSCOS|BOSCO|21647|Officiers mariniers supérieurs en charge des manœuvriers
+INCLINE|INCLINER|21669|Met dans une situation oblique
+INCLINENT|INCLINER|21669|Mettent dans une situation oblique
+INCLINAIT|INCLINER|21669|Mettait dans une situation oblique
+INCLINAIENT|INCLINER|21669|Mettaient dans une situation oblique
+INCLINERA|INCLINER|21669|Mettra dans une situation oblique
+INCLINA|INCLINER|21669|Mit dans une situation oblique
+INCLINEE|INCLINER|21669|Mise dans une situation oblique
+INCLINES|INCLINER|21669|Mis dans une situation oblique
+INCLINEES|INCLINER|21669|Mises dans une situation oblique
+ACOUSTIQUES|ACOUSTIQUE|21676|Relatifs aux organes de l’ouïe
+TATENT|TATER|21689|Goûtent à quelque chose|S'examinent, se consultent, se sondent sur quelque chose
+TATAIT|TATER|21689|Goûtait à quelque chose|S'examinait, se consultait, se sondait sur quelque chose
+TATAIENT|TATER|21689|Goûtaient à quelque chose|S'examinaient, se consultaient, se sondaient sur quelque chose
+TATERA|TATER|21689|Goûtera à quelque chose|S'examinera, se consultera, se sondera sur quelque chose
+TATEE|TATER|21689|Goûtée à quelque chose
+TATES|TATER|21689|Goûtés à quelque chose
+TATEES|TATER|21689|Goûtées à quelque chose
+BIPE|BIPER|21696|Sonne d'un bip
+BIPENT|BIPER|21696|Sonnent d'un bip
+BIPAIT|BIPER|21696|Sonnait d'un bip
+BIPAIENT|BIPER|21696|Sonnaient d'un bip
+BIPERA|BIPER|21696|Sonnera d'un bip
+BIPA|BIPER|21696|Sonna d'un bip
+BIPEE|BIPER|21696|Sonnée d'un bip
+BIPES|BIPER|21696|Sonnés d'un bip
+BIPEES|BIPER|21696|Sonnées d'un bip
+ORIENTENT|ORIENTER|21702|Placent un plan
+ORIENTAIT|ORIENTER|21702|Plaçait un plan
+ORIENTAIENT|ORIENTER|21702|Plaçaient un plan
+ORIENTERA|ORIENTER|21702|Placera un plan
+ORIENTA|ORIENTER|21702|Plaça un plan
+COURTISANES|COURTISANE|21710|Femmes de cette sorte
+IMPOSANTE|IMPOSANT|21719|Qui élève l’âme et qui la remplit d’une admiration mêlée de respect
+DIFFERENDS|DIFFEREND|21741|Débats entre deux ou plusieurs personnes à propos d’opinions
+PANDORES|PANDORE|21744|Mollusques lamellibranches
+DADAS|DADA|21750|Mouvements artistiques fondés sur le rejet des règles
+RALLYES|RALLYE|21755|Courses dans laquelle les concurrents
+AMABILITES|AMABILITE|21764|Qualités d’une personne aimable
+NOPES|NOPE|21766|Petites boules tricotées en relief
+ARTISANE|ARTISAN|21768|Qui relève d’un métier mécanique ou manuel
+STACKS|STACK|21769|Éperons rocheux détachés du littoral par l’érosion
+SYNTHESES|SYNTHESE|21779|Recompositions des éléments d’un tout|Actions de composer un corps avec ses éléments
+VIGNES|VIGNE|21788|Plantes à tige ligneuse et ordinairement tortue
+PORRIDGES|PORRIDGE|21811|Bouillies de flocons d’avoine ou de maïs
+OGIVES|OGIVE|21818|Parties supérieures d’un obus.thumb|Balles de même forme
+ACQUITTENT|ACQUITTER|21835|Confirment la prise en compte d’un message à un programme
+ACQUITTAIT|ACQUITTER|21835|Confirmait la prise en compte d’un message à un programme
+ACQUITTAIENT|ACQUITTER|21835|Confirmaient la prise en compte d’un message à un programme
+ACQUITTERA|ACQUITTER|21835|Confirmera la prise en compte d’un message à un programme
+ACQUITTA|ACQUITTER|21835|Confirma la prise en compte d’un message à un programme
+GRELES|GRELE|21851|Longs et menus
+INFECTS|INFECT|21878|Sales, dégoutants
+INFECTES|INFECT|21878|Sales, dégoutantes|Odieuses
+MENOPAUSES|MENOPAUSE|21885|Cessations définitives de la fonction menstruelle, due à l'âge
+BICARBONATES|BICARBONATE|21906|Ions hydrogénocarbonates
+AERE|AERER|21915|Fait prendre l’air à quelqu’un|Respire, prend l’air
+AERENT|AERER|21915|Font prendre l’air à quelqu’un|Respirent, prennent l’air
+AERAIT|AERER|21915|Faisait prendre l’air à quelqu’un|Respirait, prenait l’air
+AERAIENT|AERER|21915|Faisaient prendre l’air à quelqu’un|Respiraient, prenaient l’air
+AERERA|AERER|21915|Fera prendre l’air à quelqu’un|Respirera, prendra l’air
+AERA|AERER|21915|Fit prendre l’air à quelqu’un|Respira, prit l’air
+LARGAGES|LARGAGE|21919|Parachutages de personnel ou de matériel|Envois d’une bombe|Séparations d’avec le corps principal d’un véhicule
+MULTITUDES|MULTITUDE|21940|Grands nombres
+JAMS|JAM|21955|Confitures
+DOUDOUS|DOUDOU|21959|Appellations affectueuses données à une femme|Images folklorisées de la femme antillaise
+HARPES|HARPE|21973|Coquilles univalves
+TRICOTE|TRICOTER|21976|Exécute un tissu à mailles
+TRICOTENT|TRICOTER|21976|Exécutent un tissu à mailles
+TRICOTAIT|TRICOTER|21976|Exécutait un tissu à mailles
+TRICOTAIENT|TRICOTER|21976|Exécutaient un tissu à mailles
+TRICOTERA|TRICOTER|21976|Exécutera un tissu à mailles
+TRICOTA|TRICOTER|21976|Exécuta un tissu à mailles
+FRISBEES|FRISBEE|21979|Sports pratiqués avec ce disque
+REGLISSES|REGLISSE|21981|Sucs de cette racine
+CIBLENT|CIBLER|21991|Visent, cherchent à atteindre un public particulier
+CIBLAIT|CIBLER|21991|Visait, cherchait à atteindre un public particulier
+CIBLAIENT|CIBLER|21991|Visaient, cherchaient à atteindre un public particulier
+CIBLERA|CIBLER|21991|Visera, cherchera à atteindre un public particulier
+CIBLA|CIBLER|21991|Visa, chercha à atteindre un public particulier
+CIBLEE|CIBLER|21991|Visée, cherchée à atteindre un public particulier
+CIBLEES|CIBLER|21991|Visées, cherchées à atteindre un public particulier
+PONTAGES|PONTAGE|21997|Constructions d'un pont généralement provisoire et à usage militaire
+HABILITES|HABILITE|22001|Autorisés|Capables
+PONCTIONS|PONCTION|22006|Prélèvements douloureux ou néfastes|Prélèvements d’argent douloureux
+ROYAUTES|ROYAUTE|22009|Prééminences
+HAMACS|HAMAC|22031|Lits formés d’un morceau de toile ou d’un filet
+BOUDENT|BOUDER|22051|Se montrent mutuellement que l’on est mécontent
+BOUDAIT|BOUDER|22051|Se montrait mutuellement que l’on est mécontent
+BOUDAIENT|BOUDER|22051|Se montraient mutuellement que l’on est mécontent
+BOUDERA|BOUDER|22051|Se montrera mutuellement que l’on est mécontent
+BOUDA|BOUDER|22051|Se montra mutuellement que l’on est mécontent
+CAPRICIEUSE|CAPRICIEUX|22062|Qui agit de façon désordonnée, imprévisible
+CONES|CONE|22065|Tout objets de cette forme|Moules de fer fondu|Organes reproducteurs chez la plupart des gymnospermes
+UNANIMITES|UNANIMITE|22073|Conformités de sentiments
+MORTUAIRES|MORTUAIRE|22081|Relatifs aux morts, au service, aux pompes funèbres
+IDEOLOGIES|IDEOLOGIE|22086|Appareils de propagande politique
+BOUSES|BOUSE|22088|Déjections bovines|Résidus de la pulpe d’olive obtenu à la fin du pressage
+VARICELLES|VARICELLE|22108|Maladies infectieuses et contagieuses
+ECHAUFFENT|ECHAUFFER|22117|Causent un excès de chaleur animale
+ECHAUFFAIT|ECHAUFFER|22117|Causait un excès de chaleur animale
+ECHAUFFAIENT|ECHAUFFER|22117|Causaient un excès de chaleur animale
+ECHAUFFERA|ECHAUFFER|22117|Causera un excès de chaleur animale
+ECHAUFFA|ECHAUFFER|22117|Causa un excès de chaleur animale
+IMPLANTE|IMPLANTER|22119|Détermine l’emplacement d'une construction
+IMPLANTENT|IMPLANTER|22119|Déterminent l’emplacement d'une construction
+IMPLANTAIT|IMPLANTER|22119|Déterminait l’emplacement d'une construction
+IMPLANTAIENT|IMPLANTER|22119|Déterminaient l’emplacement d'une construction
+IMPLANTERA|IMPLANTER|22119|Déterminera l’emplacement d'une construction
+IMPLANTA|IMPLANTER|22119|Détermina l’emplacement d'une construction
+BERETS|BERET|22130|Toques de laine|Coiffures spéciales de certains corps de troupes|Toutes coiffures de la même forme
+MURAILLES|MURAILLE|22137|Parois verticales monomorphes
+DINDONS|DINDON|22147|Viandes de cette volaille
+RANGEMENTS|RANGEMENT|22154|Dispositions d’éléments selon certains critères particuliers
+CONJOINTS|CONJOINT|22163|Faits ensemble|Personnes unies à une autre par le mariage
+CONJOINTES|CONJOINT|22163|Faites ensemble
+NOTORIETES|NOTORIETE|22164|États d’une personne fort connue|Personnes connues, célébrités
+BOMBARDIERS|BOMBARDIER|22166|Aviateurs chargés du largage des bombes
+ATROPINES|ATROPINE|22174|Alcaloïdes à noyau tropane
+CHARDONNAYS|CHARDONNAY|22198|Vins produits à partir de ce cépage
+HAIES|HAIE|22201|Ensemble linéaires
+MAUVES|MAUVE|22208|Violets pâles
+SKATEBOARDS|SKATEBOARD|22230|Planches à roulettes
+CHALLENGENT|CHALLENGER|22254|Mettent au défi, défient|Poussent vers l'excellence, poussent dans ses retranchements
+CHALLENGEAIT|CHALLENGER|22254|Mettait au défi, défiait|Poussait vers l'excellence, poussait dans ses retranchements
+CHALLENGERA|CHALLENGER|22254|Mettra au défi, défiera|Poussera vers l'excellence, poussera dans ses retranchements
+CHALLENGEA|CHALLENGER|22254|Mit au défi, défia|Poussa vers l'excellence, poussa dans ses retranchements
+CHALLENGEE|CHALLENGER|22254|Mise au défi, défiée|Poussée vers l'excellence, poussée dans ses retranchements
+CHALLENGEES|CHALLENGER|22254|Mises au défi, défiées|Poussées vers l'excellence, poussées dans ses retranchements
+PIONNIERS|PIONNIER|22258|Membres des jeunesses communistes
+PIONNIERE|PIONNIER|22258|Qui colonise un endroit
+CONTROVERSES|CONTROVERSE|22263|Débats sur une question, sur une opinion, etc
+AUBAINES|AUBAINE|22277|Droits de recueillir cette succession
+EXHIBE|EXHIBER|22284|Représente ou montre pour produire un certain effet
+EXHIBENT|EXHIBER|22284|Représentent ou montrent pour produire un certain effet
+EXHIBAIT|EXHIBER|22284|Représentait ou montrait pour produire un certain effet
+EXHIBAIENT|EXHIBER|22284|Représentaient ou montraient pour produire un certain effet
+EXHIBERA|EXHIBER|22284|Représentera ou montrera pour produire un certain effet
+EXHIBA|EXHIBER|22284|Représenta ou montra pour produire un certain effet
+EXHIBEE|EXHIBER|22284|Représentée ou montrée pour produire un certain effet
+EXHIBES|EXHIBER|22284|Représentés ou montrés pour produire un certain effet
+EXHIBEES|EXHIBER|22284|Représentées ou montrées pour produire un certain effet
+MANCHETTES|MANCHETTE|22285|Extrémités, empesées ou non
+FLEXIBLES|FLEXIBLE|22286|Souples
+IMPOSTURES|IMPOSTURE|22291|Doctrines destinées à séduire les hommes, à faire secte|Actions de tromper dans ses mœurs
+ARBALETES|ARBALETE|22293|Armes de trait
+JASE|JASER|22301|Pousse son cri|Discute, parle, bavarde
+JASENT|JASER|22301|Poussent son cri|Discutent, parlent, bavardent
+JASAIT|JASER|22301|Poussait son cri|Discutait, parlait, bavardait
+JASAIENT|JASER|22301|Poussaient son cri|Discutaient, parlaient, bavardaient
+JASERA|JASER|22301|Poussera son cri|Discutera, parlera, bavardera
+JASA|JASER|22301|Poussa son cri|Discuta, parla, bavarda
+JASEE|JASER|22301|Discutée, parlée, bavardée
+JASES|JASER|22301|Discutés, parlés, bavardés
+JASEES|JASER|22301|Discutées, parlées, bavardées
+SOUMISSIONS|SOUMISSION|22303|Dispositions à obéir
+COMMISES|COMMISE|22304|Actions de mettre aux prises, de compromettre|Confiscations d’un fief au profit du seigneur
+PELERINS|PELERIN|22309|Voyageurs|Individus, personnes
+HAREMS|HAREM|22333|Gynécées chez les musulmans
+RENNES|RENNE|22342|Mammifères des régions arctiques et subarctiques|Viandes de cet animal
+ASPIRANTS|ASPIRANT|22363|Grades militaires d’officier
+TRAFIQUE|TRAFIQUER|22365|Modifie quelque chose dans un but illicite
+TRAFIQUENT|TRAFIQUER|22365|Modifient quelque chose dans un but illicite
+TRAFIQUAIT|TRAFIQUER|22365|Modifiait quelque chose dans un but illicite
+TRAFIQUAIENT|TRAFIQUER|22365|Modifiaient quelque chose dans un but illicite
+TRAFIQUERA|TRAFIQUER|22365|Modifiera quelque chose dans un but illicite
+TRAFIQUA|TRAFIQUER|22365|Modifia quelque chose dans un but illicite
+CONTRACTIONS|CONTRACTION|22377|Resserrements instantanés d'un muscle
+KEROSENES|KEROSENE|22379|Mélanges d’hydrocarbures produit par raffinage
+DEPRIMENT|DEPRIMER|22383|Font une dépression
+DEPRIMAIT|DEPRIMER|22383|Faisait une dépression
+DEPRIMAIENT|DEPRIMER|22383|Faisaient une dépression
+DEPRIMERA|DEPRIMER|22383|Fera une dépression
+DEPRIMA|DEPRIMER|22383|Fit une dépression
+PARTISANS|PARTISAN|22385|Soldats de troupes légères ou irrégulières
+SERRURIERS|SERRURIER|22390|Surnoms de la mésange charbonnière
+POMPONS|POMPON|22398|Ornements en forme de houppe|Boules de laine en haut d’un bonnet, d’une tuque
+PATRICES|PATRICE|22410|Dignitaires, patrons
+SOULEVEMENTS|SOULEVEMENT|22415|Mouvements d’indignation|Mouvements des sentiments
+SENORAS|SENORA|22427|Parfois utilisés pour introduire le nom d'une dame espagnole
+DIGUES|DIGUE|22436|Levées de terre, de pierres, de bois, etc
+FIGURINES|FIGURINE|22439|Statuettes
+EQUITATIONS|EQUITATION|22446|Arts de monter à cheval
+RANIME|RANIMER|22453|Rend la vie|Réveille les sens engourdis
+RANIMENT|RANIMER|22453|Rendent la vie|Réveillent les sens engourdis
+RANIMAIT|RANIMER|22453|Rendait la vie|Réveillait les sens engourdis
+RANIMAIENT|RANIMER|22453|Rendaient la vie|Réveillaient les sens engourdis
+RANIMERA|RANIMER|22453|Rendra la vie|Réveillera les sens engourdis
+RANIMA|RANIMER|22453|Rendit la vie|Réveilla les sens engourdis
+BLAGUENT|BLAGUER|22454|Causent, bavardent
+BLAGUAIT|BLAGUER|22454|Causait, bavardait
+BLAGUAIENT|BLAGUER|22454|Causaient, bavardaient
+BLAGUERA|BLAGUER|22454|Causera, bavardera
+BLAGUA|BLAGUER|22454|Causa, bavarda
+BLAGUEE|BLAGUER|22454|Causée, bavardée
+BLAGUEES|BLAGUER|22454|Causées, bavardées
+FORESTIERS|FORESTIER|22467|Exploitants d’une forêt
+FORESTIERE|FORESTIER|22467|Qui concerne les forêts
+ALLIAGES|ALLIAGE|22469|Actions de combiner plusieurs éléments
+SECRETARIATS|SECRETARIAT|22476|Organisations d’assistance administrative
+DECLINE|DECLINER|22484|Penche vers sa fin
+DECLINENT|DECLINER|22484|Penchent vers sa fin
+DECLINAIT|DECLINER|22484|Penchait vers sa fin
+DECLINAIENT|DECLINER|22484|Penchaient vers sa fin
+DECLINERA|DECLINER|22484|Penchera vers sa fin
+DECLINA|DECLINER|22484|Pencha vers sa fin
+DECLINEE|DECLINER|22484|Penchée vers sa fin
+DECLINES|DECLINER|22484|Penchés vers sa fin
+DECLINEES|DECLINER|22484|Penchées vers sa fin
+COUETTES|COUETTE|22496|Pièces sur laquelle pose et pivote l’arbre d’une machine
+DROIDES|DROIDE|22503|Robots construits à l’image d’un être humain
+CREMAILLERES|CREMAILLERE|22506|Pièces de bois
+DRILLS|DRILL|22518|Techniques pédagogiques fondées sur la répétition intensive|Variétés de serge, coutil
+CADRANS|CADRAN|22525|Dispositifs électromécaniques rotatifs
+BLUFFE|BLUFFER|22541|Fait croire qu’on a un jeu différent de celui qu’on a en vérité|Trompe dans le but de profiter
+BLUFFENT|BLUFFER|22541|Font croire qu’on a un jeu différent de celui qu’on a en vérité|Trompent dans le but de profiter
+BLUFFAIT|BLUFFER|22541|Faisait croire qu’on a un jeu différent de celui qu’on a en vérité|Trompait dans le but de profiter
+BLUFFAIENT|BLUFFER|22541|Faisaient croire qu’on a un jeu différent de celui qu’on a en vérité|Trompaient dans le but de profiter
+BLUFFERA|BLUFFER|22541|Fera croire qu’on a un jeu différent de celui qu’on a en vérité|Trompera dans le but de profiter
+BLUFFA|BLUFFER|22541|Fit croire qu’on a un jeu différent de celui qu’on a en vérité|Trompa dans le but de profiter
+BLUFFEE|BLUFFER|22541|Trompée dans le but de profiter
+BLUFFES|BLUFFER|22541|Trompés dans le but de profiter
+BLUFFEES|BLUFFER|22541|Trompées dans le but de profiter
+FLIPS|FLIP|22542|Boissons normandes
+LASSE|LASSER|22550|Importune jusqu’au dégoût
+LASSENT|LASSER|22550|Importunent jusqu’au dégoût
+LASSAIT|LASSER|22550|Importunait jusqu’au dégoût
+LASSAIENT|LASSER|22550|Importunaient jusqu’au dégoût
+LASSERA|LASSER|22550|Importunera jusqu’au dégoût
+LASSA|LASSER|22550|Importuna jusqu’au dégoût
+CYCLONES|CYCLONE|22553|Tempêtes atmosphériques
+MARQUISES|MARQUISE|22562|Tenderolles|Auvents, généralements vitrés
+PERSECUTIONS|PERSECUTION|22569|Vexations, poursuites injustes et violentes
+CANALISE|CANALISER|22573|Rend un cours d’eau navigable
+CANALISENT|CANALISER|22573|Rendent un cours d’eau navigable
+CANALISAIT|CANALISER|22573|Rendait un cours d’eau navigable
+CANALISAIENT|CANALISER|22573|Rendaient un cours d’eau navigable
+CANALISERA|CANALISER|22573|Rendra un cours d’eau navigable
+CANALISA|CANALISER|22573|Rendit un cours d’eau navigable
+ENROLES|ENROLE|22588|Envoyés au service militaire|Êtres engagés dans un groupe
+FUGITIVES|FUGITIVE|22602|Femmes en fuite
+DEBLOQUE|DEBLOQUER|22605|Délivre du blocus|Rend une somme d’argent accessible à une autre action|Annule un blocage
+DEBLOQUENT|DEBLOQUER|22605|Délivrent du blocus|Rendent une somme d’argent accessible à une autre action|Annulent un blocage
+DEBLOQUAIT|DEBLOQUER|22605|Délivrait du blocus|Rendait une somme d’argent accessible à une autre action|Annulait un blocage
+DEBLOQUAIENT|DEBLOQUER|22605|Délivraient du blocus|Rendaient une somme d’argent accessible à une autre action|Annulaient un blocage
+DEBLOQUERA|DEBLOQUER|22605|Délivrera du blocus|Rendra une somme d’argent accessible à une autre action|Annulera un blocage
+DEBLOQUA|DEBLOQUER|22605|Délivra du blocus|Rendit une somme d’argent accessible à une autre action|Annula un blocage
+DEBLOQUEE|DEBLOQUER|22605|Délivrée du blocus
+DEBLOQUES|DEBLOQUER|22605|Délivrés du blocus
+DEBLOQUEES|DEBLOQUER|22605|Délivrées du blocus
+HARPONS|HARPON|22606|Bandes de fer plat
+PONCTUELS|PONCTUEL|22610|Relatifs à un point
+MEGERES|MEGERE|22613|Insectes lépidoptères
+SUSPECTE|SUSPECTER|22618|Soupçonne
+SUSPECTENT|SUSPECTER|22618|Soupçonnent
+SUSPECTAIT|SUSPECTER|22618|Soupçonnait
+SUSPECTAIENT|SUSPECTER|22618|Soupçonnaient
+SUSPECTERA|SUSPECTER|22618|Soupçonnera
+SUSPECTA|SUSPECTER|22618|Soupçonna
+SUSPECTEE|SUSPECTER|22618|Soupçonnée
+SUSPECTES|SUSPECTER|22618|Soupçonnés
+SUSPECTEES|SUSPECTER|22618|Soupçonnées
+PREMONITIONS|PREMONITION|22626|Fortes intuitions
+TROUVAILLES|TROUVAILLE|22630|Inventions amusantes|Découvertes officielles de vestiges anciens ou d’un objet ancien|Météorites découvertes par hasard
+MADONES|MADONE|22632|Femmes importantes
+PIQUETS|PIQUET|22636|Groupes de personnes, voire d’animaux
+COULISSES|COULISSE|22646|Planchettes de confessionnal|Vides de quelques centimètres entre deux murs
+PERIPLES|PERIPLE|22663|Navigations autours d’une mer ou autour des côtes d’un pays|Récits d’une navigation de ce genre
+MENAGERES|MENAGERE|22664|Services de couverts de table dans un coffret|Nécessaires de couture
+NEUROLOGUES|NEUROLOGUE|22667|Médecins spécialistes du système nerveux
+FORGENT|FORGER|22669|Façonnent le fer
+FORGEAIT|FORGER|22669|Façonnait le fer
+FORGEAIENT|FORGER|22669|Façonnaient le fer
+FORGERA|FORGER|22669|Façonnera le fer
+FORGEA|FORGER|22669|Façonna le fer
+ETHNIQUES|ETHNIQUE|22680|Relatifs à la différenciation entre des peuples|Relatifs à la race
+ATTARDENT|ATTARDER|22702|Se mettent en retard
+ATTARDAIT|ATTARDER|22702|Se mettait en retard
+ATTARDAIENT|ATTARDER|22702|Se mettaient en retard
+ATTARDERA|ATTARDER|22702|Se mettra en retard
+ATTARDA|ATTARDER|22702|Se mit en retard
+NAINES|NAINE|22707|Personnes de petite taille|Personnes atteintes de nanisme
+GAIETES|GAIETE|22728|Dispositions à être de bonne humeur|Belles humeurs|Vivacités de belle humeur franche et communicative
+COLAS|COLA|22729|Pourboires
+SOLENNELS|SOLENNEL|22736|Faits avec un certain apparat
+SOLENNELLE|SOLENNEL|22736|Qui a un air d’importance ou un ton emphatique
+INCRIMINE|INCRIMINER|22737|Accuse quelqu’un de crime|Suspecte
+INCRIMINENT|INCRIMINER|22737|Accusent quelqu’un de crime|Suspectent
+INCRIMINAIT|INCRIMINER|22737|Accusait quelqu’un de crime|Suspectait
+INCRIMINERA|INCRIMINER|22737|Accusera quelqu’un de crime|Suspectera
+INCRIMINA|INCRIMINER|22737|Accusa quelqu’un de crime|Suspecta
+INCRIMINEE|INCRIMINER|22737|Suspectée
+INCRIMINES|INCRIMINER|22737|Suspectés
+INCRIMINEES|INCRIMINER|22737|Suspectées
+MIXE|MIXER|22742|Mélange des ingrédients|Enchaîne des morceaux de musique
+MIXENT|MIXER|22742|Mélangent des ingrédients|Enchaînent des morceaux de musique
+MIXAIT|MIXER|22742|Mélangeait des ingrédients|Enchaînait des morceaux de musique
+MIXAIENT|MIXER|22742|Mélangeaient des ingrédients|Enchaînaient des morceaux de musique
+MIXERA|MIXER|22742|Mélangera des ingrédients|Enchaînera des morceaux de musique
+MIXA|MIXER|22742|Mélangea des ingrédients|Enchaîna des morceaux de musique
+MIXEE|MIXER|22742|Mélangée des ingrédients|Enchaînée des morceaux de musique
+MIXES|MIXER|22742|Mélangés des ingrédients|Enchaînés des morceaux de musique
+MIXEES|MIXER|22742|Mélangées des ingrédients|Enchaînées des morceaux de musique
+DOMINOS|DOMINO|22752|Personnes ainsi déguisées
+ALTERES|ALTERE|22759|Assoiffés
+RETROVISEURS|RETROVISEUR|22763|Instruments basés sur le principe du périscope
+MASCARAS|MASCARA|22768|Fards à cils
+BOUDES|BOUDE|22769|Nombrils
+MANETTES|MANETTE|22772|Télécommandes|Petites mains, menottes
+PERSES|PERSE|22775|Toiles peintes et glacées
+FORMULENT|FORMULER|22785|Expriment avec précision
+FORMULAIT|FORMULER|22785|Exprimait avec précision
+FORMULAIENT|FORMULER|22785|Exprimaient avec précision
+FORMULERA|FORMULER|22785|Exprimera avec précision
+FORMULA|FORMULER|22785|Exprima avec précision
+FORMULEE|FORMULER|22785|Exprimée avec précision
+FORMULEES|FORMULER|22785|Exprimées avec précision
+ADEPTES|ADEPTE|22788|Amateurs
+GENDARMERIES|GENDARMERIE|22796|Forces armées chargées de la police administrative du territoire|Systèmes de surveillance et de maintien de l’ordre
+INCRUSTE|INCRUSTER|22802|Laisse une empreinte en creux dans une matière molle
+INCRUSTENT|INCRUSTER|22802|Laissent une empreinte en creux dans une matière molle
+INCRUSTAIT|INCRUSTER|22802|Laissait une empreinte en creux dans une matière molle
+INCRUSTAIENT|INCRUSTER|22802|Laissaient une empreinte en creux dans une matière molle
+INCRUSTERA|INCRUSTER|22802|Laissera une empreinte en creux dans une matière molle
+INCRUSTA|INCRUSTER|22802|Laissa une empreinte en creux dans une matière molle
+TOBOGGANS|TOBOGGAN|22821|Pistes à une ou plusieurs pentes|Dispositifs d’évacuation de secours sur les avions
+PARIAS|PARIA|22847|Individus exclus d’un groupe social ou humain
+FETICHES|FETICHE|22848|Objets de culte animiste
+MINETTES|MINETTE|22852|Roches magmatiques microgrenues, dites aussi microsyénites|Minerais de fer|Chéries
+GASTRIQUES|GASTRIQUE|22854|Réductions de sucre et de vinaigre
+GITANES|GITANE|22856|Bohémiennes
+DEJOUE|DEJOUER|22871|Fait échouer le jeu de quelqu’un|Tourne au gré du vent
+DEJOUENT|DEJOUER|22871|Font échouer le jeu de quelqu’un|Tournent au gré du vent
+DEJOUAIT|DEJOUER|22871|Faisait échouer le jeu de quelqu’un|Tournait au gré du vent
+DEJOUAIENT|DEJOUER|22871|Faisaient échouer le jeu de quelqu’un|Tournaient au gré du vent
+DEJOUERA|DEJOUER|22871|Fera échouer le jeu de quelqu’un|Tournera au gré du vent
+DEJOUA|DEJOUER|22871|Fit échouer le jeu de quelqu’un|Tourna au gré du vent
+DEJOUEE|DEJOUER|22871|Tournée au gré du vent
+DEJOUES|DEJOUER|22871|Tournés au gré du vent
+DEJOUEES|DEJOUER|22871|Tournées au gré du vent
+BIZUTAGES|BIZUTAGE|22876|Rites initiatiques ous de passage à base de brimades
+COCHES|COCHE|22878|Entailles, marques|Truies destinées à la reproduction
+SODOMIES|SODOMIE|22881|Actes sexuels de pénétration anale
+COORDONNE|COORDONNER|22907|Arrange certaines choses
+COORDONNENT|COORDONNER|22907|Arrangent certaines choses
+COORDONNAIT|COORDONNER|22907|Arrangeait certaines choses
+COORDONNERA|COORDONNER|22907|Arrangera certaines choses
+COORDONNA|COORDONNER|22907|Arrangea certaines choses
+EGARENT|EGARER|22909|Mettent hors du droit chemin|Mettent une chose à une place qu’on ne peut se rappeler par la suite
+EGARAIT|EGARER|22909|Mettait hors du droit chemin|Mettait une chose à une place qu’on ne peut se rappeler par la suite
+EGARAIENT|EGARER|22909|Mettaient hors du droit chemin|Mettaient une chose à une place qu’on ne peut se rappeler par la suite
+EGARERA|EGARER|22909|Mettra hors du droit chemin|Mettra une chose à une place qu’on ne peut se rappeler par la suite
+EGARA|EGARER|22909|Mit hors du droit chemin|Mit une chose à une place qu’on ne peut se rappeler par la suite
+PINOTS|PINOT|22915|Vins issus de ces cépages
+SILOS|SILO|22928|Regroupements d’informations|Parties au contenu homogène par rapport au reste
+EXPIE|EXPIER|22935|Répare un crime
+EXPIENT|EXPIER|22935|Réparent un crime
+EXPIAIT|EXPIER|22935|Réparait un crime
+EXPIAIENT|EXPIER|22935|Réparaient un crime
+EXPIERA|EXPIER|22935|Réparera un crime
+EXPIA|EXPIER|22935|Répara un crime
+CHOPINS|CHOPIN|22939|Occasions, aubaines
+VENIMEUSE|VENIMEUX|22970|Qui a du venin et un moyen de l’injecter
+TINTEMENTS|TINTEMENT|22981|Prolongements du son d’une cloche|Bruits d'un objet métallique|Ses imaginés et répétés
+PREPAYES|PREPAYE|23000|Paiements effectués avant consommation du crédit temps
+CECITES|CECITE|23007|États d’une personne aveugle
+DEPOTOIRS|DEPOTOIR|23017|Accumulations de déchets près d’une résidence
+FENDUE|FENDU|23019|Qui présente une fente, une fêlure|Qui présente une ou plusieurs longues ouvertures
+INSTANCES|INSTANCE|23028|Sollicitations pressantes|Procédures judiciaires|Degrés de juridiction
+LUTTANTE|LUTTANT|23032|Qui lutte
+EPROUVANTE|EPROUVANT|23044|Qui tient de l'épreuve
+CUPIDES|CUPIDE|23047|Gloutons
+OPOSSUMS|OPOSSUM|23060|Fourrures de cet animal
+RAFLES|RAFLE|23062|Filets garnis d’ailes|Filets destinés à attraper de petits volatiles
+MALICES|MALICE|23072|Inclinations à nuire, à mal faire, à causer de la peine|Finesses, habiletés, subtilités
+ALTERENT|ALTERER|23075|Modifient en mal|Causent de la soif
+ALTERAIT|ALTERER|23075|Modifiait en mal|Causait de la soif
+ALTERAIENT|ALTERER|23075|Modifiaient en mal|Causaient de la soif
+ALTERERA|ALTERER|23075|Modifiera en mal|Causera de la soif
+ALTERA|ALTERER|23075|Modifia en mal|Causa de la soif
+ALTEREE|ALTERER|23075|Modifiée en mal|Causée de la soif
+ALTEREES|ALTERER|23075|Modifiées en mal|Causées de la soif
+ABSOLUTIONS|ABSOLUTION|23089|Actions d’absoudre
+FEINTS|FEINT|23101|Simulés
+FEINTES|FEINT|23101|Simulées
+TISANES|TISANE|23134|Boissons obtenues par infusion
+DISCOTHEQUES|DISCOTHEQUE|23161|Collections de disques
+CAMOMILLES|CAMOMILLE|23162|Matricaires
+COMBINENT|COMBINER|23184|Assemblent plusieurs choses en les disposant deux à deux|Arrangent, disposent des choses entre elles dans un certain ordre
+COMBINAIT|COMBINER|23184|Assemblait plusieurs choses en les disposant deux à deux|Arrangeait, disposait des choses entre elles dans un certain ordre
+COMBINAIENT|COMBINER|23184|Assemblaient plusieurs choses en les disposant deux à deux|Arrangeaient, disposaient des choses entre elles dans un certain ordre
+COMBINERA|COMBINER|23184|Assemblera plusieurs choses en les disposant deux à deux|Arrangera, disposera des choses entre elles dans un certain ordre
+COMBINA|COMBINER|23184|Assembla plusieurs choses en les disposant deux à deux|Arrangea, disposa des choses entre elles dans un certain ordre
+COMBINEE|COMBINER|23184|Arrangée, disposée des choses entre elles dans un certain ordre
+COMBINES|COMBINER|23184|Arrangés, disposés des choses entre elles dans un certain ordre
+COMBINEES|COMBINER|23184|Arrangées, disposées des choses entre elles dans un certain ordre
+VIGOUREUSE|VIGOUREUX|23196|Qui a de la vigueur|Qui se fait avec vigueur, où il y a de la vigueur
+MINIERES|MINIERE|23221|Mines exploitées à ciel ouvert ou avec des puits peu profonds
+PEPERES|PEPERE|23235|Hommes d’un certain âge|Hommes ou enfants placides
+GLADIATEURS|GLADIATEUR|23255|Spadassins, bretteurs
+BOITIERS|BOITIER|23270|Coffrets à plusieurs compartiments
+ADHESIONS|ADHESION|23274|Actions d’adhérer
+AVORTONS|AVORTON|23285|Fœtus sortis avant terme du ventre de la mère|Défectueuses productions des végétaux
+BANNIES|BANNIE|23315|Promulgations
+GEINDRES|GEINDRE|23317|Ouvriers boulangers
+BROUILLONNE|BROUILLON|23319|Qui manque d’ordre
+INFLATIONS|INFLATION|23339|Augmentations, grossissements
+INTEGRALITES|INTEGRALITE|23351|États d’une chose entière|Qualités d'un nombre entier
+TAPISSERIES|TAPISSERIE|23360|Ouvrages faits à l’aiguille sur du canevas|Grands ouvrages faits au métier à tisser avec de la laine
+PICHETS|PICHET|23367|Les contenus de ce pot
+ANALOGIES|ANALOGIE|23377|Ressemblances évoquées entre deux ou plusieurs choses
+LACETS|LACET|23387|Cordons ferrés à un bout ou aux deux
+LIMACES|LIMACE|23392|Mollusques gastéropodes
+FAUCHEUSES|FAUCHEUSE|23398|Personnifications de la mort|Machines destinées à couper les herbes des prairies
+RETAPE|RETAPER|23416|Redouble une classe
+RETAPENT|RETAPER|23416|Redoublent une classe
+RETAPAIT|RETAPER|23416|Redoublait une classe
+RETAPAIENT|RETAPER|23416|Redoublaient une classe
+RETAPERA|RETAPER|23416|Redoublera une classe
+RETAPA|RETAPER|23416|Redoubla une classe
+RUEES|RUEE|23427|Grandes foules de visiteurs
+CUNNINGHAMS|CUNNINGHAM|23447|Dispositifs de réglage de voile sur un voilier|Ayrshires
+MELASSES|MELASSE|23455|Résidus visqueux du sucre après son extraction et sa cristallisation
+ELUCIDE|ELUCIDER|23456|Rend clair
+ELUCIDENT|ELUCIDER|23456|Rendent clair
+ELUCIDAIT|ELUCIDER|23456|Rendait clair
+ELUCIDAIENT|ELUCIDER|23456|Rendaient clair
+ELUCIDERA|ELUCIDER|23456|Rendra clair
+ELUCIDA|ELUCIDER|23456|Rendit clair
+TROCS|TROC|23475|Échanges financiers
+ROUGEOLES|ROUGEOLE|23476|Maladies souvent infantiles
+REGROUPE|REGROUPER|23483|Met en place des forces militaires
+REGROUPENT|REGROUPER|23483|Mettent en place des forces militaires
+REGROUPAIT|REGROUPER|23483|Mettait en place des forces militaires
+REGROUPAIENT|REGROUPER|23483|Mettaient en place des forces militaires
+REGROUPERA|REGROUPER|23483|Mettra en place des forces militaires
+REGROUPA|REGROUPER|23483|Mit en place des forces militaires
+REGROUPEE|REGROUPER|23483|Mise en place des forces militaires
+REGROUPES|REGROUPER|23483|Mis en place des forces militaires
+REGROUPEES|REGROUPER|23483|Mises en place des forces militaires
+MURMURENT|MURMURER|23485|Font courir sourdement des bruits sur quelque affaire
+MURMURAIT|MURMURER|23485|Faisait courir sourdement des bruits sur quelque affaire
+MURMURAIENT|MURMURER|23485|Faisaient courir sourdement des bruits sur quelque affaire
+MURMURERA|MURMURER|23485|Fera courir sourdement des bruits sur quelque affaire
+MURMURA|MURMURER|23485|Fit courir sourdement des bruits sur quelque affaire
+JOUGS|JOUG|23487|Portiques improvisés à l’aide de trois lances
+FOCALISE|FOCALISER|23506|Concentre des rayons lumineux en un point|Met en focus
+FOCALISENT|FOCALISER|23506|Concentrent des rayons lumineux en un point|Mettent en focus
+FOCALISAIT|FOCALISER|23506|Concentrait des rayons lumineux en un point|Mettait en focus
+FOCALISAIENT|FOCALISER|23506|Concentraient des rayons lumineux en un point|Mettaient en focus
+FOCALISERA|FOCALISER|23506|Concentrera des rayons lumineux en un point|Mettra en focus
+FOCALISA|FOCALISER|23506|Concentra des rayons lumineux en un point|Mit en focus
+FOCALISEE|FOCALISER|23506|Concentrée des rayons lumineux en un point|Mise en focus
+FOCALISES|FOCALISER|23506|Concentrés des rayons lumineux en un point|Mis en focus
+FOCALISEES|FOCALISER|23506|Concentrées des rayons lumineux en un point|Mises en focus
+AUMONES|AUMONE|23513|Sommes d'argent dérisoire
+DESTROYERS|DESTROYER|23519|Navires de guerre de moyen tonnage
+RUTS|RUT|23523|Périodes d’accouplement des mammifères
+ATTELLES|ATTELLE|23557|Petites pièces de bois
+DIALECTES|DIALECTE|23558|Variétés particulières d’une langue|Variétés, variantes, régiolectes
+CUILLERS|CUILLER|23560|Parties creuses d'un joug
+CHIMERES|CHIMERE|23570|Toutes créatures composées de parties de différents animaux
+ENDOSSE|ENDOSSER|23575|Met sur son dos|Prend à sa charge une chose
+ENDOSSENT|ENDOSSER|23575|Mettent sur son dos|Prennent à sa charge une chose
+ENDOSSAIT|ENDOSSER|23575|Mettait sur son dos|Prenait à sa charge une chose
+ENDOSSAIENT|ENDOSSER|23575|Mettaient sur son dos|Prenaient à sa charge une chose
+ENDOSSERA|ENDOSSER|23575|Mettra sur son dos|Prendra à sa charge une chose
+ENDOSSA|ENDOSSER|23575|Mit sur son dos|Prit à sa charge une chose
+ENDOSSEE|ENDOSSER|23575|Mise sur son dos|Prise à sa charge une chose
+ENDOSSES|ENDOSSER|23575|Mis sur son dos|Pris à sa charge une chose
+ENDOSSEES|ENDOSSER|23575|Mises sur son dos|Prises à sa charge une chose
+IRANIENNE|IRANIEN|23596|Qui appartient à l’Iran ou relatif à l’Iran
+VESICULES|VESICULE|23601|Lésions cutanées|Compartiments intracellulaires de petite taille
+NOUILLES|NOUILLE|23609|Stupides, bébêtes, pas très dégourdis
+DELIVRANCES|DELIVRANCE|23615|Sorties de l’arrière-faix, du placenta après l'accouchement
+MARMOTTES|MARMOTTE|23631|Petits quadrupèdes rongeurs
+OBSOLETES|OBSOLETE|23633|Anciens ou surannés|Peu apparents
+BRICOLENT|BRICOLER|23651|Réparent, fabriquent|Coupent et collent des matériaux
+BRICOLAIT|BRICOLER|23651|Réparait, fabriquait|Coupait et collait des matériaux
+BRICOLAIENT|BRICOLER|23651|Réparaient, fabriquaient|Coupaient et collaient des matériaux
+BRICOLERA|BRICOLER|23651|Réparera, fabriquera|Coupera et collera des matériaux
+BRICOLA|BRICOLER|23651|Répara, fabriqua|Coupa et colla des matériaux
+BRICOLEE|BRICOLER|23651|Réparée, fabriquée|Coupée et collée des matériaux
+BRICOLES|BRICOLER|23651|Réparés, fabriqués|Coupés et collés des matériaux
+BRICOLEES|BRICOLER|23651|Réparées, fabriquées|Coupées et collées des matériaux
+LOQUES|LOQUE|23652|Étoffes réduites en lambeaux par suite de l’usure|Serpillières, chiffons
+CANES|CANE|23653|Femelles du canard
+TUBAS|TUBA|23654|Entonnoirs nuageux
+BAHUTS|BAHUT|23677|Formes bombées d’une couche
+GLUANTE|GLUANT|23696|Qui a l’aspect et la consistance de la colle, visqueux|Qui colle
+TRIOMPHENT|TRIOMPHER|23742|Remportent une victoire éclatante
+TRIOMPHAIT|TRIOMPHER|23742|Remportait une victoire éclatante
+TRIOMPHAIENT|TRIOMPHER|23742|Remportaient une victoire éclatante
+TRIOMPHERA|TRIOMPHER|23742|Remportera une victoire éclatante
+TRIOMPHA|TRIOMPHER|23742|Remporta une victoire éclatante
+ODYSSEES|ODYSSEE|23749|Voyages riches d'aventures et d’enseignements|Voyages semés d’imprévus ou d’embûches
+POTERIES|POTERIE|23758|Artisanats basés sur le travail de l’argile|Métiers du potier et de la potière|Objets en terre cuite
+CHANTILLYS|CHANTILLY|23775|Crèmes fouettées, légèrements sucrées et vanillées
+GUACAMOLES|GUACAMOLE|23786|Purées à base d’avocats
+FOULEES|FOULEE|23790|Enjambées de l’humain lors de la course à pied
+DISQUETTES|DISQUETTE|23799|Jeunes filles attirantes
+SOURCILS|SOURCIL|23803|Saillies en forme d’arc
+GLOUSSEMENTS|GLOUSSEMENT|23810|Cris de la poule
+LANDES|LANDE|23839|Étendues de terre inculte et stérile
+ESCROQUE|ESCROQUER|23868|Tire quelque chose de quelqu’un par fourberie|Vole quelqu’un par des moyens frauduleux
+ESCROQUENT|ESCROQUER|23868|Tirent quelque chose de quelqu’un par fourberie|Volent quelqu’un par des moyens frauduleux
+ESCROQUAIT|ESCROQUER|23868|Tirait quelque chose de quelqu’un par fourberie|Volait quelqu’un par des moyens frauduleux
+ESCROQUAIENT|ESCROQUER|23868|Tiraient quelque chose de quelqu’un par fourberie|Volaient quelqu’un par des moyens frauduleux
+ESCROQUERA|ESCROQUER|23868|Tirera quelque chose de quelqu’un par fourberie|Volera quelqu’un par des moyens frauduleux
+ESCROQUA|ESCROQUER|23868|Tira quelque chose de quelqu’un par fourberie|Vola quelqu’un par des moyens frauduleux
+IMAGERIES|IMAGERIE|23875|Créations artistiques pour cette fabrication
+PARODIES|PARODIE|23888|Contrefaçons burlesques d'une pièce de théâtre connue
+REVANTE|REVANT|23902|Qui fait rêver
+GAVES|GAVE|23912|Gosiers d’oiseau, jabot
+RATTRAPAGES|RATTRAPAGE|23915|Secondes sessions d’un examen ou d'un concours
+HUITRES|HUITRE|23919|Mollusques marins bivalves
+MYTHIQUES|MYTHIQUE|23922|Complètements inventés
+CERAMIQUES|CERAMIQUE|23932|Arts de peindre la porcelaine
+CARRURES|CARRURE|23937|Largeurs du dos à l’endroit des épaules|Largeurs du dos d’un habit|Répartitions d’une phrase musicale en mesures égales
+DISCULPE|DISCULPER|23941|Justifie quelqu’un d’une faute imputée
+DISCULPENT|DISCULPER|23941|Justifient quelqu’un d’une faute imputée
+DISCULPAIT|DISCULPER|23941|Justifiait quelqu’un d’une faute imputée
+DISCULPAIENT|DISCULPER|23941|Justifiaient quelqu’un d’une faute imputée
+DISCULPERA|DISCULPER|23941|Justifiera quelqu’un d’une faute imputée
+DISCULPA|DISCULPER|23941|Justifia quelqu’un d’une faute imputée
+PAIENS|PAIEN|23960|Impies, mécréants, athées
+PAIENNE|PAIEN|23960|Qui adore les faux dieux, les idoles, selon les chrétiens|Impie, mécréante, athée
+PAIENNES|PAIEN|23960|Impies, mécréantes, athées
+INCANTATIONS|INCANTATION|23966|Actions de faire des enchantements
+FROISSENT|FROISSER|23972|Exercent une brusque pression contre le fleuret de l’adversaire
+FROISSAIT|FROISSER|23972|Exerçait une brusque pression contre le fleuret de l’adversaire
+FROISSAIENT|FROISSER|23972|Exerçaient une brusque pression contre le fleuret de l’adversaire
+FROISSERA|FROISSER|23972|Exercera une brusque pression contre le fleuret de l’adversaire
+FROISSA|FROISSER|23972|Exerça une brusque pression contre le fleuret de l’adversaire
+GAINES|GAINE|23982|Étuis de couteau
+CYNISMES|CYNISME|23984|Philosophies cyniques|Affectations d’impudence
+TUNIQUES|TUNIQUE|24006|Vêtements de femme
+YAHS|YAH|24013|Onzièmes lettres de l’alphabet tifinagh, ⵀ
+ECLATANTE|ECLATANT|24014|Qui fait un bruit perçant
+TUTRICES|TUTRICE|24041|Protectrices, entités protectrices|Enseignantes dédiées à une ou quelques personnes en nombre restreint
+LAVEMENTS|LAVEMENT|24048|Actions de laver
+STEWARDS|STEWARD|24072|Hommes chargés de l’accueil
+PISTONS|PISTON|24078|Cylindres mobiles dans le corps d’une pompe|Valves cylindriques de certains instruments à vent
+BROUSSES|BROUSSE|24079|Espaces non urbanisés
+MOLECULES|MOLECULE|24087|Matières actives
+PALETS|PALET|24089|Pierres plates et rondes|Marelles
+ASCENDANTS|ASCENDANT|24101|Désignes unes personnes d'une génération précédente en ligne directe|Définits unes personnes d’une génération précédente en ligne directe
+ASCENDANTE|ASCENDANT|24101|Qui va en montant
+FLATTERIES|FLATTERIE|24123|Louanges fausses ou exagérées
+FATALITES|FATALITE|24135|Destinées inévitables
+RUNNINGS|RUNNING|24143|Chaussures de sport|Chaussures pour la course à pied
+BEUVERIES|BEUVERIE|24147|Pratiques de boire en groupe des boissons alcooliques
+FLAMBANTE|FLAMBANT|24153|Qui a de l’éclat, en parlant des choses ou des personnes
+PRIEURS|PRIEUR|24154|Supérieurs dans certains monastères
+BRETZELS|BRETZEL|24156|Biscuits salés à base de pâte de brioche
+ANTECEDENTE|ANTECEDENT|24157|Qui précède dans l’ordre du temps
+CRICS|CRIC|24173|Appareils destinés à soulever du sol
+DEGRADATIONS|DEGRADATION|24195|Affaiblissements graduels de la lumière
+DECRYPTE|DECRYPTER|24220|Déchiffre un message encrypté
+DECRYPTENT|DECRYPTER|24220|Déchiffrent un message encrypté
+DECRYPTAIT|DECRYPTER|24220|Déchiffrait un message encrypté
+DECRYPTAIENT|DECRYPTER|24220|Déchiffraient un message encrypté
+DECRYPTERA|DECRYPTER|24220|Déchiffrera un message encrypté
+DECRYPTA|DECRYPTER|24220|Déchiffra un message encrypté
+ALIGNEMENTS|ALIGNEMENT|24243|Mises en rangs d'une troupe
+FILTRENT|FILTRER|24284|Passent au travers d’une chose conçue comme obstacle
+FILTRAIT|FILTRER|24284|Passait au travers d’une chose conçue comme obstacle
+FILTRAIENT|FILTRER|24284|Passaient au travers d’une chose conçue comme obstacle
+FILTRERA|FILTRER|24284|Passera au travers d’une chose conçue comme obstacle
+FILTRA|FILTRER|24284|Passa au travers d’une chose conçue comme obstacle
+FILTREE|FILTRER|24284|Passée au travers d’une chose conçue comme obstacle
+FILTREES|FILTRER|24284|Passées au travers d’une chose conçue comme obstacle
+NYLONS|NYLON|24292|Fibres textiles de cette matière
+REPLONGE|REPLONGER|24296|S'enfonce de nouveau dans l’eau|Cesse, échoue à l’effort d’un régime d’amélioration personnelle
+REPLONGENT|REPLONGER|24296|S'enfoncent de nouveau dans l’eau|Cessent, échouent à l’effort d’un régime d’amélioration personnelle
+REPLONGEAIT|REPLONGER|24296|S'enfonçait de nouveau dans l’eau|Cessait, échouait à l’effort d’un régime d’amélioration personnelle
+REPLONGERA|REPLONGER|24296|S'enfoncera de nouveau dans l’eau|Cessera, échouera à l’effort d’un régime d’amélioration personnelle
+REPLONGEA|REPLONGER|24296|S'enfonça de nouveau dans l’eau|Cessa, échoua à l’effort d’un régime d’amélioration personnelle
+REPLONGEE|REPLONGER|24296|Cessée, échouée à l’effort d’un régime d’amélioration personnelle
+REPLONGES|REPLONGER|24296|Cessés, échoués à l’effort d’un régime d’amélioration personnelle
+REPLONGEES|REPLONGER|24296|Cessées, échouées à l’effort d’un régime d’amélioration personnelle
+ENTOURE|ENTOURER|24302|Met ou dispose autour
+ENTOURENT|ENTOURER|24302|Mettent ou disposent autour
+ENTOURAIT|ENTOURER|24302|Mettait ou disposait autour
+ENTOURAIENT|ENTOURER|24302|Mettaient ou disposaient autour
+ENTOURERA|ENTOURER|24302|Mettra ou disposera autour
+ENTOURA|ENTOURER|24302|Mit ou disposa autour
+BIBINES|BIBINE|24303|Cabarets de bas étage
+STATISTIQUES|STATISTIQUE|24321|Descriptions détaillées d’un pays relativement à son étendue
+EXAUCE|EXAUCER|24329|Écoute favorablement une prière et accorde ce qui est demandé
+EXAUCENT|EXAUCER|24329|Écoutent favorablement une prière et accordent ce qui est demandé
+EXAUCAIT|EXAUCER|24329|Écoutait favorablement une prière et accordait ce qui est demandé
+EXAUCAIENT|EXAUCER|24329|Écoutaient favorablement une prière et accordaient ce qui est demandé
+EXAUCERA|EXAUCER|24329|Écoutera favorablement une prière et accordera ce qui est demandé
+EXAUCA|EXAUCER|24329|Écouta favorablement une prière et accorda ce qui est demandé
+PLURIELS|PLURIEL|24331|Multiethniques, métissés
+PLURIELLE|PLURIEL|24331|Qui se produit plus d'une fois|Qui prend plusieurs formes|Multiethnique, métissée
+PLURIELLES|PLURIEL|24331|Multiethniques, métissées
+PONTES|PONTE|24341|Actions de pondre, pondaison|Actions de produire, d’accoucher d’un travail difficile
+SPECULE|SPECULER|24345|Médite profondément sur un sujet|Fait des opérations en matière de banque
+SPECULENT|SPECULER|24345|Méditent profondément sur un sujet|Font des opérations en matière de banque
+SPECULAIT|SPECULER|24345|Méditait profondément sur un sujet|Faisait des opérations en matière de banque
+SPECULAIENT|SPECULER|24345|Méditaient profondément sur un sujet|Faisaient des opérations en matière de banque
+SPECULERA|SPECULER|24345|Méditera profondément sur un sujet|Fera des opérations en matière de banque
+SPECULA|SPECULER|24345|Médita profondément sur un sujet|Fit des opérations en matière de banque
+SPECULEE|SPECULER|24345|Faite des opérations en matière de banque
+SPECULES|SPECULER|24345|Faits des opérations en matière de banque
+SPECULEES|SPECULER|24345|Faites des opérations en matière de banque
+REPOUSSANTE|REPOUSSANT|24351|Qui inspire de l’aversion, du dégoût
+DARDS|DARD|24354|Les parties essentielles de l’aiguillon de certains insectes|Pistils
+PARESSES|PARESSE|24356|Fonctionnements ralentis d’un organe
+METEORES|METEORE|24365|Phénomènes atmosphériques
+BANES|BANE|24383|Cornes d'un animal
+GRINCHEUSES|GRINCHEUSE|24401|Personnes aigries
+AVEUGLENT|AVEUGLER|24429|Bouchent un orifice|Bouchent provisoirement autant que possible
+AVEUGLAIT|AVEUGLER|24429|Bouchait un orifice|Bouchait provisoirement autant que possible
+AVEUGLAIENT|AVEUGLER|24429|Bouchaient un orifice|Bouchaient provisoirement autant que possible
+AVEUGLERA|AVEUGLER|24429|Bouchera un orifice|Bouchera provisoirement autant que possible
+AVEUGLA|AVEUGLER|24429|Boucha un orifice|Boucha provisoirement autant que possible
+FRIPOUILLES|FRIPOUILLE|24434|Personnes malicieuses ou espiègles
+SUPERETTES|SUPERETTE|24435|Magasins en libre service de à 
+MEDIATIONS|MEDIATION|24453|Entremises pour mettre d’accord deux personnes, deux partis|Communications entre une institution culturelle
+FASCISMES|FASCISME|24457|Toutes attitudes autoritaires
+PROJECTILES|PROJECTILE|24460|Tout corps lancés par une force quelconque
+SURFAITS|SURFAIT|24476|Estimés au-dessus de sa valeur réelle
+RASAGES|RASAGE|24491|Actions d’enlever les poils d’un textile
+TOQUES|TOQUE|24511|Cuisiniers
+DRAGS|DRAG|24522|Chasses à courre
+PRETENTIONS|PRETENTION|24526|Visées à l’esprit, au talent, à la considération
+DIGESTIONS|DIGESTION|24527|Actions de digérer
+AMANS|AMAN|24530|Grâces, pardons, absolutions
+TERRIENNES|TERRIENNE|24565|Habitantes de l’intérieur des terres
+ASSIGNE|ASSIGNER|24566|Attribue spécifiquement|Détermine
+ASSIGNENT|ASSIGNER|24566|Attribuent spécifiquement|Déterminent
+ASSIGNAIT|ASSIGNER|24566|Attribuait spécifiquement|Déterminait
+ASSIGNAIENT|ASSIGNER|24566|Attribuaient spécifiquement|Déterminaient
+ASSIGNERA|ASSIGNER|24566|Attribuera spécifiquement|Déterminera
+ASSIGNA|ASSIGNER|24566|Attribua spécifiquement|Détermina
+ASSIGNEE|ASSIGNER|24566|Déterminée
+ASSIGNES|ASSIGNER|24566|Déterminés
+ASSIGNEES|ASSIGNER|24566|Déterminées
+ANIMENT|ANIMER|24612|Encouragent, excitent
+ANIMAIT|ANIMER|24612|Encourageait, excitait
+ANIMAIENT|ANIMER|24612|Encourageaient, excitaient
+ANIMERA|ANIMER|24612|Encouragera, excitera
+ANIMA|ANIMER|24612|Encouragea, excita
+ANIMEE|ANIMER|24612|Encouragée, excitée
+ANIMEES|ANIMER|24612|Encouragées, excitées
+CLONAGES|CLONAGE|24613|Techniques de production d’un clone cellulaire
+TORRENTS|TORRENT|24623|Courants d’eau impétueux
+AIGUISES|AIGUISE|24626|Particulièrements précis, efficaces
+IMPIES|IMPIE|24628|Personnes d'une autre religion ou d'un autre rite
+RISOTTOS|RISOTTO|24646|Plats italiens à base de riz
+DEMEURENT|DEMEURER|24666|S'arrêtent assez longtemps en un lieu|Habitent, logent, font son logement
+DEMEURAIT|DEMEURER|24666|S'arrêtait assez longtemps en un lieu|Habitait, logeait, faisait son logement
+DEMEURAIENT|DEMEURER|24666|S'arrêtaient assez longtemps en un lieu|Habitaient, logeaient, faisaient son logement
+DEMEURERA|DEMEURER|24666|S'arrêtera assez longtemps en un lieu|Habitera, logera, fera son logement
+DEMEURA|DEMEURER|24666|S'arrêta assez longtemps en un lieu|Habita, logea, fit son logement
+ABREGE|ABREGER|24678|Rend plus court
+ABREGENT|ABREGER|24678|Rendent plus court
+ABREGEAIT|ABREGER|24678|Rendait plus court
+ABREGEAIENT|ABREGER|24678|Rendaient plus court
+ABREGERA|ABREGER|24678|Rendra plus court
+ABREGEA|ABREGER|24678|Rendit plus court
+BOURDONS|BOURDON|24685|Bâtons de magicien
+ROTS|ROT|24713|Émissions par la bouche, et avec bruit, de gaz stomacaux|Cris du chevreuil mâle
+POUPES|POUPE|24726|Arrières d’un navire
+ENLACE|ENLACER|24731|Attache ensemble avec un même lacet
+ENLACENT|ENLACER|24731|Attachent ensemble avec un même lacet
+ENLACAIT|ENLACER|24731|Attachait ensemble avec un même lacet
+ENLACAIENT|ENLACER|24731|Attachaient ensemble avec un même lacet
+ENLACERA|ENLACER|24731|Attachera ensemble avec un même lacet
+ENLACA|ENLACER|24731|Attacha ensemble avec un même lacet
+REDOUBLENT|REDOUBLER|24740|Augmentent
+REDOUBLAIT|REDOUBLER|24740|Augmentait
+REDOUBLAIENT|REDOUBLER|24740|Augmentaient
+REDOUBLERA|REDOUBLER|24740|Augmentera
+REDOUBLA|REDOUBLER|24740|Augmenta
+REDOUBLEE|REDOUBLER|24740|Augmentée
+REDOUBLES|REDOUBLER|24740|Augmentés
+REDOUBLEES|REDOUBLER|24740|Augmentées
+QUINTES|QUINTE|24741|Intervalles de cinq notes consécutives|Suites non interrompues de cinq cartes|Cinquièmes gardes
+OVULES|OVULE|24752|Médicaments solides
+MILITANTE|MILITANT|24778|Qui lutte, qui attaque
+FERVEURS|FERVEUR|24781|Ardeurs, zèles|Modes littéraires, philosophiques, artistiques
+NAUTIQUES|NAUTIQUE|24792|Relatifs à la navigation
+FRITURES|FRITURE|24798|Beurres, huiles
+FONTES|FONTE|24803|Conversions des monnaies de cours en d’autres monnaies nouvelles
+GROOMS|GROOM|24805|Jeunes laquais d’écurie, palefrenier|Commissionnaires
+BOUILLANTE|BOUILLANT|24813|Qui bout
+RIPOUS|RIPOU|24827|Personnages corrompus|Policiers corrompus|Pourris
+RIPOUE|RIPOU|24827|Pourrie
+RIPOUES|RIPOU|24827|Pourries
+AUDIMATS|AUDIMAT|24836|Audiences de toute production de l’esprit
+MAGNESIUMS|MAGNESIUM|24844|Corps simples métalliques de l’élément|Premiers types de flash photographique
+ASSIMILE|ASSIMILER|24845|Rend semblable
+ASSIMILENT|ASSIMILER|24845|Rendent semblable
+ASSIMILAIT|ASSIMILER|24845|Rendait semblable
+ASSIMILAIENT|ASSIMILER|24845|Rendaient semblable
+ASSIMILERA|ASSIMILER|24845|Rendra semblable
+ASSIMILA|ASSIMILER|24845|Rendit semblable
+SUCCUBES|SUCCUBE|24853|Insultes à connotation religieuse
+FAUVES|FAUVE|24875|Félins de grande taille
+GATERIES|GATERIE|24890|Friandises
+ENTRETENUS|ENTRETENU|24900|Tenus ensemble, joints
+ENTRETENUE|ENTRETENU|24900|Tenue ensemble, jointe
+ENTRETENUES|ENTRETENU|24900|Tenues ensemble, jointes
+PHOSPHORES|PHOSPHORE|24920|Corps simples de l’élément
+MATTENT|MATTER|24931|Serrent avec le matoir la soudure de deux tuyaux de fontaine
+MATTAIT|MATTER|24931|Serrait avec le matoir la soudure de deux tuyaux de fontaine
+MATTAIENT|MATTER|24931|Serraient avec le matoir la soudure de deux tuyaux de fontaine
+MATTERA|MATTER|24931|Serrera avec le matoir la soudure de deux tuyaux de fontaine
+MATTA|MATTER|24931|Serra avec le matoir la soudure de deux tuyaux de fontaine
+MATTEE|MATTER|24931|Serrée avec le matoir la soudure de deux tuyaux de fontaine
+MATTES|MATTER|24931|Serrés avec le matoir la soudure de deux tuyaux de fontaine
+MATTEES|MATTER|24931|Serrées avec le matoir la soudure de deux tuyaux de fontaine
+RANS|RAN|24935|Toits à porcs|Béliers|Trous creusés pour y planter un pied de vigne
+TERRORISE|TERRORISER|24936|Frappe de terreur
+TERRORISENT|TERRORISER|24936|Frappent de terreur
+TERRORISAIT|TERRORISER|24936|Frappait de terreur
+TERRORISERA|TERRORISER|24936|Frappera de terreur
+TERRORISA|TERRORISER|24936|Frappa de terreur
+TERRORISEE|TERRORISER|24936|Frappée de terreur
+TERRORISES|TERRORISER|24936|Frappés de terreur
+TERRORISEES|TERRORISER|24936|Frappées de terreur
+GEOLIERS|GEOLIER|24947|Les concierges de la prison
+CALOMNIES|CALOMNIE|24951|Critiques injustifiées
+PARABOLES|PARABOLE|24952|Récits allégoriques|Comparaisons
+REVETEMENTS|REVETEMENT|24967|Ouvrages de pierre
+OBEISSANTE|OBEISSANT|24982|Qui obéit
+SELFIES|SELFIE|25004|Autobiographies
+LAITIERS|LAITIER|25021|Relatifs au lait
+ARYTHMIES|ARYTHMIE|25025|Battements irréguliers du cœur
+INNOVATIONS|INNOVATION|25029|Continuations de la tige par le développement d’un bourgeon
+HERESIES|HERESIE|25034|Façons de voir|Doctrines, maximes quelconques
+CONTREES|CONTREE|25037|Certaines étendues de pays
+TIRELIRES|TIRELIRE|25038|Petits récipients de céramique
+NAZIRS|NAZIR|25043|Agents de l'administration ottomane
+DEBUSQUE|DEBUSQUER|25046|Chasse d’un poste avantageux
+DEBUSQUENT|DEBUSQUER|25046|Chassent d’un poste avantageux
+DEBUSQUAIT|DEBUSQUER|25046|Chassait d’un poste avantageux
+DEBUSQUAIENT|DEBUSQUER|25046|Chassaient d’un poste avantageux
+DEBUSQUERA|DEBUSQUER|25046|Chassera d’un poste avantageux
+DEBUSQUA|DEBUSQUER|25046|Chassa d’un poste avantageux
+DEBUSQUEE|DEBUSQUER|25046|Chassée d’un poste avantageux
+DEBUSQUES|DEBUSQUER|25046|Chassés d’un poste avantageux
+DEBUSQUEES|DEBUSQUER|25046|Chassées d’un poste avantageux
+URINAIRES|URINAIRE|25048|Relatifs à l’urine
+CHOPS|CHOP|25063|Effets coupés donnés à la balle
+ANIMOSITES|ANIMOSITE|25064|Chaleurs excessives
+PROSPERENT|PROSPERER|25067|Se développent
+PROSPERAIT|PROSPERER|25067|Se développait
+PROSPERAIENT|PROSPERER|25067|Se développaient
+PROSPERERA|PROSPERER|25067|Se développera
+PROSPERA|PROSPERER|25067|Se développa
+LOOSE|LOOSER|25073|Donne du mou, desserre|Donne du jeu, sépare, décolle
+LOOSENT|LOOSER|25073|Donnent du mou, desserrent|Donnent du jeu, séparent, décollent
+LOOSAIT|LOOSER|25073|Donnait du mou, desserrait|Donnait du jeu, séparait, décollait
+LOOSAIENT|LOOSER|25073|Donnaient du mou, desserraient|Donnaient du jeu, séparaient, décollaient
+LOOSERA|LOOSER|25073|Donnera du mou, desserrera|Donnera du jeu, séparera, décollera
+LOOSA|LOOSER|25073|Donna du mou, desserra|Donna du jeu, sépara, décolla
+LOOSEE|LOOSER|25073|Donnée du mou, desserrée|Donnée du jeu, séparée, décollée
+LOOSES|LOOSER|25073|Donnés du mou, desserrés|Donnés du jeu, séparés, décollés
+LOOSEES|LOOSER|25073|Données du mou, desserrées|Données du jeu, séparées, décollées
+DEMELE|DEMELER|25080|Sépare une chose d’autres choses avec lesquelles elle est mêlée|Discerne
+DEMELENT|DEMELER|25080|Séparent une chose d’autres choses avec lesquelles elle est mêlée|Discernent
+DEMELAIT|DEMELER|25080|Séparait une chose d’autres choses avec lesquelles elle est mêlée|Discernait
+DEMELAIENT|DEMELER|25080|Séparaient une chose d’autres choses avec lesquelles elle est mêlée|Discernaient
+DEMELERA|DEMELER|25080|Séparera une chose d’autres choses avec lesquelles elle est mêlée|Discernera
+DEMELA|DEMELER|25080|Sépara une chose d’autres choses avec lesquelles elle est mêlée|Discerna
+DEMELEE|DEMELER|25080|Discernée
+DEMELES|DEMELER|25080|Discernés
+DEMELEES|DEMELER|25080|Discernées
+ENVELOPPENT|ENVELOPPER|25083|Entourent de tous côtés quelque chose avec du papier
+ENVELOPPAIT|ENVELOPPER|25083|Entourait de tous côtés quelque chose avec du papier
+ENVELOPPERA|ENVELOPPER|25083|Entourera de tous côtés quelque chose avec du papier
+ENVELOPPA|ENVELOPPER|25083|Entoura de tous côtés quelque chose avec du papier
+ENVELOPPEES|ENVELOPPER|25083|Entourées de tous côtés quelque chose avec du papier
+ELOIGNEMENTS|ELOIGNEMENT|25108|Absences
+DERIVENT|DERIVER|25109|Détournent un cours d’eau|Tirent son origine de quelque part
+DERIVAIT|DERIVER|25109|Détournait un cours d’eau|Tirait son origine de quelque part
+DERIVAIENT|DERIVER|25109|Détournaient un cours d’eau|Tiraient son origine de quelque part
+DERIVERA|DERIVER|25109|Détournera un cours d’eau|Tirera son origine de quelque part
+DERIVA|DERIVER|25109|Détourna un cours d’eau|Tira son origine de quelque part
+EXCLAMATIONS|EXCLAMATION|25111|Cris de joie, d’admiration, de surprise, d’indignation, etc
+RECESSIONS|RECESSION|25118|Reculs, diminutions|Périodes de recul de la production
+DOCKS|DOCK|25119|Vastes bassins entourés de quais
+GENESES|GENESE|25125|Productions, développements, croissances, débuts
+FEUTRES|FEUTRE|25146|Matières fibreuses utilisées pour la lubrification
+MAINTENUES|MAINTENUE|25155|Confirmations
+LANGES|LANGE|25164|Couches
+CARROSSERIES|CARROSSERIE|25165|Ateliers de réparation de cette enveloppe
+PERCUTE|PERCUTER|25176|Affronte
+PERCUTENT|PERCUTER|25176|Affrontent
+PERCUTAIT|PERCUTER|25176|Affrontait
+PERCUTAIENT|PERCUTER|25176|Affrontaient
+PERCUTERA|PERCUTER|25176|Affrontera
+PERCUTA|PERCUTER|25176|Affronta
+PERCUTEE|PERCUTER|25176|Affrontée
+PERCUTES|PERCUTER|25176|Affrontés
+PERCUTEES|PERCUTER|25176|Affrontées
+COMESTIBLES|COMESTIBLE|25207|Produits alimentaires
+AGACENT|AGACER|25210|Affectent d’une irritation nerveuse
+AGACAIT|AGACER|25210|Affectait d’une irritation nerveuse
+AGACAIENT|AGACER|25210|Affectaient d’une irritation nerveuse
+AGACERA|AGACER|25210|Affectera d’une irritation nerveuse
+AGACA|AGACER|25210|Affecta d’une irritation nerveuse
+AGACEE|AGACER|25210|Affectée d’une irritation nerveuse
+AGACEES|AGACER|25210|Affectées d’une irritation nerveuse
+COMMANDS|COMMAND|25225|Actes par lequel une personne
+VARIATIONS|VARIATION|25236|Changements|Répétitions d’un thème avec des modifications
+ACCUMULE|ACCUMULER|25246|Amasse et met ensemble|S'amasse et se met ensemble
+ACCUMULENT|ACCUMULER|25246|Amassent et mettent ensemble|S'amassent et se mettent ensemble
+ACCUMULAIT|ACCUMULER|25246|Amassait et mettait ensemble|S'amassait et se mettait ensemble
+ACCUMULAIENT|ACCUMULER|25246|Amassaient et mettaient ensemble|S'amassaient et se mettaient ensemble
+ACCUMULERA|ACCUMULER|25246|Amassera et mettra ensemble|S'amassera et se mettra ensemble
+ACCUMULA|ACCUMULER|25246|Amassa et mit ensemble|S'amassa et se mit ensemble
+REMORQUENT|REMORQUER|25276|Traînent derrière soi
+REMORQUAIT|REMORQUER|25276|Traînait derrière soi
+REMORQUAIENT|REMORQUER|25276|Traînaient derrière soi
+REMORQUERA|REMORQUER|25276|Traînera derrière soi
+REMORQUA|REMORQUER|25276|Traîna derrière soi
+PRESBYTERES|PRESBYTERE|25286|Habitations destinées au curé, au pasteur, dans une paroisse
+ECHIQUIERS|ECHIQUIER|25300|Manières de planter les arbres
+EFFROIS|EFFROI|25301|Grandes frayeurs
+PARALYSE|PARALYSER|25319|Force l'immobilisation
+PARALYSENT|PARALYSER|25319|Forcent l'immobilisation
+PARALYSAIT|PARALYSER|25319|Forçait l'immobilisation
+PARALYSAIENT|PARALYSER|25319|Forçaient l'immobilisation
+PARALYSERA|PARALYSER|25319|Forcera l'immobilisation
+PARALYSA|PARALYSER|25319|Força l'immobilisation
+SOULIGNES|SOULIGNE|25320|Tirets bas
+OXYDES|OXYDE|25326|Résultats de la combinaison de l’oxygène avec une autre substance
+MANONS|MANON|25336|Pralines belges à la crème
+GEMISSANTE|GEMISSANT|25339|Qui gémit
+SENSUELLE|SENSUEL|25342|Qui flatte les sens
+PREVISIONS|PREVISION|25355|Annonces d’un événement futur
+PATURES|PATURE|25365|Nourritures des bêtes, des oiseaux, des poissons
+PARE|PARER|25366|Ôte de la corne du pied d’un cheval pour le ferrer
+PARAIT|PARER|25366|Ôtait de la corne du pied d’un cheval pour le ferrer
+PARAIENT|PARER|25366|Ôtaient de la corne du pied d’un cheval pour le ferrer
+PARERA|PARER|25366|Ôtera de la corne du pied d’un cheval pour le ferrer
+PARES|PARER|25366|Ôtés de la corne du pied d’un cheval pour le ferrer
+PAREES|PARER|25366|Ôtées de la corne du pied d’un cheval pour le ferrer
+GROUILLENT|GROUILLER|25404|Font du bruit
+GROUILLAIT|GROUILLER|25404|Faisait du bruit
+GROUILLAIENT|GROUILLER|25404|Faisaient du bruit
+GROUILLERA|GROUILLER|25404|Fera du bruit
+GROUILLA|GROUILLER|25404|Fit du bruit
+GROUILLEE|GROUILLER|25404|Faite du bruit
+GROUILLES|GROUILLER|25404|Faits du bruit
+GROUILLEES|GROUILLER|25404|Faites du bruit
+TUILES|TUILE|25410|Pièces de jeu plate et rigide
+RIGOUREUSE|RIGOUREUX|25426|Qui fait preuve de rigueur
+QUINTS|QUINT|25434|Cinquièmes parties dans quelque somme|Cinquièmes
+ASSEMBLAGES|ASSEMBLAGE|25436|Unions de choses morales
+ROSBIFS|ROSBIF|25439|Viandes de bœuf rôtie, et particulièrement l’aloyau
+PIPELINES|PIPELINE|25442|Systèmes à travers lequel quelque chose est conduit
+PULVERISE|PULVERISER|25466|Réalise un dépôt de matière
+PULVERISENT|PULVERISER|25466|Réalisent un dépôt de matière
+PULVERISAIT|PULVERISER|25466|Réalisait un dépôt de matière
+PULVERISERA|PULVERISER|25466|Réalisera un dépôt de matière
+PULVERISA|PULVERISER|25466|Réalisa un dépôt de matière
+EUPHORIES|EUPHORIE|25473|Sensations de bien-être
+LAMENTE|LAMENTER|25475|Manifeste sa douleur
+LAMENTENT|LAMENTER|25475|Manifestent sa douleur
+LAMENTAIT|LAMENTER|25475|Manifestait sa douleur
+LAMENTAIENT|LAMENTER|25475|Manifestaient sa douleur
+LAMENTERA|LAMENTER|25475|Manifestera sa douleur
+LAMENTA|LAMENTER|25475|Manifesta sa douleur
+SALAMS|SALAM|25478|Saluts, salutations
+ESSAIMS|ESSAIM|25496|Jeunes colonies d’abeilles domestiques|Grandes multitudes d’insectes quelconques et d’autres animaux
+CHAMANS|CHAMAN|25498|Hommes dépositaires de la culture
+CHAPELETS|CHAPELET|25499|Couronnes de roses, de fleurs|Successions de prières offertes
+SCLEROSES|SCLEROSE|25501|Durcissements pathologiques d’un organe ou d’un tissu
+BUTTES|BUTTE|25506|Petits tertres, petites collines
+HABITATIONS|HABITATION|25515|Exploitations agricoles dans les anciennes colonies françaises
+ENROULES|ENROULE|25518|Frappes à la trajectoire courbe
+DISSEQUE|DISSEQUER|25532|Divise les différentes parties d’un corps
+DISSEQUENT|DISSEQUER|25532|Divisent les différentes parties d’un corps
+DISSEQUAIT|DISSEQUER|25532|Divisait les différentes parties d’un corps
+DISSEQUAIENT|DISSEQUER|25532|Divisaient les différentes parties d’un corps
+DISSEQUERA|DISSEQUER|25532|Divisera les différentes parties d’un corps
+DISSEQUA|DISSEQUER|25532|Divisa les différentes parties d’un corps
+CLIGNENT|CLIGNER|25545|Font un signe à quelqu’un en remuant la paupière
+CLIGNAIT|CLIGNER|25545|Faisait un signe à quelqu’un en remuant la paupière
+CLIGNAIENT|CLIGNER|25545|Faisaient un signe à quelqu’un en remuant la paupière
+CLIGNERA|CLIGNER|25545|Fera un signe à quelqu’un en remuant la paupière
+CLIGNA|CLIGNER|25545|Fit un signe à quelqu’un en remuant la paupière
+NOURRISSANTE|NOURRISSANT|25561|Qui sustente
+ESSORS|ESSOR|25563|Envols d’un aéronef|Élans hâtifs
+MENSUELLE|MENSUEL|25564|Qui a lieu ou qui se fait tous les mois
+LOMBAIRES|LOMBAIRE|25577|Relatifs aux lombes
+CORNETS|CORNET|25587|Petits cors ou trompettes|Sacs en plastique ou en papier
+KYSTES|KYSTE|25593|Formations pathologiques
+REPARTITIONS|REPARTITION|25594|Partages, divisions, distributions|Dispositions dans un espace|Régulations
+GAMELLES|GAMELLE|25625|Écuelles des animaux familiers
+HUBLOTS|HUBLOT|25632|Petits sabords|Ouvertures vitrées dans les parois de la carlingue d’un avion|Fenêtres rondes
+BOURRIQUES|BOURRIQUE|25638|Ânesses|Ânes ou ânesses|Adressés par antiphrase à une relation amicale
+BANS|BAN|25651|Exils imposés à quelqu’un par proclamation
+VERNISSAGES|VERNISSAGE|25654|Présentations de nouvelles œuvres d’art
+INOUIS|INOUI|25655|Extraordinaires
+INOUIE|INOUI|25655|Extraordinaire
+INOUIES|INOUI|25655|Extraordinaires
+DOMINANTES|DOMINANTE|25659|Caractéristiques prépondérantes
+VALIDENT|VALIDER|25693|Confirment
+VALIDAIT|VALIDER|25693|Confirmait
+VALIDAIENT|VALIDER|25693|Confirmaient
+VALIDERA|VALIDER|25693|Confirmera
+VALIDA|VALIDER|25693|Confirma
+VALIDEE|VALIDER|25693|Confirmée
+VALIDES|VALIDER|25693|Confirmés
+VALIDEES|VALIDER|25693|Confirmées
+SHOOTINGS|SHOOTING|25697|Tirs, fusillades
+RANCOEURS|RANCOEUR|25720|Mécontentements
+REPTILES|REPTILE|25732|Viandes d'un de ces animaux
+KREMLINS|KREMLIN|25742|Parties centrales fortifiées d’une ville russe
+MULTIPLIENT|MULTIPLIER|25745|Font en grand nombre|Augmentent en nombre par voie de génération
+MULTIPLIAIT|MULTIPLIER|25745|Faisait en grand nombre|Augmentait en nombre par voie de génération
+MULTIPLIERA|MULTIPLIER|25745|Fera en grand nombre|Augmentera en nombre par voie de génération
+MULTIPLIA|MULTIPLIER|25745|Fit en grand nombre|Augmenta en nombre par voie de génération
+MULTIPLIEE|MULTIPLIER|25745|Faite en grand nombre|Augmentée en nombre par voie de génération
+MULTIPLIES|MULTIPLIER|25745|Faits en grand nombre|Augmentés en nombre par voie de génération
+MULTIPLIEES|MULTIPLIER|25745|Faites en grand nombre|Augmentées en nombre par voie de génération
+STUPEFAITE|STUPEFAIT|25761|Que la surprise rend comme interdit et immobile
+RAIS|RAI|25766|Pointes d’une étoile|Chacuns des rayons
+COURTISE|COURTISER|25769|Fait sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+COURTISENT|COURTISER|25769|Font sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+COURTISAIT|COURTISER|25769|Faisait sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+COURTISAIENT|COURTISER|25769|Faisaient sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+COURTISERA|COURTISER|25769|Fera sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+COURTISA|COURTISER|25769|Fit sa cour à quelqu’un dans l’espérance d’en obtenir quelque chose
+REFUTE|REFUTER|25789|Démontre le contraire de
+REFUTENT|REFUTER|25789|Démontrent le contraire de
+REFUTAIT|REFUTER|25789|Démontrait le contraire de
+REFUTAIENT|REFUTER|25789|Démontraient le contraire de
+REFUTERA|REFUTER|25789|Démontrera le contraire de
+REFUTA|REFUTER|25789|Démontra le contraire de
+TRALALAS|TRALALA|25796|Apparats, grands luxes|Trucmuches
+PALETTES|PALETTE|25804|Plaques de bois dur|Assortiments de couleurs
+FOREUSES|FOREUSE|25806|Appareils destinés au forage des puits de faible profondeur
+FORE|FORER|25821|Creuse un orifice dans une matière rigide
+FORENT|FORER|25821|Creusent un orifice dans une matière rigide
+FORAIT|FORER|25821|Creusait un orifice dans une matière rigide
+FORAIENT|FORER|25821|Creusaient un orifice dans une matière rigide
+FORERA|FORER|25821|Creusera un orifice dans une matière rigide
+FORA|FORER|25821|Creusa un orifice dans une matière rigide
+AMORCES|AMORCE|25861|Appâts fixés à l'hameçon d'une ligne de pêcheur
+LEGERETES|LEGERETE|25875|Agilités|Irréflexions
+TACHENT|TACHER|25878|Font des efforts pour venir à bout de quelque chose
+TACHAIT|TACHER|25878|Faisait des efforts pour venir à bout de quelque chose
+TACHAIENT|TACHER|25878|Faisaient des efforts pour venir à bout de quelque chose
+TACHERA|TACHER|25878|Fera des efforts pour venir à bout de quelque chose
+TACHA|TACHER|25878|Fit des efforts pour venir à bout de quelque chose
+TACHEE|TACHER|25878|Faite des efforts pour venir à bout de quelque chose
+TACHES|TACHER|25878|Faits des efforts pour venir à bout de quelque chose
+TACHEES|TACHER|25878|Faites des efforts pour venir à bout de quelque chose
+FAVELAS|FAVELA|25884|Bidonvilles brésiliens
+BARRACUDAS|BARRACUDA|25890|Bécunes, bécunes européennes
+CHAMBELLANS|CHAMBELLAN|25907|Dignitaires d’une administration royale ou pontificale
+DAUBES|DAUBE|25927|Les viandes accommodées de cette manière
+RECENSEMENTS|RECENSEMENT|25947|Nouvelles vérifications de marchandises
+CALAMITES|CALAMITE|25961|Nuisances
+CARTABLES|CARTABLE|25963|Sacs d’écolier
+SOUPLESSES|SOUPLESSE|25966|Flexibilités
+PERPETUELLE|PERPETUEL|25969|Qui ne cesse pas|Qui dure toute la vie d’un homme
+ETERNUE|ETERNUER|25970|Expire violemment
+ETERNUENT|ETERNUER|25970|Expirent violemment
+ETERNUAIT|ETERNUER|25970|Expirait violemment
+ETERNUAIENT|ETERNUER|25970|Expiraient violemment
+ETERNUERA|ETERNUER|25970|Expirera violemment
+ETERNUA|ETERNUER|25970|Expira violemment
+GANGRENES|GANGRENE|25976|Mortifications locales des tissus
+LIFTINGS|LIFTING|25982|Opérations de réarrangement ou modification superficielle d’une chose
+ECOULEMENTS|ECOULEMENT|25985|Hémorragies légères|Exportations, ventes
+FLEURIE|FLEURI|26005|Qui a de la fraîcheur, de l’éclat
+DESINFECTE|DESINFECTER|26009|Débarrasse des germes pathogènes|Débarrasse des logiciels malveillants
+DESINFECTENT|DESINFECTER|26009|Débarrassent des germes pathogènes|Débarrassent des logiciels malveillants
+DESINFECTAIT|DESINFECTER|26009|Débarrassait des germes pathogènes|Débarrassait des logiciels malveillants
+DESINFECTERA|DESINFECTER|26009|Débarrassera des germes pathogènes|Débarrassera des logiciels malveillants
+DESINFECTA|DESINFECTER|26009|Débarrassa des germes pathogènes|Débarrassa des logiciels malveillants
+DESINFECTEE|DESINFECTER|26009|Débarrassée des germes pathogènes|Débarrassée des logiciels malveillants
+DESINFECTES|DESINFECTER|26009|Débarrassés des germes pathogènes|Débarrassés des logiciels malveillants
+DESINFECTEES|DESINFECTER|26009|Débarrassées des germes pathogènes|Débarrassées des logiciels malveillants
+FANES|FANE|26051|Feuilles tombées d’un arbre|Touffes de feuilles de certains légumes|Enveloppes foliacées de la fleur des anémones et des renoncules
+LIASSES|LIASSE|26065|Recueils de documents d’affaires et de procédure
+DISSOUTS|DISSOUT|26068|Supprimés, démantelés|Désorganisés au point de disparaître
+DISSOUTE|DISSOUT|26068|Supprimée, démantelée
+DISSOUTES|DISSOUT|26068|Supprimées, démantelées
+MALLARDS|MALLARD|26074|Petites meules du rémouleur
+SPEAKERS|SPEAKER|26078|Présentateurs de télévision
+FAISANS|FAISAN|26087|Individus mâles de cet animal
+CITOYENNETES|CITOYENNETE|26091|Appartenances officielles à la population d'un pays
+SPRINTS|SPRINT|26101|Courses rapides
+SHELLS|SHELL|26134|Interfaces utilisateurs d’un système d’exploitation
+MODERATIONS|MODERATION|26136|Adoucissements, mitigations|Présentations
+REVENDIQUE|REVENDIQUER|26152|Demande à être reconnu comme l'auteur d'une action|Réclame une chose|Réclame des droits par l'action
+REVENDIQUENT|REVENDIQUER|26152|Demandent à être reconnu comme l'auteur d'une action|Réclament une chose|Réclament des droits par l'action
+REVENDIQUAIT|REVENDIQUER|26152|Demandait à être reconnu comme l'auteur d'une action|Réclamait une chose|Réclamait des droits par l'action
+REVENDIQUERA|REVENDIQUER|26152|Demandera à être reconnu comme l'auteur d'une action|Réclamera une chose|Réclamera des droits par l'action
+REVENDIQUA|REVENDIQUER|26152|Demanda à être reconnu comme l'auteur d'une action|Réclama une chose|Réclama des droits par l'action
+REVENDIQUEE|REVENDIQUER|26152|Demandée à être reconnu comme l'auteur d'une action|Réclamée des droits par l'action
+REVENDIQUES|REVENDIQUER|26152|Demandés à être reconnu comme l'auteur d'une action|Réclamés des droits par l'action
+REVENDIQUEES|REVENDIQUER|26152|Demandées à être reconnu comme l'auteur d'une action|Réclamées des droits par l'action
+INFAMIES|INFAMIE|26163|Flétrissures imprimées à l’honneur|Actions déshonorantes ou honteuses
+BILIAIRES|BILIAIRE|26182|Relatifs à la bile
+AGENTES|AGENTE|26184|Fonctionnaires de police
+DEFORMATIONS|DEFORMATION|26214|Perturbations de la forme ou de la taille d’un corps
+SYMETRIES|SYMETRIE|26216|Correspondances de grandeur|Ordres, dispositions
+SARCOPHAGES|SARCOPHAGE|26242|Cercueils de pierre
+PRATIQUANTS|PRATIQUANT|26250|Spécialements
+PRESOMPTIONS|PRESOMPTION|26254|Jugements, conjectures|Opinions trop avantageuses de soi-même
+MORDANTE|MORDANT|26260|Qui mord|Qui a une qualité corrosive|Qui provoque une sensation vive
+CAGNOTTES|CAGNOTTE|26283|Caisses communes|Sommes totales d’une caisse commune
+FORGETS|FORGET|26301|Parties en débord d’une toiture
+CHROMES|CHROME|26304|Tout accessoires décoratifs, ajouts superflus, etcs
+GARNITURES|GARNITURE|26311|Accessoires
+MEDIOCRITES|MEDIOCRITE|26326|Situations sociales
+RETENTIONS|RETENTION|26328|Réservations
+GROSSEURS|GROSSEUR|26337|Volumes d’un corps
+VISUALISE|VISUALISER|26338|Rend visible un phénomène qui ne l’est pas|Forme une vision d’un concept dans son esprit
+VISUALISENT|VISUALISER|26338|Rendent visible un phénomène qui ne l’est pas|Forment une vision d’un concept dans son esprit
+VISUALISAIT|VISUALISER|26338|Rendait visible un phénomène qui ne l’est pas|Formait une vision d’un concept dans son esprit
+VISUALISERA|VISUALISER|26338|Rendra visible un phénomène qui ne l’est pas|Formera une vision d’un concept dans son esprit
+VISUALISA|VISUALISER|26338|Rendit visible un phénomène qui ne l’est pas|Forma une vision d’un concept dans son esprit
+SURREALISTES|SURREALISTE|26342|Impensables, extraordinaires
+CHIGNONS|CHIGNON|26366|Les derrières du cou
+BAZOOKAS|BAZOOKA|26368|Moyens extrêmes
+MOBILISENT|MOBILISER|26382|Font appel à|Mettent au service des autorités militaires|Mettent une armée sur le pied de guerre en rappelant ses réserves
+MOBILISAIT|MOBILISER|26382|Faisait appel à|Mettait au service des autorités militaires|Mettait une armée sur le pied de guerre en rappelant ses réserves
+MOBILISAIENT|MOBILISER|26382|Faisaient appel à|Mettaient au service des autorités militaires|Mettaient une armée sur le pied de guerre en rappelant ses réserves
+MOBILISERA|MOBILISER|26382|Fera appel à|Mettra au service des autorités militaires|Mettra une armée sur le pied de guerre en rappelant ses réserves
+MOBILISA|MOBILISER|26382|Fit appel à|Mit au service des autorités militaires|Mit une armée sur le pied de guerre en rappelant ses réserves
+MOBILISEE|MOBILISER|26382|Mise au service des autorités militaires
+MOBILISES|MOBILISER|26382|Mis au service des autorités militaires
+MOBILISEES|MOBILISER|26382|Mises au service des autorités militaires
+SAXOPHONES|SAXOPHONE|26385|Instruments de musique à clefs de la famille des bois
+RENTES|RENTE|26413|Revenus périodiques|Revenus obligataires
+PERRONS|PERRON|26418|Petites vérandas
+DEGRADES|DEGRADE|26428|Progressifs
+INSISTANTS|INSISTANT|26429|Persistants
+INSISTANTE|INSISTANT|26429|Qui se montre pressant|Persistante
+INSISTANTES|INSISTANT|26429|Persistantes
+ETONNEMENTS|ETONNEMENT|26431|Vives surprises|Surprises mêlées d’admiration|Ébranlements d'un bâtiment suite à un choc
+NOUES|NOUE|26440|Liés par un nœud
+SURVOLE|SURVOLER|26446|Domine fortement
+SURVOLENT|SURVOLER|26446|Dominent fortement
+SURVOLAIT|SURVOLER|26446|Dominait fortement
+SURVOLAIENT|SURVOLER|26446|Dominaient fortement
+SURVOLERA|SURVOLER|26446|Dominera fortement
+SURVOLA|SURVOLER|26446|Domina fortement
+DEGAINENT|DEGAINER|26495|Mettent l’épée à la main pour se battre
+DEGAINAIT|DEGAINER|26495|Mettait l’épée à la main pour se battre
+DEGAINAIENT|DEGAINER|26495|Mettaient l’épée à la main pour se battre
+DEGAINERA|DEGAINER|26495|Mettra l’épée à la main pour se battre
+DEGAINA|DEGAINER|26495|Mit l’épée à la main pour se battre
+TRAITRISES|TRAITRISE|26496|Actes de trahison
+EBAUCHES|EBAUCHE|26503|Formes préparatoires d’un ouvrage d’art|Premiers stades d’exécution d’une œuvre d’art
+LOBBYS|LOBBY|26526|Halls d’accueil d’un hôtel
+NESTORS|NESTOR|26532|Vieillards respectables par son âge et par la sagesse de ses conseils
+BRAILLENT|BRAILLER|26535|Pleurent en criant
+BRAILLAIT|BRAILLER|26535|Pleurait en criant
+BRAILLAIENT|BRAILLER|26535|Pleuraient en criant
+BRAILLERA|BRAILLER|26535|Pleurera en criant
+BRAILLA|BRAILLER|26535|Pleura en criant
+BRAILLEE|BRAILLER|26535|Pleurée en criant
+BRAILLES|BRAILLER|26535|Pleurés en criant
+BRAILLEES|BRAILLER|26535|Pleurées en criant
+SITUENT|SITUER|26536|Placent, posent en certain endroit par rapport à l’exposition
+SITUAIT|SITUER|26536|Plaçait, posait en certain endroit par rapport à l’exposition
+SITUAIENT|SITUER|26536|Plaçaient, posaient en certain endroit par rapport à l’exposition
+SITUERA|SITUER|26536|Placera, posera en certain endroit par rapport à l’exposition
+SITUA|SITUER|26536|Plaça, posa en certain endroit par rapport à l’exposition
+SITUEE|SITUER|26536|Placée, posée en certain endroit par rapport à l’exposition
+SITUES|SITUER|26536|Placés, posés en certain endroit par rapport à l’exposition
+SITUEES|SITUER|26536|Placées, posées en certain endroit par rapport à l’exposition
+DEGOTE|DEGOTER|26556|Tente de trouver quelque chose|Fait tomber une cible
+DEGOTENT|DEGOTER|26556|Tentent de trouver quelque chose|Font tomber une cible
+DEGOTAIT|DEGOTER|26556|Tentait de trouver quelque chose|Faisait tomber une cible
+DEGOTAIENT|DEGOTER|26556|Tentaient de trouver quelque chose|Faisaient tomber une cible
+DEGOTERA|DEGOTER|26556|Tentera de trouver quelque chose|Fera tomber une cible
+DEGOTA|DEGOTER|26556|Tenta de trouver quelque chose|Fit tomber une cible
+DEGOTEE|DEGOTER|26556|Tentée de trouver quelque chose
+DEGOTES|DEGOTER|26556|Tentés de trouver quelque chose
+DEGOTEES|DEGOTER|26556|Tentées de trouver quelque chose
+CONSORTIUMS|CONSORTIUM|26568|Associations d’entreprises pour des opérations en commun|Accords en vue d’un objet
+DATENT|DATER|26574|Prennent pour point de départ
+DATAIT|DATER|26574|Prenait pour point de départ
+DATAIENT|DATER|26574|Prenaient pour point de départ
+DATERA|DATER|26574|Prendra pour point de départ
+DATEE|DATER|26574|Prise pour point de départ
+DATEES|DATER|26574|Prises pour point de départ
+PENALITES|PENALITE|26578|Applications d’une peine
+DOMPTE|DOMPTER|26586|Fait obéir
+DOMPTENT|DOMPTER|26586|Font obéir
+DOMPTAIT|DOMPTER|26586|Faisait obéir
+DOMPTAIENT|DOMPTER|26586|Faisaient obéir
+DOMPTERA|DOMPTER|26586|Fera obéir
+DOMPTA|DOMPTER|26586|Fit obéir
+EQUITES|EQUITE|26599|Les justes répartitions de la richesse collective
+PANCAKES|PANCAKE|26612|Crêpes épaisses de petit format
+SERENADES|SERENADE|26624|Concerts de voix ou d’instruments|Compositions musicales
+TRAUMATIQUES|TRAUMATIQUE|26636|Relatifs aux plaies, aux blessures
+NOMINES|NOMINE|26642|Candidats présélectionnés pour un concours de cinéma
+REFERE|REFERER|26650|Rapporte une chose à une autre|Attribue
+REFERENT|REFERER|26650|Rapportent une chose à une autre|Attribuent
+REFERAIT|REFERER|26650|Rapportait une chose à une autre|Attribuait
+REFERAIENT|REFERER|26650|Rapportaient une chose à une autre|Attribuaient
+REFERERA|REFERER|26650|Rapportera une chose à une autre|Attribuera
+REFERA|REFERER|26650|Rapporta une chose à une autre|Attribua
+REFEREE|REFERER|26650|Attribuée
+REFERES|REFERER|26650|Attribués
+REFEREES|REFERER|26650|Attribuées
+GOUJATS|GOUJAT|26655|Valets de ferme
+COUPONS|COUPON|26670|Bons d’échange
+AMELIES|AMELIE|26676|Absences congénitales d’un ou de plusieurs membres
+IMPARFAITE|IMPARFAIT|26694|Dont un ou plusieurs éléments présentent des défauts
+REGENERE|REGENERER|26703|Reconstitue|Engendre de nouveau, donne une nouvelle naissance
+REGENERENT|REGENERER|26703|Reconstituent|Engendrent de nouveau, donnent une nouvelle naissance
+REGENERAIT|REGENERER|26703|Reconstituait|Engendrait de nouveau, donnait une nouvelle naissance
+REGENERAIENT|REGENERER|26703|Reconstituaient|Engendraient de nouveau, donnaient une nouvelle naissance
+REGENERERA|REGENERER|26703|Reconstituera|Engendrera de nouveau, donnera une nouvelle naissance
+REGENERA|REGENERER|26703|Reconstitua|Engendra de nouveau, donna une nouvelle naissance
+REGENEREE|REGENERER|26703|Reconstituée
+REGENERES|REGENERER|26703|Reconstitués
+REGENEREES|REGENERER|26703|Reconstituées
+OTHELLOS|OTHELLO|26716|Ceps de ce cépage|Vins de ce cépage
+RESINES|RESINE|26736|Matières inflammables|Préparations réactives
+EFFRONTEES|EFFRONTEE|26739|Personnages sans honte de rien
+RAVIVE|RAVIVER|26748|Rend l'éclat perdu
+RAVIVENT|RAVIVER|26748|Rendent l'éclat perdu
+RAVIVAIT|RAVIVER|26748|Rendait l'éclat perdu
+RAVIVAIENT|RAVIVER|26748|Rendaient l'éclat perdu
+RAVIVERA|RAVIVER|26748|Rendra l'éclat perdu
+RAVIVA|RAVIVER|26748|Rendit l'éclat perdu
+SYLVAINE|SYLVAIN|26752|Qui vit dans la forêt, sylvestre
+PROPANES|PROPANE|26778|Hydrocarbures saturés de la famille des paraffines
+RATISSE|RATISSER|26782|Ôte, emporte
+RATISSENT|RATISSER|26782|Ôtent, emportent
+RATISSAIT|RATISSER|26782|Ôtait, emportait
+RATISSAIENT|RATISSER|26782|Ôtaient, emportaient
+RATISSERA|RATISSER|26782|Ôtera, emportera
+RATISSA|RATISSER|26782|Ôta, emporta
+RATISSEE|RATISSER|26782|Ôtée, emportée
+RATISSES|RATISSER|26782|Ôtés, emportés
+RATISSEES|RATISSER|26782|Ôtées, emportées
+PUISE|PUISER|26796|Prend de l’eau dans un puits|Prend avec une louche
+PUISENT|PUISER|26796|Prennent de l’eau dans un puits|Prennent avec une louche
+PUISAIT|PUISER|26796|Prenait de l’eau dans un puits|Prenait avec une louche
+PUISAIENT|PUISER|26796|Prenaient de l’eau dans un puits|Prenaient avec une louche
+PUISERA|PUISER|26796|Prendra de l’eau dans un puits|Prendra avec une louche
+PUISA|PUISER|26796|Prit de l’eau dans un puits|Prit avec une louche
+PUISEE|PUISER|26796|Prise de l’eau dans un puits|Prise avec une louche
+PUISES|PUISER|26796|Pris de l’eau dans un puits|Pris avec une louche
+PUISEES|PUISER|26796|Prises de l’eau dans un puits|Prises avec une louche
+CONDES|CONDE|26801|Permissions accordées
+PALMIERS|PALMIER|26816|Viennoiseries
+TELEGRAPHES|TELEGRAPHE|26817|Supports utilisés par les taxidermistes
+SQUATS|SQUAT|26824|Phénomènes de surenfoncement d’un navire en route
+BABETTES|BABETTE|26825|Cornholes
+ECARLATES|ECARLATE|26849|Étoffes teintes avec ce colorant, ou un de même couleur|Couleurs rouges claires et vives correspondantes
+AFFOLENT|AFFOLER|26851|Rendent comme fou
+AFFOLAIT|AFFOLER|26851|Rendait comme fou
+AFFOLAIENT|AFFOLER|26851|Rendaient comme fou
+AFFOLERA|AFFOLER|26851|Rendra comme fou
+AFFOLA|AFFOLER|26851|Rendit comme fou
+AFFOLEE|AFFOLER|26851|Rendue comme fou
+AFFOLES|AFFOLER|26851|Rendus comme fou
+AFFOLEES|AFFOLER|26851|Rendues comme fou
+MANTES|MANTE|26864|Vêtements de femme|Grandes capes
+CALINENT|CALINER|26885|Traitent avec douceur, caressent quelqu’un
+CALINAIT|CALINER|26885|Traitait avec douceur, caressait quelqu’un
+CALINAIENT|CALINER|26885|Traitaient avec douceur, caressaient quelqu’un
+CALINERA|CALINER|26885|Traitera avec douceur, caressera quelqu’un
+CALINA|CALINER|26885|Traita avec douceur, caressa quelqu’un
+HUE|HUER|26892|Pousse leur cri
+HUENT|HUER|26892|Poussent leur cri
+HUAIT|HUER|26892|Poussait leur cri
+HUAIENT|HUER|26892|Poussaient leur cri
+HUERA|HUER|26892|Poussera leur cri
+HUA|HUER|26892|Poussa leur cri
+VICOMTES|VICOMTE|26898|Simples titres de noblesse
+PANSES|PANSE|26899|Parties renflées d’une chose|Bedaines
+LEGITIMITES|LEGITIMITE|26950|Reconnaissances du droit à exercer le pouvoir
+SOLES|SOLE|26952|Parties inférieures creuses du sabot
+GRAVURES|GRAVURE|26974|Ouvrages du graveur
+LAQUES|LAQUE|26995|Terres alumineuses
+BOURDES|BOURDE|26999|Erreurs grossières, bévues, impairs ou pataquès|Fautes d’orthographe
+ZOOME|ZOOMER|27010|Modifie l’affichage d’une image pour la voir en gros plan
+ZOOMENT|ZOOMER|27010|Modifient l’affichage d’une image pour la voir en gros plan
+ZOOMAIT|ZOOMER|27010|Modifiait l’affichage d’une image pour la voir en gros plan
+ZOOMAIENT|ZOOMER|27010|Modifiaient l’affichage d’une image pour la voir en gros plan
+ZOOMERA|ZOOMER|27010|Modifiera l’affichage d’une image pour la voir en gros plan
+ZOOMA|ZOOMER|27010|Modifia l’affichage d’une image pour la voir en gros plan
+POULPES|POULPE|27019|Pieuvres
+EPIE|EPIER|27023|Monte en épi
+EPIENT|EPIER|27023|Montent en épi
+EPIAIT|EPIER|27023|Montait en épi
+EPIAIENT|EPIER|27023|Montaient en épi
+EPIERA|EPIER|27023|Montera en épi
+EPIA|EPIER|27023|Monta en épi
+EPIEE|EPIER|27023|Montée en épi
+EPIES|EPIER|27023|Montés en épi
+EPIEES|EPIER|27023|Montées en épi
+RUGISSEMENTS|RUGISSEMENT|27024|Actions de rugir
+ENVIENT|ENVIER|27037|Désirent pour soi les avantages d’autrui|Souhaitent pour soi-même un bonheur
+ENVIAIT|ENVIER|27037|Désirait pour soi les avantages d’autrui|Souhaitait pour soi-même un bonheur
+ENVIAIENT|ENVIER|27037|Désiraient pour soi les avantages d’autrui|Souhaitaient pour soi-même un bonheur
+ENVIERA|ENVIER|27037|Désirera pour soi les avantages d’autrui|Souhaitera pour soi-même un bonheur
+ENVIA|ENVIER|27037|Désira pour soi les avantages d’autrui|Souhaita pour soi-même un bonheur
+ENVIEE|ENVIER|27037|Désirée pour soi les avantages d’autrui|Souhaitée pour soi-même un bonheur
+ENVIEES|ENVIER|27037|Désirées pour soi les avantages d’autrui|Souhaitées pour soi-même un bonheur
+KOTAS|KOTA|27040|Chalets de style finlandais, en bois brut
+CITERNES|CITERNE|27042|Réservoirs souterrains ou non|Cuves de stockage de liquides, de gaz ou de produits en vrac
+SELLETTES|SELLETTE|27047|Petits sièges de bois fort bas|Pièces du harnais d’un cheval de trait
+INONDENT|INONDER|27050|Mouillent beaucoup|Occupent tout l’espace
+INONDAIT|INONDER|27050|Mouillait beaucoup|Occupait tout l’espace
+INONDAIENT|INONDER|27050|Mouillaient beaucoup|Occupaient tout l’espace
+INONDERA|INONDER|27050|Mouillera beaucoup|Occupera tout l’espace
+INONDA|INONDER|27050|Mouilla beaucoup|Occupa tout l’espace
+HIPPODROMES|HIPPODROME|27057|Cirques disposés pour les courses de chevaux et de chars|Circuits d'attente en vol d'un aéronef en approche
+MEULES|MEULE|27059|Roues de grès
+LEGISLATIONS|LEGISLATION|27065|Droits de faire les lois
+CALIFORNIENS|CALIFORNIEN|27076|Races de lapins
+CHEVREUILS|CHEVREUIL|27096|Viandes de cet animal
+CARAFES|CARAFE|27097|Récipients cylindriques en verre
+BATHS|BATH|27100|Papiers à lettre de provenance anglaise
+IDENTIFIANTS|IDENTIFIANT|27107|Clés primaires
+FRENESIES|FRENESIE|27110|Fureurs violentes
+PERIPHERIES|PERIPHERIE|27119|Proximités
+DIAGRAMMES|DIAGRAMME|27121|Figures linéaires destinées à faciliter une démonstration
+FETARDE|FETARD|27129|Qui aime faire la fête
+OBSTETRIQUES|OBSTETRIQUE|27132|Parties de la médecine relative aux accouchements
+PANACHES|PANACHE|27147|Attitudes morales analogues
+ENRICHIS|ENRICHI|27157|Devenus riches
+ENRICHIE|ENRICHI|27157|Devenue riche
+ENRICHIES|ENRICHI|27157|Devenues riches
+POUILLEUSE|POUILLEUX|27158|Qui a des poux
+IMPERTINENTE|IMPERTINENT|27171|Qui parle ou qui agit soit avec hauteur et mépris
+ROULOTTES|ROULOTTE|27178|Voitures de toute espèce
+FLAMBENT|FLAMBER|27187|Se déforment dans une direction perpendiculaire à la force appliquée|Passent sur le feu
+FLAMBAIT|FLAMBER|27187|Se déformait dans une direction perpendiculaire à la force appliquée|Passait sur le feu
+FLAMBAIENT|FLAMBER|27187|Se déformaient dans une direction perpendiculaire à la force appliquée|Passaient sur le feu
+FLAMBERA|FLAMBER|27187|Se déformera dans une direction perpendiculaire à la force appliquée|Passera sur le feu
+FLAMBA|FLAMBER|27187|Se déforma dans une direction perpendiculaire à la force appliquée|Passa sur le feu
+FLAMBEE|FLAMBER|27187|Passée sur le feu
+FLAMBES|FLAMBER|27187|Passés sur le feu
+FLAMBEES|FLAMBER|27187|Passées sur le feu
+VENTRICULES|VENTRICULE|27209|Cavités de certains organes
+FRATERNELS|FRATERNEL|27220|Relatifs au frère, à des frères
+MOBILITES|MOBILITE|27221|Facilités à être mû|Facilités à changer
+FERROVIAIRES|FERROVIAIRE|27228|Relatifs aux chemins de fer
+HAHAS|HAHA|27231|Discontinuités dans un escalier|Ouvertures pratiquées dans un mur afin d’ouvrir la vue
+DETRIMENTS|DETRIMENT|27236|Dommages, préjudices, désavantages
+IMMOBILISE|IMMOBILISER|27254|Fait un placement de capitaux qui rend ces capitaux indisponibles
+IMMOBILISENT|IMMOBILISER|27254|Font un placement de capitaux qui rend ces capitaux indisponibles
+IMMOBILISAIT|IMMOBILISER|27254|Faisait un placement de capitaux qui rend ces capitaux indisponibles
+IMMOBILISERA|IMMOBILISER|27254|Fera un placement de capitaux qui rend ces capitaux indisponibles
+IMMOBILISA|IMMOBILISER|27254|Fit un placement de capitaux qui rend ces capitaux indisponibles
+ANGINES|ANGINE|27261|Inflammations des amygdales
+INSISTANCES|INSISTANCE|27290|Les vérités de l'existence
+ILLUMINENT|ILLUMINER|27300|Éclairent d’une vive lumière|Éclairent l’âme
+ILLUMINAIT|ILLUMINER|27300|Éclairait d’une vive lumière|Éclairait l’âme
+ILLUMINAIENT|ILLUMINER|27300|Éclairaient d’une vive lumière|Éclairaient l’âme
+ILLUMINERA|ILLUMINER|27300|Éclairera d’une vive lumière|Éclairera l’âme
+ILLUMINA|ILLUMINER|27300|Éclaira d’une vive lumière|Éclaira l’âme
+ILLUMINEE|ILLUMINER|27300|Éclairée d’une vive lumière
+ILLUMINES|ILLUMINER|27300|Éclairés d’une vive lumière
+ILLUMINEES|ILLUMINER|27300|Éclairées d’une vive lumière
+QUICHES|QUICHE|27314|Tartes salées remplies d’un mélange de lait ou de crème
+DEDIENT|DEDIER|27335|Consacrent au culte divin|Mettent sous l’invocation d’un saint|Consacrent
+DEDIAIT|DEDIER|27335|Consacrait au culte divin|Mettait sous l’invocation d’un saint|Consacrait
+DEDIAIENT|DEDIER|27335|Consacraient au culte divin|Mettaient sous l’invocation d’un saint|Consacraient
+DEDIERA|DEDIER|27335|Consacrera au culte divin|Mettra sous l’invocation d’un saint|Consacrera
+DEDIA|DEDIER|27335|Consacra au culte divin|Mit sous l’invocation d’un saint|Consacra
+DEDIEE|DEDIER|27335|Consacrée au culte divin|Mise sous l’invocation d’un saint|Consacrée
+DEDIES|DEDIER|27335|Consacrés au culte divin|Mis sous l’invocation d’un saint|Consacrés
+DEDIEES|DEDIER|27335|Consacrées au culte divin|Mises sous l’invocation d’un saint|Consacrées
+INTERPOSE|INTERPOSER|27342|Met une chose entre deux autres|Place comme médiateur
+INTERPOSENT|INTERPOSER|27342|Mettent une chose entre deux autres|Placent comme médiateur
+INTERPOSAIT|INTERPOSER|27342|Mettait une chose entre deux autres|Plaçait comme médiateur
+INTERPOSERA|INTERPOSER|27342|Mettra une chose entre deux autres|Placera comme médiateur
+INTERPOSA|INTERPOSER|27342|Mit une chose entre deux autres|Plaça comme médiateur
+INTERPOSEE|INTERPOSER|27342|Placée comme médiateur
+INTERPOSES|INTERPOSER|27342|Placés comme médiateur
+INTERPOSEES|INTERPOSER|27342|Placées comme médiateur
+DERIVATIONS|DERIVATION|27348|Actions de faire sortir un mot d’un autre|Connexions entre deux points d'un circuit électrique|Actions pour un navire de sortir de sa ligne de direction
+PILOTS|PILOT|27350|Chiffons pour la fabrication du papier
+BANCOS|BANCO|27379|Valeurs en banque
+PARTERRES|PARTERRE|27381|Parties découvertes d’un jardin|Assemblées, groupes
+DIMINUTIONS|DIMINUTION|27387|Réductions du nombre de mailles d’un rang en cours de tricotage
+SOTTISES|SOTTISE|27393|Défauts d’esprit et de jugement|Gauloiseries, paroles indécentes|Injures
+METHADONES|METHADONE|27408|Opioïdes analgésiques
+BLANCOS|BLANCO|27426|Correcteurs liquides|Rubans correcteurs
+ENDURCIS|ENDURCI|27438|Rendus durs
+ENDURCIE|ENDURCI|27438|Rendue dure
+ENDURCIES|ENDURCI|27438|Rendues dures
+DISJONCTEURS|DISJONCTEUR|27444|Organes de protection électromécanique
+FABLES|FABLE|27447|Sujets de malins récits|Faussetés
+TOURELLES|TOURELLE|27449|Petites tours|Tours cuirassées|Postes de mitraillage de certains bombardiers
+TIMIDITES|TIMIDITE|27465|Sentiments d’appréhension face à une situation sociale|Esprits, actions
+FRIGIDES|FRIGIDE|27494|Très froids
+PERFORATIONS|PERFORATION|27499|Actions de percer quelque chose|Ouvertures accidentelles produites par une blessure
+PAVANE|PAVANER|27504|Marche d’une manière fière|Fait le fier
+PAVANENT|PAVANER|27504|Marchent d’une manière fière|Font le fier
+PAVANAIT|PAVANER|27504|Marchait d’une manière fière|Faisait le fier
+PAVANAIENT|PAVANER|27504|Marchaient d’une manière fière|Faisaient le fier
+PAVANERA|PAVANER|27504|Marchera d’une manière fière|Fera le fier
+PAVANA|PAVANER|27504|Marcha d’une manière fière|Fit le fier
+PAVANEE|PAVANER|27504|Marchée d’une manière fière
+PAVANES|PAVANER|27504|Marchés d’une manière fière
+PAVANEES|PAVANER|27504|Marchées d’une manière fière
+MUTILATIONS|MUTILATION|27510|Dégradations des statues
+CRUCIFIE|CRUCIFIER|27521|Met en croix pour faire mourir
+CRUCIFIENT|CRUCIFIER|27521|Mettent en croix pour faire mourir
+CRUCIFIAIT|CRUCIFIER|27521|Mettait en croix pour faire mourir
+CRUCIFIAIENT|CRUCIFIER|27521|Mettaient en croix pour faire mourir
+CRUCIFIERA|CRUCIFIER|27521|Mettra en croix pour faire mourir
+CRUCIFIA|CRUCIFIER|27521|Mit en croix pour faire mourir
+CRUCIFIEE|CRUCIFIER|27521|Mise en croix pour faire mourir
+CRUCIFIES|CRUCIFIER|27521|Mis en croix pour faire mourir
+CRUCIFIEES|CRUCIFIER|27521|Mises en croix pour faire mourir
+ASTIQUE|ASTIQUER|27525|Rend brillant par le frottement|Fait sa toilette
+ASTIQUENT|ASTIQUER|27525|Rendent brillant par le frottement|Font sa toilette
+ASTIQUAIT|ASTIQUER|27525|Rendait brillant par le frottement|Faisait sa toilette
+ASTIQUAIENT|ASTIQUER|27525|Rendaient brillant par le frottement|Faisaient sa toilette
+ASTIQUERA|ASTIQUER|27525|Rendra brillant par le frottement|Fera sa toilette
+ASTIQUA|ASTIQUER|27525|Rendit brillant par le frottement|Fit sa toilette
+FAROUCHES|FAROUCHE|27542|Sauvages, indomptés|Craintifs, ombrageux|Craintifs, peureux
+FLANQUE|FLANQUER|27549|Se place sur le flanc d’un régiment
+FLANQUENT|FLANQUER|27549|Se placent sur le flanc d’un régiment
+FLANQUAIT|FLANQUER|27549|Se plaçait sur le flanc d’un régiment
+FLANQUAIENT|FLANQUER|27549|Se plaçaient sur le flanc d’un régiment
+FLANQUERA|FLANQUER|27549|Se placera sur le flanc d’un régiment
+FLANQUA|FLANQUER|27549|Se plaça sur le flanc d’un régiment
+BRAISES|BRAISE|27553|Bois réduits en charbons ardents|Résidus d’un feu
+FERMETES|FERMETE|27561|Qualités d’un corps solide, compact|Vigueurs, forces|Exécutions vigoureuses et hardies
+GAPS|GAP|27604|Écarts très grands entre deux choses
+SONIQUES|SONIQUE|27616|Relatifs à la vitesse du son
+TREMPLINS|TREMPLIN|27617|Planches inclinées
+AMPLIS|AMPLI|27618|Rembourrages de soutien-gorge
+LOCHS|LOCH|27637|Plans d’eau, lac
+SUPREMATIES|SUPREMATIE|27643|Supériorités, prééminences
+CHYPRES|CHYPRE|27645|Parfums composés
+FRICTIONS|FRICTION|27662|Lotions faites sur le cuir chevelu
+REPRIME|REPRIMER|27686|Empêche quelque chose de se développer
+REPRIMENT|REPRIMER|27686|Empêchent quelque chose de se développer
+REPRIMAIT|REPRIMER|27686|Empêchait quelque chose de se développer
+REPRIMAIENT|REPRIMER|27686|Empêchaient quelque chose de se développer
+REPRIMERA|REPRIMER|27686|Empêchera quelque chose de se développer
+REPRIMA|REPRIMER|27686|Empêcha quelque chose de se développer
+PRECIPICES|PRECIPICE|27722|Abîmes, gouffres, cavités très profondes et très escarpées
+FIGURENT|FIGURER|27736|Représentent par le dessin|Donnent l'apparence d'une chose|Représentent par un symbole
+FIGURAIT|FIGURER|27736|Représentait par le dessin|Donnait l'apparence d'une chose|Représentait par un symbole
+FIGURAIENT|FIGURER|27736|Représentaient par le dessin|Donnaient l'apparence d'une chose|Représentaient par un symbole
+FIGURERA|FIGURER|27736|Représentera par le dessin|Donnera l'apparence d'une chose|Représentera par un symbole
+FIGURA|FIGURER|27736|Représenta par le dessin|Donna l'apparence d'une chose|Représenta par un symbole
+FIGUREE|FIGURER|27736|Représentée par le dessin|Représentée par un symbole
+FIGUREES|FIGURER|27736|Représentées par le dessin|Représentées par un symbole
+VENERE|VENERER|27756|Rend un culte à un dieu
+VENERENT|VENERER|27756|Rendent un culte à un dieu
+VENERAIT|VENERER|27756|Rendait un culte à un dieu
+VENERAIENT|VENERER|27756|Rendaient un culte à un dieu
+VENERERA|VENERER|27756|Rendra un culte à un dieu
+VENERA|VENERER|27756|Rendit un culte à un dieu
+CONSTATS|CONSTAT|27789|Actes par lequel un officier ministériel
+RESIGNE|RESIGNER|27795|Abandonne, renonce à
+RESIGNENT|RESIGNER|27795|Abandonnent, renoncent à
+RESIGNAIT|RESIGNER|27795|Abandonnait, renonçait à
+RESIGNAIENT|RESIGNER|27795|Abandonnaient, renonçaient à
+RESIGNERA|RESIGNER|27795|Abandonnera, renoncera à
+RESIGNA|RESIGNER|27795|Abandonna, renonça à
+RESIGNEE|RESIGNER|27795|Abandonnée, renoncée à
+RESIGNES|RESIGNER|27795|Abandonnés, renoncés à
+RESIGNEES|RESIGNER|27795|Abandonnées, renoncées à
+MAMBOS|MAMBO|27800|Musiques cubaines proches du danzón|Danses inspirées par cette musique|Prêtresses vaudoues
+CENTENAIRES|CENTENAIRE|27826|Personnes âgées de cent ans ou plus
+BOUFFIS|BOUFFI|27833|Enflés de façon malsaine, maladive
+CONVENANCES|CONVENANCE|27856|Commodités
+RECURRENTE|RECURRENT|27896|Qui revient, qui remonte vers son origine
+TOGES|TOGE|27899|Robes de laine fort ample et longue
+NEONS|NEON|27912|Gaz presque inertes, inodores et incolores|Tubes lumineux|Enseignes lumineuses constituées de tubes luminescents
+SUCONS|SUCON|27933|Sucettes
+ABORDAGES|ABORDAGE|27935|Collisions accidentelles entre deux navires|Faits d’atteindre la côte, le rivage|Rencontres hostiles entre deux personnes
+CONTINUITES|CONTINUITE|27950|Liaisons non interrompues des parties d’un tout|Propriétés topologiques d’une fonction
+REALISMES|REALISME|27953|Doctrines platoniciennes
+REELECTIONS|REELECTION|27956|Actions d’élire de nouveau
+LEVIATHANS|LEVIATHAN|27969|Machines pour le dessuintage des laines
+BEQUILLES|BEQUILLE|27971|Pieds supplémentaires|Poignées d’un bec-de-cane
+BOLOGNES|BOLOGNE|27991|Saucisses américaines similaires à la mortadelle
+EMOIS|EMOI|27995|Fortes inquiétudes|Émotions plus ou moins troublantes
+HARPIES|HARPIE|28001|Monstres fabuleux
+LYMPHOMES|LYMPHOME|28005|Tumeurs composées de tissu adénoïde typique
+ADORATIONS|ADORATION|28012|Actions d’adorer|Amours, attachements extrêmes
+VERSANTS|VERSANT|28019|Chacunes des pentes d’une montagne, d’un volcan, etc
+VERSANTE|VERSANT|28019|Où l’eau affleure et s’écoule, en parlant d’un terrain|Qui verse de l’argent, en parlant d’une personne morale
+PATELINE|PATELIN|28032|Qui tâche d’en venir à ses fins par des manières flatteuses
+DEBATTUS|DEBATTU|28056|Appareils de gâteau
+BAIONNETTES|BAIONNETTE|28058|Soldats armés d’une telle arme|Déviations d’un tuyau faite de deux coudes identiques
+REMPARTS|REMPART|28060|Levées de terre
+AVERSIONS|AVERSION|28069|Violentes antipathies
+DESOLATIONS|DESOLATION|28081|Extrêmes afflictions|Simples contrariétés|Actions de transformer une région
+CUEILLES|CUEILLE|28098|Rues pentues, côtes
+LOUVES|LOUVE|28102|Loups femelles|Coins métalliques utilisés pour le levage des pierres de taille
+LUBIES|LUBIE|28112|Fantaisies soudaines
+BALOURDS|BALOURD|28116|Grossiers et maladroits|Personnes grossières et maladroites
+BALOURDE|BALOURD|28116|Grossière et maladroite
+BALOURDES|BALOURD|28116|Grossières et maladroites
+SHABBATS|SHABBAT|28119|Jours de repos dans la religion juive et judéo-chrétienne
+NEGRESSES|NEGRESSE|28138|Esclaves noires
+EBRANLENT|EBRANLER|28153|Se mettent en mouvement
+EBRANLAIT|EBRANLER|28153|Se mettait en mouvement
+EBRANLAIENT|EBRANLER|28153|Se mettaient en mouvement
+EBRANLERA|EBRANLER|28153|Se mettra en mouvement
+EBRANLA|EBRANLER|28153|Se mit en mouvement
+SOLLICITE|SOLLICITER|28160|Incite ou excite à faire quelque chose|Fait rendre à une chose plus qu’elle ne contient|Anime par des besoins physiques tels que la faim
+SOLLICITENT|SOLLICITER|28160|Incitent ou excitent à faire quelque chose|Font rendre à une chose plus qu’elle ne contient|Animent par des besoins physiques tels que la faim
+SOLLICITAIT|SOLLICITER|28160|Incitait ou excitait à faire quelque chose|Faisait rendre à une chose plus qu’elle ne contient|Animait par des besoins physiques tels que la faim
+SOLLICITERA|SOLLICITER|28160|Incitera ou excitera à faire quelque chose|Fera rendre à une chose plus qu’elle ne contient|Animera par des besoins physiques tels que la faim
+SOLLICITA|SOLLICITER|28160|Incita ou excita à faire quelque chose|Fit rendre à une chose plus qu’elle ne contient|Anima par des besoins physiques tels que la faim
+SOLLICITEE|SOLLICITER|28160|Incitée ou excitée à faire quelque chose|Animée par des besoins physiques tels que la faim
+SOLLICITES|SOLLICITER|28160|Incités ou excités à faire quelque chose|Animés par des besoins physiques tels que la faim
+SOLLICITEES|SOLLICITER|28160|Incitées ou excitées à faire quelque chose|Animées par des besoins physiques tels que la faim
+REBONDS|REBOND|28177|Retours d’un email non délivrable à son expéditeur
+MANTICORES|MANTICORE|28184|Créatures légendaires décrites des auteurs grecs puis latins
+NEGOCIANTS|NEGOCIANT|28206|Marchands en gros
+INDIVIDUELS|INDIVIDUEL|28219|Destinés à l’usage d’une seule personne
+INDIVIDUELLE|INDIVIDUEL|28219|Qui concerne chaque personne ou une seule personne
+TUTUS|TUTU|28242|Jupes de gaze
+EXODES|EXODE|28243|Toutes sorties en masse, soit des hommes, soit des richesses
+FLOPS|FLOP|28274|Bruits brefs provoqués par une adhésion ou désadhésion
+JACASSE|JACASSER|28275|Crie comme la pie, pousse le cri particulier à son espèce|Bavarde d’une manière fatigante
+JACASSENT|JACASSER|28275|Crient comme la pie, poussent le cri particulier à son espèce|Bavardent d’une manière fatigante
+JACASSAIT|JACASSER|28275|Criait comme la pie, poussait le cri particulier à son espèce|Bavardait d’une manière fatigante
+JACASSAIENT|JACASSER|28275|Criaient comme la pie, poussaient le cri particulier à son espèce|Bavardaient d’une manière fatigante
+JACASSERA|JACASSER|28275|Criera comme la pie, poussera le cri particulier à son espèce|Bavardera d’une manière fatigante
+JACASSA|JACASSER|28275|Cria comme la pie, poussa le cri particulier à son espèce|Bavarda d’une manière fatigante
+JACASSEE|JACASSER|28275|Bavardée d’une manière fatigante
+JACASSES|JACASSER|28275|Bavardés d’une manière fatigante
+JACASSEES|JACASSER|28275|Bavardées d’une manière fatigante
+PASSADES|PASSADE|28276|Actions de passer sur un autre nageur
+INTOLERANCES|INTOLERANCE|28291|Inaptitudes de l’estomac à digérer tel ou tel aliment
+CARTILAGES|CARTILAGE|28295|Parties blanches
+ACCOSTENT|ACCOSTER|28308|Abordent quelqu’un qu’on rencontre pour lui parler
+ACCOSTAIT|ACCOSTER|28308|Abordait quelqu’un qu’on rencontre pour lui parler
+ACCOSTAIENT|ACCOSTER|28308|Abordaient quelqu’un qu’on rencontre pour lui parler
+ACCOSTERA|ACCOSTER|28308|Abordera quelqu’un qu’on rencontre pour lui parler
+ACCOSTA|ACCOSTER|28308|Aborda quelqu’un qu’on rencontre pour lui parler
+FONDANTE|FONDANT|28309|Qui fond|Qui fond dans la bouche|Qui sert à faciliter la fusion de certains corps
+COMPLEMENTS|COMPLEMENT|28312|Distances angulaires d’un astre au zénith|Protéines du sérum sanguin
+RAPACES|RAPACE|28321|Personnes âpres au gain
+OEDEMES|OEDEME|28322|Enflures non douloureuses
+PASTILLES|PASTILLE|28325|Éléments décoratifs de forme plate
+REGIES|REGIE|28337|Administrations de biens à la charge de rendre compte|Administrations
+SPACIEUSE|SPACIEUX|28341|Qui présente une grande superficie
+AVERSES|AVERSE|28344|Pluies soudaines, abondantes et généralements brèves
+CHAHUTS|CHAHUT|28356|Danses excentriques|Perturbations volontaires d’un discours, d’un cours, etc|Perturbations émotionnelles
+CAMOUFLE|CAMOUFLER|28369|Déguise de façon à rendre méconnaissable|Masque
+CAMOUFLENT|CAMOUFLER|28369|Déguisent de façon à rendre méconnaissable|Masquent
+CAMOUFLAIT|CAMOUFLER|28369|Déguisait de façon à rendre méconnaissable|Masquait
+CAMOUFLAIENT|CAMOUFLER|28369|Déguisaient de façon à rendre méconnaissable|Masquaient
+CAMOUFLERA|CAMOUFLER|28369|Déguisera de façon à rendre méconnaissable|Masquera
+CAMOUFLA|CAMOUFLER|28369|Déguisa de façon à rendre méconnaissable|Masqua
+CAMOUFLEE|CAMOUFLER|28369|Déguisée de façon à rendre méconnaissable|Masquée
+CAMOUFLES|CAMOUFLER|28369|Déguisés de façon à rendre méconnaissable|Masqués
+CAMOUFLEES|CAMOUFLER|28369|Déguisées de façon à rendre méconnaissable|Masquées
+TENDONS|TENDON|28373|Parties fibreuses|Parties postérieures des jambes des chevaux
+PONCHOS|PONCHO|28376|Vêtements amples ets de forme simple
+NECROLOGIES|NECROLOGIE|28388|Notices consacrées à la mémoire d’une personne morte depuis peu de temps
+RANCHOS|RANCHO|28390|Soupes ou ratas militaires
+MAGICIENNES|MAGICIENNE|28392|Illusionnistes, prestidigitatrices
+BINAIRES|BINAIRE|28395|Manichéens
+PERVERSIONS|PERVERSION|28397|Changements de bien en mal
+VICAIRES|VICAIRE|28401|Obtenus par personne interposée, par opposition à direct
+SELFS|SELF|28420|Inductances
+ROQUETTES|ROQUETTE|28431|Fusées explosives propulsées
+TRIPOTS|TRIPOT|28432|Batteuses mues par ce dispositif
+TRAPEZES|TRAPEZE|28440|Appareils formés d’une barre de bois suspendue à deux cordes
+TAPEES|TAPEE|28445|Grandes quantités, flopées, foules, tas
+ACHARNEMENTS|ACHARNEMENT|28465|Fureurs opiniâtres avec laquelle des animaux|Opiniâtretés
+MIGRATIONS|MIGRATION|28466|Déplacements d'espèces chimiques
+DEFICIENCES|DEFICIENCE|28473|Défaillances intellectuelles ou physiques
+FEIGNANTS|FEIGNANT|28482|Fainéants
+FEIGNANTE|FEIGNANT|28482|Qui feint une action, un état|Paresseuse
+FEIGNANTES|FEIGNANT|28482|Paresseuses
+ECHAUFFES|ECHAUFFE|28507|Étuves destinées aux cuirs|Actions de mettre les cuirs dans cette étuve
+EMERGE|EMERGER|28509|Passe d’un milieu inférieur à un milieu supérieur
+EMERGENT|EMERGER|28509|Passent d’un milieu inférieur à un milieu supérieur
+EMERGEAIT|EMERGER|28509|Passait d’un milieu inférieur à un milieu supérieur
+EMERGEAIENT|EMERGER|28509|Passaient d’un milieu inférieur à un milieu supérieur
+EMERGERA|EMERGER|28509|Passera d’un milieu inférieur à un milieu supérieur
+EMERGEA|EMERGER|28509|Passa d’un milieu inférieur à un milieu supérieur
+EMERGEE|EMERGER|28509|Passée d’un milieu inférieur à un milieu supérieur
+EMERGES|EMERGER|28509|Passés d’un milieu inférieur à un milieu supérieur
+EMERGEES|EMERGER|28509|Passées d’un milieu inférieur à un milieu supérieur
+ASTROLOGIES|ASTROLOGIE|28511|Descriptions de l’influence
+SAUTERELLES|SAUTERELLE|28515|Fausses équerres mobiles
+VIBREURS|VIBREUR|28519|Éléments d’un circuit automobile
+DRESSINGS|DRESSING|28530|Penderies
+MONETAIRES|MONETAIRE|28537|Relatifs aux monnaies
+RONFLE|RONFLER|28565|Fait un certain bruit des narines
+RONFLENT|RONFLER|28565|Font un certain bruit des narines
+RONFLAIT|RONFLER|28565|Faisait un certain bruit des narines
+RONFLAIENT|RONFLER|28565|Faisaient un certain bruit des narines
+RONFLERA|RONFLER|28565|Fera un certain bruit des narines
+RONFLA|RONFLER|28565|Fit un certain bruit des narines
+SOUILLE|SOUILLER|28576|Rend impure une personne
+SOUILLENT|SOUILLER|28576|Rendent impure une personne
+SOUILLAIT|SOUILLER|28576|Rendait impure une personne
+SOUILLAIENT|SOUILLER|28576|Rendaient impure une personne
+SOUILLERA|SOUILLER|28576|Rendra impure une personne
+SOUILLA|SOUILLER|28576|Rendit impure une personne
+EMBARGOS|EMBARGO|28591|Délais avant de diffuser une information
+FACTICES|FACTICE|28592|Reproductions
+TACOTS|TACOT|28601|Petits tronçons de chemin de fer d’intérêt local, régional|Caisses à savon
+UNISSONS|UNISSON|28619|Ses uniques chantés par deux ou plusieurs voix
+SEPULTURES|SEPULTURE|28632|Inhumations
+TEXTILES|TEXTILE|28641|Industries de ces matériaux
+REMBALLENT|REMBALLER|28662|Renversent le déroulement de quelque chose
+REMBALLAIT|REMBALLER|28662|Renversait le déroulement de quelque chose
+REMBALLAIENT|REMBALLER|28662|Renversaient le déroulement de quelque chose
+REMBALLERA|REMBALLER|28662|Renversera le déroulement de quelque chose
+REMBALLA|REMBALLER|28662|Renversa le déroulement de quelque chose
+FLECHETTES|FLECHETTE|28666|Doses de pot belge
+ACROBATES|ACROBATE|28667|Artistes de cirque
+SUSCITE|SUSCITER|28674|Fait naître|Fait renaître, ranime|Fait naître quelque chose
+SUSCITENT|SUSCITER|28674|Font naître|Font renaître, raniment|Font naître quelque chose
+SUSCITAIT|SUSCITER|28674|Faisait naître|Faisait renaître, ranimait|Faisait naître quelque chose
+SUSCITAIENT|SUSCITER|28674|Faisaient naître|Faisaient renaître, ranimaient|Faisaient naître quelque chose
+SUSCITERA|SUSCITER|28674|Fera naître|Fera renaître, ranimera|Fera naître quelque chose
+SUSCITA|SUSCITER|28674|Fit naître|Fit renaître, ranima|Fit naître quelque chose
+BOOMERANGS|BOOMERANG|28690|Armes d’attaque directe ou indirecte de vols d’oiseaux
+DOYENNES|DOYENNE|28693|Les plus anciennes en âge
+REOUVERTURES|REOUVERTURE|28695|Actions de rouvrir
+DERAPE|DERAPER|28716|Quitte prise sur le fond en parlant d’une ancre|Se déplace latéralement
+DERAPENT|DERAPER|28716|Quittent prise sur le fond en parlant d’une ancre|Se déplacent latéralement
+DERAPAIT|DERAPER|28716|Quittait prise sur le fond en parlant d’une ancre|Se déplaçait latéralement
+DERAPAIENT|DERAPER|28716|Quittaient prise sur le fond en parlant d’une ancre|Se déplaçaient latéralement
+DERAPERA|DERAPER|28716|Quittera prise sur le fond en parlant d’une ancre|Se déplacera latéralement
+DERAPA|DERAPER|28716|Quitta prise sur le fond en parlant d’une ancre|Se déplaça latéralement
+TOISONS|TOISON|28725|Abondantes et épaisses chevelures
+ORBES|ORBE|28733|Globes, corps célestes
+ABSTRACTIONS|ABSTRACTION|28758|Préoccupations
+PANORAMIQUES|PANORAMIQUE|28769|Mouvements de prise de vue audiovisuelle
+RASANTE|RASANT|28778|Qui rase
+ATTELAGES|ATTELAGE|28785|Ensemble constitués des animaux de trait et de la remorque|Ensemble constitués du tracteur et de sa semi-remorque
+CHIFFONNES|CHIFFONNE|28791|Grêles et inutiles
+ELOQUENTE|ELOQUENT|28804|Qui veut dire beaucoup
+LABRADORS|LABRADOR|28805|Feldspaths plagioclases à cristaux gris-blancs
+COMPTAGES|COMPTAGE|28814|Dénombrements
+OBJECTIVITES|OBJECTIVITE|28817|Soumissions de l’esprit à l’objet dans la recherche scientifique
+BOAS|BOA|28849|Tours de cou en fourrure ou en plumes
+CERISIERS|CERISIER|28850|Les bois de cet arbre
+CONFORMENT|CONFORMER|28872|S'accordent avec quelque chose
+CONFORMAIT|CONFORMER|28872|S'accordait avec quelque chose
+CONFORMAIENT|CONFORMER|28872|S'accordaient avec quelque chose
+CONFORMERA|CONFORMER|28872|S'accordera avec quelque chose
+CONFORMA|CONFORMER|28872|S'accorda avec quelque chose
+CORNICHES|CORNICHE|28886|Parties supérieures de l'entablement
+ARMADAS|ARMADA|28932|Grandes flottes|Grandes escadres aériennes
+CARRIOLES|CARRIOLE|28934|Petites charrettes couvertes et grossièrements suspendues|Tout attelages tirés par un animal
+PASSOIRES|PASSOIRE|28935|Récipients percés
+PATRAQUES|PATRAQUE|28957|Faibles et fatigués|Crabes en période de mue
+CONSOLIDE|CONSOLIDER|28987|Assigne un fonds pour assurer le paiement d’une dette publique|Réalise l'agrégation des comptabilités des filiales
+CONSOLIDENT|CONSOLIDER|28987|Assignent un fonds pour assurer le paiement d’une dette publique|Réalisent l'agrégation des comptabilités des filiales
+CONSOLIDAIT|CONSOLIDER|28987|Assignait un fonds pour assurer le paiement d’une dette publique|Réalisait l'agrégation des comptabilités des filiales
+CONSOLIDERA|CONSOLIDER|28987|Assignera un fonds pour assurer le paiement d’une dette publique|Réalisera l'agrégation des comptabilités des filiales
+CONSOLIDA|CONSOLIDER|28987|Assigna un fonds pour assurer le paiement d’une dette publique|Réalisa l'agrégation des comptabilités des filiales
+LOUTRES|LOUTRE|29010|Fourrures de cet animal
+RETRACTE|RETRACTER|29025|Déclare qu’on n’a plus l’opinion que l’on avait avancée|Se retire, se contracte
+RETRACTENT|RETRACTER|29025|Déclarent qu’on n’a plus l’opinion que l’on avait avancée|Se retirent, se contractent
+RETRACTAIT|RETRACTER|29025|Déclarait qu’on n’a plus l’opinion que l’on avait avancée|Se retirait, se contractait
+RETRACTAIENT|RETRACTER|29025|Déclaraient qu’on n’a plus l’opinion que l’on avait avancée|Se retiraient, se contractaient
+RETRACTERA|RETRACTER|29025|Déclarera qu’on n’a plus l’opinion que l’on avait avancée|Se retirera, se contractera
+RETRACTA|RETRACTER|29025|Déclara qu’on n’a plus l’opinion que l’on avait avancée|Se retira, se contracta
+BRASSES|BRASSE|29030|Unités de mesure de la profondeur de la mer
+TANDEMS|TANDEM|29066|Voitures attelées de deux chevaux en flèche
+CRAQUEMENTS|CRAQUEMENT|29087|Cris de la cigogne, de la grue, de la cigale
+PAQUEBOTS|PAQUEBOT|29114|Navires spécialisés dans le transport de personnes en haute mer
+LAVETTES|LAVETTE|29115|Gants de toilette
+COLOSSES|COLOSSE|29121|Statues d’une grandeur extraordinaire
+JARRES|JARRE|29132|Mauvaises laines
+GUETTENT|GUETTER|29143|Épient, observent à dessein de surprendre
+GUETTAIT|GUETTER|29143|Épiait, observait à dessein de surprendre
+GUETTAIENT|GUETTER|29143|Épiaient, observaient à dessein de surprendre
+GUETTERA|GUETTER|29143|Épiera, observera à dessein de surprendre
+GUETTA|GUETTER|29143|Épia, observa à dessein de surprendre
+GUETTEE|GUETTER|29143|Épiée, observée à dessein de surprendre
+GUETTES|GUETTER|29143|Épiés, observés à dessein de surprendre
+GUETTEES|GUETTER|29143|Épiées, observées à dessein de surprendre
+CHAVIRE|CHAVIRER|29166|Tourne sens dessus dessous|Renverse
+CHAVIRENT|CHAVIRER|29166|Tournent sens dessus dessous|Renversent
+CHAVIRAIT|CHAVIRER|29166|Tournait sens dessus dessous|Renversait
+CHAVIRAIENT|CHAVIRER|29166|Tournaient sens dessus dessous|Renversaient
+CHAVIRERA|CHAVIRER|29166|Tournera sens dessus dessous|Renversera
+CHAVIRA|CHAVIRER|29166|Tourna sens dessus dessous|Renversa
+CHAVIREE|CHAVIRER|29166|Renversée
+CHAVIRES|CHAVIRER|29166|Renversés
+CHAVIREES|CHAVIRER|29166|Renversées
+MALFAISANTE|MALFAISANT|29167|Qui se plaît à nuire, à faire du mal à autrui
+EFFUSIONS|EFFUSION|29209|Actions de répandre un liquide
+SANGLES|SANGLE|29215|Bandes de toile
+RESIDENTES|RESIDENTE|29216|Femmes établies à demeure dans un pays étranger
+FERMANTE|FERMANT|29222|Qui se ferme|Qui se ferme à clef
+ASPHALTES|ASPHALTE|29226|Bitumes compacts
+GOURDINS|GOURDIN|29228|Gros bâtons
+ASSOUPIS|ASSOUPI|29230|Personnes dans un demi-sommeil
+MANILLES|MANILLE|29236|Cordages
+CHANVRES|CHANVRE|29237|Plantes herbacées
+COMPLIMENTE|COMPLIMENTER|29257|Fait des civilités
+COMPLIMENTA|COMPLIMENTER|29257|Fit des civilités
+COMPLIMENTEE|COMPLIMENTER|29257|Faite des civilités
+COMPLIMENTES|COMPLIMENTER|29257|Faits des civilités
+CABOCHES|CABOCHE|29277|Têtes de feuilles de tabac réunies en bouquet
+LIQUIDATIONS|LIQUIDATION|29281|Ventes à bas prix
+DESARROIS|DESARROI|29284|Désordres
+ENCLUMES|ENCLUME|29295|Masses de fer
+BATIFOLE|BATIFOLER|29304|S'amuse à courtiser une jeune fille
+BATIFOLENT|BATIFOLER|29304|S'amusent à courtiser une jeune fille
+BATIFOLAIT|BATIFOLER|29304|S'amusait à courtiser une jeune fille
+BATIFOLAIENT|BATIFOLER|29304|S'amusaient à courtiser une jeune fille
+BATIFOLERA|BATIFOLER|29304|S'amusera à courtiser une jeune fille
+BATIFOLA|BATIFOLER|29304|S'amusa à courtiser une jeune fille
+ACCABLES|ACCABLE|29311|Écrasés sous une charge pénible, physique ou morale
+SUFFOLKS|SUFFOLK|29332|Races à viande d’ovins
+ENTENDEMENTS|ENTENDEMENT|29359|Facultés par laquelle l’esprit conçoit|Aptitudes à comprendre, compréhension
+PALOURDES|PALOURDE|29363|Coquillages marins, bivalves, comestibles
+BASILICS|BASILIC|29370|Créatures imaginaires
+SCRUTINS|SCRUTIN|29394|Rites préparatoires au baptême
+DECALES|DECALE|29396|Surprenants
+RETICENCES|RETICENCE|29413|Réserves ou restrictions
+AGATHES|AGATHE|29431|Variétés de tulipes
+DILATATIONS|DILATATION|29432|Élargissements
+ABATTAGES|ABATTAGE|29441|Actions de tuer des animaux|Actions de retourner une pierre
+ABLATIONS|ABLATION|29443|Actions d’enlever
+AISANCES|AISANCE|29459|Libertés de corps et d’esprit dans le travail
+FACHEUSES|FACHEUSE|29471|Femmes importunes ou déplaisantes
+MALMENE|MALMENER|29507|Fait subir un préjudice
+MALMENENT|MALMENER|29507|Font subir un préjudice
+MALMENAIT|MALMENER|29507|Faisait subir un préjudice
+MALMENAIENT|MALMENER|29507|Faisaient subir un préjudice
+MALMENERA|MALMENER|29507|Fera subir un préjudice
+MALMENA|MALMENER|29507|Fit subir un préjudice
+BENITS|BENIT|29509|Consacrés par des bénédictions
+PROPORTIONS|PROPORTION|29517|Égalités de deux ou de plusieurs rapports
+CHEDDARS|CHEDDAR|29518|Fromages anglais au lait de vache, à pâte dure
+MAGES|MAGE|29519|Astrologues
+MIXTURES|MIXTURE|29529|Mélanges, homogènes ou non
+CABLAGES|CABLAGE|29542|Les poses de câbles dans une région|Les fabrications d’un câble
+CORNERS|CORNER|29550|Fautes, involontaires ou délibérées|Coups de pied de remise en jeu
+MUFLES|MUFLE|29566|Extrémités du museau de certains animaux
+VENENEUSE|VENENEUX|29582|Qui a du venin
+DISSOLUTIONS|DISSOLUTION|29589|Faits de mettre fin à l’existence légale d’une association
+FILIERES|FILIERE|29594|Tout profils de section
+ENTETEMENTS|ENTETEMENT|29602|Attachements opiniâtres d’une personne à ses opinions
+DELOGE|DELOGER|29605|Quitte son stationnement en parlant de troupes logées par étape
+DELOGENT|DELOGER|29605|Quittent son stationnement en parlant de troupes logées par étape
+DELOGEAIT|DELOGER|29605|Quittait son stationnement en parlant de troupes logées par étape
+DELOGEAIENT|DELOGER|29605|Quittaient son stationnement en parlant de troupes logées par étape
+DELOGERA|DELOGER|29605|Quittera son stationnement en parlant de troupes logées par étape
+DELOGEA|DELOGER|29605|Quitta son stationnement en parlant de troupes logées par étape
+RAFALES|RAFALE|29627|Enchaînements rapides de mots
+FRELES|FRELE|29636|Fragiles, instables
+SUFFOQUE|SUFFOQUER|29639|Empêche de respirer librement|Étonne fortement|Fait mourir en arrêtant la respiration
+SUFFOQUENT|SUFFOQUER|29639|Empêchent de respirer librement|Étonnent fortement|Font mourir en arrêtant la respiration
+SUFFOQUAIT|SUFFOQUER|29639|Empêchait de respirer librement|Étonnait fortement|Faisait mourir en arrêtant la respiration
+SUFFOQUAIENT|SUFFOQUER|29639|Empêchaient de respirer librement|Étonnaient fortement|Faisaient mourir en arrêtant la respiration
+SUFFOQUERA|SUFFOQUER|29639|Empêchera de respirer librement|Étonnera fortement|Fera mourir en arrêtant la respiration
+SUFFOQUA|SUFFOQUER|29639|Empêcha de respirer librement|Étonna fortement|Fit mourir en arrêtant la respiration
+SUFFOQUEE|SUFFOQUER|29639|Empêchée de respirer librement
+SUFFOQUES|SUFFOQUER|29639|Empêchés de respirer librement
+SUFFOQUEES|SUFFOQUER|29639|Empêchées de respirer librement
+IMMENSITES|IMMENSITE|29642|Très vastes étendues
+PARADENT|PARADER|29669|Défilent dans une revue|S'exhibent pour se faire admirer, se pavanent
+PARADAIT|PARADER|29669|Défilait dans une revue|S'exhibait pour se faire admirer, se pavanait
+PARADAIENT|PARADER|29669|Défilaient dans une revue|S'exhibaient pour se faire admirer, se pavanaient
+PARADERA|PARADER|29669|Défilera dans une revue|S'exhibera pour se faire admirer, se pavanera
+PARADA|PARADER|29669|Défila dans une revue|S'exhiba pour se faire admirer, se pavana
+PARADEE|PARADER|29669|Défilée dans une revue
+PARADES|PARADER|29669|Défilés dans une revue
+PARADEES|PARADER|29669|Défilées dans une revue
+PRIVATIONS|PRIVATION|29673|Pertes, absences
+AVARICES|AVARICE|29677|Attachements excessifs à la possession d’argent
+BREUVAGES|BREUVAGE|29678|Boissons sans alcool, par opposition aux autres boissons
+CASSANTE|CASSANT|29680|Qui a tendance à se casser aisément|Qui présente une forme franche et nette à la rupture|Qui possède un caractère ferme, catégorique
+RAVITAILLE|RAVITAILLER|29687|Fait des emplettes pour pourvoir à ses besoins
+RAVITAILLENT|RAVITAILLER|29687|Font des emplettes pour pourvoir à ses besoins
+RAVITAILLAIT|RAVITAILLER|29687|Faisait des emplettes pour pourvoir à ses besoins
+RAVITAILLERA|RAVITAILLER|29687|Fera des emplettes pour pourvoir à ses besoins
+RAVITAILLA|RAVITAILLER|29687|Fit des emplettes pour pourvoir à ses besoins
+RAVITAILLEE|RAVITAILLER|29687|Faite des emplettes pour pourvoir à ses besoins
+RAVITAILLES|RAVITAILLER|29687|Faits des emplettes pour pourvoir à ses besoins
+RAVITAILLEES|RAVITAILLER|29687|Faites des emplettes pour pourvoir à ses besoins
+BOUILLIS|BOUILLI|29701|Plats composés d'une viande
+PRESTOS|PRESTO|29706|Autocuiseurs
+AKIS|AKI|29709|Fruits de l’arbre du même nom
+CREMATIONS|CREMATION|29713|Actions de brûler les corps des morts
+SCRATCHS|SCRATCH|29716|Systèmes de classement mixte dans le cyclisme|Procédés utilisés en musique
+IMPORTATIONS|IMPORTATION|29721|Transports d’un pays dans un autre
+ZODIACS|ZODIAC|29742|Canots pneumatiques motorisés
+ADROITE|ADROIT|29751|Qui a de l’adresse|Qui a du corps et de l’esprit
+LOTTES|LOTTE|29764|Poissons de rivière
+CANINS|CANIN|29765|Relatifs au chien|Mordants, dévorants|Muscles élévateurs de l’angle de la bouche
+CANINES|CANIN|29765|Mordantes, dévorantes
+TRITONS|TRITON|29788|Équivalents masculins des sirènes|Amphibiens proches des salamandres|Intervalles de trois tons entiers
+GIGOTE|GIGOTER|29808|Remue continuellement les jambes|Remue, tortille
+GIGOTENT|GIGOTER|29808|Remuent continuellement les jambes|Remuent, tortillent
+GIGOTAIT|GIGOTER|29808|Remuait continuellement les jambes|Remuait, tortillait
+GIGOTAIENT|GIGOTER|29808|Remuaient continuellement les jambes|Remuaient, tortillaient
+GIGOTERA|GIGOTER|29808|Remuera continuellement les jambes|Remuera, tortillera
+GIGOTA|GIGOTER|29808|Remua continuellement les jambes|Remua, tortilla
+GIGOTEE|GIGOTER|29808|Remuée, tortillée
+GIGOTES|GIGOTER|29808|Remués, tortillés
+GIGOTEES|GIGOTER|29808|Remuées, tortillées
+DIABLESSES|DIABLESSE|29812|Filles ou femmes turbulentes, espiègles ou malicieuses
+PARLOIRS|PARLOIR|29819|Funérariums, chambres funéraires
+SUMMUMS|SUMMUM|29859|Les plus hauts points, acmés, apogées
+CRASHE|CRASHER|29865|Termine anormalement après une opération, se plante|S'écrase
+CRASHENT|CRASHER|29865|Terminent anormalement après une opération, se plantent|S'écrasent
+CRASHAIT|CRASHER|29865|Terminait anormalement après une opération, se plantait|S'écrasait
+CRASHAIENT|CRASHER|29865|Terminaient anormalement après une opération, se plantaient|S'écrasaient
+CRASHERA|CRASHER|29865|Terminera anormalement après une opération, se plantera|S'écrasera
+CRASHA|CRASHER|29865|Termina anormalement après une opération, se planta|S'écrasa
+DACTYLOS|DACTYLO|29868|Secrétaires
+ELOQUENCES|ELOQUENCE|29873|Dons de la parole
+PROCREE|PROCREER|29874|Engendre un nouvel individu
+PROCREENT|PROCREER|29874|Engendrent un nouvel individu
+PROCREAIT|PROCREER|29874|Engendrait un nouvel individu
+PROCREAIENT|PROCREER|29874|Engendraient un nouvel individu
+PROCREERA|PROCREER|29874|Engendrera un nouvel individu
+PROCREA|PROCREER|29874|Engendra un nouvel individu
+BRODERIES|BRODERIE|29888|Dissonances passagères
+MOKAS|MOKA|29896|Cafés additionnés de cacao
+VASELINES|VASELINE|29902|Substances blanches
+METROPOLES|METROPOLE|29918|Capitales d’une province ecclésiastique
+SLAMS|SLAM|29922|Déclamations publiques faites pour surprendre
+CONSUME|CONSUMER|29924|Brûle en produisant de la lumière|Dissipe son bien
+CONSUMENT|CONSUMER|29924|Brûlent en produisant de la lumière|Dissipent son bien
+CONSUMAIT|CONSUMER|29924|Brûlait en produisant de la lumière|Dissipait son bien
+CONSUMAIENT|CONSUMER|29924|Brûlaient en produisant de la lumière|Dissipaient son bien
+CONSUMERA|CONSUMER|29924|Brûlera en produisant de la lumière|Dissipera son bien
+CONSUMA|CONSUMER|29924|Brûla en produisant de la lumière|Dissipa son bien
+CONSUMEE|CONSUMER|29924|Brûlée en produisant de la lumière
+CONSUMES|CONSUMER|29924|Brûlés en produisant de la lumière
+CONSUMEES|CONSUMER|29924|Brûlées en produisant de la lumière
+DEBACLES|DEBACLE|29945|Ruptures, ordinairements subites
+FRISQUETS|FRISQUET|29953|Frais, assez froids
+MOUSSONS|MOUSSON|29965|Vents périodiques des tropiques
+GNOMES|GNOME|29967|Génies de la terre
+HAKIMS|HAKIM|29974|Médecins
+VIDANGES|VIDANGE|30002|Actions de vider|Remplacements de l’huile d’un moteur
+FARFELUE|FARFELU|30027|Qui a un comportement bizarre
+SOMMAIRES|SOMMAIRE|30028|Résumés, abrégés
+AVANTAGEUSE|AVANTAGEUX|30029|Qui sied, en parlant des vêtements|Qui se croit et veut se faire croire supérieur aux autres
+INCARNENT|INCARNER|30038|Donnent une existence concrète à une valeur abstraite|Représentent un personnage comme s’il était réel|Prennent un corps de chair
+INCARNAIT|INCARNER|30038|Donnait une existence concrète à une valeur abstraite|Représentait un personnage comme s’il était réel|Prenait un corps de chair
+INCARNAIENT|INCARNER|30038|Donnaient une existence concrète à une valeur abstraite|Représentaient un personnage comme s’il était réel|Prenaient un corps de chair
+INCARNERA|INCARNER|30038|Donnera une existence concrète à une valeur abstraite|Représentera un personnage comme s’il était réel|Prendra un corps de chair
+INCARNA|INCARNER|30038|Donna une existence concrète à une valeur abstraite|Représenta un personnage comme s’il était réel|Prit un corps de chair
+JOUISSANCES|JOUISSANCE|30040|Satisfactions voluptueuses
+PRESIDAIT|PRESIDER|30061|Occupait la première place dans une assemblée
+PRESIDAIENT|PRESIDER|30061|Occupaient la première place dans une assemblée
+PRESIDERA|PRESIDER|30061|Occupera la première place dans une assemblée
+PRESIDA|PRESIDER|30061|Occupa la première place dans une assemblée
+YOYOS|YOYO|30072|Dispositifs destinés à dégyrer un engin spatial
+THEOLOGIES|THEOLOGIE|30081|Études des choses divines
+AGILITES|AGILITE|30086|Sports canins de parcours d’obstacles
+BELETTES|BELETTE|30088|Petits mammifères carnassiers|Curieux, personnes curieuses
+ECHELONS|ECHELON|30111|Dispositions des troupes sur divers plans
+TIQUES|TIQUE|30151|Arachnides acariens ectoparasites
+BINOMES|BINOME|30153|Équipes de deux élèves
+LIGATURES|LIGATURE|30173|Formations d’une liaison phosphodiester entre deux polynucléotides
+BASTILLES|BASTILLE|30185|Ouvrages, constructions passagères ou permanentes
+PERDITIONS|PERDITION|30197|Détresses|Pertes, ruines morales
+CAPUCHONS|CAPUCHON|30199|Prolongements creux et coniques
+FIONS|FION|30221|Coups, attaques physiques|Piques, insultes, attaques verbales virulentes
+KALES|KALE|30242|Chous frisés
+PARISIENNES|PARISIENNE|30249|Baguettes, pains longs et croustillants
+RONDELLES|RONDELLE|30259|Cylindres de faible hauteur|Pièces d’assemblage mécanique
+MODERES|MODERE|30287|Partisans de positions politiques non extrémistes
+HATENT|HATER|30295|Font avancer vite|Exécutent vite
+HATAIT|HATER|30295|Faisait avancer vite|Exécutait vite
+HATAIENT|HATER|30295|Faisaient avancer vite|Exécutaient vite
+HATERA|HATER|30295|Fera avancer vite|Exécutera vite
+HATA|HATER|30295|Fit avancer vite|Exécuta vite
+INERTIES|INERTIE|30297|Absences de réaction chimique en présence d’une substance
+ABERRATIONS|ABERRATION|30300|Écarts d’imagination|Anomalies d’une fonction|Anomalies dans la disposition ou dans le fonctionnement des organes
+EDITRICES|EDITRICE|30318|Femmes ou organisations
+POLTRONS|POLTRON|30336|Crabes en période de mue
+ENROULENT|ENROULER|30345|Frappent le ballon avec un effet
+ENROULAIT|ENROULER|30345|Frappait le ballon avec un effet
+ENROULAIENT|ENROULER|30345|Frappaient le ballon avec un effet
+ENROULERA|ENROULER|30345|Frappera le ballon avec un effet
+ENROULA|ENROULER|30345|Frappa le ballon avec un effet
+BRETELLES|BRETELLE|30355|Bandes, courroies
+VIZIRS|VIZIR|30363|Ministres d’un prince musulman
+LITIGES|LITIGE|30401|Contestations en justice|Toutes sortes de contestation
+MOUSQUETS|MOUSQUET|30418|Supports utilisés comme ornement extérieur d’armoiries
+SALADIERS|SALADIER|30431|Contenus de ce grand bol
+PAPRIKAS|PAPRIKA|30446|Épices obtenues par broyage du fruit de ce piment doux
+INHALATIONS|INHALATION|30448|Actions d’aspirer, d’absorber par inspiration|Inspirations de certaines substances
+DESCENDANTES|DESCENDANTE|30461|Parties d’un glyphe sous la ligne de base
+RAPATRIE|RAPATRIER|30464|Retourne
+RAPATRIENT|RAPATRIER|30464|Retournent
+RAPATRIAIT|RAPATRIER|30464|Retournait
+RAPATRIAIENT|RAPATRIER|30464|Retournaient
+RAPATRIERA|RAPATRIER|30464|Retournera
+RAPATRIA|RAPATRIER|30464|Retourna
+RAPATRIEE|RAPATRIER|30464|Retournée
+RAPATRIES|RAPATRIER|30464|Retournés
+RAPATRIEES|RAPATRIER|30464|Retournées
+MANQUEMENTS|MANQUEMENT|30508|Fautes d’omission
+AMPLIFIE|AMPLIFIER|30517|Rend ample|Augmente la puissance d’un signal
+AMPLIFIENT|AMPLIFIER|30517|Rendent ample|Augmentent la puissance d’un signal
+AMPLIFIAIT|AMPLIFIER|30517|Rendait ample|Augmentait la puissance d’un signal
+AMPLIFIAIENT|AMPLIFIER|30517|Rendaient ample|Augmentaient la puissance d’un signal
+AMPLIFIERA|AMPLIFIER|30517|Rendra ample|Augmentera la puissance d’un signal
+AMPLIFIA|AMPLIFIER|30517|Rendit ample|Augmenta la puissance d’un signal
+HALLES|HALLE|30549|Places publiques
+URBANISMES|URBANISME|30555|Arts de construire
+COMMERES|COMMERE|30558|Appellations familières|Animatrices d’une revue
+TREUILS|TREUIL|30568|Pressoirs à raisins
+BRINGUES|BRINGUE|30572|Lisiers, fumiers
+PLUVIEUSE|PLUVIEUX|30575|Qui amène la pluie
+INGRATITUDES|INGRATITUDE|30591|Manques de reconnaissance pour un bienfait reçu
+RENOMS|RENOM|30609|Réputations
+FLANE|FLANER|30610|Passe son temps à des bagatelles|Se donne
+FLANENT|FLANER|30610|Passent son temps à des bagatelles|Se donnent
+FLANAIT|FLANER|30610|Passait son temps à des bagatelles|Se donnait
+FLANAIENT|FLANER|30610|Passaient son temps à des bagatelles|Se donnaient
+FLANERA|FLANER|30610|Passera son temps à des bagatelles|Se donnera
+FLANA|FLANER|30610|Passa son temps à des bagatelles|Se donna
+INCLINAISONS|INCLINAISON|30637|Relations d’obliquité
+CORNEES|CORNEE|30641|Parties distales dioptriques
+PIRATERIES|PIRATERIE|30645|Duplications d'un contenu sous droits d’auteur
+IDYLLES|IDYLLE|30660|Petits poèmes à sujet pastoral ou amoureux
+ROMARINS|ROMARIN|30666|Arbustes aromatiques méditerranéens
+GRAISSENT|GRAISSER|30667|Mettent un texte en gras
+GRAISSAIT|GRAISSER|30667|Mettait un texte en gras
+GRAISSAIENT|GRAISSER|30667|Mettaient un texte en gras
+GRAISSERA|GRAISSER|30667|Mettra un texte en gras
+GRAISSA|GRAISSER|30667|Mit un texte en gras
+COURROIES|COURROIE|30690|Pièces de cuir ou d’étoffe
+MINERVES|MINERVE|30705|Presses typographiques à platine
+CERTIFIENT|CERTIFIER|30711|Témoignent qu’une chose est vraie
+CERTIFIAIT|CERTIFIER|30711|Témoignait qu’une chose est vraie
+CERTIFIAIENT|CERTIFIER|30711|Témoignaient qu’une chose est vraie
+CERTIFIERA|CERTIFIER|30711|Témoignera qu’une chose est vraie
+CERTIFIA|CERTIFIER|30711|Témoigna qu’une chose est vraie
+PANORAMAS|PANORAMA|30712|Vues d’ensemble|Formats photographiques avec un grand angle
+FRONTALES|FRONTALE|30722|Surfaces visibles
+PALMES|PALME|30725|Symboles de la victoire
+PANTOUFLES|PANTOUFLE|30726|Chaussures d’intérieur
+ILLUSTRENT|ILLUSTRER|30732|Rendent une idée saisissante par un exemple
+ILLUSTRAIT|ILLUSTRER|30732|Rendait une idée saisissante par un exemple
+ILLUSTRAIENT|ILLUSTRER|30732|Rendaient une idée saisissante par un exemple
+ILLUSTRERA|ILLUSTRER|30732|Rendra une idée saisissante par un exemple
+ILLUSTRA|ILLUSTRER|30732|Rendit une idée saisissante par un exemple
+HOLDE|HOLDER|30750|Conserve son investissement sur une longue durée
+HOLDENT|HOLDER|30750|Conservent son investissement sur une longue durée
+HOLDAIT|HOLDER|30750|Conservait son investissement sur une longue durée
+HOLDAIENT|HOLDER|30750|Conservaient son investissement sur une longue durée
+HOLDERA|HOLDER|30750|Conservera son investissement sur une longue durée
+HOLDA|HOLDER|30750|Conserva son investissement sur une longue durée
+GRANITS|GRANIT|30770|Roches plutoniques
+RELATIVITES|RELATIVITE|30784|Théories générales de la physique
+CALINES|CALINE|30800|Anciens bonnets de femme
+BLACKOUTS|BLACKOUT|30806|Pannes généralisées|Silences médiatiques sur un sujet
+LONGES|LONGE|30816|Cordes utilisées pour mener les animaux de ferme|Courtes cordes utilisées en alpinisme
+VANTARDE|VANTARD|30823|Qui a l’habitude de se vanter
+MOBS|MOB|30834|Populaces anglaises|Brosses pour faire les coins
+PREJUGES|PREJUGE|30863|Jugements portés par avance
+CAPILLAIRES|CAPILLAIRE|30874|Relatifs aux cheveux|Fins comme un cheveu
+TIERCES|TIERCE|30885|Intervalles de trois notes consécutives
+CIERGES|CIERGE|30888|Chandelles de cire à l’usage de l’église
+LISETTES|LISETTE|30907|Gilets longs
+GIGOTS|GIGOT|30918|Cuisses de mouton|Manches longues
+TISONNIERS|TISONNIER|30922|Instruments de fer
+CRUCIFIXIONS|CRUCIFIXION|30928|Supplices de la mise en croix
+REFOULENT|REFOULER|30943|Repoussent|Refusent de façon inconsciente un désir
+REFOULAIT|REFOULER|30943|Repoussait|Refusait de façon inconsciente un désir
+REFOULAIENT|REFOULER|30943|Repoussaient|Refusaient de façon inconsciente un désir
+REFOULERA|REFOULER|30943|Repoussera|Refusera de façon inconsciente un désir
+REFOULA|REFOULER|30943|Repoussa|Refusa de façon inconsciente un désir
+REFOULEE|REFOULER|30943|Repoussée|Refusée de façon inconsciente un désir
+REFOULES|REFOULER|30943|Repoussés|Refusés de façon inconsciente un désir
+REFOULEES|REFOULER|30943|Repoussées|Refusées de façon inconsciente un désir
+GARNEMENTS|GARNEMENT|30962|Mauvais sujets, vauriens|Enfants mal élevés
+PANSENT|PANSER|30971|Consolent, soulagent|Réparent un objet
+PANSAIT|PANSER|30971|Consolait, soulageait|Réparait un objet
+PANSAIENT|PANSER|30971|Consolaient, soulageaient|Réparaient un objet
+PANSERA|PANSER|30971|Consolera, soulagera|Réparera un objet
+PANSA|PANSER|30971|Consola, soulagea|Répara un objet
+PANSEE|PANSER|30971|Consolée, soulagée
+PANSEES|PANSER|30971|Consolées, soulagées
+DECHEANCES|DECHEANCE|30976|Pertes d’un droit
+GELATINES|GELATINE|30982|Films colorés utilisés sur un projecteur pour en modifier la lumière
+BRINDILLES|BRINDILLE|31013|Branchettes d’arbre mince et courte
+COCHONNERIES|COCHONNERIE|31022|Malpropretés
+DESERTENT|DESERTER|31023|Abandonnent le service sans congé
+DESERTAIT|DESERTER|31023|Abandonnait le service sans congé
+DESERTAIENT|DESERTER|31023|Abandonnaient le service sans congé
+DESERTERA|DESERTER|31023|Abandonnera le service sans congé
+DESERTA|DESERTER|31023|Abandonna le service sans congé
+VADROUILLES|VADROUILLE|31028|Balais à franges ou à éponge, serpillière au bout d’un bâton|Lavettes
+CRACHATS|CRACHAT|31034|Projections
+PERSECUTE|PERSECUTER|31043|Importune, presse avec indiscrétion, se rend incommode
+PERSECUTENT|PERSECUTER|31043|Importunent, pressent avec indiscrétion, se rendent incommode
+PERSECUTAIT|PERSECUTER|31043|Importunait, pressait avec indiscrétion, se rendait incommode
+PERSECUTERA|PERSECUTER|31043|Importunera, pressera avec indiscrétion, se rendra incommode
+PERSECUTA|PERSECUTER|31043|Importuna, pressa avec indiscrétion, se rendit incommode
+CASSANDRES|CASSANDRE|31052|Prophètes de malheur
+APPRIVOISENT|APPRIVOISER|31057|Rendent un animal moins sauvage|Font d’un animal sauvage un animal privé|Rendent familier
+APPRIVOISAIT|APPRIVOISER|31057|Rendait un animal moins sauvage|Faisait d’un animal sauvage un animal privé|Rendait familier
+APPRIVOISERA|APPRIVOISER|31057|Rendra un animal moins sauvage|Fera d’un animal sauvage un animal privé|Rendra familier
+APPRIVOISA|APPRIVOISER|31057|Rendit un animal moins sauvage|Fit d’un animal sauvage un animal privé|Rendit familier
+APPRIVOISEE|APPRIVOISER|31057|Faite d’un animal sauvage un animal privé
+APPRIVOISES|APPRIVOISER|31057|Faits d’un animal sauvage un animal privé
+APPRIVOISEES|APPRIVOISER|31057|Faites d’un animal sauvage un animal privé
+RATIOS|RATIO|31059|Proportions entre deux valeurs de même nature
+PERCANTE|PERCANT|31066|Qui perce, qui pénètre
+MANTRAS|MANTRA|31074|Formules sacrées
+APNEES|APNEE|31082|Défauts de respiration
+SERRANTE|SERRANT|31095|Qui serre
+VARIANTES|VARIANTE|31097|Versions d’un même texte|Suites de coups possibles
+REPENTIE|REPENTI|31103|Qui a abandonné la prostitution, ex-prostituée
+ANODINE|ANODIN|31113|Qui calme les douleurs et quelquefois les fait cesser complètement
+RUNES|RUNE|31123|Caractères de l’ancienne écriture scandinave
+SPASMES|SPASME|31126|Contractions involontaires
+CONTAIT|CONTER|31127|Exposait par un récit|Faisait un récit inventé pour amuser
+CONTAIENT|CONTER|31127|Exposaient par un récit|Faisaient un récit inventé pour amuser
+CONTERA|CONTER|31127|Exposera par un récit|Fera un récit inventé pour amuser
+CONTA|CONTER|31127|Exposa par un récit|Fit un récit inventé pour amuser
+CONTEE|CONTER|31127|Exposée par un récit
+CONTEES|CONTER|31127|Exposées par un récit
+RADIES|RADIE|31154|Disposés en rayons concentriques
+RAVALE|RAVALER|31166|Rabaisse
+RAVALENT|RAVALER|31166|Rabaissent
+RAVALAIT|RAVALER|31166|Rabaissait
+RAVALAIENT|RAVALER|31166|Rabaissaient
+RAVALERA|RAVALER|31166|Rabaissera
+RAVALA|RAVALER|31166|Rabaissa
+RAVALEE|RAVALER|31166|Rabaissée
+RAVALES|RAVALER|31166|Rabaissés
+RAVALEES|RAVALER|31166|Rabaissées
+BRISANTS|BRISANT|31168|Dispositifs destinés à briser les lames
+ENCLAVES|ENCLAVE|31189|Inclusions d'une roche dans une autre roche magmatique
+EXPIRE|EXPIRER|31191|Rend le dernier soupir|Rend l’air qu’on avait aspiré
+EXPIRENT|EXPIRER|31191|Rendent le dernier soupir|Rendent l’air qu’on avait aspiré
+EXPIRAIT|EXPIRER|31191|Rendait le dernier soupir|Rendait l’air qu’on avait aspiré
+EXPIRAIENT|EXPIRER|31191|Rendaient le dernier soupir|Rendaient l’air qu’on avait aspiré
+EXPIRERA|EXPIRER|31191|Rendra le dernier soupir|Rendra l’air qu’on avait aspiré
+EXPIRA|EXPIRER|31191|Rendit le dernier soupir|Rendit l’air qu’on avait aspiré
+COQUETTES|COQUETTE|31202|Variétés de laitue
+COPROPRIETES|COPROPRIETE|31204|Indivisions
+BARDAS|BARDA|31217|Bruits, vacarmes, raffuts
+DEVIANTE|DEVIANT|31228|Qui conteste
+SUPPLEANTS|SUPPLEANT|31247|Représentants
+RESIDENTIELS|RESIDENTIEL|31254|Propres à l'habitation
+BRASIERS|BRASIER|31270|Bassins de métal pour la braise ardente
+CLERCS|CLERC|31296|Savants
+FREGATES|FREGATE|31306|Navires de guerre de taille moyenne|Jeunes homosexuels, gitons
+POLKAS|POLKA|31334|Danses de salon d’origine tchèque ou polonaise
+DECALENT|DECALER|31360|Annulent le calage d’une presse
+DECALAIT|DECALER|31360|Annulait le calage d’une presse
+DECALAIENT|DECALER|31360|Annulaient le calage d’une presse
+DECALERA|DECALER|31360|Annulera le calage d’une presse
+DECALA|DECALER|31360|Annula le calage d’une presse
+AGITANTE|AGITANT|31374|Qui agite
+JAMMERS|JAMMER|31383|Gémissements
+JAMME|JAMMER|31383|Fait de la musique improvisée en groupe
+JAMMENT|JAMMER|31383|Font de la musique improvisée en groupe
+JAMMAIT|JAMMER|31383|Faisait de la musique improvisée en groupe
+JAMMAIENT|JAMMER|31383|Faisaient de la musique improvisée en groupe
+JAMMERA|JAMMER|31383|Fera de la musique improvisée en groupe
+JAMMA|JAMMER|31383|Fit de la musique improvisée en groupe
+JAMMEE|JAMMER|31383|Faite de la musique improvisée en groupe
+JAMMES|JAMMER|31383|Faits de la musique improvisée en groupe
+JAMMEES|JAMMER|31383|Faites de la musique improvisée en groupe
+GATEUSE|GATEUX|31390|Qui retombe en enfance, devient sénile, radote|Qui souffre d’incontinence urinaire ou fécale
+AIGRES|AIGRE|31424|Saveurs piquantes, amères et acides
+AFFINE|AFFINER|31427|Purifie par un moyen quelconque
+AFFINENT|AFFINER|31427|Purifient par un moyen quelconque
+AFFINAIT|AFFINER|31427|Purifiait par un moyen quelconque
+AFFINAIENT|AFFINER|31427|Purifiaient par un moyen quelconque
+AFFINERA|AFFINER|31427|Purifiera par un moyen quelconque
+AFFINA|AFFINER|31427|Purifia par un moyen quelconque
+AFFINEE|AFFINER|31427|Purifiée par un moyen quelconque
+AFFINES|AFFINER|31427|Purifiés par un moyen quelconque
+AFFINEES|AFFINER|31427|Purifiées par un moyen quelconque
+LAGONS|LAGON|31437|Étendues d’eau à l’intérieur d’un atoll
+BARATINE|BARATINER|31438|Parle sans sincérité
+BARATINENT|BARATINER|31438|Parlent sans sincérité
+BARATINAIT|BARATINER|31438|Parlait sans sincérité
+BARATINAIENT|BARATINER|31438|Parlaient sans sincérité
+BARATINERA|BARATINER|31438|Parlera sans sincérité
+BARATINA|BARATINER|31438|Parla sans sincérité
+BARATINEE|BARATINER|31438|Parlée sans sincérité
+BARATINES|BARATINER|31438|Parlés sans sincérité
+BARATINEES|BARATINER|31438|Parlées sans sincérité
+JOUVENCES|JOUVENCE|31442|Renouvellements d’un équipement scientifique devenu obsolète
+GREDINS|GREDIN|31455|Personnes malfaisantes|Coquins|Petits épagneuls anglais à long poils noirs
+ENDUITS|ENDUIT|31474|Couches de chaux|Couches de matière
+COLLIOURES|COLLIOURE|31477|Petites appellations de vins secs produits sur cette commune
+LEVURES|LEVURE|31494|Produits chimiques
+HOUSSES|HOUSSE|31504|Couvertures du siège du cocher
+COUTURIERS|COUTURIER|31507|Relatifs à un des muscles de la cuisse
+POPULACES|POPULACE|31536|Bas peuples, les communs
+APPROFONDIS|APPROFONDI|31539|Examinés à fond
+CHARRIE|CHARRIER|31545|Transporte avec soi|Emporte le gibier, se laisse emporter après
+CHARRIENT|CHARRIER|31545|Transportent avec soi|Emportent le gibier, se laissent emporter après
+CHARRIAIT|CHARRIER|31545|Transportait avec soi|Emportait le gibier, se laissait emporter après
+CHARRIAIENT|CHARRIER|31545|Transportaient avec soi|Emportaient le gibier, se laissaient emporter après
+CHARRIERA|CHARRIER|31545|Transportera avec soi|Emportera le gibier, se laissera emporter après
+CHARRIA|CHARRIER|31545|Transporta avec soi|Emporta le gibier, se laissa emporter après
+CHARRIEE|CHARRIER|31545|Transportée avec soi
+CHARRIES|CHARRIER|31545|Transportés avec soi
+CHARRIEES|CHARRIER|31545|Transportées avec soi
+BAVEUSE|BAVEUX|31572|Dont certains éléments coulent
+DESHONORE|DESHONORER|31579|Fait perdre l’honneur
+DESHONORENT|DESHONORER|31579|Font perdre l’honneur
+DESHONORAIT|DESHONORER|31579|Faisait perdre l’honneur
+DESHONORERA|DESHONORER|31579|Fera perdre l’honneur
+DESHONORA|DESHONORER|31579|Fit perdre l’honneur
+TWEEDS|TWEED|31586|Tissus de laine
+FONCEES|FONCEE|31590|Gradins dans les carrières d’ardoise
+DEBATTUES|DEBATTUE|31612|Engourdissements douloureux dûs au froid intense|Appareils de gâteau
+COSMONAUTES|COSMONAUTE|31616|Spationautes
+AJOUTS|AJOUT|31620|Apports d’une information supplémentaire
+FIACRES|FIACRE|31623|Voitures hippomobiles de louage conduite par un cocher
+MINENT|MINER|31635|Creusent par-dessous un terrain|Défoncent un sol pierreux
+MINAIT|MINER|31635|Creusait par-dessous un terrain|Défonçait un sol pierreux
+MINAIENT|MINER|31635|Creusaient par-dessous un terrain|Défonçaient un sol pierreux
+MINERA|MINER|31635|Creusera par-dessous un terrain|Défoncera un sol pierreux
+ELEVATIONS|ELEVATION|31660|Hauteurs|Améliorations du statut social
+BOUILLES|BOUILLE|31665|Citernes d'émulsion bitumineuse sur roues
+BAGATELLES|BAGATELLE|31672|Choses de peu de prix et peu nécessaire
+ETERNISE|ETERNISER|31675|Prolonge outre mesure, fait durer trop longtemps|Demeure trop longtemps
+ETERNISENT|ETERNISER|31675|Prolongent outre mesure, font durer trop longtemps|Demeurent trop longtemps
+ETERNISAIT|ETERNISER|31675|Prolongeait outre mesure, faisait durer trop longtemps|Demeurait trop longtemps
+ETERNISAIENT|ETERNISER|31675|Prolongeaient outre mesure, faisaient durer trop longtemps|Demeuraient trop longtemps
+ETERNISERA|ETERNISER|31675|Prolongera outre mesure, fera durer trop longtemps|Demeurera trop longtemps
+ETERNISA|ETERNISER|31675|Prolongea outre mesure, fit durer trop longtemps|Demeura trop longtemps
+PUCELLES|PUCELLE|31680|Vierges
+SENSUALITES|SENSUALITE|31697|Attachements aux plaisirs des sens
+DEVISAGE|DEVISAGER|31698|Cherche à se reconnaître mutuellement
+DEVISAGENT|DEVISAGER|31698|Cherchent à se reconnaître mutuellement
+DEVISAGEAIT|DEVISAGER|31698|Cherchait à se reconnaître mutuellement
+DEVISAGERA|DEVISAGER|31698|Cherchera à se reconnaître mutuellement
+DEVISAGEA|DEVISAGER|31698|Chercha à se reconnaître mutuellement
+DEVISAGEE|DEVISAGER|31698|Cherchée à se reconnaître mutuellement
+DEVISAGES|DEVISAGER|31698|Cherchés à se reconnaître mutuellement
+DEVISAGEES|DEVISAGER|31698|Cherchées à se reconnaître mutuellement
+RUMINE|RUMINER|31709|Mâche de nouveau les aliments qui ont déjà été avalés
+RUMINENT|RUMINER|31709|Mâchent de nouveau les aliments qui ont déjà été avalés
+RUMINAIT|RUMINER|31709|Mâchait de nouveau les aliments qui ont déjà été avalés
+RUMINAIENT|RUMINER|31709|Mâchaient de nouveau les aliments qui ont déjà été avalés
+RUMINERA|RUMINER|31709|Mâchera de nouveau les aliments qui ont déjà été avalés
+RUMINA|RUMINER|31709|Mâcha de nouveau les aliments qui ont déjà été avalés
+RUMINEE|RUMINER|31709|Mâchée de nouveau les aliments qui ont déjà été avalés
+RUMINES|RUMINER|31709|Mâchés de nouveau les aliments qui ont déjà été avalés
+RUMINEES|RUMINER|31709|Mâchées de nouveau les aliments qui ont déjà été avalés
+MAGOUILLES|MAGOUILLE|31710|Actions douteuses ou malhonnêtes voire illicites ou illégales|Trafics non déclarés de magot
+RETOMBEES|RETOMBEE|31714|Transferts sectoriels|Conséquences annexes
+DEBOULES|DEBOULE|31723|Mouvements très rapides des pattes d’un cheval|Séries de mouvements courts avec rotation sur soi-même
+GOALS|GOAL|31730|Gardiens de but
+LIGOTE|LIGOTER|31756|Lie étroitement
+LIGOTENT|LIGOTER|31756|Lient étroitement
+LIGOTAIT|LIGOTER|31756|Liait étroitement
+LIGOTAIENT|LIGOTER|31756|Liaient étroitement
+LIGOTERA|LIGOTER|31756|Liera étroitement
+LIGOTA|LIGOTER|31756|Lia étroitement
+DERISOIRES|DERISOIRE|31758|Risiblements inutiles, vains, inefficaces
+SEGREGATIONS|SEGREGATION|31762|Séparations d’une masse
+FRINGANTS|FRINGANT|31780|Alertes, éveillés
+FRINGANTE|FRINGANT|31780|Alerte, éveillée
+FRINGANTES|FRINGANT|31780|Alertes, éveillées
+SPARADRAPS|SPARADRAP|31790|Bandages plus ou moins poreux
+DEROUILLE|DEROUILLER|31804|Retrouve un fonctionnement normal, retrouve son agilité
+DEROUILLENT|DEROUILLER|31804|Retrouvent un fonctionnement normal, retrouvent son agilité
+DEROUILLAIT|DEROUILLER|31804|Retrouvait un fonctionnement normal, retrouvait son agilité
+DEROUILLERA|DEROUILLER|31804|Retrouvera un fonctionnement normal, retrouvera son agilité
+DEROUILLA|DEROUILLER|31804|Retrouva un fonctionnement normal, retrouva son agilité
+BARDES|BARDE|31815|Anciennes armures faites de lames de fer
+CILS|CIL|31816|Poils des paupières
+NARGUE|NARGUER|31818|Brave avec mépris
+NARGUENT|NARGUER|31818|Bravent avec mépris
+NARGUAIT|NARGUER|31818|Bravait avec mépris
+NARGUAIENT|NARGUER|31818|Bravaient avec mépris
+NARGUERA|NARGUER|31818|Bravera avec mépris
+NARGUA|NARGUER|31818|Brava avec mépris
+NARGUEE|NARGUER|31818|Bravée avec mépris
+NARGUES|NARGUER|31818|Bravés avec mépris
+NARGUEES|NARGUER|31818|Bravées avec mépris
+VEXANTE|VEXANT|31849|Qui cause de la peine, qui contrarie|Qui froisse la susceptibilité
+CORRIDAS|CORRIDA|31853|Courses à pied
+BOUEUSE|BOUEUX|31855|Dont l’encre déborde du trait
+ATTS|ATT|31859|Centièmes de kip
+SINGULARITES|SINGULARITE|31860|Manières d’agir
+TOMES|TOME|31866|Divisions intellectuelles d’un ouvrage|Fromages de montagne au lait de vache ou de chèvre
+ADAGES|ADAGE|31878|Proverbes
+DRESSAGES|DRESSAGE|31879|Positionnements des éléments d’un plat dans une assiette
+RESTITUE|RESTITUER|31883|Rend ce qui n'a plus lieu d'être détenu|Rend ce qui avait été perdu
+RESTITUENT|RESTITUER|31883|Rendent ce qui n'a plus lieu d'être détenu|Rendent ce qui avait été perdu
+RESTITUAIT|RESTITUER|31883|Rendait ce qui n'a plus lieu d'être détenu|Rendait ce qui avait été perdu
+RESTITUAIENT|RESTITUER|31883|Rendaient ce qui n'a plus lieu d'être détenu|Rendaient ce qui avait été perdu
+RESTITUERA|RESTITUER|31883|Rendra ce qui n'a plus lieu d'être détenu|Rendra ce qui avait été perdu
+RESTITUA|RESTITUER|31883|Rendit ce qui n'a plus lieu d'être détenu|Rendit ce qui avait été perdu
+SYNCOPES|SYNCOPE|31893|Disparitions d’un e caduc dans le corps du mot
+JACKETS|JACKET|31902|Revêtements de la couronne d’une dent
+DEPRAVATIONS|DEPRAVATION|31931|Vices de quelqu'un
+PERFORMANTE|PERFORMANT|31937|Qui fonctionne bien, productif
+MAMELONS|MAMELON|31938|Éminences arrondies|Tubes filetés
+VISIONNE|VISIONNER|31941|Regarde avec attention
+VISIONNENT|VISIONNER|31941|Regardent avec attention
+VISIONNAIT|VISIONNER|31941|Regardait avec attention
+VISIONNAIENT|VISIONNER|31941|Regardaient avec attention
+VISIONNERA|VISIONNER|31941|Regardera avec attention
+VISIONNA|VISIONNER|31941|Regarda avec attention
+VISIONNEE|VISIONNER|31941|Regardée avec attention
+VISIONNES|VISIONNER|31941|Regardés avec attention
+VISIONNEES|VISIONNER|31941|Regardées avec attention
+ALLEGRESSES|ALLEGRESSE|31943|Joies publiques
+AIGUISENT|AIGUISER|31955|Rendent aigu
+AIGUISAIT|AIGUISER|31955|Rendait aigu
+AIGUISAIENT|AIGUISER|31955|Rendaient aigu
+AIGUISERA|AIGUISER|31955|Rendra aigu
+AIGUISA|AIGUISER|31955|Rendit aigu
+MAJORITAIRES|MAJORITAIRE|31959|Les plus répandus
+ONCOLOGIES|ONCOLOGIE|31963|Études du cancer, de son diagnostic et de son traitement
+TREMBLANTES|TREMBLANTE|31964|Maladies du mouton du type des encéphalopathies spongiformes
+TROMBES|TROMBE|31973|Tornades|Tourbillons d'air
+BIENHEUREUSE|BIENHEUREUX|31978|Qui a ou qui procure beaucoup de bonheur|Qui jouit de la béatitude éternelle
+IRRECEVABLES|IRRECEVABLE|32017|Dénués de rapport avec l’objet des débats
+PANTHEONS|PANTHEON|32018|Temples consacrés à tous les dieux à la fois
+ACHARNENT|ACHARNER|32022|Donnent aux chiens
+ACHARNAIT|ACHARNER|32022|Donnait aux chiens
+ACHARNAIENT|ACHARNER|32022|Donnaient aux chiens
+ACHARNERA|ACHARNER|32022|Donnera aux chiens
+ACHARNA|ACHARNER|32022|Donna aux chiens
+ACHARNEE|ACHARNER|32022|Donnée aux chiens
+ACHARNES|ACHARNER|32022|Donnés aux chiens
+ACHARNEES|ACHARNER|32022|Données aux chiens
+MAGMAS|MAGMA|32025|Résidus épais|Bouillies
+PIVOTS|PIVOT|32053|Racines principales de certains arbres
+TWISTE|TWISTER|32056|Détourne
+TWISTENT|TWISTER|32056|Détournent
+TWISTAIT|TWISTER|32056|Détournait
+TWISTAIENT|TWISTER|32056|Détournaient
+TWISTERA|TWISTER|32056|Détournera
+TWISTA|TWISTER|32056|Détourna
+TWISTEE|TWISTER|32056|Détournée
+TWISTES|TWISTER|32056|Détournés
+TWISTEES|TWISTER|32056|Détournées
+ACCABLENT|ACCABLER|32060|Font succomber, font tomber
+ACCABLAIT|ACCABLER|32060|Faisait succomber, faisait tomber
+ACCABLAIENT|ACCABLER|32060|Faisaient succomber, faisaient tomber
+ACCABLERA|ACCABLER|32060|Fera succomber, fera tomber
+ACCABLA|ACCABLER|32060|Fit succomber, fit tomber
+TELEMETRIES|TELEMETRIE|32069|Arts de mesurer les distances
+QUADRILLES|QUADRILLE|32071|Chaques groupes de quatre danseurs et de quatre danseuses
+INAUGURE|INAUGURER|32081|Consacre par une cérémonie solennelle
+INAUGURENT|INAUGURER|32081|Consacrent par une cérémonie solennelle
+INAUGURAIT|INAUGURER|32081|Consacrait par une cérémonie solennelle
+INAUGURAIENT|INAUGURER|32081|Consacraient par une cérémonie solennelle
+INAUGURERA|INAUGURER|32081|Consacrera par une cérémonie solennelle
+INAUGURA|INAUGURER|32081|Consacra par une cérémonie solennelle
+INAUGUREE|INAUGURER|32081|Consacrée par une cérémonie solennelle
+INAUGURES|INAUGURER|32081|Consacrés par une cérémonie solennelle
+INAUGUREES|INAUGURER|32081|Consacrées par une cérémonie solennelle
+BORDELIQUES|BORDELIQUE|32097|Personnes désordonnées
+TALIBANS|TALIBAN|32136|Militants fondamentalistes sunnites
+CAPITULE|CAPITULER|32142|Se rend aux conditions imposées par l’ennemi
+CAPITULENT|CAPITULER|32142|Se rendent aux conditions imposées par l’ennemi
+CAPITULAIT|CAPITULER|32142|Se rendait aux conditions imposées par l’ennemi
+CAPITULAIENT|CAPITULER|32142|Se rendaient aux conditions imposées par l’ennemi
+CAPITULERA|CAPITULER|32142|Se rendra aux conditions imposées par l’ennemi
+CAPITULA|CAPITULER|32142|Se rendit aux conditions imposées par l’ennemi
+BOURGS|BOURG|32143|Petites villes ou grands villages
+LOTISSEMENTS|LOTISSEMENT|32157|Actions de diviser en parts pour les vendre|Quartiers ainsi aménagés
+EMIRS|EMIR|32184|Chefs d’une tribu ou d’un territoire dans les pays musulmans
+ITINERANTE|ITINERANT|32187|Qui se déplace dans l’exercice de ses fonctions|Qui a lieu dans des endroits différents et à des moments successifs
+FRAPPEURS|FRAPPEUR|32191|Ouvriers estampeurs de cuir ou de papier
+EMPILE|EMPILER|32198|Met en pile
+EMPILENT|EMPILER|32198|Mettent en pile
+EMPILAIT|EMPILER|32198|Mettait en pile
+EMPILAIENT|EMPILER|32198|Mettaient en pile
+EMPILERA|EMPILER|32198|Mettra en pile
+EMPILA|EMPILER|32198|Mit en pile
+EMPILEE|EMPILER|32198|Mise en pile
+EMPILES|EMPILER|32198|Mis en pile
+EMPILEES|EMPILER|32198|Mises en pile
+QUADS|QUAD|32214|Véhicules à moteur tout terrain|Sauts à quatre tours en phase de suspension
+DETERMINANTS|DETERMINANT|32224|Quantités scalaires associées à une famille de vecteurs|Gènes responsables de la transmission des caractères héréditaires
+LEGOS|LEGO|32227|Exemplaires d’une boite du jeu de construction éponyme|Petites briques en plastique emboitable de ce jeu
+HAWAIENNES|HAWAIENNE|32235|Pizzas garnies de mozzarella, sauce tomate, jambon, ananas
+ENRHUMES|ENRHUME|32236|Évoquants las congestions
+RUMBAS|RUMBA|32246|Styles de danse sur cette musique ou sur tout autre rythme latino
+DELEGUE|DELEGUER|32263|Confie
+DELEGUENT|DELEGUER|32263|Confient
+DELEGUAIT|DELEGUER|32263|Confiait
+DELEGUAIENT|DELEGUER|32263|Confiaient
+DELEGUERA|DELEGUER|32263|Confiera
+DELEGUA|DELEGUER|32263|Confia
+DELEGUEE|DELEGUER|32263|Confiée
+DELEGUES|DELEGUER|32263|Confiés
+DELEGUEES|DELEGUER|32263|Confiées
+SORBETS|SORBET|32269|Glaces à base d’eau
+ANALES|ANALE|32276|Sodomies
+GISEMENTS|GISEMENT|32290|Positions des masses de minéraux dans la terre|Ressources disponibles d’une matière première
+REFORMENT|REFORMER|32294|Diminuent
+REFORMAIT|REFORMER|32294|Diminuait
+REFORMAIENT|REFORMER|32294|Diminuaient
+REFORMERA|REFORMER|32294|Diminuera
+REFORMA|REFORMER|32294|Diminua
+REFORMEE|REFORMER|32294|Diminuée
+REFORMEES|REFORMER|32294|Diminuées
+KAMALS|KAMAL|32298|Huitièmes mois du calendrier bahaï
+DESESPERENT|DESESPERER|32339|Se tourmentent
+DESESPERAIT|DESESPERER|32339|Se tourmentait
+DESESPERERA|DESESPERER|32339|Se tourmentera
+DESESPERA|DESESPERER|32339|Se tourmenta
+GOUPILLES|GOUPILLE|32346|Petits cylindres
+CANICULES|CANICULE|32360|Épisodes de chaleur intense et durable
+RONFLEMENTS|RONFLEMENT|32369|Phénomènes sonores transitoires
+CUEILLETTES|CUEILLETTE|32371|Ramassages des ordures ménagères
+ABATTES|ABATTE|32400|Ables, ablettes
+MOLETTES|MOLETTE|32424|Maladies des chevaux
+VENTOUSES|VENTOUSE|32439|Coupelles élastiques et hermétiques
+DEBARDEURS|DEBARDEUR|32441|Travailleurs des quais, docker
+OMISSIONS|OMISSION|32453|Actions d’omettre|Les choses omises
+QUICKS|QUICK|32457|Courts de tennis fait avec cette matière
+TEIGNES|TEIGNE|32467|Dermatoses du cuir chevelu d'origine cryptogamique|Dermatoses analogues
+AISSELLES|AISSELLE|32500|Creux, renfoncements
+TAXENT|TAXER|32508|Accusent|Fixent une somme qu’on s’engage à donner pour un certain objet
+TAXAIT|TAXER|32508|Accusait|Fixait une somme qu’on s’engage à donner pour un certain objet
+TAXAIENT|TAXER|32508|Accusaient|Fixaient une somme qu’on s’engage à donner pour un certain objet
+TAXERA|TAXER|32508|Accusera|Fixera une somme qu’on s’engage à donner pour un certain objet
+TAXA|TAXER|32508|Accusa|Fixa une somme qu’on s’engage à donner pour un certain objet
+TAXEE|TAXER|32508|Accusée
+TAXES|TAXER|32508|Accusés
+TAXEES|TAXER|32508|Accusées
+MIXAGES|MIXAGE|32512|Actions de mixer, de mélanger
+EPOUVANTES|EPOUVANTE|32523|Peurs intenses causées par une menace devenue soudain perceptible|Appréhensions, peurs profondes et persistantes
+NUISANCES|NUISANCE|32553|Troubles, dérangements
+SALOPETTES|SALOPETTE|32572|Vêtements de travail
+VISSE|VISSER|32574|Attache, fixe avec des vis|Fixe à quelque chose
+VISSENT|VISSER|32574|Attachent, fixent avec des vis|Fixent à quelque chose
+VISSAIT|VISSER|32574|Attachait, fixait avec des vis|Fixait à quelque chose
+VISSAIENT|VISSER|32574|Attachaient, fixaient avec des vis|Fixaient à quelque chose
+VISSERA|VISSER|32574|Attachera, fixera avec des vis|Fixera à quelque chose
+VISSA|VISSER|32574|Attacha, fixa avec des vis|Fixa à quelque chose
+VISSEE|VISSER|32574|Attachée, fixée avec des vis|Fixée à quelque chose
+VISSES|VISSER|32574|Attachés, fixés avec des vis|Fixés à quelque chose
+VISSEES|VISSER|32574|Attachées, fixées avec des vis|Fixées à quelque chose
+CODAGES|CODAGE|32586|Actions de coder ou son résultat|Programmations informatiques
+PRUSSES|PRUSSE|32599|Épicéas
+PECANS|PECAN|32601|Fruits du pacanier
+AMASSE|AMASSER|32602|Accumule
+AMASSENT|AMASSER|32602|Accumulent
+AMASSAIT|AMASSER|32602|Accumulait
+AMASSAIENT|AMASSER|32602|Accumulaient
+AMASSERA|AMASSER|32602|Accumulera
+AMASSA|AMASSER|32602|Accumula
+AMASSEE|AMASSER|32602|Accumulée
+AMASSES|AMASSER|32602|Accumulés
+AMASSEES|AMASSER|32602|Accumulées
+DRIVERS|DRIVER|32626|Clubs de golf|Pilotes d’installation
+NOAS|NOA|32632|Ceps de ce cépage|Vins de ce cépage
+CORNEMUSES|CORNEMUSE|32642|Instruments de musique à vent
+IMPUNIE|IMPUNI|32647|Qui ne reçoit pas ou qui n’a pas reçu la punition méritée
+MUNIE|MUNI|32654|Qui a, doté de
+IGNARES|IGNARE|32673|Personnages d’une ignorance excessive
+FANTASQUES|FANTASQUE|32726|Extravagants, insolites
+RISIBLES|RISIBLE|32730|Matières à rire
+PINTOS|PINTO|32751|Races de cheval polyvalent|Variétés de haricot rouge
+RAMADANS|RAMADAN|32766|Neuvièmes mois du calendrier musulman
+ORQUES|ORQUE|32777|Femmes orcs
+MYRONS|MYRON|32805|Parfums, myrrhes
+COLLAGES|COLLAGE|32824|Actions de coller|Compositions faites d’éléments hétérogènes|Imprégnations du papier de colle
+PARTANCES|PARTANCE|32827|Départs d’un train, d’une personne, etc
+CABRIOLETS|CABRIOLET|32844|Voitures automobiles à deux places, souvent décapotable
+HERISSONS|HERISSON|32848|Désignes aussi des animaux comme l’oursin, des coquillages|Égouttoirs à bouteilles, if
+SPATULES|SPATULE|32863|Baguettes de bois
+TRILOGIES|TRILOGIE|32865|Groupes de trois pièces de théâtre
+FESSIERS|FESSIER|32880|Relatifs aux fesses
+SERVITUDES|SERVITUDE|32888|Esclavages, captivités|Contraintes|Assujettissements
+SUBALTERNES|SUBALTERNE|32897|Subordonnés
+NARCISSISMES|NARCISSISME|32901|Investissements du sujet sur lui-même
+ZODIAQUES|ZODIAQUE|32920|Zones du ciel
+FOULENT|FOULER|32925|Pressent quelque chose qui cède|Pressent sur les feuilles qui reçoivent l’impression
+FOULAIT|FOULER|32925|Pressait quelque chose qui cède|Pressait sur les feuilles qui reçoivent l’impression
+FOULAIENT|FOULER|32925|Pressaient quelque chose qui cède|Pressaient sur les feuilles qui reçoivent l’impression
+FOULERA|FOULER|32925|Pressera quelque chose qui cède|Pressera sur les feuilles qui reçoivent l’impression
+FOULA|FOULER|32925|Pressa quelque chose qui cède|Pressa sur les feuilles qui reçoivent l’impression
+FOULES|FOULER|32925|Pressés sur les feuilles qui reçoivent l’impression
+EMEUTS|EMEUT|32930|Fientes de faucon
+CRIQUETS|CRIQUET|32979|Grillons
+TITILLE|TITILLER|32985|Chatouille légèrement
+TITILLENT|TITILLER|32985|Chatouillent légèrement
+TITILLAIT|TITILLER|32985|Chatouillait légèrement
+TITILLAIENT|TITILLER|32985|Chatouillaient légèrement
+TITILLERA|TITILLER|32985|Chatouillera légèrement
+TITILLA|TITILLER|32985|Chatouilla légèrement
+ROTULES|ROTULE|32992|Parchemins roulés
+ETOILEES|ETOILEE|33003|Variétés de tulipe
+PROFILAGES|PROFILAGE|33007|Établissements as posterioris|Fabrications d’images sensorielles|Analyses de l’exécution d’un logiciel
+SOMMATIONS|SOMMATION|33020|Actions de sommer, de mettre en demeure|Additions
+MOUSSENT|MOUSSER|33035|Vantent, mettent en avant, font valoir
+MOUSSAIT|MOUSSER|33035|Vantait, mettait en avant, faisait valoir
+MOUSSAIENT|MOUSSER|33035|Vantaient, mettaient en avant, faisaient valoir
+MOUSSERA|MOUSSER|33035|Vantera, mettra en avant, fera valoir
+MOUSSA|MOUSSER|33035|Vanta, mit en avant, fit valoir
+CASTILLES|CASTILLE|33048|Groseilles à grappes
+ATTESTE|ATTESTER|33072|Prouve|Prend à témoin
+ATTESTENT|ATTESTER|33072|Prouvent|Prennent à témoin
+ATTESTAIT|ATTESTER|33072|Prouvait|Prenait à témoin
+ATTESTAIENT|ATTESTER|33072|Prouvaient|Prenaient à témoin
+ATTESTERA|ATTESTER|33072|Prouvera|Prendra à témoin
+ATTESTA|ATTESTER|33072|Prouva|Prit à témoin
+ATTESTEE|ATTESTER|33072|Prouvée|Prise à témoin
+ATTESTES|ATTESTER|33072|Prouvés|Pris à témoin
+ATTESTEES|ATTESTER|33072|Prouvées|Prises à témoin
+TRESSES|TRESSE|33074|Assemblages de petits cordons, de fils, de cheveux, etc|Réunions de brins deux à deux disjoints
+TOUPIES|TOUPIE|33080|Dégauchisseuses
+COTIERES|COTIERE|33118|Planches de jardinage
+ATTESTATIONS|ATTESTATION|33120|Exemples d’emploi d’un mot dans un texte
+DENTITIONS|DENTITION|33126|Poussées de dents
+MIELLEUSE|MIELLEUX|33141|Qui tient du miel
+INFINITES|INFINITE|33162|Des très grands nombres
+RIXES|RIXE|33165|Querelles violentes entre deux ou plusieurs personnes
+ENFLE|ENFLER|33169|Augmente un corps de volume|Augmente d'intensité
+ENFLENT|ENFLER|33169|Augmentent un corps de volume|Augmentent d'intensité
+ENFLAIT|ENFLER|33169|Augmentait un corps de volume|Augmentait d'intensité
+ENFLAIENT|ENFLER|33169|Augmentaient un corps de volume|Augmentaient d'intensité
+ENFLERA|ENFLER|33169|Augmentera un corps de volume|Augmentera d'intensité
+ENFLA|ENFLER|33169|Augmenta un corps de volume|Augmenta d'intensité
+ENFLEE|ENFLER|33169|Augmentée d'intensité
+ENFLES|ENFLER|33169|Augmentés d'intensité
+ENFLEES|ENFLER|33169|Augmentées d'intensité
+THYROIDES|THYROIDE|33182|Des cartilages du larynx, impair
+SURSAUTS|SURSAUT|33187|Mouvements brusques occasionnés par quelque sensation subite et violente
+MOUCHENT|MOUCHER|33209|Soufflent par les narines pour en faire sortir les mucosités|Ôtent le bout du lumignon d’une chandelle
+MOUCHAIT|MOUCHER|33209|Soufflait par les narines pour en faire sortir les mucosités|Ôtait le bout du lumignon d’une chandelle
+MOUCHAIENT|MOUCHER|33209|Soufflaient par les narines pour en faire sortir les mucosités|Ôtaient le bout du lumignon d’une chandelle
+MOUCHERA|MOUCHER|33209|Soufflera par les narines pour en faire sortir les mucosités|Ôtera le bout du lumignon d’une chandelle
+MOUCHA|MOUCHER|33209|Souffla par les narines pour en faire sortir les mucosités|Ôta le bout du lumignon d’une chandelle
+MOUCHEE|MOUCHER|33209|Soufflée par les narines pour en faire sortir les mucosités
+MOUCHEES|MOUCHER|33209|Soufflées par les narines pour en faire sortir les mucosités
+POSTIERE|POSTIER|33212|Qui concerne les postes
+ARYENS|ARYEN|33216|Relatifs à la race supérieure blanche
+CURIES|CURIE|33227|Sénats d'un municipe
+ETOUFFEMENTS|ETOUFFEMENT|33236|Difficultés de respirer|Dispositifs destinés à faire cesser la vibration des cordes d'un piano
+BITUMES|BITUME|33264|Matières minérales|Couleurs employées dans la peinture à l’huile
+PRUNELLES|PRUNELLE|33283|Liqueurs faites avec ce fruit|Les pupilles de l’œil
+GROGS|GROG|33288|Boissons chaudes à base d’eau et de rhum
+MOULAGES|MOULAGE|33319|Actions de mouler|Reproductions à partir d'une empreinte en plâtre prise sur l'original|Actions de moudre
+GERMES|GERME|33322|Rudiments de tout être organisé, végétal ou animal|Parties d’une racine bulbeuse ou tubéreuse
+PLAGIATS|PLAGIAT|33326|Emprunts à d’autres auteurs
+BROCANTES|BROCANTE|33327|Petits marchés
+ORIENTES|ORIENTE|33347|Dispositions spatiales par rapport aux points cardinaux
+HYMENS|HYMEN|33360|Pellicules de la corolle d’une fleur|Mariages, unions conjugales
+ENGRAISSE|ENGRAISSER|33370|Prend du poids
+ENGRAISSENT|ENGRAISSER|33370|Prennent du poids
+ENGRAISSAIT|ENGRAISSER|33370|Prenait du poids
+ENGRAISSERA|ENGRAISSER|33370|Prendra du poids
+ENGRAISSA|ENGRAISSER|33370|Prit du poids
+ENGRAISSEE|ENGRAISSER|33370|Prise du poids
+ENGRAISSES|ENGRAISSER|33370|Pris du poids
+ENGRAISSEES|ENGRAISSER|33370|Prises du poids
+RAFFINEMENTS|RAFFINEMENT|33411|Extrêmes subtilités
+IGUANES|IGUANE|33412|Viandes de cet animal
+TORSIONS|TORSION|33429|Actions de tordre
+ECHINES|ECHINE|33446|Parties du dos de l’homme ou de certains animaux|Moulures convexes
+TREPIEDS|TREPIED|33453|Ustensiles de cuisine à trois pieds|Supports à trois pieds|Tout supports à trois pieds
+SEROTONINES|SEROTONINE|33460|Composés organiques de la famille des indolamines
+PERIDURALES|PERIDURALE|33467|Ces techniques utilisées lors de l'accouchement
+COMBOS|COMBO|33475|Enchainements parfois complexes de plusieurs actions simples
+BICOQUES|BICOQUE|33498|Maisons
+VARIE|VARIER|33501|Change, se modifie, présente des changements successifs
+VARIENT|VARIER|33501|Changent, se modifient, présentent des changements successifs
+VARIAIT|VARIER|33501|Changeait, se modifiait, présentait des changements successifs
+VARIAIENT|VARIER|33501|Changeaient, se modifiaient, présentaient des changements successifs
+VARIERA|VARIER|33501|Changera, se modifiera, présentera des changements successifs
+VARIA|VARIER|33501|Changea, se modifia, présenta des changements successifs
+TAPS|TAP|33514|Coups frappés au sol par un danseur de claquettes
+CONCORDANCES|CONCORDANCE|33526|Accords des mots les uns avec les autres
+BARRETTES|BARRETTE|33528|Petites pinces pour attacher les cheveux
+ABASOURDIS|ABASOURDI|33554|Extrêmements surpris
+PSAUMES|PSAUME|33577|Cantiques religieux
+INTRIGANTE|INTRIGANT|33590|Qui suscite la curiosité
+TILTS|TILT|33602|Actions provoquées par enclenchement de ce mécanisme|Déclics d'un mécanisme
+DIESES|DIESE|33607|Symboles graphiques|Notes haussées d’un demi-ton, abstraction faite des signes
+BRAVENT|BRAVER|33611|Passent outre|Affrontent
+BRAVAIT|BRAVER|33611|Passait outre|Affrontait
+BRAVAIENT|BRAVER|33611|Passaient outre|Affrontaient
+BRAVERA|BRAVER|33611|Passera outre|Affrontera
+BRAVA|BRAVER|33611|Passa outre|Affronta
+BRAVEE|BRAVER|33611|Affrontée
+BRAVEES|BRAVER|33611|Affrontées
+DEPORTES|DEPORTE|33612|Personnes déplacées de façon autoritaire à l’étranger
+SONATES|SONATE|33614|Compositions instrumentales de musique classique
+PROCLAME|PROCLAMER|33639|Affirme avec ostentation pour tenter de convaincre un large public
+PROCLAMENT|PROCLAMER|33639|Affirment avec ostentation pour tenter de convaincre un large public
+PROCLAMAIT|PROCLAMER|33639|Affirmait avec ostentation pour tenter de convaincre un large public
+PROCLAMAIENT|PROCLAMER|33639|Affirmaient avec ostentation pour tenter de convaincre un large public
+PROCLAMERA|PROCLAMER|33639|Affirmera avec ostentation pour tenter de convaincre un large public
+PROCLAMA|PROCLAMER|33639|Affirma avec ostentation pour tenter de convaincre un large public
+PROCLAMEE|PROCLAMER|33639|Affirmée avec ostentation pour tenter de convaincre un large public
+PROCLAMES|PROCLAMER|33639|Affirmés avec ostentation pour tenter de convaincre un large public
+PROCLAMEES|PROCLAMER|33639|Affirmées avec ostentation pour tenter de convaincre un large public
+BONNENT|BONNER|33641|Cessent de cuire faute de feu et contractent un mauvais goût
+BONNAIT|BONNER|33641|Cessait de cuire faute de feu et contractait un mauvais goût
+BONNAIENT|BONNER|33641|Cessaient de cuire faute de feu et contractaient un mauvais goût
+BONNERA|BONNER|33641|Cessera de cuire faute de feu et contractera un mauvais goût
+BONNA|BONNER|33641|Cessa de cuire faute de feu et contracta un mauvais goût
+IRRITENT|IRRITER|33642|Mettent en colère|Agacent, importunent|Causent de la douleur
+IRRITAIT|IRRITER|33642|Mettait en colère|Agaçait, importunait|Causait de la douleur
+IRRITAIENT|IRRITER|33642|Mettaient en colère|Agaçaient, importunaient|Causaient de la douleur
+IRRITERA|IRRITER|33642|Mettra en colère|Agacera, importunera|Causera de la douleur
+IRRITA|IRRITER|33642|Mit en colère|Agaça, importuna|Causa de la douleur
+IRRITEE|IRRITER|33642|Mise en colère|Agacée, importunée|Causée de la douleur
+IRRITES|IRRITER|33642|Mis en colère|Agacés, importunés|Causés de la douleur
+IRRITEES|IRRITER|33642|Mises en colère|Agacées, importunées|Causées de la douleur
+CULMINANTE|CULMINANT|33648|Qui atteint sa plus grande hauteur
+FORNICATIONS|FORNICATION|33676|Péchés de la chair
+CONSISTANTS|CONSISTANT|33677|Complets, denses
+TURBULENCES|TURBULENCE|33708|États d’un fluide
+GUIGNES|GUIGNE|33712|Malchances, poisses|Cerises douces à chair molle
+SUMOS|SUMO|33725|Sports de lutte japonais
+KILTS|KILT|33739|Jupes féminines de cette forme
+ECUSSONS|ECUSSON|33761|Petits écus
+SOUDURES|SOUDURE|33777|Actions de souder|Compositions métalliques fusibles
+JOUTES|JOUTE|33791|Combats à cheval d'homme à homme avec la lance|Toutes espèces de combat entre deux personnes
+IMPREGNES|IMPREGNE|33802|Pénétrés dans toutes ses parties
+COMPTINES|COMPTINE|33814|Chansons ou poèmes enfantins, souvent traditionnels
+FINITIONS|FINITION|33852|Actions de finir|Aspects finis d’un objet
+UZIS|UZI|33867|Pistolets mitrailleurs israéliens
+ISOLANTE|ISOLANT|33875|Qui ne transmet pas librement l’électricité
+PLACEBOS|PLACEBO|33876|Imitations de médicament sans principe actif
+INCOHERENTE|INCOHERENT|33883|Qui manque de logique, de réflexion ou de rationalité
+ACCULES|ACCULE|33885|Dispositions particulières d’un ensemble de meubles
+PADAWANS|PADAWAN|33886|Apprentis, novices|Personnes inexpérimentées
+PETILLANTE|PETILLANT|33901|Qui brille avec éclat
+HEPARINES|HEPARINE|33915|Familles de molécule de la famille des glycosaminoglycanes
+MAILLES|MAILLE|33941|Ouvertures pratiquées dans les lisses du métier à tisser
+AVISENT|AVISER|33961|Font réflexion à une chose à laquelle on n’avait pas pensé|S'imaginent quelque chose
+AVISAIT|AVISER|33961|Faisait réflexion à une chose à laquelle on n’avait pas pensé|S'imaginait quelque chose
+AVISAIENT|AVISER|33961|Faisaient réflexion à une chose à laquelle on n’avait pas pensé|S'imaginaient quelque chose
+AVISERA|AVISER|33961|Fera réflexion à une chose à laquelle on n’avait pas pensé|S'imaginera quelque chose
+AVISA|AVISER|33961|Fit réflexion à une chose à laquelle on n’avait pas pensé|S'imagina quelque chose
+DODUS|DODU|34009|Bombés, bien remplis
+DODUE|DODU|34009|Qui a un embonpoint ferme et de bonne nature|Bombée, bien remplie
+DODUES|DODU|34009|Bombées, bien remplies
+BICS|BIC|34016|Stylos à bille|Briquets
+EBRUITE|EBRUITER|34017|Divulgue, rend public
+EBRUITENT|EBRUITER|34017|Divulguent, rendent public
+EBRUITAIT|EBRUITER|34017|Divulguait, rendait public
+EBRUITAIENT|EBRUITER|34017|Divulguaient, rendaient public
+EBRUITERA|EBRUITER|34017|Divulguera, rendra public
+EBRUITA|EBRUITER|34017|Divulgua, rendit public
+AUREOLES|AUREOLE|34026|Taches en forme de cercle faite sur un différent type de matière
+ASYSTOLIES|ASYSTOLIE|34028|Troubles du rythme cardiaque
+DEVERSE|DEVERSER|34035|Fait couler un liquide d’un lieu dans un autre
+DEVERSENT|DEVERSER|34035|Font couler un liquide d’un lieu dans un autre
+DEVERSAIT|DEVERSER|34035|Faisait couler un liquide d’un lieu dans un autre
+DEVERSAIENT|DEVERSER|34035|Faisaient couler un liquide d’un lieu dans un autre
+DEVERSERA|DEVERSER|34035|Fera couler un liquide d’un lieu dans un autre
+DEVERSA|DEVERSER|34035|Fit couler un liquide d’un lieu dans un autre
+VIBRANTE|VIBRANT|34047|Qui vibre
+BABIOLES|BABIOLE|34062|Choses de peu d’importance ou de peu de valeur
+RECURE|RECURER|34096|Fait un troisième labour dans les vignes
+RECURENT|RECURER|34096|Font un troisième labour dans les vignes
+RECURAIT|RECURER|34096|Faisait un troisième labour dans les vignes
+RECURAIENT|RECURER|34096|Faisaient un troisième labour dans les vignes
+RECURERA|RECURER|34096|Fera un troisième labour dans les vignes
+RECURA|RECURER|34096|Fit un troisième labour dans les vignes
+CHIASSES|CHIASSE|34097|Écumes des métaux en fusion
+HUBOTS|HUBOT|34102|Robots à l’apparence humaine
+CARIBOUS|CARIBOU|34104|Boissons composées de vin rouge et d’alcool fort
+PULSATIONS|PULSATION|34116|Battements du cœur
+DELIE|DELIER|34127|Dégage de ce qui lie
+DELIENT|DELIER|34127|Dégagent de ce qui lie
+DELIAIT|DELIER|34127|Dégageait de ce qui lie
+DELIAIENT|DELIER|34127|Dégageaient de ce qui lie
+DELIERA|DELIER|34127|Dégagera de ce qui lie
+DELIA|DELIER|34127|Dégagea de ce qui lie
+DELIEE|DELIER|34127|Dégagée de ce qui lie
+DELIES|DELIER|34127|Dégagés de ce qui lie
+DELIEES|DELIER|34127|Dégagées de ce qui lie
+DJINNS|DJINN|34131|Entités polymorphes nées du feu
+TARMACS|TARMAC|34135|Surfaces d'atterrissage des appareils sur un porte-avions
+FUYARDS|FUYARD|34137|Fugitifs
+FUYARDE|FUYARD|34137|Qui s'enfuit
+COHESIONS|COHESION|34140|Forces par laquelle les parties d’un corps adhèrent entre elles
+CONGEDIE|CONGEDIER|34142|Autorise ou invite quelqu’un à se retirer
+CONGEDIENT|CONGEDIER|34142|Autorisent ou invitent quelqu’un à se retirer
+CONGEDIAIT|CONGEDIER|34142|Autorisait ou invitait quelqu’un à se retirer
+CONGEDIAIENT|CONGEDIER|34142|Autorisaient ou invitaient quelqu’un à se retirer
+CONGEDIERA|CONGEDIER|34142|Autorisera ou invitera quelqu’un à se retirer
+CONGEDIA|CONGEDIER|34142|Autorisa ou invita quelqu’un à se retirer
+HACKS|HACK|34149|Piratages informatiques
+ACCRUES|ACCRUE|34155|Mailles ajoutées à un rang de mailles
+ALTERATIONS|ALTERATION|34165|Changements dans l’état d’une chose|Dégradations par rapport à un état normal ou un état d’origine
+SOUPAPES|SOUPAPE|34184|Obturateurs de la chambre de combustion d’un moteur|Parties mobiles du sommier d’orgue
+AFFLICTIONS|AFFLICTION|34186|Immenses chagrins|Grands malheurs
+COURGES|COURGE|34210|Imbéciles
+MAQUERELLES|MAQUERELLE|34214|Tenancières d’une maison close
+AFFLUENTE|AFFLUENT|34230|Qui se jette dans un autre en parlant d’un cours d’eau
+OSSEUSE|OSSEUX|34231|Qui a les os apparents, saillants
+BROUTILLES|BROUTILLE|34239|Choses sans grande importance
+AFFAMENT|AFFAMER|34245|Terminent une moulure par un arrêt arrondi
+AFFAMAIT|AFFAMER|34245|Terminait une moulure par un arrêt arrondi
+AFFAMAIENT|AFFAMER|34245|Terminaient une moulure par un arrêt arrondi
+AFFAMERA|AFFAMER|34245|Terminera une moulure par un arrêt arrondi
+AFFAMA|AFFAMER|34245|Termina une moulure par un arrêt arrondi
+AUTOCARS|AUTOCAR|34255|Véhicules de transport
+REPRIMANDES|REPRIMANDE|34256|Blâmes formulés
+COMPOSTS|COMPOST|34257|Entassements hétéroclites et pourrissants
+SURDOUES|SURDOUE|34276|Extrêmements doués|Génies, prodiges
+EROTISMES|EROTISME|34297|Propriétés de dires|Propriétés de certaines zones corporelles à susciter le désir sexuel
+HOCHES|HOCHE|34334|Coches, entaillures
+TIRADES|TIRADE|34340|Suites de phrases
+GALONS|GALON|34343|Tissus d’or, d’argent|Bandes de laine
+MATONS|MATON|34349|Petites masses agglomérées de certaines matières
+FUSELAGES|FUSELAGE|34358|Caissons à ossature métallique|Carapaces métalliques d’un véhicule de transport en forme de fuseau
+COMBIS|COMBI|34396|Camionnettes, fourgonnettes
+DEONTOLOGIES|DEONTOLOGIE|34398|Codes de conduite|Éthiques personnelles
+DELIBERENT|DELIBERER|34404|Se livrent à un examen approfondi à propos d’une question|Décident le résultat de cet examen approfondi
+DELIBERAIT|DELIBERER|34404|Se livrait à un examen approfondi à propos d’une question|Décidait le résultat de cet examen approfondi
+DELIBERAIENT|DELIBERER|34404|Se livraient à un examen approfondi à propos d’une question|Décidaient le résultat de cet examen approfondi
+DELIBERERA|DELIBERER|34404|Se livrera à un examen approfondi à propos d’une question|Décidera le résultat de cet examen approfondi
+DELIBERA|DELIBERER|34404|Se livra à un examen approfondi à propos d’une question|Décida le résultat de cet examen approfondi
+INCIDENCES|INCIDENCE|34424|Rencontres des corps par les rayons lumineux|Angles formés par la corde d’un aéronef et son vecteur vitesse|Conséquences
+BOTTOMS|BOTTOM|34451|Passifs
+INTENDANCES|INTENDANCE|34454|Charges, fonctions publiques ou autres, maintenants abolies
+BRUSQUENT|BRUSQUER|34458|Précipitent les événements avant le temps voulu
+BRUSQUAIT|BRUSQUER|34458|Précipitait les événements avant le temps voulu
+BRUSQUAIENT|BRUSQUER|34458|Précipitaient les événements avant le temps voulu
+BRUSQUERA|BRUSQUER|34458|Précipitera les événements avant le temps voulu
+BRUSQUA|BRUSQUER|34458|Précipita les événements avant le temps voulu
+PICCOLOS|PICCOLO|34459|Petites flûtes traversières
+CARDIOLOGIES|CARDIOLOGIE|34462|Études de la structure, fonctions et désordres du cœur
+ALIENATIONS|ALIENATION|34463|Atteintes aux droits sociaux
+RICANEMENTS|RICANEMENT|34469|Cris de la hyène
+FISSIONS|FISSION|34471|Divisions cellulaires
+COSAQUES|COSAQUE|34493|Personnes brutales ou rudes
+TANNES|TANNE|34511|Épuisés de fatigue physique|Ennuyés, exaspérés
+CROCS|CROC|34522|Instruments de fer|Chacunes des quatre grandes canines pointues des animaux carnivores
+HAMZAS|HAMZA|34526|Signes de l’alphabet arabe 
+RISTOURNES|RISTOURNE|34532|Annulations d’un contrat d’assurance au profit de l’assureur
+CUVENT|CUVER|34544|Gardent en soi pour laisser s'apaiser, laissent murir
+CUVAIT|CUVER|34544|Gardait en soi pour laisser s'apaiser, laissait murir
+CUVAIENT|CUVER|34544|Gardaient en soi pour laisser s'apaiser, laissaient murir
+CUVERA|CUVER|34544|Gardera en soi pour laisser s'apaiser, laissera murir
+CUVA|CUVER|34544|Garda en soi pour laisser s'apaiser, laissa murir
+INJURES|INJURE|34592|Paroles offensantes, outrageantes
+VAPORISE|VAPORISER|34602|Fait passer une substance de l’état liquide à l’état gazeux
+VAPORISENT|VAPORISER|34602|Font passer une substance de l’état liquide à l’état gazeux
+VAPORISAIT|VAPORISER|34602|Faisait passer une substance de l’état liquide à l’état gazeux
+VAPORISAIENT|VAPORISER|34602|Faisaient passer une substance de l’état liquide à l’état gazeux
+VAPORISERA|VAPORISER|34602|Fera passer une substance de l’état liquide à l’état gazeux
+VAPORISA|VAPORISER|34602|Fit passer une substance de l’état liquide à l’état gazeux
+CHOCOS|CHOCO|34605|Membres des classes moyennes et supérieure|Modèles de carabine
+ESPRESSOS|ESPRESSO|34616|Cafés très corsés avec un fort arôme
+CHEVAUCHEES|CHEVAUCHEE|34622|Cortèges, défilés
+KANS|KAN|34654|Dixièmes lettres de l’alphabet géorgien
+URINOIRS|URINOIR|34656|Appareils sanitaires dans lequel les hommes et garçons urinent
+CONFORMITES|CONFORMITE|34662|Adhésions, soumissions
+BOSQUETS|BOSQUET|34670|Petits bois
+MARQUAGES|MARQUAGE|34684|Expressions matérielles de la signalisation fixe
+DIETES|DIETE|34687|Régimes nutritionnels|Assemblées politiques
+ATROCITES|ATROCITE|34691|Extrêmes cruautés|Actions très cruelles
+GONDOLES|GONDOLE|34700|Petites embarcations légères à fond plat|Nacelles d’un aérostat
+SEJOURNE|SEJOURNER|34718|Demeure, s'installe quelque temps dans un endroit
+SEJOURNENT|SEJOURNER|34718|Demeurent, s'installent quelque temps dans un endroit
+SEJOURNAIT|SEJOURNER|34718|Demeurait, s'installait quelque temps dans un endroit
+SEJOURNAIENT|SEJOURNER|34718|Demeuraient, s'installaient quelque temps dans un endroit
+SEJOURNERA|SEJOURNER|34718|Demeurera, s'installera quelque temps dans un endroit
+SEJOURNA|SEJOURNER|34718|Demeura, s'installa quelque temps dans un endroit
+GALETTES|GALETTE|34738|Coiffes de chasseur alpin
+USANTE|USANT|34756|Qui use physiquement ou moralement une personne
+FRISENT|FRISER|34760|Se mettent en boucles
+FRISAIT|FRISER|34760|Se mettait en boucles
+FRISAIENT|FRISER|34760|Se mettaient en boucles
+FRISERA|FRISER|34760|Se mettra en boucles
+FRISA|FRISER|34760|Se mit en boucles
+PLOMBE|PLOMBER|34763|Met, attache
+PLOMBENT|PLOMBER|34763|Mettent, attachent
+PLOMBAIT|PLOMBER|34763|Mettait, attachait
+PLOMBAIENT|PLOMBER|34763|Mettaient, attachaient
+PLOMBERA|PLOMBER|34763|Mettra, attachera
+PLOMBA|PLOMBER|34763|Mit, attacha
+PLOMBEE|PLOMBER|34763|Mise, attachée
+PLOMBES|PLOMBER|34763|Mis, attachés
+PLOMBEES|PLOMBER|34763|Mises, attachées
+PANISSES|PANISSE|34765|Spécialités culinaires des régions méditerranéennes
+NYMPHES|NYMPHE|34769|Belles jeunes filles ou jeunes femmes|Stades de métamorphose d’un insecte
+ACEROLAS|ACEROLA|34778|Fruits comestibles de cet arbuste
+CALMARS|CALMAR|34785|Chairs cuisinées de cet animal
+PELAGES|PELAGE|34789|Actions de peler
+NIAISES|NIAISE|34794|Femmes sottes
+KONDOS|KONDO|34837|Sanctuaires bouddhistes
+BETTERAVES|BETTERAVE|34847|Vins rouges
+BOUVIERS|BOUVIER|34850|Gardiens de toute autre chose
+QUERELLENT|QUERELLER|34857|Grondent, réprimandent|Se disputent avec des paroles aigres
+QUERELLAIT|QUERELLER|34857|Grondait, réprimandait|Se disputait avec des paroles aigres
+QUERELLAIENT|QUERELLER|34857|Grondaient, réprimandaient|Se disputaient avec des paroles aigres
+QUERELLERA|QUERELLER|34857|Grondera, réprimandera|Se disputera avec des paroles aigres
+QUERELLA|QUERELLER|34857|Gronda, réprimanda|Se disputa avec des paroles aigres
+QUERELLEE|QUERELLER|34857|Grondée, réprimandée
+QUERELLES|QUERELLER|34857|Grondés, réprimandés
+QUERELLEES|QUERELLER|34857|Grondées, réprimandées
+RECOUVRE|RECOUVRER|34862|Retrouve, rentre en possession
+RECOUVRENT|RECOUVRER|34862|Retrouvent, rentrent en possession
+RECOUVRAIT|RECOUVRER|34862|Retrouvait, rentrait en possession
+RECOUVRAIENT|RECOUVRER|34862|Retrouvaient, rentraient en possession
+RECOUVRERA|RECOUVRER|34862|Retrouvera, rentrera en possession
+RECOUVRA|RECOUVRER|34862|Retrouva, rentra en possession
+RECOUVREE|RECOUVRER|34862|Retrouvée, rentrée en possession
+RECOUVRES|RECOUVRER|34862|Retrouvés, rentrés en possession
+RECOUVREES|RECOUVRER|34862|Retrouvées, rentrées en possession
+CROUPES|CROUPE|34863|Parties arrières du corps de quadrupèdes
+BRODES|BRODE|34867|Garnis au moyen d’une aiguille de dessins en relief d’or
+CHAUDASSES|CHAUDASSE|34868|Des peu ivres
+SPIRITUEUSE|SPIRITUEUX|34870|Qui contient de l’alcool
+RONCHONS|RONCHON|34871|Bougons et grincheux|Personnages bougons et grincheux
+RONCHONNE|RONCHON|34871|Bougonne et grincheuse
+RONCHONNES|RONCHON|34871|Bougonnes et grincheuses
+DEROUTE|DEROUTER|34881|Modifie l'itinéraire prévu
+DEROUTENT|DEROUTER|34881|Modifient l'itinéraire prévu
+DEROUTAIT|DEROUTER|34881|Modifiait l'itinéraire prévu
+DEROUTAIENT|DEROUTER|34881|Modifiaient l'itinéraire prévu
+DEROUTERA|DEROUTER|34881|Modifiera l'itinéraire prévu
+DEROUTA|DEROUTER|34881|Modifia l'itinéraire prévu
+AGREMENTS|AGREMENT|34893|Actions d’agréer
+DERISIONS|DERISION|34920|Moqueries souvent accompagnées de mépris
+HARDIS|HARDI|34924|Heureusements hasardés
+HARDIE|HARDI|34924|Qui ose beaucoup|Qui a goût à la chasse
+CINTRES|CINTRE|34946|Courbures en arcade, en demi-cercle|Plafonds de la scène d’un théâtre
+IVARS|IVAR|34952|Variables d’instance dans un code source
+FLAIRE|FLAIRER|34956|Cherche à découvrir par l’odeur
+FLAIRENT|FLAIRER|34956|Cherchent à découvrir par l’odeur
+FLAIRAIT|FLAIRER|34956|Cherchait à découvrir par l’odeur
+FLAIRAIENT|FLAIRER|34956|Cherchaient à découvrir par l’odeur
+FLAIRERA|FLAIRER|34956|Cherchera à découvrir par l’odeur
+FLAIRA|FLAIRER|34956|Chercha à découvrir par l’odeur
+FLAIREE|FLAIRER|34956|Cherchée à découvrir par l’odeur
+FLAIRES|FLAIRER|34956|Cherchés à découvrir par l’odeur
+FLAIREES|FLAIRER|34956|Cherchées à découvrir par l’odeur
+EMPAILLES|EMPAILLE|34965|Figés, statiques
+TRIDENTS|TRIDENT|34972|Fourches à trois dents|Simples fourches à trois dents pour manipuler les foins|Harpons à trois pointes
+INCUBATIONS|INCUBATION|34997|Passages d'une culture dans une étuve bactériologique|Rituels de relation avec un dieu pour obtenir une guérison
+HONGROISES|HONGROISE|34998|Ornements des tenues de hussards
+ANES|ANE|0|Bêtes de somme|Bonnets de cancre
+BALS|BAL|0|Soirées dansantes
+BOLS|BOL|0|Récipients du petit-déjeuner
+ELUS|ELU|0|Choisis par les électeurs|Députés|Désignés
+ELUE|ELU|0|Députée|Désignée
+ELUES|ELU|0|Députées|Désignées
+ETES|ETE|0|Saisons chaudes|Participes d'être
+OIES|OIE|0|Volailles au long cou|Volailles
+SELS|SEL|0|Piquants|Sels de mer
+ZOOS|ZOO|0|Parcs aux animaux sauvages
+OSES|OSE|0|Hardis, audacieux|Risqués
+BLES|BLE|0|Céréales du boulanger|Céréales du pain|Froments
+EMUS|EMU|0|Touchés, ébranlés|Touchés|Ébranlés
+EMUES|EMU|0|Touchées, ébranlées|Touchées|Ébranlées
+ERES|ERE|0|Longues époques|Époques|Périodes historiques
+LOTS|LOT|0|Parts tirées au sort
+PLIS|PLI|0|Marques sur un tissu
+SURES|SUR|0|Certaines|Acides
+UNES|UNE|0|Premières pages du journal
+VIES|VIE|0|Existences
+TRIS|TRI|0|Sélections, classements|Classements|Sélections
+AUBES|AUBE|0|Levers du jour
+BANCS|BANC|0|Sièges de jardin
+DUNES|DUNE|0|Collines de sable
+FARDS|FARD|0|Maquillages
+FETES|FETE|0|Célébrations joyeuses
+FOINS|FOIN|0|Herbes séchées
+GARES|GARE|0|Stations de train
+MONTS|MONT|0|Grandes hauteurs
+MOTOS|MOTO|0|Deux-roues motorisés
+ORGES|ORGE|0|Céréales de la bière
+PORCS|PORC|0|Cochons
+RIVES|RIVE|0|Bords d'un cours d'eau
+SAGES|SAGE|0|Raisonnables
+ZEROS|ZERO|0|Riens du tout
+ELLES|ELLE|0|Pronoms féminins
+ARMES|ARME|0|Fusils ou épées
+BORDS|BORD|0|Limites, côtés
+CRUES|CRUE|0|Montées des eaux
+HALOS|HALO|0|Cercles lumineux
+MALTS|MALT|0|Orges germées de la bière
+RANGS|RANG|0|Lignes, ous positions
+ROLES|ROLE|0|Personnages de l'acteur
+RUSES|RUSE|0|Astuces, stratagèmes
+TALCS|TALC|0|Poudres douces
+CANNES|CANNE|0|Bâtons de marche
+DANSES|DANSE|0|Valses ou tangos
+ETANGS|ETANG|0|Petits lacs
+HIVERS|HIVER|0|Saisons froides
+MAGIES|MAGIE|0|Arts de l'illusionniste
+MARINS|MARIN|0|Hommes de mer
+METROS|METRO|0|Trains souterrains
+ONCLES|ONCLE|0|Frères du père ou de la mère
+PANDAS|PANDA|0|Ours noirs et blancs
+PLAGES|PLAGE|0|Sables au bord de la mer
+SINGES|SINGE|0|Primates farceurs
+VILLES|VILLE|0|Grandes agglomérations
+AUTRES|AUTRE|0|Différents
+ETAPES|ETAPE|0|Parties d'un trajet
+FLUTES|FLUTE|0|Instruments à vent
+LEVRES|LEVRE|0|Bords de la bouche
+PAUSES|PAUSE|0|Moments de repos
+POUCES|POUCE|0|Les plus gros doigts
+RAYONS|RAYON|0|Traits de lumière
+STADES|STADE|0|Terrains de sport
+WAGONS|WAGON|0|Voitures de train
+ZESTES|ZESTE|0|Écorces de citron
+AIMEE|AIMER|0|Éprouvée de l'amour
+AIMES|AIMER|0|Éprouvés de l'amour
+AIMEES|AIMER|0|Éprouvées de l'amour
+JARDINS|JARDIN|0|Potagers ou parterres
+VIOLONS|VIOLON|0|Instruments à cordes et archet
+ENFANTS|ENFANT|0|Petits garçons ou petites filles
+RAISINS|RAISIN|0|Fruits de la vigne
+TRESORS|TRESOR|0|Coffres pleins d'or
+BALCONS|BALCON|0|Terrasses en hauteur
+CAMIONS|CAMION|0|Gros véhicules
+JAMBONS|JAMBON|0|Charcuteries
+POULETS|POULET|0|Volailles rôties
+CHEMINS|CHEMIN|0|Sentiers
+FOURMIS|FOURMI|0|Insectes travailleurs
+GLACONS|GLACON|0|Petits cubes gelés
+LAITUES|LAITUE|0|Salades vertes
+POUMONS|POUMON|0|Organes de la respiration
+SAISONS|SAISON|0|Printemps ou étés
+TOMBENT|TOMBER|0|Chutent
+TOMBAIT|TOMBER|0|Chutait
+TOMBAIENT|TOMBER|0|Chutaient
+TOMBERA|TOMBER|0|Chutera
+TOMBA|TOMBER|0|Chuta
+TOMBEES|TOMBER|0|Chutées
+SOLDATS|SOLDAT|0|Militaires
+ARTISTES|ARTISTE|0|Peintres ou musiciens
+GUITARES|GUITARE|0|Instruments à six cordes
+OCTOBRES|OCTOBRE|0|Dixièmes mois
+AUTOMNES|AUTOMNE|0|Saisons des feuilles mortes
+ARMOIRES|ARMOIRE|0|Meubles de rangement à portes
+LUMIERES|LUMIERE|0|Clartés
+DAUPHINS|DAUPHIN|0|Mammifères marins intelligents
+CHEMISES|CHEMISE|0|Vêtements à boutons
+MUSIQUES|MUSIQUE|0|Arts des sons
+GRENIERS|GRENIER|0|Pièces sous les toits
+LECTURES|LECTURE|0|Actions de lire
+CARNAVALS|CARNAVAL|0|Fêtes costumées
+NOVEMBRES|NOVEMBRE|0|Onzièmes mois
+CROCODILES|CROCODILE|0|Reptiles aux grandes mâchoires
+BRISES|BRISE|0|Vents légers
+CHENES|CHENE|0|Arbres aux glands
+COTES|COTE|0|Bords de mer, ou os de la cage thoracique
+COURSES|COURSE|0|Compétitions de vitesse
+DECORS|DECOR|0|Toiles de fond du théâtre
+EGOUTS|EGOUT|0|Canalisations sous la ville
+INDICES|INDICE|0|Pistes pour l'enquêteur
+JOUES|JOUE|0|Parties du visage
+LARMES|LARME|0|Gouttes de chagrin
+LEGERS|LEGER|0|Contraires de lourd
+LENTS|LENT|0|Contraires de rapide
+LUTINS|LUTIN|0|Petits génies farceurs
+MARES|MARE|0|Petites étendues d'eau
+MERES|MERE|0|Mamans
+OGRES|OGRE|0|Mangeurs d'enfants des contes
+OREILLES|OREILLE|0|Organes de l'ouïe
+OSEILLES|OSEILLE|0|Plantes acides, ous argents familiers
+RECITS|RECIT|0|Histoires racontées
+SAULES|SAULE|0|Arbres pleureurs
+SOURCES|SOURCE|0|Naissances d'un ruisseau
+TAILLES|TAILLE|0|Hauteurs, ous ceintures
+TENTES|TENTE|0|Abris du campeur
+TRAITES|TRAIT|0|Lignes tracées
+VESTES|VESTE|0|Vêtements à manches
+YENS|YEN|0|Monnaies japonaises
+`;
