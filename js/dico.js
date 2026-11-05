@@ -1081,4 +1081,25 @@ YES|Oui d'outre-Manche
       MC.DICO_FORMS_N++;
     }
   }
+
+  // 4) Définitions de vrais mots fléchés, vérifiées à la main (La Petite Case, js/dico-lpc.js) :
+  //    entry.pclues. Elles complètent les mots déjà connus, et ajoutent des mots que le Wiktionnaire
+  //    ne couvre pas (noms propres, mots rares, abréviations de grilles).
+  MC.DICO_LPC_N = 0;
+  if (MC.DICO_LPC) {
+    for (const l of MC.DICO_LPC.split('\n')) {
+      const p = l.split('|');
+      if (p.length < 4 || !/^[A-Z]{2,}$/.test(p[0])) continue;
+      const clues = p.slice(3).map(c => c.trim()).filter(c => c.length >= 2);
+      if (!clues.length) continue;
+      MC.DICO_LPC_N++;
+      const e = byWord.get(p[0]);
+      if (e) { e.pclues = clues.filter(c => !e.clues.includes(c)); continue; }
+      const base = p[1] !== p[0] && byWord.has(p[1]) ? p[1] : undefined;
+      const w = { word: p[0], r: +p[2], clue: clues[0], clues, pclues: clues, wclues: [], lpc: true };
+      if (base) w.base = byWord.get(base).base || base;
+      byWord.set(w.word, w);
+      MC.DICO.push(w);
+    }
+  }
 })(window.MC);
