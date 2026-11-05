@@ -44,7 +44,7 @@ window.MC = window.MC || {};
     const ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const ALPHA_ARR = ALPHA.split('');
     const LETTERS = ALPHA.length;
-    let nodes = 0, defs = 0, twos = 0;
+    let nodes = 0, defs = 0, twos = 0, threes = 0;
     const order = [];
     for (let i = 0; i < N; i++) if (g[i] !== DEF) order.push(i);
 
@@ -59,7 +59,9 @@ window.MC = window.MC || {};
       const n = p.length, m = ((1 << (extra + 1)) - 1) << n;
       return e[0] & m ? e[1] : 0;
     };
-    const okWord = p => dict.has(p) && !used.has(p);
+    // Un mot et son pluriel comptent pour un seul mot : jamais les deux dans la même grille.
+    const key = p => { const e = dict.get(p); return e && e.base ? e.base : p; };
+    const okWord = p => dict.has(p) && !used.has(key(p));
 
     function forcedLetter(r, c) {
       if (interior(r - 1, c) && isD(r - 1, c) && !rightDef(r - 1, c)) return true;
@@ -135,18 +137,18 @@ window.MC = window.MC || {};
           if (extraV === 0 && pv.length > 1) added.push(pv);
         }
         // Nombre de mots de 2 lettres plafonné par grille.
-        const n2 = added.filter(w => w.length === 2).length;
-        if (n2 && twos + n2 > opts.max2) continue;
+        const n2 = added.filter(w => w.length === 2).length, n3 = added.filter(w => w.length === 3).length;
+        if ((n2 && twos + n2 > opts.max2) || (n3 && threes + n3 > opts.max3)) continue;
         tried++;
-        added.forEach(w => used.add(w));
-        twos += n2;
+        added.forEach(w => used.add(key(w)));
+        twos += n2; threes += n3;
         if (ch === DEF) defs++;
         g[i] = ch;
         if (step(k + 1)) return true;
         g[i] = '';
         if (ch === DEF) defs--;
-        twos -= n2;
-        for (const w of added) used.delete(w);
+        twos -= n2; threes -= n3;
+        for (const w of added) used.delete(key(w));
         if (nodes > opts.budget) return false;
       }
       return false;
@@ -192,7 +194,7 @@ window.MC = window.MC || {};
       const e = dict.get(w.answer);
       const cur = e.r === 0 ? e.clues : [], wiki = (e.r === 0 ? e.wclues : e.clues) || [];
       let order;
-      if (!L.maxRank) order = shuffle(cur);                       // Facile : uniquement fait main
+      if (L.wikiLen) order = e.r === 0 ? shuffle(cur) : wiki.slice(0, 1); // Facile : fait main, ou sens principal
       else if (e.r === 0) order = rng() < L.curClue ? shuffle(cur).concat(shuffle(wiki)) : shuffle(wiki).concat(shuffle(cur));
       else order = rng() < 0.4 + 0.4 * L.curClue ? wiki.slice() : shuffle(wiki.slice(1)).concat(wiki.slice(0, 1)); // sens principal, le plus souvent
       if (!order.length) order = e.clues.concat(e.wclues || []);
@@ -224,26 +226,33 @@ window.MC = window.MC || {};
     const rng = MC.rng(seed);
     const ex = opts.exclude || new Set();
     const maxLen = Math.max(L.w, L.h);
-    const ok = w => w.word.length >= 2 && w.word.length <= maxLen && !ex.has(w.word);
+    const ok = w => w.word.length >= 2 && w.word.length <= maxLen && !ex.has(w.word) && !(w.base && ex.has(w.base));
     const maxRank = L.maxRank == null ? Infinity : L.maxRank;
 
     // Mots « faits main » toujours ; Wiktionnaire limité aux mots les plus courants selon le niveau.
     // Les mots faits main sont présentés en premier : en cas de doublon, leur définition l'emporte.
-    const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || w.r <= maxRank));
+    // Facile (wikiLen) : seulement les mots courants dont le sens principal est court.
+    const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || (w.r <= maxRank && (!L.wikiLen || w.clues[0].length <= L.wikiLen))));
     // Aux niveaux élevés, les lettres qui mènent à des mots rares sont essayées en premier.
     const rare = L.rare || 0;
     const weight = w => (1 - rare) + rare * (w.r === 0 ? 0.5 : 0.3 + 2.7 * rarity(w));
     const idx = buildIndex(base, maxLen, weight);
 
-    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, max2: L.max2 || 99 };
+    // Mots de 2 et 3 lettres plafonnés : ils ne servent qu'à boucher les derniers trous.
+    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, max2: L.max2 || 99, max3: L.max3 || 99 };
     // Plusieurs grilles sont tentées ; on garde la meilleure. La grille du jour n'a pas de limite
     // de temps, pour être identique sur tous les appareils.
-    let best = null, bestScore = -Infinity, found = 0;
+    let best = null, bestScore = -Infinity, found = 0, fails = 0;
     const t0 = Date.now();
     for (let a = 0; a < 400 && found < (L.keep || 3); a++) {
       if (!opts.daily && found && Date.now() - t0 > 700) break;
       const g = fill(L.w, L.h, idx, rng, params);
-      if (!g) continue;
+      if (!g) {
+        // Plafonds trop serrés pour cette grille : on les desserre un peu tous les 5 échecs
+        // (au nombre d'essais, pas au temps : la grille du jour reste la même partout).
+        if (++fails % 5 === 0) { params.max2++; params.max3++; }
+        continue;
+      }
       found++;
       const s = scoreGrid(L.w, L.h, g, idx.dict, L);
       if (s > bestScore) { best = g; bestScore = s; }

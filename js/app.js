@@ -1088,9 +1088,9 @@
       else if (it.type === 'range') ctl = `<input type="range" data-key="${it.key}" min="${it.min}" max="${it.max}" step="${it.step}" value="${v}"><span class="rv" data-rv="${it.key}">${v} ${it.unit}</span>`;
       html += `<label class="set-row"><span class="lbl">${it.label}${it.hint ? `<small>${it.hint}</small>` : ''}</span>${ctl}</label>`;
     }
-    const wiki = MC.DICO.length - MC.DICO_CURATED;
+    const forms = MC.DICO_FORMS_N || 0, wiki = MC.DICO.length - MC.DICO_CURATED - forms;
     html += `<p class="muted" style="margin:18px 4px">Dictionnaire : ${MC.DICO.length} mots
-      (${MC.DICO_CURATED} choisis à la main${wiki ? `, ${wiki} tirés du <a href="https://fr.wiktionary.org" target="_blank" rel="noopener">Wiktionnaire</a>, licence CC BY-SA 4.0` : ''}).<br>
+      (${MC.DICO_CURATED} choisis à la main${wiki ? `, ${wiki} tirés du <a href="https://fr.wiktionary.org" target="_blank" rel="noopener">Wiktionnaire</a>, licence CC BY-SA 4.0` : ''}${forms ? `, et ${forms} pluriels, féminins et conjugaisons` : ''}).<br>
       Toutes les données restent sur cet appareil.</p>`;
     $('#settings-form').innerHTML = html;
   }
