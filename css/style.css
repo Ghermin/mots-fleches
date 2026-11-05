@@ -273,10 +273,20 @@ body.bigclues #b-clue { font-size: 20px; }
   body.lefty .side-col { order: 0; border-right: none; }
   #clues { display: none; } /* le bandeau au-dessus de la grille suffit */
   #kbd, #penpanel { max-width: 760px; width: 100%; margin: 0 auto; }
-  .key { max-width: 74px; height: 56px; }
+  /* Grille 10 × 14 : on laisse un maximum de hauteur à la grille. */
+  .key { max-width: 74px; height: 48px; }
   .key.wide { max-width: 120px; }
-  #pad { height: 130px; }
+  #kbd { gap: 5px; padding: 6px 8px; }
+  .tabs button { height: 36px; }
+  #pad { height: 100px; }
+  #pen-alts { min-height: 40px; }
+  #banner { min-height: 52px; padding: 4px 6px; }
 }
+/* Paysage : le bandeau (définition, mot précédent / suivant, signalement) passe dans la colonne
+   de droite, au-dessus de la définition croisée ; la grille gagne toute la hauteur. */
+body.side-banner #banner { border-radius: 14px; min-height: 0; align-items: flex-start; padding: 8px 6px; }
+body.side-banner #b-text { font-size: 19px; flex-wrap: wrap; }
+body.side-banner #d-cur { display: none; }
 @media (max-width: 560px) {
   .tools .icon-btn { width: 42px; }
   .key { height: 48px; font-size: 19px; }

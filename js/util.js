@@ -65,11 +65,11 @@ window.MC = window.MC || {};
   MC.clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
   MC.LEVELS = {
-    // w × h : taille de la grille (paire). maxRank : mots du Wiktionnaire limités aux N plus
-    // fréquents du français (0 = uniquement les définitions écrites à la main).
-    facile:    { label: 'Facile',    w: 8,  h: 8,  maxRank: 0,        budget: 20000, keep: 4 },
-    moyen:     { label: 'Moyen',     w: 10, h: 10, maxRank: 8000,     budget: 25000, keep: 3 },
-    difficile: { label: 'Difficile', w: 10, h: 12, maxRank: 14000,    budget: 30000, keep: 3 },
-    expert:    { label: 'Expert',    w: 12, h: 14, maxRank: Infinity, budget: 30000, keep: 2 }
+    // Format magazine : 10 colonnes × 14 lignes à tous les niveaux ; la difficulté vient du vocabulaire.
+    // maxRank : mots du Wiktionnaire limités aux N plus fréquents du français (0 = définitions faites main).
+    facile:    { label: 'Facile',    desc: 'Définitions simples',   w: 10, h: 14, maxRank: 0,        budget: 20000, keep: 3 },
+    moyen:     { label: 'Moyen',     desc: 'Mots courants',         w: 10, h: 14, maxRank: 8000,     budget: 25000, keep: 3 },
+    difficile: { label: 'Difficile', desc: 'Vocabulaire plus riche', w: 10, h: 14, maxRank: 14000,    budget: 30000, keep: 3 },
+    expert:    { label: 'Expert',    desc: 'Tout le dictionnaire',  w: 10, h: 14, maxRank: Infinity, budget: 30000, keep: 2 }
   };
 })(window.MC);
