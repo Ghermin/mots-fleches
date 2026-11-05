@@ -7,13 +7,11 @@
   const ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
   let settings = MC.store.loadSettings();
-  const recog = new MC.Recognizer();
-  recog.loadUser(MC.store.ink());
 
   const S = {
     screen: 'home', game: null, P: null, cellWords: null,
     sel: { idx: -1, dir: 'H' }, undo: [], redo: [],
-    pencil: false, paused: false, lastTick: 0, ticks: 0, warnedFull: false, lastWord: null, penSeen: false
+    pencil: false, paused: false, lastTick: 0, ticks: 0, warnedFull: false, lastWord: null
   };
   let cellEl = [], ltrEl = [], defEl = [];
   const dirIdx = d => (d === 'H' ? 0 : 1);
@@ -55,19 +53,6 @@
       };
     });
   }
-  function pickLetter() {
-    return new Promise(resolve => {
-      showModal(`<h2>Quelle lettre ?</h2>
-        <div class="pick">${ALPHA.map(L => `<button class="key" data-l="${L}">${L}</button>`).join('')}</div>
-        <div class="modal-actions"><button class="btn" data-l="">Annuler</button></div>`);
-      modalResolve = resolve;
-      $('#modal-box').onclick = e => {
-        const b = e.target.closest('[data-l]');
-        if (b) closeModal(b.dataset.l || null);
-      };
-    });
-  }
-
   let colors = {};
   function readColors() {
     const css = getComputedStyle(document.documentElement);
@@ -129,7 +114,7 @@
     // On laisse le navigateur afficher « Création de la grille… » avant le calcul.
     setTimeout(() => {
       let puzzle = null;
-      try { puzzle = MC.generate({ level, seed, exclude: MC.store.bannedSet() }); } catch (err) { console.error(err); }
+      try { puzzle = MC.generate({ level, seed, daily: !!opts.daily, exclude: MC.store.bannedSet() }); } catch (err) { console.error(err); }
       busy = false;
       $('#busy').classList.add('hidden');
       if (!puzzle) return toast('La grille n’a pas pu être créée, réessayez', 3000);
@@ -171,9 +156,6 @@
     S.defs = {}; // case-définition -> mots qu'elle définit (haut, puis bas)
     P.words.forEach(wd => { (S.defs[wd.at] = S.defs[wd.at] || []).push(wd); });
     S.undo = []; S.redo = []; S.pencil = false; S.warnedFull = false; S.lastWord = null;
-    inkReset();
-    $('#alts').classList.add('hidden');
-    $('#pen-alts').innerHTML = '<span class="muted">Écrivez une lettre dans le cadre</span>';
     $('#g-level').textContent = `${levelLabel(g)} · ${P.words.length} mots`;
     buildBoard();
     const wd = P.words.find(w => !wordFilled(w)) || P.words[0];
@@ -305,7 +287,7 @@
     S.lastWord = wd;
     $('#g-undo').disabled = !S.undo.length;
     $('#g-redo').disabled = !S.redo.length;
-    $('#g-pencil').classList.toggle('on', S.pencil);
+    $$('[data-k="draft"]').forEach(b => b.classList.toggle('on', S.pencil));
     $('#g-progress').textContent = g.status === 'done' ? 'terminée ✓' : progressOf(g) + ' %';
     $('#board').classList.toggle('done', g.status === 'done');
   }
@@ -612,12 +594,17 @@
     };
   }
 
-  function openHelp() {
-    const m = $('#help-menu'), r = $('#g-help').getBoundingClientRect();
+  function openHelp(anchor) {
+    const m = $('#help-menu'), r = anchor.getBoundingClientRect();
     m.classList.remove('hidden');
-    const w = m.offsetWidth;
-    m.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.right - w)) + 'px';
-    m.style.top = (r.bottom + 6) + 'px';
+    const w = m.offsetWidth, h = m.offsetHeight;
+    m.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + 'px';
+    m.style.top = Math.max(8, r.bottom + 6 + h > innerHeight ? r.top - h - 6 : r.bottom + 6) + 'px';
+  }
+  function toggleDraft() {
+    S.pencil = !S.pencil;
+    render();
+    toast(S.pencil ? 'Brouillon : les lettres tapées sont provisoires (en gris)' : 'Brouillon désactivé : lettres définitives', 1800);
   }
   function closeHelp() { $('#help-menu').classList.add('hidden'); }
 
@@ -823,18 +810,10 @@
   const letterAt = p => { const i = cellAt(p); return i >= 0 && S.P.cells[i] ? i : -1; };
 
   function onDown(e) {
-    if (!S.game || e.target.closest('.zoom, #alts')) return;
+    if (!S.game || e.target.closest('.zoom')) return;
     if (S.paused) { setPaused(false); return; }
     vpRect = vp.getBoundingClientRect();
     const p = loc(e);
-    if (e.pointerType === 'pen' && settings.penOnGrid && canEdit()) {
-      S.penSeen = true;
-      ptrs.clear(); gest = null; // la paume posée avant le stylet est ignorée
-      try { vp.setPointerCapture(e.pointerId); } catch (_) { /* rien */ }
-      inkStart(e, p);
-      return;
-    }
-    if (e.pointerType === 'touch' && settings.palmReject && (ink.pid != null || ink.strokes.length)) return;
     try { vp.setPointerCapture(e.pointerId); } catch (_) { /* rien */ }
     ptrs.set(e.pointerId, p);
     if (ptrs.size === 1) {
@@ -848,7 +827,6 @@
     }
   }
   function onMove(e) {
-    if (e.pointerId === ink.pid) { inkMove(e); return; }
     if (!ptrs.has(e.pointerId)) return;
     const p = loc(e);
     ptrs.set(e.pointerId, p);
@@ -872,7 +850,6 @@
     }
   }
   function onUp(e) {
-    if (e.pointerId === ink.pid) { inkEnd(e); return; }
     if (!ptrs.has(e.pointerId)) return;
     const p = ptrs.get(e.pointerId);
     ptrs.delete(e.pointerId);
@@ -900,231 +877,6 @@
     }
   }
 
-  /* ---------- Écriture au stylet directement sur la grille ---------- */
-  const ink = { strokes: [], cur: null, pid: null, cell: -1, timer: 0, t0: 0 };
-  const inkCanvas = $('#ink');
-  let inkCtx = null;
-  function sizeCanvas(cv) {
-    const r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
-    cv.width = Math.max(1, Math.round(r.width * dpr));
-    cv.height = Math.max(1, Math.round(r.height * dpr));
-    const ctx = cv.getContext('2d');
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    return ctx;
-  }
-  function drawStrokes(ctx, cv, strokes, guide) {
-    if (!ctx) return;
-    const w = cv.clientWidth, h = cv.clientHeight;
-    ctx.clearRect(0, 0, w, h);
-    if (guide) {
-      const s = Math.min(w, h) * 0.82;
-      ctx.strokeStyle = colors['--border'] || '#ddd';
-      ctx.lineWidth = 2;
-      ctx.setLineDash([8, 8]);
-      ctx.strokeRect((w - s * 0.8) / 2, (h - s) / 2, s * 0.8, s);
-      ctx.setLineDash([]);
-    }
-    ctx.strokeStyle = colors['--accent'] || '#24477a';
-    ctx.lineWidth = guide ? 6 : 4;
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    for (const st of strokes) {
-      if (!st.length) continue;
-      ctx.beginPath();
-      ctx.moveTo(st[0].x, st[0].y);
-      if (st.length === 1) ctx.lineTo(st[0].x + 0.1, st[0].y + 0.1);
-      for (let i = 1; i < st.length; i++) ctx.lineTo(st[i].x, st[i].y);
-      ctx.stroke();
-    }
-  }
-  const drawInk = () => drawStrokes(inkCtx, inkCanvas, ink.strokes, false);
-  const pathLen = s => s.reduce((d, p, i) => (i ? d + Math.hypot(p.x - s[i - 1].x, p.y - s[i - 1].y) : 0), 0);
-
-  function inkReset() {
-    clearTimeout(ink.timer);
-    ink.strokes = []; ink.cur = null; ink.pid = null; ink.cell = -1;
-    drawInk();
-  }
-  function inkStart(e, p) {
-    clearTimeout(ink.timer);
-    const ci = letterAt(p);
-    if (ink.strokes.length && ci >= 0 && ci !== ink.cell) inkCommit(); // on passe à la case suivante
-    if (!ink.strokes.length) { ink.cell = ci; ink.t0 = performance.now(); }
-    ink.pid = e.pointerId;
-    ink.cur = [p];
-    ink.strokes.push(ink.cur);
-    drawInk();
-  }
-  function inkMove(e) {
-    const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
-    for (const ev of (evs.length ? evs : [e])) ink.cur.push(loc(ev));
-    drawInk();
-  }
-  function inkEnd() {
-    ink.pid = null;
-    const s = ink.cur;
-    ink.cur = null;
-    if (ink.strokes.length === 1 && pathLen(s) < 8 && performance.now() - ink.t0 < 450) {
-      // simple tapotement du stylet = sélectionner la case
-      ink.strokes = [];
-      drawInk();
-      const i = cellAt(s[0]);
-      if (i >= 0) tapCell(i, s[0]);
-      return;
-    }
-    ink.timer = setTimeout(inkCommit, settings.penDelay);
-  }
-  function inkCommit() {
-    clearTimeout(ink.timer);
-    const strokes = ink.strokes, ci = ink.cell;
-    ink.strokes = [];
-    drawInk();
-    if (!strokes.length || !S.game) return;
-    const target = ci >= 0 ? ci : S.sel.idx;
-    if (target < 0) return;
-    const res = recog.recognize(strokes);
-    if (!res.length) return;
-    S.sel.idx = target;
-    fixDir();
-    typeLetter(res[0].name);
-    showAlts($('#alts'), target, strokes, res, true);
-  }
-
-  /* ---------- Propositions de correction + apprentissage ---------- */
-  function showAlts(box, cell, strokes, res, floating) {
-    const top = res.slice(0, 5).map(r => r.name);
-    box.innerHTML = '<span class="lbl">Lu :</span>' +
-      top.map((L, k) => `<button class="${k === 0 ? 'first' : ''}" data-l="${L}">${L}</button>`).join('') +
-      '<button class="more" data-more="1">Autre…</button>';
-    box.classList.remove('hidden');
-    box.onclick = async ev => {
-      const b = ev.target.closest('button');
-      if (!b) return;
-      let L = b.dataset.l;
-      if (b.dataset.more) L = await pickLetter();
-      if (!L) return;
-      correct(cell, L, strokes, top[0]);
-      $$('button', box).forEach(x => x.classList.toggle('first', x.dataset.l === L));
-      if (floating) box.classList.add('hidden');
-    };
-    if (floating) {
-      clearTimeout(box._t);
-      box._t = setTimeout(() => box.classList.add('hidden'), 6000);
-    }
-  }
-  function correct(cell, L, strokes, was) {
-    if (L !== was) {
-      recog.addUser(L, strokes);
-      MC.store.saveInk(recog.exportUser());
-      toast(`Corrigé en « ${L} » — j'apprends votre écriture`, 1800);
-    }
-    if (!canEdit()) return;
-    const cur = S.game.entries[cell];
-    if (cur && cur.rv) return;
-    if (!cur || cur.ch !== L) commit([{ i: cell, before: clone(cur), after: entryFor(cell, L) }]);
-  }
-
-  /* ---------- Bloc d'écriture (onglet Stylo, entraînement) ---------- */
-  class Pad {
-    constructor(cv, onDone) {
-      this.cv = cv; this.onDone = onDone;
-      this.strokes = []; this.cur = null; this.pid = null; this.timer = 0; this.ctx = null;
-      this.ro = new ResizeObserver(() => { this.ctx = sizeCanvas(cv); this.draw(); });
-      this.ro.observe(cv);
-      this.h = { d: e => this.down(e), m: e => this.move(e), u: e => this.up(e) };
-      cv.addEventListener('pointerdown', this.h.d);
-      cv.addEventListener('pointermove', this.h.m);
-      cv.addEventListener('pointerup', this.h.u);
-      cv.addEventListener('pointercancel', this.h.u);
-    }
-    destroy() {
-      this.ro.disconnect();
-      clearTimeout(this.timer);
-      this.cv.removeEventListener('pointerdown', this.h.d);
-      this.cv.removeEventListener('pointermove', this.h.m);
-      this.cv.removeEventListener('pointerup', this.h.u);
-      this.cv.removeEventListener('pointercancel', this.h.u);
-    }
-    pos(e) { const r = this.cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
-    down(e) {
-      if (e.pointerType === 'pen') S.penSeen = true;
-      else if (e.pointerType === 'touch' && settings.palmReject && S.penSeen) return;
-      if (this.pid != null) return;
-      e.preventDefault();
-      try { this.cv.setPointerCapture(e.pointerId); } catch (_) { /* rien */ }
-      clearTimeout(this.timer);
-      this.pid = e.pointerId;
-      this.cur = [this.pos(e)];
-      this.strokes.push(this.cur);
-      this.draw();
-    }
-    move(e) {
-      if (e.pointerId !== this.pid) return;
-      const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
-      for (const ev of (evs.length ? evs : [e])) this.cur.push(this.pos(ev));
-      this.draw();
-    }
-    up(e) {
-      if (e.pointerId !== this.pid) return;
-      this.pid = null; this.cur = null;
-      clearTimeout(this.timer);
-      this.timer = setTimeout(() => this.finish(), settings.penDelay);
-    }
-    finish() {
-      clearTimeout(this.timer);
-      const s = this.strokes;
-      this.strokes = [];
-      this.draw();
-      if (s.length) this.onDone(s);
-    }
-    clear() { clearTimeout(this.timer); this.strokes = []; this.cur = null; this.pid = null; this.draw(); }
-    draw() { drawStrokes(this.ctx, this.cv, this.strokes, true); }
-  }
-
-  let pad = null;
-  function onPadLetter(strokes) {
-    if (!canEdit() || S.sel.idx < 0) return;
-    const res = recog.recognize(strokes);
-    if (!res.length) return;
-    const cell = S.sel.idx;
-    typeLetter(res[0].name);
-    showAlts($('#pen-alts'), cell, strokes, res, false);
-  }
-
-  function openTraining() {
-    let k = 0;
-    showModal(`<h2>Apprendre mon écriture</h2>
-      <p>Écrivez chaque lettre en majuscule, comme dans une grille. Les lettres corrigées pendant le jeu sont aussi apprises.</p>
-      <div class="train-letter" id="tr-l">A</div>
-      <canvas id="train-pad"></canvas>
-      <div class="train-res" id="tr-res"></div>
-      <div class="modal-actions">
-        <button class="btn" data-a="clear">Effacer</button>
-        <button class="btn" data-a="skip">Passer</button>
-        <button class="btn primary" data-a="close">Terminer</button>
-      </div>`, () => tp.destroy());
-    const next = () => {
-      k++;
-      if (k >= ALPHA.length) { $('#tr-l').textContent = '✓'; $('#tr-res').textContent = 'Terminé ! Votre écriture est mémorisée.'; return; }
-      $('#tr-l').textContent = ALPHA[k];
-    };
-    const tp = new Pad($('#train-pad'), strokes => {
-      if (k >= ALPHA.length) return;
-      const L = ALPHA[k], res = recog.recognize(strokes);
-      recog.addUser(L, strokes);
-      MC.store.saveInk(recog.exportUser());
-      $('#tr-res').textContent = res[0] && res[0].name === L ? `✓ « ${L} » bien reconnu` : `« ${L} » mémorisé (lu avant : « ${res[0] ? res[0].name : '?'} »)`;
-      next();
-    });
-    $('#modal-box').onclick = e => {
-      const a = e.target.closest('[data-a]');
-      if (!a) return;
-      if (a.dataset.a === 'clear') tp.clear();
-      if (a.dataset.a === 'skip') next();
-      if (a.dataset.a === 'close') closeModal();
-    };
-  }
-
   /* =================== Claviers =================== */
   const LAYOUTS = {
     azerty: ['AZERTYUIOP', 'QSDFGHJKLM', 'WXCVBN'],
@@ -1135,15 +887,14 @@
     const L = LAYOUTS[settings.keyboard] || LAYOUTS.azerty;
     const k = (label, act, cls, aria) => `<button class="key ${cls || ''}" data-k="${act}"${aria ? ` aria-label="${aria}"` : ''}>${label}</button>`;
     const row = s => [...s].map(c => k(c, c)).join('');
+    // On se déplace en touchant la grille : pas de touches « mot suivant » ni « changer de sens ».
+    // Aide et brouillon sont mis en avant sur la dernière rangée.
     $('#kbd').innerHTML =
       `<div class="krow">${row(L[0])}</div>` +
       `<div class="krow">${row(L[1])}</div>` +
-      `<div class="krow">${k(svg('swap'), 'dir', 'wide act', 'Changer de sens')}${row(L[2])}${k(svg('back'), 'bksp', 'wide act', 'Retour arrière')}</div>` +
-      `<div class="krow">${k(svg('left') + 'Mot', 'prev', 'wide act', 'Mot précédent')}${k(svg('eraser') + 'Effacer la case', 'erase', 'wide act grow')}${k('Mot' + svg('right'), 'next', 'wide act', 'Mot suivant')}</div>`;
-    $('#pen-keys').innerHTML =
-      k(svg('back'), 'bksp', 'act', 'Retour arrière') + k(svg('eraser'), 'erase', 'act', 'Effacer la case') +
-      k(svg('swap'), 'dir', 'act', 'Changer de sens') + k(svg('left'), 'prev', 'act', 'Mot précédent') +
-      k(svg('right'), 'next', 'act', 'Mot suivant') + k('Case →', 'skip', 'wide act');
+      `<div class="krow">${row(L[2])}${k(svg('back'), 'bksp', 'wide act', 'Retour arrière')}</div>` +
+      `<div class="krow">${k(svg('bulb') + 'Aide', 'help', 'feat help')}${k(svg('eraser') + 'Effacer', 'erase', 'wide act')}${k(svg('pencil') + 'Brouillon', 'draft', 'feat draft', 'Mode brouillon : lettres provisoires')}</div>`;
+    $$('[data-k="draft"]').forEach(b => b.classList.toggle('on', S.pencil));
   }
   function onKeyPress(e) {
     const b = e.target.closest('.key');
@@ -1151,19 +902,17 @@
     e.preventDefault();
     b.classList.add('down');
     setTimeout(() => b.classList.remove('down'), 120);
-    keyAction(b.dataset.k);
+    keyAction(b.dataset.k, b);
   }
-  function keyAction(k) {
+  function keyAction(k, el) {
     if (!S.game) return;
     if (S.paused) setPaused(false);
     if (k.length === 1) return typeLetter(k);
     switch (k) {
-      case 'dir': toggleDir(); break;
       case 'bksp': backspace(); break;
       case 'erase': eraseCell(); break;
-      case 'prev': nextWord(-1, false); break;
-      case 'next': nextWord(1, false); break;
-      case 'skip': skipCell(); break;
+      case 'draft': toggleDraft(); break;
+      case 'help': if ($('#help-menu').classList.contains('hidden')) openHelp(el); else closeHelp(); break;
     }
   }
   function onPhysicalKey(e) {
@@ -1192,24 +941,6 @@
       }
     }
     e.preventDefault();
-  }
-
-  function applyInputMode() {
-    const panel = $('#input-panel'), collapsed = panel.classList.contains('collapsed');
-    $('#kbd').classList.toggle('hidden', collapsed || settings.inputMode !== 'kbd');
-    $('#penpanel').classList.toggle('hidden', collapsed || settings.inputMode !== 'pen');
-    $$('.tabs button').forEach(b => b.classList.toggle('on', !collapsed && b.dataset.mode === settings.inputMode));
-  }
-  function setInputMode(m) {
-    const panel = $('#input-panel');
-    if (m === 'hide') {
-      panel.classList.toggle('collapsed');
-    } else {
-      panel.classList.remove('collapsed');
-      settings.inputMode = m;
-      MC.store.saveSettings(settings);
-    }
-    applyInputMode();
   }
 
   /* =================== Historique =================== */
@@ -1296,12 +1027,6 @@
     { key: 'autoNext', type: 'toggle', label: 'Passer au mot suivant quand un mot est complet' },
     { key: 'autoCheck', type: 'toggle', label: 'Signaler les erreurs immédiatement', hint: 'Mode facile : une lettre fausse s\'affiche en rouge.' },
     { key: 'keyboard', type: 'select', label: 'Disposition du clavier', options: [['azerty', 'AZERTY'], ['qwerty', 'QWERTY'], ['abc', 'Alphabétique']] },
-    { group: 'Stylet' },
-    { key: 'penOnGrid', type: 'toggle', label: 'Écrire directement sur la grille', hint: 'Le stylet écrit dans la case touchée ; le doigt déplace et zoome.' },
-    { key: 'palmReject', type: 'toggle', label: 'Ignorer la paume quand un stylet est utilisé' },
-    { key: 'penDelay', type: 'range', label: 'Délai avant reconnaissance', min: 300, max: 1500, step: 50, unit: 'ms' },
-    { action: 'train', label: 'Apprendre mon écriture (A → Z)' },
-    { action: 'resetInk', label: 'Oublier mon écriture', danger: true },
     { group: 'Affichage' },
     { key: 'theme', type: 'select', label: 'Thème', options: [['auto', 'Automatique'], ['light', 'Clair'], ['dark', 'Sombre']] },
     { key: 'lefty', type: 'toggle', label: 'Mode gaucher', hint: 'Définitions et clavier à gauche (paysage).' },
@@ -1329,7 +1054,7 @@
       html += `<label class="set-row"><span class="lbl">${it.label}${it.hint ? `<small>${it.hint}</small>` : ''}</span>${ctl}</label>`;
     }
     const wiki = MC.DICO.length - MC.DICO_CURATED;
-    html += `<p class="muted" style="margin:18px 4px">Écriture apprise : ${recog.userCount()} modèle(s) · Dictionnaire : ${MC.DICO.length} mots
+    html += `<p class="muted" style="margin:18px 4px">Dictionnaire : ${MC.DICO.length} mots
       (${MC.DICO_CURATED} choisis à la main${wiki ? `, ${wiki} tirés du <a href="https://fr.wiktionary.org" target="_blank" rel="noopener">Wiktionnaire</a>, licence CC BY-SA 4.0` : ''}).<br>
       Toutes les données restent sur cet appareil.</p>`;
     $('#settings-form').innerHTML = html;
@@ -1348,10 +1073,6 @@
     const row = e.target.closest('[data-action]');
     if (!row) return;
     const a = row.dataset.action;
-    if (a === 'train') openTraining();
-    if (a === 'resetInk' && await ask('Oublier votre écriture ?', 'Les modèles appris seront supprimés.', [{ label: 'Annuler' }, { label: 'Oublier', cls: 'danger', value: true }])) {
-      recog.resetUser(); MC.store.saveInk([]); renderSettings(); toast('Écriture oubliée');
-    }
     if (a === 'export') exportData();
     if (a === 'banned') openBanned();
     if (a === 'import') $('#import-file').click();
@@ -1375,7 +1096,6 @@
     r.onload = () => {
       try {
         const n = MC.store.importAll(JSON.parse(r.result));
-        recog.loadUser(MC.store.ink());
         toast(`${n} partie(s) importée(s)`);
         renderSettings();
       } catch (err) {
@@ -1391,8 +1111,6 @@
     document.body.classList.toggle('bigclues', !!settings.bigClues);
     readColors();
     buildKeyboard();
-    applyInputMode();
-    if (pad) pad.draw();
   }
 
   /* En paysage, le bandeau va dans la colonne de droite (voir css : body.side-banner). */
@@ -1422,13 +1140,6 @@
     $('#g-home').addEventListener('click', () => show('home'));
     $('#g-undo').addEventListener('click', undo);
     $('#g-redo').addEventListener('click', redo);
-    $('#g-pencil').addEventListener('click', () => {
-      S.pencil = !S.pencil;
-      render();
-      toast(S.pencil ? 'Mode crayon : lettres incertaines en gris' : 'Mode stylo : lettres définitives', 1600);
-    });
-    $('#g-help').addEventListener('click', () => ($('#help-menu').classList.contains('hidden') ? openHelp() : closeHelp()));
-    $('#help-menu').addEventListener('click', e => { const b = e.target.closest('[data-act]'); if (b) helpAction(b.dataset.act); });
     $('#g-pause').addEventListener('click', () => setPaused(!S.paused));
     $('#b-prev').addEventListener('click', () => nextWord(-1, false));
     $('#b-next').addEventListener('click', () => nextWord(1, false));
@@ -1438,8 +1149,6 @@
     $('#z-out').addEventListener('click', () => zoomAt({ x: vp.clientWidth / 2, y: vp.clientHeight / 2 }, 1 / 1.3, true));
     $('#z-fit').addEventListener('click', () => { smoothOnce(); fitView(); });
     $('#kbd').addEventListener('pointerdown', onKeyPress);
-    $('#pen-keys').addEventListener('pointerdown', onKeyPress);
-    $$('.tabs button').forEach(b => b.addEventListener('click', () => setInputMode(b.dataset.mode)));
 
     vp.addEventListener('pointerdown', onDown);
     vp.addEventListener('pointermove', onMove);
@@ -1448,17 +1157,14 @@
     vp.addEventListener('wheel', onWheel, { passive: false });
     vp.addEventListener('contextmenu', e => e.preventDefault());
     new ResizeObserver(() => {
-      inkCtx = sizeCanvas(inkCanvas);
-      drawInk();
       if (S.screen === 'game' && S.P) {
         if (V.isFit) fitView(); else { clampView(); applyView(); }
       }
     }).observe(vp);
-    pad = new Pad($('#pad'), onPadLetter);
 
     document.addEventListener('keydown', onPhysicalKey);
     document.addEventListener('pointerdown', e => {
-      if (!$('#help-menu').classList.contains('hidden') && !e.target.closest('#help-menu, #g-help')) closeHelp();
+      if (!$('#help-menu').classList.contains('hidden') && !e.target.closest('#help-menu, [data-k="help"]')) closeHelp();
     }, true);
     $('#modal').addEventListener('pointerdown', e => { if (e.target.id === 'modal') closeModal(null); });
     document.addEventListener('gesturestart', e => e.preventDefault());
@@ -1467,7 +1173,7 @@
     });
     window.addEventListener('pagehide', saveNow);
     if (window.matchMedia) {
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { readColors(); if (pad) pad.draw(); });
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', readColors);
     }
 
     // Historique & réglages

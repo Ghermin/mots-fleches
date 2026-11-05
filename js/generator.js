@@ -8,17 +8,21 @@ window.MC = window.MC || {};
   'use strict';
   const DEF = '#';
 
-  function buildIndex(words, maxLen) {
-    const pre = new Map(); // préfixe -> [masque des longueurs possibles, nombre de mots]
+  /* Rareté d'un mot : 0 pour les mots faits main et très courants, 1 au-delà du 20 000e mot. */
+  const rarity = w => (w.r === 0 ? 0 : Math.min(1, w.r / 20000));
+
+  /* weight(w) : poids d'un mot dans le choix des lettres (les niveaux élevés favorisent les mots rares). */
+  function buildIndex(words, maxLen, weight) {
+    const pre = new Map(); // préfixe -> [masque des longueurs possibles, poids cumulé des mots]
     const dict = new Map();
     for (const w of words) {
       const s = w.word;
       if (s.length > maxLen || dict.has(s)) continue;
       dict.set(s, w);
-      const bit = 1 << s.length;
+      const bit = 1 << s.length, k = weight ? weight(w) : 1;
       for (let i = 1; i <= s.length; i++) {
         const p = s.slice(0, i), e = pre.get(p);
-        if (e) { e[0] |= bit; e[1]++; } else pre.set(p, [bit, 1]);
+        if (e) { e[0] |= bit; e[1] += k; } else pre.set(p, [bit, k]);
       }
     }
     return { pre, dict };
@@ -40,7 +44,7 @@ window.MC = window.MC || {};
     const ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const ALPHA_ARR = ALPHA.split('');
     const LETTERS = ALPHA.length;
-    let nodes = 0, defs = 0;
+    let nodes = 0, defs = 0, twos = 0;
     const order = [];
     for (let i = 0; i < N; i++) if (g[i] !== DEF) order.push(i);
 
@@ -111,26 +115,34 @@ window.MC = window.MC || {};
         const dens = defs / Math.max(1, k + 1);
         let p = done === 2 ? 0.75 : done === 1 ? 0.45 : 0.08;
         if (dens > opts.density) p *= 0.4;
+        if (h.length === 2 || v.length === 2) p *= opts.short; // on évite de clore un mot de 2 lettres
         const pos = rng() < p ? 0 : Math.min(cands.length, 1 + Math.floor(rng() * 4));
         cands.splice(pos, 0, { ch: DEF });
       }
 
-      const lim = Math.min(cands.length, opts.branch);
-      for (let a = 0; a < lim; a++) {
+      let tried = 0;
+      for (let a = 0; a < cands.length && tried < opts.branch; a++) {
         const ch = cands[a].ch, added = [];
         if (ch === DEF) {
-          if (h.length > 1) { used.add(h); added.push(h); }
-          if (v.length > 1) { used.add(v); added.push(v); }
-          defs++;
+          if (h.length > 1) added.push(h);
+          if (v.length > 1) added.push(v);
         } else {
           const ph = h + ch, pv = v + ch;
-          if (extraH === 0 && ph.length > 1) { used.add(ph); added.push(ph); }
-          if (extraV === 0 && pv.length > 1) { used.add(pv); added.push(pv); }
+          if (extraH === 0 && ph.length > 1) added.push(ph);
+          if (extraV === 0 && pv.length > 1) added.push(pv);
         }
+        // Nombre de mots de 2 lettres plafonné par grille.
+        const n2 = added.filter(w => w.length === 2).length;
+        if (n2 && twos + n2 > opts.max2) continue;
+        tried++;
+        added.forEach(w => used.add(w));
+        twos += n2;
+        if (ch === DEF) defs++;
         g[i] = ch;
         if (step(k + 1)) return true;
         g[i] = '';
         if (ch === DEF) defs--;
+        twos -= n2;
         for (const w of added) used.delete(w);
         if (nodes > opts.budget) return false;
       }
@@ -140,8 +152,8 @@ window.MC = window.MC || {};
     return step(0) ? g : null;
   }
 
-  /* Extrait les mots et rattache chaque définition à sa case. */
-  function finalize(W, H, g, dict, meta) {
+  /* Extrait les mots et rattache chaque mot à sa case-définition. */
+  function extract(W, H, g) {
     const isL = (r, c) => r >= 0 && c >= 0 && r < H && c < W && g[r * W + c] !== DEF;
     const words = [];
     for (let r = 0; r < H; r++) {
@@ -157,8 +169,7 @@ window.MC = window.MC || {};
           if (dir === 'H') {
             if (c > 0) { at = r * W + c - 1; arrow = 'r'; } else { at = (r - 1) * W; arrow = 'dr'; }
           } else if (r > 0) { at = (r - 1) * W + c; arrow = 'd'; } else { at = c - 1; arrow = 'rd'; }
-          const e = dict.get(s);
-          words.push({ dir, r, c, len, answer: s, clue: e.clue, at, arrow });
+          words.push({ dir, r, c, len, answer: s, at, arrow });
         }
       }
     }
@@ -166,17 +177,38 @@ window.MC = window.MC || {};
     const top = a => (a === 'r' || a === 'rd' ? 0 : 1);
     words.sort((a, b) => a.at - b.at || top(a.arrow) - top(b.arrow));
     words.forEach((w, n) => { w.n = n + 1; });
-    const cells = g.map(x => (x === DEF ? '' : x));
-    return Object.assign({ id: MC.uid(), type: 'fleche', w: W, h: H, cells, words }, meta);
+    return words;
   }
 
-  /* Score d'une grille remplie : on préfère les mots longs et les définitions « faites main ». */
-  function scoreGrid(W, H, g, dict) {
+  /* Choisit une définition par mot parmi ses variantes, sans répéter deux fois le même texte
+     dans la grille. L.curClue : probabilité de préférer une définition faite main. */
+  function chooseClues(words, dict, L, rng) {
+    const usedText = new Set(), key = t => t.toLowerCase().replace(/[^a-zà-ÿ]/g, '');
+    const shuffle = a => MC.shuffle(a.slice(), rng);
+    for (const w of words) {
+      const e = dict.get(w.answer);
+      const cur = e.r === 0 ? e.clues : [], wiki = (e.r === 0 ? e.wclues : e.clues) || [];
+      let order;
+      if (!L.maxRank) order = shuffle(cur);                       // Facile : uniquement fait main
+      else if (e.r === 0) order = rng() < L.curClue ? shuffle(cur).concat(shuffle(wiki)) : shuffle(wiki).concat(shuffle(cur));
+      else order = rng() < 0.4 + 0.4 * L.curClue ? wiki.slice() : shuffle(wiki.slice(1)).concat(wiki.slice(0, 1)); // sens principal, le plus souvent
+      if (!order.length) order = e.clues.concat(e.wclues || []);
+      const pick = order.find(t => !usedText.has(key(t))) || order[0];
+      usedText.add(key(pick));
+      w.clue = pick;
+    }
+    return words;
+  }
+
+  /* Score d'une grille remplie : mots longs, peu de mots de 2 lettres, et selon le niveau
+     des mots faits main (faciles) ou rares (difficiles). */
+  function scoreGrid(W, H, g, dict, L) {
     let score = 0, defs = 0;
-    const P = finalize(W, H, g, dict, {});
-    for (const w of P.words) {
-      score += w.len * 1.2 - (w.len === 2 ? 2 : 0);
-      if (dict.get(w.answer).r === 0) score += 1.5;
+    const rare = L.rare || 0;
+    for (const w of extract(W, H, g)) {
+      const e = dict.get(w.answer);
+      score += w.len * 1.2 - (w.len === 2 ? 4 : 0);
+      score += e.r === 0 ? (1 - rare) * 1.5 : rare * 4 * rarity(e);
     }
     g.forEach(x => { if (x === DEF) defs++; });
     return score - defs * 1.5;
@@ -195,22 +227,28 @@ window.MC = window.MC || {};
     // Mots « faits main » toujours ; Wiktionnaire limité aux mots les plus courants selon le niveau.
     // Les mots faits main sont présentés en premier : en cas de doublon, leur définition l'emporte.
     const base = MC.DICO.filter(w => ok(w) && (w.r === 0 || w.r <= maxRank));
-    const idx = buildIndex(base, maxLen);
+    // Aux niveaux élevés, les lettres qui mènent à des mots rares sont essayées en premier.
+    const rare = L.rare || 0;
+    const weight = w => (1 - rare) + rare * (w.r === 0 ? 0.5 : 0.3 + 2.7 * rarity(w));
+    const idx = buildIndex(base, maxLen, weight);
 
-    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3 };
-    // Plusieurs grilles sont tentées ; on garde la meilleure parmi les premières réussies.
+    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, short: 0.3, max2: L.max2 || 99 };
+    // Plusieurs grilles sont tentées ; on garde la meilleure. La grille du jour n'a pas de limite
+    // de temps, pour être identique sur tous les appareils.
     let best = null, bestScore = -Infinity, found = 0;
     const t0 = Date.now();
     for (let a = 0; a < 400 && found < (L.keep || 3); a++) {
-      if (found && Date.now() - t0 > 500) break;
+      if (!opts.daily && found && Date.now() - t0 > 700) break;
       const g = fill(L.w, L.h, idx, rng, params);
       if (!g) continue;
       found++;
-      const s = scoreGrid(L.w, L.h, g, idx.dict);
+      const s = scoreGrid(L.w, L.h, g, idx.dict, L);
       if (s > bestScore) { best = g; bestScore = s; }
     }
     if (!best) throw new Error('Impossible de générer la grille');
-    return finalize(L.w, L.h, best, idx.dict, { level: opts.level, seed, created: Date.now() });
+    const words = chooseClues(extract(L.w, L.h, best), idx.dict, L, rng);
+    const cells = best.map(x => (x === DEF ? '' : x));
+    return { id: MC.uid(), type: 'fleche', w: L.w, h: L.h, cells, words, level: opts.level, seed, created: Date.now() };
   };
   MC._fillGrid = fill;       // pour les tests
   MC._buildIndex = buildIndex;

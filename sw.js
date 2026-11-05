@@ -1,8 +1,8 @@
 /* Hors-ligne : réseau d'abord (mises à jour immédiates), cache si pas de connexion. */
-const CACHE = 'mots-fleches-v2';
+const CACHE = 'mots-fleches-v3';
 const ASSETS = [
   './', 'index.html', 'css/playground.css', 'css/style.css', 'manifest.webmanifest',
-  'js/util.js', 'js/dico-wiki.js', 'js/dico.js', 'js/generator.js', 'js/recognizer.js', 'js/storage.js', 'js/app.js',
+  'js/util.js', 'js/dico-wiki.js', 'js/dico.js', 'js/generator.js', 'js/storage.js', 'js/app.js',
   'icons/icon.svg', 'icons/favicon.ico', 'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png'
 ];
 self.addEventListener('install', e => {

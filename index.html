@@ -8,7 +8,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Mots fléchés">
-<meta name="description" content="Mots fléchés en français, pensés pour la tablette : clavier, stylet, zoom, historique.">
+<meta name="description" content="Mots fléchés en français, pensés pour la tablette : clavier, zoom, aide, historique.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
@@ -71,7 +71,7 @@
         </div>
         <div>
           <h1>Mots fléchés</h1>
-          <p class="muted">Au doigt, au clavier ou au stylet.</p>
+          <p class="muted">Grilles 10 × 14, comme dans les magazines.</p>
         </div>
       </header>
 
@@ -111,8 +111,6 @@
     <div class="tools">
       <button class="icon-btn" id="g-undo" aria-label="Annuler"><svg class="ic"><use href="#i-undo"/></svg></button>
       <button class="icon-btn" id="g-redo" aria-label="Rétablir"><svg class="ic"><use href="#i-redo"/></svg></button>
-      <button class="icon-btn" id="g-pencil" aria-label="Mode crayon (lettres incertaines)"><svg class="ic"><use href="#i-pencil"/></svg></button>
-      <button class="icon-btn" id="g-help" aria-label="Aide"><svg class="ic"><use href="#i-bulb"/></svg></button>
       <button class="icon-btn" id="g-pause" aria-label="Pause"><svg class="ic"><use href="#i-pause"/></svg></button>
     </div>
   </header>
@@ -127,13 +125,11 @@
       </div>
       <div id="viewport">
         <div id="board"></div>
-        <canvas id="ink"></canvas>
         <div class="zoom">
           <button class="icon-btn" id="z-out" aria-label="Dézoomer"><svg class="ic"><use href="#i-minus"/></svg></button>
           <button class="icon-btn" id="z-fit" aria-label="Ajuster"><svg class="ic"><use href="#i-fit"/></svg></button>
           <button class="icon-btn" id="z-in" aria-label="Zoomer"><svg class="ic"><use href="#i-plus"/></svg></button>
         </div>
-        <div id="alts" class="alts hidden"></div>
         <div id="pause-overlay" class="hidden"><div><svg class="ic"><use href="#i-play"/></svg><p>Pause — touchez pour reprendre</p></div></div>
       </div>
     </div>
@@ -145,17 +141,7 @@
         <p class="muted d-tip">Touchez une case-définition pour choisir son mot. Toucher deux fois une lettre change de sens.</p>
       </div>
       <div id="input-panel">
-        <div class="tabs">
-          <button data-mode="kbd"><svg class="ic"><use href="#i-kbd"/></svg>Clavier</button>
-          <button data-mode="pen"><svg class="ic"><use href="#i-pen"/></svg>Stylo</button>
-          <button data-mode="hide" aria-label="Masquer le panneau"><svg class="ic"><use href="#i-down"/></svg></button>
-        </div>
         <div id="kbd"></div>
-        <div id="penpanel" class="hidden">
-          <div class="alts inline" id="pen-alts"><span class="muted">Écrivez une lettre dans le cadre</span></div>
-          <canvas id="pad"></canvas>
-          <div class="krow" id="pen-keys"></div>
-        </div>
       </div>
     </div>
   </div>
@@ -209,7 +195,6 @@
 <script src="js/dico-wiki.js"></script>
 <script src="js/dico.js"></script>
 <script src="js/generator.js"></script>
-<script src="js/recognizer.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/app.js"></script>
 </body>

@@ -17,13 +17,9 @@ window.MC = window.MC || {};
     autoNext: true,
     autoCheck: false,
     keyboard: 'azerty',
-    penOnGrid: true,
-    palmReject: true,
-    penDelay: 650,
     theme: 'auto',
     lefty: false,
-    bigClues: false,
-    inputMode: 'kbd'
+    bigClues: false
   };
 
   /* La partie en mémoire contient des champs calculés : on n'enregistre que l'essentiel. */
