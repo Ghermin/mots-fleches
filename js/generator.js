@@ -115,8 +115,11 @@ window.MC = window.MC || {};
         const dens = defs / Math.max(1, k + 1);
         let p = done === 2 ? 0.75 : done === 1 ? 0.45 : 0.08;
         if (dens > opts.density) p *= 0.4;
-        if (h.length === 2 || v.length === 2) p *= opts.short; // on évite de clore un mot de 2 lettres
-        const pos = rng() < p ? 0 : Math.min(cands.length, 1 + Math.floor(rng() * 4));
+        // On évite de clore un mot de 2 ou 3 lettres : la case-définition passe alors le plus
+        // souvent après toutes les lettres possibles (en dernier recours).
+        const short = Math.min(h.length > 1 ? h.length : 9, v.length > 1 ? v.length : 9);
+        if (short === 2) p *= 0.1; else if (short === 3) p *= 0.25;
+        const pos = rng() < p ? 0 : short <= 3 && rng() < 0.8 ? cands.length : Math.min(cands.length, 1 + Math.floor(rng() * 4));
         cands.splice(pos, 0, { ch: DEF });
       }
 
@@ -200,14 +203,14 @@ window.MC = window.MC || {};
     return words;
   }
 
-  /* Score d'une grille remplie : mots longs, peu de mots de 2 lettres, et selon le niveau
+  /* Score d'une grille remplie : mots longs, peu de mots de 2 et 3 lettres, et selon le niveau
      des mots faits main (faciles) ou rares (difficiles). */
   function scoreGrid(W, H, g, dict, L) {
     let score = 0, defs = 0;
     const rare = L.rare || 0;
     for (const w of extract(W, H, g)) {
       const e = dict.get(w.answer);
-      score += w.len * 1.2 - (w.len === 2 ? 4 : 0);
+      score += w.len * 1.2 - (w.len === 2 ? 6 : w.len === 3 ? 2 : 0);
       score += e.r === 0 ? (1 - rare) * 1.5 : rare * 4 * rarity(e);
     }
     g.forEach(x => { if (x === DEF) defs++; });
@@ -232,7 +235,7 @@ window.MC = window.MC || {};
     const weight = w => (1 - rare) + rare * (w.r === 0 ? 0.5 : 0.3 + 2.7 * rarity(w));
     const idx = buildIndex(base, maxLen, weight);
 
-    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, short: 0.3, max2: L.max2 || 99 };
+    const params = { budget: L.budget || 30000, branch: 3, noise: 1.5, density: L.density || 0.3, max2: L.max2 || 99 };
     // Plusieurs grilles sont tentées ; on garde la meilleure. La grille du jour n'a pas de limite
     // de temps, pour être identique sur tous les appareils.
     let best = null, bestScore = -Infinity, found = 0;
