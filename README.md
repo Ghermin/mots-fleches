@@ -59,5 +59,6 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 ligne et la première colonne alternent définition / lettre, les autres cases-définitions sont
 placées au fil du remplissage. Chaque suite de 2 lettres ou plus doit être un mot du dictionnaire
 (sans doublon) ; chaque case-définition définit 1 ou 2 mots ; aucune lettre n'est isolée.
-Les mots de 2 lettres sont plafonnés (12 par grille, 18 en Facile) et les grilles avec plus de
-mots longs sont préférées.
+Les mots de 2 lettres sont plafonnés (10 par grille, 14 en Facile) ; clore un mot de 2 ou 3 lettres
+par une case-définition n'est tenté qu'en dernier recours, et les grilles avec plus de mots longs
+sont préférées.
