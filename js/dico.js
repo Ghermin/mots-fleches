@@ -61,6 +61,64 @@ UT|Ancien nom du do
 VA|Pars !
 VU|Aperçu
 XI|Lettre grecque
+AH|Exclamation
+AI|Petit mammifère arboricole|J'en possède
+AN|Année|Le Nouvel …
+AS|Champion|Tu possèdes|Un sur le dé
+AU|À le
+BU|Absorbé|Avalé d'un trait
+CA|Cela, en bref|Çà, sans accent
+CE|Cet, devant une consonne
+CI|Celui-…
+DE|Préposition d'origine|Petit cube à jeu|Il protège le doigt de la couturière
+DO|Ut moderne|Note
+DU|De le|Partitif masculin
+EH|Interjection
+EN|Pronom adverbial|Préposition|Ouvrage … bois
+ES|Tu existes|Verbe être
+ET|Relie deux mots|Conjonction|Signe &
+EU|Possédé|Obtenu|Trompé
+EX|Ancien amoureux|Ancien, en préfixe
+FA|Quatrième note|Clé de …
+GO|Tout de … (sans façon)
+HA|Hectare, en abrégé|Rire écrit
+IF|Arbre toxique|Arbre à baies rouges
+IL|Lui, sujet|Pronom sujet
+JE|Moi, sujet|Pronom sujet
+KO|Assommé|Mis au tapis
+LA|Sixième note|Article féminin|Pas ici, sans accent
+LE|Article défini|Pronom complément
+LU|Déchiffré|Lu et approuvé
+MA|À moi|Possessif
+ME|Moi, complément|Pronom réfléchi
+MI|Troisième note|À moitié
+MU|Douzième lettre grecque|Poussé, sans accent
+NE|Né, sans accent|Adverbe de négation
+NI|Ni l'un … l'autre|Pas plus
+NU|Dépouillé|Dévêtu
+OH|Exclamation
+OK|Ça marche|Approuvé
+ON|Tout le monde ou personne|Pronom vague
+OR|Couleur jaune en héraldique|Médaille du vainqueur|Conjonction de raisonnement
+OS|Dur à ronger|Tibia ou fémur
+OU|Indique un choix|Ou bien
+PI|Lettre grecque|Nombre du cercle
+PU|Eu la possibilité
+RE|Deuxième note|Entre do et mi|Préfixe de répétition
+RU|Filet d'eau|Petit cours d'eau
+SA|À lui ou à elle|Possessif
+SE|Pronom de la troisième personne
+SI|Septième note|Tellement|Oui, après une négation
+SU|Appris|Connu de tous
+TA|À toi|Possessif
+TE|Toi, complément|Règle en forme de T
+TU|Passé sous silence|Pronom familier
+UN|Premier nombre|Chiffre de l'unité|Le premier
+US|Les … et coutumes|Habitudes
+UT|Note de jadis|Do d'autrefois
+VA|Il se rend|Ça … ?
+VU|Constaté|Remarqué
+XI|Quatorzième lettre grecque
 AIR|On le respire
 AMI|Copain fidèle
 ANE|Cousin du cheval, réputé têtu
@@ -899,19 +957,83 @@ VITESSE|Rapidité
 VOISIN|Il habite à côté
 VOLET|Il ferme la fenêtre
 ZEBU|Bœuf à bosse
+ANE|Bête de somme|Bonnet de cancre
+ARA|Perroquet|Perroquet coloré
+ARC|Courbe|Il sert au tir
+ARE|Unité de surface|Cent mètres carrés
+ART|Talent|Peinture ou sculpture
+BLE|Céréale du pain|Froment
+ECU|Bouclier|Ancienne monnaie
+ELU|Député|Désigné
+EMU|Touché|Ébranlé
+ERE|Époque|Période historique
+ETE|Saison chaude|Participe d'être
+FER|Métal|Pour repasser
+FEU|Flamme|Il passe au rouge
+GEL|Glace|Produit coiffant
+GUE|Passage dans la rivière
+HEU|Hésitation|Marque d'embarras
+ILE|Atoll|Terre isolée
+IRA|Se rendra|Futur d'aller
+JEU|Divertissement|Partie
+KIT|Ensemble à monter|Prêt-à-monter
+LIE|Attaché|Uni
+LIN|Plante textile|Tissu d'été
+LIT|Il s'y couche|Lit de rivière
+MAL|Douleur|Contraire du bien
+MER|Grande bleue|Méditerranée
+NET|Sans tache|Après déductions
+NOM|Patronyme|Appellation
+NON|Refus|Contraire de oui
+NUL|Sans valeur|Aucun
+OIE|Volaille|Jeu de l'…
+OSE|Risqué|Osé, sans accent
+OUI|Approbation|Acquiescement
+PAS|Enjambée|Négation
+PRE|Prairie|Champ d'herbe
+RAT|Rongeur|Avare
+RIO|Fleuve d'Amérique latine
+ROI|Pièce d'échecs|Monarque
+RUE|Artère|Voie de ville
+SEC|Aride|Sans eau
+SEL|Piquant|Sel de mer
+SOU|Petite monnaie|Ancienne pièce
+SUR|Acide|Au-dessus de
+TAS|Monceau|Amas
+TEL|Pareil|Semblable
+TIR|Coup de feu|Sport à la carabine
+TOT|De bonne heure|Pas tard
+TRI|Classement|Sélection
+UNE|Première page du journal|Pas deux
+UNI|Sans motif|Rassemblé
+USE|Élimé|Abîmé par le temps
+VAL|Petite vallée|Vallon
+VER|Lombric|Asticot
+VIN|Rouge ou blanc|Nectar de Bacchus
+VOL|Larcin|Trajet en avion
+YEN|Monnaie japonaise
+YES|Oui d'outre-Manche
 `;
-  const seen = new Set();
-  const keep = w => /^[A-Z]{2,}$/.test(w.word) && w.clue && !seen.has(w.word) && seen.add(w.word);
 
   // 1) Mots choisis à la main (rang 0 = définition soignée, prioritaire).
-  MC.DICO = RAW.split('\n')
-    .map(l => l.trim())
-    .filter(Boolean)
-    .map(l => {
-      const k = l.indexOf('|');
-      return { word: l.slice(0, k).trim().toUpperCase(), clue: l.slice(k + 1).trim(), r: 0 };
-    })
-    .filter(keep);
+  //    Une ligne peut donner plusieurs définitions (MOT|déf. 1|déf. 2), et un mot peut revenir
+  //    sur plusieurs lignes : chaque grille en pioche une, pour varier.
+  //    entry.clues = définitions faites main ; entry.wclues = définitions du Wiktionnaire en plus.
+  const byWord = new Map();
+  MC.DICO = [];
+  for (const l of RAW.split('\n')) {
+    const p = l.trim().split('|').map(x => x.trim()).filter(Boolean);
+    if (p.length < 2) continue;
+    const word = p[0].toUpperCase();
+    if (!/^[A-Z]{2,}$/.test(word)) continue;
+    let e = byWord.get(word);
+    if (!e) {
+      e = { word, clue: p[1], clues: [], wclues: [], r: 0 };
+      byWord.set(word, e);
+      MC.DICO.push(e);
+    }
+    for (const c of p.slice(1)) if (!e.clues.includes(c)) e.clues.push(c);
+  }
   MC.DICO_CURATED = MC.DICO.length;
 
   // 2) Dictionnaire étendu tiré du Wiktionnaire (js/dico-wiki.js), si présent.
@@ -926,10 +1048,17 @@ ZEBU|Bœuf à bosse
   if (MC.DICO_WIKI) {
     for (const l of MC.DICO_WIKI.split('\n')) {
       const p = l.split('|');
-      if (p.length < 3) continue;
-      const w = { word: p[0], r: +p[1] || 99999, clue: p.slice(2).join('|').trim() };
-      if (obscure.test(w.clue) || context(w.clue)) continue;
-      if (keep(w)) MC.DICO.push(w);
+      if (p.length < 3 || !/^[A-Z]{2,}$/.test(p[0])) continue;
+      const clues = p.slice(2).map(c => c.trim()).filter(c => c.length >= 3 && !obscure.test(c) && !context(c));
+      if (!clues.length) continue;
+      const e = byWord.get(p[0]);
+      if (e) { // mot déjà fait main : ses sens du Wiktionnaire servent de variantes (hors niveau Facile)
+        for (const c of clues) if (!e.clues.includes(c) && !e.wclues.includes(c)) e.wclues.push(c);
+        continue;
+      }
+      const w = { word: p[0], r: +p[1] || 99999, clue: clues[0], clues, wclues: [] };
+      byWord.set(w.word, w);
+      MC.DICO.push(w);
     }
   }
 })(window.MC);

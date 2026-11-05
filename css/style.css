@@ -257,6 +257,14 @@ body.bigclues #b-clue { font-size: 20px; }
 .pick .key { max-width: none; }
 .key.wide { flex: 1.5 1 0; max-width: 92px; font-size: 14px; font-weight: 600; }
 .key.act { background: var(--key-act); }
+/* Aide et brouillon : bien visibles sur la dernière rangée du clavier. */
+.key.feat {
+  flex: 2 1 0; max-width: none; font-size: 17px; font-weight: 700; gap: 8px;
+  background: var(--accent-soft); color: var(--accent); box-shadow: 0 1px 0 rgba(0, 0, 0, .22), 0 0 0 2px var(--accent);
+}
+.key.feat .ic { width: 24px; height: 24px; }
+.key.feat.on { background: var(--accent); color: #fff; }
+.key.draft.on::after { content: 'activé'; font-size: 12px; font-weight: 600; opacity: .85; }
 .key .ic { width: 22px; height: 22px; }
 .key.down { transform: translateY(1px); filter: brightness(.88); }
 #penpanel { padding: 8px; display: flex; flex-direction: column; gap: 8px; }
@@ -277,9 +285,6 @@ body.bigclues #b-clue { font-size: 20px; }
   .key { max-width: 74px; height: 48px; }
   .key.wide { max-width: 120px; }
   #kbd { gap: 5px; padding: 6px 8px; }
-  .tabs button { height: 36px; }
-  #pad { height: 100px; }
-  #pen-alts { min-height: 40px; }
   #banner { min-height: 52px; padding: 4px 6px; }
 }
 /* Paysage : le bandeau (définition, mot précédent / suivant, signalement) passe dans la colonne

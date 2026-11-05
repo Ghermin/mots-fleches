@@ -1,9 +1,9 @@
 """
-Construit js/dico-wiki.js : des milliers de mots français courants avec une définition
-tirée du Wiktionnaire (fr.wiktionary.org, licence CC BY-SA 4.0).
+Construit js/dico-wiki.js : des milliers de mots français avec jusqu'à 3 définitions
+tirées du Wiktionnaire (fr.wiktionary.org, licence CC BY-SA 4.0).
 
-  python tools/build_dico.py            # top 20 000 mots de la liste de fréquence
-  python tools/build_dico.py --top 30000
+  python tools/build_dico.py            # top 35 000 mots de la liste de fréquence
+  python tools/build_dico.py --top 40000
   python tools/build_dico.py --offline  # régénère depuis le cache, sans réseau
 
 Les réponses de l'API sont mises en cache dans tools/.cache : relancer le script
@@ -27,6 +27,7 @@ UA = 'MotsFlechesBuilder/1.0 (application personnelle de mots fleches)'
 
 DELAY = 4  # secondes entre deux requêtes (le Wiktionnaire limite le débit)
 POS_OK = {'nom', 'adjectif', 'verbe', 'adverbe'}
+MAX_DEFS = 3  # plusieurs sens par mot : les grilles varient leurs définitions
 SKIP_TAGS = re.compile(r'\{\{(vulgaire|injurieux|sexualité|sexe|péjoratif|argot|désuet|vieilli|archaïque|'
                        r'très rare|rare|régionalisme|figuré|ironique|par plaisanterie|familier|populaire|'
                        r'anglicisme|néologisme)\b', re.I)
@@ -103,20 +104,21 @@ def norm(s):
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
 
 
-def definition(word, wikitext):
+def definitions(word, wikitext):
+    """Jusqu'à MAX_DEFS définitions utilisables, dans l'ordre du Wiktionnaire (sens principal d'abord)."""
     if word in BANNED:
-        return None
+        return []
     m = re.search(r'==\s*\{\{langue\|fr\}\}\s*==(.*?)(?=\n==\s*\{\{langue\||\Z)', wikitext, re.S)
     if not m:
-        return None
-    fr = m.group(1)
+        return []
+    fr, found, seen = m.group(1), [], set()
     for sec in re.finditer(r'===\s*\{\{S\|([^|}]+)\|fr([^}]*)\}\}\s*===(.*?)(?=\n===\s|\Z)', fr, re.S):
         pos, extra, body = sec.group(1).strip().lower(), sec.group(2), sec.group(3)
         if pos not in POS_OK or 'flexion' in extra:
             continue
         head = body.split('\n# ', 1)[0]
         if re.search(r'\{\{(vulgaire|injurieux|sexualité)', head, re.I):
-            return None
+            return []
         for line in body.split('\n'):
             if not line.startswith('# ') or line.startswith(('#*', '#:')):
                 continue
@@ -133,14 +135,21 @@ def definition(word, wikitext):
             # … ou un mot de la même famille (« Action d'augmenter » pour AUGMENTATION)
             if any(len(t) >= 5 and t[:5] in nw for t in re.findall(r'[a-z]+', norm(d))):
                 continue
-            return d
-        return None  # on ne garde que le premier sens utilisable de la première section
-    return None
+            if d.startswith('(') or d.count('(') != d.count(')'):
+                continue  # définition tronquée
+            key = re.sub(r'[^a-z]', '', norm(d))
+            if key in seen:
+                continue
+            seen.add(key)
+            found.append(d)
+            if len(found) >= MAX_DEFS:
+                return found
+    return found
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--top', type=int, default=20000)
+    ap.add_argument('--top', type=int, default=35000)
     ap.add_argument('--offline', action='store_true', help='ne rien télécharger, utiliser seulement le cache')
     args = ap.parse_args()
     CACHE.mkdir(parents=True, exist_ok=True)
@@ -183,13 +192,12 @@ def main():
         g = to_grid(w)
         if g in used:
             continue
-        d = definition(w, pages.get(w, ''))
-        if d:
-            d = d.replace('|', '/').replace('`', "'").replace('\\', '')
-            out.append(f'{g}|{rank}|{d}')
+        defs = [d.replace('|', '/').replace('`', "'").replace('\\', '') for d in definitions(w, pages.get(w, ''))]
+        if defs:
+            out.append(f'{g}|{rank}|' + '|'.join(defs))
             used.add(g)
     js = ('/* Généré par tools/build_dico.py — définitions du Wiktionnaire (fr.wiktionary.org),\n'
-          '   licence CC BY-SA 4.0. Format : MOT|rang de fréquence|définition */\n'
+          '   licence CC BY-SA 4.0. Format : MOT|rang de fréquence|définition|autres définitions… */\n'
           'window.MC = window.MC || {};\nwindow.MC.DICO_WIKI = `\n' + '\n'.join(out) + '\n`;\n')
     (ROOT / 'js' / 'dico-wiki.js').write_text(js, encoding='utf-8')
     print(len(out), 'mots écrits dans js/dico-wiki.js')

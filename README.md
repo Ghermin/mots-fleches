@@ -24,31 +24,31 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 - La définition complète du mot en cours s'affiche dans le bandeau (et dans le panneau en paysage).
 - **Zoom** : pincer à deux doigts, glisser pour déplacer, boutons − / ajuster / +.
 - **Clavier** intégré (AZERTY, QWERTY ou alphabétique) et clavier physique
-  (flèches, Tab, Espace pour changer de sens, Ctrl+Z / Ctrl+Y).
-- **Stylet** : écrire directement dans une case de la grille, ou dans le cadre de l'onglet *Stylo*.
-  Si une lettre est mal lue, toucher la bonne proposition : l'app apprend votre écriture.
-- Annuler / rétablir sans limite, effacer une case, un mot ou la grille.
+  (flèches, Tab, Espace pour changer de sens, Ctrl+Z / Ctrl+Y). On se déplace en touchant la grille.
+- **Aide** (grande touche du clavier) : vérifier, révéler ou effacer une case, un mot ou la grille.
+- **Brouillon** (grande touche du clavier) : les lettres tapées sont provisoires (affichées en gris).
+- Annuler / rétablir sans limite.
 - **Signaler une définition ratée** (drapeau ⚑ à côté de la définition) : le mot est retiré des
   prochaines grilles. La liste se retrouve dans les réglages (rétablir, copier).
-- **Mode crayon** pour les lettres incertaines (affichées en gris).
-- Aide : vérifier ou révéler une case, un mot ou la grille.
 - Chrono, pause, historique des parties, statistiques et records par niveau, série de grilles du jour.
 - Export / import des données (fichier JSON) pour changer d'appareil.
 
 ## Dictionnaire
 
-- `js/dico.js` : ~870 mots avec des définitions écrites à la main (prioritaires), dont les mots
-  de 2 lettres indispensables aux mots fléchés (articles, notes, pronoms…).
-  Facile n'utilise que ces mots ; les autres niveaux y ajoutent le Wiktionnaire
-  (en pratique ~75 % de mots faits main en Moyen, ~60 % en Expert).
-- `js/dico-wiki.js` : plusieurs milliers de mots courants avec une définition tirée du
+- `js/dico.js` : ~900 mots avec des définitions écrites à la main (prioritaires), dont les mots
+  de 2 lettres indispensables aux mots fléchés (articles, notes, pronoms…). Les mots les plus
+  fréquents dans les grilles ont plusieurs définitions (`MOT|déf. 1|déf. 2`) : chaque grille en
+  pioche une, et une même définition n'apparaît jamais deux fois dans une grille.
+  Facile n'utilise que ces mots ; les autres niveaux y ajoutent le Wiktionnaire.
+- `js/dico-wiki.js` : des milliers de mots avec jusqu'à 3 sens tirés du
   [Wiktionnaire](https://fr.wiktionary.org) (licence CC BY-SA 4.0). Régénérer avec :
 
   ```bash
-  python tools/build_dico.py --top 20000
+  python tools/build_dico.py --top 35000
   ```
 
-  Plus le niveau est facile, plus les mots du Wiktionnaire sont limités aux mots courants.
+  Plus le niveau est élevé, plus les mots rares sont favorisés (Difficile, Expert) et plus les
+  définitions du Wiktionnaire remplacent celles écrites à la main.
   Les définitions peu jouables (lettres d'alphabets étrangers, langues régionales, simple
   contexte comme « Dans un télégramme ») sont écartées au chargement.
 
@@ -58,3 +58,5 @@ Une fois ouverte, choisir *Partager → Sur l'écran d'accueil* (iPad) ou *Insta
 ligne et la première colonne alternent définition / lettre, les autres cases-définitions sont
 placées au fil du remplissage. Chaque suite de 2 lettres ou plus doit être un mot du dictionnaire
 (sans doublon) ; chaque case-définition définit 1 ou 2 mots ; aucune lettre n'est isolée.
+Les mots de 2 lettres sont plafonnés (12 par grille, 16 en Facile) et les grilles avec plus de
+mots longs sont préférées.
