@@ -49,7 +49,7 @@ html, body { height: 100%; margin: 0; }
 body {
   position: fixed; inset: 0; overflow: hidden;
   background: var(--bg); color: var(--ink);
-  font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font: 16px/1.4 var(--pg-font);
   -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none;
   user-select: none; -webkit-user-select: none;
   touch-action: manipulation; overscroll-behavior: none;
@@ -174,7 +174,7 @@ body.bigclues .def-card.cross p { font-size: 19px; }
 /* Cases-définitions : une ou deux définitions (flèche vers la droite en haut, vers le bas en dessous). */
 .cell.def {
   background: var(--def-bg); color: var(--def-ink); display: flex; flex-direction: column; cursor: pointer;
-  font-family: sans-serif-condensed, "Roboto Condensed", "Arial Narrow", system-ui, sans-serif; font-weight: 500;
+  font-family: var(--pg-font); font-stretch: 75%; font-weight: 500;
 }
 .cell.def .q {
   flex: 1 1 0; min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;
