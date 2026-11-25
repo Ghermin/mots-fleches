@@ -81,3 +81,9 @@ mot de 2 ou 3 lettres par une case-définition n'est tenté qu'en dernier recour
 complètes, on garde celle qui a le plus de mots longs. La recherche dure quelques secondes, en
 arrière-plan (`js/worker.js`). Environ un mot sur trois fait 2 ou 3 lettres (46 % en Facile),
 comme dans les grilles de magazine.
+
+## Licence
+
+Le code est sous licence [MIT](LICENSE). Les dictionnaires gardent la licence de leurs sources :
+`js/dico-wiki.js` est sous CC BY-SA 4.0 (Wiktionnaire et Lexique 3.83), `js/dico-lpc.js` sous
+CC BY 4.0 (La Petite Case).
